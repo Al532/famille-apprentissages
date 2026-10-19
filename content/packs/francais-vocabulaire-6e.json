@@ -1,0 +1,210 @@
+{
+  "id": "francais-vocabulaire-6e",
+  "version": "1.0.0",
+  "title": "Vocabulaire : comprendre les mots",
+  "subject": "Français",
+  "levels": [
+    "6e"
+  ],
+  "description": "Synonymes, contraires, familles de mots, préfixes et sens en contexte : des outils pour mieux lire et écrire.",
+  "skills": [
+    {
+      "id": "synonymes",
+      "label": "Synonymes et contraires"
+    },
+    {
+      "id": "familles",
+      "label": "Familles de mots et formation"
+    },
+    {
+      "id": "contexte",
+      "label": "Comprendre le sens en contexte"
+    },
+    {
+      "id": "lexique",
+      "label": "Champ lexical et mots invariables"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "synonymes-01",
+      "kind": "choice",
+      "prompt": "Quel est un synonyme de « joyeux » ?",
+      "answer": "heureux",
+      "options": [
+        "heureux",
+        "triste",
+        "lent"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "« joyeux » et « heureux » ont des sens proches."
+    },
+    {
+      "id": "familles-01",
+      "kind": "choice",
+      "prompt": "Quel mot appartient à la famille de « terre » ?",
+      "answer": "terrestre",
+      "options": [
+        "terrestre",
+        "terrible",
+        "terreur"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "« terrestre » est formé sur « terre » et garde un sens lié à la Terre."
+    },
+    {
+      "id": "contexte-01",
+      "kind": "choice",
+      "prompt": "Dans « Il dévore ce roman », que signifie « dévore » ?",
+      "answer": "lit avec passion",
+      "options": [
+        "lit avec passion",
+        "déchire le livre",
+        "mange les pages"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "Le contexte du roman indique le sens figuré : lire avec enthousiasme."
+    },
+    {
+      "id": "lexique-01",
+      "kind": "choice",
+      "prompt": "Quel groupe appartient au champ lexical de la mer ?",
+      "answer": "vague, écume, marée",
+      "options": [
+        "forêt, branche, feuille",
+        "cahier, règle, gomme",
+        "vague, écume, marée"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Ces trois mots renvoient au même thème : la mer."
+    },
+    {
+      "id": "synonymes-02",
+      "kind": "choice",
+      "prompt": "Quel est le contraire de « généreux » ?",
+      "answer": "égoïste",
+      "options": [
+        "égoïste",
+        "souriant",
+        "attentif"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Une personne généreuse partage ; une personne égoïste pense surtout à elle-même."
+    },
+    {
+      "id": "familles-02",
+      "kind": "choice",
+      "prompt": "Dans « refaire », que signifie le préfixe re- ?",
+      "answer": "faire de nouveau",
+      "options": [
+        "ne pas faire",
+        "faire avant",
+        "faire de nouveau"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Le préfixe re- exprime ici la répétition."
+    },
+    {
+      "id": "contexte-02",
+      "kind": "choice",
+      "prompt": "Dans « la tête d’un clou », « tête » désigne…",
+      "answer": "la partie large en haut du clou",
+      "options": [
+        "la pointe du clou",
+        "le visage du clou",
+        "la partie large en haut du clou"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "Un même mot peut avoir plusieurs sens : c’est la polysémie."
+    },
+    {
+      "id": "lexique-02",
+      "kind": "choice",
+      "prompt": "Quelle est la bonne orthographe ?",
+      "answer": "longtemps",
+      "options": [
+        "longtamps",
+        "longtemp",
+        "longtemps"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "« longtemps » est un adverbe invariable ; on mémorise sa forme complète."
+    },
+    {
+      "id": "synonymes-03",
+      "kind": "choice",
+      "prompt": "Quel mot peut remplacer « immense » ?",
+      "answer": "gigantesque",
+      "options": [
+        "ordinaire",
+        "minuscule",
+        "gigantesque"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "« immense » et « gigantesque » indiquent une très grande taille."
+    },
+    {
+      "id": "familles-03",
+      "kind": "choice",
+      "prompt": "Que signifie « impossible » ?",
+      "answer": "qui ne peut pas être réalisé",
+      "options": [
+        "qui est très facile",
+        "qui ne peut pas être réalisé",
+        "qui peut être réalisé"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Le préfixe im- donne ici le sens contraire de « possible »."
+    },
+    {
+      "id": "contexte-03",
+      "kind": "choice",
+      "prompt": "« Le sentier était escarpé : il montait très fort. » Que signifie « escarpé » ?",
+      "answer": "en pente raide",
+      "options": [
+        "très large",
+        "en pente raide",
+        "parfaitement plat"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "La suite de la phrase, « il montait très fort », permet de comprendre le mot."
+    },
+    {
+      "id": "familles-04",
+      "kind": "choice",
+      "prompt": "Quel mot est formé avec un suffixe qui désigne un métier ?",
+      "answer": "boulanger",
+      "options": [
+        "boulanger",
+        "rapidement",
+        "maisonnette"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Le suffixe -er désigne ici la personne qui exerce le métier."
+    }
+  ]
+}

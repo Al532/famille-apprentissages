@@ -1,0 +1,154 @@
+{
+  "id": "francais-lecture-6e",
+  "version": "1.0.0",
+  "title": "Lire et comprendre",
+  "subject": "Français",
+  "levels": [
+    "6e"
+  ],
+  "description": "Lis de courts textes, repère les informations et les pronoms, puis déduis ce qui est suggéré sans être écrit directement.",
+  "skills": [
+    {
+      "id": "recit-explicite",
+      "label": "Prélever une information et identifier les reprises"
+    },
+    {
+      "id": "recit-implicite",
+      "label": "Déduire à partir des indices du récit"
+    },
+    {
+      "id": "document",
+      "label": "Comprendre un texte pratique"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "recit-explicite-01",
+      "kind": "choice",
+      "prompt": "Où Noé trouve-t-il le chien ?",
+      "answer": "près du portail du collège",
+      "options": [
+        "chez sa mère",
+        "près du portail du collège",
+        "dans une voiture"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "Le texte dit « en sortant du collège » puis « près du portail ».",
+      "passage": "En sortant du collège, Noé aperçoit un petit chien près du portail. Il n’a pas de collier et tremble. Noé retire sa veste, en enveloppe l’animal puis appelle sa mère. Elle arrive dix minutes plus tard avec une couverture."
+    },
+    {
+      "id": "recit-implicite-01",
+      "kind": "choice",
+      "prompt": "Pourquoi Noé enveloppe-t-il le chien dans sa veste ?",
+      "answer": "pour le réchauffer",
+      "options": [
+        "pour le réchauffer",
+        "pour l’empêcher de voir",
+        "pour le cacher à sa mère"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "Le chien tremble ; le geste de Noé suggère qu’il veut le réchauffer.",
+      "passage": "En sortant du collège, Noé aperçoit un petit chien près du portail. Il n’a pas de collier et tremble. Noé retire sa veste, en enveloppe l’animal puis appelle sa mère. Elle arrive dix minutes plus tard avec une couverture."
+    },
+    {
+      "id": "document-01",
+      "kind": "choice",
+      "prompt": "Quand peut-on venir jardiner par beau temps ?",
+      "answer": "samedi à 10 h",
+      "options": [
+        "mercredi à 15 h",
+        "samedi à 10 h",
+        "mardi à 10 h"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "Le jardin ouvre le mercredi et le samedi entre 9 h et 12 h.",
+      "passage": "Le jardin partagé ouvre le mercredi et le samedi, de 9 h à 12 h. Chaque visiteur apporte ses gants. Les outils sont prêtés sur place. En cas de forte pluie, le jardin reste fermé. Les récoltes sont partagées entre les participants."
+    },
+    {
+      "id": "recit-explicite-02",
+      "kind": "choice",
+      "prompt": "Qui désigne « Elle » dans la dernière phrase ?",
+      "answer": "la mère de Noé",
+      "options": [
+        "une passante",
+        "la veste",
+        "la mère de Noé"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "« Elle » reprend « sa mère », appelée dans la phrase précédente.",
+      "passage": "En sortant du collège, Noé aperçoit un petit chien près du portail. Il n’a pas de collier et tremble. Noé retire sa veste, en enveloppe l’animal puis appelle sa mère. Elle arrive dix minutes plus tard avec une couverture."
+    },
+    {
+      "id": "recit-implicite-02",
+      "kind": "choice",
+      "prompt": "Peut-on affirmer que le chien a été abandonné ?",
+      "answer": "non, le texte ne le dit pas",
+      "options": [
+        "oui, c’est certain",
+        "non, le texte ne le dit pas",
+        "oui, Noé l’a vu"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "L’absence de collier ne prouve pas l’abandon : le chien pourrait aussi s’être perdu.",
+      "passage": "En sortant du collège, Noé aperçoit un petit chien près du portail. Il n’a pas de collier et tremble. Noé retire sa veste, en enveloppe l’animal puis appelle sa mère. Elle arrive dix minutes plus tard avec une couverture."
+    },
+    {
+      "id": "document-02",
+      "kind": "choice",
+      "prompt": "Que faut-il apporter ?",
+      "answer": "ses gants",
+      "options": [
+        "ses récoltes",
+        "ses outils",
+        "ses gants"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "Les gants sont à apporter ; les outils sont prêtés sur place.",
+      "passage": "Le jardin partagé ouvre le mercredi et le samedi, de 9 h à 12 h. Chaque visiteur apporte ses gants. Les outils sont prêtés sur place. En cas de forte pluie, le jardin reste fermé. Les récoltes sont partagées entre les participants."
+    },
+    {
+      "id": "document-03",
+      "kind": "choice",
+      "prompt": "Un samedi de forte pluie, le jardin est…",
+      "answer": "fermé",
+      "options": [
+        "ouvert à 9 h",
+        "ouvert à 12 h",
+        "fermé"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "La règle concernant la forte pluie l’emporte sur les horaires habituels.",
+      "passage": "Le jardin partagé ouvre le mercredi et le samedi, de 9 h à 12 h. Chaque visiteur apporte ses gants. Les outils sont prêtés sur place. En cas de forte pluie, le jardin reste fermé. Les récoltes sont partagées entre les participants."
+    },
+    {
+      "id": "document-04",
+      "kind": "choice",
+      "prompt": "À qui reviennent les récoltes ?",
+      "answer": "aux participants",
+      "options": [
+        "à tous les habitants sans exception",
+        "uniquement au responsable",
+        "aux participants"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "Le texte précise qu’elles sont partagées entre les participants.",
+      "passage": "Le jardin partagé ouvre le mercredi et le samedi, de 9 h à 12 h. Chaque visiteur apporte ses gants. Les outils sont prêtés sur place. En cas de forte pluie, le jardin reste fermé. Les récoltes sont partagées entre les participants."
+    }
+  ]
+}

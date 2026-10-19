@@ -1,0 +1,512 @@
+{
+  "id": "francais-homophones-determinants-6e",
+  "version": "1.0.0",
+  "title": "Homophones : petits mots, grands pièges",
+  "subject": "Français",
+  "levels": [
+    "6e"
+  ],
+  "description": "Fin de CM2 → 6e. ce/se, ces/ses, c’est/s’est, leur/leurs, ma/m’a/m’as, mon/m’ont et ton/t’ont, avec des explications pour chaque réponse.",
+  "skills": [
+    {
+      "id": "ce-se",
+      "label": "Distinguer ce et se"
+    },
+    {
+      "id": "ces-ses",
+      "label": "Distinguer ces et ses"
+    },
+    {
+      "id": "cest-sest",
+      "label": "Distinguer c’est et s’est"
+    },
+    {
+      "id": "leur-leurs",
+      "label": "Distinguer leur et leurs"
+    },
+    {
+      "id": "ma-ma-mas",
+      "label": "Distinguer ma, m’a et m’as"
+    },
+    {
+      "id": "mon-mont-ton-tont",
+      "label": "Distinguer mon/m’ont et ton/t’ont"
+    },
+    {
+      "id": "ton-tont",
+      "label": "Distinguer ton et t’ont"
+    },
+    {
+      "id": "sa-ca",
+      "label": "Distinguer sa et ça"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ce-se-01",
+      "kind": "choice",
+      "prompt": "Complète avec ce, se : « Il ___ lave les mains. »",
+      "answer": "se",
+      "options": [
+        "se",
+        "ce"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "À la première personne : « Je me lave les mains ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+    },
+    {
+      "id": "ces-ses-01",
+      "kind": "choice",
+      "prompt": "Complète avec ces, ses : « Regarde ___ montagnes là-bas ! »",
+      "answer": "ces",
+      "options": [
+        "ses",
+        "ces"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "On désigne des montagnes : « ces montagnes-là ». « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+    },
+    {
+      "id": "cest-sest-01",
+      "kind": "choice",
+      "prompt": "Complète avec c’est, s’est : « ___ une bonne idée ! »",
+      "answer": "c’est",
+      "options": [
+        "s’est",
+        "c’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "On peut dire : « Cela est une bonne idée ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "leur-leurs-01",
+      "kind": "choice",
+      "prompt": "Complète avec leur, leurs : « Les élèves prennent chacun ___ cahier. »",
+      "answer": "leur",
+      "options": [
+        "leurs",
+        "leur"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Le nom possédé « cahier » est singulier. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+    },
+    {
+      "id": "ma-ma-mas-01",
+      "kind": "choice",
+      "prompt": "Complète avec ma, m’a, m’as : « Voici ___ nouvelle trousse. »",
+      "answer": "ma",
+      "options": [
+        "m’a",
+        "m’as",
+        "ma"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » accompagne le nom féminin « trousse ». « ma » accompagne un nom féminin. « m’a » = me + a ; « m’as » = me + as, avec le sujet « tu »."
+    },
+    {
+      "id": "mon-mont-ton-tont-01",
+      "kind": "choice",
+      "prompt": "Complète avec mon, m’ont, ton, t’ont : « Je cherche ___ manteau, celui qui m’appartient. »",
+      "answer": "mon",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » indique qu’il s’agit de mon manteau à moi. « mon » et « ton » accompagnent un nom. « m’ont » = me + ont ; « t’ont » = te + ont : on peut remplacer « ont » par « avaient »."
+    },
+    {
+      "id": "ton-tont-01",
+      "kind": "choice",
+      "prompt": "Complète avec ton, t’ont : « Tu as oublié ___ cahier à toi. »",
+      "answer": "ton",
+      "options": [
+        "t’ont",
+        "ton"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » détermine le nom « cahier ». « ton » accompagne un nom ; « t’ont » contient te + ont (t’avaient)."
+    },
+    {
+      "id": "sa-ca-01",
+      "kind": "choice",
+      "prompt": "Complète avec sa, ça : « Elle cherche ___ veste. »",
+      "answer": "sa",
+      "options": [
+        "ça",
+        "sa"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "On peut dire : « Elle cherche ma veste ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+    },
+    {
+      "id": "ce-se-02",
+      "kind": "text",
+      "prompt": "Complète avec ce, se : « ___ livre raconte une aventure. »",
+      "answer": "ce",
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« ce » détermine le nom « livre » : « ce livre-là ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+    },
+    {
+      "id": "ces-ses-02",
+      "kind": "text",
+      "prompt": "Complète avec ces, ses : « Ce sont les clés de Léa : ce sont ___ clés. »",
+      "answer": "ses",
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "Les clés appartiennent à Léa : ce sont les siennes. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+    },
+    {
+      "id": "cest-sest-02",
+      "kind": "text",
+      "prompt": "Complète avec c’est, s’est : « Elle ___ levée tôt. »",
+      "answer": "s’est",
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "C’est le verbe « se lever » au passé composé. « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "leur-leurs-02",
+      "kind": "text",
+      "prompt": "Complète avec leur, leurs : « Les enfants rangent tous ___ jouets. »",
+      "answer": "leurs",
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Le nom « jouets » est pluriel. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+    },
+    {
+      "id": "ma-ma-mas-02",
+      "kind": "text",
+      "prompt": "Complète avec ma, m’a, m’as : « Léa ___ prêté un livre. »",
+      "answer": "m’a",
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« Léa m’avait prêté » : il s’agit du verbe avoir avec « elle ». « ma » accompagne un nom féminin. « m’a » = me + a ; « m’as » = me + as, avec le sujet « tu »."
+    },
+    {
+      "id": "mon-mont-ton-tont-02",
+      "kind": "text",
+      "prompt": "Complète avec mon, m’ont, ton, t’ont : « Mes amis ___ offert ce livre : c’est un cadeau pour moi. »",
+      "answer": "m’ont",
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« Mes amis m’avaient offert » montre le verbe avoir. « mon » et « ton » accompagnent un nom. « m’ont » = me + ont ; « t’ont » = te + ont : on peut remplacer « ont » par « avaient »."
+    },
+    {
+      "id": "ton-tont-02",
+      "kind": "text",
+      "prompt": "Complète avec ton, t’ont : « Tes parents ___ appelé ce matin. »",
+      "answer": "t’ont",
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "On peut dire : « Tes parents t’avaient appelé ». « ton » accompagne un nom ; « t’ont » contient te + ont (t’avaient)."
+    },
+    {
+      "id": "sa-ca-02",
+      "kind": "text",
+      "prompt": "Complète avec sa, ça : « Comment ___ va ? »",
+      "answer": "ça",
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "On peut dire : « Comment cela va ? ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+    },
+    {
+      "id": "ce-se-03",
+      "kind": "choice",
+      "prompt": "Complète avec ce, se : « Demain, ___ sera la fête. »",
+      "answer": "ce",
+      "options": [
+        "se",
+        "ce"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "On peut dire : « Cela sera la fête ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+    },
+    {
+      "id": "ces-ses-03",
+      "kind": "choice",
+      "prompt": "Complète avec ces, ses : « Je te montre ___ dessins-ci. »",
+      "answer": "ces",
+      "options": [
+        "ses",
+        "ces"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« -ci » indique qu’on montre les dessins. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+    },
+    {
+      "id": "cest-sest-03",
+      "kind": "choice",
+      "prompt": "Complète avec c’est, s’est : « Il ___ blessé en tombant. »",
+      "answer": "s’est",
+      "options": [
+        "s’est",
+        "c’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "À la première personne : « Je me suis blessé ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "leur-leurs-03",
+      "kind": "choice",
+      "prompt": "Complète avec leur, leurs : « Je ___ explique la règle. »",
+      "answer": "leur",
+      "options": [
+        "leurs",
+        "leur"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "« leur » signifie « à eux » ou « à elles » et précède le verbe. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+    },
+    {
+      "id": "ma-ma-mas-03",
+      "kind": "choice",
+      "prompt": "Complète avec ma, m’a, m’as : « Tu ___ donné une idée. »",
+      "answer": "m’as",
+      "options": [
+        "m’as",
+        "ma",
+        "m’a"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "Le sujet est « tu » : « tu m’avais donné ». « ma » accompagne un nom féminin. « m’a » = me + a ; « m’as » = me + as, avec le sujet « tu »."
+    },
+    {
+      "id": "mon-mont-ton-tont-03",
+      "kind": "choice",
+      "prompt": "Complète avec mon, m’ont, ton, t’ont : « Ces amis ___ offert ce livre à toi. »",
+      "answer": "t’ont",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« à toi » indique que les amis te l’ont offert. « mon » et « ton » accompagnent un nom. « m’ont » = me + ont ; « t’ont » = te + ont : on peut remplacer « ont » par « avaient »."
+    },
+    {
+      "id": "sa-ca-03",
+      "kind": "choice",
+      "prompt": "Complète avec sa, ça : « Il a rangé ___ chambre. »",
+      "answer": "sa",
+      "options": [
+        "ça",
+        "sa"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est le déterminant du nom féminin « chambre ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+    },
+    {
+      "id": "ce-se-04",
+      "kind": "text",
+      "prompt": "Complète avec ce, se : « Le chat ___ cache sous le lit. »",
+      "answer": "se",
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "C’est le verbe pronominal « se cacher ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+    },
+    {
+      "id": "ces-ses-04",
+      "kind": "text",
+      "prompt": "Complète avec ces, ses : « Paul a deux sœurs : ___ sœurs habitent Lyon. »",
+      "answer": "ses",
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "Il s’agit des sœurs de Paul. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+    },
+    {
+      "id": "cest-sest-04",
+      "kind": "text",
+      "prompt": "Complète avec c’est, s’est : « ___ le moment de partir. »",
+      "answer": "c’est",
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« Cela est le moment de partir » permet de reconnaître « c’est ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "leur-leurs-04",
+      "kind": "text",
+      "prompt": "Complète avec leur, leurs : « Tu ___ parles souvent. »",
+      "answer": "leur",
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "On parle « à eux » ou « à elles » ; le pronom ne prend pas de s. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+    },
+    {
+      "id": "sa-ca-04",
+      "kind": "text",
+      "prompt": "Complète avec sa, ça : « Je trouve ___ amusant. »",
+      "answer": "ça",
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "On peut dire : « Je trouve cela amusant ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+    },
+    {
+      "id": "ce-se-05",
+      "kind": "choice",
+      "prompt": "Complète avec ce, se : « Regarde ___ grand bateau ! »",
+      "answer": "ce",
+      "options": [
+        "se",
+        "ce"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« ce » accompagne le nom « bateau ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+    },
+    {
+      "id": "ces-ses-05",
+      "kind": "choice",
+      "prompt": "Complète avec ces, ses : « Admire ___ étoiles que je te montre ! »",
+      "answer": "ces",
+      "options": [
+        "ses",
+        "ces"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "Le contexte indique que l’on montre les étoiles. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+    },
+    {
+      "id": "cest-sest-05",
+      "kind": "choice",
+      "prompt": "Complète avec c’est, s’est : « Le chien ___ endormi. »",
+      "answer": "s’est",
+      "options": [
+        "s’est",
+        "c’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "Il s’agit du verbe pronominal « s’endormir ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "leur-leurs-05",
+      "kind": "choice",
+      "prompt": "Complète avec leur, leurs : « Les voisins ont repeint ___ maison commune. »",
+      "answer": "leur",
+      "options": [
+        "leurs",
+        "leur"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Il s’agit d’une seule maison : le nom est singulier. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+    },
+    {
+      "id": "sa-ca-05",
+      "kind": "choice",
+      "prompt": "Complète avec sa, ça : « Voici ___ réponse à lui. »",
+      "answer": "sa",
+      "options": [
+        "ça",
+        "sa"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » accompagne le nom féminin « réponse ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+    },
+    {
+      "id": "ce-se-06",
+      "kind": "text",
+      "prompt": "Complète avec ce, se : « Elles ___ préparent pour le concert. »",
+      "answer": "se",
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "À la première personne : « Je me prépare ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+    },
+    {
+      "id": "ces-ses-06",
+      "kind": "text",
+      "prompt": "Complète avec ces, ses : « Cette trousse appartient à Sami ; ___ crayons sont dedans. »",
+      "answer": "ses",
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "Les crayons appartiennent à Sami. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+    },
+    {
+      "id": "cest-sest-06",
+      "kind": "text",
+      "prompt": "Complète avec c’est, s’est : « ___ toi qui as trouvé la réponse. »",
+      "answer": "c’est",
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "On désigne la personne : « c’est toi ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "leur-leurs-06",
+      "kind": "text",
+      "prompt": "Complète avec leur, leurs : « Les musiciens accordent ___ instruments. »",
+      "answer": "leurs",
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Le nom « instruments » est pluriel. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+    },
+    {
+      "id": "sa-ca-06",
+      "kind": "text",
+      "prompt": "Complète avec sa, ça : « ___ ne change rien. »",
+      "answer": "ça",
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "On peut dire : « Cela ne change rien ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+    }
+  ]
+}

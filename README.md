@@ -55,6 +55,8 @@ La CI vérifie le catalogue, les types, le moteur, les builds et les règles Fir
 
 Le projet Firebase réel reste à créer et à configurer. Copier `.env.example` en `.env.local` puis suivre [la mise en service](docs/firebase.md). L’authentification détermine les rôles et la famille ; le serveur évalue et enregistre les réponses. Le chemin `/parents/` organise le site, les droits Firebase protègent les données.
 
-Les QCM, réponses numériques et flashcards fonctionnent, avec deux petits ateliers d’exemple. Ce contenu n’est ni un diagnostic scolaire ni une couverture du programme. L’import Anki, les parcours musicaux et l’analyse micro restent des modules à développer.
+Les QCM, réponses numériques, réponses écrites courtes et flashcards fonctionnent. Le catalogue comprend deux ateliers mathématiques d’exemple et sept ateliers de français de consolidation CM2 → 6e : 176 exercices, dont 116 sur les homophones et terminaisons verbales proches, avec corrections expliquées. On peut filtrer les matières et choisir une compétence précise dans un atelier. Voir [le contenu et les repères pédagogiques](docs/francais-6e.md).
+
+Ce contenu n’est ni un diagnostic scolaire ni une couverture intégrale du programme : l’expression orale, la fluidité de lecture et la rédaction longue ne sont pas évaluées. L’import Anki, les parcours musicaux et l’analyse micro restent des modules à développer.
 
 [Architecture](docs/architecture.md) · [Modules](docs/modules.md) · [Firebase](docs/firebase.md) · [GitHub Pages](docs/github-pages.md)

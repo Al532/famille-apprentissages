@@ -1,0 +1,311 @@
+{
+  "id": "francais-conjugaison-6e",
+  "version": "1.0.0",
+  "title": "Conjugaison : les repères essentiels",
+  "subject": "Français",
+  "levels": [
+    "6e"
+  ],
+  "description": "Présent, imparfait, futur, passé composé, passé simple et plus-que-parfait : reconnaître les temps et conjuguer les verbes fréquents.",
+  "skills": [
+    {
+      "id": "temps-present",
+      "label": "Conjuguer au présent"
+    },
+    {
+      "id": "temps-imparfait",
+      "label": "Conjuguer au imparfait"
+    },
+    {
+      "id": "temps-futur",
+      "label": "Conjuguer au futur"
+    },
+    {
+      "id": "temps-passe-compose",
+      "label": "Conjuguer au passé composé"
+    },
+    {
+      "id": "temps-passe-simple",
+      "label": "Conjuguer au passé simple"
+    },
+    {
+      "id": "temps-plus-que-parfait",
+      "label": "Conjuguer au plus-que-parfait"
+    },
+    {
+      "id": "identifier-temps",
+      "label": "Reconnaître les temps verbaux"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "temps-present-01",
+      "kind": "choice",
+      "prompt": "Conjugue « faire » au présent : « Vous ___ un exercice. »",
+      "answer": "faites",
+      "options": [
+        "faisez",
+        "faites",
+        "font"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, faire donne : nous faisons, vous faites, ils font."
+    },
+    {
+      "id": "temps-imparfait-01",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au imparfait : « Nous ___ dans la cour. »",
+      "answer": "jouions",
+      "options": [
+        "jouions",
+        "jouerons",
+        "jouons"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "L’imparfait se forme avec le radical de « nous jouons » et la terminaison -ions."
+    },
+    {
+      "id": "temps-futur-01",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » au futur : « Nous ___ demain. »",
+      "answer": "viendrons",
+      "options": [
+        "viendrons",
+        "viendrions",
+        "venons"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Venir a le radical « viendr- » au futur et la terminaison -ons avec nous."
+    },
+    {
+      "id": "temps-passe-compose-01",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au passé composé : « Elle ___ son travail. »",
+      "answer": "a fini",
+      "options": [
+        "avait fini",
+        "finissait",
+        "a fini"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Le passé composé utilise l’auxiliaire au présent et le participe passé."
+    },
+    {
+      "id": "temps-passe-simple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « ouvrir » au passé simple : « Il ___ la porte. »",
+      "answer": "ouvrit",
+      "options": [
+        "ouvrit",
+        "ouvrait",
+        "a ouvert"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "« ouvrit » est au passé simple ; « ouvrait » est à l’imparfait."
+    },
+    {
+      "id": "temps-plus-que-parfait-01",
+      "kind": "choice",
+      "prompt": "Conjugue « manger » au plus-que-parfait : « J’___ mon goûter avant son arrivée. »",
+      "answer": "avais mangé",
+      "options": [
+        "aurai mangé",
+        "ai mangé",
+        "avais mangé"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Le plus-que-parfait se forme avec l’auxiliaire à l’imparfait et le participe passé."
+    },
+    {
+      "id": "identifier-temps-01",
+      "kind": "choice",
+      "prompt": "À quel temps est le verbe dans « Nous avions compris. » ?",
+      "answer": "plus-que-parfait",
+      "options": [
+        "imparfait",
+        "passé composé",
+        "passé simple",
+        "plus-que-parfait"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "L’auxiliaire « avions » est à l’imparfait, suivi du participe « compris »."
+    },
+    {
+      "id": "temps-present-02",
+      "kind": "text",
+      "prompt": "Conjugue « aller » au présent : « Nous ___ à la piscine. »",
+      "answer": "allons",
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Avec « nous », aller se conjugue « allons »."
+    },
+    {
+      "id": "temps-imparfait-02",
+      "kind": "text",
+      "prompt": "Conjugue « être » au imparfait : « Elles ___ heureuses. »",
+      "answer": "étaient",
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Être à l’imparfait avec « elles » : « étaient »."
+    },
+    {
+      "id": "temps-futur-02",
+      "kind": "text",
+      "prompt": "Conjugue « voir » au futur : « Je ___ la réponse. »",
+      "answer": "verrai",
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur, voir donne « je verrai » ; « verrais » est au conditionnel."
+    },
+    {
+      "id": "temps-passe-compose-02",
+      "kind": "text",
+      "prompt": "Conjugue « aller » au passé composé : « Ils ___ au musée. »",
+      "answer": "sont allés",
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Aller se conjugue avec être ; « allés » s’accorde avec « Ils »."
+    },
+    {
+      "id": "temps-passe-simple-02",
+      "kind": "text",
+      "prompt": "Conjugue « prendre » au passé simple : « Elles ___ la parole. »",
+      "answer": "prirent",
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, prendre donne « ils/elles prirent »."
+    },
+    {
+      "id": "temps-plus-que-parfait-02",
+      "kind": "text",
+      "prompt": "Conjugue « partir » au plus-que-parfait : « Elle ___ avant mon arrivée. »",
+      "answer": "était partie",
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "« était » est l’auxiliaire être à l’imparfait ; « partie » s’accorde avec « Elle »."
+    },
+    {
+      "id": "identifier-temps-02",
+      "kind": "choice",
+      "prompt": "À quel temps est le verbe dans « Elle chanta. » ?",
+      "answer": "passé simple",
+      "options": [
+        "passé composé",
+        "passé simple",
+        "plus-que-parfait",
+        "imparfait"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "« chanta » est une forme simple du passé, à la troisième personne du singulier."
+    },
+    {
+      "id": "temps-present-03",
+      "kind": "choice",
+      "prompt": "Conjugue « prendre » au présent : « Tu ___ ton manteau. »",
+      "answer": "prends",
+      "options": [
+        "prennent",
+        "prend",
+        "prends"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Avec « tu », prendre s’écrit « prends »."
+    },
+    {
+      "id": "temps-imparfait-03",
+      "kind": "choice",
+      "prompt": "Conjugue « avoir » au imparfait : « Tu ___ peur du noir. »",
+      "answer": "avais",
+      "options": [
+        "avait",
+        "avais",
+        "avez"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Avec « tu », l’imparfait d’avoir se termine par -ais."
+    },
+    {
+      "id": "temps-futur-03",
+      "kind": "choice",
+      "prompt": "Conjugue « partir » au futur : « Ils ___ en voyage. »",
+      "answer": "partiront",
+      "options": [
+        "partirons",
+        "partiront",
+        "partaient"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Avec « ils », le futur se termine par -ont."
+    },
+    {
+      "id": "identifier-temps-03",
+      "kind": "choice",
+      "prompt": "À quel temps est le verbe dans « Tu as lu. » ?",
+      "answer": "passé composé",
+      "options": [
+        "passé simple",
+        "plus-que-parfait",
+        "imparfait",
+        "passé composé"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "L’auxiliaire « as » est au présent, suivi du participe passé « lu »."
+    },
+    {
+      "id": "temps-present-04",
+      "kind": "text",
+      "prompt": "Conjugue « dire » au présent : « Ils ___ la vérité. »",
+      "answer": "disent",
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent : nous disons, vous dites, ils disent."
+    },
+    {
+      "id": "identifier-temps-04",
+      "kind": "choice",
+      "prompt": "À quel temps est le verbe dans « Vous écriviez. » ?",
+      "answer": "imparfait",
+      "options": [
+        "plus-que-parfait",
+        "imparfait",
+        "passé composé",
+        "passé simple"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "La terminaison -iez marque ici l’imparfait avec « vous »."
+    }
+  ]
+}

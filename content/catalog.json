@@ -1,7 +1,14 @@
 {
   "schemaVersion": 1,
-  "revision": "0.1.0",
+  "revision": "0.2.0",
   "packs": [
+    "packs/francais-homophones-bases-6e.json",
+    "packs/francais-homophones-determinants-6e.json",
+    "packs/francais-homophones-contexte-6e.json",
+    "packs/francais-grammaire-accords-6e.json",
+    "packs/francais-conjugaison-6e.json",
+    "packs/francais-vocabulaire-6e.json",
+    "packs/francais-lecture-6e.json",
     "packs/calcul-ce1.json",
     "packs/fractions-6e.json"
   ]

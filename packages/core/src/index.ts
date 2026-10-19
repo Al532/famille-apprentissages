@@ -2,7 +2,7 @@ import {z} from 'zod';
 import {createEmptyCard,fsrs,type Grade,type Card} from 'ts-fsrs';
 export const CONTRACT_VERSION=1 as const;
 const id=z.string().regex(/^[a-z0-9][a-z0-9._-]{0,79}$/);
-export const exerciseSchema=z.object({id,kind:z.enum(['choice','number','flashcard']),prompt:z.string().min(1).max(1000),answer:z.string().min(1).max(500),options:z.array(z.string()).min(2).max(8).optional(),skillIds:z.array(id).min(1),explanation:z.string().max(1000).optional()}).strict().superRefine((q,ctx)=>{
+export const exerciseSchema=z.object({id,kind:z.enum(['choice','number','flashcard','text']),prompt:z.string().min(1).max(1000),passage:z.string().min(1).max(3000).optional(),answer:z.string().min(1).max(500),options:z.array(z.string()).min(2).max(8).optional(),skillIds:z.array(id).min(1),explanation:z.string().max(1000).optional()}).strict().superRefine((q,ctx)=>{
  if(q.kind==='choice'&&(!q.options||!q.options.includes(q.answer)))ctx.addIssue({code:'custom',message:'Un QCM doit contenir la réponse dans ses choix.'});
  if(q.kind==='number'&&!Number.isFinite(Number(q.answer.replace(',','.'))))ctx.addIssue({code:'custom',message:'Réponse numérique invalide.'});
 });
@@ -31,7 +31,7 @@ export function schedule(previous:StoredCard|undefined,rating:1|2|3|4,now=new Da
 export function evaluate(catalog:Catalog,raw:unknown,now=new Date()):Result {
  const a=attemptSchema.parse(raw),m=catalog.modules.find(m=>m.id===a.moduleId),q=m?.exercises.find(q=>q.id===a.exerciseId);
  if(!m||!q||a.catalogRevision!==catalog.revision||a.moduleVersion!==m.version)throw new Error('CATALOG_MISMATCH');
- const norm=(s:string)=>s.trim().normalize('NFC').toLocaleLowerCase('fr');
+ const norm=(s:string)=>s.trim().normalize('NFC').replace(/[’‘]/g,"'").replace(/\s+/g,' ').toLocaleLowerCase('fr');
  const correct=q.kind==='flashcard'?null:q.kind==='number'?norm(a.answer)!==''&&Number(a.answer.replace(',','.'))===Number(q.answer.replace(',','.')):norm(a.answer)===norm(q.answer);
  if(q.kind==='flashcard'&&a.selfRating===undefined)throw new Error('RATING_REQUIRED');
  return {schemaVersion:1,id:a.id,learnerId:a.learnerId,moduleId:m.id,moduleVersion:m.version,catalogRevision:catalog.revision,exerciseId:q.id,skillIds:q.skillIds,kind:q.kind,correct,rating:correct===null?a.selfRating!:correct?3:1,durationMs:a.durationMs,recordedAt:now.toISOString()};

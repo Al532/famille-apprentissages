@@ -1,7 +1,2590 @@
 {
   "schemaVersion": 1,
-  "revision": "0.1.0",
+  "revision": "0.2.0",
   "modules": [
+    {
+      "id": "francais-homophones-bases-6e",
+      "version": "1.0.0",
+      "title": "Homophones : les indispensables",
+      "subject": "Français",
+      "levels": [
+        "6e"
+      ],
+      "description": "Fin de CM2 → 6e. a/as/à, et/est/es, on/ont, son/sont, ou/où : complète les phrases et découvre les tests de remplacement.",
+      "skills": [
+        {
+          "id": "a-as-a",
+          "label": "Distinguer a, as et à"
+        },
+        {
+          "id": "et-est-es",
+          "label": "Distinguer et, est et es"
+        },
+        {
+          "id": "on-ont",
+          "label": "Distinguer on et ont"
+        },
+        {
+          "id": "son-sont",
+          "label": "Distinguer son et sont"
+        },
+        {
+          "id": "ou-ou",
+          "label": "Distinguer ou et où"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "a-as-a-01",
+          "kind": "choice",
+          "prompt": "Complète avec a, as, à : « Lina ___ oublié son cahier. »",
+          "answer": "a",
+          "options": [
+            "as",
+            "à",
+            "a"
+          ],
+          "skillIds": [
+            "a-as-a"
+          ],
+          "explanation": "On peut dire : « Lina avait oublié son cahier ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+        },
+        {
+          "id": "et-est-es-01",
+          "kind": "choice",
+          "prompt": "Complète avec et, est, es : « Le ciel ___ gris. »",
+          "answer": "est",
+          "options": [
+            "est",
+            "es",
+            "et"
+          ],
+          "skillIds": [
+            "et-est-es"
+          ],
+          "explanation": "On peut dire : « Le ciel était gris ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+        },
+        {
+          "id": "on-ont-01",
+          "kind": "choice",
+          "prompt": "Complète avec on, ont : « Demain, ___ ira au musée. »",
+          "answer": "on",
+          "options": [
+            "ont",
+            "on"
+          ],
+          "skillIds": [
+            "on-ont"
+          ],
+          "explanation": "On peut dire : « il ira au musée ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+        },
+        {
+          "id": "son-sont-01",
+          "kind": "choice",
+          "prompt": "Complète avec son, sont : « Les portes ___ ouvertes. »",
+          "answer": "sont",
+          "options": [
+            "sont",
+            "son"
+          ],
+          "skillIds": [
+            "son-sont"
+          ],
+          "explanation": "On peut dire : « Les portes étaient ouvertes ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+        },
+        {
+          "id": "ou-ou-01",
+          "kind": "choice",
+          "prompt": "Complète avec ou, où : « Veux-tu une pomme ___ une poire ? »",
+          "answer": "ou",
+          "options": [
+            "où",
+            "ou"
+          ],
+          "skillIds": [
+            "ou-ou"
+          ],
+          "explanation": "On peut dire : « une pomme ou bien une poire ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+        },
+        {
+          "id": "a-as-a-02",
+          "kind": "text",
+          "prompt": "Complète avec a, as, à : « Tu ___ une nouvelle règle. »",
+          "answer": "as",
+          "skillIds": [
+            "a-as-a"
+          ],
+          "explanation": "Le sujet est « tu » : « tu avais une nouvelle règle ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+        },
+        {
+          "id": "et-est-es-02",
+          "kind": "text",
+          "prompt": "Complète avec et, est, es : « Je prends un livre ___ un crayon. »",
+          "answer": "et",
+          "skillIds": [
+            "et-est-es"
+          ],
+          "explanation": "On ajoute un crayon à un livre : « et puis un crayon ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+        },
+        {
+          "id": "on-ont-02",
+          "kind": "text",
+          "prompt": "Complète avec on, ont : « Les joueurs ___ gagné. »",
+          "answer": "ont",
+          "skillIds": [
+            "on-ont"
+          ],
+          "explanation": "On peut dire : « Les joueurs avaient gagné ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+        },
+        {
+          "id": "son-sont-02",
+          "kind": "text",
+          "prompt": "Complète avec son, sont : « Il range ___ manteau. »",
+          "answer": "son",
+          "skillIds": [
+            "son-sont"
+          ],
+          "explanation": "On peut dire : « Il range mon manteau ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+        },
+        {
+          "id": "ou-ou-02",
+          "kind": "text",
+          "prompt": "Complète avec ou, où : « ___ habites-tu ? »",
+          "answer": "où",
+          "skillIds": [
+            "ou-ou"
+          ],
+          "explanation": "La question porte sur le lieu où tu habites. « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+        },
+        {
+          "id": "a-as-a-03",
+          "kind": "choice",
+          "prompt": "Complète avec a, as, à : « Nous allons ___ la piscine. »",
+          "answer": "à",
+          "options": [
+            "à",
+            "a",
+            "as"
+          ],
+          "skillIds": [
+            "a-as-a"
+          ],
+          "explanation": "« à » introduit un lieu : « avait la piscine » ne convient pas. « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+        },
+        {
+          "id": "et-est-es-03",
+          "kind": "choice",
+          "prompt": "Complète avec et, est, es : « Tu ___ prêt pour partir. »",
+          "answer": "es",
+          "options": [
+            "es",
+            "et",
+            "est"
+          ],
+          "skillIds": [
+            "et-est-es"
+          ],
+          "explanation": "Avec « tu », on écrit « es » : « tu étais prêt ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+        },
+        {
+          "id": "on-ont-03",
+          "kind": "choice",
+          "prompt": "Complète avec on, ont : « Dans cette salle, ___ parle doucement. »",
+          "answer": "on",
+          "options": [
+            "ont",
+            "on"
+          ],
+          "skillIds": [
+            "on-ont"
+          ],
+          "explanation": "Le sujet de « parle » est le pronom « on ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+        },
+        {
+          "id": "son-sont-03",
+          "kind": "choice",
+          "prompt": "Complète avec son, sont : « Ces exercices ___ faciles. »",
+          "answer": "sont",
+          "options": [
+            "sont",
+            "son"
+          ],
+          "skillIds": [
+            "son-sont"
+          ],
+          "explanation": "Le sujet est pluriel : « Ces exercices étaient faciles ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+        },
+        {
+          "id": "ou-ou-03",
+          "kind": "choice",
+          "prompt": "Complète avec ou, où : « Voici la maison ___ je suis né. »",
+          "answer": "où",
+          "options": [
+            "où",
+            "ou"
+          ],
+          "skillIds": [
+            "ou-ou"
+          ],
+          "explanation": "« où » reprend un lieu : « la maison ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+        },
+        {
+          "id": "a-as-a-04",
+          "kind": "text",
+          "prompt": "Complète avec a, as, à : « Le train ___ du retard. »",
+          "answer": "a",
+          "skillIds": [
+            "a-as-a"
+          ],
+          "explanation": "On peut dire : « Le train avait du retard ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+        },
+        {
+          "id": "et-est-es-04",
+          "kind": "text",
+          "prompt": "Complète avec et, est, es : « Cette histoire ___ passionnante. »",
+          "answer": "est",
+          "skillIds": [
+            "et-est-es"
+          ],
+          "explanation": "Le sujet « cette histoire » est au singulier : « était passionnante ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+        },
+        {
+          "id": "on-ont-04",
+          "kind": "text",
+          "prompt": "Complète avec on, ont : « Mes voisins ___ deux chats. »",
+          "answer": "ont",
+          "skillIds": [
+            "on-ont"
+          ],
+          "explanation": "« Mes voisins avaient deux chats » conserve le sens de la phrase. « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+        },
+        {
+          "id": "son-sont-04",
+          "kind": "text",
+          "prompt": "Complète avec son, sont : « Maya cherche ___ écharpe. »",
+          "answer": "son",
+          "skillIds": [
+            "son-sont"
+          ],
+          "explanation": "Devant « écharpe », nom féminin commençant par une voyelle, on emploie « son ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+        },
+        {
+          "id": "ou-ou-04",
+          "kind": "text",
+          "prompt": "Complète avec ou, où : « Tu peux écrire au stylo ___ au crayon. »",
+          "answer": "ou",
+          "skillIds": [
+            "ou-ou"
+          ],
+          "explanation": "Deux possibilités sont proposées. « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+        },
+        {
+          "id": "a-as-a-05",
+          "kind": "choice",
+          "prompt": "Complète avec a, as, à : « Est-ce que tu ___ fini ton exercice ? »",
+          "answer": "as",
+          "options": [
+            "a",
+            "as",
+            "à"
+          ],
+          "skillIds": [
+            "a-as-a"
+          ],
+          "explanation": "Avec « tu », on écrit « as » : « tu avais fini ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+        },
+        {
+          "id": "et-est-es-05",
+          "kind": "choice",
+          "prompt": "Complète avec et, est, es : « Léa ___ Sami jouent ensemble. »",
+          "answer": "et",
+          "options": [
+            "et",
+            "est",
+            "es"
+          ],
+          "skillIds": [
+            "et-est-es"
+          ],
+          "explanation": "« et » relie les deux prénoms. « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+        },
+        {
+          "id": "on-ont-05",
+          "kind": "choice",
+          "prompt": "Complète avec on, ont : « Est-ce qu’___ peut entrer ? »",
+          "answer": "on",
+          "options": [
+            "ont",
+            "on"
+          ],
+          "skillIds": [
+            "on-ont"
+          ],
+          "explanation": "« il peut entrer » fonctionne ; « avaient peut » ne fonctionne pas. « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+        },
+        {
+          "id": "son-sont-05",
+          "kind": "choice",
+          "prompt": "Complète avec son, sont : « Les deux frères ___ arrivés. »",
+          "answer": "sont",
+          "options": [
+            "sont",
+            "son"
+          ],
+          "skillIds": [
+            "son-sont"
+          ],
+          "explanation": "« étaient arrivés » montre qu’il s’agit du verbe être. « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+        },
+        {
+          "id": "ou-ou-05",
+          "kind": "choice",
+          "prompt": "Complète avec ou, où : « Le jour ___ il est arrivé, il pleuvait. »",
+          "answer": "où",
+          "options": [
+            "où",
+            "ou"
+          ],
+          "skillIds": [
+            "ou-ou"
+          ],
+          "explanation": "« où » reprend ici un moment : « le jour ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+        },
+        {
+          "id": "a-as-a-06",
+          "kind": "text",
+          "prompt": "Complète avec a, as, à : « Elle apprend ___ nager. »",
+          "answer": "à",
+          "skillIds": [
+            "a-as-a"
+          ],
+          "explanation": "« à » relie ici le verbe « apprend » à l’infinitif « nager ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+        },
+        {
+          "id": "et-est-es-06",
+          "kind": "text",
+          "prompt": "Complète avec et, est, es : « Pourquoi ___-tu si pressé ? »",
+          "answer": "es",
+          "skillIds": [
+            "et-est-es"
+          ],
+          "explanation": "Le sujet reste « tu », même après le verbe : « étais-tu ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+        },
+        {
+          "id": "on-ont-06",
+          "kind": "text",
+          "prompt": "Complète avec on, ont : « Elles n’___ pas peur. »",
+          "answer": "ont",
+          "skillIds": [
+            "on-ont"
+          ],
+          "explanation": "À l’imparfait : « Elles n’avaient pas peur ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+        },
+        {
+          "id": "son-sont-06",
+          "kind": "text",
+          "prompt": "Complète avec son, sont : « Elle écoute ___ morceau préféré. »",
+          "answer": "son",
+          "skillIds": [
+            "son-sont"
+          ],
+          "explanation": "« son » est le déterminant du nom « morceau ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+        },
+        {
+          "id": "ou-ou-06",
+          "kind": "text",
+          "prompt": "Complète avec ou, où : « Partons-nous maintenant ___ après le repas ? »",
+          "answer": "ou",
+          "skillIds": [
+            "ou-ou"
+          ],
+          "explanation": "On choisit entre deux moments : « maintenant ou bien après le repas ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+        }
+      ]
+    },
+    {
+      "id": "francais-homophones-determinants-6e",
+      "version": "1.0.0",
+      "title": "Homophones : petits mots, grands pièges",
+      "subject": "Français",
+      "levels": [
+        "6e"
+      ],
+      "description": "Fin de CM2 → 6e. ce/se, ces/ses, c’est/s’est, leur/leurs, ma/m’a/m’as, mon/m’ont et ton/t’ont, avec des explications pour chaque réponse.",
+      "skills": [
+        {
+          "id": "ce-se",
+          "label": "Distinguer ce et se"
+        },
+        {
+          "id": "ces-ses",
+          "label": "Distinguer ces et ses"
+        },
+        {
+          "id": "cest-sest",
+          "label": "Distinguer c’est et s’est"
+        },
+        {
+          "id": "leur-leurs",
+          "label": "Distinguer leur et leurs"
+        },
+        {
+          "id": "ma-ma-mas",
+          "label": "Distinguer ma, m’a et m’as"
+        },
+        {
+          "id": "mon-mont-ton-tont",
+          "label": "Distinguer mon/m’ont et ton/t’ont"
+        },
+        {
+          "id": "ton-tont",
+          "label": "Distinguer ton et t’ont"
+        },
+        {
+          "id": "sa-ca",
+          "label": "Distinguer sa et ça"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ce-se-01",
+          "kind": "choice",
+          "prompt": "Complète avec ce, se : « Il ___ lave les mains. »",
+          "answer": "se",
+          "options": [
+            "se",
+            "ce"
+          ],
+          "skillIds": [
+            "ce-se"
+          ],
+          "explanation": "À la première personne : « Je me lave les mains ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+        },
+        {
+          "id": "ces-ses-01",
+          "kind": "choice",
+          "prompt": "Complète avec ces, ses : « Regarde ___ montagnes là-bas ! »",
+          "answer": "ces",
+          "options": [
+            "ses",
+            "ces"
+          ],
+          "skillIds": [
+            "ces-ses"
+          ],
+          "explanation": "On désigne des montagnes : « ces montagnes-là ». « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+        },
+        {
+          "id": "cest-sest-01",
+          "kind": "choice",
+          "prompt": "Complète avec c’est, s’est : « ___ une bonne idée ! »",
+          "answer": "c’est",
+          "options": [
+            "s’est",
+            "c’est"
+          ],
+          "skillIds": [
+            "cest-sest"
+          ],
+          "explanation": "On peut dire : « Cela est une bonne idée ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+        },
+        {
+          "id": "leur-leurs-01",
+          "kind": "choice",
+          "prompt": "Complète avec leur, leurs : « Les élèves prennent chacun ___ cahier. »",
+          "answer": "leur",
+          "options": [
+            "leurs",
+            "leur"
+          ],
+          "skillIds": [
+            "leur-leurs"
+          ],
+          "explanation": "Le nom possédé « cahier » est singulier. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+        },
+        {
+          "id": "ma-ma-mas-01",
+          "kind": "choice",
+          "prompt": "Complète avec ma, m’a, m’as : « Voici ___ nouvelle trousse. »",
+          "answer": "ma",
+          "options": [
+            "m’a",
+            "m’as",
+            "ma"
+          ],
+          "skillIds": [
+            "ma-ma-mas"
+          ],
+          "explanation": "« ma » accompagne le nom féminin « trousse ». « ma » accompagne un nom féminin. « m’a » = me + a ; « m’as » = me + as, avec le sujet « tu »."
+        },
+        {
+          "id": "mon-mont-ton-tont-01",
+          "kind": "choice",
+          "prompt": "Complète avec mon, m’ont, ton, t’ont : « Je cherche ___ manteau, celui qui m’appartient. »",
+          "answer": "mon",
+          "options": [
+            "mon",
+            "m’ont",
+            "ton",
+            "t’ont"
+          ],
+          "skillIds": [
+            "mon-mont-ton-tont"
+          ],
+          "explanation": "« mon » indique qu’il s’agit de mon manteau à moi. « mon » et « ton » accompagnent un nom. « m’ont » = me + ont ; « t’ont » = te + ont : on peut remplacer « ont » par « avaient »."
+        },
+        {
+          "id": "ton-tont-01",
+          "kind": "choice",
+          "prompt": "Complète avec ton, t’ont : « Tu as oublié ___ cahier à toi. »",
+          "answer": "ton",
+          "options": [
+            "t’ont",
+            "ton"
+          ],
+          "skillIds": [
+            "ton-tont"
+          ],
+          "explanation": "« ton » détermine le nom « cahier ». « ton » accompagne un nom ; « t’ont » contient te + ont (t’avaient)."
+        },
+        {
+          "id": "sa-ca-01",
+          "kind": "choice",
+          "prompt": "Complète avec sa, ça : « Elle cherche ___ veste. »",
+          "answer": "sa",
+          "options": [
+            "ça",
+            "sa"
+          ],
+          "skillIds": [
+            "sa-ca"
+          ],
+          "explanation": "On peut dire : « Elle cherche ma veste ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+        },
+        {
+          "id": "ce-se-02",
+          "kind": "text",
+          "prompt": "Complète avec ce, se : « ___ livre raconte une aventure. »",
+          "answer": "ce",
+          "skillIds": [
+            "ce-se"
+          ],
+          "explanation": "« ce » détermine le nom « livre » : « ce livre-là ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+        },
+        {
+          "id": "ces-ses-02",
+          "kind": "text",
+          "prompt": "Complète avec ces, ses : « Ce sont les clés de Léa : ce sont ___ clés. »",
+          "answer": "ses",
+          "skillIds": [
+            "ces-ses"
+          ],
+          "explanation": "Les clés appartiennent à Léa : ce sont les siennes. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+        },
+        {
+          "id": "cest-sest-02",
+          "kind": "text",
+          "prompt": "Complète avec c’est, s’est : « Elle ___ levée tôt. »",
+          "answer": "s’est",
+          "skillIds": [
+            "cest-sest"
+          ],
+          "explanation": "C’est le verbe « se lever » au passé composé. « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+        },
+        {
+          "id": "leur-leurs-02",
+          "kind": "text",
+          "prompt": "Complète avec leur, leurs : « Les enfants rangent tous ___ jouets. »",
+          "answer": "leurs",
+          "skillIds": [
+            "leur-leurs"
+          ],
+          "explanation": "Le nom « jouets » est pluriel. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+        },
+        {
+          "id": "ma-ma-mas-02",
+          "kind": "text",
+          "prompt": "Complète avec ma, m’a, m’as : « Léa ___ prêté un livre. »",
+          "answer": "m’a",
+          "skillIds": [
+            "ma-ma-mas"
+          ],
+          "explanation": "« Léa m’avait prêté » : il s’agit du verbe avoir avec « elle ». « ma » accompagne un nom féminin. « m’a » = me + a ; « m’as » = me + as, avec le sujet « tu »."
+        },
+        {
+          "id": "mon-mont-ton-tont-02",
+          "kind": "text",
+          "prompt": "Complète avec mon, m’ont, ton, t’ont : « Mes amis ___ offert ce livre : c’est un cadeau pour moi. »",
+          "answer": "m’ont",
+          "skillIds": [
+            "mon-mont-ton-tont"
+          ],
+          "explanation": "« Mes amis m’avaient offert » montre le verbe avoir. « mon » et « ton » accompagnent un nom. « m’ont » = me + ont ; « t’ont » = te + ont : on peut remplacer « ont » par « avaient »."
+        },
+        {
+          "id": "ton-tont-02",
+          "kind": "text",
+          "prompt": "Complète avec ton, t’ont : « Tes parents ___ appelé ce matin. »",
+          "answer": "t’ont",
+          "skillIds": [
+            "ton-tont"
+          ],
+          "explanation": "On peut dire : « Tes parents t’avaient appelé ». « ton » accompagne un nom ; « t’ont » contient te + ont (t’avaient)."
+        },
+        {
+          "id": "sa-ca-02",
+          "kind": "text",
+          "prompt": "Complète avec sa, ça : « Comment ___ va ? »",
+          "answer": "ça",
+          "skillIds": [
+            "sa-ca"
+          ],
+          "explanation": "On peut dire : « Comment cela va ? ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+        },
+        {
+          "id": "ce-se-03",
+          "kind": "choice",
+          "prompt": "Complète avec ce, se : « Demain, ___ sera la fête. »",
+          "answer": "ce",
+          "options": [
+            "se",
+            "ce"
+          ],
+          "skillIds": [
+            "ce-se"
+          ],
+          "explanation": "On peut dire : « Cela sera la fête ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+        },
+        {
+          "id": "ces-ses-03",
+          "kind": "choice",
+          "prompt": "Complète avec ces, ses : « Je te montre ___ dessins-ci. »",
+          "answer": "ces",
+          "options": [
+            "ses",
+            "ces"
+          ],
+          "skillIds": [
+            "ces-ses"
+          ],
+          "explanation": "« -ci » indique qu’on montre les dessins. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+        },
+        {
+          "id": "cest-sest-03",
+          "kind": "choice",
+          "prompt": "Complète avec c’est, s’est : « Il ___ blessé en tombant. »",
+          "answer": "s’est",
+          "options": [
+            "s’est",
+            "c’est"
+          ],
+          "skillIds": [
+            "cest-sest"
+          ],
+          "explanation": "À la première personne : « Je me suis blessé ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+        },
+        {
+          "id": "leur-leurs-03",
+          "kind": "choice",
+          "prompt": "Complète avec leur, leurs : « Je ___ explique la règle. »",
+          "answer": "leur",
+          "options": [
+            "leurs",
+            "leur"
+          ],
+          "skillIds": [
+            "leur-leurs"
+          ],
+          "explanation": "« leur » signifie « à eux » ou « à elles » et précède le verbe. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+        },
+        {
+          "id": "ma-ma-mas-03",
+          "kind": "choice",
+          "prompt": "Complète avec ma, m’a, m’as : « Tu ___ donné une idée. »",
+          "answer": "m’as",
+          "options": [
+            "m’as",
+            "ma",
+            "m’a"
+          ],
+          "skillIds": [
+            "ma-ma-mas"
+          ],
+          "explanation": "Le sujet est « tu » : « tu m’avais donné ». « ma » accompagne un nom féminin. « m’a » = me + a ; « m’as » = me + as, avec le sujet « tu »."
+        },
+        {
+          "id": "mon-mont-ton-tont-03",
+          "kind": "choice",
+          "prompt": "Complète avec mon, m’ont, ton, t’ont : « Ces amis ___ offert ce livre à toi. »",
+          "answer": "t’ont",
+          "options": [
+            "mon",
+            "m’ont",
+            "ton",
+            "t’ont"
+          ],
+          "skillIds": [
+            "mon-mont-ton-tont"
+          ],
+          "explanation": "« à toi » indique que les amis te l’ont offert. « mon » et « ton » accompagnent un nom. « m’ont » = me + ont ; « t’ont » = te + ont : on peut remplacer « ont » par « avaient »."
+        },
+        {
+          "id": "sa-ca-03",
+          "kind": "choice",
+          "prompt": "Complète avec sa, ça : « Il a rangé ___ chambre. »",
+          "answer": "sa",
+          "options": [
+            "ça",
+            "sa"
+          ],
+          "skillIds": [
+            "sa-ca"
+          ],
+          "explanation": "« sa » est le déterminant du nom féminin « chambre ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+        },
+        {
+          "id": "ce-se-04",
+          "kind": "text",
+          "prompt": "Complète avec ce, se : « Le chat ___ cache sous le lit. »",
+          "answer": "se",
+          "skillIds": [
+            "ce-se"
+          ],
+          "explanation": "C’est le verbe pronominal « se cacher ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+        },
+        {
+          "id": "ces-ses-04",
+          "kind": "text",
+          "prompt": "Complète avec ces, ses : « Paul a deux sœurs : ___ sœurs habitent Lyon. »",
+          "answer": "ses",
+          "skillIds": [
+            "ces-ses"
+          ],
+          "explanation": "Il s’agit des sœurs de Paul. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+        },
+        {
+          "id": "cest-sest-04",
+          "kind": "text",
+          "prompt": "Complète avec c’est, s’est : « ___ le moment de partir. »",
+          "answer": "c’est",
+          "skillIds": [
+            "cest-sest"
+          ],
+          "explanation": "« Cela est le moment de partir » permet de reconnaître « c’est ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+        },
+        {
+          "id": "leur-leurs-04",
+          "kind": "text",
+          "prompt": "Complète avec leur, leurs : « Tu ___ parles souvent. »",
+          "answer": "leur",
+          "skillIds": [
+            "leur-leurs"
+          ],
+          "explanation": "On parle « à eux » ou « à elles » ; le pronom ne prend pas de s. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+        },
+        {
+          "id": "sa-ca-04",
+          "kind": "text",
+          "prompt": "Complète avec sa, ça : « Je trouve ___ amusant. »",
+          "answer": "ça",
+          "skillIds": [
+            "sa-ca"
+          ],
+          "explanation": "On peut dire : « Je trouve cela amusant ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+        },
+        {
+          "id": "ce-se-05",
+          "kind": "choice",
+          "prompt": "Complète avec ce, se : « Regarde ___ grand bateau ! »",
+          "answer": "ce",
+          "options": [
+            "se",
+            "ce"
+          ],
+          "skillIds": [
+            "ce-se"
+          ],
+          "explanation": "« ce » accompagne le nom « bateau ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+        },
+        {
+          "id": "ces-ses-05",
+          "kind": "choice",
+          "prompt": "Complète avec ces, ses : « Admire ___ étoiles que je te montre ! »",
+          "answer": "ces",
+          "options": [
+            "ses",
+            "ces"
+          ],
+          "skillIds": [
+            "ces-ses"
+          ],
+          "explanation": "Le contexte indique que l’on montre les étoiles. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+        },
+        {
+          "id": "cest-sest-05",
+          "kind": "choice",
+          "prompt": "Complète avec c’est, s’est : « Le chien ___ endormi. »",
+          "answer": "s’est",
+          "options": [
+            "s’est",
+            "c’est"
+          ],
+          "skillIds": [
+            "cest-sest"
+          ],
+          "explanation": "Il s’agit du verbe pronominal « s’endormir ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+        },
+        {
+          "id": "leur-leurs-05",
+          "kind": "choice",
+          "prompt": "Complète avec leur, leurs : « Les voisins ont repeint ___ maison commune. »",
+          "answer": "leur",
+          "options": [
+            "leurs",
+            "leur"
+          ],
+          "skillIds": [
+            "leur-leurs"
+          ],
+          "explanation": "Il s’agit d’une seule maison : le nom est singulier. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+        },
+        {
+          "id": "sa-ca-05",
+          "kind": "choice",
+          "prompt": "Complète avec sa, ça : « Voici ___ réponse à lui. »",
+          "answer": "sa",
+          "options": [
+            "ça",
+            "sa"
+          ],
+          "skillIds": [
+            "sa-ca"
+          ],
+          "explanation": "« sa » accompagne le nom féminin « réponse ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+        },
+        {
+          "id": "ce-se-06",
+          "kind": "text",
+          "prompt": "Complète avec ce, se : « Elles ___ préparent pour le concert. »",
+          "answer": "se",
+          "skillIds": [
+            "ce-se"
+          ],
+          "explanation": "À la première personne : « Je me prépare ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+        },
+        {
+          "id": "ces-ses-06",
+          "kind": "text",
+          "prompt": "Complète avec ces, ses : « Cette trousse appartient à Sami ; ___ crayons sont dedans. »",
+          "answer": "ses",
+          "skillIds": [
+            "ces-ses"
+          ],
+          "explanation": "Les crayons appartiennent à Sami. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+        },
+        {
+          "id": "cest-sest-06",
+          "kind": "text",
+          "prompt": "Complète avec c’est, s’est : « ___ toi qui as trouvé la réponse. »",
+          "answer": "c’est",
+          "skillIds": [
+            "cest-sest"
+          ],
+          "explanation": "On désigne la personne : « c’est toi ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+        },
+        {
+          "id": "leur-leurs-06",
+          "kind": "text",
+          "prompt": "Complète avec leur, leurs : « Les musiciens accordent ___ instruments. »",
+          "answer": "leurs",
+          "skillIds": [
+            "leur-leurs"
+          ],
+          "explanation": "Le nom « instruments » est pluriel. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+        },
+        {
+          "id": "sa-ca-06",
+          "kind": "text",
+          "prompt": "Complète avec sa, ça : « ___ ne change rien. »",
+          "answer": "ça",
+          "skillIds": [
+            "sa-ca"
+          ],
+          "explanation": "On peut dire : « Cela ne change rien ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+        }
+      ]
+    },
+    {
+      "id": "francais-homophones-contexte-6e",
+      "version": "1.0.0",
+      "title": "Homophones : le sens et les verbes",
+      "subject": "Français",
+      "levels": [
+        "6e"
+      ],
+      "description": "Consolide la/là/l’a/l’as, mais/mes/met/mets, peu/peux/peut, sans/s’en, ni/n’y et les terminaisons -er/-é dans des phrases variées.",
+      "skills": [
+        {
+          "id": "la-la-las",
+          "label": "Distinguer la, là, l’a et l’as"
+        },
+        {
+          "id": "mais-mes-met-mets",
+          "label": "Distinguer mais, mes, met et mets"
+        },
+        {
+          "id": "peu-peux-peut",
+          "label": "Distinguer peu, peux et peut"
+        },
+        {
+          "id": "sans-sen",
+          "label": "Distinguer sans et s’en"
+        },
+        {
+          "id": "ni-ny",
+          "label": "Distinguer ni et n’y"
+        },
+        {
+          "id": "infinitif-participe",
+          "label": "Choisir l’infinitif en -er ou le participe en -é"
+        },
+        {
+          "id": "homophones-lexicaux",
+          "label": "Choisir un homophone selon son sens"
+        },
+        {
+          "id": "si-sy",
+          "label": "Distinguer si et s’y"
+        },
+        {
+          "id": "mer-mere-maire",
+          "label": "Distinguer mer, mère et maire"
+        },
+        {
+          "id": "pere-paire-pair",
+          "label": "Distinguer père, paire et pair"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "la-la-las-01",
+          "kind": "choice",
+          "prompt": "Complète avec la, là, l’a, l’as : « Pose ton sac juste ___. »",
+          "answer": "là",
+          "options": [
+            "là",
+            "l’a",
+            "l’as",
+            "la"
+          ],
+          "skillIds": [
+            "la-la-las"
+          ],
+          "explanation": "On indique l’endroit où poser le sac. « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+        },
+        {
+          "id": "mais-mes-met-mets-01",
+          "kind": "choice",
+          "prompt": "Complète avec mais, mes, met, mets : « Je voudrais sortir, ___ il pleut. »",
+          "answer": "mais",
+          "options": [
+            "mes",
+            "met",
+            "mets",
+            "mais"
+          ],
+          "skillIds": [
+            "mais-mes-met-mets"
+          ],
+          "explanation": "La pluie s’oppose au souhait de sortir. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+        },
+        {
+          "id": "peu-peux-peut-01",
+          "kind": "choice",
+          "prompt": "Complète avec peu, peux, peut : « Il reste ___ de pain. »",
+          "answer": "peu",
+          "options": [
+            "peu",
+            "peux",
+            "peut"
+          ],
+          "skillIds": [
+            "peu-peux-peut"
+          ],
+          "explanation": "On parle d’une petite quantité de pain. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+        },
+        {
+          "id": "sans-sen-01",
+          "kind": "choice",
+          "prompt": "Complète avec sans, s’en : « Il est sorti ___ son manteau. »",
+          "answer": "sans",
+          "options": [
+            "s’en",
+            "sans"
+          ],
+          "skillIds": [
+            "sans-sen"
+          ],
+          "explanation": "Il n’a pas pris son manteau : on exprime une absence. « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais)."
+        },
+        {
+          "id": "ni-ny-01",
+          "kind": "choice",
+          "prompt": "Complète avec ni, n’y : « Je ne veux ni thé ___ café. »",
+          "answer": "ni",
+          "options": [
+            "n’y",
+            "ni"
+          ],
+          "skillIds": [
+            "ni-ny"
+          ],
+          "explanation": "On coordonne les deux éléments refusés : « ni… ni… ». « ni » coordonne des éléments dans une négation. « n’y » associe la négation n’ au pronom y (je n’y vais pas)."
+        },
+        {
+          "id": "infinitif-participe-01",
+          "kind": "choice",
+          "prompt": "Complète avec jouer, joué : « Il veut ___ avec nous. »",
+          "answer": "jouer",
+          "options": [
+            "joué",
+            "jouer"
+          ],
+          "skillIds": [
+            "infinitif-participe"
+          ],
+          "explanation": "On peut dire : « Il veut prendre… » ; on emploie l’infinitif. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé."
+        },
+        {
+          "id": "homophones-lexicaux-01",
+          "kind": "choice",
+          "prompt": "Complète avec verre, vert, vers, ver : « Je bois dans un ___. »",
+          "answer": "verre",
+          "options": [
+            "ver",
+            "verre",
+            "vert",
+            "vers"
+          ],
+          "skillIds": [
+            "homophones-lexicaux"
+          ],
+          "explanation": "Un « verre » est un récipient. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal."
+        },
+        {
+          "id": "si-sy-01",
+          "kind": "choice",
+          "prompt": "Complète avec si, s’y : « Nous sortirons ___ la pluie cesse. »",
+          "answer": "si",
+          "options": [
+            "s’y",
+            "si"
+          ],
+          "skillIds": [
+            "si-sy"
+          ],
+          "explanation": "La sortie dépend d’une condition : la fin de la pluie. « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends)."
+        },
+        {
+          "id": "mer-mere-maire-01",
+          "kind": "choice",
+          "prompt": "Complète avec mer, mère, maire : « Le bateau navigue sur la ___. »",
+          "answer": "mer",
+          "options": [
+            "mère",
+            "maire",
+            "mer"
+          ],
+          "skillIds": [
+            "mer-mere-maire"
+          ],
+          "explanation": "Le bateau se trouve sur une étendue d’eau salée. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune."
+        },
+        {
+          "id": "pere-paire-pair-01",
+          "kind": "choice",
+          "prompt": "Complète avec père, paire, pair : « J’ai acheté une ___ de chaussures. »",
+          "answer": "paire",
+          "options": [
+            "paire",
+            "pair",
+            "père"
+          ],
+          "skillIds": [
+            "pere-paire-pair"
+          ],
+          "explanation": "Deux chaussures forment une paire. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux."
+        },
+        {
+          "id": "la-la-las-02",
+          "kind": "text",
+          "prompt": "Complète avec la, là, l’a, l’as : « Il ouvre ___ fenêtre. »",
+          "answer": "la",
+          "skillIds": [
+            "la-la-las"
+          ],
+          "explanation": "« la » est le déterminant du nom « fenêtre ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+        },
+        {
+          "id": "mais-mes-met-mets-02",
+          "kind": "text",
+          "prompt": "Complète avec mais, mes, met, mets : « Ces lunettes sont à moi : ce sont ___ lunettes. »",
+          "answer": "mes",
+          "skillIds": [
+            "mais-mes-met-mets"
+          ],
+          "explanation": "Le nom « lunettes » est pluriel et désigne ce qui m’appartient. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+        },
+        {
+          "id": "peu-peux-peut-02",
+          "kind": "text",
+          "prompt": "Complète avec peu, peux, peut : « Tu ___ venir demain. »",
+          "answer": "peux",
+          "skillIds": [
+            "peu-peux-peut"
+          ],
+          "explanation": "Avec « tu », pouvoir s’écrit « peux » au présent. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+        },
+        {
+          "id": "sans-sen-02",
+          "kind": "text",
+          "prompt": "Complète avec sans, s’en : « Elle ___ va après le repas. »",
+          "answer": "s’en",
+          "skillIds": [
+            "sans-sen"
+          ],
+          "explanation": "Il s’agit de « s’en aller » : « je m’en vais ». « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais)."
+        },
+        {
+          "id": "ni-ny-02",
+          "kind": "text",
+          "prompt": "Complète avec ni, n’y : « Ce parc est fermé ; nous ___ allons pas. »",
+          "answer": "n’y",
+          "skillIds": [
+            "ni-ny"
+          ],
+          "explanation": "« y » remplace « dans ce parc » et « n’… pas » marque la négation. « ni » coordonne des éléments dans une négation. « n’y » associe la négation n’ au pronom y (je n’y vais pas)."
+        },
+        {
+          "id": "infinitif-participe-02",
+          "kind": "text",
+          "prompt": "Complète avec jouer, joué : « Il a ___ avec nous. »",
+          "answer": "joué",
+          "skillIds": [
+            "infinitif-participe"
+          ],
+          "explanation": "On peut dire : « Il a pris… » ; après l’auxiliaire, c’est le participe passé. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé."
+        },
+        {
+          "id": "homophones-lexicaux-02",
+          "kind": "text",
+          "prompt": "Complète avec verre, vert, vers, ver : « Le feu passe au ___. »",
+          "answer": "vert",
+          "skillIds": [
+            "homophones-lexicaux"
+          ],
+          "explanation": "Il s’agit de la couleur verte. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal."
+        },
+        {
+          "id": "si-sy-02",
+          "kind": "text",
+          "prompt": "Complète avec si, s’y : « Il connaît ce village et ___ rend chaque été. »",
+          "answer": "s’y",
+          "skillIds": [
+            "si-sy"
+          ],
+          "explanation": "« y » remplace « dans ce village » : « je m’y rends ». « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends)."
+        },
+        {
+          "id": "mer-mere-maire-02",
+          "kind": "text",
+          "prompt": "Complète avec mer, mère, maire : « Le ___ de la commune inaugure l’école. »",
+          "answer": "maire",
+          "skillIds": [
+            "mer-mere-maire"
+          ],
+          "explanation": "Il s’agit de la personne élue qui dirige la commune. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune."
+        },
+        {
+          "id": "pere-paire-pair-02",
+          "kind": "text",
+          "prompt": "Complète avec père, paire, pair : « Le nombre huit est ___. »",
+          "answer": "pair",
+          "skillIds": [
+            "pere-paire-pair"
+          ],
+          "explanation": "Huit peut se partager en deux groupes égaux de quatre. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux."
+        },
+        {
+          "id": "la-la-las-03",
+          "kind": "choice",
+          "prompt": "Complète avec la, là, l’a, l’as : « Ce livre, elle ___ déjà lu. »",
+          "answer": "l’a",
+          "options": [
+            "là",
+            "l’a",
+            "l’as",
+            "la"
+          ],
+          "skillIds": [
+            "la-la-las"
+          ],
+          "explanation": "« Elle l’avait déjà lu » contient le verbe avoir. « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+        },
+        {
+          "id": "mais-mes-met-mets-03",
+          "kind": "choice",
+          "prompt": "Complète avec mais, mes, met, mets : « Elle ___ son manteau. »",
+          "answer": "met",
+          "options": [
+            "mes",
+            "met",
+            "mets",
+            "mais"
+          ],
+          "skillIds": [
+            "mais-mes-met-mets"
+          ],
+          "explanation": "Avec « elle », mettre s’écrit « met » au présent. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+        },
+        {
+          "id": "peu-peux-peut-03",
+          "kind": "choice",
+          "prompt": "Complète avec peu, peux, peut : « Elle ___ nous aider. »",
+          "answer": "peut",
+          "options": [
+            "peux",
+            "peut",
+            "peu"
+          ],
+          "skillIds": [
+            "peu-peux-peut"
+          ],
+          "explanation": "Avec « elle », pouvoir s’écrit « peut » au présent. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+        },
+        {
+          "id": "sans-sen-03",
+          "kind": "choice",
+          "prompt": "Complète avec sans, s’en : « Léo est tombé ; il ___ souvient encore. »",
+          "answer": "s’en",
+          "options": [
+            "s’en",
+            "sans"
+          ],
+          "skillIds": [
+            "sans-sen"
+          ],
+          "explanation": "À la première personne : « Je m’en souviens ». « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais)."
+        },
+        {
+          "id": "infinitif-participe-03",
+          "kind": "choice",
+          "prompt": "Complète avec jouer, joué : « Nous allons ___ dehors. »",
+          "answer": "jouer",
+          "options": [
+            "joué",
+            "jouer"
+          ],
+          "skillIds": [
+            "infinitif-participe"
+          ],
+          "explanation": "« Nous allons prendre… » montre l’infinitif. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé."
+        },
+        {
+          "id": "homophones-lexicaux-03",
+          "kind": "choice",
+          "prompt": "Complète avec verre, vert, vers, ver : « Nous marchons ___ le village. »",
+          "answer": "vers",
+          "options": [
+            "ver",
+            "verre",
+            "vert",
+            "vers"
+          ],
+          "skillIds": [
+            "homophones-lexicaux"
+          ],
+          "explanation": "« vers » indique la direction. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal."
+        },
+        {
+          "id": "si-sy-03",
+          "kind": "choice",
+          "prompt": "Complète avec si, s’y : « Appelle-moi ___ tu as besoin d’aide. »",
+          "answer": "si",
+          "options": [
+            "s’y",
+            "si"
+          ],
+          "skillIds": [
+            "si-sy"
+          ],
+          "explanation": "On introduit la condition dans laquelle il faut appeler. « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends)."
+        },
+        {
+          "id": "mer-mere-maire-03",
+          "kind": "choice",
+          "prompt": "Complète avec mer, mère, maire : « Cet enfant tient la main de sa ___. »",
+          "answer": "mère",
+          "options": [
+            "maire",
+            "mer",
+            "mère"
+          ],
+          "skillIds": [
+            "mer-mere-maire"
+          ],
+          "explanation": "Il s’agit ici d’un lien de parenté. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune."
+        },
+        {
+          "id": "pere-paire-pair-03",
+          "kind": "choice",
+          "prompt": "Complète avec père, paire, pair : « Le ___ de cet enfant vient le chercher. »",
+          "answer": "père",
+          "options": [
+            "pair",
+            "père",
+            "paire"
+          ],
+          "skillIds": [
+            "pere-paire-pair"
+          ],
+          "explanation": "Il s’agit ici d’un lien de parenté. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux."
+        },
+        {
+          "id": "la-la-las-04",
+          "kind": "text",
+          "prompt": "Complète avec la, là, l’a, l’as : « Cette chanson, tu ___ entendue hier. »",
+          "answer": "l’as",
+          "skillIds": [
+            "la-la-las"
+          ],
+          "explanation": "Le sujet est « tu » : « tu l’avais entendue ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+        },
+        {
+          "id": "mais-mes-met-mets-04",
+          "kind": "text",
+          "prompt": "Complète avec mais, mes, met, mets : « Tu ___ la table. »",
+          "answer": "mets",
+          "skillIds": [
+            "mais-mes-met-mets"
+          ],
+          "explanation": "Avec « tu », mettre s’écrit « mets » au présent. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+        },
+        {
+          "id": "peu-peux-peut-04",
+          "kind": "text",
+          "prompt": "Complète avec peu, peux, peut : « Je ___ ouvrir la porte. »",
+          "answer": "peux",
+          "skillIds": [
+            "peu-peux-peut"
+          ],
+          "explanation": "Le sujet est « je » : « je peux ». « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+        },
+        {
+          "id": "sans-sen-04",
+          "kind": "text",
+          "prompt": "Complète avec sans, s’en : « Je bois mon thé ___ sucre. »",
+          "answer": "sans",
+          "skillIds": [
+            "sans-sen"
+          ],
+          "explanation": "Il n’y a pas de sucre dans le thé. « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais)."
+        },
+        {
+          "id": "infinitif-participe-04",
+          "kind": "text",
+          "prompt": "Complète avec jouer, joué : « Elle avait ___ avant le repas. »",
+          "answer": "joué",
+          "skillIds": [
+            "infinitif-participe"
+          ],
+          "explanation": "« Elle avait pris… » montre le participe passé après l’auxiliaire. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé."
+        },
+        {
+          "id": "homophones-lexicaux-04",
+          "kind": "text",
+          "prompt": "Complète avec verre, vert, vers, ver : « Un ___ de terre sort du sol. »",
+          "answer": "ver",
+          "skillIds": [
+            "homophones-lexicaux"
+          ],
+          "explanation": "Le « ver » est un animal. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal."
+        },
+        {
+          "id": "si-sy-04",
+          "kind": "text",
+          "prompt": "Complète avec si, s’y : « Cette règle est difficile, mais elle ___ habitue. »",
+          "answer": "s’y",
+          "skillIds": [
+            "si-sy"
+          ],
+          "explanation": "C’est « s’habituer à cette règle » : « je m’y habitue ». « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends)."
+        },
+        {
+          "id": "la-la-las-05",
+          "kind": "choice",
+          "prompt": "Complète avec la, là, l’a, l’as : « Cette porte, je ___ ferme. »",
+          "answer": "la",
+          "options": [
+            "là",
+            "l’a",
+            "l’as",
+            "la"
+          ],
+          "skillIds": [
+            "la-la-las"
+          ],
+          "explanation": "« la » remplace « cette porte » ; le verbe est « ferme ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+        },
+        {
+          "id": "mais-mes-met-mets-05",
+          "kind": "choice",
+          "prompt": "Complète avec mais, mes, met, mets : « Je ___ mon livre dans le sac. »",
+          "answer": "mets",
+          "options": [
+            "mes",
+            "met",
+            "mets",
+            "mais"
+          ],
+          "skillIds": [
+            "mais-mes-met-mets"
+          ],
+          "explanation": "Avec « je », mettre s’écrit « mets » au présent. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+        },
+        {
+          "id": "peu-peux-peut-05",
+          "kind": "choice",
+          "prompt": "Complète avec peu, peux, peut : « Le chat mange très ___. »",
+          "answer": "peu",
+          "options": [
+            "peut",
+            "peu",
+            "peux"
+          ],
+          "skillIds": [
+            "peu-peux-peut"
+          ],
+          "explanation": "« très peu » indique une faible quantité. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+        },
+        {
+          "id": "infinitif-participe-05",
+          "kind": "choice",
+          "prompt": "Complète avec manger ou mangé : « Elle vient de ___. »",
+          "answer": "manger",
+          "options": [
+            "manger",
+            "mangé"
+          ],
+          "skillIds": [
+            "infinitif-participe"
+          ],
+          "explanation": "Après « vient de », on emploie un infinitif : « Elle vient de prendre »."
+        },
+        {
+          "id": "la-la-las-06",
+          "kind": "text",
+          "prompt": "Complète avec la, là, l’a, l’as : « Je resterai ___ jusqu’à midi. »",
+          "answer": "là",
+          "skillIds": [
+            "la-la-las"
+          ],
+          "explanation": "« là » indique le lieu où je resterai. « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+        },
+        {
+          "id": "mais-mes-met-mets-06",
+          "kind": "text",
+          "prompt": "Complète avec mais, mes, met, mets : « J’ai retrouvé ___ deux chaussettes. »",
+          "answer": "mes",
+          "skillIds": [
+            "mais-mes-met-mets"
+          ],
+          "explanation": "« mes » détermine le nom pluriel « chaussettes ». « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+        },
+        {
+          "id": "peu-peux-peut-06",
+          "kind": "text",
+          "prompt": "Complète avec peu, peux, peut : « On ___ commencer. »",
+          "answer": "peut",
+          "skillIds": [
+            "peu-peux-peut"
+          ],
+          "explanation": "« on » se conjugue comme « il » : « on peut ». « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+        },
+        {
+          "id": "infinitif-participe-06",
+          "kind": "text",
+          "prompt": "Complète avec tomber ou tombé : « Il est ___ dans la cour. »",
+          "answer": "tombé",
+          "skillIds": [
+            "infinitif-participe"
+          ],
+          "explanation": "Après l’auxiliaire être, il faut le participe passé : « Il est tombé »."
+        },
+        {
+          "id": "la-la-las-07",
+          "kind": "choice",
+          "prompt": "Complète avec la, là, l’a, l’as : « Ce ballon, Paul ___ perdu. »",
+          "answer": "l’a",
+          "options": [
+            "là",
+            "l’a",
+            "l’as",
+            "la"
+          ],
+          "skillIds": [
+            "la-la-las"
+          ],
+          "explanation": "Avec « Paul » : « Paul l’avait perdu ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+        },
+        {
+          "id": "infinitif-participe-07",
+          "kind": "choice",
+          "prompt": "Complète avec marcher ou marché : « Nous voulons ___ en forêt. »",
+          "answer": "marcher",
+          "options": [
+            "marcher",
+            "marché"
+          ],
+          "skillIds": [
+            "infinitif-participe"
+          ],
+          "explanation": "On peut dire : « Nous voulons prendre… » : c’est un infinitif."
+        },
+        {
+          "id": "la-la-las-08",
+          "kind": "text",
+          "prompt": "Complète avec la, là, l’a, l’as : « Ce dessin, tu ___ réussi. »",
+          "answer": "l’as",
+          "skillIds": [
+            "la-la-las"
+          ],
+          "explanation": "Avec « tu » : « tu l’avais réussi ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+        },
+        {
+          "id": "infinitif-participe-08",
+          "kind": "text",
+          "prompt": "Complète avec marcher ou marché : « Il a ___ toute la journée. »",
+          "answer": "marché",
+          "skillIds": [
+            "infinitif-participe"
+          ],
+          "explanation": "On peut dire : « Il a pris… » : c’est un participe passé."
+        }
+      ]
+    },
+    {
+      "id": "francais-grammaire-accords-6e",
+      "version": "1.0.0",
+      "title": "Grammaire et accords",
+      "subject": "Français",
+      "levels": [
+        "6e"
+      ],
+      "description": "Retrouve le sujet, le verbe, les classes et fonctions des mots ; entraîne-toi aux accords du nom, de l’adjectif et du verbe.",
+      "skills": [
+        {
+          "id": "sujet-verbe",
+          "label": "Repérer le sujet, le verbe et les propositions"
+        },
+        {
+          "id": "classes-mots",
+          "label": "Reconnaître les classes de mots"
+        },
+        {
+          "id": "fonctions",
+          "label": "Identifier les fonctions dans la phrase"
+        },
+        {
+          "id": "accords",
+          "label": "Accorder le groupe nominal, le verbe et le participe avec être"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "sujet-verbe-01",
+          "kind": "choice",
+          "prompt": "Quel est le sujet de « Les petits chiens du voisin aboient » ?",
+          "answer": "Les petits chiens du voisin",
+          "options": [
+            "Les petits chiens du voisin",
+            "du voisin",
+            "aboient"
+          ],
+          "skillIds": [
+            "sujet-verbe"
+          ],
+          "explanation": "C’est tout le groupe « Les petits chiens du voisin » qui commande le verbe « aboient »."
+        },
+        {
+          "id": "classes-mots-01",
+          "kind": "choice",
+          "prompt": "Dans « Un cheval rapide galope. », quelle est la classe de « rapide » ?",
+          "answer": "adjectif",
+          "options": [
+            "adjectif",
+            "pronom personnel",
+            "déterminant",
+            "adverbe"
+          ],
+          "skillIds": [
+            "classes-mots"
+          ],
+          "explanation": "« rapide » donne une propriété du cheval."
+        },
+        {
+          "id": "fonctions-01",
+          "kind": "choice",
+          "prompt": "Dans « Mila lit un roman », quelle est la fonction de « un roman » ?",
+          "answer": "COD",
+          "options": [
+            "complément circonstanciel",
+            "COD",
+            "COI"
+          ],
+          "skillIds": [
+            "fonctions"
+          ],
+          "explanation": "Mila lit quoi ? « un roman ». Le complément est relié directement au verbe."
+        },
+        {
+          "id": "accords-01",
+          "kind": "choice",
+          "prompt": "Complète : « Des fleurs ___ poussent ici. »",
+          "answer": "blanches",
+          "options": [
+            "blancs",
+            "blanches",
+            "blanc",
+            "blanche"
+          ],
+          "skillIds": [
+            "accords"
+          ],
+          "explanation": "« fleurs » est féminin pluriel ; l’adjectif s’accorde : « blanches »."
+        },
+        {
+          "id": "sujet-verbe-02",
+          "kind": "choice",
+          "prompt": "Quel est le sujet de « Dans le jardin poussent des rosiers » ?",
+          "answer": "des rosiers",
+          "options": [
+            "des rosiers",
+            "poussent",
+            "Dans le jardin"
+          ],
+          "skillIds": [
+            "sujet-verbe"
+          ],
+          "explanation": "Ce sont les rosiers qui poussent. Le sujet est placé après le verbe."
+        },
+        {
+          "id": "classes-mots-02",
+          "kind": "choice",
+          "prompt": "Dans « Demain, ils viendront. », quelle est la classe de « ils » ?",
+          "answer": "pronom personnel",
+          "options": [
+            "pronom personnel",
+            "déterminant",
+            "adverbe",
+            "adjectif"
+          ],
+          "skillIds": [
+            "classes-mots"
+          ],
+          "explanation": "« ils » remplace un groupe nominal et est sujet de « viendront »."
+        },
+        {
+          "id": "fonctions-02",
+          "kind": "choice",
+          "prompt": "Dans « Il parle à son frère », quelle est la fonction de « à son frère » ?",
+          "answer": "COI",
+          "options": [
+            "COD",
+            "COI",
+            "sujet"
+          ],
+          "skillIds": [
+            "fonctions"
+          ],
+          "explanation": "Il parle à qui ? « à son frère ». La préposition « à » introduit le complément du verbe."
+        },
+        {
+          "id": "accords-02",
+          "kind": "choice",
+          "prompt": "Mets au pluriel : « un cheval rapide ».",
+          "answer": "des chevaux rapides",
+          "options": [
+            "des chevals rapides",
+            "des chevaux rapide",
+            "des chevaux rapides"
+          ],
+          "skillIds": [
+            "accords"
+          ],
+          "explanation": "Le pluriel de « cheval » est « chevaux » ; l’adjectif prend un s."
+        },
+        {
+          "id": "sujet-verbe-03",
+          "kind": "choice",
+          "prompt": "Quel est le verbe conjugué dans « Les enfants aiment lire » ?",
+          "answer": "aiment",
+          "options": [
+            "lire",
+            "Les enfants",
+            "aiment"
+          ],
+          "skillIds": [
+            "sujet-verbe"
+          ],
+          "explanation": "« aiment » varie avec la personne : j’aime, nous aimons. « lire » est à l’infinitif."
+        },
+        {
+          "id": "classes-mots-03",
+          "kind": "choice",
+          "prompt": "Dans « Ces oiseaux chantent. », quelle est la classe de « ces » ?",
+          "answer": "déterminant",
+          "options": [
+            "déterminant",
+            "adverbe",
+            "adjectif",
+            "pronom personnel"
+          ],
+          "skillIds": [
+            "classes-mots"
+          ],
+          "explanation": "« ces » accompagne le nom « oiseaux »."
+        },
+        {
+          "id": "fonctions-03",
+          "kind": "choice",
+          "prompt": "Dans « Demain, nous partirons », que précise « Demain » ?",
+          "answer": "le temps",
+          "options": [
+            "le lieu",
+            "la cause",
+            "le temps"
+          ],
+          "skillIds": [
+            "fonctions"
+          ],
+          "explanation": "« Demain » répond à la question « quand ? »."
+        },
+        {
+          "id": "accords-03",
+          "kind": "choice",
+          "prompt": "Complète : « Les amis de ma sœur ___ demain. »",
+          "answer": "arrivent",
+          "options": [
+            "arrives",
+            "arrivent",
+            "arrive"
+          ],
+          "skillIds": [
+            "accords"
+          ],
+          "explanation": "Le sujet est « Les amis de ma sœur » : son noyau « amis » est pluriel."
+        },
+        {
+          "id": "sujet-verbe-04",
+          "kind": "choice",
+          "prompt": "Quelle phrase est complexe ?",
+          "answer": "Il pleut et nous restons à la maison.",
+          "options": [
+            "Il pleut et nous restons à la maison.",
+            "Nous aimons lire.",
+            "Le chat dort sur le tapis."
+          ],
+          "skillIds": [
+            "sujet-verbe"
+          ],
+          "explanation": "Une phrase complexe comporte plusieurs propositions : ici, deux verbes conjugués, « pleut » et « restons »."
+        },
+        {
+          "id": "classes-mots-04",
+          "kind": "choice",
+          "prompt": "Dans « Elle parle doucement. », quelle est la classe de « doucement » ?",
+          "answer": "adverbe",
+          "options": [
+            "adverbe",
+            "adjectif",
+            "pronom personnel",
+            "déterminant"
+          ],
+          "skillIds": [
+            "classes-mots"
+          ],
+          "explanation": "« doucement » précise la manière de parler et est invariable."
+        },
+        {
+          "id": "fonctions-04",
+          "kind": "choice",
+          "prompt": "Dans « Le chat dort sous la table », que précise « sous la table » ?",
+          "answer": "le lieu",
+          "options": [
+            "la cause",
+            "le temps",
+            "le lieu"
+          ],
+          "skillIds": [
+            "fonctions"
+          ],
+          "explanation": "« sous la table » répond à la question « où ? »."
+        },
+        {
+          "id": "accords-04",
+          "kind": "choice",
+          "prompt": "Complète : « Tu les ___ souvent. »",
+          "answer": "regardes",
+          "options": [
+            "regardent",
+            "regarde",
+            "regardes"
+          ],
+          "skillIds": [
+            "accords"
+          ],
+          "explanation": "Le sujet est « tu ». « les » est un pronom COD, il ne commande pas l’accord."
+        },
+        {
+          "id": "fonctions-05",
+          "kind": "choice",
+          "prompt": "Dans « La petite fille sourit », quelle est la fonction de « petite » ?",
+          "answer": "épithète",
+          "options": [
+            "épithète",
+            "attribut du sujet",
+            "COD"
+          ],
+          "skillIds": [
+            "fonctions"
+          ],
+          "explanation": "L’adjectif est directement associé au nom « fille » dans le groupe nominal."
+        },
+        {
+          "id": "accords-05",
+          "kind": "choice",
+          "prompt": "Complète : « Elles sont ___ tôt. »",
+          "answer": "arrivées",
+          "options": [
+            "arrivés",
+            "arrivées",
+            "arrivé",
+            "arrivée"
+          ],
+          "skillIds": [
+            "accords"
+          ],
+          "explanation": "Avec être, le participe passé s’accorde avec le sujet « Elles » : féminin pluriel."
+        },
+        {
+          "id": "fonctions-06",
+          "kind": "choice",
+          "prompt": "Dans « Les filles semblent contentes », quelle est la fonction de « contentes » ?",
+          "answer": "attribut du sujet",
+          "options": [
+            "attribut du sujet",
+            "COI",
+            "épithète"
+          ],
+          "skillIds": [
+            "fonctions"
+          ],
+          "explanation": "Après le verbe d’état « semblent », l’adjectif donne une propriété du sujet « Les filles »."
+        },
+        {
+          "id": "accords-06",
+          "kind": "choice",
+          "prompt": "Complète : « Ces maisons sont ___. »",
+          "answer": "anciennes",
+          "options": [
+            "anciennes",
+            "ancien",
+            "ancienne",
+            "anciens"
+          ],
+          "skillIds": [
+            "accords"
+          ],
+          "explanation": "L’attribut du sujet s’accorde avec « maisons », féminin pluriel."
+        }
+      ]
+    },
+    {
+      "id": "francais-conjugaison-6e",
+      "version": "1.0.0",
+      "title": "Conjugaison : les repères essentiels",
+      "subject": "Français",
+      "levels": [
+        "6e"
+      ],
+      "description": "Présent, imparfait, futur, passé composé, passé simple et plus-que-parfait : reconnaître les temps et conjuguer les verbes fréquents.",
+      "skills": [
+        {
+          "id": "temps-present",
+          "label": "Conjuguer au présent"
+        },
+        {
+          "id": "temps-imparfait",
+          "label": "Conjuguer au imparfait"
+        },
+        {
+          "id": "temps-futur",
+          "label": "Conjuguer au futur"
+        },
+        {
+          "id": "temps-passe-compose",
+          "label": "Conjuguer au passé composé"
+        },
+        {
+          "id": "temps-passe-simple",
+          "label": "Conjuguer au passé simple"
+        },
+        {
+          "id": "temps-plus-que-parfait",
+          "label": "Conjuguer au plus-que-parfait"
+        },
+        {
+          "id": "identifier-temps",
+          "label": "Reconnaître les temps verbaux"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "temps-present-01",
+          "kind": "choice",
+          "prompt": "Conjugue « faire » au présent : « Vous ___ un exercice. »",
+          "answer": "faites",
+          "options": [
+            "faisez",
+            "faites",
+            "font"
+          ],
+          "skillIds": [
+            "temps-present"
+          ],
+          "explanation": "Au présent, faire donne : nous faisons, vous faites, ils font."
+        },
+        {
+          "id": "temps-imparfait-01",
+          "kind": "choice",
+          "prompt": "Conjugue « jouer » au imparfait : « Nous ___ dans la cour. »",
+          "answer": "jouions",
+          "options": [
+            "jouions",
+            "jouerons",
+            "jouons"
+          ],
+          "skillIds": [
+            "temps-imparfait"
+          ],
+          "explanation": "L’imparfait se forme avec le radical de « nous jouons » et la terminaison -ions."
+        },
+        {
+          "id": "temps-futur-01",
+          "kind": "choice",
+          "prompt": "Conjugue « venir » au futur : « Nous ___ demain. »",
+          "answer": "viendrons",
+          "options": [
+            "viendrons",
+            "viendrions",
+            "venons"
+          ],
+          "skillIds": [
+            "temps-futur"
+          ],
+          "explanation": "Venir a le radical « viendr- » au futur et la terminaison -ons avec nous."
+        },
+        {
+          "id": "temps-passe-compose-01",
+          "kind": "choice",
+          "prompt": "Conjugue « finir » au passé composé : « Elle ___ son travail. »",
+          "answer": "a fini",
+          "options": [
+            "avait fini",
+            "finissait",
+            "a fini"
+          ],
+          "skillIds": [
+            "temps-passe-compose"
+          ],
+          "explanation": "Le passé composé utilise l’auxiliaire au présent et le participe passé."
+        },
+        {
+          "id": "temps-passe-simple-01",
+          "kind": "choice",
+          "prompt": "Conjugue « ouvrir » au passé simple : « Il ___ la porte. »",
+          "answer": "ouvrit",
+          "options": [
+            "ouvrit",
+            "ouvrait",
+            "a ouvert"
+          ],
+          "skillIds": [
+            "temps-passe-simple"
+          ],
+          "explanation": "« ouvrit » est au passé simple ; « ouvrait » est à l’imparfait."
+        },
+        {
+          "id": "temps-plus-que-parfait-01",
+          "kind": "choice",
+          "prompt": "Conjugue « manger » au plus-que-parfait : « J’___ mon goûter avant son arrivée. »",
+          "answer": "avais mangé",
+          "options": [
+            "aurai mangé",
+            "ai mangé",
+            "avais mangé"
+          ],
+          "skillIds": [
+            "temps-plus-que-parfait"
+          ],
+          "explanation": "Le plus-que-parfait se forme avec l’auxiliaire à l’imparfait et le participe passé."
+        },
+        {
+          "id": "identifier-temps-01",
+          "kind": "choice",
+          "prompt": "À quel temps est le verbe dans « Nous avions compris. » ?",
+          "answer": "plus-que-parfait",
+          "options": [
+            "imparfait",
+            "passé composé",
+            "passé simple",
+            "plus-que-parfait"
+          ],
+          "skillIds": [
+            "identifier-temps"
+          ],
+          "explanation": "L’auxiliaire « avions » est à l’imparfait, suivi du participe « compris »."
+        },
+        {
+          "id": "temps-present-02",
+          "kind": "text",
+          "prompt": "Conjugue « aller » au présent : « Nous ___ à la piscine. »",
+          "answer": "allons",
+          "skillIds": [
+            "temps-present"
+          ],
+          "explanation": "Avec « nous », aller se conjugue « allons »."
+        },
+        {
+          "id": "temps-imparfait-02",
+          "kind": "text",
+          "prompt": "Conjugue « être » au imparfait : « Elles ___ heureuses. »",
+          "answer": "étaient",
+          "skillIds": [
+            "temps-imparfait"
+          ],
+          "explanation": "Être à l’imparfait avec « elles » : « étaient »."
+        },
+        {
+          "id": "temps-futur-02",
+          "kind": "text",
+          "prompt": "Conjugue « voir » au futur : « Je ___ la réponse. »",
+          "answer": "verrai",
+          "skillIds": [
+            "temps-futur"
+          ],
+          "explanation": "Au futur, voir donne « je verrai » ; « verrais » est au conditionnel."
+        },
+        {
+          "id": "temps-passe-compose-02",
+          "kind": "text",
+          "prompt": "Conjugue « aller » au passé composé : « Ils ___ au musée. »",
+          "answer": "sont allés",
+          "skillIds": [
+            "temps-passe-compose"
+          ],
+          "explanation": "Aller se conjugue avec être ; « allés » s’accorde avec « Ils »."
+        },
+        {
+          "id": "temps-passe-simple-02",
+          "kind": "text",
+          "prompt": "Conjugue « prendre » au passé simple : « Elles ___ la parole. »",
+          "answer": "prirent",
+          "skillIds": [
+            "temps-passe-simple"
+          ],
+          "explanation": "Au passé simple, prendre donne « ils/elles prirent »."
+        },
+        {
+          "id": "temps-plus-que-parfait-02",
+          "kind": "text",
+          "prompt": "Conjugue « partir » au plus-que-parfait : « Elle ___ avant mon arrivée. »",
+          "answer": "était partie",
+          "skillIds": [
+            "temps-plus-que-parfait"
+          ],
+          "explanation": "« était » est l’auxiliaire être à l’imparfait ; « partie » s’accorde avec « Elle »."
+        },
+        {
+          "id": "identifier-temps-02",
+          "kind": "choice",
+          "prompt": "À quel temps est le verbe dans « Elle chanta. » ?",
+          "answer": "passé simple",
+          "options": [
+            "passé composé",
+            "passé simple",
+            "plus-que-parfait",
+            "imparfait"
+          ],
+          "skillIds": [
+            "identifier-temps"
+          ],
+          "explanation": "« chanta » est une forme simple du passé, à la troisième personne du singulier."
+        },
+        {
+          "id": "temps-present-03",
+          "kind": "choice",
+          "prompt": "Conjugue « prendre » au présent : « Tu ___ ton manteau. »",
+          "answer": "prends",
+          "options": [
+            "prennent",
+            "prend",
+            "prends"
+          ],
+          "skillIds": [
+            "temps-present"
+          ],
+          "explanation": "Avec « tu », prendre s’écrit « prends »."
+        },
+        {
+          "id": "temps-imparfait-03",
+          "kind": "choice",
+          "prompt": "Conjugue « avoir » au imparfait : « Tu ___ peur du noir. »",
+          "answer": "avais",
+          "options": [
+            "avait",
+            "avais",
+            "avez"
+          ],
+          "skillIds": [
+            "temps-imparfait"
+          ],
+          "explanation": "Avec « tu », l’imparfait d’avoir se termine par -ais."
+        },
+        {
+          "id": "temps-futur-03",
+          "kind": "choice",
+          "prompt": "Conjugue « partir » au futur : « Ils ___ en voyage. »",
+          "answer": "partiront",
+          "options": [
+            "partirons",
+            "partiront",
+            "partaient"
+          ],
+          "skillIds": [
+            "temps-futur"
+          ],
+          "explanation": "Avec « ils », le futur se termine par -ont."
+        },
+        {
+          "id": "identifier-temps-03",
+          "kind": "choice",
+          "prompt": "À quel temps est le verbe dans « Tu as lu. » ?",
+          "answer": "passé composé",
+          "options": [
+            "passé simple",
+            "plus-que-parfait",
+            "imparfait",
+            "passé composé"
+          ],
+          "skillIds": [
+            "identifier-temps"
+          ],
+          "explanation": "L’auxiliaire « as » est au présent, suivi du participe passé « lu »."
+        },
+        {
+          "id": "temps-present-04",
+          "kind": "text",
+          "prompt": "Conjugue « dire » au présent : « Ils ___ la vérité. »",
+          "answer": "disent",
+          "skillIds": [
+            "temps-present"
+          ],
+          "explanation": "Au présent : nous disons, vous dites, ils disent."
+        },
+        {
+          "id": "identifier-temps-04",
+          "kind": "choice",
+          "prompt": "À quel temps est le verbe dans « Vous écriviez. » ?",
+          "answer": "imparfait",
+          "options": [
+            "plus-que-parfait",
+            "imparfait",
+            "passé composé",
+            "passé simple"
+          ],
+          "skillIds": [
+            "identifier-temps"
+          ],
+          "explanation": "La terminaison -iez marque ici l’imparfait avec « vous »."
+        }
+      ]
+    },
+    {
+      "id": "francais-vocabulaire-6e",
+      "version": "1.0.0",
+      "title": "Vocabulaire : comprendre les mots",
+      "subject": "Français",
+      "levels": [
+        "6e"
+      ],
+      "description": "Synonymes, contraires, familles de mots, préfixes et sens en contexte : des outils pour mieux lire et écrire.",
+      "skills": [
+        {
+          "id": "synonymes",
+          "label": "Synonymes et contraires"
+        },
+        {
+          "id": "familles",
+          "label": "Familles de mots et formation"
+        },
+        {
+          "id": "contexte",
+          "label": "Comprendre le sens en contexte"
+        },
+        {
+          "id": "lexique",
+          "label": "Champ lexical et mots invariables"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "synonymes-01",
+          "kind": "choice",
+          "prompt": "Quel est un synonyme de « joyeux » ?",
+          "answer": "heureux",
+          "options": [
+            "heureux",
+            "triste",
+            "lent"
+          ],
+          "skillIds": [
+            "synonymes"
+          ],
+          "explanation": "« joyeux » et « heureux » ont des sens proches."
+        },
+        {
+          "id": "familles-01",
+          "kind": "choice",
+          "prompt": "Quel mot appartient à la famille de « terre » ?",
+          "answer": "terrestre",
+          "options": [
+            "terrestre",
+            "terrible",
+            "terreur"
+          ],
+          "skillIds": [
+            "familles"
+          ],
+          "explanation": "« terrestre » est formé sur « terre » et garde un sens lié à la Terre."
+        },
+        {
+          "id": "contexte-01",
+          "kind": "choice",
+          "prompt": "Dans « Il dévore ce roman », que signifie « dévore » ?",
+          "answer": "lit avec passion",
+          "options": [
+            "lit avec passion",
+            "déchire le livre",
+            "mange les pages"
+          ],
+          "skillIds": [
+            "contexte"
+          ],
+          "explanation": "Le contexte du roman indique le sens figuré : lire avec enthousiasme."
+        },
+        {
+          "id": "lexique-01",
+          "kind": "choice",
+          "prompt": "Quel groupe appartient au champ lexical de la mer ?",
+          "answer": "vague, écume, marée",
+          "options": [
+            "forêt, branche, feuille",
+            "cahier, règle, gomme",
+            "vague, écume, marée"
+          ],
+          "skillIds": [
+            "lexique"
+          ],
+          "explanation": "Ces trois mots renvoient au même thème : la mer."
+        },
+        {
+          "id": "synonymes-02",
+          "kind": "choice",
+          "prompt": "Quel est le contraire de « généreux » ?",
+          "answer": "égoïste",
+          "options": [
+            "égoïste",
+            "souriant",
+            "attentif"
+          ],
+          "skillIds": [
+            "synonymes"
+          ],
+          "explanation": "Une personne généreuse partage ; une personne égoïste pense surtout à elle-même."
+        },
+        {
+          "id": "familles-02",
+          "kind": "choice",
+          "prompt": "Dans « refaire », que signifie le préfixe re- ?",
+          "answer": "faire de nouveau",
+          "options": [
+            "ne pas faire",
+            "faire avant",
+            "faire de nouveau"
+          ],
+          "skillIds": [
+            "familles"
+          ],
+          "explanation": "Le préfixe re- exprime ici la répétition."
+        },
+        {
+          "id": "contexte-02",
+          "kind": "choice",
+          "prompt": "Dans « la tête d’un clou », « tête » désigne…",
+          "answer": "la partie large en haut du clou",
+          "options": [
+            "la pointe du clou",
+            "le visage du clou",
+            "la partie large en haut du clou"
+          ],
+          "skillIds": [
+            "contexte"
+          ],
+          "explanation": "Un même mot peut avoir plusieurs sens : c’est la polysémie."
+        },
+        {
+          "id": "lexique-02",
+          "kind": "choice",
+          "prompt": "Quelle est la bonne orthographe ?",
+          "answer": "longtemps",
+          "options": [
+            "longtamps",
+            "longtemp",
+            "longtemps"
+          ],
+          "skillIds": [
+            "lexique"
+          ],
+          "explanation": "« longtemps » est un adverbe invariable ; on mémorise sa forme complète."
+        },
+        {
+          "id": "synonymes-03",
+          "kind": "choice",
+          "prompt": "Quel mot peut remplacer « immense » ?",
+          "answer": "gigantesque",
+          "options": [
+            "ordinaire",
+            "minuscule",
+            "gigantesque"
+          ],
+          "skillIds": [
+            "synonymes"
+          ],
+          "explanation": "« immense » et « gigantesque » indiquent une très grande taille."
+        },
+        {
+          "id": "familles-03",
+          "kind": "choice",
+          "prompt": "Que signifie « impossible » ?",
+          "answer": "qui ne peut pas être réalisé",
+          "options": [
+            "qui est très facile",
+            "qui ne peut pas être réalisé",
+            "qui peut être réalisé"
+          ],
+          "skillIds": [
+            "familles"
+          ],
+          "explanation": "Le préfixe im- donne ici le sens contraire de « possible »."
+        },
+        {
+          "id": "contexte-03",
+          "kind": "choice",
+          "prompt": "« Le sentier était escarpé : il montait très fort. » Que signifie « escarpé » ?",
+          "answer": "en pente raide",
+          "options": [
+            "très large",
+            "en pente raide",
+            "parfaitement plat"
+          ],
+          "skillIds": [
+            "contexte"
+          ],
+          "explanation": "La suite de la phrase, « il montait très fort », permet de comprendre le mot."
+        },
+        {
+          "id": "familles-04",
+          "kind": "choice",
+          "prompt": "Quel mot est formé avec un suffixe qui désigne un métier ?",
+          "answer": "boulanger",
+          "options": [
+            "boulanger",
+            "rapidement",
+            "maisonnette"
+          ],
+          "skillIds": [
+            "familles"
+          ],
+          "explanation": "Le suffixe -er désigne ici la personne qui exerce le métier."
+        }
+      ]
+    },
+    {
+      "id": "francais-lecture-6e",
+      "version": "1.0.0",
+      "title": "Lire et comprendre",
+      "subject": "Français",
+      "levels": [
+        "6e"
+      ],
+      "description": "Lis de courts textes, repère les informations et les pronoms, puis déduis ce qui est suggéré sans être écrit directement.",
+      "skills": [
+        {
+          "id": "recit-explicite",
+          "label": "Prélever une information et identifier les reprises"
+        },
+        {
+          "id": "recit-implicite",
+          "label": "Déduire à partir des indices du récit"
+        },
+        {
+          "id": "document",
+          "label": "Comprendre un texte pratique"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "recit-explicite-01",
+          "kind": "choice",
+          "prompt": "Où Noé trouve-t-il le chien ?",
+          "passage": "En sortant du collège, Noé aperçoit un petit chien près du portail. Il n’a pas de collier et tremble. Noé retire sa veste, en enveloppe l’animal puis appelle sa mère. Elle arrive dix minutes plus tard avec une couverture.",
+          "answer": "près du portail du collège",
+          "options": [
+            "chez sa mère",
+            "près du portail du collège",
+            "dans une voiture"
+          ],
+          "skillIds": [
+            "recit-explicite"
+          ],
+          "explanation": "Le texte dit « en sortant du collège » puis « près du portail »."
+        },
+        {
+          "id": "recit-implicite-01",
+          "kind": "choice",
+          "prompt": "Pourquoi Noé enveloppe-t-il le chien dans sa veste ?",
+          "passage": "En sortant du collège, Noé aperçoit un petit chien près du portail. Il n’a pas de collier et tremble. Noé retire sa veste, en enveloppe l’animal puis appelle sa mère. Elle arrive dix minutes plus tard avec une couverture.",
+          "answer": "pour le réchauffer",
+          "options": [
+            "pour le réchauffer",
+            "pour l’empêcher de voir",
+            "pour le cacher à sa mère"
+          ],
+          "skillIds": [
+            "recit-implicite"
+          ],
+          "explanation": "Le chien tremble ; le geste de Noé suggère qu’il veut le réchauffer."
+        },
+        {
+          "id": "document-01",
+          "kind": "choice",
+          "prompt": "Quand peut-on venir jardiner par beau temps ?",
+          "passage": "Le jardin partagé ouvre le mercredi et le samedi, de 9 h à 12 h. Chaque visiteur apporte ses gants. Les outils sont prêtés sur place. En cas de forte pluie, le jardin reste fermé. Les récoltes sont partagées entre les participants.",
+          "answer": "samedi à 10 h",
+          "options": [
+            "mercredi à 15 h",
+            "samedi à 10 h",
+            "mardi à 10 h"
+          ],
+          "skillIds": [
+            "document"
+          ],
+          "explanation": "Le jardin ouvre le mercredi et le samedi entre 9 h et 12 h."
+        },
+        {
+          "id": "recit-explicite-02",
+          "kind": "choice",
+          "prompt": "Qui désigne « Elle » dans la dernière phrase ?",
+          "passage": "En sortant du collège, Noé aperçoit un petit chien près du portail. Il n’a pas de collier et tremble. Noé retire sa veste, en enveloppe l’animal puis appelle sa mère. Elle arrive dix minutes plus tard avec une couverture.",
+          "answer": "la mère de Noé",
+          "options": [
+            "une passante",
+            "la veste",
+            "la mère de Noé"
+          ],
+          "skillIds": [
+            "recit-explicite"
+          ],
+          "explanation": "« Elle » reprend « sa mère », appelée dans la phrase précédente."
+        },
+        {
+          "id": "recit-implicite-02",
+          "kind": "choice",
+          "prompt": "Peut-on affirmer que le chien a été abandonné ?",
+          "passage": "En sortant du collège, Noé aperçoit un petit chien près du portail. Il n’a pas de collier et tremble. Noé retire sa veste, en enveloppe l’animal puis appelle sa mère. Elle arrive dix minutes plus tard avec une couverture.",
+          "answer": "non, le texte ne le dit pas",
+          "options": [
+            "oui, c’est certain",
+            "non, le texte ne le dit pas",
+            "oui, Noé l’a vu"
+          ],
+          "skillIds": [
+            "recit-implicite"
+          ],
+          "explanation": "L’absence de collier ne prouve pas l’abandon : le chien pourrait aussi s’être perdu."
+        },
+        {
+          "id": "document-02",
+          "kind": "choice",
+          "prompt": "Que faut-il apporter ?",
+          "passage": "Le jardin partagé ouvre le mercredi et le samedi, de 9 h à 12 h. Chaque visiteur apporte ses gants. Les outils sont prêtés sur place. En cas de forte pluie, le jardin reste fermé. Les récoltes sont partagées entre les participants.",
+          "answer": "ses gants",
+          "options": [
+            "ses récoltes",
+            "ses outils",
+            "ses gants"
+          ],
+          "skillIds": [
+            "document"
+          ],
+          "explanation": "Les gants sont à apporter ; les outils sont prêtés sur place."
+        },
+        {
+          "id": "document-03",
+          "kind": "choice",
+          "prompt": "Un samedi de forte pluie, le jardin est…",
+          "passage": "Le jardin partagé ouvre le mercredi et le samedi, de 9 h à 12 h. Chaque visiteur apporte ses gants. Les outils sont prêtés sur place. En cas de forte pluie, le jardin reste fermé. Les récoltes sont partagées entre les participants.",
+          "answer": "fermé",
+          "options": [
+            "ouvert à 9 h",
+            "ouvert à 12 h",
+            "fermé"
+          ],
+          "skillIds": [
+            "document"
+          ],
+          "explanation": "La règle concernant la forte pluie l’emporte sur les horaires habituels."
+        },
+        {
+          "id": "document-04",
+          "kind": "choice",
+          "prompt": "À qui reviennent les récoltes ?",
+          "passage": "Le jardin partagé ouvre le mercredi et le samedi, de 9 h à 12 h. Chaque visiteur apporte ses gants. Les outils sont prêtés sur place. En cas de forte pluie, le jardin reste fermé. Les récoltes sont partagées entre les participants.",
+          "answer": "aux participants",
+          "options": [
+            "à tous les habitants sans exception",
+            "uniquement au responsable",
+            "aux participants"
+          ],
+          "skillIds": [
+            "document"
+          ],
+          "explanation": "Le texte précise qu’elles sont partagées entre les participants."
+        }
+      ]
+    },
     {
       "id": "calcul-ce1",
       "version": "0.1.0",

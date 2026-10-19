@@ -4,11 +4,15 @@
 
 1. Modifier ou créer un pack dans `content/packs`.
 2. Déclarer ses compétences avec des identifiants stables ; chaque question référence une ou plusieurs de ces compétences.
-3. Utiliser `choice`, `number` ou `flashcard`. Pour un QCM, la bonne réponse doit être présente dans `options`.
+3. Utiliser `choice`, `number`, `text` ou `flashcard`. Pour un QCM, la bonne réponse doit être présente dans `options`. `text` demande une réponse courte exacte ; préciser dans la consigne les mots possibles ou le verbe à conjuguer. Les apostrophes droites/courbes, la casse et les espaces sont normalisés, mais les accents restent significatifs (`a` ≠ `à`).
 4. Incrémenter la version du module et la révision du catalogue. Ne pas changer la signification d’un identifiant existant : une question ou une compétence différente reçoit un nouvel identifiant. Les états de révision existants se rattachent à ces identifiants stables.
 5. Exécuter `npm run catalog:import`, valider puis livrer ensemble les deux interfaces et le serveur depuis ce même dépôt.
 
 Les niveaux sont des étiquettes ouvertes (`CE1`, `6e`, etc.) et ne limitent pas le système à ces deux classes. Le profil de l’enfant détermine le catalogue de départ, pas ses capacités réelles.
+
+Le champ facultatif `passage` affiche un texte de lecture distinct de la question. `explanation` fournit la correction après chaque réponse. Le filtre de compétence permet de travailler un point précis, en conservant les mêmes identifiants et états FSRS que dans le parcours mélangé. L’ordre des nouvelles questions peut entrelacer les compétences dans le pack ; les révisions dues gardent la priorité.
+
+Le parcours de français de consolidation CM2 → 6e est décrit dans [francais-6e.md](francais-6e.md).
 
 ## Ajouter un nouveau type (micro, dictée, jeu…)
 
