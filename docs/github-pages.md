@@ -4,7 +4,7 @@ Un seul site contient trois entrées : l’accueil, `enfants/` et `parents/`. La
 
 ## Éligibilité et activation
 
-GitHub affiche actuellement « Upgrade or make this repository public to enable Pages » pour ce dépôt privé. La publication reste donc en attente d’un choix : rendre le dépôt de la plateforme public, ou utiliser une offre compatible avec Pages sur dépôts privés. Aucun changement de visibilité ou achat n’est effectué par les scripts.
+Le dépôt de la plateforme est public et GitHub Pages est configuré avec GitHub Actions comme source. Le workflow publie l’accueil et les deux interfaces après réussite des contrôles. La base Firebase et ses données restent indépendantes de la visibilité du code.
 
 Le dépôt `famille-exercices` n’a pas besoin de Pages : ses packs sont maintenant inclus dans `content/` au sein de la plateforme.
 
