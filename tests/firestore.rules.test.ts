@@ -1,0 +1,11 @@
+import {after,before,test} from 'node:test';
+import {readFile} from 'node:fs/promises';
+import {initializeTestEnvironment,assertFails,assertSucceeds,type RulesTestEnvironment} from '@firebase/rules-unit-testing';
+import {doc,getDoc,setDoc,collection,getDocs} from 'firebase/firestore';
+let env:RulesTestEnvironment;
+before(async()=>{env=await initializeTestEnvironment({projectId:'demo-famille',firestore:{rules:await readFile('infra/firestore.rules','utf8')}});await env.withSecurityRulesDisabled(async ctx=>{await setDoc(doc(ctx.firestore(),'families/test/learners/ondine'),{name:'Ondine',level:'CE1'});await setDoc(doc(ctx.firestore(),'families/test/learners/maurice'),{name:'Maurice',level:'6e'});});});
+after(async()=>env?.cleanup());
+test('le parent lit les profils de sa famille',async()=>{const db=env.authenticatedContext('p',{familyId:'test',role:'parent'}).firestore();await assertSucceeds(getDocs(collection(db,'families/test/learners')));});
+test('un enfant lit son profil, sans lister ni ouvrir celui de son frère ou sa sœur',async()=>{const db=env.authenticatedContext('c',{familyId:'test',role:'learner',learnerId:'ondine'}).firestore();await assertSucceeds(getDoc(doc(db,'families/test/learners/ondine')));await assertFails(getDoc(doc(db,'families/test/learners/maurice')));await assertFails(getDocs(collection(db,'families/test/learners')));});
+test('autre famille et visiteur anonyme refusés',async()=>{await assertFails(getDoc(doc(env.authenticatedContext('x',{familyId:'autre',role:'parent'}).firestore(),'families/test/learners/ondine')));await assertFails(getDoc(doc(env.unauthenticatedContext().firestore(),'families/test/learners/ondine')));});
+test('même le parent ne peut ni modifier ses droits ni fabriquer un score via Firestore',async()=>{const db=env.authenticatedContext('p',{familyId:'test',role:'parent'}).firestore();for(const path of ['families/test','families/test/learners/ondine','families/test/learners/ondine/progress/faux','families/test/learners/ondine/events/faux'])await assertFails(setDoc(doc(db,path),{role:'parent',correct:100}));});

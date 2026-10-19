@@ -1,0 +1,12 @@
+import {test,before} from 'node:test';
+import assert from 'node:assert/strict';
+import {getFirestore} from 'firebase-admin/firestore';
+import type {CallableRequest} from 'firebase-functions/v2/https';
+process.env.GCLOUD_PROJECT='demo-famille';
+const {submitAttempt}=await import('../functions/src/index');
+const base={schemaVersion:1,id:'59998546-f499-4d04-b71d-367509388853',learnerId:'ondine',moduleId:'calcul-ce1',moduleVersion:'0.1.0',catalogRevision:'0.1.0',exerciseId:'add-7-5',answer:'12',durationMs:1000};
+const request=(data=base,token:Record<string,unknown>={familyId:'integration',role:'learner',learnerId:'ondine'})=>({data,auth:{uid:'test-child',token}} as CallableRequest);
+before(async()=>{await getFirestore().doc('families/integration/learners/ondine').set({name:'Test',level:'CE1'});});
+test('deux envois concurrents du même résultat ne comptent qu’une fois',async()=>{const [a,b]=await Promise.all([submitAttempt.run(request()),submitAttempt.run(request())]);assert.deepEqual(a,b);const db=getFirestore(),p=await db.doc('families/integration/learners/ondine/progress/calcul-ce1__addition').get();assert.equal(p.data()?.attempts,1);assert.equal(p.data()?.correct,1);const review=await db.doc('families/integration/learners/ondine/reviews/calcul-ce1__add-7-5').get();assert.equal(review.data()?.card.reps,1);});
+test('réutiliser un identifiant avec une autre réponse est refusé',async()=>{await submitAttempt.run(request());await assert.rejects(()=>submitAttempt.run(request({...base,answer:'11'})),/Identifiant/);});
+test('un enfant ne peut pas enregistrer pour un autre profil',async()=>{await assert.rejects(()=>submitAttempt.run(request(base,{familyId:'integration',role:'learner',learnerId:'maurice'})),/autorisé/);});

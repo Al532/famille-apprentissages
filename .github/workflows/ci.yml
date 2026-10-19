@@ -1,0 +1,25 @@
+name: Plateforme et contrats
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - run: npm ci
+      - run: npm run catalog:validate
+      - run: npm run check
+      - run: npm test
+      - run: npm run build
+      - run: npm run test:rules

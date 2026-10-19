@@ -1,0 +1,30 @@
+rules_version = '2';
+service cloud.firestore {
+ match /databases/{database}/documents {
+  function familyMember(familyId) {
+   return request.auth != null && request.auth.token.familyId == familyId;
+  }
+  function parent(familyId) {
+   return familyMember(familyId) && request.auth.token.role == 'parent';
+  }
+  function ownLearner(familyId, learnerId) {
+   return familyMember(familyId) && request.auth.token.role == 'learner'
+     && request.auth.token.learnerId == learnerId;
+  }
+  match /families/{familyId} {
+   allow get: if parent(familyId);
+   allow write: if false;
+   match /learners/{learnerId} {
+    allow get: if parent(familyId) || ownLearner(familyId, learnerId);
+    allow list: if parent(familyId);
+    allow write: if false;
+    match /{collectionName}/{documentId} {
+     allow read: if collectionName in ['events','reviews','progress']
+       && (parent(familyId) || ownLearner(familyId, learnerId));
+     allow write: if false;
+    }
+   }
+  }
+  match /{document=**} { allow read,write: if false; }
+ }
+}
