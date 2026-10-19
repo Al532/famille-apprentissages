@@ -24,7 +24,8 @@
     "catalog:import": "node --import tsx scripts/catalog.ts import",
     "provision": "node --import tsx scripts/provision.ts",
     "export:family": "node --import tsx scripts/export-family.ts",
-    "emulators": "npm run build:functions && firebase emulators:start --project demo-famille --only auth,firestore,functions"
+    "emulators": "npm run build:functions && firebase emulators:start --project demo-famille --only auth,firestore,functions",
+    "build:pages": "node scripts/build-pages.mjs"
   },
   "dependencies": {
     "@famille/core": "*",

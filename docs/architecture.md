@@ -4,7 +4,7 @@
 
 ```mermaid
 flowchart TD
-  C["Dépôt contenus : packs versionnés"] --> R["Livraison commune de la plateforme"]
+  C["Contenus du dépôt : packs versionnés"] --> R["Livraison commune de la plateforme"]
   R --> E["Site enfants"]
   R --> P["Site parents"]
   R --> F["Fonction de correction et de progression"]
@@ -14,16 +14,17 @@ flowchart TD
   D --> E
 ```
 
-## Pourquoi deux dépôts
+## Un dépôt et deux espaces du même site
 
-Une séparation des interfaces et du socle en trois dépôts exigerait une gestion des publications et des compatibilités pour chaque changement. Ici, un monorepo contient les parties qui doivent rester cohérentes ; les contenus conservent leur rythme d’édition dans un second dépôt. On pourra extraire un paquet partagé plus tard si plusieurs produits indépendants le justifient.
+Les interfaces, contenus et contrats vivent dans `famille-apprentissages`. La page d’accueil mène vers `/enfants/` et `/parents/`. Un seul workflow vérifie et livre l’ensemble, ce qui évite de coordonner des versions entre plusieurs dépôts.
 
-Les deux sites sont déployables séparément ; une seule livraison de référence contient leurs contrats, le catalogue, la correction et le tableau de bord.
+Les packs sont édités dans `content/`. L’import génère `packages/catalog/catalog.json`, utilisé par le navigateur et le serveur ; la CI vérifie son égalité avec les sources. Le dépôt `famille-exercices` créé au départ reste un historique, sans rôle dans les futures livraisons.
 
 ## Arborescence
 
 ```text
 apps/web/                 Deux entrées de build, composants enfants / parents
+content/                  Source des packs et manifeste pédagogique
 packages/core/            Validation, contrats, correction, FSRS, agrégation
 packages/catalog/         Catalogue importé et figé pour une livraison
 functions/                API Firebase Callable ; seul chemin d’écriture des résultats
@@ -79,7 +80,7 @@ Sources : [TS-FSRS](https://github.com/open-spaced-repetition/ts-fsrs), [Callabl
 
 ## Livraison et compatibilité
 
-La CI valide les contrats, les contenus, le moteur, les droits et les deux builds. Un changement de contenu produit un commit d’import dans la plateforme. La livraison inclut les deux sites et la fonction backend. Firebase ne déploie pas ces composants comme une transaction globale : un ancien client peut donc recevoir `CATALOG_MISMATCH` et doit être rechargé. C’est préférable à une correction contre une mauvaise version.
+La CI valide les contrats, les contenus, le moteur, les droits et les deux builds. Un changement de contenu met à jour les packs et leur catalogue embarqué dans le même commit. La livraison inclut les deux sites et la fonction backend. Firebase ne déploie pas ces composants comme une transaction globale : un ancien client peut donc recevoir `CATALOG_MISMATCH` et doit être rechargé. C’est préférable à une correction contre une mauvaise version.
 
 Les données brutes sont conservées pour pouvoir recalculer les projections. Une migration de schéma introduira une nouvelle version et un script idempotent, avec export préalable. Ne jamais réinterpréter silencieusement un ancien résultat selon une nouvelle règle.
 

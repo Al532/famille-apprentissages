@@ -2,11 +2,11 @@
 
 ## Ajouter des questions de types connus
 
-1. Modifier ou créer un pack dans `famille-exercices/packs`.
+1. Modifier ou créer un pack dans `content/packs`.
 2. Déclarer ses compétences avec des identifiants stables ; chaque question référence une ou plusieurs de ces compétences.
 3. Utiliser `choice`, `number` ou `flashcard`. Pour un QCM, la bonne réponse doit être présente dans `options`.
 4. Incrémenter la version du module et la révision du catalogue. Ne pas changer la signification d’un identifiant existant : une question ou une compétence différente reçoit un nouvel identifiant. Les états de révision existants se rattachent à ces identifiants stables.
-5. Valider le dépôt de contenus, importer dans la plateforme puis livrer ensemble les deux sites et le serveur.
+5. Exécuter `npm run catalog:import`, valider puis livrer ensemble les deux interfaces et le serveur depuis ce même dépôt.
 
 Les niveaux sont des étiquettes ouvertes (`CE1`, `6e`, etc.) et ne limitent pas le système à ces deux classes. Le profil de l’enfant détermine le catalogue de départ, pas ses capacités réelles.
 

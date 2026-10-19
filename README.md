@@ -1,69 +1,60 @@
-# Les petits chemins — plateforme d’apprentissage familiale
+# Les petits chemins — apprentissage en famille
 
-Socle modulaire pour deux interfaces : les enfants apprennent, les parents suivent les résultats. Les classes initiales sont le CE1 et la sixième ; les profils ne sont pas limités à ces niveaux.
+Un seul dépôt pour le hub des enfants, son espace parent, les contenus pédagogiques et le socle Firebase. Les profils initiaux correspondent au CE1 et à la sixième ; les niveaux restent ouverts.
 
-## Deux dépôts, deux responsabilités
+## Organisation
 
-| Dépôt | Contenu |
+| Emplacement | Rôle |
 | --- | --- |
-| `famille-apprentissages` (celui-ci) | Applications enfants et parents, contrats de données, moteur de révision, correction, Firebase, tests et documentation. |
-| `famille-exercices` | Packs pédagogiques JSON, versions des contenus et validation. |
+| `apps/web` | Interfaces enfants et parents, construites avec les mêmes contrats. |
+| `content` | Packs pédagogiques et manifeste du catalogue. |
+| `packages/core` | Validation, évaluation, projections de progression et répétition espacée FSRS. |
+| `packages/catalog` | Copie embarquée du catalogue, vérifiée contre les packs sources par la CI. |
+| `functions` et `infra` | API Firebase transactionnelle et règles d’accès aux données. |
+| `docs` | Architecture, ajout de modules et mise en service. |
 
-Les deux interfaces appartiennent au même dépôt pour évoluer avec les mêmes contrats et le même catalogue. Elles produisent deux sites indépendants. Aucun projet Firebase réel ni hébergement n’est créé par ce squelette.
+Le site dispose d’une page d’accueil et de deux sous-pages : `/enfants/` et `/parents/`. Une seule livraison les met à jour ensemble. Le dépôt `famille-exercices`, créé lors du socle initial, reste un historique de départ ; les nouveaux contenus s’éditent ici, dans `content/`.
 
 ## Essayer en local
 
-Node.js 22 ou 24 ; Java 21 recommandé pour les tests Firebase (17 fonctionne avec le CLI verrouillé actuel).
+Node.js 22 ou 24 ; Java 21 recommandé pour l’émulateur Firebase.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Ouvrir l’adresse affichée. Le lien **Voir le suivi parent** permet de consulter sur la même origine les réponses du mode démo. Un changement d’origine (port, navigateur, appareil) utilise un autre stockage local. Les deux profils de démonstration sont prédéfinis. Aucun compte ni accès à une base de données n’est nécessaire à ce mode.
+Sans configuration Firebase, le mode démonstration fonctionne dans le navigateur. Le lien **Voir le suivi parent** permet de consulter les résultats locaux sur la même origine. Un autre port, navigateur ou appareil utilise un autre stockage local.
+
+## Ajouter des exercices
+
+Modifier les packs de `content/packs` et leur manifeste `content/catalog.json`, incrémenter leurs versions puis exécuter :
 
 ```sh
-npm run dev:parents
+npm run catalog:import
 npm run catalog:validate
+```
+
+Committer packs et catalogue embarqué ensemble. La validation refuse une livraison où ces deux représentations divergent. Une nouvelle compétence apparaît automatiquement dans le suivi parent. Un nouveau type d’activité ajoute son renderer et son évaluateur dans la même plateforme ; voir [le guide des modules](docs/modules.md).
+
+## Vérifier et construire
+
+```sh
 npm run check
 npm test
 npm run build
+npm run build:pages
 npm run test:rules
 ```
 
-`dev:parents` lance l’interface parent seule, sur un autre port : ce port ne partage donc pas les données locales du premier. En mode Firebase les deux sites partagent bien la même base.
+`npm run build` prépare les deux interfaces pour Firebase Hosting et le backend. `npm run build:pages` produit `dist/pages`, avec l’accueil et les sous-pages enfants/parents aux bons chemins GitHub Pages.
 
-## Ce qui fonctionne déjà
+La CI vérifie le catalogue, les types, le moteur, les builds et les règles Firestore. La publication Pages se lance ensuite sur `main` lorsque le dépôt est éligible : dépôt public, ou variable `PAGES_ENABLED=true` pour un dépôt privé bénéficiant d’une offre compatible. Voir [la configuration Pages](docs/github-pages.md).
 
-- QCM, réponses numériques et cartes mémoire avec autoévaluation.
-- Deux petits ateliers de démonstration CE1 / sixième.
-- Planification FSRS et sélection des révisions dues, puis des nouvelles questions.
-- Résultats par enfant, atelier et compétence ; distinction entre correction objective et autoévaluation.
-- Application parent générique : toute nouvelle compétence déclarée apparaît sans nouvel écran à programmer.
-- Mode Firebase câblé : Auth, écoute Firestore, correction et écritures via une fonction serveur transactionnelle.
-- Déduplication des réponses, isolation des familles et des profils, export administratif JSON.
-- Builds séparés enfants / parents et CI commune.
+## Firebase et état du projet
 
-Le contenu de départ n’est ni un diagnostic scolaire ni une couverture du programme. Les exercices musicaux, l’analyse micro, un véritable bilan initial et l’import Anki restent des extensions à ajouter.
+Le projet Firebase réel reste à créer et à configurer. Copier `.env.example` en `.env.local` puis suivre [la mise en service](docs/firebase.md). L’authentification détermine les rôles et la famille ; le serveur évalue et enregistre les réponses. Le chemin `/parents/` organise le site, les droits Firebase protègent les données.
 
-## Activer Firebase
+Les QCM, réponses numériques et flashcards fonctionnent, avec deux petits ateliers d’exemple. Ce contenu n’est ni un diagnostic scolaire ni une couverture du programme. L’import Anki, les parcours musicaux et l’analyse micro restent des modules à développer.
 
-Lire [la configuration](docs/firebase.md) puis [l’architecture](docs/architecture.md). Copier `.env.example` en `.env.local`, créer le projet et ses comptes, provisionner les droits, puis déployer. Ne jamais mettre de compte de service dans le navigateur ou le dépôt.
-
-## Ajouter du contenu
-
-Cloner `famille-exercices` à côté de ce dépôt. Après modification et validation des packs :
-
-```sh
-npm run catalog:import -- ../famille-exercices
-npm run catalog:validate
-npm run check
-npm test
-npm run build
-```
-
-Relire le diff de `packages/catalog/catalog.json`, committer puis publier les deux interfaces et le serveur dans la même livraison. Le catalogue est une copie versionnée embarquée : le fonctionnement quotidien ne dépend pas d’un accès à GitHub. Les règles d’évolution sont détaillées dans [le guide des modules](docs/modules.md).
-
-## État de livraison
-
-Les sources sont hébergées dans deux dépôts **privés** : [famille-apprentissages](https://github.com/Al532/famille-apprentissages) et [famille-exercices](https://github.com/Al532/famille-exercices). Le projet Firebase et le déploiement réel restent à configurer. Aucun secret ni identifiant de projet réel n’est inclus.
+[Architecture](docs/architecture.md) · [Modules](docs/modules.md) · [Firebase](docs/firebase.md) · [GitHub Pages](docs/github-pages.md)

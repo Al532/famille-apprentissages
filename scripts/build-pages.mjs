@@ -1,0 +1,13 @@
+import {cp,mkdir,rm,writeFile} from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
+const base=(process.env.GITHUB_PAGES_BASE??'/famille-apprentissages').replace(/\/$/,'');
+if(!/^(?:\/[a-zA-Z0-9._-]+)*$/.test(base)||base.split('/').includes('..'))throw new Error('Chemin de publication invalide.');
+for(const name of ['enfants','parents']){
+ const result=spawnSync(process.execPath,['node_modules/vite/bin/vite.js','build','--config','apps/web/vite.config.ts','--mode',name],{stdio:'inherit',env:{...process.env,GITHUB_PAGES_BASE:base}});
+ if(result.error)throw result.error;if(result.status!==0)process.exit(result.status??1);
+}
+await rm('dist/pages',{recursive:true,force:true});await mkdir('dist/pages',{recursive:true});
+for(const name of ['enfants','parents'])await cp(`dist/${name}`,`dist/pages/${name}`,{recursive:true});
+await writeFile('dist/pages/.nojekyll','');
+await writeFile('dist/pages/index.html',`<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Les petits chemins</title><meta name="theme-color" content="#176655"><style>*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f7f8f2;color:#203d35;font-family:system-ui,sans-serif;padding:24px}main{max-width:780px;width:100%}.mark{font-size:64px;color:#176655}h1{font-size:clamp(32px,6vw,52px);letter-spacing:-2px;margin:12px 0}p{line-height:1.65;color:#65786f}.links{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:35px 0}a{display:block;background:#fffefb;border:1px solid #dfe5dc;border-radius:22px;padding:28px;color:inherit;text-decoration:none}a:hover,a:focus-visible{border-color:#176655;outline-offset:5px}a strong{display:block;font-size:23px;margin-bottom:12px}a span{display:block;color:#65786f;font-size:14px;line-height:1.6}small{color:#65786f;font-size:12px;line-height:1.6}@media(max-width:520px){.links{grid-template-columns:1fr}}</style></head><body><main><div class="mark" aria-hidden="true">✳</div><h1>Les petits chemins</h1><p>Un espace pour apprendre en famille, un petit pas chaque jour.</p><nav class="links" aria-label="Choisir son espace"><a href="./enfants/"><strong>Espace enfants ↗</strong><span>Découvrir les ateliers et retrouver ses révisions.</span></a><a href="./parents/"><strong>Espace parents ↗</strong><span>Consulter les progrès et préparer les prochaines étapes.</span></a></nav><small>Les premiers ateliers sont des exemples. Sans connexion à la base familiale, les résultats restent dans ce navigateur.</small></main></body></html>`);
+console.log(`Publication préparée dans dist/pages (base ${base||'/'}).`);

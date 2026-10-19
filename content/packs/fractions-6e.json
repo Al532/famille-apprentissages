@@ -1,0 +1,59 @@
+{
+  "id": "fractions-6e",
+  "version": "0.1.0",
+  "title": "Le sens des fractions",
+  "subject": "Mathématiques",
+  "levels": [
+    "6e"
+  ],
+  "description": "Partager, comparer et comprendre une écriture fractionnaire.",
+  "skills": [
+    {
+      "id": "sens-fraction",
+      "label": "Comprendre une fraction"
+    },
+    {
+      "id": "equivalence",
+      "label": "Fractions équivalentes"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "quart",
+      "kind": "choice",
+      "prompt": "Une pizza est partagée en 4 parts égales. Tu en prends une. Quelle fraction as-tu prise ?",
+      "answer": "1/4",
+      "options": [
+        "1/2",
+        "1/4",
+        "4/1"
+      ],
+      "skillIds": [
+        "sens-fraction"
+      ]
+    },
+    {
+      "id": "demi",
+      "kind": "choice",
+      "prompt": "Quelle fraction est égale à 1/2 ?",
+      "answer": "3/6",
+      "options": [
+        "2/3",
+        "3/6",
+        "1/4"
+      ],
+      "skillIds": [
+        "equivalence"
+      ]
+    },
+    {
+      "id": "definition",
+      "kind": "flashcard",
+      "prompt": "Que représente le dénominateur d’une fraction ?",
+      "answer": "Le nombre de parts égales dans lesquelles on partage l’unité.",
+      "skillIds": [
+        "sens-fraction"
+      ]
+    }
+  ]
+}

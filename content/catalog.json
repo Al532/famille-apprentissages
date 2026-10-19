@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "revision": "0.1.0",
+  "packs": [
+    "packs/calcul-ce1.json",
+    "packs/fractions-6e.json"
+  ]
+}
