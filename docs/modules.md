@@ -6,7 +6,7 @@
 2. Déclarer ses compétences avec des identifiants stables ; chaque question référence une ou plusieurs de ces compétences.
 3. Utiliser `choice`, `number`, `text` ou `flashcard`. Pour un QCM, la bonne réponse doit être présente dans `options`. `text` demande une réponse courte exacte ; préciser dans la consigne les mots possibles ou le verbe à conjuguer. Les apostrophes droites/courbes, la casse et les espaces sont normalisés, mais les accents restent significatifs (`a` ≠ `à`).
 4. Incrémenter la version du module et la révision du catalogue. Ne pas changer la signification d’un identifiant existant : une question ou une compétence différente reçoit un nouvel identifiant. Les états de révision existants se rattachent à ces identifiants stables.
-5. Exécuter `npm run catalog:import`, valider puis livrer ensemble les deux interfaces et le serveur depuis ce même dépôt.
+5. Exécuter `npm run catalog:import`, valider puis livrer ensemble les deux interfaces et leurs règles Firestore depuis ce même dépôt.
 
 Les niveaux sont des étiquettes ouvertes (`CE1`, `6e`, etc.) et ne limitent pas le système à ces deux classes. Le profil de l’enfant détermine le catalogue de départ, pas ses capacités réelles.
 
@@ -20,7 +20,7 @@ Faire une seule PR dans la plateforme avec :
 
 - un schéma de consigne et de réponse versionné ;
 - un renderer enfant accessible et adapté au téléphone ;
-- un évaluateur serveur ou une politique explicite si l’évaluation dépend d’une mesure locale ;
+- un évaluateur partagé enfant/parent, avec réponse brute versionnée et limites de la mesure documentées ;
 - une sortie compatible avec le suivi commun, ou un nouveau contrat compatible avec les anciens événements ;
 - des tests couvrant les résultats et leur lecture dans le suivi parent ;
 - un exemple de contenu et la documentation du module.

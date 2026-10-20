@@ -24,8 +24,8 @@ Les liens d’accueil et les assets respectent ce préfixe. Les builds Firebase 
 
 Pages sert les fichiers statiques. Firebase continue de gérer l’authentification et les données ; les fonctions doivent être déployées séparément dans le projet Firebase.
 
-Sans variables Firebase, le site reste une démonstration locale. Les résultats ne sont alors pas partagés entre appareils. Pour activer la connexion, définir les variables de dépôt `VITE_FIREBASE_API_KEY`, `VITE_FIREBASE_AUTH_DOMAIN`, `VITE_FIREBASE_PROJECT_ID`, `VITE_FIREBASE_APP_ID` et éventuellement `VITE_FIREBASE_REGION`, puis relancer le workflow. Ces paramètres web sont publics ; aucun secret serveur ne doit utiliser ce préfixe.
+Sans variables Firebase, le site reste une démonstration locale. Les résultats ne sont alors pas partagés entre appareils. Pour activer la connexion, définir les variables de dépôt `VITE_FIREBASE_API_KEY`, `VITE_FIREBASE_AUTH_DOMAIN`, `VITE_FIREBASE_PROJECT_ID`, `VITE_FIREBASE_APP_ID`, puis relancer le workflow. Ces paramètres web sont publics ; aucun secret serveur ne doit utiliser ce préfixe.
 
-Ajouter le domaine Pages aux domaines autorisés de Firebase Auth. L’accès à la page parent et celui aux statistiques sont distincts : les règles Firestore et les rôles serveur protègent les données, même si les fichiers du site sont publics.
+Ajouter le domaine Pages aux domaines autorisés de Firebase Auth. L’accès à la page parent et celui aux statistiques sont distincts : les règles Firestore et les documents de droits protégés protègent les données, même si les fichiers du site sont publics.
 
 Sources : [workflows Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages), [déploiement Vite](https://vite.dev/guide/static-deploy.html).

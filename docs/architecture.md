@@ -1,91 +1,31 @@
-# Architecture et décisions
+# Architecture de la plateforme
 
-## Vue d’ensemble
+Un dépôt contient le site enfants, le suivi parent, les contenus et le moteur partagé. Une livraison met à jour les deux interfaces et les contrats ensemble. GitHub Pages héberge l’accueil, `/enfants/` et `/parents/`.
 
-```mermaid
-flowchart TD
-  C["Contenus du dépôt : packs versionnés"] --> R["Livraison commune de la plateforme"]
-  R --> E["Site enfants"]
-  R --> P["Site parents"]
-  R --> F["Fonction de correction et de progression"]
-  E -->|"réponse authentifiée"| F
-  F -->|"transaction"| D["Firestore : journal, révisions, compétences"]
-  D -->|"droits par famille et profil"| P
-  D --> E
-```
+## Mode gratuit Spark
 
-## Un dépôt et deux espaces du même site
+Firebase Authentication identifie les comptes. Firestore stocke les documents d’accès, les profils et les réponses brutes. Aucun appel Cloud Functions, aucun calcul serveur payant et aucun compte Cloud Billing n’est requis.
 
-Les interfaces, contenus et contrats vivent dans `famille-apprentissages`. La page d’accueil mène vers `/enfants/` et `/parents/`. Un seul workflow vérifie et livre l’ensemble, ce qui évite de coordonner des versions entre plusieurs dépôts.
+- `access/{uid}` : `familyId`, `role` (`parent` ou `learner`) et `learnerId` pour un enfant.
+- `families/{familyId}/learners/{id}` : prénom, classe et UID du compte enfant.
+- `families/{familyId}/learners/{id}/attempts/{uuid}` : tentative versionnée, UID émetteur et date serveur.
 
-Les packs sont édités dans `content/`. L’import génère `packages/catalog/catalog.json`, utilisé par le navigateur et le serveur ; la CI vérifie son égalité avec les sources. Le dépôt `famille-exercices` créé au départ reste un historique, sans rôle dans les futures livraisons.
+Le premier parent est confirmé par l’administrateur dans la console. Un parent peut ensuite créer un compte enfant et son profil lié, sans changer sa propre session. Les rattachements et profils sont écrits ensemble ; aucun compte ne peut s’attribuer le rôle parent.
 
-## Arborescence
+Les règles Firestore limitent la lecture à la famille et au rôle. Un enfant ne voit que son profil et son historique. Seul son compte peut ajouter ses réponses ; personne ne peut les remplacer, les supprimer depuis l’application ou fournir un compteur de réussite. Chaque réponse est idempotente grâce à son UUID et une transaction Firestore.
 
-```text
-apps/web/                 Deux entrées de build, composants enfants / parents
-content/                  Source des packs et manifeste pédagogique
-packages/core/            Validation, contrats, correction, FSRS, agrégation
-packages/catalog/         Catalogue importé et figé pour une livraison
-functions/                API Firebase Callable ; seul chemin d’écriture des résultats
-infra/                    Règles et index Firestore
-scripts/                  Import, provisionnement et export
- tests/                   Contrats, moteur, droits, déduplication serveur
- docs/                    Décisions et règles d’évolution
-```
+## Calcul partagé du suivi
 
-## Domaines indépendants
+Les deux interfaces écoutent les réponses et appliquent le moteur `packages/core` : correction, projection des compétences et FSRS. Le tri utilise l’horodatage serveur, puis l’UUID pour départager deux dates identiques. Les résultats et cartes calculés restent en mémoire, sans colonne de score fournie par l’enfant dans la base.
 
-| Domaine | Responsabilité | Extension possible |
-| --- | --- | --- |
-| Identité | Parent, famille, profils enfants et droits | Plusieurs parents, plusieurs appareils |
-| Catalogue | Module, version, compétences, exercices | Nouvelles matières et niveaux |
-| Exécution | Afficher une consigne et recueillir une réponse | Piano réel, trompette transpositrice, dictée audio |
-| Évaluation | Interpréter la réponse selon le type d’activité | Diagnostic, erreurs détaillées, indices |
-| Révision | Quand représenter une question | Politiques différentes du FSRS pour certains exercices |
-| Suivi | Journal durable et projections par compétence | Objectifs parentaux, tendances, exports |
-| Stockage | Authentifier, lire, enregistrer | Autre fournisseur derrière les mêmes contrats |
+Chaque tentative identifie sa révision et sa version de module. Le catalogue actif et les versions archivées sont livrés ensemble ; une mise à jour ne change donc pas le sens d’une ancienne réponse. Les références inconnues sont conservées et signalées dans le suivi partiel.
 
-Le catalogue ne contient pas de code exécutable. Les trois renderers actuels sont dans la plateforme. Un nouveau type d’exercice ajoute un renderer, un validateur et un évaluateur dans la même PR ; de nouvelles questions de types connus ne nécessitent que du contenu.
+C’est un suivi familial d’entraînement : la durée et la réponse sont déclarées par l’appareil, les corrigés lui sont accessibles et le système ne certifie pas les conditions de passation. La sécurité des données repose sur Auth et les règles, pas sur le choix d’un prénom ou le chemin `/parents/`.
 
-## Contrats et données
+## Hors connexion et quotas
 
-Chemins Firestore :
+Les erreurs de synchronisation sont visibles. Une réponse non confirmée ne devient pas un résultat local prétendument partagé ; elle peut être réessayée sans doublon tant que la page reste ouverte. Aucun import automatique du mode démonstration.
 
-- `families/{familyId}` : métadonnées de la famille.
-- `families/{familyId}/learners/{learnerId}` : prénom/pseudonyme et niveau.
-- `.../events/{attemptId}` : résultat serveur immuable, empreinte de la requête et calendrier retourné.
-- `.../reviews/{moduleId}__{exerciseId}` : état de répétition par question.
-- `.../progress/{moduleId}__{skillId}` : projection par compétence.
+Le forfait Spark borne l’usage gratuit. Dépasser un quota peut interrompre le service ; cela n’active pas de paiement à l’usage. L’historique est chargé à la connexion et écouté ensuite. Le coût en lectures augmente avec l’historique et le nombre de nouvelles connexions : surveiller Utilisation pour rester dans les quotas documentés.
 
-Une réponse porte `schemaVersion`, UUID, enfant, module, version du module, révision du catalogue, exercice, réponse, durée et éventuellement autoévaluation. Le navigateur ne fournit ni son rôle ni un score faisant autorité. Les rôles proviennent de Firebase Auth et sont attribués par l’administration.
-
-Le serveur valide le contrat, vérifie la famille et l’enfant, vérifie le catalogue, corrige, puis crée le journal et met à jour les projections dans **une transaction**. Une répétition réseau du même UUID renvoie le même accusé ; un UUID réutilisé avec une autre réponse est refusé. Deux réponses distinctes concurrentes sont sérialisées par les transactions Firestore.
-
-Les horodatages de progression sont ceux du serveur. La durée déclarée est un indicateur d’usage, pas une mesure fiable d’attention. Aucune donnée audio n’est conservée.
-
-## Suivi parent qui suit les nouveaux exercices
-
-Le tableau parent lit les projections communes et résout les libellés à partir du même catalogue que le hub. Une nouvelle compétence d’un module existant apparaît automatiquement. Les identifiants restent affichables même si un ancien module n’existe plus dans le catalogue actuel.
-
-Une question peut travailler plusieurs compétences : elle compte une fois par compétence, mais une seule fois dans le nombre global de réponses (obtenu par les cartes de révision). Les autoévaluations de flashcards ne sont jamais présentées comme des réussites corrigées. Les pourcentages sont des observations sur les exercices joués, pas des niveaux de maîtrise scolaires.
-
-## Répétition espacée et Anki
-
-Le moteur utilise réellement `ts-fsrs` 5.4.2 (MIT), derrière une petite fonction d’adaptation. Il ne copie pas l’application Anki et n’implémente pas la synchronisation AnkiWeb. Les réponses corrigées sont traduites en Again / Good ; les cartes mémoire permettent les quatre évaluations. Conserver cette politique dans les journaux et la documenter avant tout changement.
-
-Un import APKG/CSV pourra convertir des notes et modèles compatibles dans des modules de cartes mémoire. Les médias, le HTML et le JavaScript des paquets importés devront être traités explicitement ; aucun import libre n’est actif.
-
-Sources : [TS-FSRS](https://github.com/open-spaced-repetition/ts-fsrs), [Callable Firebase](https://firebase.google.com/docs/functions/callable), [règles Firestore](https://firebase.google.com/docs/firestore/security/rules-conditions).
-
-## Livraison et compatibilité
-
-La CI valide les contrats, les contenus, le moteur, les droits et les deux builds. Un changement de contenu met à jour les packs et leur catalogue embarqué dans le même commit. La livraison inclut les deux sites et la fonction backend. Firebase ne déploie pas ces composants comme une transaction globale : un ancien client peut donc recevoir `CATALOG_MISMATCH` et doit être rechargé. C’est préférable à une correction contre une mauvaise version.
-
-Les données brutes sont conservées pour pouvoir recalculer les projections. Une migration de schéma introduira une nouvelle version et un script idempotent, avec export préalable. Ne jamais réinterpréter silencieusement un ancien résultat selon une nouvelle règle.
-
-## Limites et évolutions
-
-La démo est locale ; la synchronisation multiappareil nécessite un vrai projet Firebase. Le mode connecté confirme chaque réponse avant de poursuivre : une file hors connexion persistante est une extension future, avec le même UUID de déduplication. Il n’y a ni diagnostic scolaire complet, ni gestion des modules depuis une interface admin, ni moteur d’analyse audio dans ce socle.
-
-Un calendrier de suppression/export, une interface de gestion des comptes et une récupération du compte enfant sont à ajouter avant un usage élargi au-delà de la famille. Le script d’export fournit déjà une sortie exploitable hors du fournisseur.
+Voir [la mise en service et ses limites](firebase.md).

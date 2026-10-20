@@ -1,11 +1,4 @@
 {
-  "functions": {
-    "source": "functions",
-    "runtime": "nodejs22",
-    "predeploy": [
-      "npm run build:functions"
-    ]
-  },
   "firestore": {
     "rules": "infra/firestore.rules",
     "indexes": "infra/firestore.indexes.json"
@@ -48,9 +41,6 @@
     },
     "firestore": {
       "port": 8080
-    },
-    "functions": {
-      "port": 5001
     },
     "ui": {
       "enabled": true,

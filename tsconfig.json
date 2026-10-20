@@ -22,7 +22,6 @@
   "include": [
     "apps",
     "packages",
-    "functions/src",
     "scripts",
     "tests"
   ]
