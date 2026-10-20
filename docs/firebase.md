@@ -1,67 +1,83 @@
-# Mise en service Firebase
+# Firebase gratuit — mise en service Spark
 
-## Projet et région
+Cette application utilise uniquement Firebase Authentication (Google et e-mail/mot de passe), Firestore Standard et des fichiers statiques sur GitHub Pages. Aucun compte Cloud Billing, aucune Cloud Function, aucun service payant n’est nécessaire.
 
-1. Créer un projet Firebase dédié à la famille ; choisir la région Firestore avant de créer la base. Une région européenne est le choix prévu.
-2. Activer Firebase Authentication : Google pour le parent, e-mail / mot de passe pour les profils enfants. Les enfants peuvent utiliser des identifiants techniques créés par le parent, sans boîte mail personnelle ; conserver les identifiants dans un gestionnaire de mots de passe.
-3. Créer Firestore en mode production. Les fonctions sont configurées en `europe-west1`. Cloud Functions peut nécessiter un projet avec facturation activée ; vérifier le plan Firebase avant tout déploiement. Les appels de démonstration n’activent aucun service payant.
-4. Enregistrer une application web (ou deux) et renseigner les variables de `.env.local` depuis `.env.example`.
-5. Ajouter les domaines des deux sites à la liste des domaines autorisés de Firebase Auth.
+## Ce qui se synchronise
 
-La configuration web Firebase est publique ; les clés de compte de service sont des secrets et ne doivent jamais figurer dans `VITE_*` ou Git.
+Chaque réponse est enregistrée dans `families/{familyId}/learners/{learnerId}/attempts/{uuid}` : réponse brute, référence exacte du catalogue, durée déclarée, compte émetteur et horodatage serveur Firestore. Une transaction rend les nouvelles tentatives d’envoi idempotentes. Aucun score, compteur ou état FSRS calculé par un enfant n’est stocké comme autorité.
 
-## Attribution des droits
+Les interfaces enfant et parent recalculent les corrections, les compétences et les révisions à partir de ce même historique. Les anciens catalogues sont conservés dans `packages/catalog/archive.json` par `npm run catalog:import`. Il faut incrémenter la révision avant de changer un contenu publié. Une réponse impossible à interpréter reste conservée et le suivi est explicitement signalé comme partiel.
 
-Le parent se connecte une première fois avec Google pour créer son compte Auth. Ce compte reste sans accès aux données tant que ses droits ne sont pas attribués. Créer les deux comptes enfants dans Firebase Auth, puis noter leurs UID.
+Les règles contrôlent l’identité, la famille, le profil, le format des champs et la date serveur ; elles interdisent le remplacement et la suppression des réponses par les navigateurs. Les corrections sont calculées dans le navigateur : l’outil n’atteste pas qu’un enfant a répondu sans aide et ne constitue pas une évaluation scolaire certifiée. Les corrigés font déjà partie du contenu pédagogique livré au navigateur.
 
-Le script d’administration utilise les Application Default Credentials, configurées en dehors du dépôt. Aucun secret n’est passé en argument.
+## Quotas, absence de paiement et déconnexion
 
-```sh
-export GCLOUD_PROJECT=VOTRE_PROJET
-npm run provision -- famille PARENT_UID ENFANT_UID_1:maurice:Maurice:6e ENFANT_UID_2:ondine:Ondine:CE1
-```
+Conserver le projet sur **Spark** et ne lui associer aucun compte de facturation. Au 20 octobre 2026, Firestore offre 1 Gio de stockage, 50 000 lectures, 20 000 écritures et 20 000 suppressions par jour. Les quotas gratuits sont limités ; une limite atteinte entraîne des erreurs ou une interruption du service concerné, sans facturation automatique sur Spark. Vérifier l’onglet Utilisation si une erreur `resource-exhausted` apparaît. Les connexions Google et e-mail n’utilisent ni SMS ni service d’IA.
 
-Ces valeurs sont des exemples. `parentUid` et les UID enfants doivent être réels. Les comptes sont indépendants ; le choix d’un prénom dans l’interface n’accorde jamais de droits supplémentaires. Un enfant connecté ne reçoit que son propre profil. L’espace parent vérifie le rôle et la base applique également l’isolation.
+Une séance écrit un document par réponse. Une première connexion relit l’historique accessible ; le parent n’écoute que sa famille. Les mises à jour temps réel sont limitées aux profils et réponses. Pour une famille et des séances courtes, ces quotas laissent une marge, mais la gratuité ne signifie pas une capacité illimitée.
 
-Les custom claims sont écrites uniquement par le script serveur. La réexécution sur la même famille est possible. Le script refuse de déplacer un compte d’une autre famille. Ce n’est pas une transaction entre Auth et Firestore : après un incident, le relancer pour terminer le provisionnement. Reconnecter ensuite les comptes.
+Une nouvelle réponse n’est annoncée comme enregistrée qu’après confirmation Firestore. Hors connexion, la réponse en cours peut être réessayée avec son même identifiant ; aucun repli silencieux vers la démonstration. Ne pas fermer la page avant cette confirmation. Une file durable de réponses hors ligne n’est pas implémentée. Le calendrier de révision utilise l’heure serveur des réponses ; le choix des questions à revoir utilise l’horloge de l’appareil.
 
-## Vérification sans projet réel
+Sources officielles : [Spark et Blaze](https://firebase.google.com/docs/projects/billing/firebase-pricing-plans), [quotas Firestore](https://firebase.google.com/docs/firestore/quotas), [transactions](https://firebase.google.com/docs/firestore/manage-data/transactions).
+
+## 1. Préparer le projet
+
+- Projet dédié existant : `famille-apprentissages-minel`, sans facturation activée.
+- Firestore `(default)` Standard en `europe-west1` (Belgique), mode production.
+- Activer Authentication : Google et Adresse e-mail/Mot de passe.
+- Enregistrer une application web ; recopier ses valeurs publiques depuis `.env.example` dans `.env.local`.
+- Autoriser `al532.github.io` dans Authentication > Paramètres > Domaines autorisés. Autoriser `localhost` uniquement pour un essai local voulu.
+- Ne jamais placer une clé de compte de service ou un mot de passe dans `VITE_*`, dans le dépôt ou dans GitHub Actions.
+
+## 2. Déployer les règles avant de publier le site connecté
+
+Après connexion normale au CLI Firebase avec le compte propriétaire :
 
 ```sh
 npm ci
+npm run catalog:validate
 npm run check
 npm test
-npm run test:rules
-```
-
-La commande de règles démarre un émulateur Firestore sur `demo-famille`, valide les accès parent/enfant, le refus des écritures directes et la déduplication du serveur. Elle ne déploie rien.
-
-Pour tester toute la chaîne Auth / fonctions / navigateur, utiliser `npm run emulators`, créer les comptes via l’interface d’émulation, appliquer le script avec `FIREBASE_AUTH_EMULATOR_HOST=127.0.0.1:9099`, `FIRESTORE_EMULATOR_HOST=127.0.0.1:8080` et `GCLOUD_PROJECT=demo-famille`. Configurer les variables web pour ce projet de démonstration, avec `VITE_USE_EMULATORS=true`.
-
-## Hébergement des deux interfaces
-
-Firebase Hosting est préparé comme option de déploiement des deux sites. Tout hébergeur de fichiers statiques convient également ; le backend reste Firebase.
-
-Après authentification du CLI Firebase et création de deux sites Hosting :
-
-```sh
-npx firebase target:apply hosting enfants ID_SITE_ENFANTS --project VOTRE_PROJET
-npx firebase target:apply hosting parents ID_SITE_PARENTS --project VOTRE_PROJET
 npm run build
-npx firebase deploy --only firestore,functions,hosting --project VOTRE_PROJET
+npm run build:pages
+npm run test:rules
+npx firebase deploy --only firestore:rules,firestore:indexes --project famille-apprentissages-minel
 ```
 
-Renseigner le même projet dans les deux builds. Ne jamais déployer avec `VITE_USE_EMULATORS=true`. Le code du site peut être public sans rendre les données publiques : Auth et les règles protègent les lectures, la fonction vérifie chaque écriture. Choisir l’audience de l’hébergement séparément si un accès au site lui-même doit être limité.
+Cette configuration ne contient plus de déploiement `functions`. Les droits initiaux restent fermés tant que le premier parent n’est pas confirmé par l’administrateur.
 
-Un déploiement automatique par GitHub Actions pourra utiliser Workload Identity Federation après création du projet. La CI actuelle n’inclut aucun identifiant et n’effectue pas de déploiement de production.
+## 3. Activer le premier parent, une seule fois
 
-## Export et exploitation
+1. Ouvrir `/parents/` et choisir « Se connecter avec Google ». Le compte Auth est créé, mais il n’a encore aucun droit sur les données.
+2. L’interface affiche l’UID de ce compte. Dans la console Firebase administrateur, créer un document `access/{UID_EXACT}` contenant uniquement deux champs texte : `familyId` = un identifiant de famille choisi, et `role` = `parent`.
+3. Cliquer « Actualiser mes droits » dans l’application. Le parent peut maintenant créer les profils et suivre sa famille.
 
-```sh
-export GCLOUD_PROJECT=VOTRE_PROJET
-npm run export:family -- famille
-```
+Ne jamais créer le premier accès parent depuis le navigateur public de l’application. Les règles refusent tout auto-attribution ou modification de droits parent, y compris par un compte parent existant. Aucun UID réel ni nom d’enfant ne doit être committé.
 
-Les fichiers `exports/` sont exclus de Git. Ils contiennent les données personnelles ; ne pas les joindre aux dépôts de code. Prévoir sauvegardes Firestore, budgets/alertes et politique de rétention lors de la mise en service réelle.
+## 4. Créer les comptes enfants
 
-La protection App Check peut être ajoutée au navigateur et imposée à la fonction après configuration du fournisseur. L’authentification et la validation des rôles fonctionnent déjà sans cette protection complémentaire.
+Dans l’espace parent, ouvrir « Ajouter un enfant à ma famille », saisir prénom, classe, identifiant au format e-mail et un nouveau mot de passe d’au moins 12 caractères. C’est le parent qui choisit et saisit le mot de passe dans l’interface ; le conserver dans un gestionnaire de mots de passe. Le compte secondaire utilisé pendant la création n’interrompt pas la connexion du parent. Les mots de passe ne passent pas par Firestore.
+
+Le profil et le rattachement `access/{UID_ENFANT}` sont créés dans un même lot validé par les règles. Un profil correspond à un seul compte. Le parent ne peut pas promouvoir un autre compte parent ni déplacer un compte déjà associé à une autre famille. Un enfant ne peut lire et alimenter que son propre historique ; il ne peut lister les profils des autres.
+
+Une adresse technique sans boîte mail peut servir d’identifiant. Dans ce cas, la récupération par e-mail ne sera pas possible : le propriétaire du projet pourra remplacer le mot de passe depuis la console Authentication. Une création Auth et un lot Firestore ne sont pas une transaction unique ; si le lot échoue, l’application tente de supprimer le compte Auth tout juste créé. Si cette compensation échoue aussi, elle signale l’association à terminer dans la console.
+
+Administration locale facultative : `npm run provision -- famille PARENT_UID [ENFANT_UID:ID:Prénom:Classe ...]`, avec ADC configurées hors dépôt et `GCLOUD_PROJECT` défini. Les comptes doivent déjà exister. Cette commande ne crée ni compte de facturation ni Cloud Function. Pour un projet vierge, la création du seul document parent dans la console est plus simple.
+
+## 5. Publication GitHub Pages
+
+Renseigner les quatre variables publiques `VITE_FIREBASE_API_KEY`, `VITE_FIREBASE_AUTH_DOMAIN`, `VITE_FIREBASE_PROJECT_ID`, `VITE_FIREBASE_APP_ID` dans les variables Actions du dépôt. La CI construit et publie `/enfants/` et `/parents/` ensemble après validation. Le code peut être public ; les données sont protégées par Auth et les règles.
+
+Sans ces variables, le site reste en démonstration locale. Ne pas activer `VITE_USE_EMULATORS` dans une publication. Le fichier `.env.local` n’est jamais committé.
+
+## Vérifications
+
+`npm run test:rules` démarre un émulateur Firestore sur `demo-famille`, sans joindre le projet réel. Les tests couvrent l’isolation des familles et enfants, le refus d’auto-attribution parent, les profils liés atomiquement, le refus des scores et dates arbitraires, l’immutabilité et la déduplication entre deux clients. Un parent reçoit la nouvelle réponse par écoute temps réel et reconstruit le même suivi que l’enfant.
+
+Pour essayer l’interface avec les services locaux : `npm run emulators` (Java 21), configurer `VITE_USE_EMULATORS=true`, créer les comptes depuis l’interface d’émulation puis le document d’accès parent. Aucune donnée locale de démonstration n’est importée automatiquement dans la famille réelle.
+
+## Export et conservation
+
+`GCLOUD_PROJECT=... npm run export:family -- famille` utilise les identifiants administrateur locaux et exporte notamment les réponses brutes. Les fichiers `exports/` sont exclus de Git. Les anciennes collections de résultats sont exportées par compatibilité mais ne sont pas consommées par le mode Spark. Aucun ancien résultat réel n’existait lors de la préparation du projet.
+
+Les sauvegardes Firestore gérées et la restauration à un instant donné ne font pas partie de ce dispositif gratuit. Prévoir des exports locaux à la demande. Une suppression de données se fait par l’administrateur de la console, après accord de l’utilisateur ; les navigateurs de l’application ne peuvent pas effacer l’historique.

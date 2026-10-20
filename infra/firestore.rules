@@ -1,29 +1,49 @@
 rules_version = '2';
 service cloud.firestore {
  match /databases/{database}/documents {
-  function familyMember(familyId) {
-   return request.auth != null && request.auth.token.familyId == familyId;
-  }
-  function parent(familyId) {
-   return familyMember(familyId) && request.auth.token.role == 'parent';
-  }
-  function ownLearner(familyId, learnerId) {
-   return familyMember(familyId) && request.auth.token.role == 'learner'
-     && request.auth.token.learnerId == learnerId;
+  function access() { return get(/databases/$(database)/documents/access/$(request.auth.uid)).data; }
+  function parent(familyId) { return request.auth != null && access().familyId == familyId && access().role == 'parent'; }
+  function learner(familyId,learnerId) { return request.auth != null && access().familyId == familyId && access().role == 'learner' && access().learnerId == learnerId; }
+  function profile(familyId,learnerId) { return get(/databases/$(database)/documents/families/$(familyId)/learners/$(learnerId)).data; }
+  match /access/{uid} {
+   allow get: if request.auth != null && request.auth.uid == uid;
+   // First parent is seeded only in the administrator console. A browser cannot grant parent rights.
+   allow create: if request.resource.data.keys().hasOnly(['familyId','role','learnerId'])
+    && request.resource.data.role == 'learner' && request.resource.data.familyId is string
+    && request.resource.data.learnerId is string && parent(request.resource.data.familyId)
+    && uid != request.auth.uid
+    && getAfter(/databases/$(database)/documents/families/$(request.resource.data.familyId)/learners/$(request.resource.data.learnerId)).data.uid == uid;
+   allow delete: if resource.data.role == 'learner' && parent(resource.data.familyId);
   }
   match /families/{familyId} {
    allow get: if parent(familyId);
-   allow write: if false;
    match /learners/{learnerId} {
-    allow get: if parent(familyId) || ownLearner(familyId, learnerId);
+    allow get: if parent(familyId) || learner(familyId,learnerId);
     allow list: if parent(familyId);
-    allow write: if false;
-    match /{collectionName}/{documentId} {
-     allow read: if collectionName in ['events','reviews','progress']
-       && (parent(familyId) || ownLearner(familyId, learnerId));
-     allow write: if false;
+    allow create: if parent(familyId) && request.resource.data.keys().hasOnly(['name','level','uid'])
+     && request.resource.data.name is string && request.resource.data.name.size() > 0 && request.resource.data.name.size() <= 80
+     && request.resource.data.level is string && request.resource.data.level.size() > 0 && request.resource.data.level.size() <= 20 && request.resource.data.uid is string
+     && getAfter(/databases/$(database)/documents/access/$(request.resource.data.uid)).data == {'familyId':familyId,'role':'learner','learnerId':learnerId};
+    match /attempts/{attemptId} {
+     allow read: if parent(familyId) || learner(familyId,learnerId);
+     allow create: if learner(familyId,learnerId)
+      && profile(familyId,learnerId).uid == request.auth.uid
+      && request.resource.data.keys().hasOnly(['attempt','senderUid','recordedAt'])
+      && request.resource.data.senderUid == request.auth.uid && request.resource.data.recordedAt == request.time
+      && validAttempt(request.resource.data.attempt,attemptId,learnerId);
+     // Immutable raw answers: nobody can replace them with a score or rewrite history.
     }
    }
+  }
+  function validAttempt(a,id,learnerId) {
+   return a is map && a.keys().hasAll(['schemaVersion','id','learnerId','moduleId','moduleVersion','catalogRevision','exerciseId','answer','durationMs'])
+    && a.keys().hasOnly(['schemaVersion','id','learnerId','moduleId','moduleVersion','catalogRevision','exerciseId','answer','durationMs','selfRating'])
+    && a.schemaVersion == 1 && a.id == id && a.id.matches('^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$')
+    && a.learnerId == learnerId && a.moduleId is string && a.moduleId.matches('^[a-z0-9][a-z0-9._-]{0,79}$')
+    && a.exerciseId is string && a.exerciseId.matches('^[a-z0-9][a-z0-9._-]{0,79}$')
+    && a.moduleVersion is string && a.moduleVersion.size() <= 30 && a.catalogRevision is string && a.catalogRevision.size() <= 30
+    && a.answer is string && a.answer.size() <= 500 && a.durationMs is int && a.durationMs >= 0 && a.durationMs <= 600000
+    && (!('selfRating' in a) || (a.selfRating is int && a.selfRating in [1,2,3,4]));
   }
   match /{document=**} { allow read,write: if false; }
  }

@@ -10,7 +10,7 @@ Un seul dépôt pour le hub des enfants, son espace parent, les contenus pédago
 | `content` | Packs pédagogiques et manifeste du catalogue. |
 | `packages/core` | Validation, évaluation, projections de progression et répétition espacée FSRS. |
 | `packages/catalog` | Copie embarquée du catalogue, vérifiée contre les packs sources par la CI. |
-| `functions` et `infra` | API Firebase transactionnelle et règles d’accès aux données. |
+| `infra` | règles d’accès aux réponses synchronisées (Spark, sans serveur payant). |
 | `docs` | Architecture, ajout de modules et mise en service. |
 
 Le site dispose d’une page d’accueil et de deux sous-pages : `/enfants/` et `/parents/`. Une seule livraison les met à jour ensemble. Le dépôt `famille-exercices`, créé lors du socle initial, reste un historique de départ ; les nouveaux contenus s’éditent ici, dans `content/`.
@@ -47,13 +47,13 @@ npm run build:pages
 npm run test:rules
 ```
 
-`npm run build` prépare les deux interfaces pour Firebase Hosting et le backend. `npm run build:pages` produit `dist/pages`, avec l’accueil et les sous-pages enfants/parents aux bons chemins GitHub Pages.
+`npm run build` prépare les deux interfaces pour Firebase Hosting (aucun backend payant). `npm run build:pages` produit `dist/pages`, avec l’accueil et les sous-pages enfants/parents aux bons chemins GitHub Pages.
 
 La CI vérifie le catalogue, les types, le moteur, les builds et les règles Firestore. La publication Pages se lance ensuite sur `main` lorsque le dépôt est éligible : dépôt public, ou variable `PAGES_ENABLED=true` pour un dépôt privé bénéficiant d’une offre compatible. Voir [la configuration Pages](docs/github-pages.md).
 
 ## Firebase et état du projet
 
-Le projet Firebase réel reste à créer et à configurer. Copier `.env.example` en `.env.local` puis suivre [la mise en service](docs/firebase.md). L’authentification détermine les rôles et la famille ; le serveur évalue et enregistre les réponses. Le chemin `/parents/` organise le site, les droits Firebase protègent les données.
+Le projet Firebase réel est créé ; le mode synchronisé utilise uniquement Spark, sans compte de facturation. Copier `.env.example` en `.env.local` puis suivre [la mise en service](docs/firebase.md). L’authentification et les documents d’accès protégés déterminent les rôles et la famille. Firestore conserve les réponses brutes immuables ; les deux interfaces recalculent les corrections, le suivi et les révisions. Le chemin `/parents/` organise le site, les droits Firebase protègent les données.
 
 Les QCM, réponses numériques, réponses écrites courtes et flashcards fonctionnent. Le catalogue comprend deux ateliers mathématiques d’exemple et sept ateliers de français de consolidation CM2 → 6e : 176 exercices, dont 116 sur les homophones et terminaisons verbales proches, avec corrections expliquées. On peut filtrer les matières et choisir une compétence précise dans un atelier. Voir [le contenu et les repères pédagogiques](docs/francais-6e.md).
 
