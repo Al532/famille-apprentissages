@@ -4,6 +4,7 @@ import {selectNext,CONTRACT_VERSION,type Module,type Exercise,type Attempt,type 
 import type {User} from 'firebase/auth';
 import {catalog} from './catalog';
 import {cloud,partialConfig,empty,listenDemo,listenAuth,watchCloud,submit,loginParent,loginLearner,logout,resetDemo,addLearner,type Snapshot,type Learner} from './store';
+import {InstallApp} from './pwa';
 import './style.css';
 function newId(){const b=crypto.getRandomValues(new Uint8Array(16));b[6]=(b[6]&15)|64;b[8]=(b[8]&63)|128;const h=Array.from(b,v=>v.toString(16).padStart(2,'0')).join('');return `${h.slice(0,8)}-${h.slice(8,12)}-${h.slice(12,16)}-${h.slice(16,20)}-${h.slice(20)}`;}
 const demoView=new URLSearchParams(location.search).get('espace');
@@ -17,6 +18,7 @@ function App(){
  const learner=snapshot.learners.find(l=>l.id===selected)??snapshot.learners[0];
  return <><header><a className="brand" href={import.meta.env.BASE_URL} aria-label="Accueil"><span className="brand-mark">✳</span> Les petits chemins<span className="brand-small">APPRENDRE EN FAMILLE</span></a><div className="top-right"><span className="pill">{parent?'Espace parents':'Espace enfants'}</span>{!cloud&&<a className="text-button" href={'?espace='+(parent?'enfants':'parents')}>{parent?'Voir les ateliers':'Voir le suivi parent'}</a>}{user&&<button className="text-button" onClick={()=>logout().catch(e=>setError(e.message))}>Déconnexion</button>}</div></header>
  <main><div className="notice">{cloud?(!user?'Connectez-vous pour retrouver les résultats de votre famille.':!online?'Hors connexion · les nouvelles réponses attendent une connexion pour être enregistrées.':snapshot.sync==='synced'?'☁ Synchronisation active avec votre famille.':snapshot.sync==='offline'?'Connexion à la base en cours · les données affichées peuvent être anciennes.':'Synchronisation en cours…'):'◌ Démonstration · résultats conservés sur ce navigateur uniquement.'}</div>
+ <InstallApp/>
  {partialConfig&&<p role="alert" className="error">La configuration Firebase est incomplète. La synchronisation est désactivée.</p>}
  {error&&<p role="alert" className="error">{error}<button onClick={()=>setError('')}>Fermer</button></p>}
  {!ready?<p>Chargement…</p>:cloud&&!user?<Login onError={setError}/>:<>

@@ -15,6 +15,8 @@ Un seul dépôt pour le hub des enfants, son espace parent, les contenus pédago
 
 Le site dispose d’une page d’accueil et de deux sous-pages : `/enfants/` et `/parents/`. Une seule livraison les met à jour ensemble. Le dépôt `famille-exercices`, créé lors du socle initial, reste un historique de départ ; les nouveaux contenus s’éditent ici, dans `content/`.
 
+Les espaces enfants et parents sont des webapps installables séparément (PWA), avec leur icône et une fenêtre autonome. Ouvrir l’espace voulu puis choisir **Installer l’app**, ou utiliser le menu d’installation du navigateur. Les ateliers synchronisés nécessitent une connexion Internet. Voir [l’installation](docs/installation.md).
+
 ## Essayer en local
 
 Node.js 22 ou 24 ; Java 21 recommandé pour l’émulateur Firebase.
