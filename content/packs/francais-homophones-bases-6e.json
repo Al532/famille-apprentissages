@@ -1,6 +1,6 @@
 {
   "id": "francais-homophones-bases-6e",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "Homophones : les indispensables",
   "subject": "Français",
   "levels": [
@@ -104,53 +104,75 @@
     },
     {
       "id": "a-as-a-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec a, as, à : « Tu ___ une nouvelle règle. »",
       "answer": "as",
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "Le sujet est « tu » : « tu avais une nouvelle règle ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+      "explanation": "Le sujet est « tu » : « tu avais une nouvelle règle ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée.",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ]
     },
     {
       "id": "et-est-es-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec et, est, es : « Je prends un livre ___ un crayon. »",
       "answer": "et",
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "On ajoute un crayon à un livre : « et puis un crayon ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+      "explanation": "On ajoute un crayon à un livre : « et puis un crayon ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais ».",
+      "options": [
+        "es",
+        "et",
+        "est"
+      ]
     },
     {
       "id": "on-ont-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec on, ont : « Les joueurs ___ gagné. »",
       "answer": "ont",
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "On peut dire : « Les joueurs avaient gagné ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+      "explanation": "On peut dire : « Les joueurs avaient gagné ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient ».",
+      "options": [
+        "on",
+        "ont"
+      ]
     },
     {
       "id": "son-sont-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec son, sont : « Il range ___ manteau. »",
       "answer": "son",
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "On peut dire : « Il range mon manteau ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+      "explanation": "On peut dire : « Il range mon manteau ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient).",
+      "options": [
+        "son",
+        "sont"
+      ]
     },
     {
       "id": "ou-ou-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec ou, où : « ___ habites-tu ? »",
       "answer": "où",
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "La question porte sur le lieu où tu habites. « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+      "explanation": "La question porte sur le lieu où tu habites. « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment.",
+      "options": [
+        "ou",
+        "où"
+      ]
     },
     {
       "id": "a-as-a-03",
@@ -226,53 +248,75 @@
     },
     {
       "id": "a-as-a-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec a, as, à : « Le train ___ du retard. »",
       "answer": "a",
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "On peut dire : « Le train avait du retard ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+      "explanation": "On peut dire : « Le train avait du retard ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée.",
+      "options": [
+        "à",
+        "a",
+        "as"
+      ]
     },
     {
       "id": "et-est-es-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec et, est, es : « Cette histoire ___ passionnante. »",
       "answer": "est",
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "Le sujet « cette histoire » est au singulier : « était passionnante ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+      "explanation": "Le sujet « cette histoire » est au singulier : « était passionnante ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais ».",
+      "options": [
+        "est",
+        "es",
+        "et"
+      ]
     },
     {
       "id": "on-ont-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec on, ont : « Mes voisins ___ deux chats. »",
       "answer": "ont",
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« Mes voisins avaient deux chats » conserve le sens de la phrase. « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+      "explanation": "« Mes voisins avaient deux chats » conserve le sens de la phrase. « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient ».",
+      "options": [
+        "on",
+        "ont"
+      ]
     },
     {
       "id": "son-sont-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec son, sont : « Maya cherche ___ écharpe. »",
       "answer": "son",
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "Devant « écharpe », nom féminin commençant par une voyelle, on emploie « son ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+      "explanation": "Devant « écharpe », nom féminin commençant par une voyelle, on emploie « son ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient).",
+      "options": [
+        "son",
+        "sont"
+      ]
     },
     {
       "id": "ou-ou-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec ou, où : « Tu peux écrire au stylo ___ au crayon. »",
       "answer": "ou",
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "Deux possibilités sont proposées. « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+      "explanation": "Deux possibilités sont proposées. « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment.",
+      "options": [
+        "ou",
+        "où"
+      ]
     },
     {
       "id": "a-as-a-05",
@@ -348,53 +392,75 @@
     },
     {
       "id": "a-as-a-06",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec a, as, à : « Elle apprend ___ nager. »",
       "answer": "à",
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« à » relie ici le verbe « apprend » à l’infinitif « nager ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+      "explanation": "« à » relie ici le verbe « apprend » à l’infinitif « nager ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée.",
+      "options": [
+        "as",
+        "à",
+        "a"
+      ]
     },
     {
       "id": "et-est-es-06",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec et, est, es : « Pourquoi ___-tu si pressé ? »",
       "answer": "es",
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "Le sujet reste « tu », même après le verbe : « étais-tu ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+      "explanation": "Le sujet reste « tu », même après le verbe : « étais-tu ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais ».",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ]
     },
     {
       "id": "on-ont-06",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec on, ont : « Elles n’___ pas peur. »",
       "answer": "ont",
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "À l’imparfait : « Elles n’avaient pas peur ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+      "explanation": "À l’imparfait : « Elles n’avaient pas peur ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient ».",
+      "options": [
+        "on",
+        "ont"
+      ]
     },
     {
       "id": "son-sont-06",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec son, sont : « Elle écoute ___ morceau préféré. »",
       "answer": "son",
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« son » est le déterminant du nom « morceau ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+      "explanation": "« son » est le déterminant du nom « morceau ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient).",
+      "options": [
+        "son",
+        "sont"
+      ]
     },
     {
       "id": "ou-ou-06",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec ou, où : « Partons-nous maintenant ___ après le repas ? »",
       "answer": "ou",
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "On choisit entre deux moments : « maintenant ou bien après le repas ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+      "explanation": "On choisit entre deux moments : « maintenant ou bien après le repas ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment.",
+      "options": [
+        "ou",
+        "où"
+      ]
     }
   ]
 }

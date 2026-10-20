@@ -1,6 +1,6 @@
 {
   "id": "francais-conjugaison-6e",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "Conjugaison : les repères essentiels",
   "subject": "Français",
   "levels": [
@@ -56,7 +56,7 @@
     {
       "id": "temps-imparfait-01",
       "kind": "choice",
-      "prompt": "Conjugue « jouer » au imparfait : « Nous ___ dans la cour. »",
+      "prompt": "Conjugue « jouer » à l’imparfait : « Nous ___ dans la cour. »",
       "answer": "jouions",
       "options": [
         "jouions",
@@ -146,63 +146,99 @@
     },
     {
       "id": "temps-present-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Conjugue « aller » au présent : « Nous ___ à la piscine. »",
       "answer": "allons",
       "skillIds": [
         "temps-present"
       ],
-      "explanation": "Avec « nous », aller se conjugue « allons »."
+      "explanation": "Avec « nous », aller se conjugue « allons ».",
+      "options": [
+        "vont",
+        "allont",
+        "allons",
+        "allez"
+      ]
     },
     {
       "id": "temps-imparfait-02",
-      "kind": "text",
-      "prompt": "Conjugue « être » au imparfait : « Elles ___ heureuses. »",
+      "kind": "choice",
+      "prompt": "Conjugue « être » à l’imparfait : « Elles ___ heureuses. »",
       "answer": "étaient",
       "skillIds": [
         "temps-imparfait"
       ],
-      "explanation": "Être à l’imparfait avec « elles » : « étaient »."
+      "explanation": "Être à l’imparfait avec « elles » : « étaient ».",
+      "options": [
+        "été",
+        "seraient",
+        "étaient",
+        "était"
+      ]
     },
     {
       "id": "temps-futur-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Conjugue « voir » au futur : « Je ___ la réponse. »",
       "answer": "verrai",
       "skillIds": [
         "temps-futur"
       ],
-      "explanation": "Au futur, voir donne « je verrai » ; « verrais » est au conditionnel."
+      "explanation": "Au futur, voir donne « je verrai » ; « verrais » est au conditionnel.",
+      "options": [
+        "vois",
+        "verrai",
+        "verrais",
+        "voyais"
+      ]
     },
     {
       "id": "temps-passe-compose-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Conjugue « aller » au passé composé : « Ils ___ au musée. »",
       "answer": "sont allés",
       "skillIds": [
         "temps-passe-compose"
       ],
-      "explanation": "Aller se conjugue avec être ; « allés » s’accorde avec « Ils »."
+      "explanation": "Aller se conjugue avec être ; « allés » s’accorde avec « Ils ».",
+      "options": [
+        "sont allés",
+        "sont allé",
+        "ont allés",
+        "étaient allés"
+      ]
     },
     {
       "id": "temps-passe-simple-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Conjugue « prendre » au passé simple : « Elles ___ la parole. »",
       "answer": "prirent",
       "skillIds": [
         "temps-passe-simple"
       ],
-      "explanation": "Au passé simple, prendre donne « ils/elles prirent »."
+      "explanation": "Au passé simple, prendre donne « ils/elles prirent ».",
+      "options": [
+        "prirent",
+        "prenaient",
+        "prennent",
+        "prendront"
+      ]
     },
     {
       "id": "temps-plus-que-parfait-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Conjugue « partir » au plus-que-parfait : « Elle ___ avant mon arrivée. »",
       "answer": "était partie",
       "skillIds": [
         "temps-plus-que-parfait"
       ],
-      "explanation": "« était » est l’auxiliaire être à l’imparfait ; « partie » s’accorde avec « Elle »."
+      "explanation": "« était » est l’auxiliaire être à l’imparfait ; « partie » s’accorde avec « Elle ».",
+      "options": [
+        "est partie",
+        "avait partie",
+        "était parti",
+        "était partie"
+      ]
     },
     {
       "id": "identifier-temps-02",
@@ -238,7 +274,7 @@
     {
       "id": "temps-imparfait-03",
       "kind": "choice",
-      "prompt": "Conjugue « avoir » au imparfait : « Tu ___ peur du noir. »",
+      "prompt": "Conjugue « avoir » à l’imparfait : « Tu ___ peur du noir. »",
       "answer": "avais",
       "options": [
         "avait",
@@ -283,13 +319,19 @@
     },
     {
       "id": "temps-present-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Conjugue « dire » au présent : « Ils ___ la vérité. »",
       "answer": "disent",
       "skillIds": [
         "temps-present"
       ],
-      "explanation": "Au présent : nous disons, vous dites, ils disent."
+      "explanation": "Au présent : nous disons, vous dites, ils disent.",
+      "options": [
+        "disent",
+        "dites",
+        "disont",
+        "dit"
+      ]
     },
     {
       "id": "identifier-temps-04",

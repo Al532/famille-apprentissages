@@ -1,6 +1,6 @@
 {
   "id": "calcul-ce1",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "title": "Petits calculs",
   "subject": "Mathématiques",
   "levels": [
@@ -20,13 +20,19 @@
   "exercises": [
     {
       "id": "add-7-5",
-      "kind": "number",
+      "kind": "choice",
       "prompt": "Combien font 7 + 5 ?",
       "answer": "12",
       "skillIds": [
         "addition"
       ],
-      "explanation": "7 + 3 = 10, puis encore 2 : 12."
+      "explanation": "7 + 3 = 10, puis encore 2 : 12.",
+      "options": [
+        "13",
+        "12",
+        "10",
+        "11"
+      ]
     },
     {
       "id": "add-9-6",
@@ -44,11 +50,17 @@
     },
     {
       "id": "sub-14-6",
-      "kind": "number",
+      "kind": "choice",
       "prompt": "Combien font 14 − 6 ?",
       "answer": "8",
       "skillIds": [
         "soustraction"
+      ],
+      "options": [
+        "10",
+        "8",
+        "7",
+        "9"
       ]
     }
   ]

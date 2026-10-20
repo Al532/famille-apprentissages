@@ -8,7 +8,7 @@ import raw from '../packages/catalog/catalog.json';
 import {recordAttempt} from '../apps/web/src/cloud-record';
 import {projectHistory,type RecordedAttempt} from '../apps/web/src/history';
 let env:RulesTestEnvironment;
-const catalog=catalogSchema.parse(raw),attempt:Attempt={schemaVersion:1,id:'eaad642b-bb94-4b26-aee0-510f0560056b',learnerId:'child',moduleId:'calcul-ce1',moduleVersion:'0.1.0',catalogRevision:catalog.revision,exerciseId:'add-7-5',answer:'12',durationMs:2000};
+const catalog=catalogSchema.parse(raw),attempt:Attempt={schemaVersion:1,id:'eaad642b-bb94-4b26-aee0-510f0560056b',learnerId:'child',moduleId:'calcul-ce1',moduleVersion:catalog.modules.find(m=>m.id==='calcul-ce1')!.version,catalogRevision:catalog.revision,exerciseId:'add-7-5',answer:'12',durationMs:2000};
 before(async()=>{env=await initializeTestEnvironment({projectId:'demo-famille',firestore:{rules:await readFile('infra/firestore.rules','utf8')}});await env.clearFirestore();await env.withSecurityRulesDisabled(async c=>{const db=c.firestore();await setDoc(doc(db,'access/parent'),{familyId:'test',role:'parent'});await setDoc(doc(db,'access/child'),{familyId:'test',role:'learner',learnerId:'child'});await setDoc(doc(db,'families/test/learners/child'),{name:'Enfant test',level:'CE1',uid:'child'});});});
 after(async()=>env?.cleanup());
 test('deux appareils réessaient la même réponse : une seule écriture et suivi parent en temps réel',async()=>{

@@ -4,7 +4,7 @@
 
 1. Modifier ou créer un pack dans `content/packs`.
 2. Déclarer ses compétences avec des identifiants stables ; chaque question référence une ou plusieurs de ces compétences.
-3. Utiliser `choice`, `number`, `text` ou `flashcard`. Pour un QCM, la bonne réponse doit être présente dans `options`. `text` demande une réponse courte exacte ; préciser dans la consigne les mots possibles ou le verbe à conjuguer. Les apostrophes droites/courbes, la casse et les espaces sont normalisés, mais les accents restent significatifs (`a` ≠ `à`).
+3. Pour les ateliers actuels, utiliser `choice` ou `flashcard` afin de ne pas imposer de saisie. Les types `number` et `text` restent pris en charge pour relire les anciens historiques. Pour un QCM, la bonne réponse doit être présente dans `options`. `text` demande une réponse courte exacte ; préciser dans la consigne les mots possibles ou le verbe à conjuguer. Les apostrophes droites/courbes, la casse et les espaces sont normalisés, mais les accents restent significatifs (`a` ≠ `à`).
 4. Incrémenter la version du module et la révision du catalogue. Ne pas changer la signification d’un identifiant existant : une question ou une compétence différente reçoit un nouvel identifiant. Les états de révision existants se rattachent à ces identifiants stables.
 5. Exécuter `npm run catalog:import`, valider puis livrer ensemble les deux interfaces et leurs règles Firestore depuis ce même dépôt.
 

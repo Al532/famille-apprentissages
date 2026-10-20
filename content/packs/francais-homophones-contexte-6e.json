@@ -1,6 +1,6 @@
 {
   "id": "francais-homophones-contexte-6e",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "Homophones : le sens et les verbes",
   "subject": "Français",
   "levels": [
@@ -201,103 +201,152 @@
     },
     {
       "id": "la-la-las-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec la, là, l’a, l’as : « Il ouvre ___ fenêtre. »",
       "answer": "la",
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« la » est le déterminant du nom « fenêtre ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+      "explanation": "« la » est le déterminant du nom « fenêtre ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
+      "options": [
+        "l’as",
+        "la",
+        "là",
+        "l’a"
+      ]
     },
     {
       "id": "mais-mes-met-mets-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec mais, mes, met, mets : « Ces lunettes sont à moi : ce sont ___ lunettes. »",
       "answer": "mes",
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "Le nom « lunettes » est pluriel et désigne ce qui m’appartient. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+      "explanation": "Le nom « lunettes » est pluriel et désigne ce qui m’appartient. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ]
     },
     {
       "id": "peu-peux-peut-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec peu, peux, peut : « Tu ___ venir demain. »",
       "answer": "peux",
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "Avec « tu », pouvoir s’écrit « peux » au présent. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+      "explanation": "Avec « tu », pouvoir s’écrit « peux » au présent. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
+      "options": [
+        "peux",
+        "peut",
+        "peu"
+      ]
     },
     {
       "id": "sans-sen-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec sans, s’en : « Elle ___ va après le repas. »",
       "answer": "s’en",
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "Il s’agit de « s’en aller » : « je m’en vais ». « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais)."
+      "explanation": "Il s’agit de « s’en aller » : « je m’en vais ». « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais).",
+      "options": [
+        "s’en",
+        "sans"
+      ]
     },
     {
       "id": "ni-ny-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec ni, n’y : « Ce parc est fermé ; nous ___ allons pas. »",
       "answer": "n’y",
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« y » remplace « dans ce parc » et « n’… pas » marque la négation. « ni » coordonne des éléments dans une négation. « n’y » associe la négation n’ au pronom y (je n’y vais pas)."
+      "explanation": "« y » remplace « dans ce parc » et « n’… pas » marque la négation. « ni » coordonne des éléments dans une négation. « n’y » associe la négation n’ au pronom y (je n’y vais pas).",
+      "options": [
+        "ni",
+        "n’y"
+      ]
     },
     {
       "id": "infinitif-participe-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec jouer, joué : « Il a ___ avec nous. »",
       "answer": "joué",
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "On peut dire : « Il a pris… » ; après l’auxiliaire, c’est le participe passé. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé."
+      "explanation": "On peut dire : « Il a pris… » ; après l’auxiliaire, c’est le participe passé. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé.",
+      "options": [
+        "joué",
+        "jouer"
+      ]
     },
     {
       "id": "homophones-lexicaux-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec verre, vert, vers, ver : « Le feu passe au ___. »",
       "answer": "vert",
       "skillIds": [
         "homophones-lexicaux"
       ],
-      "explanation": "Il s’agit de la couleur verte. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal."
+      "explanation": "Il s’agit de la couleur verte. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
+      "options": [
+        "ver",
+        "verre",
+        "vert",
+        "vers"
+      ]
     },
     {
       "id": "si-sy-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec si, s’y : « Il connaît ce village et ___ rend chaque été. »",
       "answer": "s’y",
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« y » remplace « dans ce village » : « je m’y rends ». « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends)."
+      "explanation": "« y » remplace « dans ce village » : « je m’y rends ». « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends).",
+      "options": [
+        "si",
+        "s’y"
+      ]
     },
     {
       "id": "mer-mere-maire-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec mer, mère, maire : « Le ___ de la commune inaugure l’école. »",
       "answer": "maire",
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "Il s’agit de la personne élue qui dirige la commune. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune."
+      "explanation": "Il s’agit de la personne élue qui dirige la commune. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune.",
+      "options": [
+        "maire",
+        "mer",
+        "mère"
+      ]
     },
     {
       "id": "pere-paire-pair-02",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec père, paire, pair : « Le nombre huit est ___. »",
       "answer": "pair",
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Huit peut se partager en deux groupes égaux de quatre. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux."
+      "explanation": "Huit peut se partager en deux groupes égaux de quatre. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux.",
+      "options": [
+        "paire",
+        "pair",
+        "père"
+      ]
     },
     {
       "id": "la-la-las-03",
@@ -436,73 +485,108 @@
     },
     {
       "id": "la-la-las-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec la, là, l’a, l’as : « Cette chanson, tu ___ entendue hier. »",
       "answer": "l’as",
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "Le sujet est « tu » : « tu l’avais entendue ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+      "explanation": "Le sujet est « tu » : « tu l’avais entendue ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
+      "options": [
+        "là",
+        "l’a",
+        "l’as",
+        "la"
+      ]
     },
     {
       "id": "mais-mes-met-mets-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec mais, mes, met, mets : « Tu ___ la table. »",
       "answer": "mets",
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "Avec « tu », mettre s’écrit « mets » au présent. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+      "explanation": "Avec « tu », mettre s’écrit « mets » au présent. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
+      "options": [
+        "met",
+        "mets",
+        "mais",
+        "mes"
+      ]
     },
     {
       "id": "peu-peux-peut-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec peu, peux, peut : « Je ___ ouvrir la porte. »",
       "answer": "peux",
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "Le sujet est « je » : « je peux ». « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+      "explanation": "Le sujet est « je » : « je peux ». « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ]
     },
     {
       "id": "sans-sen-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec sans, s’en : « Je bois mon thé ___ sucre. »",
       "answer": "sans",
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "Il n’y a pas de sucre dans le thé. « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais)."
+      "explanation": "Il n’y a pas de sucre dans le thé. « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais).",
+      "options": [
+        "s’en",
+        "sans"
+      ]
     },
     {
       "id": "infinitif-participe-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec jouer, joué : « Elle avait ___ avant le repas. »",
       "answer": "joué",
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "« Elle avait pris… » montre le participe passé après l’auxiliaire. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé."
+      "explanation": "« Elle avait pris… » montre le participe passé après l’auxiliaire. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé.",
+      "options": [
+        "joué",
+        "jouer"
+      ]
     },
     {
       "id": "homophones-lexicaux-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec verre, vert, vers, ver : « Un ___ de terre sort du sol. »",
       "answer": "ver",
       "skillIds": [
         "homophones-lexicaux"
       ],
-      "explanation": "Le « ver » est un animal. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal."
+      "explanation": "Le « ver » est un animal. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
+      "options": [
+        "vert",
+        "vers",
+        "ver",
+        "verre"
+      ]
     },
     {
       "id": "si-sy-04",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec si, s’y : « Cette règle est difficile, mais elle ___ habitue. »",
       "answer": "s’y",
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "C’est « s’habituer à cette règle » : « je m’y habitue ». « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends)."
+      "explanation": "C’est « s’habituer à cette règle » : « je m’y habitue ». « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends).",
+      "options": [
+        "si",
+        "s’y"
+      ]
     },
     {
       "id": "la-la-las-05",
@@ -567,43 +651,64 @@
     },
     {
       "id": "la-la-las-06",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec la, là, l’a, l’as : « Je resterai ___ jusqu’à midi. »",
       "answer": "là",
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique le lieu où je resterai. « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+      "explanation": "« là » indique le lieu où je resterai. « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
+      "options": [
+        "l’as",
+        "la",
+        "là",
+        "l’a"
+      ]
     },
     {
       "id": "mais-mes-met-mets-06",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec mais, mes, met, mets : « J’ai retrouvé ___ deux chaussettes. »",
       "answer": "mes",
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mes » détermine le nom pluriel « chaussettes ». « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+      "explanation": "« mes » détermine le nom pluriel « chaussettes ». « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ]
     },
     {
       "id": "peu-peux-peut-06",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec peu, peux, peut : « On ___ commencer. »",
       "answer": "peut",
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« on » se conjugue comme « il » : « on peut ». « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+      "explanation": "« on » se conjugue comme « il » : « on peut ». « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
+      "options": [
+        "peut",
+        "peu",
+        "peux"
+      ]
     },
     {
       "id": "infinitif-participe-06",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec tomber ou tombé : « Il est ___ dans la cour. »",
       "answer": "tombé",
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Après l’auxiliaire être, il faut le participe passé : « Il est tombé »."
+      "explanation": "Après l’auxiliaire être, il faut le participe passé : « Il est tombé ».",
+      "options": [
+        "tombé",
+        "tomber"
+      ]
     },
     {
       "id": "la-la-las-07",
@@ -637,23 +742,33 @@
     },
     {
       "id": "la-la-las-08",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec la, là, l’a, l’as : « Ce dessin, tu ___ réussi. »",
       "answer": "l’as",
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "Avec « tu » : « tu l’avais réussi ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+      "explanation": "Avec « tu » : « tu l’avais réussi ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
+      "options": [
+        "là",
+        "l’a",
+        "l’as",
+        "la"
+      ]
     },
     {
       "id": "infinitif-participe-08",
-      "kind": "text",
+      "kind": "choice",
       "prompt": "Complète avec marcher ou marché : « Il a ___ toute la journée. »",
       "answer": "marché",
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "On peut dire : « Il a pris… » : c’est un participe passé."
+      "explanation": "On peut dire : « Il a pris… » : c’est un participe passé.",
+      "options": [
+        "marché",
+        "marcher"
+      ]
     }
   ]
 }

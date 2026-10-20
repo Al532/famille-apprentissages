@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "revision": "0.2.0",
+  "revision": "0.3.0",
   "modules": [
     {
       "id": "francais-homophones-bases-6e",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "title": "Homophones : les indispensables",
       "subject": "Français",
       "levels": [
@@ -108,9 +108,14 @@
         },
         {
           "id": "a-as-a-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec a, as, à : « Tu ___ une nouvelle règle. »",
           "answer": "as",
+          "options": [
+            "a",
+            "as",
+            "à"
+          ],
           "skillIds": [
             "a-as-a"
           ],
@@ -118,9 +123,14 @@
         },
         {
           "id": "et-est-es-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec et, est, es : « Je prends un livre ___ un crayon. »",
           "answer": "et",
+          "options": [
+            "es",
+            "et",
+            "est"
+          ],
           "skillIds": [
             "et-est-es"
           ],
@@ -128,9 +138,13 @@
         },
         {
           "id": "on-ont-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec on, ont : « Les joueurs ___ gagné. »",
           "answer": "ont",
+          "options": [
+            "on",
+            "ont"
+          ],
           "skillIds": [
             "on-ont"
           ],
@@ -138,9 +152,13 @@
         },
         {
           "id": "son-sont-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec son, sont : « Il range ___ manteau. »",
           "answer": "son",
+          "options": [
+            "son",
+            "sont"
+          ],
           "skillIds": [
             "son-sont"
           ],
@@ -148,9 +166,13 @@
         },
         {
           "id": "ou-ou-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ou, où : « ___ habites-tu ? »",
           "answer": "où",
+          "options": [
+            "ou",
+            "où"
+          ],
           "skillIds": [
             "ou-ou"
           ],
@@ -230,9 +252,14 @@
         },
         {
           "id": "a-as-a-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec a, as, à : « Le train ___ du retard. »",
           "answer": "a",
+          "options": [
+            "à",
+            "a",
+            "as"
+          ],
           "skillIds": [
             "a-as-a"
           ],
@@ -240,9 +267,14 @@
         },
         {
           "id": "et-est-es-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec et, est, es : « Cette histoire ___ passionnante. »",
           "answer": "est",
+          "options": [
+            "est",
+            "es",
+            "et"
+          ],
           "skillIds": [
             "et-est-es"
           ],
@@ -250,9 +282,13 @@
         },
         {
           "id": "on-ont-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec on, ont : « Mes voisins ___ deux chats. »",
           "answer": "ont",
+          "options": [
+            "on",
+            "ont"
+          ],
           "skillIds": [
             "on-ont"
           ],
@@ -260,9 +296,13 @@
         },
         {
           "id": "son-sont-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec son, sont : « Maya cherche ___ écharpe. »",
           "answer": "son",
+          "options": [
+            "son",
+            "sont"
+          ],
           "skillIds": [
             "son-sont"
           ],
@@ -270,9 +310,13 @@
         },
         {
           "id": "ou-ou-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ou, où : « Tu peux écrire au stylo ___ au crayon. »",
           "answer": "ou",
+          "options": [
+            "ou",
+            "où"
+          ],
           "skillIds": [
             "ou-ou"
           ],
@@ -352,9 +396,14 @@
         },
         {
           "id": "a-as-a-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec a, as, à : « Elle apprend ___ nager. »",
           "answer": "à",
+          "options": [
+            "as",
+            "à",
+            "a"
+          ],
           "skillIds": [
             "a-as-a"
           ],
@@ -362,9 +411,14 @@
         },
         {
           "id": "et-est-es-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec et, est, es : « Pourquoi ___-tu si pressé ? »",
           "answer": "es",
+          "options": [
+            "et",
+            "est",
+            "es"
+          ],
           "skillIds": [
             "et-est-es"
           ],
@@ -372,9 +426,13 @@
         },
         {
           "id": "on-ont-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec on, ont : « Elles n’___ pas peur. »",
           "answer": "ont",
+          "options": [
+            "on",
+            "ont"
+          ],
           "skillIds": [
             "on-ont"
           ],
@@ -382,9 +440,13 @@
         },
         {
           "id": "son-sont-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec son, sont : « Elle écoute ___ morceau préféré. »",
           "answer": "son",
+          "options": [
+            "son",
+            "sont"
+          ],
           "skillIds": [
             "son-sont"
           ],
@@ -392,9 +454,13 @@
         },
         {
           "id": "ou-ou-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ou, où : « Partons-nous maintenant ___ après le repas ? »",
           "answer": "ou",
+          "options": [
+            "ou",
+            "où"
+          ],
           "skillIds": [
             "ou-ou"
           ],
@@ -404,7 +470,7 @@
     },
     {
       "id": "francais-homophones-determinants-6e",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "title": "Homophones : petits mots, grands pièges",
       "subject": "Français",
       "levels": [
@@ -563,9 +629,13 @@
         },
         {
           "id": "ce-se-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ce, se : « ___ livre raconte une aventure. »",
           "answer": "ce",
+          "options": [
+            "ce",
+            "se"
+          ],
           "skillIds": [
             "ce-se"
           ],
@@ -573,9 +643,13 @@
         },
         {
           "id": "ces-ses-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ces, ses : « Ce sont les clés de Léa : ce sont ___ clés. »",
           "answer": "ses",
+          "options": [
+            "ces",
+            "ses"
+          ],
           "skillIds": [
             "ces-ses"
           ],
@@ -583,9 +657,13 @@
         },
         {
           "id": "cest-sest-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec c’est, s’est : « Elle ___ levée tôt. »",
           "answer": "s’est",
+          "options": [
+            "c’est",
+            "s’est"
+          ],
           "skillIds": [
             "cest-sest"
           ],
@@ -593,9 +671,13 @@
         },
         {
           "id": "leur-leurs-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec leur, leurs : « Les enfants rangent tous ___ jouets. »",
           "answer": "leurs",
+          "options": [
+            "leurs",
+            "leur"
+          ],
           "skillIds": [
             "leur-leurs"
           ],
@@ -603,9 +685,14 @@
         },
         {
           "id": "ma-ma-mas-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ma, m’a, m’as : « Léa ___ prêté un livre. »",
           "answer": "m’a",
+          "options": [
+            "ma",
+            "m’a",
+            "m’as"
+          ],
           "skillIds": [
             "ma-ma-mas"
           ],
@@ -613,9 +700,15 @@
         },
         {
           "id": "mon-mont-ton-tont-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec mon, m’ont, ton, t’ont : « Mes amis ___ offert ce livre : c’est un cadeau pour moi. »",
           "answer": "m’ont",
+          "options": [
+            "mon",
+            "m’ont",
+            "ton",
+            "t’ont"
+          ],
           "skillIds": [
             "mon-mont-ton-tont"
           ],
@@ -623,9 +716,13 @@
         },
         {
           "id": "ton-tont-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ton, t’ont : « Tes parents ___ appelé ce matin. »",
           "answer": "t’ont",
+          "options": [
+            "ton",
+            "t’ont"
+          ],
           "skillIds": [
             "ton-tont"
           ],
@@ -633,9 +730,13 @@
         },
         {
           "id": "sa-ca-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec sa, ça : « Comment ___ va ? »",
           "answer": "ça",
+          "options": [
+            "sa",
+            "ça"
+          ],
           "skillIds": [
             "sa-ca"
           ],
@@ -744,9 +845,13 @@
         },
         {
           "id": "ce-se-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ce, se : « Le chat ___ cache sous le lit. »",
           "answer": "se",
+          "options": [
+            "ce",
+            "se"
+          ],
           "skillIds": [
             "ce-se"
           ],
@@ -754,9 +859,13 @@
         },
         {
           "id": "ces-ses-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ces, ses : « Paul a deux sœurs : ___ sœurs habitent Lyon. »",
           "answer": "ses",
+          "options": [
+            "ces",
+            "ses"
+          ],
           "skillIds": [
             "ces-ses"
           ],
@@ -764,9 +873,13 @@
         },
         {
           "id": "cest-sest-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec c’est, s’est : « ___ le moment de partir. »",
           "answer": "c’est",
+          "options": [
+            "c’est",
+            "s’est"
+          ],
           "skillIds": [
             "cest-sest"
           ],
@@ -774,9 +887,13 @@
         },
         {
           "id": "leur-leurs-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec leur, leurs : « Tu ___ parles souvent. »",
           "answer": "leur",
+          "options": [
+            "leurs",
+            "leur"
+          ],
           "skillIds": [
             "leur-leurs"
           ],
@@ -784,9 +901,13 @@
         },
         {
           "id": "sa-ca-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec sa, ça : « Je trouve ___ amusant. »",
           "answer": "ça",
+          "options": [
+            "sa",
+            "ça"
+          ],
           "skillIds": [
             "sa-ca"
           ],
@@ -864,9 +985,13 @@
         },
         {
           "id": "ce-se-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ce, se : « Elles ___ préparent pour le concert. »",
           "answer": "se",
+          "options": [
+            "ce",
+            "se"
+          ],
           "skillIds": [
             "ce-se"
           ],
@@ -874,9 +999,13 @@
         },
         {
           "id": "ces-ses-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ces, ses : « Cette trousse appartient à Sami ; ___ crayons sont dedans. »",
           "answer": "ses",
+          "options": [
+            "ces",
+            "ses"
+          ],
           "skillIds": [
             "ces-ses"
           ],
@@ -884,9 +1013,13 @@
         },
         {
           "id": "cest-sest-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec c’est, s’est : « ___ toi qui as trouvé la réponse. »",
           "answer": "c’est",
+          "options": [
+            "c’est",
+            "s’est"
+          ],
           "skillIds": [
             "cest-sest"
           ],
@@ -894,9 +1027,13 @@
         },
         {
           "id": "leur-leurs-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec leur, leurs : « Les musiciens accordent ___ instruments. »",
           "answer": "leurs",
+          "options": [
+            "leurs",
+            "leur"
+          ],
           "skillIds": [
             "leur-leurs"
           ],
@@ -904,9 +1041,13 @@
         },
         {
           "id": "sa-ca-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec sa, ça : « ___ ne change rien. »",
           "answer": "ça",
+          "options": [
+            "sa",
+            "ça"
+          ],
           "skillIds": [
             "sa-ca"
           ],
@@ -916,7 +1057,7 @@
     },
     {
       "id": "francais-homophones-contexte-6e",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "title": "Homophones : le sens et les verbes",
       "subject": "Français",
       "levels": [
@@ -1117,9 +1258,15 @@
         },
         {
           "id": "la-la-las-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec la, là, l’a, l’as : « Il ouvre ___ fenêtre. »",
           "answer": "la",
+          "options": [
+            "l’as",
+            "la",
+            "là",
+            "l’a"
+          ],
           "skillIds": [
             "la-la-las"
           ],
@@ -1127,9 +1274,15 @@
         },
         {
           "id": "mais-mes-met-mets-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec mais, mes, met, mets : « Ces lunettes sont à moi : ce sont ___ lunettes. »",
           "answer": "mes",
+          "options": [
+            "mais",
+            "mes",
+            "met",
+            "mets"
+          ],
           "skillIds": [
             "mais-mes-met-mets"
           ],
@@ -1137,9 +1290,14 @@
         },
         {
           "id": "peu-peux-peut-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec peu, peux, peut : « Tu ___ venir demain. »",
           "answer": "peux",
+          "options": [
+            "peux",
+            "peut",
+            "peu"
+          ],
           "skillIds": [
             "peu-peux-peut"
           ],
@@ -1147,9 +1305,13 @@
         },
         {
           "id": "sans-sen-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec sans, s’en : « Elle ___ va après le repas. »",
           "answer": "s’en",
+          "options": [
+            "s’en",
+            "sans"
+          ],
           "skillIds": [
             "sans-sen"
           ],
@@ -1157,9 +1319,13 @@
         },
         {
           "id": "ni-ny-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec ni, n’y : « Ce parc est fermé ; nous ___ allons pas. »",
           "answer": "n’y",
+          "options": [
+            "ni",
+            "n’y"
+          ],
           "skillIds": [
             "ni-ny"
           ],
@@ -1167,9 +1333,13 @@
         },
         {
           "id": "infinitif-participe-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec jouer, joué : « Il a ___ avec nous. »",
           "answer": "joué",
+          "options": [
+            "joué",
+            "jouer"
+          ],
           "skillIds": [
             "infinitif-participe"
           ],
@@ -1177,9 +1347,15 @@
         },
         {
           "id": "homophones-lexicaux-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec verre, vert, vers, ver : « Le feu passe au ___. »",
           "answer": "vert",
+          "options": [
+            "ver",
+            "verre",
+            "vert",
+            "vers"
+          ],
           "skillIds": [
             "homophones-lexicaux"
           ],
@@ -1187,9 +1363,13 @@
         },
         {
           "id": "si-sy-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec si, s’y : « Il connaît ce village et ___ rend chaque été. »",
           "answer": "s’y",
+          "options": [
+            "si",
+            "s’y"
+          ],
           "skillIds": [
             "si-sy"
           ],
@@ -1197,9 +1377,14 @@
         },
         {
           "id": "mer-mere-maire-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec mer, mère, maire : « Le ___ de la commune inaugure l’école. »",
           "answer": "maire",
+          "options": [
+            "maire",
+            "mer",
+            "mère"
+          ],
           "skillIds": [
             "mer-mere-maire"
           ],
@@ -1207,9 +1392,14 @@
         },
         {
           "id": "pere-paire-pair-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec père, paire, pair : « Le nombre huit est ___. »",
           "answer": "pair",
+          "options": [
+            "paire",
+            "pair",
+            "père"
+          ],
           "skillIds": [
             "pere-paire-pair"
           ],
@@ -1352,9 +1542,15 @@
         },
         {
           "id": "la-la-las-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec la, là, l’a, l’as : « Cette chanson, tu ___ entendue hier. »",
           "answer": "l’as",
+          "options": [
+            "là",
+            "l’a",
+            "l’as",
+            "la"
+          ],
           "skillIds": [
             "la-la-las"
           ],
@@ -1362,9 +1558,15 @@
         },
         {
           "id": "mais-mes-met-mets-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec mais, mes, met, mets : « Tu ___ la table. »",
           "answer": "mets",
+          "options": [
+            "met",
+            "mets",
+            "mais",
+            "mes"
+          ],
           "skillIds": [
             "mais-mes-met-mets"
           ],
@@ -1372,9 +1574,14 @@
         },
         {
           "id": "peu-peux-peut-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec peu, peux, peut : « Je ___ ouvrir la porte. »",
           "answer": "peux",
+          "options": [
+            "peu",
+            "peux",
+            "peut"
+          ],
           "skillIds": [
             "peu-peux-peut"
           ],
@@ -1382,9 +1589,13 @@
         },
         {
           "id": "sans-sen-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec sans, s’en : « Je bois mon thé ___ sucre. »",
           "answer": "sans",
+          "options": [
+            "s’en",
+            "sans"
+          ],
           "skillIds": [
             "sans-sen"
           ],
@@ -1392,9 +1603,13 @@
         },
         {
           "id": "infinitif-participe-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec jouer, joué : « Elle avait ___ avant le repas. »",
           "answer": "joué",
+          "options": [
+            "joué",
+            "jouer"
+          ],
           "skillIds": [
             "infinitif-participe"
           ],
@@ -1402,9 +1617,15 @@
         },
         {
           "id": "homophones-lexicaux-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec verre, vert, vers, ver : « Un ___ de terre sort du sol. »",
           "answer": "ver",
+          "options": [
+            "vert",
+            "vers",
+            "ver",
+            "verre"
+          ],
           "skillIds": [
             "homophones-lexicaux"
           ],
@@ -1412,9 +1633,13 @@
         },
         {
           "id": "si-sy-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec si, s’y : « Cette règle est difficile, mais elle ___ habitue. »",
           "answer": "s’y",
+          "options": [
+            "si",
+            "s’y"
+          ],
           "skillIds": [
             "si-sy"
           ],
@@ -1483,9 +1708,15 @@
         },
         {
           "id": "la-la-las-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec la, là, l’a, l’as : « Je resterai ___ jusqu’à midi. »",
           "answer": "là",
+          "options": [
+            "l’as",
+            "la",
+            "là",
+            "l’a"
+          ],
           "skillIds": [
             "la-la-las"
           ],
@@ -1493,9 +1724,15 @@
         },
         {
           "id": "mais-mes-met-mets-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec mais, mes, met, mets : « J’ai retrouvé ___ deux chaussettes. »",
           "answer": "mes",
+          "options": [
+            "mais",
+            "mes",
+            "met",
+            "mets"
+          ],
           "skillIds": [
             "mais-mes-met-mets"
           ],
@@ -1503,9 +1740,14 @@
         },
         {
           "id": "peu-peux-peut-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec peu, peux, peut : « On ___ commencer. »",
           "answer": "peut",
+          "options": [
+            "peut",
+            "peu",
+            "peux"
+          ],
           "skillIds": [
             "peu-peux-peut"
           ],
@@ -1513,9 +1755,13 @@
         },
         {
           "id": "infinitif-participe-06",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec tomber ou tombé : « Il est ___ dans la cour. »",
           "answer": "tombé",
+          "options": [
+            "tombé",
+            "tomber"
+          ],
           "skillIds": [
             "infinitif-participe"
           ],
@@ -1553,9 +1799,15 @@
         },
         {
           "id": "la-la-las-08",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec la, là, l’a, l’as : « Ce dessin, tu ___ réussi. »",
           "answer": "l’as",
+          "options": [
+            "là",
+            "l’a",
+            "l’as",
+            "la"
+          ],
           "skillIds": [
             "la-la-las"
           ],
@@ -1563,9 +1815,13 @@
         },
         {
           "id": "infinitif-participe-08",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Complète avec marcher ou marché : « Il a ___ toute la journée. »",
           "answer": "marché",
+          "options": [
+            "marché",
+            "marcher"
+          ],
           "skillIds": [
             "infinitif-participe"
           ],
@@ -1912,7 +2168,7 @@
     },
     {
       "id": "francais-conjugaison-6e",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "title": "Conjugaison : les repères essentiels",
       "subject": "Français",
       "levels": [
@@ -1968,7 +2224,7 @@
         {
           "id": "temps-imparfait-01",
           "kind": "choice",
-          "prompt": "Conjugue « jouer » au imparfait : « Nous ___ dans la cour. »",
+          "prompt": "Conjugue « jouer » à l’imparfait : « Nous ___ dans la cour. »",
           "answer": "jouions",
           "options": [
             "jouions",
@@ -2058,9 +2314,15 @@
         },
         {
           "id": "temps-present-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Conjugue « aller » au présent : « Nous ___ à la piscine. »",
           "answer": "allons",
+          "options": [
+            "vont",
+            "allont",
+            "allons",
+            "allez"
+          ],
           "skillIds": [
             "temps-present"
           ],
@@ -2068,9 +2330,15 @@
         },
         {
           "id": "temps-imparfait-02",
-          "kind": "text",
-          "prompt": "Conjugue « être » au imparfait : « Elles ___ heureuses. »",
+          "kind": "choice",
+          "prompt": "Conjugue « être » à l’imparfait : « Elles ___ heureuses. »",
           "answer": "étaient",
+          "options": [
+            "été",
+            "seraient",
+            "étaient",
+            "était"
+          ],
           "skillIds": [
             "temps-imparfait"
           ],
@@ -2078,9 +2346,15 @@
         },
         {
           "id": "temps-futur-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Conjugue « voir » au futur : « Je ___ la réponse. »",
           "answer": "verrai",
+          "options": [
+            "vois",
+            "verrai",
+            "verrais",
+            "voyais"
+          ],
           "skillIds": [
             "temps-futur"
           ],
@@ -2088,9 +2362,15 @@
         },
         {
           "id": "temps-passe-compose-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Conjugue « aller » au passé composé : « Ils ___ au musée. »",
           "answer": "sont allés",
+          "options": [
+            "sont allés",
+            "sont allé",
+            "ont allés",
+            "étaient allés"
+          ],
           "skillIds": [
             "temps-passe-compose"
           ],
@@ -2098,9 +2378,15 @@
         },
         {
           "id": "temps-passe-simple-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Conjugue « prendre » au passé simple : « Elles ___ la parole. »",
           "answer": "prirent",
+          "options": [
+            "prirent",
+            "prenaient",
+            "prennent",
+            "prendront"
+          ],
           "skillIds": [
             "temps-passe-simple"
           ],
@@ -2108,9 +2394,15 @@
         },
         {
           "id": "temps-plus-que-parfait-02",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Conjugue « partir » au plus-que-parfait : « Elle ___ avant mon arrivée. »",
           "answer": "était partie",
+          "options": [
+            "est partie",
+            "avait partie",
+            "était parti",
+            "était partie"
+          ],
           "skillIds": [
             "temps-plus-que-parfait"
           ],
@@ -2150,7 +2442,7 @@
         {
           "id": "temps-imparfait-03",
           "kind": "choice",
-          "prompt": "Conjugue « avoir » au imparfait : « Tu ___ peur du noir. »",
+          "prompt": "Conjugue « avoir » à l’imparfait : « Tu ___ peur du noir. »",
           "answer": "avais",
           "options": [
             "avait",
@@ -2195,9 +2487,15 @@
         },
         {
           "id": "temps-present-04",
-          "kind": "text",
+          "kind": "choice",
           "prompt": "Conjugue « dire » au présent : « Ils ___ la vérité. »",
           "answer": "disent",
+          "options": [
+            "disent",
+            "dites",
+            "disont",
+            "dit"
+          ],
           "skillIds": [
             "temps-present"
           ],
@@ -2587,7 +2885,7 @@
     },
     {
       "id": "calcul-ce1",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "title": "Petits calculs",
       "subject": "Mathématiques",
       "levels": [
@@ -2607,9 +2905,15 @@
       "exercises": [
         {
           "id": "add-7-5",
-          "kind": "number",
+          "kind": "choice",
           "prompt": "Combien font 7 + 5 ?",
           "answer": "12",
+          "options": [
+            "13",
+            "12",
+            "10",
+            "11"
+          ],
           "skillIds": [
             "addition"
           ],
@@ -2631,9 +2935,15 @@
         },
         {
           "id": "sub-14-6",
-          "kind": "number",
+          "kind": "choice",
           "prompt": "Combien font 14 − 6 ?",
           "answer": "8",
+          "options": [
+            "10",
+            "8",
+            "7",
+            "9"
+          ],
           "skillIds": [
             "soustraction"
           ]
