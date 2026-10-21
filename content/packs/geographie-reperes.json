@@ -1,0 +1,598 @@
+{
+  "id": "geographie-reperes",
+  "version": "1.0.0",
+  "title": "Se repérer près de chez soi et dans le monde",
+  "subject": "Histoire-géographie",
+  "levels": [
+    "6e"
+  ],
+  "description": "Lire un plan et sa légende, situer la France et garder les grands repères utiles pour la suite du collège.",
+  "skills": [
+    {
+      "id": "cartes",
+      "label": "Lire une carte et s’orienter"
+    },
+    {
+      "id": "france",
+      "label": "Situer les grands repères de la France"
+    },
+    {
+      "id": "monde",
+      "label": "Distinguer continents, océans et territoires"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "cartes-reserve-01",
+      "kind": "choice",
+      "prompt": "Sur une carte orientée avec le nord en haut, où se trouve l’est ?",
+      "answer": "à droite",
+      "options": [
+        "à droite",
+        "à gauche",
+        "en bas"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "Les points cardinaux sont nord, est, sud, ouest. Avec le nord en haut, l’est est à droite."
+    },
+    {
+      "id": "cartes-reserve-02",
+      "kind": "choice",
+      "prompt": "À quoi sert la légende d’une carte ?",
+      "answer": "expliquer les couleurs et les symboles",
+      "options": [
+        "expliquer les couleurs et les symboles",
+        "raconter une histoire inventée seulement",
+        "donner le nom de tous les lecteurs"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "La légende donne le sens des figurés utilisés sur la carte."
+    },
+    {
+      "id": "cartes-reserve-03",
+      "kind": "choice",
+      "prompt": "À quoi sert l’échelle d’une carte ?",
+      "answer": "relier les distances sur la carte aux distances réelles",
+      "options": [
+        "relier les distances sur la carte aux distances réelles",
+        "indiquer la température",
+        "montrer l’auteur uniquement"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "L’échelle permet de passer de la représentation à la réalité."
+    },
+    {
+      "id": "cartes-reserve-04",
+      "kind": "choice",
+      "prompt": "Quel point cardinal est opposé au nord ?",
+      "answer": "le sud",
+      "options": [
+        "le sud",
+        "l’est",
+        "l’ouest"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "Le nord et le sud sont opposés, comme l’est et l’ouest."
+    },
+    {
+      "id": "cartes-reserve-05",
+      "kind": "choice",
+      "prompt": "Quel point cardinal est opposé à l’est ?",
+      "answer": "l’ouest",
+      "options": [
+        "l’ouest",
+        "le nord",
+        "le sud"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "L’est et l’ouest sont opposés."
+    },
+    {
+      "id": "cartes-reserve-06",
+      "kind": "choice",
+      "prompt": "Pourquoi lire le titre d’une carte ?",
+      "answer": "pour savoir quel espace et quel thème elle représente",
+      "options": [
+        "pour savoir quel espace et quel thème elle représente",
+        "pour connaître la météo du jour",
+        "pour éviter de lire la légende"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "Le titre annonce le sujet et souvent le territoire étudié."
+    },
+    {
+      "id": "cartes-reserve-07",
+      "kind": "choice",
+      "prompt": "Sur la légende, un trait rouge signifie « route ». Que représente ce trait sur la carte ?",
+      "answer": "une route",
+      "options": [
+        "une route",
+        "forcément une rivière",
+        "forcément une frontière"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "On utilise le sens donné par la légende, pas une couleur supposée universelle."
+    },
+    {
+      "id": "cartes-reserve-08",
+      "kind": "choice",
+      "prompt": "Un plan de quartier sert surtout à…",
+      "answer": "repérer des lieux et des itinéraires à petite distance",
+      "options": [
+        "repérer des lieux et des itinéraires à petite distance",
+        "montrer tous les continents en détail",
+        "dater la Révolution française"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "Le plan représente un espace proche avec des repères précis."
+    },
+    {
+      "id": "cartes-reserve-09",
+      "kind": "choice",
+      "prompt": "Sur ce plan, l’école est située par rapport à la mairie…",
+      "answer": "à l’est",
+      "options": [
+        "à l’est",
+        "à l’ouest",
+        "au sud"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "Le nord est en haut : l’école est à droite de la mairie, donc à l’est.",
+      "diagram": "town-map",
+      "contextId": "quartier-oriente"
+    },
+    {
+      "id": "cartes-reserve-10",
+      "kind": "choice",
+      "prompt": "Sur ce plan, la gare est située par rapport à la mairie…",
+      "answer": "au sud",
+      "options": [
+        "au sud",
+        "au nord",
+        "à l’est"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "La gare se trouve sous la mairie : elle est au sud.",
+      "diagram": "town-map",
+      "contextId": "quartier-oriente"
+    },
+    {
+      "id": "cartes-reserve-11",
+      "kind": "choice",
+      "prompt": "Sur ce plan, le parc est situé par rapport à la gare…",
+      "answer": "à l’est",
+      "options": [
+        "à l’est",
+        "à l’ouest",
+        "au nord"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "Le parc se trouve à droite de la gare : il est à l’est.",
+      "diagram": "town-map",
+      "contextId": "quartier-oriente"
+    },
+    {
+      "id": "cartes-reserve-12",
+      "kind": "choice",
+      "prompt": "Sur ce plan, la mairie est située par rapport au parc…",
+      "answer": "au nord-ouest",
+      "options": [
+        "au nord-ouest",
+        "au sud-est",
+        "au nord-est"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "Il faut aller vers le haut et vers la gauche depuis le parc.",
+      "diagram": "town-map",
+      "contextId": "quartier-oriente"
+    },
+    {
+      "id": "france-reserve-01",
+      "kind": "choice",
+      "prompt": "La France hexagonale se situe principalement…",
+      "answer": "en Europe",
+      "options": [
+        "en Europe",
+        "en Amérique du Sud",
+        "en Océanie"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "La partie européenne du territoire français se situe à l’ouest du continent européen.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "france-reserve-02",
+      "kind": "choice",
+      "prompt": "Quelle est la capitale de la France ?",
+      "answer": "Paris",
+      "options": [
+        "Paris",
+        "Lyon",
+        "Marseille"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "Paris est la capitale de la France.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "france-reserve-03",
+      "kind": "choice",
+      "prompt": "Quel pays a une frontière terrestre avec la France hexagonale ?",
+      "answer": "l’Espagne",
+      "options": [
+        "l’Espagne",
+        "le Japon",
+        "le Canada"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "L’Espagne borde la France au sud-ouest.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "france-reserve-04",
+      "kind": "choice",
+      "prompt": "Quelle mer borde le sud de la France hexagonale ?",
+      "answer": "la mer Méditerranée",
+      "options": [
+        "la mer Méditerranée",
+        "la mer Baltique",
+        "la mer Rouge"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "La Méditerranée borde notamment le littoral du Var.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "france-reserve-05",
+      "kind": "choice",
+      "prompt": "Quel océan borde l’ouest de la France hexagonale ?",
+      "answer": "l’océan Atlantique",
+      "options": [
+        "l’océan Atlantique",
+        "l’océan Pacifique",
+        "l’océan Indien"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "Le littoral atlantique se situe à l’ouest.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "france-reserve-06",
+      "kind": "choice",
+      "prompt": "Quelle chaîne montagneuse sépare en partie la France et l’Espagne ?",
+      "answer": "les Pyrénées",
+      "options": [
+        "les Pyrénées",
+        "les Alpes",
+        "les Vosges"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "Les Pyrénées forment une grande partie de cette frontière.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "france-reserve-07",
+      "kind": "choice",
+      "prompt": "Quel fleuve traverse Paris ?",
+      "answer": "la Seine",
+      "options": [
+        "la Seine",
+        "le Rhône",
+        "la Garonne"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "La Seine traverse Paris puis rejoint la Manche.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "france-reserve-08",
+      "kind": "choice",
+      "prompt": "Quel fleuve se jette dans la Méditerranée ?",
+      "answer": "le Rhône",
+      "options": [
+        "le Rhône",
+        "la Seine",
+        "la Loire"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "Le Rhône rejoint la Méditerranée dans son delta.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "france-reserve-09",
+      "kind": "choice",
+      "prompt": "Pourquoi la France n’est-elle pas uniquement située en Europe ?",
+      "answer": "elle comprend aussi des territoires ultramarins",
+      "options": [
+        "elle comprend aussi des territoires ultramarins",
+        "Paris se trouve en Asie",
+        "toute l’Europe est française"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "Des territoires français sont répartis dans d’autres parties du monde.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "france-reserve-10",
+      "kind": "choice",
+      "prompt": "La Guadeloupe et la Martinique se situent…",
+      "answer": "dans les Antilles",
+      "options": [
+        "dans les Antilles",
+        "dans les Alpes",
+        "en mer Baltique"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "Ces territoires français se trouvent dans l’espace caribéen.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "france-reserve-11",
+      "kind": "choice",
+      "prompt": "Quelle différence existe entre une commune et un pays ?",
+      "answer": "une commune est un territoire local à l’intérieur d’un pays",
+      "options": [
+        "une commune est un territoire local à l’intérieur d’un pays",
+        "ce sont toujours la même chose",
+        "une commune contient tous les pays"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "Les territoires s’emboîtent à plusieurs échelles.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "france-reserve-12",
+      "kind": "choice",
+      "prompt": "Dans quel grand ensemble montagneux se trouve le Mont Blanc ?",
+      "answer": "les Alpes",
+      "options": [
+        "les Alpes",
+        "les Pyrénées",
+        "le Massif armoricain"
+      ],
+      "skillIds": [
+        "france"
+      ],
+      "explanation": "Le Mont Blanc se situe dans les Alpes.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-01",
+      "kind": "choice",
+      "prompt": "Quel nom désigne un continent ?",
+      "answer": "l’Afrique",
+      "options": [
+        "l’Afrique",
+        "l’Atlantique",
+        "la Méditerranée"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "L’Afrique est un continent ; l’Atlantique est un océan ; la Méditerranée est une mer.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-02",
+      "kind": "choice",
+      "prompt": "Quel nom désigne un océan ?",
+      "answer": "le Pacifique",
+      "options": [
+        "le Pacifique",
+        "l’Europe",
+        "l’Asie"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "Le Pacifique est un océan.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-03",
+      "kind": "choice",
+      "prompt": "Un pays et un continent sont-ils la même chose ?",
+      "answer": "non, un continent regroupe généralement de nombreux pays",
+      "options": [
+        "non, un continent regroupe généralement de nombreux pays",
+        "oui, toujours",
+        "un pays est toujours plus grand qu’un continent"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "Les deux mots correspondent à des échelles et à des réalités différentes.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-04",
+      "kind": "choice",
+      "prompt": "L’Italie se situe sur quel continent ?",
+      "answer": "l’Europe",
+      "options": [
+        "l’Europe",
+        "l’Afrique",
+        "l’Océanie"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "L’Italie est un pays européen.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-05",
+      "kind": "choice",
+      "prompt": "La Chine se situe sur quel continent ?",
+      "answer": "l’Asie",
+      "options": [
+        "l’Asie",
+        "l’Europe",
+        "l’Amérique du Sud"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "La Chine est un pays d’Asie.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-06",
+      "kind": "choice",
+      "prompt": "Le Brésil se situe…",
+      "answer": "en Amérique du Sud",
+      "options": [
+        "en Amérique du Sud",
+        "en Europe",
+        "en Asie"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "Le Brésil occupe une grande partie de l’Amérique du Sud.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-07",
+      "kind": "choice",
+      "prompt": "Quel océan sépare principalement l’Europe de l’Amérique du Nord ?",
+      "answer": "l’Atlantique",
+      "options": [
+        "l’Atlantique",
+        "l’Indien",
+        "l’Arctique"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "L’Atlantique se situe entre les Amériques et l’Europe ou l’Afrique.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-08",
+      "kind": "choice",
+      "prompt": "Qu’est-ce qu’un littoral ?",
+      "answer": "l’espace au contact de la terre et de la mer",
+      "options": [
+        "l’espace au contact de la terre et de la mer",
+        "le sommet d’une montagne",
+        "le centre de tous les continents"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "Le littoral est une zone de contact entre la terre et la mer.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-09",
+      "kind": "choice",
+      "prompt": "Qu’est-ce qu’une île ?",
+      "answer": "une terre entourée d’eau",
+      "options": [
+        "une terre entourée d’eau",
+        "un territoire sans habitants obligatoirement",
+        "une montagne toujours enneigée"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "Une île est définie par l’eau qui l’entoure, pas par sa population ou son relief.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-10",
+      "kind": "choice",
+      "prompt": "Que sépare l’équateur ?",
+      "answer": "l’hémisphère Nord et l’hémisphère Sud",
+      "options": [
+        "l’hémisphère Nord et l’hémisphère Sud",
+        "l’est et l’ouest de chaque ville",
+        "chaque pays de son voisin"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "L’équateur est une ligne imaginaire à mi-distance des pôles.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-11",
+      "kind": "choice",
+      "prompt": "Quel continent se trouve autour du pôle Sud ?",
+      "answer": "l’Antarctique",
+      "options": [
+        "l’Antarctique",
+        "l’Europe",
+        "l’Afrique"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "L’Antarctique est le continent polaire austral.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "monde-reserve-12",
+      "kind": "choice",
+      "prompt": "Quelle différence existe entre un fleuve et une rivière, dans l’usage géographique scolaire ?",
+      "answer": "un fleuve se jette dans une mer ou un océan ; une rivière rejoint un autre cours d’eau",
+      "options": [
+        "un fleuve se jette dans une mer ou un océan ; une rivière rejoint un autre cours d’eau",
+        "un fleuve est toujours plus petit",
+        "une rivière est toujours salée"
+      ],
+      "skillIds": [
+        "monde"
+      ],
+      "explanation": "La distinction repose surtout sur la destination du cours d’eau, pas sur sa taille.",
+      "reviewMode": "question"
+    }
+  ]
+}

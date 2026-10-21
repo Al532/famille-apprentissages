@@ -16,7 +16,7 @@ Les règles Firestore limitent la lecture à la famille et au rôle. Un enfant n
 
 ## Calcul partagé du suivi
 
-Les deux interfaces écoutent les réponses et appliquent le moteur `packages/core` : correction, projection des compétences et FSRS. Le tri utilise l’horodatage serveur, puis l’UUID pour départager deux dates identiques. Les résultats et cartes calculés restent en mémoire, sans colonne de score fournie par l’enfant dans la base.
+Les deux interfaces écoutent les réponses et appliquent le moteur `packages/core` : correction, projection des compétences et FSRS par notion et par jour pour les règles et raisonnements, ou par carte et par jour pour les repères factuels. Voir [les séances par notion](seances-concepts.md). Le tri utilise l’horodatage serveur, puis l’UUID pour départager deux dates identiques. Les résultats et cartes calculés restent en mémoire, sans colonne de score fournie par l’enfant dans la base.
 
 Chaque tentative identifie sa révision et sa version de module. Le catalogue actif et les versions archivées sont livrés ensemble ; une mise à jour ne change donc pas le sens d’une ancienne réponse. Les références inconnues sont conservées et signalées dans le suivi partiel.
 

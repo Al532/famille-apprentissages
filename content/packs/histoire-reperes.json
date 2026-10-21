@@ -1,0 +1,394 @@
+{
+  "id": "histoire-reperes",
+  "version": "1.0.0",
+  "title": "Les outils pour comprendre l’histoire",
+  "subject": "Histoire-géographie",
+  "levels": [
+    "6e"
+  ],
+  "description": "Vérifier les bases cumulatives : ordonner, lire un siècle et distinguer une source d’une invention, sans réciter des détails de périodes lointaines.",
+  "skills": [
+    {
+      "id": "chronologie",
+      "label": "Se repérer dans le temps et les grandes périodes"
+    },
+    {
+      "id": "sources",
+      "label": "Comprendre et comparer les sources historiques"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "chronologie-reserve-01",
+      "kind": "choice",
+      "prompt": "Sur une frise allant du passé vers le présent, où place-t-on normalement l’événement le plus ancien ?",
+      "answer": "le plus à gauche",
+      "options": [
+        "le plus à gauche",
+        "le plus à droite",
+        "toujours au milieu"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "Dans la convention habituelle, le temps avance de gauche à droite.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "chronologie-reserve-02",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 1789 ?",
+      "answer": "XVIIIe siècle",
+      "options": [
+        "XVIIIe siècle",
+        "XVIIe siècle",
+        "XIXe siècle"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "Le XVIIIe siècle va de 1701 à 1800.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "chronologie-reserve-03",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 1882 ?",
+      "answer": "XIXe siècle",
+      "options": [
+        "XIXe siècle",
+        "XVIIIe siècle",
+        "XXe siècle"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "Le XIXe siècle va de 1801 à 1900.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "chronologie-reserve-04",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 1914 ?",
+      "answer": "XXe siècle",
+      "options": [
+        "XXe siècle",
+        "XIXe siècle",
+        "XXIe siècle"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "Le XXe siècle va de 1901 à 2000.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "chronologie-reserve-05",
+      "kind": "choice",
+      "prompt": "Quel événement est le plus ancien ?",
+      "answer": "la Révolution française de 1789",
+      "options": [
+        "la Révolution française de 1789",
+        "la Première Guerre mondiale",
+        "les lois Ferry de 1881-1882"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "1789 précède les années 1880 et 1914.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "chronologie-reserve-06",
+      "kind": "choice",
+      "prompt": "Quel ordre est chronologique ?",
+      "answer": "Révolution française, industrialisation du XIXe siècle, guerres mondiales",
+      "options": [
+        "Révolution française, industrialisation du XIXe siècle, guerres mondiales",
+        "guerres mondiales, Révolution française, industrialisation",
+        "industrialisation, guerres mondiales, Révolution française"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "Les trois repères se suivent de la fin du XVIIIe au XXe siècle.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "chronologie-reserve-07",
+      "kind": "choice",
+      "prompt": "Un siècle dure…",
+      "answer": "cent ans",
+      "options": [
+        "cent ans",
+        "dix ans",
+        "mille ans"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "Dix ans forment une décennie ; cent ans, un siècle ; mille ans, un millénaire.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "chronologie-reserve-08",
+      "kind": "choice",
+      "prompt": "Quelle période vient après le Moyen Âge dans le découpage scolaire habituel ?",
+      "answer": "les Temps modernes",
+      "options": [
+        "les Temps modernes",
+        "la Préhistoire",
+        "l’Antiquité"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "Le découpage en périodes aide à se repérer ; leurs limites sont des conventions.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "chronologie-reserve-09",
+      "kind": "choice",
+      "prompt": "Quelle période précède le Moyen Âge ?",
+      "answer": "l’Antiquité",
+      "options": [
+        "l’Antiquité",
+        "l’époque contemporaine",
+        "le XIXe siècle"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "Dans le découpage scolaire, l’Antiquité vient avant le Moyen Âge.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "chronologie-reserve-10",
+      "kind": "choice",
+      "prompt": "Quelle grande rupture associe-t-on habituellement à 1789 en France ?",
+      "answer": "le début de la Révolution française",
+      "options": [
+        "le début de la Révolution française",
+        "la fin de la Seconde Guerre mondiale",
+        "les lois Ferry"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "1789 marque un bouleversement politique et social majeur.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "chronologie-reserve-11",
+      "kind": "choice",
+      "prompt": "Quelle différence fait-on entre une date et une durée ?",
+      "answer": "la date situe un événement, la durée mesure un intervalle",
+      "options": [
+        "la date situe un événement, la durée mesure un intervalle",
+        "ce sont toujours les mêmes choses",
+        "une durée est toujours un siècle"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "« 1914 » est une date ; « quatre ans » est une durée.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "chronologie-reserve-12",
+      "kind": "choice",
+      "prompt": "Sur une frise, 1945 se place…",
+      "answer": "après 1918 et avant 1957",
+      "options": [
+        "après 1918 et avant 1957",
+        "avant 1789",
+        "après 2000"
+      ],
+      "skillIds": [
+        "chronologie"
+      ],
+      "explanation": "Il faut comparer les dates pour respecter l’ordre du temps.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "sources-reserve-01",
+      "kind": "choice",
+      "prompt": "Quel document peut être une source sur la vie d’une personne au XIXe siècle ?",
+      "answer": "une lettre qu’elle a écrite à cette époque",
+      "options": [
+        "une lettre qu’elle a écrite à cette époque",
+        "un roman inventé aujourd’hui sans recherche",
+        "une prédiction sur demain"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "Une lettre d’époque fournit un témoignage qu’il faut examiner avec esprit critique."
+    },
+    {
+      "id": "sources-reserve-02",
+      "kind": "choice",
+      "prompt": "Pourquoi comparer plusieurs sources ?",
+      "answer": "pour confronter les points de vue et vérifier les informations",
+      "options": [
+        "pour confronter les points de vue et vérifier les informations",
+        "pour choisir toujours la plus courte",
+        "pour supprimer les désaccords sans les étudier"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "Les sources peuvent être incomplètes, partiales ou se contredire."
+    },
+    {
+      "id": "sources-reserve-03",
+      "kind": "choice",
+      "prompt": "Une photographie montre-t-elle tout ce qui s’est passé ?",
+      "answer": "non, elle montre un cadrage à un moment donné",
+      "options": [
+        "non, elle montre un cadrage à un moment donné",
+        "oui, toute l’histoire à elle seule",
+        "oui, même ce qui est hors champ"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "Le photographe choisit un cadre et un instant."
+    },
+    {
+      "id": "sources-reserve-04",
+      "kind": "choice",
+      "prompt": "Que faut-il chercher pour situer un document ?",
+      "answer": "son auteur, sa date et son contexte",
+      "options": [
+        "son auteur, sa date et son contexte",
+        "seulement la couleur du papier",
+        "uniquement le nombre de lignes"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "Ces informations aident à comprendre sa portée et ses limites."
+    },
+    {
+      "id": "sources-reserve-05",
+      "kind": "choice",
+      "prompt": "Un objet ancien peut-il être une source historique ?",
+      "answer": "oui",
+      "options": [
+        "oui",
+        "non, seuls les livres le peuvent",
+        "non, seules les vidéos le peuvent"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "Objets, bâtiments, textes et images peuvent laisser des traces du passé."
+    },
+    {
+      "id": "sources-reserve-06",
+      "kind": "choice",
+      "prompt": "Quelle différence existe entre une preuve et une opinion ?",
+      "answer": "une preuve s’appuie sur des éléments vérifiables",
+      "options": [
+        "une preuve s’appuie sur des éléments vérifiables",
+        "toute opinion est automatiquement une preuve",
+        "une preuve dépend seulement de la popularité"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "Un avis personnel ne suffit pas à établir un fait historique."
+    },
+    {
+      "id": "sources-reserve-07",
+      "kind": "choice",
+      "prompt": "Pourquoi un témoignage doit-il être confronté à d’autres documents ?",
+      "answer": "la mémoire et le point de vue peuvent être partiels",
+      "options": [
+        "la mémoire et le point de vue peuvent être partiels",
+        "un témoin ment toujours",
+        "tous les témoins savent tout"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "Un témoin connaît une partie d’un événement et peut se tromper."
+    },
+    {
+      "id": "sources-reserve-08",
+      "kind": "choice",
+      "prompt": "Une affiche de propagande cherche surtout à…",
+      "answer": "influencer son public",
+      "options": [
+        "influencer son public",
+        "montrer tous les points de vue de façon neutre",
+        "donner uniquement la météo"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "Il faut tenir compte du but du document pour l’interpréter."
+    },
+    {
+      "id": "sources-reserve-09",
+      "kind": "choice",
+      "prompt": "Un film de fiction sur le Moyen Âge est-il forcément un témoignage de cette époque ?",
+      "answer": "non, il a été créé plus tard et peut inventer des éléments",
+      "options": [
+        "non, il a été créé plus tard et peut inventer des éléments",
+        "oui, s’il montre des costumes",
+        "oui, s’il est en couleur"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "Il faut distinguer une reconstitution ou une fiction d’une source produite à l’époque."
+    },
+    {
+      "id": "sources-reserve-10",
+      "kind": "choice",
+      "prompt": "Que fait un historien quand deux sources se contredisent ?",
+      "answer": "il les examine et cherche d’autres indices",
+      "options": [
+        "il les examine et cherche d’autres indices",
+        "il choisit au hasard",
+        "il abandonne toute recherche"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "La comparaison des sources fait partie du travail historique."
+    },
+    {
+      "id": "sources-reserve-11",
+      "kind": "choice",
+      "prompt": "Un monument peut-il nous renseigner sur le passé ?",
+      "answer": "oui, par sa construction, ses inscriptions et ses usages",
+      "options": [
+        "oui, par sa construction, ses inscriptions et ses usages",
+        "non, jamais",
+        "seulement s’il contient un écran"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "Le patrimoine matériel peut être étudié comme une trace historique."
+    },
+    {
+      "id": "sources-reserve-12",
+      "kind": "choice",
+      "prompt": "Quelle question aide à comprendre une affiche ancienne ?",
+      "answer": "pour qui et dans quel but a-t-elle été produite ?",
+      "options": [
+        "pour qui et dans quel but a-t-elle été produite ?",
+        "est-ce qu’elle me plaît seulement ?",
+        "combien de pixels contient-elle ?"
+      ],
+      "skillIds": [
+        "sources"
+      ],
+      "explanation": "Le public visé et l’intention éclairent le sens d’un document."
+    }
+  ]
+}

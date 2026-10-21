@@ -1,0 +1,1614 @@
+{
+  "id": "histoire-cm2",
+  "version": "1.0.0",
+  "title": "Comprendre les XIXe et XXe siècles",
+  "subject": "Histoire-géographie",
+  "levels": [
+    "6e"
+  ],
+  "description": "République, école, industrie, colonisation, guerres mondiales et construction européenne : les grands liens plutôt qu’une collection de dates.",
+  "skills": [
+    {
+      "id": "republique",
+      "label": "Comprendre la République"
+    },
+    {
+      "id": "ecole-droits",
+      "label": "École et conquête des droits"
+    },
+    {
+      "id": "industrie",
+      "label": "Comprendre l’industrialisation"
+    },
+    {
+      "id": "colonisation",
+      "label": "Comprendre la colonisation"
+    },
+    {
+      "id": "premiere-guerre",
+      "label": "Comprendre la Première Guerre mondiale"
+    },
+    {
+      "id": "seconde-guerre",
+      "label": "Comprendre la Seconde Guerre mondiale"
+    },
+    {
+      "id": "union-europeenne",
+      "label": "Comprendre la construction européenne"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "republique-reserve-01",
+      "kind": "choice",
+      "prompt": "Dans une république, le chef de l’État tient normalement son pouvoir…",
+      "answer": "d’une désignation prévue par des règles, pas de l’hérédité",
+      "options": [
+        "d’une désignation prévue par des règles, pas de l’hérédité",
+        "de son père ou de sa mère",
+        "de sa richesse personnelle"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Dans une république, la fonction de chef de l’État ne se transmet pas par héritage familial."
+    },
+    {
+      "id": "republique-reserve-02",
+      "kind": "choice",
+      "prompt": "Quel régime s’oppose à une monarchie héréditaire ?",
+      "answer": "une république",
+      "options": [
+        "une république",
+        "un royaume",
+        "une dynastie"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Dans une monarchie héréditaire, la fonction de monarque se transmet dans une famille."
+    },
+    {
+      "id": "republique-reserve-03",
+      "kind": "choice",
+      "prompt": "En quelle année la IIIe République est-elle proclamée ?",
+      "answer": "1870",
+      "options": [
+        "1870",
+        "1789",
+        "1914",
+        "1945"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "La IIIe République est proclamée le 4 septembre 1870.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "republique-reserve-04",
+      "kind": "choice",
+      "prompt": "Quelle devise est celle de la République française ?",
+      "answer": "Liberté, Égalité, Fraternité",
+      "options": [
+        "Liberté, Égalité, Fraternité",
+        "Travail, Famille, Patrie",
+        "Honneur, Roi, Patrie"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Liberté, Égalité, Fraternité exprime des valeurs républicaines.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "republique-reserve-05",
+      "kind": "choice",
+      "prompt": "Que représente Marianne ?",
+      "answer": "la République française",
+      "options": [
+        "la République française",
+        "une reine de France",
+        "une ville italienne"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Marianne est une figure symbolique de la République française.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "republique-reserve-06",
+      "kind": "choice",
+      "prompt": "Comment s’appelle l’hymne national français ?",
+      "answer": "La Marseillaise",
+      "options": [
+        "La Marseillaise",
+        "La Parisienne",
+        "Le Chant des rois"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "La Marseillaise est l’hymne national français.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "republique-reserve-07",
+      "kind": "choice",
+      "prompt": "Que commémore la fête nationale du 14 juillet, notamment ?",
+      "answer": "un événement de la Révolution française",
+      "options": [
+        "un événement de la Révolution française",
+        "la fin de la Seconde Guerre mondiale",
+        "le début de la IIIe République"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Le 14 juillet renvoie à la prise de la Bastille en 1789 et à la fête de la Fédération de 1790.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "republique-reserve-08",
+      "kind": "choice",
+      "prompt": "Quel est un symbole de la République française ?",
+      "answer": "le drapeau bleu, blanc, rouge",
+      "options": [
+        "le drapeau bleu, blanc, rouge",
+        "une couronne royale",
+        "un drapeau à douze étoiles sur fond bleu"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Le drapeau tricolore est un symbole de la République. Le drapeau à douze étoiles représente l’Europe.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "republique-reserve-09",
+      "kind": "choice",
+      "prompt": "Une élection sert à…",
+      "answer": "désigner des représentants par un vote",
+      "options": [
+        "désigner des représentants par un vote",
+        "transmettre le pouvoir à un enfant",
+        "supprimer toute discussion"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Une élection permet aux électeurs de choisir parmi des candidats selon des règles."
+    },
+    {
+      "id": "republique-reserve-10",
+      "kind": "choice",
+      "prompt": "Pourquoi les règles communes sont-elles importantes dans une république démocratique ?",
+      "answer": "elles limitent l’arbitraire et organisent la vie collective",
+      "options": [
+        "elles limitent l’arbitraire et organisent la vie collective",
+        "elles donnent tous les droits à une seule personne",
+        "elles interdisent tout désaccord"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Des lois et des institutions encadrent l’exercice du pouvoir."
+    },
+    {
+      "id": "republique-reserve-11",
+      "kind": "choice",
+      "prompt": "Que signifie l’égalité devant la loi ?",
+      "answer": "les mêmes règles de droit s’appliquent à chacun",
+      "options": [
+        "les mêmes règles de droit s’appliquent à chacun",
+        "tout le monde a les mêmes goûts",
+        "tout le monde exerce le même métier"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "L’égalité juridique ne signifie pas que toutes les personnes sont identiques."
+    },
+    {
+      "id": "republique-reserve-12",
+      "kind": "choice",
+      "prompt": "Le président de la République est-il un roi héréditaire ?",
+      "answer": "non, sa fonction ne se transmet pas à ses enfants",
+      "options": [
+        "non, sa fonction ne se transmet pas à ses enfants",
+        "oui, toujours",
+        "oui, s’il porte une couronne"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "La République se distingue d’une monarchie héréditaire par l’origine et les règles du pouvoir."
+    },
+    {
+      "id": "ecole-droits-reserve-01",
+      "kind": "choice",
+      "prompt": "Au début des années 1880, à quel nom associe-t-on les grandes lois sur l’école primaire ?",
+      "answer": "Jules Ferry",
+      "options": [
+        "Jules Ferry",
+        "Louis XIV",
+        "Napoléon Ier"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "Les lois Ferry rendent l’école primaire publique gratuite puis l’instruction obligatoire et laïque.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "ecole-droits-reserve-02",
+      "kind": "choice",
+      "prompt": "Que signifie « école publique gratuite » ?",
+      "answer": "les familles ne paient pas de frais de scolarité pour cet enseignement",
+      "options": [
+        "les familles ne paient pas de frais de scolarité pour cet enseignement",
+        "tous les objets de la vie sont gratuits",
+        "seuls les enfants riches y entrent"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "La gratuité facilite l’accès à l’enseignement public ; elle ne signifie pas que tous les frais de vie disparaissent."
+    },
+    {
+      "id": "ecole-droits-reserve-03",
+      "kind": "choice",
+      "prompt": "Quelle transformation accompagne les lois scolaires de 1881-1882 ?",
+      "answer": "davantage d’enfants peuvent recevoir une instruction",
+      "options": [
+        "davantage d’enfants peuvent recevoir une instruction",
+        "l’école est réservée aux garçons riches",
+        "l’instruction devient interdite"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "La gratuité et l’obligation d’instruction favorisent la scolarisation.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "ecole-droits-reserve-04",
+      "kind": "choice",
+      "prompt": "Que signifie la laïcité de l’enseignement public ?",
+      "answer": "l’enseignement respecte la liberté de conscience et reste indépendant des religions",
+      "options": [
+        "l’enseignement respecte la liberté de conscience et reste indépendant des religions",
+        "tous les élèves doivent avoir la même religion",
+        "les élèves n’ont pas le droit de croire"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "La laïcité protège la liberté de conscience et la neutralité de l’enseignement public."
+    },
+    {
+      "id": "ecole-droits-reserve-05",
+      "kind": "choice",
+      "prompt": "Au XIXe siècle, pourquoi le travail des enfants peut-il empêcher la scolarisation ?",
+      "answer": "il prend du temps et fatigue les enfants",
+      "options": [
+        "il prend du temps et fatigue les enfants",
+        "il remplace toujours tous les apprentissages",
+        "il rend l’école inutile"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "Les longues journées de travail rendent l’accès à l’instruction plus difficile."
+    },
+    {
+      "id": "ecole-droits-reserve-06",
+      "kind": "choice",
+      "prompt": "En France, quel droit les femmes obtiennent-elles en 1944 ?",
+      "answer": "le droit de vote",
+      "options": [
+        "le droit de vote",
+        "le droit de devenir reines",
+        "le droit de vote réservé aux hommes"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "Les femmes obtiennent le droit de vote en 1944 et votent pour la première fois en 1945.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "ecole-droits-reserve-07",
+      "kind": "choice",
+      "prompt": "Au XIXe siècle, « suffrage universel masculin » signifie que…",
+      "answer": "les femmes sont exclues de ce vote",
+      "options": [
+        "les femmes sont exclues de ce vote",
+        "toutes les femmes votent",
+        "seuls les rois votent"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "Le mot masculin est essentiel : l’expression ne désigne pas encore le vote des femmes."
+    },
+    {
+      "id": "ecole-droits-reserve-08",
+      "kind": "choice",
+      "prompt": "Quel progrès permet une plus grande participation à la vie politique ?",
+      "answer": "élargir le droit de vote",
+      "options": [
+        "élargir le droit de vote",
+        "réserver le vote à une seule famille",
+        "supprimer les élections"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "L’extension du droit de vote augmente le nombre de citoyens qui peuvent participer."
+    },
+    {
+      "id": "ecole-droits-reserve-09",
+      "kind": "choice",
+      "prompt": "À quoi sert l’instruction obligatoire ?",
+      "answer": "assurer que les enfants reçoivent une instruction",
+      "options": [
+        "assurer que les enfants reçoivent une instruction",
+        "obliger les enfants à travailler en usine",
+        "interdire la lecture à la maison"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "L’obligation porte sur l’instruction des enfants, pas seulement sur un bâtiment scolaire."
+    },
+    {
+      "id": "ecole-droits-reserve-10",
+      "kind": "choice",
+      "prompt": "La conquête des droits s’est-elle faite en une seule journée ?",
+      "answer": "non, elle résulte de changements et de luttes sur une longue durée",
+      "options": [
+        "non, elle résulte de changements et de luttes sur une longue durée",
+        "oui, tous les droits sont apparus en 1789",
+        "oui, sans aucun débat"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "L’accès au vote, à l’instruction et à de meilleures conditions de travail s’est construit progressivement."
+    },
+    {
+      "id": "ecole-droits-reserve-11",
+      "kind": "choice",
+      "prompt": "Que pose notamment la loi de 1905 ?",
+      "answer": "la séparation des Églises et de l’État",
+      "options": [
+        "la séparation des Églises et de l’État",
+        "le retour d’un roi",
+        "la suppression de la liberté de conscience"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "La loi de 1905 affirme la liberté de conscience et organise la séparation des Églises et de l’État.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "ecole-droits-reserve-12",
+      "kind": "choice",
+      "prompt": "Pourquoi apprendre à lire peut-il aider un citoyen ?",
+      "answer": "pour comprendre des informations et exercer son jugement",
+      "options": [
+        "pour comprendre des informations et exercer son jugement",
+        "pour ne plus écouter personne",
+        "pour toujours être d’accord avec le pouvoir"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "L’instruction aide à s’informer et à participer à la vie collective."
+    },
+    {
+      "id": "industrie-reserve-01",
+      "kind": "choice",
+      "prompt": "Quelle énergie joue un grand rôle dans l’industrie du XIXe siècle ?",
+      "answer": "le charbon",
+      "options": [
+        "le charbon",
+        "l’énergie solaire photovoltaïque",
+        "l’énergie nucléaire"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Le charbon alimente notamment les machines à vapeur.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "industrie-reserve-02",
+      "kind": "choice",
+      "prompt": "À quoi sert une machine à vapeur dans une usine ?",
+      "answer": "à fournir une force pour faire fonctionner des machines",
+      "options": [
+        "à fournir une force pour faire fonctionner des machines",
+        "à communiquer par Internet",
+        "à fabriquer uniquement de l’eau"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "La vapeur produite grâce à la chaleur peut mettre des mécanismes en mouvement."
+    },
+    {
+      "id": "industrie-reserve-03",
+      "kind": "choice",
+      "prompt": "Quelle transformation caractérise l’industrialisation ?",
+      "answer": "une production croissante avec des machines et des usines",
+      "options": [
+        "une production croissante avec des machines et des usines",
+        "la disparition de tous les outils",
+        "le retour général à la chasse"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "L’industrialisation transforme les modes de production et le travail."
+    },
+    {
+      "id": "industrie-reserve-04",
+      "kind": "choice",
+      "prompt": "Quel transport se développe fortement au XIXe siècle ?",
+      "answer": "le chemin de fer",
+      "options": [
+        "le chemin de fer",
+        "le TGV électrique dès 1800",
+        "l’avion à réaction"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Les locomotives à vapeur et les réseaux ferrés transforment les déplacements.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "industrie-reserve-05",
+      "kind": "choice",
+      "prompt": "Qu’est-ce qu’une usine ?",
+      "answer": "un lieu où l’on produit avec des machines et des travailleurs",
+      "options": [
+        "un lieu où l’on produit avec des machines et des travailleurs",
+        "une assemblée de députés",
+        "une simple prairie"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Les usines concentrent la production industrielle."
+    },
+    {
+      "id": "industrie-reserve-06",
+      "kind": "choice",
+      "prompt": "Qu’appelle-t-on l’exode rural ?",
+      "answer": "le départ d’habitants des campagnes vers les villes",
+      "options": [
+        "le départ d’habitants des campagnes vers les villes",
+        "le départ de tous les citadins à la campagne pour un week-end",
+        "un trajet de train"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "L’exode rural désigne un déplacement durable des populations vers les villes."
+    },
+    {
+      "id": "industrie-reserve-07",
+      "kind": "choice",
+      "prompt": "Pourquoi les villes industrielles grandissent-elles ?",
+      "answer": "les usines attirent des travailleurs",
+      "options": [
+        "les usines attirent des travailleurs",
+        "personne n’y travaille",
+        "toutes les campagnes disparaissent d’un coup"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Des emplois attirent de nouveaux habitants, même si les campagnes continuent d’exister."
+    },
+    {
+      "id": "industrie-reserve-08",
+      "kind": "choice",
+      "prompt": "Qu’extraient notamment les mineurs au XIXe siècle ?",
+      "answer": "du charbon",
+      "options": [
+        "du charbon",
+        "des ordinateurs",
+        "du plastique"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Le charbon est une ressource énergétique majeure de l’industrialisation.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "industrie-reserve-09",
+      "kind": "choice",
+      "prompt": "Les conditions de travail dans les premières usines sont souvent…",
+      "answer": "longues, pénibles et dangereuses",
+      "options": [
+        "longues, pénibles et dangereuses",
+        "toujours confortables et sans danger",
+        "identiques à des vacances"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Les ouvriers subissent souvent de longues journées et des risques importants."
+    },
+    {
+      "id": "industrie-reserve-10",
+      "kind": "choice",
+      "prompt": "Pourquoi des ouvriers se regroupent-ils ?",
+      "answer": "pour défendre leurs intérêts et améliorer leurs conditions",
+      "options": [
+        "pour défendre leurs intérêts et améliorer leurs conditions",
+        "pour supprimer tous les métiers",
+        "pour construire une monarchie héréditaire"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Les organisations et actions collectives cherchent notamment à améliorer le travail."
+    },
+    {
+      "id": "industrie-reserve-11",
+      "kind": "choice",
+      "prompt": "Quelle conséquence le chemin de fer a-t-il sur les échanges ?",
+      "answer": "transporter plus vite des personnes et des marchandises",
+      "options": [
+        "transporter plus vite des personnes et des marchandises",
+        "empêcher tout commerce",
+        "supprimer toutes les villes"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Le réseau ferré relie des régions et facilite les échanges."
+    },
+    {
+      "id": "industrie-reserve-12",
+      "kind": "choice",
+      "prompt": "L’industrialisation transforme-t-elle seulement les machines ?",
+      "answer": "non, elle transforme aussi le travail, les villes et les modes de vie",
+      "options": [
+        "non, elle transforme aussi le travail, les villes et les modes de vie",
+        "oui, sans effet sur les personnes",
+        "non, elle ne transforme rien"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Le changement technique a aussi des conséquences économiques et sociales."
+    },
+    {
+      "id": "colonisation-reserve-01",
+      "kind": "choice",
+      "prompt": "Au XIXe siècle, qu’appelle-t-on une colonie ?",
+      "answer": "un territoire dominé par un autre État",
+      "options": [
+        "un territoire dominé par un autre État",
+        "un pays toujours totalement indépendant",
+        "un simple groupe d’amis"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "La colonisation impose une domination politique, économique et souvent culturelle.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "colonisation-reserve-02",
+      "kind": "choice",
+      "prompt": "Qui décide principalement dans un territoire colonisé ?",
+      "answer": "la puissance coloniale",
+      "options": [
+        "la puissance coloniale",
+        "toute la population avec des droits égaux dans tous les cas",
+        "aucun pouvoir"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "Les populations colonisées subissent une domination extérieure."
+    },
+    {
+      "id": "colonisation-reserve-03",
+      "kind": "choice",
+      "prompt": "Quel État possède un empire colonial important au XIXe siècle ?",
+      "answer": "la France",
+      "options": [
+        "la France",
+        "toutes les communes séparément",
+        "uniquement la Suisse"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "La France fait partie des puissances coloniales européennes.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "colonisation-reserve-04",
+      "kind": "choice",
+      "prompt": "La colonisation implique-t-elle toujours un accord libre des populations ?",
+      "answer": "non, elle est souvent imposée par la force",
+      "options": [
+        "non, elle est souvent imposée par la force",
+        "oui, sans exception",
+        "oui, sans aucun conflit"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "La conquête et la domination coloniales s’accompagnent de violences et de résistances."
+    },
+    {
+      "id": "colonisation-reserve-05",
+      "kind": "choice",
+      "prompt": "Une puissance qui exploite les ressources d’un territoire dominé exerce notamment une domination…",
+      "answer": "économique",
+      "options": [
+        "économique",
+        "seulement sportive",
+        "uniquement météorologique"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "L’exploitation des ressources et du travail relève de l’économie."
+    },
+    {
+      "id": "colonisation-reserve-06",
+      "kind": "choice",
+      "prompt": "Les habitants des colonies ont-ils toujours les mêmes droits que les citoyens de la métropole ?",
+      "answer": "non, les statuts coloniaux créent des inégalités",
+      "options": [
+        "non, les statuts coloniaux créent des inégalités",
+        "oui, partout et à toute époque",
+        "ils n’ont aucune vie sociale"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "La domination coloniale repose notamment sur des inégalités de droits."
+    },
+    {
+      "id": "colonisation-reserve-07",
+      "kind": "choice",
+      "prompt": "Que désigne la métropole dans le contexte colonial ?",
+      "answer": "l’État qui dirige un empire colonial",
+      "options": [
+        "l’État qui dirige un empire colonial",
+        "seulement la plus grande ville d’une colonie",
+        "une montagne"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "Ici, métropole désigne la puissance coloniale, pas le sens géographique de grande ville.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "colonisation-reserve-08",
+      "kind": "choice",
+      "prompt": "Pourquoi étudier la colonisation avec un regard critique ?",
+      "answer": "pour comprendre les dominations, les violences et les résistances",
+      "options": [
+        "pour comprendre les dominations, les violences et les résistances",
+        "pour affirmer que tous les habitants la souhaitaient",
+        "pour oublier les populations colonisées"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "L’histoire cherche à comprendre les expériences et les rapports de pouvoir."
+    },
+    {
+      "id": "colonisation-reserve-09",
+      "kind": "choice",
+      "prompt": "Qu’est-ce qu’une résistance à la colonisation ?",
+      "answer": "une opposition à la domination coloniale",
+      "options": [
+        "une opposition à la domination coloniale",
+        "une acceptation obligatoire sans désaccord",
+        "une machine à vapeur"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "Des populations et des dirigeants ont résisté de différentes façons à la domination."
+    },
+    {
+      "id": "colonisation-reserve-10",
+      "kind": "choice",
+      "prompt": "Les colonies françaises se trouvaient notamment…",
+      "answer": "en Afrique et en Asie",
+      "options": [
+        "en Afrique et en Asie",
+        "uniquement en France hexagonale",
+        "uniquement au pôle Nord"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "L’empire colonial français s’étendait sur plusieurs continents.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "colonisation-reserve-11",
+      "kind": "choice",
+      "prompt": "Une carte d’empire colonial montre principalement…",
+      "answer": "des territoires placés sous la domination d’une puissance",
+      "options": [
+        "des territoires placés sous la domination d’une puissance",
+        "les mêmes frontières naturelles depuis toujours",
+        "uniquement les montagnes"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "Les couleurs de la carte peuvent représenter un pouvoir politique, pas un relief."
+    },
+    {
+      "id": "colonisation-reserve-12",
+      "kind": "choice",
+      "prompt": "Quelle phrase décrit correctement la colonisation ?",
+      "answer": "un rapport de domination entre une puissance et des territoires",
+      "options": [
+        "un rapport de domination entre une puissance et des territoires",
+        "une simple visite touristique",
+        "une alliance toujours égale et libre"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "La notion centrale est la domination ; elle ne se confond pas avec un voyage ou un échange égal."
+    },
+    {
+      "id": "premiere-guerre-reserve-01",
+      "kind": "choice",
+      "prompt": "Quelles sont les dates de la Première Guerre mondiale ?",
+      "answer": "1914-1918",
+      "options": [
+        "1914-1918",
+        "1939-1945",
+        "1789-1792",
+        "1870-1871"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "La Première Guerre mondiale se déroule de 1914 à 1918.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "premiere-guerre-reserve-02",
+      "kind": "choice",
+      "prompt": "Que sont les tranchées ?",
+      "answer": "des fossés aménagés où combattent et vivent des soldats",
+      "options": [
+        "des fossés aménagés où combattent et vivent des soldats",
+        "des usines de voitures",
+        "des salles de classe"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Une partie du front se stabilise dans des réseaux de tranchées.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "premiere-guerre-reserve-03",
+      "kind": "choice",
+      "prompt": "Qu’appelle-t-on le front ?",
+      "answer": "la zone de combat",
+      "options": [
+        "la zone de combat",
+        "toutes les régions sans combats",
+        "un traité de paix"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Le front est la zone où les armées s’affrontent.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "premiere-guerre-reserve-04",
+      "kind": "choice",
+      "prompt": "Qu’appelle-t-on l’arrière pendant la guerre ?",
+      "answer": "les espaces hors de la ligne de combat",
+      "options": [
+        "les espaces hors de la ligne de combat",
+        "une armée qui n’existe plus",
+        "le fond d’un bateau seulement"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "À l’arrière, les civils participent à l’effort de guerre et subissent ses conséquences.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "premiere-guerre-reserve-05",
+      "kind": "choice",
+      "prompt": "Pourquoi parle-t-on de guerre mondiale ?",
+      "answer": "des États et des populations de plusieurs continents sont engagés",
+      "options": [
+        "des États et des populations de plusieurs continents sont engagés",
+        "les combats ont lieu dans chaque village du monde",
+        "une seule ville est concernée"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Mondiale ne signifie pas que chaque endroit du globe est un champ de bataille.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "premiere-guerre-reserve-06",
+      "kind": "choice",
+      "prompt": "Que commémore le 11 novembre en France ?",
+      "answer": "l’armistice de 1918",
+      "options": [
+        "l’armistice de 1918",
+        "le début de la Seconde Guerre mondiale",
+        "la prise de la Bastille"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "L’armistice du 11 novembre 1918 met fin aux combats entre les Alliés et l’Allemagne.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "premiere-guerre-reserve-07",
+      "kind": "choice",
+      "prompt": "Que signifie un armistice ?",
+      "answer": "un accord pour arrêter les combats",
+      "options": [
+        "un accord pour arrêter les combats",
+        "une déclaration de guerre",
+        "une victoire sportive"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Un armistice suspend les combats ; il ne se confond pas avec un traité de paix.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "premiere-guerre-reserve-08",
+      "kind": "choice",
+      "prompt": "Les civils sont-ils concernés par la Première Guerre mondiale ?",
+      "answer": "oui, par le travail, les pénuries et les violences",
+      "options": [
+        "oui, par le travail, les pénuries et les violences",
+        "non, jamais",
+        "seulement les personnes qui portent un uniforme"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Les sociétés entières sont mobilisées et touchées.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "premiere-guerre-reserve-09",
+      "kind": "choice",
+      "prompt": "Que rappelle un monument aux morts ?",
+      "answer": "les personnes mortes pour la France, notamment pendant les guerres",
+      "options": [
+        "les personnes mortes pour la France, notamment pendant les guerres",
+        "la liste des rois",
+        "les meilleurs résultats scolaires"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Ces monuments sont des lieux de mémoire et de commémoration.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "premiere-guerre-reserve-10",
+      "kind": "choice",
+      "prompt": "Pourquoi les usines fabriquent-elles davantage d’armes pendant la guerre ?",
+      "answer": "la production est orientée vers l’effort de guerre",
+      "options": [
+        "la production est orientée vers l’effort de guerre",
+        "les armes servent au jardinage",
+        "les combats ne nécessitent aucun matériel"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "La guerre mobilise les ressources économiques et industrielles.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "premiere-guerre-reserve-11",
+      "kind": "choice",
+      "prompt": "Quel événement appartient à la Première Guerre mondiale ?",
+      "answer": "la vie des soldats dans les tranchées du front en 1916",
+      "options": [
+        "la vie des soldats dans les tranchées du front en 1916",
+        "le débarquement de Normandie en 1944",
+        "la création de l’euro"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Les tranchées de 1916 se situent dans la période 1914-1918.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "premiere-guerre-reserve-12",
+      "kind": "choice",
+      "prompt": "Quelle phrase est juste ?",
+      "answer": "la guerre bouleverse aussi la vie des familles",
+      "options": [
+        "la guerre bouleverse aussi la vie des familles",
+        "les familles ne subissent aucune conséquence",
+        "tous les soldats rentrent indemnes"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Les deuils, absences, pénuries et changements de travail touchent les familles.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-01",
+      "kind": "choice",
+      "prompt": "Quelles sont les dates de la Seconde Guerre mondiale ?",
+      "answer": "1939-1945",
+      "options": [
+        "1939-1945",
+        "1914-1918",
+        "1789-1799",
+        "1870-1871"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "La Seconde Guerre mondiale se déroule de 1939 à 1945.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-02",
+      "kind": "choice",
+      "prompt": "Quel régime dirige l’Allemagne de Hitler ?",
+      "answer": "une dictature nazie",
+      "options": [
+        "une dictature nazie",
+        "une démocratie pluraliste",
+        "une république française"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Le régime nazi supprime les libertés et persécute des populations.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-03",
+      "kind": "choice",
+      "prompt": "Que désigne l’Occupation en France pendant cette guerre ?",
+      "answer": "la présence et la domination de l’armée allemande",
+      "options": [
+        "la présence et la domination de l’armée allemande",
+        "une activité de loisir",
+        "des élections ordinaires"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Une partie puis la totalité du territoire français est occupée par l’armée allemande.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-04",
+      "kind": "choice",
+      "prompt": "Qu’est-ce que la Résistance ?",
+      "answer": "des actions contre l’occupant et la collaboration",
+      "options": [
+        "des actions contre l’occupant et la collaboration",
+        "une aide militaire systématique à l’occupant",
+        "une nouvelle monarchie"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "La Résistance prend plusieurs formes : renseignement, presse clandestine, sabotage, lutte armée.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-05",
+      "kind": "choice",
+      "prompt": "À quoi l’appel du 18 juin 1940 du général de Gaulle invite-t-il ?",
+      "answer": "à poursuivre le combat",
+      "options": [
+        "à poursuivre le combat",
+        "à arrêter toute résistance",
+        "à célébrer la paix de 1918"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "De Gaulle appelle depuis Londres à continuer la lutte.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-06",
+      "kind": "choice",
+      "prompt": "Que signifie collaborer avec l’occupant ?",
+      "answer": "l’aider et coopérer avec lui",
+      "options": [
+        "l’aider et coopérer avec lui",
+        "lutter contre lui",
+        "rester toujours sans aucun choix politique"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "La collaboration est une coopération avec la puissance occupante.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-07",
+      "kind": "choice",
+      "prompt": "Qu’est-ce que le génocide des Juifs d’Europe ?",
+      "answer": "leur extermination organisée par les nazis et leurs complices",
+      "options": [
+        "leur extermination organisée par les nazis et leurs complices",
+        "une simple migration libre",
+        "une bataille entre deux armées égales"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Les Juifs sont visés pour ce qu’ils sont. Les nazis persécutent et exterminent aussi d’autres populations, notamment les Tsiganes.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-08",
+      "kind": "choice",
+      "prompt": "Que commémore le 8 mai 1945 en France ?",
+      "answer": "la victoire sur l’Allemagne nazie et la fin de la guerre en Europe",
+      "options": [
+        "la victoire sur l’Allemagne nazie et la fin de la guerre en Europe",
+        "le début de la Première Guerre mondiale",
+        "la fin de tous les combats dans le monde ce jour-là"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Les combats se poursuivent encore en Asie après la fin de la guerre en Europe.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-09",
+      "kind": "choice",
+      "prompt": "En quelle année a lieu le débarquement allié en Normandie ?",
+      "answer": "1944",
+      "options": [
+        "1944",
+        "1914",
+        "1789",
+        "1957"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Le débarquement du 6 juin 1944 contribue à la libération de la France.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-10",
+      "kind": "choice",
+      "prompt": "Que signifie la Libération en France ?",
+      "answer": "la fin de l’Occupation et le rétablissement progressif des libertés",
+      "options": [
+        "la fin de l’Occupation et le rétablissement progressif des libertés",
+        "le début de l’Occupation",
+        "une extension de la domination nazie"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "La Libération met fin à l’Occupation, à partir de 1944 selon les territoires.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-11",
+      "kind": "choice",
+      "prompt": "Les populations civiles ont-elles été victimes de cette guerre ?",
+      "answer": "oui, notamment des bombardements, persécutions et déportations",
+      "options": [
+        "oui, notamment des bombardements, persécutions et déportations",
+        "non, seuls les soldats ont souffert",
+        "non, les villes n’ont jamais été touchées"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "La Seconde Guerre mondiale frappe très durement les civils.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "seconde-guerre-reserve-12",
+      "kind": "choice",
+      "prompt": "Quelle distinction est correcte ?",
+      "answer": "résister, c’est lutter contre l’occupant ; collaborer, c’est l’aider",
+      "options": [
+        "résister, c’est lutter contre l’occupant ; collaborer, c’est l’aider",
+        "résister et collaborer veulent dire la même chose",
+        "collaborer signifie toujours libérer"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Les deux notions correspondent à des comportements opposés vis-à-vis de l’occupant.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-01",
+      "kind": "choice",
+      "prompt": "Quel est un objectif majeur de la construction européenne après 1945 ?",
+      "answer": "rendre une nouvelle guerre moins probable en coopérant",
+      "options": [
+        "rendre une nouvelle guerre moins probable en coopérant",
+        "préparer une guerre entre voisins",
+        "supprimer tout échange"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "La coopération économique et politique vise notamment à construire une paix durable.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-02",
+      "kind": "choice",
+      "prompt": "Quelle différence existe entre l’Europe et l’Union européenne ?",
+      "answer": "l’Europe est un continent, l’Union européenne une union d’États",
+      "options": [
+        "l’Europe est un continent, l’Union européenne une union d’États",
+        "ce sont toujours exactement les mêmes pays",
+        "l’Europe est une monnaie"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "Tous les pays du continent européen ne sont pas membres de l’Union européenne.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-03",
+      "kind": "choice",
+      "prompt": "Que représente le drapeau bleu à douze étoiles ?",
+      "answer": "l’Union européenne",
+      "options": [
+        "l’Union européenne",
+        "la République française uniquement",
+        "un empire colonial français"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "Il symbolise l’Europe unie ; les étoiles ne comptent pas les pays membres.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-04",
+      "kind": "choice",
+      "prompt": "À quoi correspond l’euro ?",
+      "answer": "une monnaie commune utilisée par plusieurs pays européens",
+      "options": [
+        "une monnaie commune utilisée par plusieurs pays européens",
+        "une langue parlée par tous",
+        "un continent"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "L’euro est une monnaie, pas une langue ou une institution politique.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-05",
+      "kind": "choice",
+      "prompt": "Tous les pays de l’Union européenne utilisent-ils nécessairement l’euro ?",
+      "answer": "non",
+      "options": [
+        "non",
+        "oui, sans exception",
+        "l’euro n’existe pas"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "L’Union européenne et la zone euro ne regroupent pas exactement les mêmes États.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-06",
+      "kind": "choice",
+      "prompt": "Pourquoi la France et l’Allemagne coopèrent-elles après les guerres mondiales ?",
+      "answer": "pour dépasser les conflits et construire des liens durables",
+      "options": [
+        "pour dépasser les conflits et construire des liens durables",
+        "pour rester ennemies dans tous les domaines",
+        "pour supprimer leur histoire"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "La réconciliation franco-allemande est un élément important de la construction européenne.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-07",
+      "kind": "choice",
+      "prompt": "Qu’est-ce qu’un État membre de l’Union européenne ?",
+      "answer": "un pays qui fait partie de cette union",
+      "options": [
+        "un pays qui fait partie de cette union",
+        "une ville qui devient un pays",
+        "n’importe quel pays du monde"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "L’Union européenne rassemble des États membres.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-08",
+      "kind": "choice",
+      "prompt": "La France fait-elle partie de l’Union européenne ?",
+      "answer": "oui",
+      "options": [
+        "oui",
+        "non",
+        "seulement sa capitale"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "La France participe à la construction européenne depuis ses débuts.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-09",
+      "kind": "choice",
+      "prompt": "Que permet un projet commun entre plusieurs pays ?",
+      "answer": "mettre en commun des moyens pour un objectif partagé",
+      "options": [
+        "mettre en commun des moyens pour un objectif partagé",
+        "supprimer tout désaccord pour toujours",
+        "faire disparaître toutes les cultures"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "Coopérer signifie agir ensemble tout en pouvant garder des différences.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-10",
+      "kind": "choice",
+      "prompt": "À quoi correspondent les traités de Rome de 1957 ?",
+      "answer": "une étape de la construction européenne",
+      "options": [
+        "une étape de la construction européenne",
+        "la fin de la Première Guerre mondiale",
+        "la naissance de l’Empire romain"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "En 1957, six pays signent notamment le traité qui crée la Communauté économique européenne.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-11",
+      "kind": "choice",
+      "prompt": "Une coopération européenne peut concerner…",
+      "answer": "des échanges, des règles communes et des projets",
+      "options": [
+        "des échanges, des règles communes et des projets",
+        "uniquement les matchs de football",
+        "seulement les frontières d’une commune"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "La construction européenne touche plusieurs domaines de la vie économique et politique.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "union-europeenne-reserve-12",
+      "kind": "choice",
+      "prompt": "Pourquoi faut-il distinguer un continent d’une organisation politique ?",
+      "answer": "leurs limites et leurs rôles ne sont pas identiques",
+      "options": [
+        "leurs limites et leurs rôles ne sont pas identiques",
+        "un continent ne contient jamais de pays",
+        "une organisation politique est toujours une montagne"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "Un repère géographique et une union d’États ne désignent pas la même chose.",
+      "reviewMode": "question"
+    },
+    {
+      "id": "republique-raison-01",
+      "kind": "choice",
+      "prompt": "Un président est remplacé à la fin de son mandat suivant les règles. Qu’illustre cette situation ?",
+      "answer": "un pouvoir limité dans le temps",
+      "options": [
+        "un pouvoir limité dans le temps",
+        "un pouvoir transmis automatiquement à ses enfants",
+        "un règne héréditaire"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Dans une république, les règles organisent la désignation et la durée des fonctions."
+    },
+    {
+      "id": "republique-raison-02",
+      "kind": "choice",
+      "prompt": "Deux citoyens défendent des idées différentes lors d’une élection. Une démocratie doit permettre…",
+      "answer": "le débat et le choix des électeurs",
+      "options": [
+        "le débat et le choix des électeurs",
+        "la prison pour toute opinion différente",
+        "la transmission du pouvoir au plus riche"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "La liberté d’expression et le pluralisme permettent des choix politiques."
+    },
+    {
+      "id": "republique-raison-03",
+      "kind": "choice",
+      "prompt": "Une décision publique avantage uniquement les proches d’un dirigeant. Quel principe est menacé ?",
+      "answer": "l’égalité de traitement",
+      "options": [
+        "l’égalité de traitement",
+        "le droit d’hériter d’une couronne",
+        "la présence de montagnes"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Le pouvoir public doit respecter les règles communes, pas favoriser arbitrairement des proches."
+    },
+    {
+      "id": "republique-raison-04",
+      "kind": "choice",
+      "prompt": "Dans une république, le fils d’un président devient-il automatiquement président ?",
+      "answer": "non, les règles de désignation restent nécessaires",
+      "options": [
+        "non, les règles de désignation restent nécessaires",
+        "oui, par héritage",
+        "oui, sans aucune procédure"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Le pouvoir républicain n’est pas héréditaire."
+    },
+    {
+      "id": "republique-raison-05",
+      "kind": "choice",
+      "prompt": "Pourquoi une loi s’impose-t-elle aussi aux dirigeants ?",
+      "answer": "pour encadrer leur pouvoir et protéger les droits",
+      "options": [
+        "pour encadrer leur pouvoir et protéger les droits",
+        "parce qu’ils ne sont jamais responsables",
+        "parce qu’une loi n’a aucune portée"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "L’exercice du pouvoir est encadré par le droit."
+    },
+    {
+      "id": "republique-raison-06",
+      "kind": "choice",
+      "prompt": "Des citoyens choisissent des députés pour les représenter. Quel mécanisme utilisent-ils ?",
+      "answer": "l’élection",
+      "options": [
+        "l’élection",
+        "l’hérédité",
+        "la conquête militaire"
+      ],
+      "skillIds": [
+        "republique"
+      ],
+      "explanation": "Des électeurs désignent des représentants par leur vote."
+    },
+    {
+      "id": "ecole-droits-raison-01",
+      "kind": "choice",
+      "prompt": "Dans une famille pauvre, supprimer les frais de scolarité peut…",
+      "answer": "faciliter l’accès des enfants à l’école",
+      "options": [
+        "faciliter l’accès des enfants à l’école",
+        "interdire la lecture",
+        "rendre le travail des enfants obligatoire"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "La gratuité réduit un obstacle financier à la scolarisation."
+    },
+    {
+      "id": "ecole-droits-raison-02",
+      "kind": "choice",
+      "prompt": "Une fille et un garçon peuvent recevoir la même instruction. Quel objectif cela sert-il ?",
+      "answer": "l’égalité d’accès aux apprentissages",
+      "options": [
+        "l’égalité d’accès aux apprentissages",
+        "la transmission d’un trône",
+        "la fermeture de l’école"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "L’accès à l’instruction contribue à l’égalité des droits et des possibilités."
+    },
+    {
+      "id": "ecole-droits-raison-03",
+      "kind": "choice",
+      "prompt": "Un enfant travaille toute la journée en usine. Quelle difficulté rencontre-t-il pour apprendre ?",
+      "answer": "il manque de temps et subit la fatigue",
+      "options": [
+        "il manque de temps et subit la fatigue",
+        "il connaît automatiquement toutes les leçons",
+        "il n’a plus besoin de lire"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "Le travail long et pénible peut empêcher une scolarisation régulière."
+    },
+    {
+      "id": "ecole-droits-raison-04",
+      "kind": "choice",
+      "prompt": "Un nouveau droit est accordé à un groupe auparavant exclu. Cela montre que…",
+      "answer": "les droits peuvent s’élargir au fil de l’histoire",
+      "options": [
+        "les droits peuvent s’élargir au fil de l’histoire",
+        "les droits sont toujours identiques à toutes les époques",
+        "aucun changement n’est possible"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "Les conquêtes de droits résultent de décisions, de débats et de luttes."
+    },
+    {
+      "id": "industrie-raison-01",
+      "kind": "choice",
+      "prompt": "Une usine attire des travailleurs qui s’installent autour d’elle. Quelle transformation peut suivre ?",
+      "answer": "la croissance d’un quartier ou d’une ville",
+      "options": [
+        "la croissance d’un quartier ou d’une ville",
+        "la disparition de tout logement",
+        "l’arrêt de tous les échanges"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Les emplois industriels peuvent attirer de nouveaux habitants."
+    },
+    {
+      "id": "industrie-raison-02",
+      "kind": "choice",
+      "prompt": "Une ligne de chemin de fer relie une région agricole à une ville. Que facilite-t-elle ?",
+      "answer": "l’acheminement des marchandises et les déplacements",
+      "options": [
+        "l’acheminement des marchandises et les déplacements",
+        "l’isolement obligatoire de la région",
+        "la disparition de toutes les routes"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Un nouveau transport renforce les relations entre les territoires."
+    },
+    {
+      "id": "industrie-raison-03",
+      "kind": "choice",
+      "prompt": "Des ouvriers demandent de réduire une journée de travail très longue. Ils cherchent surtout…",
+      "answer": "à améliorer leurs conditions de vie et de travail",
+      "options": [
+        "à améliorer leurs conditions de vie et de travail",
+        "à supprimer tout droit",
+        "à revenir à une monarchie héréditaire"
+      ],
+      "skillIds": [
+        "industrie"
+      ],
+      "explanation": "Les revendications ouvrières portent notamment sur le temps, le salaire et la sécurité."
+    },
+    {
+      "id": "colonisation-raison-01",
+      "kind": "choice",
+      "prompt": "Une puissance impose ses décisions à une population extérieure privée de droits égaux. Quel rapport observe-t-on ?",
+      "answer": "une domination",
+      "options": [
+        "une domination",
+        "une coopération toujours égale",
+        "une simple visite touristique"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "L’inégalité du pouvoir et des droits caractérise une domination."
+    },
+    {
+      "id": "colonisation-raison-02",
+      "kind": "choice",
+      "prompt": "Une affiche présente une conquête comme toujours heureuse pour les habitants. Que faut-il faire ?",
+      "answer": "la comparer aux expériences et témoignages des populations dominées",
+      "options": [
+        "la comparer aux expériences et témoignages des populations dominées",
+        "la croire sans examen",
+        "ignorer toutes les autres sources"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "Une propagande ne remplace pas l’étude critique de sources variées."
+    },
+    {
+      "id": "colonisation-raison-03",
+      "kind": "choice",
+      "prompt": "Des ressources sont prélevées pour enrichir principalement la puissance coloniale. Quelle dimension est en jeu ?",
+      "answer": "l’exploitation économique",
+      "options": [
+        "l’exploitation économique",
+        "uniquement le climat",
+        "uniquement la géométrie"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "La domination coloniale concerne aussi les ressources, les échanges et le travail."
+    },
+    {
+      "id": "colonisation-raison-04",
+      "kind": "choice",
+      "prompt": "Des habitants s’opposent à une conquête de leur territoire. Comment comprendre leur action ?",
+      "answer": "comme une résistance à la domination",
+      "options": [
+        "comme une résistance à la domination",
+        "comme la preuve d’un accord unanime",
+        "comme un changement de saison"
+      ],
+      "skillIds": [
+        "colonisation"
+      ],
+      "explanation": "Les populations colonisées ont pu résister à l’imposition d’un pouvoir extérieur."
+    }
+  ]
+}

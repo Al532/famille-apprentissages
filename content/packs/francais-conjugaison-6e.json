@@ -1,6 +1,6 @@
 {
   "id": "francais-conjugaison-6e",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "title": "Conjugaison : les repères essentiels",
   "subject": "Français",
   "levels": [
@@ -348,6 +348,1277 @@
         "identifier-temps"
       ],
       "explanation": "La terminaison -iez marque ici l’imparfait avec « vous »."
+    },
+    {
+      "id": "temps-present-reserve-01",
+      "kind": "choice",
+      "prompt": "Conjugue « être » au présent : « Nous ___ ».",
+      "answer": "sommes",
+      "options": [
+        "sommes",
+        "sont",
+        "êtes"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Nous sommes ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-present-reserve-02",
+      "kind": "choice",
+      "prompt": "Conjugue « avoir » au présent : « Vous ___ ».",
+      "answer": "avez",
+      "options": [
+        "avez",
+        "avons",
+        "ont"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Vous avez ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-present-reserve-03",
+      "kind": "choice",
+      "prompt": "Conjugue « aller » au présent : « Ils ___ ».",
+      "answer": "vont",
+      "options": [
+        "vont",
+        "va",
+        "allons"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Ils vont ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-present-reserve-04",
+      "kind": "choice",
+      "prompt": "Conjugue « faire » au présent : « Tu ___ ».",
+      "answer": "fais",
+      "options": [
+        "fais",
+        "fait",
+        "faisez"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Tu fais ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-present-reserve-05",
+      "kind": "choice",
+      "prompt": "Conjugue « dire » au présent : « Vous ___ ».",
+      "answer": "dites",
+      "options": [
+        "dites",
+        "disez",
+        "disent"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Vous dites ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-present-reserve-06",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » au présent : « Je ___ ».",
+      "answer": "viens",
+      "options": [
+        "viens",
+        "vient",
+        "venais"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Je viens ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-present-reserve-07",
+      "kind": "choice",
+      "prompt": "Conjugue « prendre » au présent : « Elles ___ ».",
+      "answer": "prennent",
+      "options": [
+        "prennent",
+        "prends",
+        "prenez"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Elles prennent ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-present-reserve-08",
+      "kind": "choice",
+      "prompt": "Conjugue « pouvoir » au présent : « Nous ___ ».",
+      "answer": "pouvons",
+      "options": [
+        "pouvons",
+        "peuvent",
+        "pouvez"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Nous pouvons ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-present-reserve-09",
+      "kind": "choice",
+      "prompt": "Conjugue « voir » au présent : « Tu ___ ».",
+      "answer": "vois",
+      "options": [
+        "vois",
+        "voit",
+        "voient"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Tu vois ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-present-reserve-10",
+      "kind": "choice",
+      "prompt": "Conjugue « vouloir » au présent : « Il ___ ».",
+      "answer": "veut",
+      "options": [
+        "veut",
+        "veux",
+        "veulent"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Il veut ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-present-reserve-11",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au présent : « Nous ___ ».",
+      "answer": "finissons",
+      "options": [
+        "finissons",
+        "finons",
+        "finissent"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Nous finissons ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-present-reserve-12",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au présent : « Elles ___ ».",
+      "answer": "chantent",
+      "options": [
+        "chantent",
+        "chante",
+        "chantes"
+      ],
+      "skillIds": [
+        "temps-present"
+      ],
+      "explanation": "Au présent, on écrit « Elles chantent ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-01",
+      "kind": "choice",
+      "prompt": "Conjugue « être » au imparfait : « J’ ___ ».",
+      "answer": "étais",
+      "options": [
+        "étais",
+        "était",
+        "serai"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « J’étais ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-02",
+      "kind": "choice",
+      "prompt": "Conjugue « avoir » au imparfait : « Elles ___ ».",
+      "answer": "avaient",
+      "options": [
+        "avaient",
+        "avait",
+        "auront"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « Elles avaient ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-03",
+      "kind": "choice",
+      "prompt": "Conjugue « aller » au imparfait : « Nous ___ ».",
+      "answer": "allions",
+      "options": [
+        "allions",
+        "allons",
+        "irons"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « Nous allions ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-04",
+      "kind": "choice",
+      "prompt": "Conjugue « faire » au imparfait : « Vous ___ ».",
+      "answer": "faisiez",
+      "options": [
+        "faisiez",
+        "faites",
+        "ferez"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « Vous faisiez ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-05",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » au imparfait : « Tu ___ ».",
+      "answer": "venais",
+      "options": [
+        "venais",
+        "venait",
+        "viens"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « Tu venais ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-06",
+      "kind": "choice",
+      "prompt": "Conjugue « prendre » au imparfait : « Il ___ ».",
+      "answer": "prenait",
+      "options": [
+        "prenait",
+        "prenais",
+        "prend"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « Il prenait ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-07",
+      "kind": "choice",
+      "prompt": "Conjugue « dire » au imparfait : « Nous ___ ».",
+      "answer": "disions",
+      "options": [
+        "disions",
+        "disons",
+        "dirons"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « Nous disions ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-08",
+      "kind": "choice",
+      "prompt": "Conjugue « voir » au imparfait : « Vous ___ ».",
+      "answer": "voyiez",
+      "options": [
+        "voyiez",
+        "voyez",
+        "verrez"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « Vous voyiez ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-09",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au imparfait : « Ils ___ ».",
+      "answer": "finissaient",
+      "options": [
+        "finissaient",
+        "finissait",
+        "finissent"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « Ils finissaient ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-10",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au imparfait : « Je ___ ».",
+      "answer": "chantais",
+      "options": [
+        "chantais",
+        "chantait",
+        "chante"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « Je chantais ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-11",
+      "kind": "choice",
+      "prompt": "Conjugue « pouvoir » au imparfait : « Elle ___ ».",
+      "answer": "pouvait",
+      "options": [
+        "pouvait",
+        "pouvais",
+        "peut"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « Elle pouvait ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-imparfait-reserve-12",
+      "kind": "choice",
+      "prompt": "Conjugue « vouloir » au imparfait : « Tu ___ ».",
+      "answer": "voulais",
+      "options": [
+        "voulais",
+        "voulait",
+        "veux"
+      ],
+      "skillIds": [
+        "temps-imparfait"
+      ],
+      "explanation": "Au imparfait, on écrit « Tu voulais ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-01",
+      "kind": "choice",
+      "prompt": "Conjugue « être » au futur simple : « Tu ___ ».",
+      "answer": "seras",
+      "options": [
+        "seras",
+        "sera",
+        "étais"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Tu seras ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-02",
+      "kind": "choice",
+      "prompt": "Conjugue « avoir » au futur simple : « Nous ___ ».",
+      "answer": "aurons",
+      "options": [
+        "aurons",
+        "avons",
+        "auront"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Nous aurons ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-03",
+      "kind": "choice",
+      "prompt": "Conjugue « aller » au futur simple : « Vous ___ ».",
+      "answer": "irez",
+      "options": [
+        "irez",
+        "allez",
+        "iront"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Vous irez ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-04",
+      "kind": "choice",
+      "prompt": "Conjugue « faire » au futur simple : « Ils ___ ».",
+      "answer": "feront",
+      "options": [
+        "feront",
+        "font",
+        "ferons"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Ils feront ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-05",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » au futur simple : « Je ___ ».",
+      "answer": "viendrai",
+      "options": [
+        "viendrai",
+        "viens",
+        "viendrais"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Je viendrai ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-06",
+      "kind": "choice",
+      "prompt": "Conjugue « prendre » au futur simple : « Elle ___ ».",
+      "answer": "prendra",
+      "options": [
+        "prendra",
+        "prend",
+        "prendras"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Elle prendra ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-07",
+      "kind": "choice",
+      "prompt": "Conjugue « dire » au futur simple : « Tu ___ ».",
+      "answer": "diras",
+      "options": [
+        "diras",
+        "dis",
+        "dira"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Tu diras ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-08",
+      "kind": "choice",
+      "prompt": "Conjugue « voir » au futur simple : « Nous ___ ».",
+      "answer": "verrons",
+      "options": [
+        "verrons",
+        "voyons",
+        "verront"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Nous verrons ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-09",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au futur simple : « Vous ___ ».",
+      "answer": "finirez",
+      "options": [
+        "finirez",
+        "finissez",
+        "finiront"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Vous finirez ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-10",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au futur simple : « Elles ___ ».",
+      "answer": "chanteront",
+      "options": [
+        "chanteront",
+        "chantent",
+        "chanterons"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Elles chanteront ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-11",
+      "kind": "choice",
+      "prompt": "Conjugue « pouvoir » au futur simple : « Il ___ ».",
+      "answer": "pourra",
+      "options": [
+        "pourra",
+        "peut",
+        "pourras"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Il pourra ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-futur-reserve-12",
+      "kind": "choice",
+      "prompt": "Conjugue « vouloir » au futur simple : « Je ___ ».",
+      "answer": "voudrai",
+      "options": [
+        "voudrai",
+        "veux",
+        "voudrais"
+      ],
+      "skillIds": [
+        "temps-futur"
+      ],
+      "explanation": "Au futur simple, on écrit « Je voudrai ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-compose-reserve-01",
+      "kind": "choice",
+      "prompt": "Conjugue « manger » au passé composé : « Nous ___ ».",
+      "answer": "avons mangé",
+      "options": [
+        "avons mangé",
+        "mangeons",
+        "mangerons"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « Nous avons mangé ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-compose-reserve-02",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au passé composé : « Tu ___ ».",
+      "answer": "as fini",
+      "options": [
+        "as fini",
+        "a fini",
+        "as finir"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « Tu as fini ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-compose-reserve-03",
+      "kind": "choice",
+      "prompt": "Conjugue « voir » au passé composé : « Elle ___ ».",
+      "answer": "a vu",
+      "options": [
+        "a vu",
+        "as vu",
+        "a voir"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « Elle a vu ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-compose-reserve-04",
+      "kind": "choice",
+      "prompt": "Conjugue « prendre » au passé composé : « Ils ___ ».",
+      "answer": "ont pris",
+      "options": [
+        "ont pris",
+        "ont prendre",
+        "avons pris"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « Ils ont pris ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-compose-reserve-05",
+      "kind": "choice",
+      "prompt": "Conjugue « dire » au passé composé : « J’ ___ ».",
+      "answer": "ai dit",
+      "options": [
+        "ai dit",
+        "ai dire",
+        "avais dit"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « J’ai dit ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-compose-reserve-06",
+      "kind": "choice",
+      "prompt": "Conjugue « faire » au passé composé : « Vous ___ ».",
+      "answer": "avez fait",
+      "options": [
+        "avez fait",
+        "avez faire",
+        "avez fais"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « Vous avez fait ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-compose-reserve-07",
+      "kind": "choice",
+      "prompt": "Conjugue « aller » au passé composé : « Elles ___ ».",
+      "answer": "sont allées",
+      "options": [
+        "sont allées",
+        "sont allé",
+        "ont allé"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « Elles sont allées ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-compose-reserve-08",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » au passé composé : « Il ___ ».",
+      "answer": "est venu",
+      "options": [
+        "est venu",
+        "a venu",
+        "est venir"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « Il est venu ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-compose-reserve-09",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au passé composé : « Tu ___ ».",
+      "answer": "as joué",
+      "options": [
+        "as joué",
+        "a joué",
+        "as jouer"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « Tu as joué ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-compose-reserve-10",
+      "kind": "choice",
+      "prompt": "Conjugue « avoir » au passé composé : « Nous ___ ».",
+      "answer": "avons eu",
+      "options": [
+        "avons eu",
+        "avons avoir",
+        "avons eus"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « Nous avons eu ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-compose-reserve-11",
+      "kind": "choice",
+      "prompt": "Conjugue « être » au passé composé : « Ils ___ ».",
+      "answer": "ont été",
+      "options": [
+        "ont été",
+        "sont été",
+        "ont être"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « Ils ont été ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-compose-reserve-12",
+      "kind": "choice",
+      "prompt": "Conjugue « partir » au passé composé : « Elle ___ ».",
+      "answer": "est partie",
+      "options": [
+        "est partie",
+        "a parti",
+        "est parti"
+      ],
+      "skillIds": [
+        "temps-passe-compose"
+      ],
+      "explanation": "Au passé composé, on écrit « Elle est partie ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-passe-simple-reserve-01",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au passé simple : « Il ___ ».",
+      "answer": "chanta",
+      "options": [
+        "chanta",
+        "chantait",
+        "chante"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Il chanta ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-simple-reserve-02",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au passé simple : « Elles ___ ».",
+      "answer": "jouèrent",
+      "options": [
+        "jouèrent",
+        "jouaient",
+        "jouent"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Elles jouèrent ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-simple-reserve-03",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au passé simple : « Il ___ ».",
+      "answer": "finit",
+      "options": [
+        "finit",
+        "finissait",
+        "finira"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Il finit ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-simple-reserve-04",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » au passé simple : « Ils ___ ».",
+      "answer": "choisirent",
+      "options": [
+        "choisirent",
+        "choisissaient",
+        "choisiront"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Ils choisirent ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-simple-reserve-05",
+      "kind": "choice",
+      "prompt": "Conjugue « être » au passé simple : « Elle ___ ».",
+      "answer": "fut",
+      "options": [
+        "fut",
+        "était",
+        "sera"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Elle fut ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-simple-reserve-06",
+      "kind": "choice",
+      "prompt": "Conjugue « avoir » au passé simple : « Ils ___ ».",
+      "answer": "eurent",
+      "options": [
+        "eurent",
+        "avaient",
+        "auront"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Ils eurent ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-simple-reserve-07",
+      "kind": "choice",
+      "prompt": "Conjugue « aller » au passé simple : « Il ___ ».",
+      "answer": "alla",
+      "options": [
+        "alla",
+        "allait",
+        "ira"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Il alla ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-simple-reserve-08",
+      "kind": "choice",
+      "prompt": "Conjugue « faire » au passé simple : « Elles ___ ».",
+      "answer": "firent",
+      "options": [
+        "firent",
+        "faisaient",
+        "feront"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Elles firent ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-simple-reserve-09",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » au passé simple : « Elle ___ ».",
+      "answer": "vint",
+      "options": [
+        "vint",
+        "venait",
+        "viendra"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Elle vint ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-simple-reserve-10",
+      "kind": "choice",
+      "prompt": "Conjugue « prendre » au passé simple : « Ils ___ ».",
+      "answer": "prirent",
+      "options": [
+        "prirent",
+        "prenaient",
+        "prendront"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Ils prirent ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-simple-reserve-11",
+      "kind": "choice",
+      "prompt": "Conjugue « dire » au passé simple : « Il ___ ».",
+      "answer": "dit",
+      "options": [
+        "dit",
+        "disait",
+        "dira"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Il dit ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-passe-simple-reserve-12",
+      "kind": "choice",
+      "prompt": "Conjugue « voir » au passé simple : « Elles ___ ».",
+      "answer": "virent",
+      "options": [
+        "virent",
+        "voyaient",
+        "verront"
+      ],
+      "skillIds": [
+        "temps-passe-simple"
+      ],
+      "explanation": "Au passé simple, on écrit « Elles virent ». Le temps et la personne déterminent la forme du verbe."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-01",
+      "kind": "choice",
+      "prompt": "Conjugue « manger » au plus-que-parfait : « Il ___ ».",
+      "answer": "avait mangé",
+      "options": [
+        "avait mangé",
+        "a mangé",
+        "mangerait"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « Il avait mangé ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-02",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au plus-que-parfait : « Nous ___ ».",
+      "answer": "avions fini",
+      "options": [
+        "avions fini",
+        "avons fini",
+        "finirons"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « Nous avions fini ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-03",
+      "kind": "choice",
+      "prompt": "Conjugue « voir » au plus-que-parfait : « Tu ___ ».",
+      "answer": "avais vu",
+      "options": [
+        "avais vu",
+        "as vu",
+        "verras"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « Tu avais vu ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-04",
+      "kind": "choice",
+      "prompt": "Conjugue « prendre » au plus-que-parfait : « Elles ___ ».",
+      "answer": "avaient pris",
+      "options": [
+        "avaient pris",
+        "ont pris",
+        "prendront"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « Elles avaient pris ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-05",
+      "kind": "choice",
+      "prompt": "Conjugue « dire » au plus-que-parfait : « J’ ___ ».",
+      "answer": "avais dit",
+      "options": [
+        "avais dit",
+        "ai dit",
+        "dirai"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « J’avais dit ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-06",
+      "kind": "choice",
+      "prompt": "Conjugue « faire » au plus-que-parfait : « Vous ___ ».",
+      "answer": "aviez fait",
+      "options": [
+        "aviez fait",
+        "avez fait",
+        "ferez"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « Vous aviez fait ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-07",
+      "kind": "choice",
+      "prompt": "Conjugue « aller » au plus-que-parfait : « Elle ___ ».",
+      "answer": "était allée",
+      "options": [
+        "était allée",
+        "est allée",
+        "avait allé"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « Elle était allée ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-08",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » au plus-que-parfait : « Ils ___ ».",
+      "answer": "étaient venus",
+      "options": [
+        "étaient venus",
+        "sont venus",
+        "avaient venu"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « Ils étaient venus ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-09",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au plus-que-parfait : « Tu ___ ».",
+      "answer": "avais joué",
+      "options": [
+        "avais joué",
+        "as joué",
+        "jouais"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « Tu avais joué ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-10",
+      "kind": "choice",
+      "prompt": "Conjugue « avoir » au plus-que-parfait : « Nous ___ ».",
+      "answer": "avions eu",
+      "options": [
+        "avions eu",
+        "avons eu",
+        "aurons"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « Nous avions eu ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-11",
+      "kind": "choice",
+      "prompt": "Conjugue « être » au plus-que-parfait : « Il ___ ».",
+      "answer": "avait été",
+      "options": [
+        "avait été",
+        "a été",
+        "était été"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « Il avait été ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "temps-plus-que-parfait-reserve-12",
+      "kind": "choice",
+      "prompt": "Conjugue « partir » au plus-que-parfait : « Elles ___ ».",
+      "answer": "étaient parties",
+      "options": [
+        "étaient parties",
+        "sont parties",
+        "avaient parti"
+      ],
+      "skillIds": [
+        "temps-plus-que-parfait"
+      ],
+      "explanation": "Au plus-que-parfait, on écrit « Elles étaient parties ». Le temps composé comporte un auxiliaire et un participe passé."
+    },
+    {
+      "id": "identifier-temps-reserve-01",
+      "kind": "choice",
+      "prompt": "Quel est le temps de « Nous regardons les étoiles » ?",
+      "answer": "présent",
+      "options": [
+        "présent",
+        "imparfait",
+        "futur simple",
+        "passé composé"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Regardons est ici au présent de l’indicatif."
+    },
+    {
+      "id": "identifier-temps-reserve-02",
+      "kind": "choice",
+      "prompt": "Quel est le temps de « Elle avait un vélo » ?",
+      "answer": "imparfait",
+      "options": [
+        "imparfait",
+        "présent",
+        "passé composé",
+        "plus-que-parfait"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Avait est l’imparfait du verbe avoir, sans participe passé."
+    },
+    {
+      "id": "identifier-temps-reserve-03",
+      "kind": "choice",
+      "prompt": "Quel est le temps de « Tu partiras demain » ?",
+      "answer": "futur simple",
+      "options": [
+        "futur simple",
+        "présent",
+        "imparfait",
+        "passé composé"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Partiras annonce ici un événement futur."
+    },
+    {
+      "id": "identifier-temps-reserve-04",
+      "kind": "choice",
+      "prompt": "Quel est le temps de « Ils ont compris » ?",
+      "answer": "passé composé",
+      "options": [
+        "passé composé",
+        "présent",
+        "imparfait",
+        "plus-que-parfait"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Ont est l’auxiliaire au présent, suivi du participe passé compris."
+    },
+    {
+      "id": "identifier-temps-reserve-05",
+      "kind": "choice",
+      "prompt": "Quel est le temps de « Elle avait compris » ?",
+      "answer": "plus-que-parfait",
+      "options": [
+        "plus-que-parfait",
+        "passé composé",
+        "imparfait",
+        "futur simple"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Avait est l’auxiliaire à l’imparfait, suivi du participe passé compris."
+    },
+    {
+      "id": "identifier-temps-reserve-06",
+      "kind": "choice",
+      "prompt": "Quel est le temps de « Ils entrèrent dans la salle » ?",
+      "answer": "passé simple",
+      "options": [
+        "passé simple",
+        "imparfait",
+        "présent",
+        "futur simple"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Entrèrent est une forme du passé simple, fréquente dans le récit écrit."
+    },
+    {
+      "id": "identifier-temps-reserve-07",
+      "kind": "choice",
+      "prompt": "Quel temps présente souvent une habitude dans le passé ?",
+      "answer": "imparfait",
+      "options": [
+        "imparfait",
+        "futur simple",
+        "présent",
+        "impératif"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Par exemple : chaque été, nous allions à la mer."
+    },
+    {
+      "id": "identifier-temps-reserve-08",
+      "kind": "choice",
+      "prompt": "Quel temps raconte souvent une action achevée à l’oral ?",
+      "answer": "passé composé",
+      "options": [
+        "passé composé",
+        "futur simple",
+        "présent",
+        "infinitif"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Par exemple : hier, j’ai terminé mon livre."
+    },
+    {
+      "id": "identifier-temps-reserve-09",
+      "kind": "choice",
+      "prompt": "Quel est le temps de « Elle était arrivée avant nous » ?",
+      "answer": "plus-que-parfait",
+      "options": [
+        "plus-que-parfait",
+        "imparfait",
+        "passé composé",
+        "présent"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Était + arrivée exprime une action antérieure à un autre moment passé."
+    },
+    {
+      "id": "identifier-temps-reserve-10",
+      "kind": "choice",
+      "prompt": "Quel est le temps de « Il fut surpris » ?",
+      "answer": "passé simple",
+      "options": [
+        "passé simple",
+        "futur simple",
+        "présent",
+        "imparfait"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Fut est le passé simple d’être, à la troisième personne du singulier."
+    },
+    {
+      "id": "identifier-temps-reserve-11",
+      "kind": "choice",
+      "prompt": "Quel est le temps de « Vous aurez une réponse » ?",
+      "answer": "futur simple",
+      "options": [
+        "futur simple",
+        "présent",
+        "passé composé",
+        "imparfait"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Aurez est le futur simple d’avoir."
+    },
+    {
+      "id": "identifier-temps-reserve-12",
+      "kind": "choice",
+      "prompt": "Dans « Il lisait quand le téléphone sonna », quel verbe est à l’imparfait ?",
+      "answer": "lisait",
+      "options": [
+        "lisait",
+        "sonna",
+        "les deux"
+      ],
+      "skillIds": [
+        "identifier-temps"
+      ],
+      "explanation": "Lisait présente l’action en cours ; sonna fait avancer le récit au passé simple."
     }
   ]
 }

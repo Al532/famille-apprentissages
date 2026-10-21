@@ -1,6 +1,6 @@
 {
   "id": "francais-vocabulaire-6e",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Vocabulaire : comprendre les mots",
   "subject": "Français",
   "levels": [
@@ -205,6 +205,726 @@
         "familles"
       ],
       "explanation": "Le suffixe -er désigne ici la personne qui exerce le métier."
+    },
+    {
+      "id": "synonymes-reserve-01",
+      "kind": "choice",
+      "prompt": "Quel est un synonyme de « rapide » ?",
+      "answer": "vif",
+      "options": [
+        "vif",
+        "lent",
+        "fragile"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Vif et rapide ont ici des sens proches."
+    },
+    {
+      "id": "synonymes-reserve-02",
+      "kind": "choice",
+      "prompt": "Quel est le contraire de « lourd » ?",
+      "answer": "léger",
+      "options": [
+        "léger",
+        "pesant",
+        "solide"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Léger s’oppose à lourd pour le poids."
+    },
+    {
+      "id": "synonymes-reserve-03",
+      "kind": "choice",
+      "prompt": "Quel est un synonyme de « débuter » ?",
+      "answer": "commencer",
+      "options": [
+        "commencer",
+        "finir",
+        "attendre"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Débuter signifie commencer."
+    },
+    {
+      "id": "synonymes-reserve-04",
+      "kind": "choice",
+      "prompt": "Quel est le contraire de « courageux » ?",
+      "answer": "peureux",
+      "options": [
+        "peureux",
+        "brave",
+        "hardi"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Peureux exprime ici le contraire de courageux."
+    },
+    {
+      "id": "synonymes-reserve-05",
+      "kind": "choice",
+      "prompt": "Quel est un synonyme de « immense » ?",
+      "answer": "gigantesque",
+      "options": [
+        "gigantesque",
+        "minuscule",
+        "étroit"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Immense et gigantesque indiquent une très grande taille."
+    },
+    {
+      "id": "synonymes-reserve-06",
+      "kind": "choice",
+      "prompt": "Quel est le contraire de « ouvrir » ?",
+      "answer": "fermer",
+      "options": [
+        "fermer",
+        "entrer",
+        "découvrir"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Ouvrir et fermer sont des verbes de sens opposés."
+    },
+    {
+      "id": "synonymes-reserve-07",
+      "kind": "choice",
+      "prompt": "Quel est un synonyme de « murmurer » ?",
+      "answer": "chuchoter",
+      "options": [
+        "chuchoter",
+        "crier",
+        "courir"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Murmurer et chuchoter signifient parler à voix très basse."
+    },
+    {
+      "id": "synonymes-reserve-08",
+      "kind": "choice",
+      "prompt": "Quel est le contraire de « souvent » ?",
+      "answer": "rarement",
+      "options": [
+        "rarement",
+        "régulièrement",
+        "toujours"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Rarement signifie peu souvent."
+    },
+    {
+      "id": "synonymes-reserve-09",
+      "kind": "choice",
+      "prompt": "Quel est un synonyme de « observer » ?",
+      "answer": "regarder attentivement",
+      "options": [
+        "regarder attentivement",
+        "ignorer",
+        "toucher"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Observer implique une attention particulière."
+    },
+    {
+      "id": "synonymes-reserve-10",
+      "kind": "choice",
+      "prompt": "Quel est le contraire de « augmenter » ?",
+      "answer": "diminuer",
+      "options": [
+        "diminuer",
+        "agrandir",
+        "ajouter"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Augmenter et diminuer indiquent des évolutions opposées."
+    },
+    {
+      "id": "synonymes-reserve-11",
+      "kind": "choice",
+      "prompt": "Quel est un synonyme de « épuisé » ?",
+      "answer": "très fatigué",
+      "options": [
+        "très fatigué",
+        "joyeux",
+        "agité"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Épuisé indique une très grande fatigue."
+    },
+    {
+      "id": "synonymes-reserve-12",
+      "kind": "choice",
+      "prompt": "Quel est le contraire de « possible » ?",
+      "answer": "impossible",
+      "options": [
+        "impossible",
+        "probable",
+        "certain"
+      ],
+      "skillIds": [
+        "synonymes"
+      ],
+      "explanation": "Le préfixe im- permet ici de construire le contraire."
+    },
+    {
+      "id": "familles-reserve-01",
+      "kind": "choice",
+      "prompt": "Quel mot appartient à la famille de « jardin » ?",
+      "answer": "jardinier",
+      "options": [
+        "jardinier",
+        "gardien",
+        "girafe"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Jardinier est formé sur jardin et garde un sens lié au jardin."
+    },
+    {
+      "id": "familles-reserve-02",
+      "kind": "choice",
+      "prompt": "Quel mot appartient à la famille de « chant » ?",
+      "answer": "chanteur",
+      "options": [
+        "chanteur",
+        "chance",
+        "champ"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Chanteur et chant partagent un radical et un sens liés."
+    },
+    {
+      "id": "familles-reserve-03",
+      "kind": "choice",
+      "prompt": "Quel est le préfixe de « refaire » ?",
+      "answer": "re-",
+      "options": [
+        "re-",
+        "-faire",
+        "-e"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Re- est placé avant le radical et indique ici la répétition."
+    },
+    {
+      "id": "familles-reserve-04",
+      "kind": "choice",
+      "prompt": "Quel est le suffixe de « lavable » ?",
+      "answer": "-able",
+      "options": [
+        "-able",
+        "lav-",
+        "la-"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "-able est placé après le radical et signifie ici qui peut être lavé."
+    },
+    {
+      "id": "familles-reserve-05",
+      "kind": "choice",
+      "prompt": "Que signifie « relire » ?",
+      "answer": "lire de nouveau",
+      "options": [
+        "lire de nouveau",
+        "ne pas lire",
+        "lire très vite"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Le préfixe re- indique une nouvelle lecture."
+    },
+    {
+      "id": "familles-reserve-06",
+      "kind": "choice",
+      "prompt": "Quel mot n’appartient pas à la famille de « lait » ?",
+      "answer": "laideur",
+      "options": [
+        "laideur",
+        "laitier",
+        "laitage"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Laideur est lié à laid, pas au lait : les lettres communes ne suffisent pas."
+    },
+    {
+      "id": "familles-reserve-07",
+      "kind": "choice",
+      "prompt": "Que signifie le préfixe de « défaire » ?",
+      "answer": "annuler l’action",
+      "options": [
+        "annuler l’action",
+        "refaire la même action",
+        "faire plus vite"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Défaire un nœud annule l’action de le faire."
+    },
+    {
+      "id": "familles-reserve-08",
+      "kind": "choice",
+      "prompt": "Quel mot est de la même famille que « dent » ?",
+      "answer": "dentiste",
+      "options": [
+        "dentiste",
+        "danse",
+        "dedans"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Dentiste et dent ont un radical et un sens communs."
+    },
+    {
+      "id": "familles-reserve-09",
+      "kind": "choice",
+      "prompt": "Quel mot contient un préfixe qui marque le contraire ?",
+      "answer": "malheureux",
+      "options": [
+        "malheureux",
+        "heureux",
+        "bonheur"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Le préfixe mal- s’oppose ici à heureux."
+    },
+    {
+      "id": "familles-reserve-10",
+      "kind": "choice",
+      "prompt": "Quel mot est construit avec un suffixe ?",
+      "answer": "rapidement",
+      "options": [
+        "rapidement",
+        "très",
+        "vite"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "L’adverbe rapidement est formé à partir de rapide avec -ment."
+    },
+    {
+      "id": "familles-reserve-11",
+      "kind": "choice",
+      "prompt": "Quel mot est de la famille de « lire » ?",
+      "answer": "lecture",
+      "options": [
+        "lecture",
+        "litre",
+        "libre"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Les mots d’une même famille peuvent avoir des radicaux un peu différents."
+    },
+    {
+      "id": "familles-reserve-12",
+      "kind": "choice",
+      "prompt": "Que signifie « préchauffer » ?",
+      "answer": "chauffer à l’avance",
+      "options": [
+        "chauffer à l’avance",
+        "refroidir",
+        "chauffer deux fois"
+      ],
+      "skillIds": [
+        "familles"
+      ],
+      "explanation": "Pré- indique une action réalisée avant une autre."
+    },
+    {
+      "id": "contexte-reserve-01",
+      "kind": "choice",
+      "prompt": "Dans « Cette nouvelle lui a brisé le cœur », « brisé le cœur » signifie…",
+      "answer": "rendu très triste",
+      "options": [
+        "rendu très triste",
+        "cassé un os",
+        "rendu plus fort"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "C’est une expression au sens figuré qui évoque une grande tristesse."
+    },
+    {
+      "id": "contexte-reserve-02",
+      "kind": "choice",
+      "prompt": "Dans « Le pied de la table est cassé », « pied » désigne…",
+      "answer": "un support du meuble",
+      "options": [
+        "un support du meuble",
+        "une partie du corps",
+        "une unité de temps"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "Le contexte indique le sens du mot pied."
+    },
+    {
+      "id": "contexte-reserve-03",
+      "kind": "choice",
+      "prompt": "Dans « Il a la tête dans les nuages », on veut dire qu’il…",
+      "answer": "est distrait",
+      "options": [
+        "est distrait",
+        "vole en avion",
+        "est très grand"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "Cette expression signifie qu’il rêve ou manque d’attention."
+    },
+    {
+      "id": "contexte-reserve-04",
+      "kind": "choice",
+      "prompt": "Dans « La souris de l’ordinateur ne fonctionne plus », « souris » désigne…",
+      "answer": "un périphérique",
+      "options": [
+        "un périphérique",
+        "un animal",
+        "une recette"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "Ordinateur permet de choisir le bon sens."
+    },
+    {
+      "id": "contexte-reserve-05",
+      "kind": "choice",
+      "prompt": "Dans « Le courant du fleuve est fort », « courant » désigne…",
+      "answer": "le mouvement de l’eau",
+      "options": [
+        "le mouvement de l’eau",
+        "l’électricité",
+        "quelque chose d’habituel"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "Le contexte du fleuve indique le mouvement de l’eau."
+    },
+    {
+      "id": "contexte-reserve-06",
+      "kind": "choice",
+      "prompt": "Dans « Elle brûle d’impatience », elle…",
+      "answer": "est très impatiente",
+      "options": [
+        "est très impatiente",
+        "a réellement pris feu",
+        "a de la fièvre"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "Brûler est employé au sens figuré pour montrer l’intensité."
+    },
+    {
+      "id": "contexte-reserve-07",
+      "kind": "choice",
+      "prompt": "Dans « Il suit le cours de français », « cours » désigne…",
+      "answer": "une leçon",
+      "options": [
+        "une leçon",
+        "un mouvement d’eau",
+        "une aire de jeux"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "Français situe le mot dans le contexte scolaire."
+    },
+    {
+      "id": "contexte-reserve-08",
+      "kind": "choice",
+      "prompt": "Dans « Un vent glacial souffle », « glacial » signifie…",
+      "answer": "très froid",
+      "options": [
+        "très froid",
+        "très chaud",
+        "très léger"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "Glacial renforce l’idée de froid."
+    },
+    {
+      "id": "contexte-reserve-09",
+      "kind": "choice",
+      "prompt": "Dans « Il a un caractère de cochon », on dit qu’il…",
+      "answer": "est désagréable",
+      "options": [
+        "est désagréable",
+        "est un animal",
+        "mange trop"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "L’expression a un sens figuré lié au comportement."
+    },
+    {
+      "id": "contexte-reserve-10",
+      "kind": "choice",
+      "prompt": "Dans « La lumière filtre à travers les volets », « filtre » signifie…",
+      "answer": "passe en partie",
+      "options": [
+        "passe en partie",
+        "lave",
+        "disparaît entièrement"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "Le contexte décrit une lumière qui passe par des ouvertures étroites."
+    },
+    {
+      "id": "contexte-reserve-11",
+      "kind": "choice",
+      "prompt": "Dans « Une foule compacte attend », « compacte » signifie…",
+      "answer": "très serrée",
+      "options": [
+        "très serrée",
+        "très calme",
+        "peu nombreuse"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "Une foule compacte rassemble des personnes très proches les unes des autres."
+    },
+    {
+      "id": "contexte-reserve-12",
+      "kind": "choice",
+      "prompt": "Dans « Le ton de sa voix est doux », « ton » désigne…",
+      "answer": "une manière de parler",
+      "options": [
+        "une manière de parler",
+        "un poisson",
+        "un possessif"
+      ],
+      "skillIds": [
+        "contexte"
+      ],
+      "explanation": "La voix indique que l’on parle de la façon dont on s’exprime."
+    },
+    {
+      "id": "lexique-reserve-01",
+      "kind": "choice",
+      "prompt": "Quel mot appartient au champ lexical de la mer ?",
+      "answer": "vague",
+      "options": [
+        "vague",
+        "montagne",
+        "désert"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Vague est lié au même thème que mer, bateau ou marée."
+    },
+    {
+      "id": "lexique-reserve-02",
+      "kind": "choice",
+      "prompt": "Quel ensemble forme le champ lexical de l’école ?",
+      "answer": "cahier, classe, élève",
+      "options": [
+        "cahier, classe, élève",
+        "branche, feuille, tronc",
+        "sable, vague, plage"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Un champ lexical rassemble des mots liés à un thème commun."
+    },
+    {
+      "id": "lexique-reserve-03",
+      "kind": "choice",
+      "prompt": "Quel mot est invariable ?",
+      "answer": "toujours",
+      "options": [
+        "toujours",
+        "petit",
+        "cheval"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Toujours s’écrit de la même façon au singulier et au pluriel."
+    },
+    {
+      "id": "lexique-reserve-04",
+      "kind": "choice",
+      "prompt": "Quel mot est invariable ?",
+      "answer": "demain",
+      "options": [
+        "demain",
+        "amie",
+        "heureux"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Demain est un adverbe qui ne s’accorde pas."
+    },
+    {
+      "id": "lexique-reserve-05",
+      "kind": "choice",
+      "prompt": "Quel mot ne fait pas partie du champ lexical de la forêt ?",
+      "answer": "immeuble",
+      "options": [
+        "immeuble",
+        "arbre",
+        "sous-bois"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Immeuble renvoie plutôt à un environnement urbain."
+    },
+    {
+      "id": "lexique-reserve-06",
+      "kind": "choice",
+      "prompt": "Quel ensemble évoque le champ lexical de la peur ?",
+      "answer": "frisson, trembler, terreur",
+      "options": [
+        "frisson, trembler, terreur",
+        "joie, rire, fête",
+        "calme, repos, silence"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Ces mots évoquent tous la peur sans appartenir à la même famille."
+    },
+    {
+      "id": "lexique-reserve-07",
+      "kind": "choice",
+      "prompt": "Comment écrit-on « beaucoup » devant un nom pluriel ?",
+      "answer": "beaucoup de livres",
+      "options": [
+        "beaucoup de livres",
+        "beaucoups de livres",
+        "beaucoupt de livres"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Beaucoup est invariable : il ne prend pas de s."
+    },
+    {
+      "id": "lexique-reserve-08",
+      "kind": "choice",
+      "prompt": "Quel mot appartient au champ lexical de la musique ?",
+      "answer": "mélodie",
+      "options": [
+        "mélodie",
+        "maçon",
+        "boussole"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Mélodie est lié au thème de la musique."
+    },
+    {
+      "id": "lexique-reserve-09",
+      "kind": "choice",
+      "prompt": "Dans « Elle avance lentement », quel mot est invariable ?",
+      "answer": "lentement",
+      "options": [
+        "lentement",
+        "Elle",
+        "avance"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Lentement est un adverbe : il ne prend pas de marque d’accord."
+    },
+    {
+      "id": "lexique-reserve-10",
+      "kind": "choice",
+      "prompt": "Quel ensemble contient seulement des mots d’une même famille ?",
+      "answer": "chant, chanter, chanteur",
+      "options": [
+        "chant, chanter, chanteur",
+        "chant, guitare, rythme",
+        "chien, chat, oiseau"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Même famille : radical et sens liés. Même champ lexical : thème commun."
+    },
+    {
+      "id": "lexique-reserve-11",
+      "kind": "choice",
+      "prompt": "Quel mot est invariable ?",
+      "answer": "malgré",
+      "options": [
+        "malgré",
+        "maison",
+        "gentil"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Malgré est une préposition invariable."
+    },
+    {
+      "id": "lexique-reserve-12",
+      "kind": "choice",
+      "prompt": "Quel mot est correctement écrit ?",
+      "answer": "parmi",
+      "options": [
+        "parmi",
+        "parmis",
+        "parmit"
+      ],
+      "skillIds": [
+        "lexique"
+      ],
+      "explanation": "Parmi est un mot invariable sans s final."
     }
   ]
 }

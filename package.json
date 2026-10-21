@@ -13,7 +13,7 @@
     "dev": "vite --config apps/web/vite.config.ts --mode enfants",
     "dev:parents": "vite --config apps/web/vite.config.ts --mode parents --port 5174",
     "check": "tsc --noEmit",
-    "test": "node --import tsx --test tests/core.test.ts tests/history.test.ts tests/pwa.test.ts",
+    "test": "node --import tsx --test tests/core.test.ts tests/history.test.ts tests/pwa.test.ts tests/concepts.test.ts",
     "test:rules": "firebase emulators:exec --project demo-famille --only firestore \"node --import tsx --test --test-concurrency=1 tests/firestore.rules.test.ts tests/sync.test.ts\"",
     "build": "npm run build:enfants && npm run build:parents",
     "build:enfants": "vite build --config apps/web/vite.config.ts --mode enfants",

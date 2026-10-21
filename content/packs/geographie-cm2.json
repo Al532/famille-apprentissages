@@ -1,0 +1,566 @@
+{
+  "id": "geographie-cm2",
+  "version": "1.0.0",
+  "title": "Se déplacer, communiquer, mieux habiter",
+  "subject": "Histoire-géographie",
+  "levels": [
+    "6e"
+  ],
+  "description": "Des situations concrètes pour comprendre les transports, les réseaux et les choix d’aménagement.",
+  "skills": [
+    {
+      "id": "deplacements",
+      "label": "Comprendre les déplacements et les réseaux"
+    },
+    {
+      "id": "internet",
+      "label": "Comprendre les réseaux et les inégalités de connexion"
+    },
+    {
+      "id": "mieux-habiter",
+      "label": "Comprendre les aménagements pour mieux habiter"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "deplacements-reserve-01",
+      "kind": "choice",
+      "prompt": "Quel exemple est un déplacement quotidien ?",
+      "answer": "aller de chez soi à l’école",
+      "options": [
+        "aller de chez soi à l’école",
+        "déménager une fois dans sa vie",
+        "partir une fois sur un autre continent"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "Les déplacements quotidiens se répètent fréquemment dans la vie courante."
+    },
+    {
+      "id": "deplacements-reserve-02",
+      "kind": "choice",
+      "prompt": "Qu’est-ce qu’un transport collectif ?",
+      "answer": "un moyen qui transporte plusieurs voyageurs ensemble",
+      "options": [
+        "un moyen qui transporte plusieurs voyageurs ensemble",
+        "un véhicule réservé à une seule famille",
+        "une marche en solitaire"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "Bus, tramway, métro et train sont des transports collectifs."
+    },
+    {
+      "id": "deplacements-reserve-03",
+      "kind": "choice",
+      "prompt": "Pour un trajet court avec un chemin sûr, quelle solution évite des émissions à l’usage ?",
+      "answer": "marcher",
+      "options": [
+        "marcher",
+        "prendre seul une voiture à essence",
+        "faire un détour en avion"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "La marche ne nécessite pas de moteur. Le choix dépend aussi de la sécurité et des possibilités de chacun."
+    },
+    {
+      "id": "deplacements-reserve-04",
+      "kind": "choice",
+      "prompt": "Qu’est-ce qu’un réseau de transport ?",
+      "answer": "des lignes et des lieux reliés entre eux",
+      "options": [
+        "des lignes et des lieux reliés entre eux",
+        "une seule voiture sans route",
+        "une liste de pays"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "Routes, voies ferrées, gares et autres points organisent les liaisons."
+    },
+    {
+      "id": "deplacements-reserve-05",
+      "kind": "choice",
+      "prompt": "À quoi sert une gare ?",
+      "answer": "permettre l’accès au train et les correspondances",
+      "options": [
+        "permettre l’accès au train et les correspondances",
+        "faire atterrir les avions",
+        "stocker uniquement l’eau"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "La gare est un nœud d’un réseau de transport."
+    },
+    {
+      "id": "deplacements-reserve-06",
+      "kind": "choice",
+      "prompt": "Que signifie « correspondance » dans un trajet ?",
+      "answer": "changer de ligne ou de moyen de transport",
+      "options": [
+        "changer de ligne ou de moyen de transport",
+        "envoyer obligatoirement une lettre",
+        "rester à la maison"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "Un trajet peut combiner bus, train, métro ou marche."
+    },
+    {
+      "id": "deplacements-reserve-07",
+      "kind": "choice",
+      "prompt": "Pourquoi certains habitants des campagnes utilisent-ils souvent la voiture ?",
+      "answer": "les distances sont grandes et les transports collectifs parfois rares",
+      "options": [
+        "les distances sont grandes et les transports collectifs parfois rares",
+        "les campagnes n’ont jamais de routes",
+        "tous les trajets y sont très courts"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "La densité et l’offre de services influencent les possibilités de déplacement."
+    },
+    {
+      "id": "deplacements-reserve-08",
+      "kind": "choice",
+      "prompt": "À quoi sert une piste cyclable ?",
+      "answer": "faciliter et sécuriser les déplacements à vélo",
+      "options": [
+        "faciliter et sécuriser les déplacements à vélo",
+        "garer tous les avions",
+        "remplacer les voies ferrées"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "C’est un aménagement destiné aux cyclistes."
+    },
+    {
+      "id": "deplacements-reserve-09",
+      "kind": "choice",
+      "prompt": "Quel équipement relie les transports aériens ?",
+      "answer": "un aéroport",
+      "options": [
+        "un aéroport",
+        "un port fluvial",
+        "une station de métro"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "L’aéroport permet l’arrivée et le départ des avions."
+    },
+    {
+      "id": "deplacements-reserve-10",
+      "kind": "choice",
+      "prompt": "Pourquoi comparer plusieurs moyens de transport pour un trajet ?",
+      "answer": "pour tenir compte du temps, du coût, de l’accès et de l’environnement",
+      "options": [
+        "pour tenir compte du temps, du coût, de l’accès et de l’environnement",
+        "parce qu’un moyen est toujours idéal partout",
+        "pour ignorer les besoins des voyageurs"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "Le choix dépend du trajet et de la situation des personnes."
+    },
+    {
+      "id": "deplacements-reserve-11",
+      "kind": "choice",
+      "prompt": "Le covoiturage consiste à…",
+      "answer": "partager un trajet en voiture avec plusieurs personnes",
+      "options": [
+        "partager un trajet en voiture avec plusieurs personnes",
+        "conduire seul deux voitures",
+        "prendre uniquement le train"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "Il peut réduire le nombre de véhicules pour un même groupe de voyageurs."
+    },
+    {
+      "id": "deplacements-reserve-12",
+      "kind": "choice",
+      "prompt": "Les habitants de tous les pays se déplacent-ils de façon identique ?",
+      "answer": "non, les infrastructures et les conditions de vie varient",
+      "options": [
+        "non, les infrastructures et les conditions de vie varient",
+        "oui, sans exception",
+        "aucun habitant ne se déplace hors de France"
+      ],
+      "skillIds": [
+        "deplacements"
+      ],
+      "explanation": "Les réseaux, les distances, les ressources et les pratiques diffèrent selon les lieux."
+    },
+    {
+      "id": "internet-reserve-01",
+      "kind": "choice",
+      "prompt": "Internet permet notamment de…",
+      "answer": "communiquer et échanger des informations à distance",
+      "options": [
+        "communiquer et échanger des informations à distance",
+        "transporter physiquement des passagers",
+        "supprimer les distances géographiques"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "Les messages circulent à distance, mais les lieux et les besoins matériels existent toujours."
+    },
+    {
+      "id": "internet-reserve-02",
+      "kind": "choice",
+      "prompt": "Internet fonctionne-t-il sans infrastructure matérielle ?",
+      "answer": "non, il utilise des câbles, des équipements et de l’énergie",
+      "options": [
+        "non, il utilise des câbles, des équipements et de l’énergie",
+        "oui, sans aucun matériel",
+        "oui, grâce au vent seulement"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "Même les communications sans fil dépendent d’un ensemble d’infrastructures."
+    },
+    {
+      "id": "internet-reserve-03",
+      "kind": "choice",
+      "prompt": "Qu’est-ce qu’un réseau ?",
+      "answer": "des éléments reliés qui peuvent échanger",
+      "options": [
+        "des éléments reliés qui peuvent échanger",
+        "un objet toujours isolé",
+        "une frontière naturelle"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "Les équipements connectés forment des réseaux de communication."
+    },
+    {
+      "id": "internet-reserve-04",
+      "kind": "choice",
+      "prompt": "Pourquoi tous les habitants du monde ne sont-ils pas également connectés ?",
+      "answer": "les équipements, les coûts et les infrastructures diffèrent",
+      "options": [
+        "les équipements, les coûts et les infrastructures diffèrent",
+        "tout le monde a exactement les mêmes moyens",
+        "Internet est interdit dans toutes les campagnes"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "L’accès dépend notamment des ressources et des infrastructures disponibles."
+    },
+    {
+      "id": "internet-reserve-05",
+      "kind": "choice",
+      "prompt": "Que désigne la fracture numérique ?",
+      "answer": "les inégalités d’accès et d’usage des outils numériques",
+      "options": [
+        "les inégalités d’accès et d’usage des outils numériques",
+        "un écran cassé uniquement",
+        "une panne de courant dans une seule maison"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "Ces inégalités concernent la connexion, l’équipement et les compétences."
+    },
+    {
+      "id": "internet-reserve-06",
+      "kind": "choice",
+      "prompt": "Un message envoyé par téléphone passe-t-il forcément uniquement par les airs ?",
+      "answer": "non, son trajet peut aussi emprunter des câbles",
+      "options": [
+        "non, son trajet peut aussi emprunter des câbles",
+        "oui, sans aucun câble",
+        "les messages voyagent en bateau comme du papier"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "Les réseaux sans fil rejoignent des réseaux filaires, notamment sur de longues distances."
+    },
+    {
+      "id": "internet-reserve-07",
+      "kind": "choice",
+      "prompt": "À quoi servent de nombreux câbles sous-marins ?",
+      "answer": "relier des réseaux entre les continents",
+      "options": [
+        "relier des réseaux entre les continents",
+        "fixer les bateaux au fond de la mer",
+        "fabriquer de l’eau douce"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "Une grande partie des communications internationales passe par ces câbles."
+    },
+    {
+      "id": "internet-reserve-08",
+      "kind": "choice",
+      "prompt": "Quel besoin matériel accompagne l’usage d’Internet ?",
+      "answer": "de l’électricité",
+      "options": [
+        "de l’électricité",
+        "aucun équipement ni énergie",
+        "uniquement du papier"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "Les terminaux et les infrastructures consomment de l’énergie."
+    },
+    {
+      "id": "internet-reserve-09",
+      "kind": "choice",
+      "prompt": "Une zone mal desservie par Internet peut rendre plus difficile…",
+      "answer": "l’accès à certains services et échanges",
+      "options": [
+        "l’accès à certains services et échanges",
+        "le passage du jour à la nuit",
+        "la présence de montagnes"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "De plus en plus d’activités utilisent les communications numériques."
+    },
+    {
+      "id": "internet-reserve-10",
+      "kind": "choice",
+      "prompt": "Une information publiée sur Internet est-elle automatiquement vraie ?",
+      "answer": "non, il faut vérifier sa source et la comparer",
+      "options": [
+        "non, il faut vérifier sa source et la comparer",
+        "oui, parce qu’elle est visible",
+        "oui, si elle est partagée souvent"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "L’accès à l’information demande aussi un jugement critique."
+    },
+    {
+      "id": "internet-reserve-11",
+      "kind": "choice",
+      "prompt": "Une personne équipée d’un ordinateur sait-elle forcément utiliser tous les services numériques ?",
+      "answer": "non, des compétences sont aussi nécessaires",
+      "options": [
+        "non, des compétences sont aussi nécessaires",
+        "oui, sans apprentissage",
+        "non, aucun service n’est utilisable"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "La fracture numérique concerne aussi la capacité à utiliser les outils."
+    },
+    {
+      "id": "internet-reserve-12",
+      "kind": "choice",
+      "prompt": "Internet supprime-t-il toutes les inégalités entre les territoires ?",
+      "answer": "non, l’accès et les usages restent inégaux",
+      "options": [
+        "non, l’accès et les usages restent inégaux",
+        "oui, immédiatement",
+        "seuls les océans sont encore inégaux"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "Le réseau rapproche des personnes, mais les inégalités de ressources et de connexion demeurent."
+    },
+    {
+      "id": "mieux-habiter-reserve-01",
+      "kind": "choice",
+      "prompt": "Quel aménagement donne plus de place à la nature en ville ?",
+      "answer": "créer un parc accessible",
+      "options": [
+        "créer un parc accessible",
+        "supprimer tous les arbres",
+        "recouvrir chaque espace de béton"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "Un parc offre végétation, ombre et espace de vie."
+    },
+    {
+      "id": "mieux-habiter-reserve-02",
+      "kind": "choice",
+      "prompt": "À quoi sert le tri des déchets ?",
+      "answer": "faciliter leur traitement et le recyclage de certains matériaux",
+      "options": [
+        "faciliter leur traitement et le recyclage de certains matériaux",
+        "faire disparaître tous les déchets sans traitement",
+        "mélanger systématiquement les matières"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "Des matériaux triés peuvent être dirigés vers des filières adaptées."
+    },
+    {
+      "id": "mieux-habiter-reserve-03",
+      "kind": "choice",
+      "prompt": "Qu’est-ce que recycler ?",
+      "answer": "transformer certains déchets pour produire de nouvelles matières ou objets",
+      "options": [
+        "transformer certains déchets pour produire de nouvelles matières ou objets",
+        "jeter dans la nature",
+        "acheter un objet neuf sans réutiliser de matière"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "Le recyclage fait entrer des matières dans un nouveau cycle de production."
+    },
+    {
+      "id": "mieux-habiter-reserve-04",
+      "kind": "choice",
+      "prompt": "Quel choix permet d’abord de réduire la quantité de déchets ?",
+      "answer": "utiliser une gourde réutilisable",
+      "options": [
+        "utiliser une gourde réutilisable",
+        "acheter plusieurs bouteilles jetables chaque jour",
+        "jeter une gourde encore utilisable"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "Éviter de produire un déchet vient avant son traitement."
+    },
+    {
+      "id": "mieux-habiter-reserve-05",
+      "kind": "choice",
+      "prompt": "Qu’est-ce qu’un écoquartier cherche notamment à faire ?",
+      "answer": "améliorer le cadre de vie en limitant les impacts environnementaux",
+      "options": [
+        "améliorer le cadre de vie en limitant les impacts environnementaux",
+        "interdire toute vie collective",
+        "construire uniquement des parkings"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "Les projets peuvent associer logements, services, nature et mobilité."
+    },
+    {
+      "id": "mieux-habiter-reserve-06",
+      "kind": "choice",
+      "prompt": "Pourquoi prévoir des accès pour les personnes à mobilité réduite ?",
+      "answer": "permettre à davantage d’habitants d’utiliser les lieux",
+      "options": [
+        "permettre à davantage d’habitants d’utiliser les lieux",
+        "réserver les lieux à un petit groupe",
+        "supprimer tous les trottoirs"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "Mieux habiter concerne aussi l’accessibilité et l’inclusion."
+    },
+    {
+      "id": "mieux-habiter-reserve-07",
+      "kind": "choice",
+      "prompt": "Quel projet favorise la rencontre entre habitants ?",
+      "answer": "créer un jardin partagé",
+      "options": [
+        "créer un jardin partagé",
+        "fermer tous les espaces communs",
+        "éloigner tous les services"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "Des espaces partagés peuvent encourager les échanges et des activités communes."
+    },
+    {
+      "id": "mieux-habiter-reserve-08",
+      "kind": "choice",
+      "prompt": "Pourquoi planter des arbres dans une rue peut-il être utile ?",
+      "answer": "apporter de l’ombre et contribuer au cadre de vie",
+      "options": [
+        "apporter de l’ombre et contribuer au cadre de vie",
+        "supprimer tout besoin d’entretien",
+        "empêcher toute circulation de l’air"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "La végétation peut améliorer le confort, notamment pendant la chaleur."
+    },
+    {
+      "id": "mieux-habiter-reserve-09",
+      "kind": "choice",
+      "prompt": "Pour améliorer un quartier, que faut-il d’abord observer ?",
+      "answer": "les besoins des habitants et les problèmes du lieu",
+      "options": [
+        "les besoins des habitants et les problèmes du lieu",
+        "seulement la couleur des voitures",
+        "uniquement le nom du maire"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "Un aménagement répond à des usages et des besoins réels."
+    },
+    {
+      "id": "mieux-habiter-reserve-10",
+      "kind": "choice",
+      "prompt": "Quel aménagement peut limiter l’usage de la voiture individuelle ?",
+      "answer": "un réseau de transports collectifs accessible",
+      "options": [
+        "un réseau de transports collectifs accessible",
+        "des logements loin de tous les services sans transport",
+        "la fermeture des chemins piétons"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "L’accès aux services et aux transports influence les déplacements."
+    },
+    {
+      "id": "mieux-habiter-reserve-11",
+      "kind": "choice",
+      "prompt": "Le compostage permet notamment de…",
+      "answer": "valoriser certains déchets organiques",
+      "options": [
+        "valoriser certains déchets organiques",
+        "recycler tous les métaux",
+        "faire disparaître le plastique"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "Des restes organiques adaptés peuvent se décomposer et produire du compost."
+    },
+    {
+      "id": "mieux-habiter-reserve-12",
+      "kind": "choice",
+      "prompt": "Mieux habiter concerne-t-il seulement les logements ?",
+      "answer": "non, aussi les services, les déplacements et les espaces communs",
+      "options": [
+        "non, aussi les services, les déplacements et les espaces communs",
+        "oui, uniquement la taille des chambres",
+        "non, seulement les voitures"
+      ],
+      "skillIds": [
+        "mieux-habiter"
+      ],
+      "explanation": "Habiter, c’est vivre dans un lieu avec différentes activités et besoins."
+    }
+  ]
+}

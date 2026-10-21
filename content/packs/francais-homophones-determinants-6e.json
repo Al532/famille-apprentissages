@@ -1,6 +1,6 @@
 {
   "id": "francais-homophones-determinants-6e",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "title": "Homophones : petits mots, grands pièges",
   "subject": "Français",
   "levels": [
@@ -582,6 +582,1386 @@
         "sa",
         "ça"
       ]
+    },
+    {
+      "id": "ce-se-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « ___ matin, le ciel est clair. »",
+      "answer": "ce",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ce-se-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Les enfants ___ préparent. »",
+      "answer": "se",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ce-se-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Je préfère ___ chemin. »",
+      "answer": "ce",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ce-se-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ___ souvient de toi. »",
+      "answer": "se",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ce-se-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « ___ sera bientôt les vacances. »",
+      "answer": "ce",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ce-se-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Le chat ___ cache. »",
+      "answer": "se",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ce-se-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Qui a écrit ___ message ? »",
+      "answer": "ce",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ce-se-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Ils ___ sont trompés. »",
+      "answer": "se",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ce-se-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Prends ___ manteau-ci. »",
+      "answer": "ce",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ce-se-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « On ___ retrouve demain. »",
+      "answer": "se",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ce-se-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « ___ que tu dis est vrai. »",
+      "answer": "ce",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ce-se-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Il ___ brosse les dents. »",
+      "answer": "se",
+      "options": [
+        "ce",
+        "se"
+      ],
+      "skillIds": [
+        "ce-se"
+      ],
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+    },
+    {
+      "id": "ces-ses-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Paul a mal aux pieds : ___ chaussures sont trop petites. »",
+      "answer": "ses",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "ces-ses-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Regarde ___ nuages-là ! »",
+      "answer": "ces",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "ces-ses-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Mia range les cahiers qui lui appartiennent : ___ cahiers. »",
+      "answer": "ses",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "ces-ses-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « ___ jours-ci, il fait froid. »",
+      "answer": "ces",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "ces-ses-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Le chien remue la queue et dresse ___ oreilles. »",
+      "answer": "ses",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "ces-ses-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Je voudrais acheter ___ deux pommes-ci. »",
+      "answer": "ces",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "ces-ses-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Lina retrouve les amis de sa classe : ___ amis. »",
+      "answer": "ses",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "ces-ses-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Admire ___ fleurs-là ! »",
+      "answer": "ces",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "ces-ses-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Hugo a oublié les clés de chez lui : ___ clés. »",
+      "answer": "ses",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "ces-ses-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « ___ maisons que je te montre sont anciennes. »",
+      "answer": "ces",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "ces-ses-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Le peintre nettoie les pinceaux qu’il utilise : ___ pinceaux. »",
+      "answer": "ses",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "ces-ses-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Parmi tous les livres, je choisis ___ trois-là. »",
+      "answer": "ces",
+      "options": [
+        "ces",
+        "ses"
+      ],
+      "skillIds": [
+        "ces-ses"
+      ],
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+    },
+    {
+      "id": "cest-sest-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « ___ une histoire amusante. »",
+      "answer": "c’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "cest-sest-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Le bébé ___ endormi. »",
+      "answer": "s’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "cest-sest-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « ___ ici que je travaille. »",
+      "answer": "c’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "cest-sest-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ___ lavée avant de partir. »",
+      "answer": "s’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "cest-sest-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « ___ difficile mais possible. »",
+      "answer": "c’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "cest-sest-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Mon voisin ___ blessé au pied. »",
+      "answer": "s’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "cest-sest-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « ___ ton tour de jouer. »",
+      "answer": "c’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "cest-sest-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Le train ___ arrêté. »",
+      "answer": "s’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "cest-sest-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « ___ exactement ce que je cherchais. »",
+      "answer": "c’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "cest-sest-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Il ___ souvenu de mon nom. »",
+      "answer": "s’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "cest-sest-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « ___ une bonne nouvelle ! »",
+      "answer": "c’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "cest-sest-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ___ levée très tôt. »",
+      "answer": "s’est",
+      "options": [
+        "c’est",
+        "s’est"
+      ],
+      "skillIds": [
+        "cest-sest"
+      ],
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+    },
+    {
+      "id": "leur-leurs-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Les enfants mettent ___ manteaux : un chacun. »",
+      "answer": "leurs",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "leur-leurs-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Je ___ donne un conseil. »",
+      "answer": "leur",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "leur-leurs-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Ils prennent ___ repas ensemble. »",
+      "answer": "leur",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "leur-leurs-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Nous ___ parlons doucement. »",
+      "answer": "leur",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "leur-leurs-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Les oiseaux étendent ___ ailes. »",
+      "answer": "leurs",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "leur-leurs-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ prêtes ton livre. »",
+      "answer": "leur",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "leur-leurs-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Les élèves comparent ___ dessins. »",
+      "answer": "leurs",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "leur-leurs-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ___ répond tout de suite. »",
+      "answer": "leur",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "leur-leurs-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Les voisins réparent ___ maison commune. »",
+      "answer": "leur",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "leur-leurs-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Les chiens retrouvent ___ maîtres respectifs. »",
+      "answer": "leurs",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "leur-leurs-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Il faut ___ expliquer la règle. »",
+      "answer": "leur",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "leur-leurs-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Les sœurs partagent ___ unique chambre. »",
+      "answer": "leur",
+      "options": [
+        "leur",
+        "leurs"
+      ],
+      "skillIds": [
+        "leur-leurs"
+      ],
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+    },
+    {
+      "id": "ma-ma-mas-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Voici ___ nouvelle trousse. »",
+      "answer": "ma",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "ma-ma-mas-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ raconté une histoire. »",
+      "answer": "m’as",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "ma-ma-mas-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Ce film ___ fait rire. »",
+      "answer": "m’a",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "ma-ma-mas-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « ___ sœur est au collège. »",
+      "answer": "ma",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "ma-ma-mas-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ___ offert un dessin. »",
+      "answer": "m’a",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "ma-ma-mas-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ donné une bonne idée. »",
+      "answer": "m’as",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "ma-ma-mas-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « J’ai rangé ___ chambre. »",
+      "answer": "ma",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "ma-ma-mas-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Il ___ demandé mon prénom. »",
+      "answer": "m’a",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "ma-ma-mas-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Pourquoi tu ___ appelé ? »",
+      "answer": "m’as",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "ma-ma-mas-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « ___ place est près de la fenêtre. »",
+      "answer": "ma",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "ma-ma-mas-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « La pluie ___ surpris. »",
+      "answer": "m’a",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "ma-ma-mas-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ prêté ton stylo. »",
+      "answer": "m’as",
+      "options": [
+        "ma",
+        "m’a",
+        "m’as"
+      ],
+      "skillIds": [
+        "ma-ma-mas"
+      ],
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Les voisins ___ aidé à porter mon sac. »",
+      "answer": "m’ont",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Je prends ___ parapluie. »",
+      "answer": "mon",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Ces enfants ___ reconnu, toi. »",
+      "answer": "t’ont",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « N’oublie pas ___ bonnet à toi. »",
+      "answer": "ton",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Elles ___ envoyé une lettre pour mon anniversaire. »",
+      "answer": "m’ont",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « ___ prénom à moi est court. »",
+      "answer": "mon",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Tes amis ___ attendu devant chez toi. »",
+      "answer": "t’ont",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ranges ___ bureau. »",
+      "answer": "ton",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Ils ___ donné un conseil, à moi. »",
+      "answer": "m’ont",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Voilà ___ frère à moi. »",
+      "answer": "mon",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Ils ___ téléphoné pour te prévenir. »",
+      "answer": "t’ont",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "mon-mont-ton-tont-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « C’est ___ idée à toi. »",
+      "answer": "ton",
+      "options": [
+        "mon",
+        "m’ont",
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "mon-mont-ton-tont"
+      ],
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+    },
+    {
+      "id": "ton-tont-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Prends ___ cahier. »",
+      "answer": "ton",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "ton-tont-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Tes cousins ___ écrit. »",
+      "answer": "t’ont",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "ton-tont-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Quel est ___ avis ? »",
+      "answer": "ton",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "ton-tont-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Les adultes ___ expliqué la règle. »",
+      "answer": "t’ont",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "ton-tont-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « ___ chien aboie. »",
+      "answer": "ton",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "ton-tont-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Ces livres ___ plu. »",
+      "answer": "t’ont",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "ton-tont-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Tu peux choisir ___ équipe. »",
+      "answer": "ton",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "ton-tont-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Tes amis ___ invité. »",
+      "answer": "t’ont",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "ton-tont-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Où est ___ vélo ? »",
+      "answer": "ton",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "ton-tont-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Elles ___ donné rendez-vous. »",
+      "answer": "t’ont",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "ton-tont-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « ___ dessin est réussi. »",
+      "answer": "ton",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "ton-tont-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Les voisins ___ rendu tes clés. »",
+      "answer": "t’ont",
+      "options": [
+        "ton",
+        "t’ont"
+      ],
+      "skillIds": [
+        "ton-tont"
+      ],
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+    },
+    {
+      "id": "sa-ca-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Il cherche ___ règle. »",
+      "answer": "sa",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+    },
+    {
+      "id": "sa-ca-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « ___ me fait plaisir. »",
+      "answer": "ça",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+    },
+    {
+      "id": "sa-ca-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Léa appelle ___ cousine. »",
+      "answer": "sa",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+    },
+    {
+      "id": "sa-ca-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Comment ___ fonctionne ? »",
+      "answer": "ça",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+    },
+    {
+      "id": "sa-ca-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ferme ___ valise. »",
+      "answer": "sa",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+    },
+    {
+      "id": "sa-ca-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « ___ ne change rien. »",
+      "answer": "ça",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+    },
+    {
+      "id": "sa-ca-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Il a retrouvé ___ montre. »",
+      "answer": "sa",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+    },
+    {
+      "id": "sa-ca-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Tu as vu ___ ? »",
+      "answer": "ça",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+    },
+    {
+      "id": "sa-ca-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « ___ réponse est juste. »",
+      "answer": "sa",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+    },
+    {
+      "id": "sa-ca-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « ___ suffit pour aujourd’hui. »",
+      "answer": "ça",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+    },
+    {
+      "id": "sa-ca-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Chacun garde ___ place. »",
+      "answer": "sa",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+    },
+    {
+      "id": "sa-ca-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Pourquoi ___ bouge ? »",
+      "answer": "ça",
+      "options": [
+        "sa",
+        "ça"
+      ],
+      "skillIds": [
+        "sa-ca"
+      ],
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "francais-homophones-bases-6e",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "title": "Homophones : les indispensables",
   "subject": "Français",
   "levels": [
@@ -461,6 +461,900 @@
         "ou",
         "où"
       ]
+    },
+    {
+      "id": "a-as-a-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Le train arrive ___ midi. »",
+      "answer": "à",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ pris ton manteau. »",
+      "answer": "as",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Mon frère ___ neuf ans. »",
+      "answer": "a",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Nous allons ___ pied au marché. »",
+      "answer": "à",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Le chat ___ renversé le verre. »",
+      "answer": "a",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « ___ quelle heure pars-tu ? »",
+      "answer": "à",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ une idée pour la suite ? »",
+      "answer": "as",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Elle apprend ___ nager. »",
+      "answer": "à",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Ce film ___ beaucoup de succès. »",
+      "answer": "a",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Est-ce que tu ___ froid ? »",
+      "answer": "as",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Papa ___ préparé le repas. »",
+      "answer": "a",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « La clé est ___ côté du vase. »",
+      "answer": "à",
+      "options": [
+        "a",
+        "as",
+        "à"
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+    },
+    {
+      "id": "a-as-a-strategie-01",
+      "kind": "choice",
+      "prompt": "Quel remplacement permet de vérifier « Il a faim » ?",
+      "answer": "Il avait faim.",
+      "options": [
+        "Il avait faim.",
+        "Il et faim.",
+        "Il à faim."
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« avait » est une forme du verbe avoir : on écrit donc « a », sans accent."
+    },
+    {
+      "id": "a-as-a-strategie-02",
+      "kind": "choice",
+      "prompt": "Quelle phrase est correctement écrite ?",
+      "answer": "Elle a appris à lire.",
+      "options": [
+        "Elle à appris a lire.",
+        "Elle a appris à lire.",
+        "Elle as appris à lire."
+      ],
+      "skillIds": [
+        "a-as-a"
+      ],
+      "explanation": "« Elle avait appris » vérifie a. On apprend à faire quelque chose : à garde son accent."
+    },
+    {
+      "id": "et-est-es-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Le cartable ___ sous la table. »",
+      "answer": "est",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "et-est-es-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ déjà prêt ? »",
+      "answer": "es",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "et-est-es-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Léa ___ Sami jouent ensemble. »",
+      "answer": "et",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "et-est-es-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Le pain ___ encore chaud. »",
+      "answer": "est",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "et-est-es-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Prends une règle ___ un crayon. »",
+      "answer": "et",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "et-est-es-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ arrivé avant nous. »",
+      "answer": "es",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "et-est-es-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Mon vélo ___ rouge. »",
+      "answer": "est",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "et-est-es-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Elle chante ___ danse. »",
+      "answer": "et",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "et-est-es-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Pourquoi ___-tu si pressé ? »",
+      "answer": "es",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "et-est-es-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « La porte ___ fermée. »",
+      "answer": "est",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "et-est-es-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Le chien ___ le chat dorment. »",
+      "answer": "et",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "et-est-es-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ mon meilleur ami. »",
+      "answer": "es",
+      "options": [
+        "et",
+        "est",
+        "es"
+      ],
+      "skillIds": [
+        "et-est-es"
+      ],
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+    },
+    {
+      "id": "on-ont-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Les élèves ___ terminé leur dessin. »",
+      "answer": "ont",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "on-ont-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « ___ entend les oiseaux. »",
+      "answer": "on",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "on-ont-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Mes voisins ___ un jardin. »",
+      "answer": "ont",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "on-ont-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Demain, ___ part tôt. »",
+      "answer": "on",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "on-ont-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Les chats ___ peur de l’orage. »",
+      "answer": "ont",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "on-ont-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « ___ peut entrer maintenant. »",
+      "answer": "on",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "on-ont-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Ils ___ oublié leurs chaussures. »",
+      "answer": "ont",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "on-ont-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Quand ___ veut, on peut essayer. »",
+      "answer": "on",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "on-ont-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Elles ___ de la chance. »",
+      "answer": "ont",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "on-ont-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « ___ joue dehors après le goûter. »",
+      "answer": "on",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "on-ont-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Ces maisons ___ des volets bleus. »",
+      "answer": "ont",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "on-ont-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Que fait-___ cet après-midi ? »",
+      "answer": "on",
+      "options": [
+        "on",
+        "ont"
+      ],
+      "skillIds": [
+        "on-ont"
+      ],
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+    },
+    {
+      "id": "son-sont-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Les fenêtres ___ ouvertes. »",
+      "answer": "sont",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "son-sont-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Maya cherche ___ bonnet. »",
+      "answer": "son",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "son-sont-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Ces fruits ___ mûrs. »",
+      "answer": "sont",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "son-sont-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Il range ___ bureau. »",
+      "answer": "son",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "son-sont-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Les enfants ___ dans le jardin. »",
+      "answer": "sont",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "son-sont-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Elle prête ___ vélo. »",
+      "answer": "son",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "son-sont-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Où ___ mes lunettes ? »",
+      "answer": "sont",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "son-sont-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Voici ___ petit frère. »",
+      "answer": "son",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "son-sont-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Les rues ___ désertes. »",
+      "answer": "sont",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "son-sont-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Chacun prend ___ sac. »",
+      "answer": "son",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "son-sont-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Ces exercices ___ courts. »",
+      "answer": "sont",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "son-sont-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Il a perdu ___ ticket. »",
+      "answer": "son",
+      "options": [
+        "son",
+        "sont"
+      ],
+      "skillIds": [
+        "son-sont"
+      ],
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+    },
+    {
+      "id": "ou-ou-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Veux-tu du thé ___ du lait ? »",
+      "answer": "ou",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+    },
+    {
+      "id": "ou-ou-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Je connais l’endroit ___ tu habites. »",
+      "answer": "où",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+    },
+    {
+      "id": "ou-ou-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « ___ se trouve la sortie ? »",
+      "answer": "où",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+    },
+    {
+      "id": "ou-ou-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Tu peux écrire en bleu ___ en noir. »",
+      "answer": "ou",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+    },
+    {
+      "id": "ou-ou-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Le jour ___ nous sommes arrivés, il pleuvait. »",
+      "answer": "où",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+    },
+    {
+      "id": "ou-ou-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Faut-il tourner à droite ___ à gauche ? »",
+      "answer": "ou",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+    },
+    {
+      "id": "ou-ou-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Voici la ville ___ je suis né. »",
+      "answer": "où",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+    },
+    {
+      "id": "ou-ou-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Choisis une pomme ___ une poire. »",
+      "answer": "ou",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+    },
+    {
+      "id": "ou-ou-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « ___ as-tu posé la clé ? »",
+      "answer": "où",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+    },
+    {
+      "id": "ou-ou-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Nous irons à pied ___ à vélo. »",
+      "answer": "ou",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+    },
+    {
+      "id": "ou-ou-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « C’est le moment ___ tout commence. »",
+      "answer": "où",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+    },
+    {
+      "id": "ou-ou-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Un cahier à carreaux ___ à lignes ? »",
+      "answer": "ou",
+      "options": [
+        "ou",
+        "où"
+      ],
+      "skillIds": [
+        "ou-ou"
+      ],
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
     }
   ]
 }

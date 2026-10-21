@@ -2,11 +2,11 @@ import {z} from 'zod';
 import {createEmptyCard,fsrs,type Grade,type Card} from 'ts-fsrs';
 export const CONTRACT_VERSION=1 as const;
 const id=z.string().regex(/^[a-z0-9][a-z0-9._-]{0,79}$/);
-export const exerciseSchema=z.object({id,kind:z.enum(['choice','number','flashcard','text']),prompt:z.string().min(1).max(1000),passage:z.string().min(1).max(3000).optional(),answer:z.string().min(1).max(500),options:z.array(z.string()).min(2).max(8).optional(),skillIds:z.array(id).min(1),explanation:z.string().max(1000).optional()}).strict().superRefine((q,ctx)=>{
+export const exerciseSchema=z.object({id,kind:z.enum(['choice','number','flashcard','text']),prompt:z.string().min(1).max(1000),passage:z.string().min(1).max(3000).optional(),answer:z.string().min(1).max(500),options:z.array(z.string()).min(2).max(8).optional(),skillIds:z.array(id).min(1),explanation:z.string().max(1000).optional(),contextId:id.optional(),reviewMode:z.enum(['concept','question']).optional(),diagram:z.enum(['town-map']).optional()}).strict().superRefine((q,ctx)=>{
  if(q.kind==='choice'&&(!q.options||!q.options.includes(q.answer)))ctx.addIssue({code:'custom',message:'Un QCM doit contenir la réponse dans ses choix.'});
  if(q.kind==='number'&&!Number.isFinite(Number(q.answer.replace(',','.'))))ctx.addIssue({code:'custom',message:'Réponse numérique invalide.'});
 });
-export const moduleSchema=z.object({id,version:z.string().regex(/^\d+\.\d+\.\d+$/),title:z.string().min(1),subject:z.string().min(1),levels:z.array(z.string()).min(1),description:z.string(),skills:z.array(z.object({id,label:z.string().min(1)}).strict()).min(1),exercises:z.array(exerciseSchema).min(1)}).strict().superRefine((m,ctx)=>{
+export const moduleSchema=z.object({id,version:z.string().regex(/^\d+\.\d+\.\d+$/),title:z.string().min(1),subject:z.string().min(1),levels:z.array(z.string()).min(1),description:z.string(),reviewMode:z.enum(['concept','question']).optional(),skills:z.array(z.object({id,label:z.string().min(1)}).strict()).min(1),exercises:z.array(exerciseSchema).min(1)}).strict().superRefine((m,ctx)=>{
  const ids=m.exercises.map(q=>q.id),skills=m.skills.map(s=>s.id);
  if(new Set(ids).size!==ids.length||new Set(skills).size!==skills.length)ctx.addIssue({code:'custom',message:'Identifiants dupliqués.'});
  if(m.exercises.some(q=>q.skillIds.some(s=>!skills.includes(s))))ctx.addIssue({code:'custom',message:'Compétence inconnue.'});
@@ -48,3 +48,5 @@ export function selectNext(exercises:Exercise[],reviews:ReviewState[],moduleId:s
  return available.find(q=>q.id!==lastId)??available[0];
 }
 export const moduleKey=(moduleId:string,itemId:string)=>`${moduleId}__${itemId}`;
+
+export * from './concepts';
