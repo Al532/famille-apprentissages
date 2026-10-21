@@ -20,7 +20,7 @@ if(app&&env.VITE_USE_EMULATORS==='true'){
  connectAuthEmulator(auth!,'http://127.0.0.1:9099');connectFirestoreEmulator(db!,'127.0.0.1',8080);
 }
 const key='famille-demo-v1';
-const initial=():Snapshot=>({...structuredClone(empty),learners:[{id:'maurice',name:'Maurice',level:'6e'},{id:'ondine',name:'Ondine',level:'CE1'}]});
+const initial=():Snapshot=>({...structuredClone(empty),learners:[{id:'maurice',name:'Maurice',level:'Maurice'},{id:'ondine',name:'Ondine',level:'Ondine'}]});
 export function readDemo():Snapshot {try {const v=localStorage.getItem(key);return v?JSON.parse(v):initial();}catch{return initial();}}
 export function resetDemo(){localStorage.removeItem(key);window.dispatchEvent(new Event('family-demo-change'));}
 export function listenDemo(cb:(s:Snapshot)=>void){const run=()=>cb(readDemo());run();window.addEventListener('storage',run);window.addEventListener('family-demo-change',run);return()=>{window.removeEventListener('storage',run);window.removeEventListener('family-demo-change',run);};}

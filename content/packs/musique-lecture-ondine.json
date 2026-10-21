@@ -1,0 +1,263 @@
+{
+  "id": "musique-lecture-ondine",
+  "version": "1.0.0",
+  "title": "Je lis les notes",
+  "subject": "Musique",
+  "levels": [
+    "Ondine"
+  ],
+  "description": "Clé de sol : do3 à sol3. Clé de fa : fa2 à do3. Notes naturelles, octaves françaises.",
+  "reviewMode": "question",
+  "skills": [
+    {
+      "id": "lecture-sol",
+      "label": "Lire do3 à sol3 en clé de sol"
+    },
+    {
+      "id": "lecture-fa",
+      "label": "Lire fa2 à do3 en clé de fa"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "treble-0",
+      "kind": "choice",
+      "prompt": "Quelle est cette note ?",
+      "answer": "Do",
+      "options": [
+        "Do",
+        "Ré",
+        "Mi",
+        "Fa",
+        "Sol",
+        "La",
+        "Si"
+      ],
+      "skillIds": [
+        "lecture-sol"
+      ],
+      "reviewMode": "question",
+      "staff": {
+        "clef": "treble",
+        "step": 0
+      },
+      "explanation": "C’est un do3, en clé de sol (octaves françaises)."
+    },
+    {
+      "id": "treble-1",
+      "kind": "choice",
+      "prompt": "Quelle est cette note ?",
+      "answer": "Ré",
+      "options": [
+        "Do",
+        "Ré",
+        "Mi",
+        "Fa",
+        "Sol",
+        "La",
+        "Si"
+      ],
+      "skillIds": [
+        "lecture-sol"
+      ],
+      "reviewMode": "question",
+      "staff": {
+        "clef": "treble",
+        "step": 1
+      },
+      "explanation": "C’est un ré3, en clé de sol (octaves françaises)."
+    },
+    {
+      "id": "treble-2",
+      "kind": "choice",
+      "prompt": "Quelle est cette note ?",
+      "answer": "Mi",
+      "options": [
+        "Do",
+        "Ré",
+        "Mi",
+        "Fa",
+        "Sol",
+        "La",
+        "Si"
+      ],
+      "skillIds": [
+        "lecture-sol"
+      ],
+      "reviewMode": "question",
+      "staff": {
+        "clef": "treble",
+        "step": 2
+      },
+      "explanation": "C’est un mi3, en clé de sol (octaves françaises)."
+    },
+    {
+      "id": "treble-3",
+      "kind": "choice",
+      "prompt": "Quelle est cette note ?",
+      "answer": "Fa",
+      "options": [
+        "Do",
+        "Ré",
+        "Mi",
+        "Fa",
+        "Sol",
+        "La",
+        "Si"
+      ],
+      "skillIds": [
+        "lecture-sol"
+      ],
+      "reviewMode": "question",
+      "staff": {
+        "clef": "treble",
+        "step": 3
+      },
+      "explanation": "C’est un fa3, en clé de sol (octaves françaises)."
+    },
+    {
+      "id": "treble-4",
+      "kind": "choice",
+      "prompt": "Quelle est cette note ?",
+      "answer": "Sol",
+      "options": [
+        "Do",
+        "Ré",
+        "Mi",
+        "Fa",
+        "Sol",
+        "La",
+        "Si"
+      ],
+      "skillIds": [
+        "lecture-sol"
+      ],
+      "reviewMode": "question",
+      "staff": {
+        "clef": "treble",
+        "step": 4
+      },
+      "explanation": "C’est un sol3, en clé de sol (octaves françaises)."
+    },
+    {
+      "id": "bass-0",
+      "kind": "choice",
+      "prompt": "Quelle est cette note ?",
+      "answer": "Fa",
+      "options": [
+        "Do",
+        "Ré",
+        "Mi",
+        "Fa",
+        "Sol",
+        "La",
+        "Si"
+      ],
+      "skillIds": [
+        "lecture-fa"
+      ],
+      "reviewMode": "question",
+      "staff": {
+        "clef": "bass",
+        "step": 0
+      },
+      "explanation": "C’est un fa2, en clé de fa (octaves françaises)."
+    },
+    {
+      "id": "bass-1",
+      "kind": "choice",
+      "prompt": "Quelle est cette note ?",
+      "answer": "Sol",
+      "options": [
+        "Do",
+        "Ré",
+        "Mi",
+        "Fa",
+        "Sol",
+        "La",
+        "Si"
+      ],
+      "skillIds": [
+        "lecture-fa"
+      ],
+      "reviewMode": "question",
+      "staff": {
+        "clef": "bass",
+        "step": 1
+      },
+      "explanation": "C’est un sol2, en clé de fa (octaves françaises)."
+    },
+    {
+      "id": "bass-2",
+      "kind": "choice",
+      "prompt": "Quelle est cette note ?",
+      "answer": "La",
+      "options": [
+        "Do",
+        "Ré",
+        "Mi",
+        "Fa",
+        "Sol",
+        "La",
+        "Si"
+      ],
+      "skillIds": [
+        "lecture-fa"
+      ],
+      "reviewMode": "question",
+      "staff": {
+        "clef": "bass",
+        "step": 2
+      },
+      "explanation": "C’est un la2, en clé de fa (octaves françaises)."
+    },
+    {
+      "id": "bass-3",
+      "kind": "choice",
+      "prompt": "Quelle est cette note ?",
+      "answer": "Si",
+      "options": [
+        "Do",
+        "Ré",
+        "Mi",
+        "Fa",
+        "Sol",
+        "La",
+        "Si"
+      ],
+      "skillIds": [
+        "lecture-fa"
+      ],
+      "reviewMode": "question",
+      "staff": {
+        "clef": "bass",
+        "step": 3
+      },
+      "explanation": "C’est un si2, en clé de fa (octaves françaises)."
+    },
+    {
+      "id": "bass-4",
+      "kind": "choice",
+      "prompt": "Quelle est cette note ?",
+      "answer": "Do",
+      "options": [
+        "Do",
+        "Ré",
+        "Mi",
+        "Fa",
+        "Sol",
+        "La",
+        "Si"
+      ],
+      "skillIds": [
+        "lecture-fa"
+      ],
+      "reviewMode": "question",
+      "staff": {
+        "clef": "bass",
+        "step": 4
+      },
+      "explanation": "C’est un do3, en clé de fa (octaves françaises)."
+    }
+  ]
+}
