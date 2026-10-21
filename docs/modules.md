@@ -10,7 +10,7 @@
 
 Les niveaux sont des étiquettes ouvertes (`CE1`, `6e`, etc.) et ne limitent pas le système à ces deux classes. Le profil de l’enfant détermine le catalogue de départ, pas ses capacités réelles.
 
-Le champ facultatif `passage` affiche un texte de lecture distinct de la question. `explanation` fournit la correction après chaque réponse. Le filtre de compétence permet de travailler un point précis, en conservant les mêmes identifiants et états FSRS que dans le parcours mélangé. L’ordre des nouvelles questions peut entrelacer les compétences dans le pack ; les révisions dues gardent la priorité.
+Le champ facultatif `passage` affiche un texte de lecture distinct de la question. `explanation` fournit la correction après chaque réponse. Le choix d’une matière ou de toutes les matières produit une séance sur quelques notions dues ou nouvelles. Les séances sont composées au niveau des notions : voir [les règles de séance et de révision](seances-concepts.md). Chaque notion travaillée par exemples possède au moins 12 QCM expliqués en réserve. `reviewMode: "question"` sur une question réserve un calendrier individuel à un repère factuel ; sans ce champ, le mode `concept` vérifie plusieurs contextes. Les repères factuels sont exclus des preuves de compréhension de leur thème. Le champ facultatif `contextId` regroupe des questions portant sur une même situation, pour ne pas compter leur mémorisation comme des preuves indépendantes. Le champ facultatif `diagram: "town-map"` affiche le plan de quartier partagé.
 
 Le parcours de français de consolidation CM2 → 6e est décrit dans [francais-6e.md](francais-6e.md).
 

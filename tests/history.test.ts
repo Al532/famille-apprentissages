@@ -23,8 +23,9 @@ test('une version inconnue ou une date invalide donne un suivi explicitement par
  assert.equal(projectHistory([catalog],[{...first,recordedAt:'invalide'}]).ignored,1);
 });
 test('les cartes autoévaluées gardent un compte distinct du taux de réussite',()=>{
- const record={...first,attempt:{...base,moduleId:'fractions-6e',moduleVersion:catalog.modules.find(m=>m.id==='fractions-6e')!.version,exerciseId:'definition',answer:'',selfRating:3 as const}};
- const h=projectHistory([catalog],[record]);assert.equal(h.progress[0].assessed,0);assert.equal(h.progress[0].selfReviews,1);
+ const legacy=catalogSchema.parse(archive.find(c=>c.revision==='0.3.0'));
+ const record={...first,attempt:{...base,catalogRevision:legacy.revision,moduleId:'fractions-6e',moduleVersion:legacy.modules.find(m=>m.id==='fractions-6e')!.version,exerciseId:'definition',answer:'',selfRating:3 as const}};
+ const h=projectHistory([catalog,legacy],[record]);assert.equal(h.progress[0].assessed,0);assert.equal(h.progress[0].selfReviews,1);
 });
 
 test('une ancienne saisie et le nouveau QCM gardent le même suivi et calendrier de révision',()=>{

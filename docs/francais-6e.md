@@ -1,3 +1,7 @@
+# Mise à jour du 21 octobre 2026
+
+Le parcours contient désormais **662 QCM expliqués, regroupés en 41 notions**, avec au moins douze questions par notion. Les homophones gardent une place importante. Les notions de grammaire, conjugaison, vocabulaire et compréhension incluent les bases cumulatives de l’école primaire. La sélection et l’espacement portent sur les notions, pas sur chaque carte : voir [les séances](seances-concepts.md). Les références et limites pédagogiques ci-dessous restent utiles ; les anciens volumes décrivent la première livraison.
+
 # Français : consolider les acquis à l’entrée en sixième
 
 Révision du catalogue : `0.3.0`. Les sept packs sont proposés au profil de niveau `6e`. Ils reprennent des acquis de fin de CM2 ; ce n’est pas un cours complet de sixième.

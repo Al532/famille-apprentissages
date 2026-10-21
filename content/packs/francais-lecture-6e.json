@@ -1,6 +1,6 @@
 {
   "id": "francais-lecture-6e",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Lire et comprendre",
   "subject": "Français",
   "levels": [
@@ -149,6 +149,516 @@
       ],
       "explanation": "Le texte précise qu’elles sont partagées entre les participants.",
       "passage": "Le jardin partagé ouvre le mercredi et le samedi, de 9 h à 12 h. Chaque visiteur apporte ses gants. Les outils sont prêtés sur place. En cas de forte pluie, le jardin reste fermé. Les récoltes sont partagées entre les participants."
+    },
+    {
+      "id": "recit-explicite-reserve-01",
+      "kind": "choice",
+      "prompt": "Où se trouve probablement la clé ?",
+      "answer": "dans le manteau prêté à son frère",
+      "options": [
+        "dans le manteau prêté à son frère",
+        "dans le jardin",
+        "au fond du sac"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "Le texte précise qu’Inès range la clé dans la poche du manteau.",
+      "passage": "Le mercredi, Inès garde la clé du jardin dans la poche de son manteau. Un matin, elle prête ce manteau à son frère. Devant le portail fermé, elle fouille son sac puis soupire. Elle repart chercher son frère.",
+      "contextId": "recit-reserve-01"
+    },
+    {
+      "id": "recit-implicite-reserve-01",
+      "kind": "choice",
+      "prompt": "Pourquoi Inès repart-elle chercher son frère ?",
+      "answer": "pour récupérer la clé",
+      "options": [
+        "pour récupérer la clé",
+        "pour lui prêter son sac",
+        "pour arroser le jardin"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "Elle ne peut pas ouvrir le portail et son frère porte le manteau contenant la clé.",
+      "passage": "Le mercredi, Inès garde la clé du jardin dans la poche de son manteau. Un matin, elle prête ce manteau à son frère. Devant le portail fermé, elle fouille son sac puis soupire. Elle repart chercher son frère.",
+      "contextId": "recit-reserve-01"
+    },
+    {
+      "id": "recit-explicite-reserve-02",
+      "kind": "choice",
+      "prompt": "Quel livre Adam choisit-il ?",
+      "answer": "un roman d’aventures",
+      "options": [
+        "un roman d’aventures",
+        "un dictionnaire",
+        "un documentaire animalier"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "Le genre du livre est indiqué dans la première phrase.",
+      "passage": "À la bibliothèque, Adam choisit un roman d’aventures. La bibliothécaire lui rappelle qu’il doit le rapporter dans trois semaines. Il glisse le livre dans son sac et sourit en découvrant que le héros porte le même prénom que lui.",
+      "contextId": "recit-reserve-02"
+    },
+    {
+      "id": "recit-implicite-reserve-02",
+      "kind": "choice",
+      "prompt": "Pourquoi Adam sourit-il ?",
+      "answer": "le héros s’appelle comme lui",
+      "options": [
+        "le héros s’appelle comme lui",
+        "le livre lui appartient",
+        "il a déjà fini le livre"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "Il vient de découvrir que le héros porte le même prénom que lui.",
+      "passage": "À la bibliothèque, Adam choisit un roman d’aventures. La bibliothécaire lui rappelle qu’il doit le rapporter dans trois semaines. Il glisse le livre dans son sac et sourit en découvrant que le héros porte le même prénom que lui.",
+      "contextId": "recit-reserve-02"
+    },
+    {
+      "id": "recit-explicite-reserve-03",
+      "kind": "choice",
+      "prompt": "Où le vent a-t-il emporté le chapeau ?",
+      "answer": "derrière la haie",
+      "options": [
+        "derrière la haie",
+        "dans la maison",
+        "au bord de la mer"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "Le texte situe le chapeau derrière la haie.",
+      "passage": "Le vent a emporté le chapeau de Zoé derrière la haie. Elle appelle son voisin, qui jardine de l’autre côté. Quelques minutes plus tard, il lui rend le chapeau, couvert de feuilles.",
+      "contextId": "recit-reserve-03"
+    },
+    {
+      "id": "recit-implicite-reserve-03",
+      "kind": "choice",
+      "prompt": "Pourquoi Zoé appelle-t-elle son voisin ?",
+      "answer": "il peut atteindre le chapeau de son côté",
+      "options": [
+        "il peut atteindre le chapeau de son côté",
+        "elle veut lui vendre son chapeau",
+        "il a perdu ses clés"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "Le voisin est de l’autre côté de la haie, là où le chapeau est tombé.",
+      "passage": "Le vent a emporté le chapeau de Zoé derrière la haie. Elle appelle son voisin, qui jardine de l’autre côté. Quelques minutes plus tard, il lui rend le chapeau, couvert de feuilles.",
+      "contextId": "recit-reserve-03"
+    },
+    {
+      "id": "recit-explicite-reserve-04",
+      "kind": "choice",
+      "prompt": "Que montre Yacine à son père ?",
+      "answer": "des traces dans la boue",
+      "options": [
+        "des traces dans la boue",
+        "un nid dans un arbre",
+        "une carte déchirée"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "La première phrase indique ce que Yacine montre.",
+      "passage": "Pendant la randonnée, Yacine s’arrête et montre des traces dans la boue. Son père s’accroupit pour les observer. Plus loin, ils aperçoivent un chevreuil qui disparaît entre les arbres.",
+      "contextId": "recit-reserve-04"
+    },
+    {
+      "id": "recit-implicite-reserve-04",
+      "kind": "choice",
+      "prompt": "Pourquoi le père s’accroupit-il ?",
+      "answer": "pour mieux voir les traces",
+      "options": [
+        "pour mieux voir les traces",
+        "pour dormir",
+        "pour se cacher de son fils"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "Il s’accroupit afin d’observer les traces de plus près.",
+      "passage": "Pendant la randonnée, Yacine s’arrête et montre des traces dans la boue. Son père s’accroupit pour les observer. Plus loin, ils aperçoivent un chevreuil qui disparaît entre les arbres.",
+      "contextId": "recit-reserve-04"
+    },
+    {
+      "id": "recit-explicite-reserve-05",
+      "kind": "choice",
+      "prompt": "Où Léa répète-t-elle la veille ?",
+      "answer": "dans sa chambre",
+      "options": [
+        "dans sa chambre",
+        "dans les coulisses",
+        "dans la cour"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "Le lieu de la répétition est donné dans la première phrase.",
+      "passage": "La veille du spectacle, Léa répète son texte dans sa chambre. Au moment d’entrer sur scène, ses mains tremblent. Elle respire profondément, regarde son amie dans les coulisses puis commence à parler.",
+      "contextId": "recit-reserve-05"
+    },
+    {
+      "id": "recit-implicite-reserve-05",
+      "kind": "choice",
+      "prompt": "Que suggèrent les mains qui tremblent de Léa ?",
+      "answer": "elle ressent du trac",
+      "options": [
+        "elle ressent du trac",
+        "elle est forcément malade",
+        "elle veut quitter son amie"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "L’entrée sur scène et la respiration profonde suggèrent la nervosité.",
+      "passage": "La veille du spectacle, Léa répète son texte dans sa chambre. Au moment d’entrer sur scène, ses mains tremblent. Elle respire profondément, regarde son amie dans les coulisses puis commence à parler.",
+      "contextId": "recit-reserve-05"
+    },
+    {
+      "id": "recit-explicite-reserve-06",
+      "kind": "choice",
+      "prompt": "Quel produit manque à Malik ?",
+      "answer": "de l’huile",
+      "options": [
+        "de l’huile",
+        "des tomates",
+        "de la laitue"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "Le flacon d’huile est vide.",
+      "passage": "Malik prépare une salade pour ses invités. Il coupe les tomates, lave la laitue puis ouvre le placard. Le flacon d’huile est vide. Il prend son porte-monnaie et sort vers l’épicerie.",
+      "contextId": "recit-reserve-06"
+    },
+    {
+      "id": "recit-implicite-reserve-06",
+      "kind": "choice",
+      "prompt": "Pourquoi Malik va-t-il à l’épicerie ?",
+      "answer": "pour acheter de l’huile",
+      "options": [
+        "pour acheter de l’huile",
+        "pour inviter le commerçant",
+        "pour vendre sa salade"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "Le produit manquant explique la sortie avec le porte-monnaie.",
+      "passage": "Malik prépare une salade pour ses invités. Il coupe les tomates, lave la laitue puis ouvre le placard. Le flacon d’huile est vide. Il prend son porte-monnaie et sort vers l’épicerie.",
+      "contextId": "recit-reserve-06"
+    },
+    {
+      "id": "recit-explicite-reserve-07",
+      "kind": "choice",
+      "prompt": "Qui attend que Sacha récupère son sac ?",
+      "answer": "le chauffeur",
+      "options": [
+        "le chauffeur",
+        "le gardien du musée",
+        "sa sœur"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "Le dernier passage nomme le chauffeur.",
+      "passage": "Le bus s’arrête devant le musée. Les élèves descendent et suivent leur professeur. Sacha revient sur ses pas : il a laissé son sac sur le siège. Le chauffeur attend qu’il le récupère avant de repartir.",
+      "contextId": "recit-reserve-07"
+    },
+    {
+      "id": "recit-implicite-reserve-07",
+      "kind": "choice",
+      "prompt": "Pourquoi Sacha revient-il sur ses pas ?",
+      "answer": "il veut récupérer son sac oublié",
+      "options": [
+        "il veut récupérer son sac oublié",
+        "il refuse de visiter",
+        "le musée est fermé"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "La phrase après les deux-points explique son retour.",
+      "passage": "Le bus s’arrête devant le musée. Les élèves descendent et suivent leur professeur. Sacha revient sur ses pas : il a laissé son sac sur le siège. Le chauffeur attend qu’il le récupère avant de repartir.",
+      "contextId": "recit-reserve-07"
+    },
+    {
+      "id": "recit-explicite-reserve-08",
+      "kind": "choice",
+      "prompt": "Où Nora prend-elle sa luge ?",
+      "answer": "dans le garage",
+      "options": [
+        "dans le garage",
+        "sur le toit",
+        "près du portail"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "Le garage est le lieu indiqué pour la luge.",
+      "passage": "Au réveil, Nora voit les toits blancs et les branches couvertes de neige. Elle enfile ses bottes et prend une luge dans le garage. Son petit frère l’attend près du portail.",
+      "contextId": "recit-reserve-08"
+    },
+    {
+      "id": "recit-implicite-reserve-08",
+      "kind": "choice",
+      "prompt": "Quelle activité Nora va-t-elle probablement faire ?",
+      "answer": "glisser sur la neige",
+      "options": [
+        "glisser sur la neige",
+        "se baigner dans la mer",
+        "cueillir des pommes"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "La neige, les bottes et la luge permettent cette déduction.",
+      "passage": "Au réveil, Nora voit les toits blancs et les branches couvertes de neige. Elle enfile ses bottes et prend une luge dans le garage. Son petit frère l’attend près du portail.",
+      "contextId": "recit-reserve-08"
+    },
+    {
+      "id": "recit-explicite-reserve-09",
+      "kind": "choice",
+      "prompt": "Comment Emma arrose-t-elle les deux pots ?",
+      "answer": "de la même façon",
+      "options": [
+        "de la même façon",
+        "seulement le premier",
+        "une fois par mois"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "Le texte précise que l’arrosage est le même.",
+      "passage": "Emma a planté des graines dans deux pots. Elle place le premier près d’une fenêtre et le second dans un placard. Elle arrose les deux de la même façon et note ses observations chaque jour.",
+      "contextId": "recit-reserve-09"
+    },
+    {
+      "id": "recit-implicite-reserve-09",
+      "kind": "choice",
+      "prompt": "Que cherche-t-elle probablement à observer ?",
+      "answer": "l’effet de la lumière sur les plantes",
+      "options": [
+        "l’effet de la lumière sur les plantes",
+        "l’effet de pots de couleurs différentes",
+        "la vitesse de l’eau"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "La différence décrite est l’exposition à la lumière.",
+      "passage": "Emma a planté des graines dans deux pots. Elle place le premier près d’une fenêtre et le second dans un placard. Elle arrose les deux de la même façon et note ses observations chaque jour.",
+      "contextId": "recit-reserve-09"
+    },
+    {
+      "id": "recit-explicite-reserve-10",
+      "kind": "choice",
+      "prompt": "Que tient Tom ?",
+      "answer": "un panneau avec un prénom",
+      "options": [
+        "un panneau avec un prénom",
+        "un billet de cinéma",
+        "un bouquet"
+      ],
+      "skillIds": [
+        "recit-explicite"
+      ],
+      "explanation": "Le deuxième énoncé décrit le panneau.",
+      "passage": "Tom attend sa correspondante à la gare. Il tient un panneau avec son prénom. Une jeune fille s’approche en souriant et montre du doigt le panneau. Tom range le carton et lui souhaite la bienvenue.",
+      "contextId": "recit-reserve-10"
+    },
+    {
+      "id": "recit-implicite-reserve-10",
+      "kind": "choice",
+      "prompt": "Pourquoi la jeune fille montre-t-elle le panneau ?",
+      "answer": "elle reconnaît probablement son prénom",
+      "options": [
+        "elle reconnaît probablement son prénom",
+        "elle veut acheter le carton",
+        "elle a perdu un livre"
+      ],
+      "skillIds": [
+        "recit-implicite"
+      ],
+      "explanation": "Le contexte de l’accueil à la gare permet de déduire qu’il s’agit de la correspondante.",
+      "passage": "Tom attend sa correspondante à la gare. Il tient un panneau avec son prénom. Une jeune fille s’approche en souriant et montre du doigt le panneau. Tom range le carton et lui souhaite la bienvenue.",
+      "contextId": "recit-reserve-10"
+    },
+    {
+      "id": "document-reserve-01",
+      "kind": "choice",
+      "prompt": "Un enfant de 10 ans peut-il venir sans inscription ?",
+      "answer": "non, il faut s’inscrire",
+      "options": [
+        "non, il faut s’inscrire",
+        "oui, toujours",
+        "seulement le samedi"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "L’inscription est obligatoire même si l’âge convient.",
+      "passage": "Le club de jeux accueille les enfants de 8 à 12 ans le vendredi de 17 h à 18 h 30. L’inscription est obligatoire. Les jeux sont prêtés.",
+      "contextId": "document-reserve-01"
+    },
+    {
+      "id": "document-reserve-02",
+      "kind": "choice",
+      "prompt": "Quand peut-on aller nager ?",
+      "answer": "mercredi à 11 h",
+      "options": [
+        "mercredi à 11 h",
+        "lundi à 11 h",
+        "mardi à 20 h"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "Mercredi 11 h respecte le jour et les horaires.",
+      "passage": "Piscine : bassin fermé le lundi. Ouverture du mardi au dimanche de 10 h à 19 h. Bonnet de bain obligatoire.",
+      "contextId": "document-reserve-02"
+    },
+    {
+      "id": "document-reserve-03",
+      "kind": "choice",
+      "prompt": "Que doit apporter chaque élève ?",
+      "answer": "une gourde",
+      "options": [
+        "une gourde",
+        "une boisson fournie par l’école",
+        "un repas à réchauffer"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "La gourde figure dans la liste à prévoir.",
+      "passage": "Pour le pique-nique, prévoir une gourde, un chapeau et un repas froid. Les boissons sucrées ne sont pas fournies. Départ à 9 h devant l’école.",
+      "contextId": "document-reserve-03"
+    },
+    {
+      "id": "document-reserve-04",
+      "kind": "choice",
+      "prompt": "Que se passe-t-il en cas d’orage ?",
+      "answer": "l’atelier est annulé",
+      "options": [
+        "l’atelier est annulé",
+        "il commence plus tôt",
+        "le casque devient facultatif"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "La dernière phrase donne cette condition d’annulation.",
+      "passage": "Atelier vélo : rendez-vous samedi à 14 h sur la place. Apporter son vélo et son casque. L’atelier est annulé en cas d’orage.",
+      "contextId": "document-reserve-04"
+    },
+    {
+      "id": "document-reserve-05",
+      "kind": "choice",
+      "prompt": "Peut-on entrer à 17 h 45 ?",
+      "answer": "non, la dernière entrée est à 17 h 30",
+      "options": [
+        "non, la dernière entrée est à 17 h 30",
+        "oui, jusqu’à 18 h",
+        "seulement avec un appareil photo"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "L’heure de fermeture et la dernière entrée sont deux informations différentes.",
+      "passage": "Exposition ouverte de 13 h à 18 h. Dernière entrée à 17 h 30. Les photographies sans flash sont autorisées.",
+      "contextId": "document-reserve-05"
+    },
+    {
+      "id": "document-reserve-06",
+      "kind": "choice",
+      "prompt": "Peut-on emporter une revue chez soi ?",
+      "answer": "non, elle se lit sur place",
+      "options": [
+        "non, elle se lit sur place",
+        "oui, pour quatre semaines",
+        "oui, si l’on prend trois livres"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "La dernière phrase réserve les revues à la consultation sur place.",
+      "passage": "Pour emprunter un livre, présente ta carte. Trois livres au maximum pour une durée de quatre semaines. Les revues se consultent sur place.",
+      "contextId": "document-reserve-06"
+    },
+    {
+      "id": "document-reserve-07",
+      "kind": "choice",
+      "prompt": "Que fait-on juste avant la cuisson ?",
+      "answer": "on laisse reposer la pâte",
+      "options": [
+        "on laisse reposer la pâte",
+        "on ajoute la farine seule",
+        "on met la pâte au congélateur"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "Il faut suivre l’ordre des étapes, notamment le repos avant cuisson.",
+      "passage": "Recette : mélanger farine et œufs, ajouter le lait petit à petit, laisser reposer vingt minutes puis cuire à la poêle.",
+      "contextId": "document-reserve-07"
+    },
+    {
+      "id": "document-reserve-08",
+      "kind": "choice",
+      "prompt": "Quand est-il conseillé d’embarquer ?",
+      "answer": "à 10 h 05",
+      "options": [
+        "à 10 h 05",
+        "à 10 h 25",
+        "à 10 h 15 exactement"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "Dix minutes avant 10 h 15 : 10 h 05.",
+      "passage": "Train pour Lyon : départ 10 h 15, voie 3. Embarquement conseillé dix minutes avant. Le billet doit être conservé jusqu’à la sortie de la gare d’arrivée.",
+      "contextId": "document-reserve-08"
+    },
+    {
+      "id": "document-reserve-09",
+      "kind": "choice",
+      "prompt": "Que faut-il faire pour visiter ?",
+      "answer": "prendre rendez-vous",
+      "options": [
+        "prendre rendez-vous",
+        "venir n’importe quel jour",
+        "apporter de la nourriture aux animaux"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "L’accueil se fait sur rendez-vous et seulement les jours indiqués.",
+      "passage": "Le refuge reçoit les visites sur rendez-vous du mercredi au samedi. Les animaux ne peuvent pas être nourris par les visiteurs.",
+      "contextId": "document-reserve-09"
+    },
+    {
+      "id": "document-reserve-10",
+      "kind": "choice",
+      "prompt": "Quel don est accepté ?",
+      "answer": "une peluche propre et en bon état",
+      "options": [
+        "une peluche propre et en bon état",
+        "un jouet cassé",
+        "un objet déposé après la date limite"
+      ],
+      "skillIds": [
+        "document"
+      ],
+      "explanation": "La peluche respecte le type d’objet et la condition d’état.",
+      "passage": "Collecte de jouets : objets propres et en bon état uniquement. Dépôt à la mairie avant le 15 décembre. Les peluches sont acceptées.",
+      "contextId": "document-reserve-10"
     }
   ]
 }

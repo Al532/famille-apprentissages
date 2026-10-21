@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "0.3.0",
+  "revision": "0.4.0",
   "packs": [
     "packs/francais-homophones-bases-6e.json",
     "packs/francais-homophones-determinants-6e.json",
@@ -10,6 +10,9 @@
     "packs/francais-vocabulaire-6e.json",
     "packs/francais-lecture-6e.json",
     "packs/calcul-ce1.json",
-    "packs/fractions-6e.json"
+    "packs/histoire-cm2.json",
+    "packs/geographie-cm2.json",
+    "packs/histoire-reperes.json",
+    "packs/geographie-reperes.json"
   ]
 }

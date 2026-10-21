@@ -1,6 +1,6 @@
 {
   "id": "francais-homophones-contexte-6e",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "title": "Homophones : le sens et les verbes",
   "subject": "Français",
   "levels": [
@@ -769,6 +769,1752 @@
         "marché",
         "marcher"
       ]
+    },
+    {
+      "id": "la-la-las-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Pose ta veste ___. »",
+      "answer": "là",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "la-la-las-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Le chien ? Elle ___ vu. »",
+      "answer": "l’a",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "la-la-las-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ reconnu, ce chanteur ? »",
+      "answer": "l’as",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "la-la-las-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « J’écoute ___ radio. »",
+      "answer": "la",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "la-la-las-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « C’est par ___ qu’il faut passer. »",
+      "answer": "là",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "la-la-las-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Cette lettre, il ___ écrite hier. »",
+      "answer": "l’a",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "la-la-las-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ prise, la clé ? »",
+      "answer": "l’as",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "la-la-las-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Je ___ regarde, cette image. »",
+      "answer": "la",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "la-la-las-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Reste ___ un instant. »",
+      "answer": "là",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "la-la-las-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Ce dessin, maman ___ gardé. »",
+      "answer": "l’a",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "la-la-las-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ trouvée, cette réponse ? »",
+      "answer": "l’as",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "la-la-las-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Ferme ___ porte. »",
+      "answer": "la",
+      "options": [
+        "la",
+        "là",
+        "l’a",
+        "l’as"
+      ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Il veut venir, ___ il est malade. »",
+      "answer": "mais",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Je cherche ___ chaussettes. »",
+      "answer": "mes",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ___ son chapeau. »",
+      "answer": "met",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ du sel dans la soupe. »",
+      "answer": "mets",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Je ___ mes bottes. »",
+      "answer": "mets",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Ce sont ___ affaires à moi. »",
+      "answer": "mes",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Il fait beau, ___ il y a du vent. »",
+      "answer": "mais",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Le jardinier ___ des graines en terre. »",
+      "answer": "met",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Où sont ___ lunettes ? »",
+      "answer": "mes",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Tu peux essayer, ___ sois prudent. »",
+      "answer": "mais",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Il ___ le couvert. »",
+      "answer": "met",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "mais-mes-met-mets-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Je ___ le livre sur la table. »",
+      "answer": "mets",
+      "options": [
+        "mais",
+        "mes",
+        "met",
+        "mets"
+      ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+    },
+    {
+      "id": "peu-peux-peut-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Je ___ t’aider. »",
+      "answer": "peux",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "peu-peux-peut-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ___ venir demain. »",
+      "answer": "peut",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "peu-peux-peut-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Il reste ___ de temps. »",
+      "answer": "peu",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "peu-peux-peut-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ entrer. »",
+      "answer": "peux",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "peu-peux-peut-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Un oiseau ___ voler. »",
+      "answer": "peut",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "peu-peux-peut-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Il parle très ___. »",
+      "answer": "peu",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "peu-peux-peut-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Je ___ recommencer. »",
+      "answer": "peux",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "peu-peux-peut-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « On ___ attendre ici. »",
+      "answer": "peut",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "peu-peux-peut-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Ajoute un ___ d’eau. »",
+      "answer": "peu",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "peu-peux-peut-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « ___-tu fermer la porte ? »",
+      "answer": "peux",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "peu-peux-peut-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Personne ne ___ le savoir. »",
+      "answer": "peut",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "peu-peux-peut-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Cette soupe a ___ de goût. »",
+      "answer": "peu",
+      "options": [
+        "peu",
+        "peux",
+        "peut"
+      ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+    },
+    {
+      "id": "sans-sen-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Il part ___ son manteau. »",
+      "answer": "sans",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "sans-sen-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ___ souvient très bien. »",
+      "answer": "s’en",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "sans-sen-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Le bébé dort ___ bruit. »",
+      "answer": "sans",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "sans-sen-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Ils ___ vont demain. »",
+      "answer": "s’en",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "sans-sen-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Une boisson ___ sucre. »",
+      "answer": "sans",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "sans-sen-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Il ___ approche doucement. »",
+      "answer": "s’en",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "sans-sen-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « On ne peut pas entrer ___ billet. »",
+      "answer": "sans",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "sans-sen-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ___ occupe toute seule. »",
+      "answer": "s’en",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "sans-sen-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Je préfère le thé ___ lait. »",
+      "answer": "sans",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "sans-sen-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Le chien ___ éloigne. »",
+      "answer": "s’en",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "sans-sen-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Travaille ___ te presser. »",
+      "answer": "sans",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "sans-sen-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Il ___ remet à toi. »",
+      "answer": "s’en",
+      "options": [
+        "sans",
+        "s’en"
+      ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+    },
+    {
+      "id": "ni-ny-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Je ne bois ___ thé ni café. »",
+      "answer": "ni",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "ni-ny-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Nous ___ allons jamais. »",
+      "answer": "n’y",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "ni-ny-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Il n’a ni frère ___ sœur. »",
+      "answer": "ni",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "ni-ny-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ___ comprend rien. »",
+      "answer": "n’y",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "ni-ny-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Ce n’est ni rouge ___ bleu. »",
+      "answer": "ni",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "ni-ny-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « On ___ voit pas grand-chose. »",
+      "answer": "n’y",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "ni-ny-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Il ne chante ___ ne danse. »",
+      "answer": "ni",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "ni-ny-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Tu ___ penses plus. »",
+      "answer": "n’y",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "ni-ny-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Je ne veux ni sel ___ poivre. »",
+      "answer": "ni",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "ni-ny-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Ils ___ habitent plus. »",
+      "answer": "n’y",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "ni-ny-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Ni toi ___ moi ne le savons. »",
+      "answer": "ni",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "ni-ny-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Je ___ suis jamais allé. »",
+      "answer": "n’y",
+      "options": [
+        "ni",
+        "n’y"
+      ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+    },
+    {
+      "id": "infinitif-participe-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Nous avons ___ dehors. »",
+      "answer": "joué",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "infinitif-participe-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Il veut ___ aux cartes. »",
+      "answer": "jouer",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "infinitif-participe-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Elle vient de ___ du piano. »",
+      "answer": "jouer",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "infinitif-participe-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « J’ai bien ___ aujourd’hui. »",
+      "answer": "joué",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "infinitif-participe-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Pour ___, il faut un ballon. »",
+      "answer": "jouer",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "infinitif-participe-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Tu as ___ avec nous. »",
+      "answer": "joué",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "infinitif-participe-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Ils aiment ___ ensemble. »",
+      "answer": "jouer",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "infinitif-participe-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Le match a été ___ hier. »",
+      "answer": "joué",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "infinitif-participe-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Avant de ___, échauffe-toi. »",
+      "answer": "jouer",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "infinitif-participe-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « On a ___ jusqu’au soir. »",
+      "answer": "joué",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "infinitif-participe-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Je vais ___ après le goûter. »",
+      "answer": "jouer",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "infinitif-participe-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Le musicien a ___ un air. »",
+      "answer": "joué",
+      "options": [
+        "jouer",
+        "joué"
+      ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+    },
+    {
+      "id": "homophones-lexicaux-var-01",
+      "kind": "choice",
+      "prompt": "Quel mot désigne une partie du corps ?",
+      "answer": "cou",
+      "options": [
+        "cou",
+        "coup",
+        "coût"
+      ],
+      "skillIds": [
+        "homophones-lexicaux"
+      ],
+      "explanation": "Le cou relie la tête au tronc. Un coup est un choc, le coût est un prix."
+    },
+    {
+      "id": "homophones-lexicaux-var-02",
+      "kind": "choice",
+      "prompt": "Le prix d’un objet est son…",
+      "answer": "coût",
+      "options": [
+        "cou",
+        "coup",
+        "coût"
+      ],
+      "skillIds": [
+        "homophones-lexicaux"
+      ],
+      "explanation": "Le coût est le montant à payer."
+    },
+    {
+      "id": "homophones-lexicaux-var-03",
+      "kind": "choice",
+      "prompt": "Un choc reçu est un…",
+      "answer": "coup",
+      "options": [
+        "cou",
+        "coup",
+        "coût"
+      ],
+      "skillIds": [
+        "homophones-lexicaux"
+      ],
+      "explanation": "Un coup peut être donné ou reçu."
+    },
+    {
+      "id": "homophones-lexicaux-var-04",
+      "kind": "choice",
+      "prompt": "Dans « ce verre est plein », le mot verre désigne…",
+      "answer": "un récipient",
+      "options": [
+        "un récipient",
+        "une couleur",
+        "un animal"
+      ],
+      "skillIds": [
+        "homophones-lexicaux"
+      ],
+      "explanation": "Verre : récipient ou matière. Vert : couleur. Ver : animal."
+    },
+    {
+      "id": "homophones-lexicaux-var-05",
+      "kind": "choice",
+      "prompt": "Quelle couleur s’écrit avec un t final ?",
+      "answer": "vert",
+      "options": [
+        "ver",
+        "verre",
+        "vert"
+      ],
+      "skillIds": [
+        "homophones-lexicaux"
+      ],
+      "explanation": "L’adjectif vert devient verte au féminin."
+    },
+    {
+      "id": "homophones-lexicaux-var-06",
+      "kind": "choice",
+      "prompt": "Quel animal vit dans la terre ?",
+      "answer": "ver",
+      "options": [
+        "vert",
+        "verre",
+        "ver"
+      ],
+      "skillIds": [
+        "homophones-lexicaux"
+      ],
+      "explanation": "Un ver de terre est un animal."
+    },
+    {
+      "id": "homophones-lexicaux-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Le boulanger vend du ___. »",
+      "answer": "pain",
+      "options": [
+        "pin",
+        "pain",
+        "peint"
+      ],
+      "skillIds": [
+        "homophones-lexicaux"
+      ],
+      "explanation": "Le pain se mange ; le pin est un arbre ; peint vient de peindre."
+    },
+    {
+      "id": "homophones-lexicaux-var-08",
+      "kind": "choice",
+      "prompt": "Quel mot désigne un arbre ?",
+      "answer": "pin",
+      "options": [
+        "pain",
+        "peint",
+        "pin"
+      ],
+      "skillIds": [
+        "homophones-lexicaux"
+      ],
+      "explanation": "Le pin est un conifère."
+    },
+    {
+      "id": "homophones-lexicaux-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Le ballon est dans le ___ de l’équipe adverse. »",
+      "answer": "camp",
+      "options": [
+        "quand",
+        "camp",
+        "qu’en"
+      ],
+      "skillIds": [
+        "homophones-lexicaux"
+      ],
+      "explanation": "Un camp peut désigner le côté occupé par une équipe."
+    },
+    {
+      "id": "homophones-lexicaux-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « ___ viendras-tu ? »",
+      "answer": "Quand",
+      "options": [
+        "Quand",
+        "Camp",
+        "Qu’en"
+      ],
+      "skillIds": [
+        "homophones-lexicaux"
+      ],
+      "explanation": "Quand pose une question sur le moment."
+    },
+    {
+      "id": "si-sy-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « ___ tu veux, viens avec nous. »",
+      "answer": "si",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "si-sy-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « Il ___ rend tous les jours. »",
+      "answer": "s’y",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "si-sy-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Je me demande ___ elle viendra. »",
+      "answer": "si",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "si-sy-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Elle ___ habitue peu à peu. »",
+      "answer": "s’y",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "si-sy-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Ce gâteau est ___ bon ! »",
+      "answer": "si",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "si-sy-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Il ___ prend bien. »",
+      "answer": "s’y",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "si-sy-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « ___ seulement il faisait beau ! »",
+      "answer": "si",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "si-sy-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Les enfants ___ amusent. »",
+      "answer": "s’y",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "si-sy-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Dis-moi ___ tu comprends. »",
+      "answer": "si",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "si-sy-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « On ___ retrouve à midi. »",
+      "answer": "s’y",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "si-sy-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Elle est ___ contente. »",
+      "answer": "si",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "si-sy-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Le chat ___ cache souvent. »",
+      "answer": "s’y",
+      "options": [
+        "si",
+        "s’y"
+      ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+    },
+    {
+      "id": "mer-mere-maire-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Le bateau traverse la ___. »",
+      "answer": "mer",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "mer-mere-maire-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « La ___ dirige la commune. »",
+      "answer": "maire",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "mer-mere-maire-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « La ___ de Léo vient le chercher. »",
+      "answer": "mère",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "mer-mere-maire-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Nous nous baignons dans la ___. »",
+      "answer": "mer",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "mer-mere-maire-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Le ___ célèbre le mariage en mairie. »",
+      "answer": "maire",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "mer-mere-maire-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Cette jument est la ___ du poulain. »",
+      "answer": "mère",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "mer-mere-maire-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « La ___ est salée. »",
+      "answer": "mer",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "mer-mere-maire-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Le conseil municipal élit le ___. »",
+      "answer": "maire",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "mer-mere-maire-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Sa ___ lui lit une histoire. »",
+      "answer": "mère",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "mer-mere-maire-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Le port est au bord de la ___. »",
+      "answer": "mer",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "mer-mere-maire-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « On rencontre la ___ à la mairie. »",
+      "answer": "maire",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "mer-mere-maire-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « C’est une ___ de trois enfants. »",
+      "answer": "mère",
+      "options": [
+        "mer",
+        "mère",
+        "maire"
+      ],
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+    },
+    {
+      "id": "pere-paire-pair-var-01",
+      "kind": "choice",
+      "prompt": "Complète : « Le ___ de Nina cuisine. »",
+      "answer": "père",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+    },
+    {
+      "id": "pere-paire-pair-var-02",
+      "kind": "choice",
+      "prompt": "Complète : « J’achète une ___ de chaussettes. »",
+      "answer": "paire",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+    },
+    {
+      "id": "pere-paire-pair-var-03",
+      "kind": "choice",
+      "prompt": "Complète : « Le nombre 12 est ___. »",
+      "answer": "pair",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+    },
+    {
+      "id": "pere-paire-pair-var-04",
+      "kind": "choice",
+      "prompt": "Complète : « Son ___ est musicien. »",
+      "answer": "père",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+    },
+    {
+      "id": "pere-paire-pair-var-05",
+      "kind": "choice",
+      "prompt": "Complète : « Une ___ de gants contient deux gants. »",
+      "answer": "paire",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+    },
+    {
+      "id": "pere-paire-pair-var-06",
+      "kind": "choice",
+      "prompt": "Complète : « Un nombre divisible par 2 est ___. »",
+      "answer": "pair",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+    },
+    {
+      "id": "pere-paire-pair-var-07",
+      "kind": "choice",
+      "prompt": "Complète : « Elle joue avec son ___. »",
+      "answer": "père",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+    },
+    {
+      "id": "pere-paire-pair-var-08",
+      "kind": "choice",
+      "prompt": "Complète : « Il manque une chaussure à cette ___. »",
+      "answer": "paire",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+    },
+    {
+      "id": "pere-paire-pair-var-09",
+      "kind": "choice",
+      "prompt": "Complète : « Le nombre 8 est ___. »",
+      "answer": "pair",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+    },
+    {
+      "id": "pere-paire-pair-var-10",
+      "kind": "choice",
+      "prompt": "Complète : « Mon ___ m’attend dehors. »",
+      "answer": "père",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+    },
+    {
+      "id": "pere-paire-pair-var-11",
+      "kind": "choice",
+      "prompt": "Complète : « Prends une ___ de ciseaux. »",
+      "answer": "paire",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+    },
+    {
+      "id": "pere-paire-pair-var-12",
+      "kind": "choice",
+      "prompt": "Complète : « Le nombre 20 est ___. »",
+      "answer": "pair",
+      "options": [
+        "père",
+        "paire",
+        "pair"
+      ],
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
     }
   ]
 }
