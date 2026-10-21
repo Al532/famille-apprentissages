@@ -18,3 +18,5 @@
 .choices.music-choices{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
 .choices.music-choices button{min-width:0;padding:18px 0;font-size:1.1rem}
 @media(max-width:400px){.choices.music-choices{gap:4px}.choices.music-choices button{font-size:1rem}}
+
+.music-feedback{display:flex;align-items:center;justify-content:center;gap:24px}.music-feedback strong{font-size:3rem}.music-feedback button{font-size:1.5rem}

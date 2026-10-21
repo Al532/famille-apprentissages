@@ -39,3 +39,11 @@ Un ancien résultat reste rattaché à ses identifiants de notion. Aucun effacem
 La séance occupe le viewport utile, avec prise en compte des zones de sécurité des téléphones et de la PWA. Un débordement exceptionnel reste défilable, notamment pour une longue explication ou une grande taille de police. Une bonne réponse affiche un signe de réussite puis passe automatiquement à la suivante après 650 ms. Une mauvaise réponse affiche le corrigé et attend « J’ai compris ». En cas d’échec d’enregistrement, seul le réessai de la même tentative est proposé, sans doublon.
 
 Le suivi parent présente les notions, les exemples rencontrés, les réponses observées et l’échéance. « Exemples variés réussis » décrit des preuves sur une journée, pas une maîtrise scolaire certifiée. Les QCM ne prouvent pas à eux seuls une capacité de rédaction ou de production autonome. Les paramètres sont des choix pédagogiques initiaux, pas un dispositif validé de diagnostic scolaire.
+
+## Lecture musicale d’Ondine
+
+La lecture commence par do3, ré3, mi3. Deux bonnes réponses consécutives à chacune des notes déjà introduites ouvrent fa3, puis sol3, puis do3 en main gauche, si2, la2, sol2, fa2. Les anciennes notes restent mélangées aux nouvelles ; une erreur revient après deux autres réponses. Le déblocage est recalculé depuis l’historique synchronisé et reste acquis après une erreur. Les réponses conservent leurs identifiants et leur calendrier individuel. Les séances gardent leurs limites habituelles de 24 réponses et 12 minutes.
+
+Le corrigé affiche et prononce uniquement le nom de la note via la synthèse vocale française du navigateur. Les symboles des clés restent sur la portée, sans indication textuelle. Si le navigateur ne possède pas la synthèse vocale, le nom reste affiché.
+
+Le parcours d’Ondine propose aussi un lien vers « Les petites notes · Piano », dans un nouvel onglet pour permettre l’accès au micro. Ce site conserve ses droits d’accès existants et son suivi propre ; ses résultats ne sont pas importés dans le suivi Firebase du hub.

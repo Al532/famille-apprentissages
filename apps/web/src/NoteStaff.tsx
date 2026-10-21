@@ -8,7 +8,7 @@ export function staffLayout({clef,step}:StaffNote){
 }
 export function NoteStaff({note}:{note:StaffNote}){
  const {y,ledger,down}=staffLayout(note);
- const label=`Une note à lire en clé de ${note.clef==='treble'?'sol':'fa'}`;
+ const label='Une note à lire sur la portée';
  return <figure className="music-staff"><svg viewBox="0 0 320 176" role="img" aria-label={label}>
   <title>{label}</title>
   <g stroke="currentColor" strokeWidth="1.3">{[48,64,80,96,112].map(y=><line key={y} x1="24" x2="296" y1={y} y2={y}/>)}</g>
@@ -16,5 +16,5 @@ export function NoteStaff({note}:{note:StaffNote}){
   {ledger!==undefined&&<line x1="185" x2="223" y1={ledger} y2={ledger} stroke="currentColor" strokeWidth="1.5"/>}
   <ellipse cx="204" cy={y} rx="11" ry="7.5" transform={`rotate(-18 204 ${y})`} fill="currentColor"/>
   <line x1={down?194:214} x2={down?194:214} y1={y} y2={y+(down?48:-48)} stroke="currentColor" strokeWidth="1.8"/>
- </svg><figcaption>Clé de {note.clef==='treble'?'sol':'fa'}</figcaption></figure>;
+ </svg></figure>;
 }

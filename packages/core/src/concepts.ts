@@ -60,9 +60,33 @@ export function projectQuestionReviews(modules:Module[],results:Result[]):Questi
   return [{moduleId:module.id,exerciseId:q.id,card:card!,lastDay:learningDay(history.at(-1)!.recordedAt),needsRepair:history.at(-1)!.correct===false}];
  }));
 }
+/** Staff notes open in order after two consecutive correct answers per earlier note.
+ * Unlocks are reconstructed from immutable history, and never lost after a later error. */
+export const isStaffModule=(module:Module)=>module.exercises.every(q=>!!q.staff);
+export function unlockedStaffExercises(module:Module,results:Result[]):Exercise[]{
+ const bank=[...module.exercises].sort((a,b)=>{
+  const x=a.staff!,y=b.staff!;
+  return x.clef===y.clef?(x.clef==='treble'?x.step-y.step:y.step-x.step):x.clef==='treble'?-1:1;
+ });
+ const rows=ordered(results).filter(r=>r.moduleId===module.id);
+ const learned=(q:Exercise)=>{let streak=0;for(const r of rows.filter(r=>r.exerciseId===q.id)){streak=r.correct===true?streak+1:0;if(streak>=2)return true;}return false;};
+ let count=Math.min(3,bank.length);
+ while(count<bank.length&&bank.slice(0,count).every(learned))count++;
+ return bank.slice(0,count);
+}
+function staffEvidence(module:Module,session:LearningSession,results:Result[]):ConceptEvidence {
+ const rows=ordered([...results,...session.answers]);
+ const bank=unlockedStaffExercises(module,rows);
+ const today=rows.filter(r=>r.moduleId===module.id&&learningDay(r.recordedAt)===learningDay(session.startedAt));
+ const correct=bank.filter(q=>today.filter(r=>r.exerciseId===q.id).at(-1)?.correct===true);
+ const pending=bank.filter(q=>today.filter(r=>r.exerciseId===q.id).at(-1)?.correct===false).map(q=>q.id);
+ return {attempts:session.answers.filter(r=>r.moduleId===module.id).length,distinctCorrect:correct.length,transferAfterError:0,pending,ready:bank.length===module.exercises.length&&correct.length===bank.length};
+}
+const practiceLimit=(modules:Module[],c:SessionConcept)=>isStaffModule(modules.find(m=>m.id===c.moduleId)!)?SESSION_MAX_QUESTIONS:CONCEPT_DAILY_LIMIT;
 /** Balance concept practice in French and individual retrieval of historical/geographic facts. */
 export function planSession(modules:Module[],results:Result[],subject='Toutes',now=new Date()):LearningSession {
- const eligibleModules=modules.filter(m=>subject==='Toutes'||m.subject===subject);
+ const matching=modules.filter(m=>subject==='Toutes'||m.subject===subject);
+ const staffModules=matching.filter(isStaffModule),eligibleModules=matching.filter(m=>!isStaffModule(m));
  const all=projectConcepts(eligibleModules,results);
  const states=all.filter(c=>availableToday(c,now));
  const priority=(c:ConceptState)=>c.evidence.pending.length?0:c.card?1:2;
@@ -85,10 +109,18 @@ export function planSession(modules:Module[],results:Result[],subject='Toutes',n
  const chosen:SessionConcept[]=[];
  while(chosen.length<conceptLimit&&banks.some(b=>b.length))for(const bank of banks){const c=bank.shift();if(c&&chosen.length<conceptLimit)chosen.push({moduleId:c.moduleId,skillId:c.skillId,label:c.label,subject:c.subject});}
  chosen.push(...[...due,...fresh].slice(0,12-chosen.length*3).map(({review,...f})=>f));
+ for(const m of staffModules){
+  const c={moduleId:m.id,skillId:m.skills[0].id,label:m.title,subject:m.subject};
+  const reviews=projectQuestionReviews([m],results);
+  const bank=unlockedStaffExercises(m,results);
+  if(bank.length<m.exercises.length||bank.some(q=>!reviews.some(r=>r.exerciseId===q.id))||reviews.some(r=>Date.parse(r.card.due)<=now.getTime()||r.needsRepair))chosen.push(c);
+ }
  return {startedAt:now.toISOString(),subject,concepts:chosen,answers:[]};
 }
 export type SessionQuestion={module:Module;exercise:Exercise;concept:SessionConcept;retry:boolean};
 export function sessionConceptEvidence(session:LearningSession,modules:Module[],allResults:Result[],concept:SessionConcept){
+ const staffModule=modules.find(m=>m.id===concept.moduleId)!;
+ if(!concept.exerciseId&&isStaffModule(staffModule))return staffEvidence(staffModule,session,allResults);
  if(concept.exerciseId){
   const rows=ordered([...allResults,...session.answers]).filter(r=>r.moduleId===concept.moduleId&&r.exerciseId===concept.exerciseId&&learningDay(r.recordedAt)===learningDay(session.startedAt));
   const ready=rows.at(-1)?.correct===true;
@@ -104,18 +136,31 @@ export function sessionStatus(session:LearningSession,modules:Module[],allResult
  if(!session.concepts.length)return 'empty';
  if(session.concepts.every(c=>sessionConceptEvidence(session,modules,allResults,c).ready))return 'complete';
  if(session.answers.length>=SESSION_MAX_QUESTIONS||session.answers.reduce((n,r)=>n+r.durationMs,0)>=SESSION_MAX_DURATION_MS)return 'limit';
- if(session.concepts.every(c=>{const e=sessionConceptEvidence(session,modules,allResults,c);return e.ready||e.attempts>=CONCEPT_DAILY_LIMIT;}))return 'limit';
+ if(session.concepts.every(c=>{const e=sessionConceptEvidence(session,modules,allResults,c);return e.ready||e.attempts>=practiceLimit(modules,c);}))return 'limit';
  return 'working';
 }
 export function nextSessionQuestion(session:LearningSession,modules:Module[],allResults:Result[],random:()=>number=Math.random):SessionQuestion|undefined {
  if(sessionStatus(session,modules,allResults)!=='working')return;
  const results=ordered([...allResults,...session.answers]);
  const last= session.answers.at(-1),lastKey=last?questionKey(last.moduleId,last.exerciseId):'';
- const candidates=session.concepts.filter(c=>{const e=sessionConceptEvidence(session,modules,results,c);return !e.ready&&e.attempts<CONCEPT_DAILY_LIMIT;});
+ const candidates=session.concepts.filter(c=>{const e=sessionConceptEvidence(session,modules,results,c);return !e.ready&&e.attempts<practiceLimit(modules,c);});
  const lastIndex=(c:SessionConcept)=>session.answers.findLastIndex(r=>r.moduleId===c.moduleId&&(c.exerciseId?r.exerciseId===c.exerciseId:r.skillIds.includes(c.skillId)));
  candidates.sort((a,b)=>lastIndex(a)-lastIndex(b));
  for(const concept of candidates){
   const module=modules.find(m=>m.id===concept.moduleId)!;
+  if(!concept.exerciseId&&isStaffModule(module)){
+   const bank=unlockedStaffExercises(module,results);
+   const index=(q:Exercise)=>session.answers.findLastIndex(r=>r.moduleId===module.id&&r.exerciseId===q.id);
+   const latest=(q:Exercise)=>results.filter(r=>r.moduleId===module.id&&r.exerciseId===q.id).at(-1);
+   const eligible=bank.filter(q=>questionKey(module.id,q.id)!==lastKey);
+   const errors=eligible.filter(q=>latest(q)?.correct===false&&(index(q)<0||session.answers.length-index(q)>=3));
+   const fresh=eligible.filter(q=>!results.some(r=>r.moduleId===module.id&&r.exerciseId===q.id));
+   const pool=errors.length?errors:fresh.length?fresh:eligible;
+   pool.sort((a,b)=>index(a)-index(b));
+   const exercise=pool[0];
+   if(exercise)return {module,exercise,concept,retry:latest(exercise)?.correct===false};
+   continue;
+  }
   const bank=module.exercises.filter(q=>concept.exerciseId?q.id===concept.exerciseId:q.skillIds.includes(concept.skillId)&&reviewModeFor(module,q)==='concept');
   if(concept.exerciseId){const lastError=session.answers.findLastIndex(r=>r.moduleId===module.id&&r.exerciseId===concept.exerciseId&&r.correct===false);if(lastError>=0&&session.answers.length-lastError<4)continue;}
   const evidence=sessionConceptEvidence(session,modules,results,concept);
@@ -135,7 +180,7 @@ export function nextSessionQuestion(session:LearningSession,modules:Module[],all
  // If the last failed factual card needs spacing, use new cards as intervening retrievals.
  const waiting=candidates.find(c=>c.exerciseId);
  if(waiting){
-  const bank=modules.flatMap(module=>module.exercises.filter(q=>reviewModeFor(module,q)==='question'&&!session.concepts.some(c=>c.moduleId===module.id&&c.exerciseId===q.id)&&!session.answers.some(r=>r.moduleId===module.id&&r.exerciseId===q.id)).map(exercise=>({module,exercise})));
+  const bank=modules.flatMap(module=>module.exercises.filter(q=>!isStaffModule(module)&&reviewModeFor(module,q)==='question'&&!session.concepts.some(c=>c.moduleId===module.id&&c.exerciseId===q.id)&&!session.answers.some(r=>r.moduleId===module.id&&r.exerciseId===q.id)).map(exercise=>({module,exercise})));
   const unseen=bank.filter(({module,exercise})=>!results.some(r=>r.moduleId===module.id&&r.exerciseId===exercise.id));
   const pool=unseen.length?unseen:bank.sort((a,b)=>(results.findLast(r=>r.moduleId===a.module.id&&r.exerciseId===a.exercise.id)?.recordedAt??'').localeCompare(results.findLast(r=>r.moduleId===b.module.id&&r.exerciseId===b.exercise.id)?.recordedAt??''));
   const chosen=pool[Math.min(pool.length-1,Math.floor(random()*pool.length))];

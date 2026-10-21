@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {catalogSchema,projectConcepts,projectQuestionReviews,reviewModeFor,conceptEvidence,planSession,nextSessionQuestion,sessionStatus,SESSION_MAX_QUESTIONS,learningDay,type Result,type Module,type LearningSession} from '@famille/core';
+import {catalogSchema,projectConcepts,projectQuestionReviews,reviewModeFor,conceptEvidence,planSession,nextSessionQuestion,sessionStatus,unlockedStaffExercises,SESSION_MAX_QUESTIONS,learningDay,type Result,type Module,type LearningSession} from '@famille/core';
 import raw from '../packages/catalog/catalog.json';
 const catalog=catalogSchema.parse(raw),modules=catalog.modules.filter(m=>m.levels.includes('6e'));
 const module=modules[0],skill=module.skills[0].id,questions=module.exercises.filter(q=>q.skillIds.includes(skill));
@@ -98,4 +98,55 @@ test('un oubli de date n’empêche pas de vérifier séparément la compréhens
  const rows=[result(m,date,false),...reasoning.slice(0,3).map(q=>result(m,q))];
  assert.equal(projectConcepts([m],rows).find(c=>c.skillId==='republique')!.evidence.ready,true);assert.equal(projectQuestionReviews([m],rows)[0].needsRepair,true);
  const session:LearningSession={startedAt:start.toISOString(),subject:m.subject,concepts:[{moduleId:m.id,skillId:'republique',label:'République',subject:m.subject}],answers:[]};assert.equal(sessionStatus(session,[m],rows),'complete');
+});
+
+const music=catalog.modules.find(m=>m.id==='musique-lecture-ondine')!;
+test('la lecture ouvre do ré mi, puis fa, sol et la main gauche en descendant',()=>{
+ const rows:Result[]=[];
+ assert.deepEqual(unlockedStaffExercises(music,rows).map(q=>q.id),['treble-0','treble-1','treble-2']);
+ const order=['treble-0','treble-1','treble-2','treble-3','treble-4','bass-4','bass-3','bass-2','bass-1','bass-0'];
+ for(let i=0;i<order.length;i++){
+  const q=music.exercises.find(q=>q.id===order[i])!;
+  rows.push(result(music,q));
+  assert.equal(unlockedStaffExercises(music,rows).length,Math.max(3,i+1));
+  rows.push(result(music,q));
+  assert.equal(unlockedStaffExercises(music,rows).length,Math.min(10,Math.max(3,i+2)));
+ }
+ rows.push(result(music,music.exercises[0],false));
+ assert.equal(unlockedStaffExercises(music,rows).length,10,'une erreur ne supprime pas les notes déjà débloquées');
+ assert.deepEqual(unlockedStaffExercises(music,[...rows].reverse()),unlockedStaffExercises(music,rows));
+});
+test('les séances musicales progressent sans notes verrouillées, conservent les réponses et se terminent',()=>{
+ const accumulated:Result[]=[],seen:string[]=[];
+ let complete=false;
+ for(let day=0;day<5&&!complete;day++){
+  const at=new Date(start.getTime()+day*86400000),session=planSession([music],accumulated,'Musique',at);
+  for(let i=0;i<30&&sessionStatus(session,[music],accumulated)==='working';i++){
+   const next=nextSessionQuestion(session,[music],accumulated,()=>0)!;assert.ok(next);
+   assert.ok(unlockedStaffExercises(music,[...accumulated,...session.answers]).some(q=>q.id===next.exercise.id));
+   assert.notEqual(session.answers.at(-1)?.exerciseId,next.exercise.id);seen.push(next.exercise.id);
+   session.answers.push(result(music,next.exercise,true,at));
+  }
+  assert.ok(session.answers.length<=SESSION_MAX_QUESTIONS);
+  complete=sessionStatus(session,[music],accumulated)==='complete';
+  accumulated.push(...session.answers);
+  if(complete)assert.equal(planSession([music],accumulated,'Musique',at).concepts.length,0);
+ }
+ assert.deepEqual([...new Set(seen)],['treble-0','treble-1','treble-2','treble-3','treble-4','bass-4','bass-3','bass-2','bass-1','bass-0']);
+ assert.equal(complete,true);
+ assert.equal(projectQuestionReviews([music],accumulated).length,10);
+});
+test('les erreurs de musique sont espacées, les séances restent bornées et les maths ne débloquent aucune note',()=>{
+ const session=planSession([music],[],'Musique',start);
+ for(let i=0;i<30&&sessionStatus(session,[music],[])==='working';i++){
+  const next=nextSessionQuestion(session,[music],[],()=>0)!;assert.ok(next);
+  assert.ok(['treble-0','treble-1','treble-2'].includes(next.exercise.id));
+  if(i>1)assert.notEqual(session.answers[i-2].exerciseId,next.exercise.id);
+  session.answers.push(result(music,next.exercise,false));
+ }
+ assert.equal(sessionStatus(session,[music],[]),'limit');
+ assert.equal(session.answers.length,SESSION_MAX_QUESTIONS);
+ const math=catalog.modules.find(m=>m.id==='calcul-ce1')!;
+ assert.equal(unlockedStaffExercises(music,[result(math),result(math)]).length,3);
+ assert.ok(planSession([music,math],[],'Mathématiques',start).concepts.every(c=>c.moduleId===math.id));
 });
