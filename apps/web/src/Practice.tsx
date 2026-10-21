@@ -2,13 +2,15 @@ import React,{useEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
 import {CONTRACT_VERSION,nextSessionQuestion,sessionConceptEvidence,sessionStatus,SESSION_MAX_QUESTIONS,type LearningSession,type SessionQuestion,type Attempt,type Result} from '@famille/core';
 import {catalog} from './catalog';
+import {NoteStaff} from './NoteStaff';
 import {submit,type Learner,type Snapshot} from './store';
 
 function attemptId(){const bytes=crypto.getRandomValues(new Uint8Array(16));bytes[6]=(bytes[6]&15)|64;bytes[8]=(bytes[8]&63)|128;const h=Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');return `${h.slice(0,8)}-${h.slice(8,12)}-${h.slice(12,16)}-${h.slice(16,20)}-${h.slice(20)}`;}
 function shuffled<T,>(items:T[]){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 export function Practice({initial,learner,snapshot,onClose}:{initial:LearningSession;learner:Learner;snapshot:Snapshot;onClose:()=>void}){
  const [session,setSession]=useState(initial),[question,setQuestion]=useState<SessionQuestion|undefined>(()=>nextSessionQuestion(initial,catalog.modules,snapshot.results.filter(r=>r.learnerId===learner.id))),[feedback,setFeedback]=useState<Result>(),[error,setError]=useState(''),[busy,setBusy]=useState(false),[success,setSuccess]=useState(false),[answer,setAnswer]=useState(''),[revealed,setRevealed]=useState(false);
- const [options,setOptions]=useState(()=>shuffled(question?.exercise.options??[]));
+ const choices=(q:SessionQuestion|undefined)=>q?.exercise.staff?(q.exercise.options??[]):shuffled(q?.exercise.options??[]);
+ const [options,setOptions]=useState(()=>choices(question));
  const started=useRef(Date.now()),pending=useRef<Attempt|undefined>(undefined),locked=useRef(false),timer=useRef<ReturnType<typeof setTimeout>|undefined>(undefined),title=useRef<HTMLHeadingElement>(null);
  const latest=useRef(snapshot);latest.current=snapshot;
  const results=()=>latest.current.results.filter(r=>r.learnerId===learner.id);
@@ -16,7 +18,7 @@ export function Practice({initial,learner,snapshot,onClose}:{initial:LearningSes
  useEffect(()=>{title.current?.focus();},[question]);
  function advance(nextSession=session){
   const next=nextSessionQuestion(nextSession,catalog.modules,results());
-  setQuestion(next);setOptions(shuffled(next?.exercise.options??[]));setFeedback(undefined);setSuccess(false);setAnswer('');setRevealed(false);setError('');started.current=Date.now();locked.current=false;
+  setQuestion(next);setOptions(choices(next));setFeedback(undefined);setSuccess(false);setAnswer('');setRevealed(false);setError('');started.current=Date.now();locked.current=false;
  }
  async function send(value:string,rating?:1|2|3|4){
   if(!question||locked.current)return;locked.current=true;setBusy(true);setError('');
@@ -41,9 +43,9 @@ export function Practice({initial,learner,snapshot,onClose}:{initial:LearningSes
    <div className="question-layout">
     {q.passage&&<aside className="reading-passage"><p className="eyebrow">LE TEXTE</p><p>{q.passage}</p></aside>}
     {q.diagram==='town-map'&&<TownMap/>}
-    <div className="question-main"><h2 ref={title} tabIndex={-1}>{q.prompt}</h2>
+    <div className="question-main"><h2 ref={title} tabIndex={-1}>{q.prompt}</h2>{q.staff&&<NoteStaff note={q.staff}/>}
      {feedback?<div className="feedback" aria-live="polite"><h3>{feedback.correct===false?'Prenons le temps de comprendre.':'C’est enregistré.'}</h3><p>La réponse : <strong>{q.answer}</strong></p>{q.explanation&&<p>{q.explanation}</p>}<button className="primary" onClick={()=>advance()}>J’ai compris →</button></div>:<>
-      {q.kind==='choice'&&<div className="choices">{options.map(option=><button key={option} disabled={busy||success||!!error} onClick={()=>void send(option)}>{option}</button>)}</div>}
+      {q.kind==='choice'&&<div className={q.staff?"choices music-choices":"choices"}>{options.map(option=><button key={option} disabled={busy||success||!!error} onClick={()=>void send(option)}>{option}</button>)}</div>}
       {(q.kind==='number'||q.kind==='text')&&<form onSubmit={e=>{e.preventDefault();void send(answer);}}><label>Ta réponse<input required value={answer} disabled={busy||success||!!error} onChange={e=>setAnswer(e.target.value)}/></label><button className="primary" disabled={busy||success||!!error}>Vérifier</button></form>}
       {q.kind==='flashcard'&&(revealed?<><p>{q.answer}</p><div className="choices">{['À revoir','Difficile','Bien','Facile'].map((label,i)=><button disabled={busy||!!error} key={label} onClick={()=>void send('',(i+1) as 1|2|3|4)}>{label}</button>)}</div></>:<button className="primary" onClick={()=>setRevealed(true)}>Voir la réponse</button>)}
      </>}

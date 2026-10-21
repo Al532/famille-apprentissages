@@ -53,3 +53,25 @@ test('le catalogue actif ne demande plus de saisie et tous ses QCM ont des choix
   }
  }
 });
+
+test('la lecture musicale couvre exactement les deux étendues françaises sans altération',async()=>{
+ const {staffLayout}=await import('../apps/web/src/NoteStaff');
+ const {profileModules,globalProfile}=await import('../apps/web/src/profiles');
+ const music=catalog.modules.find(m=>m.id==='musique-lecture-ondine')!;
+ assert.ok(music);assert.equal(music.exercises.length,10);
+ for(const [clef,answers,ys] of [['treble',['Do','Ré','Mi','Fa','Sol'],[128,120,112,104,96]],['bass',['Fa','Sol','La','Si','Do'],[64,56,48,40,32]]] as const){
+  const qs=music.exercises.filter(q=>q.staff?.clef===clef);
+  assert.deepEqual(qs.map(q=>q.answer),answers);
+  assert.deepEqual(qs.map(q=>staffLayout(q.staff!).y),ys);
+  assert.equal(staffLayout(qs[clef==='treble'?0:4].staff!).ledger,clef==='treble'?128:32);
+  for(const q of qs){
+   assert.deepEqual(q.options,['Do','Ré','Mi','Fa','Sol','La','Si']);
+   const attempt={...base,moduleId:music.id,moduleVersion:music.version,exerciseId:q.id,answer:q.answer};
+   assert.equal(evaluate(catalog,attempt).correct,true);
+   assert.equal(evaluate(catalog,{...attempt,answer:q.answer==='Do'?'Ré':'Do'}).correct,false);
+  }
+ }
+ for(const level of ['CE1','CE2','Ondine']){assert.equal(globalProfile(level),'Ondine');assert.ok(profileModules(catalog.modules,level).some(m=>m.id===music.id));}
+ for(const level of ['6e','Maurice']){assert.equal(globalProfile(level),'Maurice');assert.ok(!profileModules(catalog.modules,level).some(m=>m.id===music.id));}
+ assert.ok(archive.some(c=>c.revision==='0.4.0'),'les anciennes réponses gardent leur catalogue');
+});
