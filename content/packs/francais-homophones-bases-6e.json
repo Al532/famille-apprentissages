@@ -1,6 +1,6 @@
 {
   "id": "francais-homophones-bases-6e",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": "Homophones : les indispensables",
   "subject": "Français",
   "levels": [
@@ -10,23 +10,81 @@
   "skills": [
     {
       "id": "a-as-a",
-      "label": "Distinguer a, as et à"
+      "label": "Distinguer a, as et à",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "a"
+        },
+        {
+          "id": "v2",
+          "label": "as"
+        },
+        {
+          "id": "v3",
+          "label": "à"
+        }
+      ]
     },
     {
       "id": "et-est-es",
-      "label": "Distinguer et, est et es"
+      "label": "Distinguer et, est et es",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "est"
+        },
+        {
+          "id": "v2",
+          "label": "et"
+        },
+        {
+          "id": "v3",
+          "label": "es"
+        }
+      ]
     },
     {
       "id": "on-ont",
-      "label": "Distinguer on et ont"
+      "label": "Distinguer on et ont",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "on"
+        },
+        {
+          "id": "v2",
+          "label": "ont"
+        }
+      ]
     },
     {
       "id": "son-sont",
-      "label": "Distinguer son et sont"
+      "label": "Distinguer son et sont",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "sont"
+        },
+        {
+          "id": "v2",
+          "label": "son"
+        }
+      ]
     },
     {
       "id": "ou-ou",
-      "label": "Distinguer ou et où"
+      "label": "Distinguer ou et où",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "ou"
+        },
+        {
+          "id": "v2",
+          "label": "où"
+        }
+      ]
     }
   ],
   "exercises": [
@@ -43,7 +101,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "On peut dire : « Lina avait oublié son cahier ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+      "explanation": "On peut dire : « Lina avait oublié son cahier ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée.",
+      "variantId": "v1"
     },
     {
       "id": "et-est-es-01",
@@ -58,7 +117,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "On peut dire : « Le ciel était gris ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+      "explanation": "On peut dire : « Le ciel était gris ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais ».",
+      "variantId": "v1"
     },
     {
       "id": "on-ont-01",
@@ -72,7 +132,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "On peut dire : « il ira au musée ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+      "explanation": "On peut dire : « il ira au musée ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient ».",
+      "variantId": "v1"
     },
     {
       "id": "son-sont-01",
@@ -86,7 +147,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "On peut dire : « Les portes étaient ouvertes ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+      "explanation": "On peut dire : « Les portes étaient ouvertes ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient).",
+      "variantId": "v1"
     },
     {
       "id": "ou-ou-01",
@@ -100,7 +162,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "On peut dire : « une pomme ou bien une poire ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+      "explanation": "On peut dire : « une pomme ou bien une poire ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment.",
+      "variantId": "v1"
     },
     {
       "id": "a-as-a-02",
@@ -115,7 +178,8 @@
         "a",
         "as",
         "à"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "et-est-es-02",
@@ -130,7 +194,8 @@
         "es",
         "et",
         "est"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "on-ont-02",
@@ -144,7 +209,8 @@
       "options": [
         "on",
         "ont"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "son-sont-02",
@@ -158,7 +224,8 @@
       "options": [
         "son",
         "sont"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "ou-ou-02",
@@ -172,7 +239,8 @@
       "options": [
         "ou",
         "où"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "a-as-a-03",
@@ -187,7 +255,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« à » introduit un lieu : « avait la piscine » ne convient pas. « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+      "explanation": "« à » introduit un lieu : « avait la piscine » ne convient pas. « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée.",
+      "variantId": "v3"
     },
     {
       "id": "et-est-es-03",
@@ -202,7 +271,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "Avec « tu », on écrit « es » : « tu étais prêt ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+      "explanation": "Avec « tu », on écrit « es » : « tu étais prêt ». « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais ».",
+      "variantId": "v3"
     },
     {
       "id": "on-ont-03",
@@ -216,7 +286,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "Le sujet de « parle » est le pronom « on ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+      "explanation": "Le sujet de « parle » est le pronom « on ». « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient ».",
+      "variantId": "v1"
     },
     {
       "id": "son-sont-03",
@@ -230,7 +301,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "Le sujet est pluriel : « Ces exercices étaient faciles ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+      "explanation": "Le sujet est pluriel : « Ces exercices étaient faciles ». « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient).",
+      "variantId": "v1"
     },
     {
       "id": "ou-ou-03",
@@ -244,7 +316,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« où » reprend un lieu : « la maison ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+      "explanation": "« où » reprend un lieu : « la maison ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment.",
+      "variantId": "v2"
     },
     {
       "id": "a-as-a-04",
@@ -259,7 +332,8 @@
         "à",
         "a",
         "as"
-      ]
+      ],
+      "variantId": "v1"
     },
     {
       "id": "et-est-es-04",
@@ -274,7 +348,8 @@
         "est",
         "es",
         "et"
-      ]
+      ],
+      "variantId": "v1"
     },
     {
       "id": "on-ont-04",
@@ -288,7 +363,8 @@
       "options": [
         "on",
         "ont"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "son-sont-04",
@@ -302,7 +378,8 @@
       "options": [
         "son",
         "sont"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "ou-ou-04",
@@ -316,7 +393,8 @@
       "options": [
         "ou",
         "où"
-      ]
+      ],
+      "variantId": "v1"
     },
     {
       "id": "a-as-a-05",
@@ -331,7 +409,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "Avec « tu », on écrit « as » : « tu avais fini ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée."
+      "explanation": "Avec « tu », on écrit « as » : « tu avais fini ». « a » et « as » sont des formes du verbe avoir : on peut les remplacer par « avait » et « avais ». La préposition « à » reste inchangée.",
+      "variantId": "v2"
     },
     {
       "id": "et-est-es-05",
@@ -346,7 +425,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« et » relie les deux prénoms. « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais »."
+      "explanation": "« et » relie les deux prénoms. « et » ajoute un élément (et puis). « est » et « es » sont le verbe être : on peut essayer « était » et « étais ».",
+      "variantId": "v2"
     },
     {
       "id": "on-ont-05",
@@ -360,7 +440,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« il peut entrer » fonctionne ; « avaient peut » ne fonctionne pas. « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient »."
+      "explanation": "« il peut entrer » fonctionne ; « avaient peut » ne fonctionne pas. « on » est un pronom sujet, remplaçable par « il ». « ont » est le verbe avoir au pluriel, remplaçable par « avaient ».",
+      "variantId": "v1"
     },
     {
       "id": "son-sont-05",
@@ -374,7 +455,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« étaient arrivés » montre qu’il s’agit du verbe être. « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient)."
+      "explanation": "« étaient arrivés » montre qu’il s’agit du verbe être. « son » accompagne un nom (son livre → mon livre). « sont » est le verbe être au pluriel (ils sont → ils étaient).",
+      "variantId": "v1"
     },
     {
       "id": "ou-ou-05",
@@ -388,7 +470,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« où » reprend ici un moment : « le jour ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment."
+      "explanation": "« où » reprend ici un moment : « le jour ». « ou » propose un choix (ou bien). « où » indique notamment un lieu ou un moment.",
+      "variantId": "v2"
     },
     {
       "id": "a-as-a-06",
@@ -403,7 +486,8 @@
         "as",
         "à",
         "a"
-      ]
+      ],
+      "variantId": "v3"
     },
     {
       "id": "et-est-es-06",
@@ -418,7 +502,8 @@
         "et",
         "est",
         "es"
-      ]
+      ],
+      "variantId": "v3"
     },
     {
       "id": "on-ont-06",
@@ -432,7 +517,8 @@
       "options": [
         "on",
         "ont"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "son-sont-06",
@@ -446,7 +532,8 @@
       "options": [
         "son",
         "sont"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "ou-ou-06",
@@ -460,7 +547,8 @@
       "options": [
         "ou",
         "où"
-      ]
+      ],
+      "variantId": "v1"
     },
     {
       "id": "a-as-a-var-01",
@@ -475,7 +563,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v3"
     },
     {
       "id": "a-as-a-var-02",
@@ -490,7 +579,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v2"
     },
     {
       "id": "a-as-a-var-03",
@@ -505,7 +595,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v1"
     },
     {
       "id": "a-as-a-var-04",
@@ -520,7 +611,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v3"
     },
     {
       "id": "a-as-a-var-05",
@@ -535,7 +627,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v1"
     },
     {
       "id": "a-as-a-var-06",
@@ -550,7 +643,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v3"
     },
     {
       "id": "a-as-a-var-07",
@@ -565,7 +659,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v2"
     },
     {
       "id": "a-as-a-var-08",
@@ -580,7 +675,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v3"
     },
     {
       "id": "a-as-a-var-09",
@@ -595,7 +691,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v1"
     },
     {
       "id": "a-as-a-var-10",
@@ -610,7 +707,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v2"
     },
     {
       "id": "a-as-a-var-11",
@@ -625,7 +723,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v1"
     },
     {
       "id": "a-as-a-var-12",
@@ -640,7 +739,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas."
+      "explanation": "« a » et « as » sont le verbe avoir : essaie « avait » ou « avais ». « à » est une préposition : ce remplacement ne convient pas.",
+      "variantId": "v3"
     },
     {
       "id": "a-as-a-strategie-01",
@@ -655,7 +755,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« avait » est une forme du verbe avoir : on écrit donc « a », sans accent."
+      "explanation": "« avait » est une forme du verbe avoir : on écrit donc « a », sans accent.",
+      "variantId": "v1"
     },
     {
       "id": "a-as-a-strategie-02",
@@ -670,7 +771,8 @@
       "skillIds": [
         "a-as-a"
       ],
-      "explanation": "« Elle avait appris » vérifie a. On apprend à faire quelque chose : à garde son accent."
+      "explanation": "« Elle avait appris » vérifie a. On apprend à faire quelque chose : à garde son accent.",
+      "variantId": "v1"
     },
     {
       "id": "et-est-es-var-01",
@@ -685,7 +787,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v1"
     },
     {
       "id": "et-est-es-var-02",
@@ -700,7 +803,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v3"
     },
     {
       "id": "et-est-es-var-03",
@@ -715,7 +819,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v2"
     },
     {
       "id": "et-est-es-var-04",
@@ -730,7 +835,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v1"
     },
     {
       "id": "et-est-es-var-05",
@@ -745,7 +851,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v2"
     },
     {
       "id": "et-est-es-var-06",
@@ -760,7 +867,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v3"
     },
     {
       "id": "et-est-es-var-07",
@@ -775,7 +883,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v1"
     },
     {
       "id": "et-est-es-var-08",
@@ -790,7 +899,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v2"
     },
     {
       "id": "et-est-es-var-09",
@@ -805,7 +915,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v3"
     },
     {
       "id": "et-est-es-var-10",
@@ -820,7 +931,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v1"
     },
     {
       "id": "et-est-es-var-11",
@@ -835,7 +947,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v2"
     },
     {
       "id": "et-est-es-var-12",
@@ -850,7 +963,8 @@
       "skillIds": [
         "et-est-es"
       ],
-      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis »."
+      "explanation": "« est » et « es » sont le verbe être : essaie « était » ou « étais ». « et » relie deux éléments : on peut essayer « et puis ».",
+      "variantId": "v3"
     },
     {
       "id": "on-ont-var-01",
@@ -864,7 +978,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v2"
     },
     {
       "id": "on-ont-var-02",
@@ -878,7 +993,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v1"
     },
     {
       "id": "on-ont-var-03",
@@ -892,7 +1008,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v2"
     },
     {
       "id": "on-ont-var-04",
@@ -906,7 +1023,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v1"
     },
     {
       "id": "on-ont-var-05",
@@ -920,7 +1038,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v2"
     },
     {
       "id": "on-ont-var-06",
@@ -934,7 +1053,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v1"
     },
     {
       "id": "on-ont-var-07",
@@ -948,7 +1068,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v2"
     },
     {
       "id": "on-ont-var-08",
@@ -962,7 +1083,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v1"
     },
     {
       "id": "on-ont-var-09",
@@ -976,7 +1098,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v2"
     },
     {
       "id": "on-ont-var-10",
@@ -990,7 +1113,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v1"
     },
     {
       "id": "on-ont-var-11",
@@ -1004,7 +1128,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v2"
     },
     {
       "id": "on-ont-var-12",
@@ -1018,7 +1143,8 @@
       "skillIds": [
         "on-ont"
       ],
-      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un »."
+      "explanation": "« ont » est le verbe avoir : remplace-le par « avaient ». « on » est un pronom sujet : essaie « il » ou « quelqu’un ».",
+      "variantId": "v1"
     },
     {
       "id": "son-sont-var-01",
@@ -1032,7 +1158,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v1"
     },
     {
       "id": "son-sont-var-02",
@@ -1046,7 +1173,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v2"
     },
     {
       "id": "son-sont-var-03",
@@ -1060,7 +1188,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v1"
     },
     {
       "id": "son-sont-var-04",
@@ -1074,7 +1203,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v2"
     },
     {
       "id": "son-sont-var-05",
@@ -1088,7 +1218,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v1"
     },
     {
       "id": "son-sont-var-06",
@@ -1102,7 +1233,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v2"
     },
     {
       "id": "son-sont-var-07",
@@ -1116,7 +1248,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v1"
     },
     {
       "id": "son-sont-var-08",
@@ -1130,7 +1263,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v2"
     },
     {
       "id": "son-sont-var-09",
@@ -1144,7 +1278,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v1"
     },
     {
       "id": "son-sont-var-10",
@@ -1158,7 +1293,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v2"
     },
     {
       "id": "son-sont-var-11",
@@ -1172,7 +1308,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v1"
     },
     {
       "id": "son-sont-var-12",
@@ -1186,7 +1323,8 @@
       "skillIds": [
         "son-sont"
       ],
-      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton »."
+      "explanation": "« sont » est le verbe être : on peut dire « étaient ». « son » est un déterminant possessif devant un nom : essaie « mon » ou « ton ».",
+      "variantId": "v2"
     },
     {
       "id": "ou-ou-var-01",
@@ -1200,7 +1338,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v1"
     },
     {
       "id": "ou-ou-var-02",
@@ -1214,7 +1353,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v2"
     },
     {
       "id": "ou-ou-var-03",
@@ -1228,7 +1368,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v2"
     },
     {
       "id": "ou-ou-var-04",
@@ -1242,7 +1383,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v1"
     },
     {
       "id": "ou-ou-var-05",
@@ -1256,7 +1398,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v2"
     },
     {
       "id": "ou-ou-var-06",
@@ -1270,7 +1413,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v1"
     },
     {
       "id": "ou-ou-var-07",
@@ -1284,7 +1428,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v2"
     },
     {
       "id": "ou-ou-var-08",
@@ -1298,7 +1443,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v1"
     },
     {
       "id": "ou-ou-var-09",
@@ -1312,7 +1458,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v2"
     },
     {
       "id": "ou-ou-var-10",
@@ -1326,7 +1473,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v1"
     },
     {
       "id": "ou-ou-var-11",
@@ -1340,7 +1488,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v2"
     },
     {
       "id": "ou-ou-var-12",
@@ -1354,7 +1503,8 @@
       "skillIds": [
         "ou-ou"
       ],
-      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment."
+      "explanation": "« ou » propose un choix et peut devenir « ou bien ». « où » indique un lieu ou un moment.",
+      "variantId": "v1"
     }
   ]
 }

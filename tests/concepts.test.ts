@@ -8,7 +8,7 @@ const start=new Date('2026-10-21T09:00:00Z');let counter=0;
 function result(m:Module,q=m.exercises[0],correct=true,at=start):Result {return {schemaVersion:1,id:`answer-${++counter}`,learnerId:'test',moduleId:m.id,moduleVersion:m.version,catalogRevision:catalog.revision,exerciseId:q.id,skillIds:q.skillIds,kind:q.kind,correct,rating:correct?3:1,durationMs:5000,recordedAt:new Date(at.getTime()+counter*1000).toISOString()};}
 function oneConcept():LearningSession{return {startedAt:start.toISOString(),subject:'Français',concepts:[{moduleId:module.id,skillId:skill,label:'test',subject:'Français'}],answers:[]};}
 test('les séances portent sur une seule matière ou équilibrent toutes les matières',()=>{
- const french=planSession(modules,[],'Français',start);assert.equal(french.concepts.length,4);assert.ok(french.concepts.every(c=>c.subject==='Français'));
+ const french=planSession(modules,[],'Français',start);assert.equal(french.concepts.filter(c=>!c.exerciseId).length,3);assert.ok(french.concepts.some(c=>c.exerciseId));assert.ok(french.concepts.every(c=>c.subject==='Français'));
  const mixed=planSession(modules,[],'Toutes',start);assert.ok(mixed.concepts.some(c=>c.subject==='Français'));assert.ok(mixed.concepts.some(c=>c.subject==='Histoire-géographie'));assert.equal(mixed.concepts.filter(c=>c.exerciseId).length,3);
 });
 test('une question réussie est écartée tant que des exemples nouveaux existent, même un autre jour',()=>{
@@ -58,7 +58,7 @@ test('une séance terminée ne réintroduit pas les mêmes notions le même jour
  const session=planSession(modules,[],'Français',start);
  while(sessionStatus(session,modules,[])==='working'){const next=nextSessionQuestion(session,modules,[],()=>0)!;session.answers.push(result(next.module,next.exercise));}
  const again=planSession(modules,session.answers,'Français',start);
- for(const c of again.concepts)assert.ok(!session.concepts.some(done=>c.moduleId===done.moduleId&&c.skillId===done.skillId));
+ for(const c of again.concepts)assert.ok(!session.concepts.some(done=>c.moduleId===done.moduleId&&(c.exerciseId||done.exerciseId?c.exerciseId===done.exerciseId:c.skillId===done.skillId)));
 });
 test('une séance est bornée aussi par le temps actif et ne compte pas trois questions sur le même contexte comme trois preuves',()=>{
  const session=oneConcept();session.answers=[{...result(module,questions[0]),durationMs:600000},{...result(module,questions[1]),durationMs:200000}];assert.equal(sessionStatus(session,modules,[]),'limit');
@@ -70,12 +70,12 @@ test('une seule réponse juste n’établit pas un intervalle de plusieurs jours
 });
 test('chaque notion de Maurice a une réserve d’au moins douze questions corrigées et l’exemple de maths est retiré',()=>{
  assert.ok(!modules.some(m=>m.subject==='Mathématiques'));
- for(const m of modules)for(const skill of m.skills){const qs=m.exercises.filter(q=>q.skillIds.includes(skill.id));assert.ok(qs.length>=12,`${m.id}/${skill.id}: ${qs.length}`);assert.ok(qs.every(q=>q.kind==='choice'&&q.explanation));}
+ for(const m of modules)for(const skill of m.skills){const qs=m.exercises.filter(q=>q.skillIds.includes(skill.id));const concepts=qs.filter(q=>reviewModeFor(m,q)==='concept');assert.ok(!concepts.length||concepts.length>=12,`${m.id}/${skill.id}: ${concepts.length}`);assert.ok(qs.every(q=>q.kind==='choice'&&q.explanation));}
  assert.ok(modules.some(m=>m.id==='histoire-reperes'));assert.ok(modules.some(m=>m.id==='geographie-reperes'));
 });
 test('les découvertes tournent entre ateliers au lieu de finir tous les homophones avant la lecture',()=>{
  const accumulated:Result[]=[];const discovered=new Set<string>();
- for(let i=0;i<2;i++){const session=planSession(modules,accumulated,'Français',start);session.concepts.forEach(c=>discovered.add(c.moduleId));while(sessionStatus(session,modules,accumulated)==='working'){const next=nextSessionQuestion(session,modules,accumulated,()=>0)!;session.answers.push(result(next.module,next.exercise));}accumulated.push(...session.answers);}
+ for(let i=0;i<3;i++){const session=planSession(modules,accumulated,'Français',start);session.concepts.forEach(c=>discovered.add(c.moduleId));while(sessionStatus(session,modules,accumulated)==='working'){const next=nextSessionQuestion(session,modules,accumulated,()=>0)!;session.answers.push(result(next.module,next.exercise));}accumulated.push(...session.answers);}
  assert.ok(discovered.has('francais-conjugaison-6e'));assert.ok(discovered.has('francais-vocabulaire-6e'));assert.ok(discovered.has('francais-lecture-6e'));
 });
 test('les repères factuels ont un calendrier indépendant sans déclarer leur thème compris',()=>{
@@ -95,7 +95,8 @@ test('les erreurs factuelles sont corrigées après trois autres questions puis 
 test('un oubli de date n’empêche pas de vérifier séparément la compréhension du régime politique',()=>{
  const m=modules.find(m=>m.id==='histoire-cm2')!,date=m.exercises.find(q=>q.skillIds.includes('republique')&&reviewModeFor(m,q)==='question')!;
  const reasoning=m.exercises.filter(q=>q.skillIds.includes('republique')&&reviewModeFor(m,q)==='concept');
- const rows=[result(m,date,false),...reasoning.slice(0,3).map(q=>result(m,q))];
+ const variants=m.skills.find(s=>s.id==='republique')!.variants!;
+ const rows=[result(m,date,false),...variants.map(v=>result(m,reasoning.find(q=>q.variantId===v.id)!))];
  assert.equal(projectConcepts([m],rows).find(c=>c.skillId==='republique')!.evidence.ready,true);assert.equal(projectQuestionReviews([m],rows)[0].needsRepair,true);
  const session:LearningSession={startedAt:start.toISOString(),subject:m.subject,concepts:[{moduleId:m.id,skillId:'republique',label:'République',subject:m.subject}],answers:[]};assert.equal(sessionStatus(session,[m],rows),'complete');
 });

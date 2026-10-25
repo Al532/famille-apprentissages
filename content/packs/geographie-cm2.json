@@ -1,6 +1,6 @@
 {
   "id": "geographie-cm2",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Se déplacer, communiquer, mieux habiter",
   "subject": "Histoire-géographie",
   "levels": [
@@ -10,15 +10,57 @@
   "skills": [
     {
       "id": "deplacements",
-      "label": "Comprendre les déplacements et les réseaux"
+      "label": "Comprendre les déplacements et les réseaux",
+      "variants": [
+        {
+          "id": "moyens",
+          "label": "Types de déplacements et de transports"
+        },
+        {
+          "id": "reseaux",
+          "label": "Réseaux et correspondances"
+        },
+        {
+          "id": "choix",
+          "label": "Choisir selon les contraintes"
+        }
+      ]
     },
     {
       "id": "internet",
-      "label": "Comprendre les réseaux et les inégalités de connexion"
+      "label": "Comprendre les réseaux et les inégalités de connexion",
+      "variants": [
+        {
+          "id": "materiel",
+          "label": "Infrastructures du réseau"
+        },
+        {
+          "id": "inegalites",
+          "label": "Inégalités d’accès et d’usage"
+        },
+        {
+          "id": "fiabilite",
+          "label": "Vérifier une information"
+        }
+      ]
     },
     {
       "id": "mieux-habiter",
-      "label": "Comprendre les aménagements pour mieux habiter"
+      "label": "Comprendre les aménagements pour mieux habiter",
+      "variants": [
+        {
+          "id": "environnement",
+          "label": "Réduire les impacts environnementaux"
+        },
+        {
+          "id": "cadre-vie",
+          "label": "Aménager le cadre de vie"
+        },
+        {
+          "id": "besoins",
+          "label": "Prendre en compte les habitants"
+        }
+      ]
     }
   ],
   "exercises": [
@@ -35,7 +77,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "Les déplacements quotidiens se répètent fréquemment dans la vie courante."
+      "explanation": "Les déplacements quotidiens se répètent fréquemment dans la vie courante.",
+      "variantId": "moyens"
     },
     {
       "id": "deplacements-reserve-02",
@@ -50,7 +93,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "Bus, tramway, métro et train sont des transports collectifs."
+      "explanation": "Bus, tramway, métro et train sont des transports collectifs.",
+      "variantId": "moyens"
     },
     {
       "id": "deplacements-reserve-03",
@@ -65,7 +109,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "La marche ne nécessite pas de moteur. Le choix dépend aussi de la sécurité et des possibilités de chacun."
+      "explanation": "La marche ne nécessite pas de moteur. Le choix dépend aussi de la sécurité et des possibilités de chacun.",
+      "variantId": "choix"
     },
     {
       "id": "deplacements-reserve-04",
@@ -80,7 +125,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "Routes, voies ferrées, gares et autres points organisent les liaisons."
+      "explanation": "Routes, voies ferrées, gares et autres points organisent les liaisons.",
+      "variantId": "reseaux"
     },
     {
       "id": "deplacements-reserve-05",
@@ -95,7 +141,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "La gare est un nœud d’un réseau de transport."
+      "explanation": "La gare est un nœud d’un réseau de transport.",
+      "variantId": "reseaux"
     },
     {
       "id": "deplacements-reserve-06",
@@ -110,7 +157,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "Un trajet peut combiner bus, train, métro ou marche."
+      "explanation": "Un trajet peut combiner bus, train, métro ou marche.",
+      "variantId": "reseaux"
     },
     {
       "id": "deplacements-reserve-07",
@@ -125,7 +173,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "La densité et l’offre de services influencent les possibilités de déplacement."
+      "explanation": "La densité et l’offre de services influencent les possibilités de déplacement.",
+      "variantId": "choix"
     },
     {
       "id": "deplacements-reserve-08",
@@ -140,7 +189,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "C’est un aménagement destiné aux cyclistes."
+      "explanation": "C’est un aménagement destiné aux cyclistes.",
+      "variantId": "moyens"
     },
     {
       "id": "deplacements-reserve-09",
@@ -155,7 +205,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "L’aéroport permet l’arrivée et le départ des avions."
+      "explanation": "L’aéroport permet l’arrivée et le départ des avions.",
+      "variantId": "reseaux"
     },
     {
       "id": "deplacements-reserve-10",
@@ -170,7 +221,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "Le choix dépend du trajet et de la situation des personnes."
+      "explanation": "Le choix dépend du trajet et de la situation des personnes.",
+      "variantId": "choix"
     },
     {
       "id": "deplacements-reserve-11",
@@ -185,7 +237,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "Il peut réduire le nombre de véhicules pour un même groupe de voyageurs."
+      "explanation": "Il peut réduire le nombre de véhicules pour un même groupe de voyageurs.",
+      "variantId": "moyens"
     },
     {
       "id": "deplacements-reserve-12",
@@ -200,7 +253,8 @@
       "skillIds": [
         "deplacements"
       ],
-      "explanation": "Les réseaux, les distances, les ressources et les pratiques diffèrent selon les lieux."
+      "explanation": "Les réseaux, les distances, les ressources et les pratiques diffèrent selon les lieux.",
+      "variantId": "choix"
     },
     {
       "id": "internet-reserve-01",
@@ -215,7 +269,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "Les messages circulent à distance, mais les lieux et les besoins matériels existent toujours."
+      "explanation": "Les messages circulent à distance, mais les lieux et les besoins matériels existent toujours.",
+      "variantId": "materiel"
     },
     {
       "id": "internet-reserve-02",
@@ -230,7 +285,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "Même les communications sans fil dépendent d’un ensemble d’infrastructures."
+      "explanation": "Même les communications sans fil dépendent d’un ensemble d’infrastructures.",
+      "variantId": "materiel"
     },
     {
       "id": "internet-reserve-03",
@@ -245,7 +301,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "Les équipements connectés forment des réseaux de communication."
+      "explanation": "Les équipements connectés forment des réseaux de communication.",
+      "variantId": "materiel"
     },
     {
       "id": "internet-reserve-04",
@@ -260,7 +317,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "L’accès dépend notamment des ressources et des infrastructures disponibles."
+      "explanation": "L’accès dépend notamment des ressources et des infrastructures disponibles.",
+      "variantId": "inegalites"
     },
     {
       "id": "internet-reserve-05",
@@ -275,7 +333,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "Ces inégalités concernent la connexion, l’équipement et les compétences."
+      "explanation": "Ces inégalités concernent la connexion, l’équipement et les compétences.",
+      "variantId": "inegalites"
     },
     {
       "id": "internet-reserve-06",
@@ -290,7 +349,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "Les réseaux sans fil rejoignent des réseaux filaires, notamment sur de longues distances."
+      "explanation": "Les réseaux sans fil rejoignent des réseaux filaires, notamment sur de longues distances.",
+      "variantId": "materiel"
     },
     {
       "id": "internet-reserve-07",
@@ -305,7 +365,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "Une grande partie des communications internationales passe par ces câbles."
+      "explanation": "Une grande partie des communications internationales passe par ces câbles.",
+      "variantId": "materiel"
     },
     {
       "id": "internet-reserve-08",
@@ -320,7 +381,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "Les terminaux et les infrastructures consomment de l’énergie."
+      "explanation": "Les terminaux et les infrastructures consomment de l’énergie.",
+      "variantId": "materiel"
     },
     {
       "id": "internet-reserve-09",
@@ -335,7 +397,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "De plus en plus d’activités utilisent les communications numériques."
+      "explanation": "De plus en plus d’activités utilisent les communications numériques.",
+      "variantId": "inegalites"
     },
     {
       "id": "internet-reserve-10",
@@ -350,7 +413,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "L’accès à l’information demande aussi un jugement critique."
+      "explanation": "L’accès à l’information demande aussi un jugement critique.",
+      "variantId": "fiabilite"
     },
     {
       "id": "internet-reserve-11",
@@ -365,7 +429,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "La fracture numérique concerne aussi la capacité à utiliser les outils."
+      "explanation": "La fracture numérique concerne aussi la capacité à utiliser les outils.",
+      "variantId": "inegalites"
     },
     {
       "id": "internet-reserve-12",
@@ -380,7 +445,8 @@
       "skillIds": [
         "internet"
       ],
-      "explanation": "Le réseau rapproche des personnes, mais les inégalités de ressources et de connexion demeurent."
+      "explanation": "Le réseau rapproche des personnes, mais les inégalités de ressources et de connexion demeurent.",
+      "variantId": "inegalites"
     },
     {
       "id": "mieux-habiter-reserve-01",
@@ -395,7 +461,8 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "Un parc offre végétation, ombre et espace de vie."
+      "explanation": "Un parc offre végétation, ombre et espace de vie.",
+      "variantId": "cadre-vie"
     },
     {
       "id": "mieux-habiter-reserve-02",
@@ -410,7 +477,8 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "Des matériaux triés peuvent être dirigés vers des filières adaptées."
+      "explanation": "Des matériaux triés peuvent être dirigés vers des filières adaptées.",
+      "variantId": "environnement"
     },
     {
       "id": "mieux-habiter-reserve-03",
@@ -425,7 +493,8 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "Le recyclage fait entrer des matières dans un nouveau cycle de production."
+      "explanation": "Le recyclage fait entrer des matières dans un nouveau cycle de production.",
+      "variantId": "environnement"
     },
     {
       "id": "mieux-habiter-reserve-04",
@@ -440,7 +509,8 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "Éviter de produire un déchet vient avant son traitement."
+      "explanation": "Éviter de produire un déchet vient avant son traitement.",
+      "variantId": "environnement"
     },
     {
       "id": "mieux-habiter-reserve-05",
@@ -455,7 +525,8 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "Les projets peuvent associer logements, services, nature et mobilité."
+      "explanation": "Les projets peuvent associer logements, services, nature et mobilité.",
+      "variantId": "cadre-vie"
     },
     {
       "id": "mieux-habiter-reserve-06",
@@ -470,7 +541,8 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "Mieux habiter concerne aussi l’accessibilité et l’inclusion."
+      "explanation": "Mieux habiter concerne aussi l’accessibilité et l’inclusion.",
+      "variantId": "besoins"
     },
     {
       "id": "mieux-habiter-reserve-07",
@@ -485,7 +557,8 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "Des espaces partagés peuvent encourager les échanges et des activités communes."
+      "explanation": "Des espaces partagés peuvent encourager les échanges et des activités communes.",
+      "variantId": "besoins"
     },
     {
       "id": "mieux-habiter-reserve-08",
@@ -500,7 +573,8 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "La végétation peut améliorer le confort, notamment pendant la chaleur."
+      "explanation": "La végétation peut améliorer le confort, notamment pendant la chaleur.",
+      "variantId": "cadre-vie"
     },
     {
       "id": "mieux-habiter-reserve-09",
@@ -515,7 +589,8 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "Un aménagement répond à des usages et des besoins réels."
+      "explanation": "Un aménagement répond à des usages et des besoins réels.",
+      "variantId": "besoins"
     },
     {
       "id": "mieux-habiter-reserve-10",
@@ -530,7 +605,8 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "L’accès aux services et aux transports influence les déplacements."
+      "explanation": "L’accès aux services et aux transports influence les déplacements.",
+      "variantId": "cadre-vie"
     },
     {
       "id": "mieux-habiter-reserve-11",
@@ -545,7 +621,8 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "Des restes organiques adaptés peuvent se décomposer et produire du compost."
+      "explanation": "Des restes organiques adaptés peuvent se décomposer et produire du compost.",
+      "variantId": "environnement"
     },
     {
       "id": "mieux-habiter-reserve-12",
@@ -560,7 +637,24 @@
       "skillIds": [
         "mieux-habiter"
       ],
-      "explanation": "Habiter, c’est vivre dans un lieu avec différentes activités et besoins."
+      "explanation": "Habiter, c’est vivre dans un lieu avec différentes activités et besoins.",
+      "variantId": "besoins"
+    },
+    {
+      "id": "internet-coherence-01",
+      "kind": "choice",
+      "prompt": "Un message en ligne affirme quelque chose sans citer de source. Que faut-il faire avant de le partager ?",
+      "answer": "chercher une source identifiable et confronter l’information",
+      "options": [
+        "chercher une source identifiable et confronter l’information",
+        "le partager parce qu’il est récent",
+        "le croire parce qu’il contient une image"
+      ],
+      "skillIds": [
+        "internet"
+      ],
+      "explanation": "Une information doit être vérifiée ; sa présence en ligne ou son apparence ne suffit pas.",
+      "variantId": "fiabilite"
     }
   ]
 }

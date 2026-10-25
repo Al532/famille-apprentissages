@@ -1,6 +1,6 @@
 {
   "id": "histoire-reperes",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Les outils pour comprendre l’histoire",
   "subject": "Histoire-géographie",
   "levels": [
@@ -14,7 +14,29 @@
     },
     {
       "id": "sources",
-      "label": "Comprendre et comparer les sources historiques"
+      "label": "Comprendre et comparer les sources historiques",
+      "variants": [
+        {
+          "id": "situer",
+          "label": "Identifier et situer une source"
+        },
+        {
+          "id": "limites",
+          "label": "Comprendre ses limites et son intention"
+        },
+        {
+          "id": "confronter",
+          "label": "Confronter plusieurs sources"
+        }
+      ]
+    },
+    {
+      "id": "calculer-siecle",
+      "label": "Déterminer le siècle d’une année"
+    },
+    {
+      "id": "ordre-chronologique",
+      "label": "Ordonner des événements dans le temps"
     }
   ],
   "exercises": [
@@ -29,10 +51,10 @@
         "toujours au milieu"
       ],
       "skillIds": [
-        "chronologie"
+        "ordre-chronologique"
       ],
       "explanation": "Dans la convention habituelle, le temps avance de gauche à droite.",
-      "reviewMode": "question"
+      "reviewMode": "concept"
     },
     {
       "id": "chronologie-reserve-02",
@@ -45,10 +67,10 @@
         "XIXe siècle"
       ],
       "skillIds": [
-        "chronologie"
+        "calculer-siecle"
       ],
       "explanation": "Le XVIIIe siècle va de 1701 à 1800.",
-      "reviewMode": "question"
+      "reviewMode": "concept"
     },
     {
       "id": "chronologie-reserve-03",
@@ -61,10 +83,10 @@
         "XXe siècle"
       ],
       "skillIds": [
-        "chronologie"
+        "calculer-siecle"
       ],
       "explanation": "Le XIXe siècle va de 1801 à 1900.",
-      "reviewMode": "question"
+      "reviewMode": "concept"
     },
     {
       "id": "chronologie-reserve-04",
@@ -77,10 +99,10 @@
         "XXIe siècle"
       ],
       "skillIds": [
-        "chronologie"
+        "calculer-siecle"
       ],
       "explanation": "Le XXe siècle va de 1901 à 2000.",
-      "reviewMode": "question"
+      "reviewMode": "concept"
     },
     {
       "id": "chronologie-reserve-05",
@@ -93,10 +115,10 @@
         "les lois Ferry de 1881-1882"
       ],
       "skillIds": [
-        "chronologie"
+        "ordre-chronologique"
       ],
       "explanation": "1789 précède les années 1880 et 1914.",
-      "reviewMode": "question"
+      "reviewMode": "concept"
     },
     {
       "id": "chronologie-reserve-06",
@@ -109,10 +131,10 @@
         "industrialisation, guerres mondiales, Révolution française"
       ],
       "skillIds": [
-        "chronologie"
+        "ordre-chronologique"
       ],
       "explanation": "Les trois repères se suivent de la fin du XVIIIe au XXe siècle.",
-      "reviewMode": "question"
+      "reviewMode": "concept"
     },
     {
       "id": "chronologie-reserve-07",
@@ -205,10 +227,10 @@
         "après 2000"
       ],
       "skillIds": [
-        "chronologie"
+        "ordre-chronologique"
       ],
       "explanation": "Il faut comparer les dates pour respecter l’ordre du temps.",
-      "reviewMode": "question"
+      "reviewMode": "concept"
     },
     {
       "id": "sources-reserve-01",
@@ -223,7 +245,8 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "Une lettre d’époque fournit un témoignage qu’il faut examiner avec esprit critique."
+      "explanation": "Une lettre d’époque fournit un témoignage qu’il faut examiner avec esprit critique.",
+      "variantId": "situer"
     },
     {
       "id": "sources-reserve-02",
@@ -238,7 +261,8 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "Les sources peuvent être incomplètes, partiales ou se contredire."
+      "explanation": "Les sources peuvent être incomplètes, partiales ou se contredire.",
+      "variantId": "confronter"
     },
     {
       "id": "sources-reserve-03",
@@ -253,7 +277,8 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "Le photographe choisit un cadre et un instant."
+      "explanation": "Le photographe choisit un cadre et un instant.",
+      "variantId": "limites"
     },
     {
       "id": "sources-reserve-04",
@@ -268,7 +293,8 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "Ces informations aident à comprendre sa portée et ses limites."
+      "explanation": "Ces informations aident à comprendre sa portée et ses limites.",
+      "variantId": "situer"
     },
     {
       "id": "sources-reserve-05",
@@ -283,7 +309,8 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "Objets, bâtiments, textes et images peuvent laisser des traces du passé."
+      "explanation": "Objets, bâtiments, textes et images peuvent laisser des traces du passé.",
+      "variantId": "situer"
     },
     {
       "id": "sources-reserve-06",
@@ -298,7 +325,8 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "Un avis personnel ne suffit pas à établir un fait historique."
+      "explanation": "Un avis personnel ne suffit pas à établir un fait historique.",
+      "variantId": "limites"
     },
     {
       "id": "sources-reserve-07",
@@ -313,7 +341,8 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "Un témoin connaît une partie d’un événement et peut se tromper."
+      "explanation": "Un témoin connaît une partie d’un événement et peut se tromper.",
+      "variantId": "confronter"
     },
     {
       "id": "sources-reserve-08",
@@ -328,7 +357,8 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "Il faut tenir compte du but du document pour l’interpréter."
+      "explanation": "Il faut tenir compte du but du document pour l’interpréter.",
+      "variantId": "limites"
     },
     {
       "id": "sources-reserve-09",
@@ -343,7 +373,8 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "Il faut distinguer une reconstitution ou une fiction d’une source produite à l’époque."
+      "explanation": "Il faut distinguer une reconstitution ou une fiction d’une source produite à l’époque.",
+      "variantId": "limites"
     },
     {
       "id": "sources-reserve-10",
@@ -358,7 +389,8 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "La comparaison des sources fait partie du travail historique."
+      "explanation": "La comparaison des sources fait partie du travail historique.",
+      "variantId": "confronter"
     },
     {
       "id": "sources-reserve-11",
@@ -373,7 +405,8 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "Le patrimoine matériel peut être étudié comme une trace historique."
+      "explanation": "Le patrimoine matériel peut être étudié comme une trace historique.",
+      "variantId": "situer"
     },
     {
       "id": "sources-reserve-12",
@@ -388,7 +421,263 @@
       "skillIds": [
         "sources"
       ],
-      "explanation": "Le public visé et l’intention éclairent le sens d’un document."
+      "explanation": "Le public visé et l’intention éclairent le sens d’un document.",
+      "variantId": "situer"
+    },
+    {
+      "id": "calculer-siecle-coherence-01",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 1492 ?",
+      "answer": "XVe siècle",
+      "options": [
+        "XVe siècle",
+        "XVIe siècle",
+        "XVIIe siècle"
+      ],
+      "skillIds": [
+        "calculer-siecle"
+      ],
+      "explanation": "Les années 1 à 100 forment le Ier siècle, 101 à 200 le IIe, etc. Une année terminée par 00 clôt son siècle ; la suivante commence le suivant."
+    },
+    {
+      "id": "calculer-siecle-coherence-02",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 1600 ?",
+      "answer": "XVIe siècle",
+      "options": [
+        "XVIe siècle",
+        "XVIIe siècle",
+        "XVIIIe siècle"
+      ],
+      "skillIds": [
+        "calculer-siecle"
+      ],
+      "explanation": "Les années 1 à 100 forment le Ier siècle, 101 à 200 le IIe, etc. Une année terminée par 00 clôt son siècle ; la suivante commence le suivant."
+    },
+    {
+      "id": "calculer-siecle-coherence-03",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 1601 ?",
+      "answer": "XVIIe siècle",
+      "options": [
+        "XVIIe siècle",
+        "XVIIIe siècle",
+        "XIXe siècle"
+      ],
+      "skillIds": [
+        "calculer-siecle"
+      ],
+      "explanation": "Les années 1 à 100 forment le Ier siècle, 101 à 200 le IIe, etc. Une année terminée par 00 clôt son siècle ; la suivante commence le suivant."
+    },
+    {
+      "id": "calculer-siecle-coherence-04",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 1700 ?",
+      "answer": "XVIIe siècle",
+      "options": [
+        "XVIIe siècle",
+        "XVIIIe siècle",
+        "XIXe siècle"
+      ],
+      "skillIds": [
+        "calculer-siecle"
+      ],
+      "explanation": "Les années 1 à 100 forment le Ier siècle, 101 à 200 le IIe, etc. Une année terminée par 00 clôt son siècle ; la suivante commence le suivant."
+    },
+    {
+      "id": "calculer-siecle-coherence-05",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 1701 ?",
+      "answer": "XVIIIe siècle",
+      "options": [
+        "XVIIIe siècle",
+        "XIXe siècle",
+        "XXe siècle"
+      ],
+      "skillIds": [
+        "calculer-siecle"
+      ],
+      "explanation": "Les années 1 à 100 forment le Ier siècle, 101 à 200 le IIe, etc. Une année terminée par 00 clôt son siècle ; la suivante commence le suivant."
+    },
+    {
+      "id": "calculer-siecle-coherence-06",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 1800 ?",
+      "answer": "XVIIIe siècle",
+      "options": [
+        "XVIIIe siècle",
+        "XIXe siècle",
+        "XXe siècle"
+      ],
+      "skillIds": [
+        "calculer-siecle"
+      ],
+      "explanation": "Les années 1 à 100 forment le Ier siècle, 101 à 200 le IIe, etc. Une année terminée par 00 clôt son siècle ; la suivante commence le suivant."
+    },
+    {
+      "id": "calculer-siecle-coherence-07",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 1801 ?",
+      "answer": "XIXe siècle",
+      "options": [
+        "XIXe siècle",
+        "XXe siècle",
+        "XXIe siècle"
+      ],
+      "skillIds": [
+        "calculer-siecle"
+      ],
+      "explanation": "Les années 1 à 100 forment le Ier siècle, 101 à 200 le IIe, etc. Une année terminée par 00 clôt son siècle ; la suivante commence le suivant."
+    },
+    {
+      "id": "calculer-siecle-coherence-08",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 2000 ?",
+      "answer": "XXe siècle",
+      "options": [
+        "XXe siècle",
+        "XXIe siècle",
+        "XVe siècle"
+      ],
+      "skillIds": [
+        "calculer-siecle"
+      ],
+      "explanation": "Les années 1 à 100 forment le Ier siècle, 101 à 200 le IIe, etc. Une année terminée par 00 clôt son siècle ; la suivante commence le suivant."
+    },
+    {
+      "id": "calculer-siecle-coherence-09",
+      "kind": "choice",
+      "prompt": "À quel siècle appartient l’année 2001 ?",
+      "answer": "XXIe siècle",
+      "options": [
+        "XXIe siècle",
+        "XVe siècle",
+        "XVIe siècle"
+      ],
+      "skillIds": [
+        "calculer-siecle"
+      ],
+      "explanation": "Les années 1 à 100 forment le Ier siècle, 101 à 200 le IIe, etc. Une année terminée par 00 clôt son siècle ; la suivante commence le suivant."
+    },
+    {
+      "id": "ordre-chronologique-coherence-01",
+      "kind": "choice",
+      "prompt": "Quel événement se place en premier sur une frise allant du passé au présent ?",
+      "answer": "un événement de 1880",
+      "options": [
+        "un événement de 1880",
+        "un événement de 1910",
+        "un événement de 2000"
+      ],
+      "skillIds": [
+        "ordre-chronologique"
+      ],
+      "explanation": "Dans l’ordre du passé au présent, on classe ici les années de la plus petite à la plus grande."
+    },
+    {
+      "id": "ordre-chronologique-coherence-02",
+      "kind": "choice",
+      "prompt": "Quel événement se place en dernier dans l’ordre chronologique ?",
+      "answer": "un événement de 1945",
+      "options": [
+        "un événement de 1945",
+        "un événement de 1789",
+        "un événement de 1914"
+      ],
+      "skillIds": [
+        "ordre-chronologique"
+      ],
+      "explanation": "Dans l’ordre du passé au présent, on classe ici les années de la plus petite à la plus grande."
+    },
+    {
+      "id": "ordre-chronologique-coherence-03",
+      "kind": "choice",
+      "prompt": "Quelle suite va du plus ancien au plus récent ?",
+      "answer": "1800, 1850, 1900",
+      "options": [
+        "1800, 1850, 1900",
+        "1900, 1850, 1800",
+        "1850, 1800, 1900"
+      ],
+      "skillIds": [
+        "ordre-chronologique"
+      ],
+      "explanation": "Dans l’ordre du passé au présent, on classe ici les années de la plus petite à la plus grande."
+    },
+    {
+      "id": "ordre-chronologique-coherence-04",
+      "kind": "choice",
+      "prompt": "Une photographie date de 1920 et une lettre de 1890. Quel document est le plus ancien ?",
+      "answer": "la lettre de 1890",
+      "options": [
+        "la lettre de 1890",
+        "la photographie de 1920",
+        "ils sont de la même année"
+      ],
+      "skillIds": [
+        "ordre-chronologique"
+      ],
+      "explanation": "Dans l’ordre du passé au présent, on classe ici les années de la plus petite à la plus grande."
+    },
+    {
+      "id": "ordre-chronologique-coherence-05",
+      "kind": "choice",
+      "prompt": "Où placer 1882 entre les repères 1870 et 1914 ?",
+      "answer": "après 1870 et avant 1914",
+      "options": [
+        "après 1870 et avant 1914",
+        "avant 1870",
+        "après 1914"
+      ],
+      "skillIds": [
+        "ordre-chronologique"
+      ],
+      "explanation": "Dans l’ordre du passé au présent, on classe ici les années de la plus petite à la plus grande."
+    },
+    {
+      "id": "ordre-chronologique-coherence-06",
+      "kind": "choice",
+      "prompt": "Un musée présente les années 1750, 1900 et 2000. Dans quel ordre les lire du passé au présent ?",
+      "answer": "1750 puis 1900 puis 2000",
+      "options": [
+        "1750 puis 1900 puis 2000",
+        "2000 puis 1900 puis 1750",
+        "1900 puis 1750 puis 2000"
+      ],
+      "skillIds": [
+        "ordre-chronologique"
+      ],
+      "explanation": "Dans l’ordre du passé au présent, on classe ici les années de la plus petite à la plus grande."
+    },
+    {
+      "id": "ordre-chronologique-coherence-07",
+      "kind": "choice",
+      "prompt": "Un enfant naît en 2015 et entre au collège en 2026. Quel événement vient en premier ?",
+      "answer": "sa naissance en 2015",
+      "options": [
+        "sa naissance en 2015",
+        "son entrée au collège en 2026",
+        "les deux sont simultanés"
+      ],
+      "skillIds": [
+        "ordre-chronologique"
+      ],
+      "explanation": "Dans l’ordre du passé au présent, on classe ici les années de la plus petite à la plus grande."
+    },
+    {
+      "id": "ordre-chronologique-coherence-08",
+      "kind": "choice",
+      "prompt": "Quel événement vient entre 1939 et 1945 ?",
+      "answer": "un événement de 1944",
+      "options": [
+        "un événement de 1944",
+        "un événement de 1918",
+        "un événement de 1957"
+      ],
+      "skillIds": [
+        "ordre-chronologique"
+      ],
+      "explanation": "Dans l’ordre du passé au présent, on classe ici les années de la plus petite à la plus grande."
     }
   ]
 }

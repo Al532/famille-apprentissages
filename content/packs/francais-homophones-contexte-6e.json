@@ -1,6 +1,6 @@
 {
   "id": "francais-homophones-contexte-6e",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": "Homophones : le sens et les verbes",
   "subject": "Français",
   "levels": [
@@ -10,43 +10,173 @@
   "skills": [
     {
       "id": "la-la-las",
-      "label": "Distinguer la, là, l’a et l’as"
+      "label": "Distinguer la, là, l’a et l’as",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "là"
+        },
+        {
+          "id": "v2",
+          "label": "la"
+        },
+        {
+          "id": "v3",
+          "label": "l’a"
+        },
+        {
+          "id": "v4",
+          "label": "l’as"
+        }
+      ]
     },
     {
       "id": "mais-mes-met-mets",
-      "label": "Distinguer mais, mes, met et mets"
+      "label": "Distinguer mais, mes, met et mets",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "mais"
+        },
+        {
+          "id": "v2",
+          "label": "mes"
+        },
+        {
+          "id": "v3",
+          "label": "met"
+        },
+        {
+          "id": "v4",
+          "label": "mets"
+        }
+      ]
     },
     {
       "id": "peu-peux-peut",
-      "label": "Distinguer peu, peux et peut"
+      "label": "Distinguer peu, peux et peut",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "peu"
+        },
+        {
+          "id": "v2",
+          "label": "peux"
+        },
+        {
+          "id": "v3",
+          "label": "peut"
+        }
+      ]
     },
     {
       "id": "sans-sen",
-      "label": "Distinguer sans et s’en"
+      "label": "Distinguer sans et s’en",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "sans"
+        },
+        {
+          "id": "v2",
+          "label": "s’en"
+        }
+      ]
     },
     {
       "id": "ni-ny",
-      "label": "Distinguer ni et n’y"
+      "label": "Distinguer ni et n’y",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "ni"
+        },
+        {
+          "id": "v2",
+          "label": "n’y"
+        }
+      ]
     },
     {
       "id": "infinitif-participe",
-      "label": "Choisir l’infinitif en -er ou le participe en -é"
-    },
-    {
-      "id": "homophones-lexicaux",
-      "label": "Choisir un homophone selon son sens"
+      "label": "Choisir l’infinitif en -er ou le participe en -é",
+      "variants": [
+        {
+          "id": "infinitif",
+          "label": "Infinitif en -er"
+        },
+        {
+          "id": "participe",
+          "label": "Participe en -é"
+        }
+      ]
     },
     {
       "id": "si-sy",
-      "label": "Distinguer si et s’y"
+      "label": "Distinguer si et s’y",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "si"
+        },
+        {
+          "id": "v2",
+          "label": "s’y"
+        }
+      ]
     },
     {
       "id": "mer-mere-maire",
-      "label": "Distinguer mer, mère et maire"
+      "label": "Distinguer mer, mère et maire",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "mer"
+        },
+        {
+          "id": "v2",
+          "label": "maire"
+        },
+        {
+          "id": "v3",
+          "label": "mère"
+        }
+      ]
     },
     {
       "id": "pere-paire-pair",
-      "label": "Distinguer père, paire et pair"
+      "label": "Distinguer père, paire et pair",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "paire"
+        },
+        {
+          "id": "v2",
+          "label": "pair"
+        },
+        {
+          "id": "v3",
+          "label": "père"
+        }
+      ]
+    },
+    {
+      "id": "ver-verre-vert-vers",
+      "label": "Distinguer ver, verre, vert et vers"
+    },
+    {
+      "id": "cou-coup-cout",
+      "label": "Distinguer cou, coup et coût"
+    },
+    {
+      "id": "pain-pin-peint",
+      "label": "Distinguer pain, pin et peint"
+    },
+    {
+      "id": "camp-quand-quen",
+      "label": "Distinguer camp, quand et qu’en"
     }
   ],
   "exercises": [
@@ -64,7 +194,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "On indique l’endroit où poser le sac. « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+      "explanation": "On indique l’endroit où poser le sac. « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
+      "variantId": "v1"
     },
     {
       "id": "mais-mes-met-mets-01",
@@ -80,7 +211,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "La pluie s’oppose au souhait de sortir. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+      "explanation": "La pluie s’oppose au souhait de sortir. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
+      "variantId": "v1"
     },
     {
       "id": "peu-peux-peut-01",
@@ -95,7 +227,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "On parle d’une petite quantité de pain. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+      "explanation": "On parle d’une petite quantité de pain. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
+      "variantId": "v1"
     },
     {
       "id": "sans-sen-01",
@@ -109,7 +242,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "Il n’a pas pris son manteau : on exprime une absence. « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais)."
+      "explanation": "Il n’a pas pris son manteau : on exprime une absence. « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais).",
+      "variantId": "v1"
     },
     {
       "id": "ni-ny-01",
@@ -123,7 +257,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "On coordonne les deux éléments refusés : « ni… ni… ». « ni » coordonne des éléments dans une négation. « n’y » associe la négation n’ au pronom y (je n’y vais pas)."
+      "explanation": "On coordonne les deux éléments refusés : « ni… ni… ». « ni » coordonne des éléments dans une négation. « n’y » associe la négation n’ au pronom y (je n’y vais pas).",
+      "variantId": "v1"
     },
     {
       "id": "infinitif-participe-01",
@@ -137,7 +272,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "On peut dire : « Il veut prendre… » ; on emploie l’infinitif. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé."
+      "explanation": "On peut dire : « Il veut prendre… » ; on emploie l’infinitif. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé.",
+      "variantId": "infinitif"
     },
     {
       "id": "homophones-lexicaux-01",
@@ -151,9 +287,11 @@
         "vers"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "ver-verre-vert-vers"
       ],
-      "explanation": "Un « verre » est un récipient. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal."
+      "explanation": "Un « verre » est un récipient. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-01"
     },
     {
       "id": "si-sy-01",
@@ -167,7 +305,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "La sortie dépend d’une condition : la fin de la pluie. « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends)."
+      "explanation": "La sortie dépend d’une condition : la fin de la pluie. « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends).",
+      "variantId": "v1"
     },
     {
       "id": "mer-mere-maire-01",
@@ -182,7 +321,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "Le bateau se trouve sur une étendue d’eau salée. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune."
+      "explanation": "Le bateau se trouve sur une étendue d’eau salée. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune.",
+      "variantId": "v1"
     },
     {
       "id": "pere-paire-pair-01",
@@ -197,7 +337,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Deux chaussures forment une paire. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux."
+      "explanation": "Deux chaussures forment une paire. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux.",
+      "variantId": "v1"
     },
     {
       "id": "la-la-las-02",
@@ -213,7 +354,8 @@
         "la",
         "là",
         "l’a"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "mais-mes-met-mets-02",
@@ -229,7 +371,8 @@
         "mes",
         "met",
         "mets"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "peu-peux-peut-02",
@@ -244,7 +387,8 @@
         "peux",
         "peut",
         "peu"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "sans-sen-02",
@@ -258,7 +402,8 @@
       "options": [
         "s’en",
         "sans"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "ni-ny-02",
@@ -272,7 +417,8 @@
       "options": [
         "ni",
         "n’y"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "infinitif-participe-02",
@@ -286,7 +432,8 @@
       "options": [
         "joué",
         "jouer"
-      ]
+      ],
+      "variantId": "participe"
     },
     {
       "id": "homophones-lexicaux-02",
@@ -294,7 +441,7 @@
       "prompt": "Complète avec verre, vert, vers, ver : « Le feu passe au ___. »",
       "answer": "vert",
       "skillIds": [
-        "homophones-lexicaux"
+        "ver-verre-vert-vers"
       ],
       "explanation": "Il s’agit de la couleur verte. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
       "options": [
@@ -302,7 +449,9 @@
         "verre",
         "vert",
         "vers"
-      ]
+      ],
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-02"
     },
     {
       "id": "si-sy-02",
@@ -316,7 +465,8 @@
       "options": [
         "si",
         "s’y"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "mer-mere-maire-02",
@@ -331,7 +481,8 @@
         "maire",
         "mer",
         "mère"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "pere-paire-pair-02",
@@ -346,7 +497,8 @@
         "paire",
         "pair",
         "père"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "la-la-las-03",
@@ -362,7 +514,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« Elle l’avait déjà lu » contient le verbe avoir. « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+      "explanation": "« Elle l’avait déjà lu » contient le verbe avoir. « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
+      "variantId": "v3"
     },
     {
       "id": "mais-mes-met-mets-03",
@@ -378,7 +531,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "Avec « elle », mettre s’écrit « met » au présent. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+      "explanation": "Avec « elle », mettre s’écrit « met » au présent. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
+      "variantId": "v3"
     },
     {
       "id": "peu-peux-peut-03",
@@ -393,7 +547,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "Avec « elle », pouvoir s’écrit « peut » au présent. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+      "explanation": "Avec « elle », pouvoir s’écrit « peut » au présent. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
+      "variantId": "v3"
     },
     {
       "id": "sans-sen-03",
@@ -407,7 +562,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "À la première personne : « Je m’en souviens ». « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais)."
+      "explanation": "À la première personne : « Je m’en souviens ». « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais).",
+      "variantId": "v2"
     },
     {
       "id": "infinitif-participe-03",
@@ -421,7 +577,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "« Nous allons prendre… » montre l’infinitif. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé."
+      "explanation": "« Nous allons prendre… » montre l’infinitif. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé.",
+      "variantId": "infinitif"
     },
     {
       "id": "homophones-lexicaux-03",
@@ -435,9 +592,11 @@
         "vers"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "ver-verre-vert-vers"
       ],
-      "explanation": "« vers » indique la direction. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal."
+      "explanation": "« vers » indique la direction. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-03"
     },
     {
       "id": "si-sy-03",
@@ -451,7 +610,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "On introduit la condition dans laquelle il faut appeler. « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends)."
+      "explanation": "On introduit la condition dans laquelle il faut appeler. « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends).",
+      "variantId": "v1"
     },
     {
       "id": "mer-mere-maire-03",
@@ -466,7 +626,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "Il s’agit ici d’un lien de parenté. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune."
+      "explanation": "Il s’agit ici d’un lien de parenté. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune.",
+      "variantId": "v3"
     },
     {
       "id": "pere-paire-pair-03",
@@ -481,7 +642,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Il s’agit ici d’un lien de parenté. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux."
+      "explanation": "Il s’agit ici d’un lien de parenté. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux.",
+      "variantId": "v3"
     },
     {
       "id": "la-la-las-04",
@@ -497,7 +659,8 @@
         "l’a",
         "l’as",
         "la"
-      ]
+      ],
+      "variantId": "v4"
     },
     {
       "id": "mais-mes-met-mets-04",
@@ -513,7 +676,8 @@
         "mets",
         "mais",
         "mes"
-      ]
+      ],
+      "variantId": "v4"
     },
     {
       "id": "peu-peux-peut-04",
@@ -528,7 +692,8 @@
         "peu",
         "peux",
         "peut"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "sans-sen-04",
@@ -542,7 +707,8 @@
       "options": [
         "s’en",
         "sans"
-      ]
+      ],
+      "variantId": "v1"
     },
     {
       "id": "infinitif-participe-04",
@@ -556,7 +722,8 @@
       "options": [
         "joué",
         "jouer"
-      ]
+      ],
+      "variantId": "participe"
     },
     {
       "id": "homophones-lexicaux-04",
@@ -564,7 +731,7 @@
       "prompt": "Complète avec verre, vert, vers, ver : « Un ___ de terre sort du sol. »",
       "answer": "ver",
       "skillIds": [
-        "homophones-lexicaux"
+        "ver-verre-vert-vers"
       ],
       "explanation": "Le « ver » est un animal. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
       "options": [
@@ -572,7 +739,9 @@
         "vers",
         "ver",
         "verre"
-      ]
+      ],
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-04"
     },
     {
       "id": "si-sy-04",
@@ -586,7 +755,8 @@
       "options": [
         "si",
         "s’y"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "la-la-las-05",
@@ -602,7 +772,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« la » remplace « cette porte » ; le verbe est « ferme ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+      "explanation": "« la » remplace « cette porte » ; le verbe est « ferme ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
+      "variantId": "v2"
     },
     {
       "id": "mais-mes-met-mets-05",
@@ -618,7 +789,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "Avec « je », mettre s’écrit « mets » au présent. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais)."
+      "explanation": "Avec « je », mettre s’écrit « mets » au présent. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
+      "variantId": "v4"
     },
     {
       "id": "peu-peux-peut-05",
@@ -633,7 +805,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« très peu » indique une faible quantité. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir."
+      "explanation": "« très peu » indique une faible quantité. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
+      "variantId": "v1"
     },
     {
       "id": "infinitif-participe-05",
@@ -647,7 +820,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Après « vient de », on emploie un infinitif : « Elle vient de prendre »."
+      "explanation": "Après « vient de », on emploie un infinitif : « Elle vient de prendre ».",
+      "variantId": "infinitif"
     },
     {
       "id": "la-la-las-06",
@@ -663,7 +837,8 @@
         "la",
         "là",
         "l’a"
-      ]
+      ],
+      "variantId": "v1"
     },
     {
       "id": "mais-mes-met-mets-06",
@@ -679,7 +854,8 @@
         "mes",
         "met",
         "mets"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "peu-peux-peut-06",
@@ -694,7 +870,8 @@
         "peut",
         "peu",
         "peux"
-      ]
+      ],
+      "variantId": "v3"
     },
     {
       "id": "infinitif-participe-06",
@@ -708,7 +885,8 @@
       "options": [
         "tombé",
         "tomber"
-      ]
+      ],
+      "variantId": "participe"
     },
     {
       "id": "la-la-las-07",
@@ -724,7 +902,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "Avec « Paul » : « Paul l’avait perdu ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais)."
+      "explanation": "Avec « Paul » : « Paul l’avait perdu ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
+      "variantId": "v3"
     },
     {
       "id": "infinitif-participe-07",
@@ -738,7 +917,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "On peut dire : « Nous voulons prendre… » : c’est un infinitif."
+      "explanation": "On peut dire : « Nous voulons prendre… » : c’est un infinitif.",
+      "variantId": "infinitif"
     },
     {
       "id": "la-la-las-08",
@@ -754,7 +934,8 @@
         "l’a",
         "l’as",
         "la"
-      ]
+      ],
+      "variantId": "v4"
     },
     {
       "id": "infinitif-participe-08",
@@ -768,7 +949,8 @@
       "options": [
         "marché",
         "marcher"
-      ]
+      ],
+      "variantId": "participe"
     },
     {
       "id": "la-la-las-var-01",
@@ -784,7 +966,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v1"
     },
     {
       "id": "la-la-las-var-02",
@@ -800,7 +983,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v3"
     },
     {
       "id": "la-la-las-var-03",
@@ -816,7 +1000,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v4"
     },
     {
       "id": "la-la-las-var-04",
@@ -832,7 +1017,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v2"
     },
     {
       "id": "la-la-las-var-05",
@@ -848,7 +1034,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v1"
     },
     {
       "id": "la-la-las-var-06",
@@ -864,7 +1051,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v3"
     },
     {
       "id": "la-la-las-var-07",
@@ -880,7 +1068,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v4"
     },
     {
       "id": "la-la-las-var-08",
@@ -896,7 +1085,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v2"
     },
     {
       "id": "la-la-las-var-09",
@@ -912,7 +1102,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v1"
     },
     {
       "id": "la-la-las-var-10",
@@ -928,7 +1119,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v3"
     },
     {
       "id": "la-la-las-var-11",
@@ -944,7 +1136,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v4"
     },
     {
       "id": "la-la-las-var-12",
@@ -960,7 +1153,8 @@
       "skillIds": [
         "la-la-las"
       ],
-      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais."
+      "explanation": "« là » indique un lieu. « la » est un déterminant ou un pronom. « l’a » et « l’as » contiennent avoir : l’avait, l’avais.",
+      "variantId": "v2"
     },
     {
       "id": "mais-mes-met-mets-var-01",
@@ -976,7 +1170,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v1"
     },
     {
       "id": "mais-mes-met-mets-var-02",
@@ -992,7 +1187,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v2"
     },
     {
       "id": "mais-mes-met-mets-var-03",
@@ -1008,7 +1204,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v3"
     },
     {
       "id": "mais-mes-met-mets-var-04",
@@ -1024,7 +1221,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v4"
     },
     {
       "id": "mais-mes-met-mets-var-05",
@@ -1040,7 +1238,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v4"
     },
     {
       "id": "mais-mes-met-mets-var-06",
@@ -1056,7 +1255,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v2"
     },
     {
       "id": "mais-mes-met-mets-var-07",
@@ -1072,7 +1272,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v1"
     },
     {
       "id": "mais-mes-met-mets-var-08",
@@ -1088,7 +1289,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v3"
     },
     {
       "id": "mais-mes-met-mets-var-09",
@@ -1104,7 +1306,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v2"
     },
     {
       "id": "mais-mes-met-mets-var-10",
@@ -1120,7 +1323,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v1"
     },
     {
       "id": "mais-mes-met-mets-var-11",
@@ -1136,7 +1340,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v3"
     },
     {
       "id": "mais-mes-met-mets-var-12",
@@ -1152,7 +1357,8 @@
       "skillIds": [
         "mais-mes-met-mets"
       ],
-      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais."
+      "explanation": "« mais » marque une opposition. « mes » est le possessif pluriel. « met » et « mets » sont le verbe mettre : il mettait, je/tu mettais.",
+      "variantId": "v4"
     },
     {
       "id": "peu-peux-peut-var-01",
@@ -1167,7 +1373,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v2"
     },
     {
       "id": "peu-peux-peut-var-02",
@@ -1182,7 +1389,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v3"
     },
     {
       "id": "peu-peux-peut-var-03",
@@ -1197,7 +1405,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v1"
     },
     {
       "id": "peu-peux-peut-var-04",
@@ -1212,7 +1421,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v2"
     },
     {
       "id": "peu-peux-peut-var-05",
@@ -1227,7 +1437,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v3"
     },
     {
       "id": "peu-peux-peut-var-06",
@@ -1242,7 +1453,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v1"
     },
     {
       "id": "peu-peux-peut-var-07",
@@ -1257,7 +1469,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v2"
     },
     {
       "id": "peu-peux-peut-var-08",
@@ -1272,7 +1485,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v3"
     },
     {
       "id": "peu-peux-peut-var-09",
@@ -1287,7 +1501,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v1"
     },
     {
       "id": "peu-peux-peut-var-10",
@@ -1302,7 +1517,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v2"
     },
     {
       "id": "peu-peux-peut-var-11",
@@ -1317,7 +1533,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v3"
     },
     {
       "id": "peu-peux-peut-var-12",
@@ -1332,7 +1549,8 @@
       "skillIds": [
         "peu-peux-peut"
       ],
-      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut."
+      "explanation": "« peu » indique une petite quantité. « peux » et « peut » sont le verbe pouvoir : je/tu peux, il/elle/on peut.",
+      "variantId": "v1"
     },
     {
       "id": "sans-sen-var-01",
@@ -1346,7 +1564,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v1"
     },
     {
       "id": "sans-sen-var-02",
@@ -1360,7 +1579,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v2"
     },
     {
       "id": "sans-sen-var-03",
@@ -1374,7 +1594,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v1"
     },
     {
       "id": "sans-sen-var-04",
@@ -1388,7 +1609,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v2"
     },
     {
       "id": "sans-sen-var-05",
@@ -1402,7 +1624,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v1"
     },
     {
       "id": "sans-sen-var-06",
@@ -1416,7 +1639,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v2"
     },
     {
       "id": "sans-sen-var-07",
@@ -1430,7 +1654,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v1"
     },
     {
       "id": "sans-sen-var-08",
@@ -1444,7 +1669,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v2"
     },
     {
       "id": "sans-sen-var-09",
@@ -1458,7 +1684,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v1"
     },
     {
       "id": "sans-sen-var-10",
@@ -1472,7 +1699,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v2"
     },
     {
       "id": "sans-sen-var-11",
@@ -1486,7 +1714,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v1"
     },
     {
       "id": "sans-sen-var-12",
@@ -1500,7 +1729,8 @@
       "skillIds": [
         "sans-sen"
       ],
-      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais."
+      "explanation": "« sans » exprime l’absence de quelque chose. « s’en » appartient à un verbe pronominal : il s’en va → je m’en vais.",
+      "variantId": "v2"
     },
     {
       "id": "ni-ny-var-01",
@@ -1514,7 +1744,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v1"
     },
     {
       "id": "ni-ny-var-02",
@@ -1528,7 +1759,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v2"
     },
     {
       "id": "ni-ny-var-03",
@@ -1542,7 +1774,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v1"
     },
     {
       "id": "ni-ny-var-04",
@@ -1556,7 +1789,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v2"
     },
     {
       "id": "ni-ny-var-05",
@@ -1570,7 +1804,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v1"
     },
     {
       "id": "ni-ny-var-06",
@@ -1584,7 +1819,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v2"
     },
     {
       "id": "ni-ny-var-07",
@@ -1598,7 +1834,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v1"
     },
     {
       "id": "ni-ny-var-08",
@@ -1612,7 +1849,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v2"
     },
     {
       "id": "ni-ny-var-09",
@@ -1626,7 +1864,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v1"
     },
     {
       "id": "ni-ny-var-10",
@@ -1640,7 +1879,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v2"
     },
     {
       "id": "ni-ny-var-11",
@@ -1654,7 +1894,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v1"
     },
     {
       "id": "ni-ny-var-12",
@@ -1668,7 +1909,8 @@
       "skillIds": [
         "ni-ny"
       ],
-      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe."
+      "explanation": "« ni » relie deux éléments dans une phrase négative (ni… ni…). « n’y » contient la négation n’ et le pronom y devant un verbe.",
+      "variantId": "v2"
     },
     {
       "id": "infinitif-participe-var-01",
@@ -1682,7 +1924,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "participe"
     },
     {
       "id": "infinitif-participe-var-02",
@@ -1696,7 +1939,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "infinitif"
     },
     {
       "id": "infinitif-participe-var-03",
@@ -1710,7 +1954,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "infinitif"
     },
     {
       "id": "infinitif-participe-var-04",
@@ -1724,7 +1969,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "participe"
     },
     {
       "id": "infinitif-participe-var-05",
@@ -1738,7 +1984,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "infinitif"
     },
     {
       "id": "infinitif-participe-var-06",
@@ -1752,7 +1999,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "participe"
     },
     {
       "id": "infinitif-participe-var-07",
@@ -1766,7 +2014,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "infinitif"
     },
     {
       "id": "infinitif-participe-var-08",
@@ -1780,7 +2029,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "participe"
     },
     {
       "id": "infinitif-participe-var-09",
@@ -1794,7 +2044,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "infinitif"
     },
     {
       "id": "infinitif-participe-var-10",
@@ -1808,7 +2059,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "participe"
     },
     {
       "id": "infinitif-participe-var-11",
@@ -1822,7 +2074,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "infinitif"
     },
     {
       "id": "infinitif-participe-var-12",
@@ -1836,7 +2089,8 @@
       "skillIds": [
         "infinitif-participe"
       ],
-      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif."
+      "explanation": "Pour distinguer -er et -é, remplace par un verbe du 3e groupe : « il veut prendre » → jouer ; « il a pris » → joué. Après une préposition (pour, de…), on utilise l’infinitif.",
+      "variantId": "participe"
     },
     {
       "id": "homophones-lexicaux-var-01",
@@ -1849,9 +2103,11 @@
         "coût"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "cou-coup-cout"
       ],
-      "explanation": "Le cou relie la tête au tronc. Un coup est un choc, le coût est un prix."
+      "explanation": "Le cou relie la tête au tronc. Un coup est un choc, le coût est un prix.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-01"
     },
     {
       "id": "homophones-lexicaux-var-02",
@@ -1864,9 +2120,11 @@
         "coût"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "cou-coup-cout"
       ],
-      "explanation": "Le coût est le montant à payer."
+      "explanation": "Le coût est le montant à payer.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-02"
     },
     {
       "id": "homophones-lexicaux-var-03",
@@ -1879,9 +2137,11 @@
         "coût"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "cou-coup-cout"
       ],
-      "explanation": "Un coup peut être donné ou reçu."
+      "explanation": "Un coup peut être donné ou reçu.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-03"
     },
     {
       "id": "homophones-lexicaux-var-04",
@@ -1894,9 +2154,11 @@
         "un animal"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "ver-verre-vert-vers"
       ],
-      "explanation": "Verre : récipient ou matière. Vert : couleur. Ver : animal."
+      "explanation": "Verre : récipient ou matière. Vert : couleur. Ver : animal.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-01"
     },
     {
       "id": "homophones-lexicaux-var-05",
@@ -1909,9 +2171,11 @@
         "vert"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "ver-verre-vert-vers"
       ],
-      "explanation": "L’adjectif vert devient verte au féminin."
+      "explanation": "L’adjectif vert devient verte au féminin.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-02"
     },
     {
       "id": "homophones-lexicaux-var-06",
@@ -1924,9 +2188,11 @@
         "ver"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "ver-verre-vert-vers"
       ],
-      "explanation": "Un ver de terre est un animal."
+      "explanation": "Un ver de terre est un animal.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-04"
     },
     {
       "id": "homophones-lexicaux-var-07",
@@ -1939,9 +2205,11 @@
         "peint"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "pain-pin-peint"
       ],
-      "explanation": "Le pain se mange ; le pin est un arbre ; peint vient de peindre."
+      "explanation": "Le pain se mange ; le pin est un arbre ; peint vient de peindre.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-07"
     },
     {
       "id": "homophones-lexicaux-var-08",
@@ -1954,9 +2222,11 @@
         "pin"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "pain-pin-peint"
       ],
-      "explanation": "Le pin est un conifère."
+      "explanation": "Le pin est un conifère.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-08"
     },
     {
       "id": "homophones-lexicaux-var-09",
@@ -1969,9 +2239,11 @@
         "qu’en"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "camp-quand-quen"
       ],
-      "explanation": "Un camp peut désigner le côté occupé par une équipe."
+      "explanation": "Un camp peut désigner le côté occupé par une équipe.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-09"
     },
     {
       "id": "homophones-lexicaux-var-10",
@@ -1984,9 +2256,11 @@
         "Qu’en"
       ],
       "skillIds": [
-        "homophones-lexicaux"
+        "camp-quand-quen"
       ],
-      "explanation": "Quand pose une question sur le moment."
+      "explanation": "Quand pose une question sur le moment.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-10"
     },
     {
       "id": "si-sy-var-01",
@@ -2000,7 +2274,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v1"
     },
     {
       "id": "si-sy-var-02",
@@ -2014,7 +2289,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v2"
     },
     {
       "id": "si-sy-var-03",
@@ -2028,7 +2304,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v1"
     },
     {
       "id": "si-sy-var-04",
@@ -2042,7 +2319,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v2"
     },
     {
       "id": "si-sy-var-05",
@@ -2056,7 +2334,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v1"
     },
     {
       "id": "si-sy-var-06",
@@ -2070,7 +2349,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v2"
     },
     {
       "id": "si-sy-var-07",
@@ -2084,7 +2364,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v1"
     },
     {
       "id": "si-sy-var-08",
@@ -2098,7 +2379,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v2"
     },
     {
       "id": "si-sy-var-09",
@@ -2112,7 +2394,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v1"
     },
     {
       "id": "si-sy-var-10",
@@ -2126,7 +2409,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v2"
     },
     {
       "id": "si-sy-var-11",
@@ -2140,7 +2424,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v1"
     },
     {
       "id": "si-sy-var-12",
@@ -2154,7 +2439,8 @@
       "skillIds": [
         "si-sy"
       ],
-      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends."
+      "explanation": "« si » exprime notamment une condition, une interrogation indirecte ou une intensité. « s’y » accompagne un verbe pronominal : il s’y rend → je m’y rends.",
+      "variantId": "v2"
     },
     {
       "id": "mer-mere-maire-var-01",
@@ -2169,7 +2455,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v1"
     },
     {
       "id": "mer-mere-maire-var-02",
@@ -2184,7 +2471,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v2"
     },
     {
       "id": "mer-mere-maire-var-03",
@@ -2199,7 +2487,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v3"
     },
     {
       "id": "mer-mere-maire-var-04",
@@ -2214,7 +2503,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v1"
     },
     {
       "id": "mer-mere-maire-var-05",
@@ -2229,7 +2519,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v2"
     },
     {
       "id": "mer-mere-maire-var-06",
@@ -2244,7 +2535,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v3"
     },
     {
       "id": "mer-mere-maire-var-07",
@@ -2259,7 +2551,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v1"
     },
     {
       "id": "mer-mere-maire-var-08",
@@ -2274,7 +2567,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v2"
     },
     {
       "id": "mer-mere-maire-var-09",
@@ -2289,7 +2583,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v3"
     },
     {
       "id": "mer-mere-maire-var-10",
@@ -2304,7 +2599,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v1"
     },
     {
       "id": "mer-mere-maire-var-11",
@@ -2319,7 +2615,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v2"
     },
     {
       "id": "mer-mere-maire-var-12",
@@ -2334,7 +2631,8 @@
       "skillIds": [
         "mer-mere-maire"
       ],
-      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune."
+      "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
+      "variantId": "v3"
     },
     {
       "id": "pere-paire-pair-var-01",
@@ -2349,7 +2647,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v3"
     },
     {
       "id": "pere-paire-pair-var-02",
@@ -2364,7 +2663,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v1"
     },
     {
       "id": "pere-paire-pair-var-03",
@@ -2379,7 +2679,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v2"
     },
     {
       "id": "pere-paire-pair-var-04",
@@ -2394,7 +2695,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v3"
     },
     {
       "id": "pere-paire-pair-var-05",
@@ -2409,7 +2711,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v1"
     },
     {
       "id": "pere-paire-pair-var-06",
@@ -2424,7 +2727,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v2"
     },
     {
       "id": "pere-paire-pair-var-07",
@@ -2439,7 +2743,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v3"
     },
     {
       "id": "pere-paire-pair-var-08",
@@ -2454,7 +2759,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v1"
     },
     {
       "id": "pere-paire-pair-var-09",
@@ -2469,7 +2775,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v2"
     },
     {
       "id": "pere-paire-pair-var-10",
@@ -2484,7 +2791,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v3"
     },
     {
       "id": "pere-paire-pair-var-11",
@@ -2499,7 +2807,8 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v1"
     },
     {
       "id": "pere-paire-pair-var-12",
@@ -2514,7 +2823,591 @@
       "skillIds": [
         "pere-paire-pair"
       ],
-      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux."
+      "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
+      "variantId": "v2"
+    },
+    {
+      "id": "ver-verre-vert-vers-coherence-01",
+      "kind": "choice",
+      "prompt": "Complète : « Elle remplit son ___ d’eau. »",
+      "answer": "verre",
+      "options": [
+        "verre",
+        "ver",
+        "vert",
+        "vers"
+      ],
+      "skillIds": [
+        "ver-verre-vert-vers"
+      ],
+      "explanation": "Un verre est un récipient.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-01"
+    },
+    {
+      "id": "ver-verre-vert-vers-coherence-02",
+      "kind": "choice",
+      "prompt": "Complète : « Le cycliste roule ___ le pont. »",
+      "answer": "vers",
+      "options": [
+        "vers",
+        "ver",
+        "verre",
+        "vert"
+      ],
+      "skillIds": [
+        "ver-verre-vert-vers"
+      ],
+      "explanation": "Vers indique une direction.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-03"
+    },
+    {
+      "id": "ver-verre-vert-vers-coherence-03",
+      "kind": "choice",
+      "prompt": "Complète : « Ce pull est ___. »",
+      "answer": "vert",
+      "options": [
+        "vert",
+        "ver",
+        "verre",
+        "vers"
+      ],
+      "skillIds": [
+        "ver-verre-vert-vers"
+      ],
+      "explanation": "Vert désigne une couleur.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-02"
+    },
+    {
+      "id": "ver-verre-vert-vers-coherence-04",
+      "kind": "choice",
+      "prompt": "Complète : « La poule picore un ___ de terre. »",
+      "answer": "ver",
+      "options": [
+        "ver",
+        "verre",
+        "vert",
+        "vers"
+      ],
+      "skillIds": [
+        "ver-verre-vert-vers"
+      ],
+      "explanation": "Un ver est un animal.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-04"
+    },
+    {
+      "id": "ver-verre-vert-vers-coherence-05",
+      "kind": "choice",
+      "prompt": "Complète : « Le rendez-vous est prévu ___ midi. »",
+      "answer": "vers",
+      "options": [
+        "vers",
+        "ver",
+        "verre",
+        "vert"
+      ],
+      "skillIds": [
+        "ver-verre-vert-vers"
+      ],
+      "explanation": "Vers indique une heure approximative.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-03"
+    },
+    {
+      "id": "cou-coup-cout-coherence-01",
+      "kind": "choice",
+      "prompt": "Complète : « Elle porte une écharpe autour du ___. »",
+      "answer": "cou",
+      "options": [
+        "cou",
+        "coup",
+        "coût"
+      ],
+      "skillIds": [
+        "cou-coup-cout"
+      ],
+      "explanation": "Le cou relie la tête au tronc.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-01"
+    },
+    {
+      "id": "cou-coup-cout-coherence-02",
+      "kind": "choice",
+      "prompt": "Complète : « Un ___ de vent ferme la porte. »",
+      "answer": "coup",
+      "options": [
+        "coup",
+        "cou",
+        "coût"
+      ],
+      "skillIds": [
+        "cou-coup-cout"
+      ],
+      "explanation": "Un coup est ici une manifestation soudaine.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-03"
+    },
+    {
+      "id": "cou-coup-cout-coherence-03",
+      "kind": "choice",
+      "prompt": "Complète : « Le ___ du voyage est trop élevé. »",
+      "answer": "coût",
+      "options": [
+        "coût",
+        "cou",
+        "coup"
+      ],
+      "skillIds": [
+        "cou-coup-cout"
+      ],
+      "explanation": "Le coût est le prix à payer.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-02"
+    },
+    {
+      "id": "cou-coup-cout-coherence-04",
+      "kind": "choice",
+      "prompt": "Complète : « La girafe possède un long ___. »",
+      "answer": "cou",
+      "options": [
+        "cou",
+        "coup",
+        "coût"
+      ],
+      "skillIds": [
+        "cou-coup-cout"
+      ],
+      "explanation": "Il s’agit de la partie du corps.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-01"
+    },
+    {
+      "id": "cou-coup-cout-coherence-05",
+      "kind": "choice",
+      "prompt": "Complète : « Il frappe un ___ à la porte. »",
+      "answer": "coup",
+      "options": [
+        "coup",
+        "cou",
+        "coût"
+      ],
+      "skillIds": [
+        "cou-coup-cout"
+      ],
+      "explanation": "Un coup peut être un choc ou un bruit.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-03"
+    },
+    {
+      "id": "cou-coup-cout-coherence-06",
+      "kind": "choice",
+      "prompt": "Complète : « Nous calculons le ___ des matériaux. »",
+      "answer": "coût",
+      "options": [
+        "coût",
+        "cou",
+        "coup"
+      ],
+      "skillIds": [
+        "cou-coup-cout"
+      ],
+      "explanation": "On calcule un prix : le coût.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-02"
+    },
+    {
+      "id": "cou-coup-cout-coherence-07",
+      "kind": "choice",
+      "prompt": "Complète : « Ce collier entoure son ___. »",
+      "answer": "cou",
+      "options": [
+        "cou",
+        "coup",
+        "coût"
+      ],
+      "skillIds": [
+        "cou-coup-cout"
+      ],
+      "explanation": "Le collier se porte au cou.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-01"
+    },
+    {
+      "id": "cou-coup-cout-coherence-08",
+      "kind": "choice",
+      "prompt": "Complète : « Le joueur reçoit un ___ au bras. »",
+      "answer": "coup",
+      "options": [
+        "coup",
+        "cou",
+        "coût"
+      ],
+      "skillIds": [
+        "cou-coup-cout"
+      ],
+      "explanation": "Il reçoit un choc.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-03"
+    },
+    {
+      "id": "cou-coup-cout-coherence-09",
+      "kind": "choice",
+      "prompt": "Complète : « Le ___ de la réparation comprend les pièces. »",
+      "answer": "coût",
+      "options": [
+        "coût",
+        "cou",
+        "coup"
+      ],
+      "skillIds": [
+        "cou-coup-cout"
+      ],
+      "explanation": "Coût signifie montant à payer.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-02"
+    },
+    {
+      "id": "pain-pin-peint-coherence-01",
+      "kind": "choice",
+      "prompt": "Complète : « Je coupe une tranche de ___. »",
+      "answer": "pain",
+      "options": [
+        "pain",
+        "pin",
+        "peint"
+      ],
+      "skillIds": [
+        "pain-pin-peint"
+      ],
+      "explanation": "Le pain est un aliment.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-07"
+    },
+    {
+      "id": "pain-pin-peint-coherence-02",
+      "kind": "choice",
+      "prompt": "Complète : « Un grand ___ pousse près de la plage. »",
+      "answer": "pin",
+      "options": [
+        "pin",
+        "pain",
+        "peint"
+      ],
+      "skillIds": [
+        "pain-pin-peint"
+      ],
+      "explanation": "Le pin est un arbre.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-08"
+    },
+    {
+      "id": "pain-pin-peint-coherence-03",
+      "kind": "choice",
+      "prompt": "Complète : « Le décorateur ___ le mur. »",
+      "answer": "peint",
+      "options": [
+        "peint",
+        "pain",
+        "pin"
+      ],
+      "skillIds": [
+        "pain-pin-peint"
+      ],
+      "explanation": "Peint est une forme du verbe peindre.",
+      "reviewMode": "question",
+      "reviewId": "pain-pin-peint-coherence-03"
+    },
+    {
+      "id": "pain-pin-peint-coherence-04",
+      "kind": "choice",
+      "prompt": "Complète : « Le boulanger prépare du ___ complet. »",
+      "answer": "pain",
+      "options": [
+        "pain",
+        "pin",
+        "peint"
+      ],
+      "skillIds": [
+        "pain-pin-peint"
+      ],
+      "explanation": "Le pain est fabriqué à partir de farine.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-07"
+    },
+    {
+      "id": "pain-pin-peint-coherence-05",
+      "kind": "choice",
+      "prompt": "Complète : « Les aiguilles du ___ tombent sur le chemin. »",
+      "answer": "pin",
+      "options": [
+        "pin",
+        "pain",
+        "peint"
+      ],
+      "skillIds": [
+        "pain-pin-peint"
+      ],
+      "explanation": "Le pin est un conifère.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-08"
+    },
+    {
+      "id": "pain-pin-peint-coherence-06",
+      "kind": "choice",
+      "prompt": "Complète : « Elle a ___ une fleur sur la boîte. »",
+      "answer": "peint",
+      "options": [
+        "peint",
+        "pain",
+        "pin"
+      ],
+      "skillIds": [
+        "pain-pin-peint"
+      ],
+      "explanation": "Peint est ici le participe passé de peindre.",
+      "reviewMode": "question",
+      "reviewId": "pain-pin-peint-coherence-03"
+    },
+    {
+      "id": "pain-pin-peint-coherence-07",
+      "kind": "choice",
+      "prompt": "Complète : « Il reste du ___ dans la corbeille. »",
+      "answer": "pain",
+      "options": [
+        "pain",
+        "pin",
+        "peint"
+      ],
+      "skillIds": [
+        "pain-pin-peint"
+      ],
+      "explanation": "Il s’agit de l’aliment.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-07"
+    },
+    {
+      "id": "pain-pin-peint-coherence-08",
+      "kind": "choice",
+      "prompt": "Complète : « Une pomme de ___ roule sur le sol. »",
+      "answer": "pin",
+      "options": [
+        "pin",
+        "pain",
+        "peint"
+      ],
+      "skillIds": [
+        "pain-pin-peint"
+      ],
+      "explanation": "La pomme de pin est le cône d’un pin.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-08"
+    },
+    {
+      "id": "pain-pin-peint-coherence-09",
+      "kind": "choice",
+      "prompt": "Complète : « Ce portrait est ___ à l’huile. »",
+      "answer": "peint",
+      "options": [
+        "peint",
+        "pain",
+        "pin"
+      ],
+      "skillIds": [
+        "pain-pin-peint"
+      ],
+      "explanation": "Peint est le participe passé de peindre.",
+      "reviewMode": "question",
+      "reviewId": "pain-pin-peint-coherence-03"
+    },
+    {
+      "id": "pain-pin-peint-coherence-10",
+      "kind": "choice",
+      "prompt": "Complète : « Il ___ un paysage chaque été. »",
+      "answer": "peint",
+      "options": [
+        "peint",
+        "pain",
+        "pin"
+      ],
+      "skillIds": [
+        "pain-pin-peint"
+      ],
+      "explanation": "Avec il, on écrit il peint au présent.",
+      "reviewMode": "question",
+      "reviewId": "pain-pin-peint-coherence-03"
+    },
+    {
+      "id": "camp-quand-quen-coherence-01",
+      "kind": "choice",
+      "prompt": "Complète : « Les tentes du ___ sont installées dans la clairière. »",
+      "answer": "camp",
+      "options": [
+        "camp",
+        "quand",
+        "qu’en"
+      ],
+      "skillIds": [
+        "camp-quand-quen"
+      ],
+      "explanation": "Un camp est un lieu d’installation temporaire.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-09"
+    },
+    {
+      "id": "camp-quand-quen-coherence-02",
+      "kind": "choice",
+      "prompt": "Complète : « Dis-moi ___ le train arrive. »",
+      "answer": "quand",
+      "options": [
+        "quand",
+        "camp",
+        "qu’en"
+      ],
+      "skillIds": [
+        "camp-quand-quen"
+      ],
+      "explanation": "Quand interroge sur le moment.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-10"
+    },
+    {
+      "id": "camp-quand-quen-coherence-03",
+      "kind": "choice",
+      "prompt": "Complète : « Cette décision, ___ penses-tu ? »",
+      "answer": "qu’en",
+      "options": [
+        "qu’en",
+        "camp",
+        "quand"
+      ],
+      "skillIds": [
+        "camp-quand-quen"
+      ],
+      "explanation": "Qu’en signifie que penses-tu de cette décision.",
+      "reviewMode": "question",
+      "reviewId": "camp-quand-quen-coherence-03"
+    },
+    {
+      "id": "camp-quand-quen-coherence-04",
+      "kind": "choice",
+      "prompt": "Complète : « Les joueurs reviennent dans leur ___. »",
+      "answer": "camp",
+      "options": [
+        "camp",
+        "quand",
+        "qu’en"
+      ],
+      "skillIds": [
+        "camp-quand-quen"
+      ],
+      "explanation": "Un camp peut désigner le côté d’une équipe.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-09"
+    },
+    {
+      "id": "camp-quand-quen-coherence-05",
+      "kind": "choice",
+      "prompt": "Complète : « Je viendrai ___ la pluie aura cessé. »",
+      "answer": "quand",
+      "options": [
+        "quand",
+        "camp",
+        "qu’en"
+      ],
+      "skillIds": [
+        "camp-quand-quen"
+      ],
+      "explanation": "Quand introduit une indication de temps.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-10"
+    },
+    {
+      "id": "camp-quand-quen-coherence-06",
+      "kind": "choice",
+      "prompt": "Complète : « De ces deux idées, ___ reste-t-il ? »",
+      "answer": "qu’en",
+      "options": [
+        "qu’en",
+        "camp",
+        "quand"
+      ],
+      "skillIds": [
+        "camp-quand-quen"
+      ],
+      "explanation": "Qu’en reprend de ces idées.",
+      "reviewMode": "question",
+      "reviewId": "camp-quand-quen-coherence-03"
+    },
+    {
+      "id": "camp-quand-quen-coherence-07",
+      "kind": "choice",
+      "prompt": "Complète : « Nous rejoignons le ___ de vacances. »",
+      "answer": "camp",
+      "options": [
+        "camp",
+        "quand",
+        "qu’en"
+      ],
+      "skillIds": [
+        "camp-quand-quen"
+      ],
+      "explanation": "Camp est un nom.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-09"
+    },
+    {
+      "id": "camp-quand-quen-coherence-08",
+      "kind": "choice",
+      "prompt": "Complète : « ___ partons-nous pour la gare ? »",
+      "answer": "quand",
+      "options": [
+        "quand",
+        "camp",
+        "qu’en"
+      ],
+      "skillIds": [
+        "camp-quand-quen"
+      ],
+      "explanation": "Quand pose une question sur le moment.",
+      "reviewMode": "question",
+      "reviewId": "homophones-lexicaux-var-10"
+    },
+    {
+      "id": "camp-quand-quen-coherence-09",
+      "kind": "choice",
+      "prompt": "Complète : « De cette histoire, ___ sais-tu ? »",
+      "answer": "qu’en",
+      "options": [
+        "qu’en",
+        "camp",
+        "quand"
+      ],
+      "skillIds": [
+        "camp-quand-quen"
+      ],
+      "explanation": "Qu’en signifie que sais-tu de cette histoire.",
+      "reviewMode": "question",
+      "reviewId": "camp-quand-quen-coherence-03"
+    },
+    {
+      "id": "camp-quand-quen-coherence-10",
+      "kind": "choice",
+      "prompt": "Complète : « De cette lecture, ___ as-tu retenu ? »",
+      "answer": "qu’en",
+      "options": [
+        "qu’en",
+        "camp",
+        "quand"
+      ],
+      "skillIds": [
+        "camp-quand-quen"
+      ],
+      "explanation": "Qu’en reprend de cette lecture.",
+      "reviewMode": "question",
+      "reviewId": "camp-quand-quen-coherence-03"
     }
   ]
 }

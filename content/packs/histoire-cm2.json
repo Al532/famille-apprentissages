@@ -1,6 +1,6 @@
 {
   "id": "histoire-cm2",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Comprendre les XIXe et XXe siècles",
   "subject": "Histoire-géographie",
   "levels": [
@@ -10,31 +10,117 @@
   "skills": [
     {
       "id": "republique",
-      "label": "Comprendre la République"
+      "label": "Comprendre la République",
+      "variants": [
+        {
+          "id": "pouvoir",
+          "label": "Désignation et limites du pouvoir"
+        },
+        {
+          "id": "election",
+          "label": "Élections et représentation"
+        },
+        {
+          "id": "droits",
+          "label": "Égalité et règles communes"
+        }
+      ]
     },
     {
       "id": "ecole-droits",
-      "label": "École et conquête des droits"
+      "label": "École et conquête des droits",
+      "variants": [
+        {
+          "id": "instruction",
+          "label": "Accès à l’instruction"
+        },
+        {
+          "id": "conscience",
+          "label": "Liberté de conscience"
+        },
+        {
+          "id": "droits",
+          "label": "Élargissement des droits"
+        }
+      ]
     },
     {
       "id": "industrie",
-      "label": "Comprendre l’industrialisation"
+      "label": "Comprendre l’industrialisation",
+      "variants": [
+        {
+          "id": "production",
+          "label": "Machines et production"
+        },
+        {
+          "id": "territoires",
+          "label": "Déplacements et croissance urbaine"
+        },
+        {
+          "id": "travail",
+          "label": "Conditions de travail"
+        }
+      ]
     },
     {
       "id": "colonisation",
-      "label": "Comprendre la colonisation"
+      "label": "Comprendre la colonisation",
+      "variants": [
+        {
+          "id": "domination",
+          "label": "Domination et inégalités"
+        },
+        {
+          "id": "ressources",
+          "label": "Exploitation des ressources"
+        },
+        {
+          "id": "critique",
+          "label": "Résistances et regard critique"
+        }
+      ]
     },
     {
       "id": "premiere-guerre",
-      "label": "Comprendre la Première Guerre mondiale"
+      "label": "Comprendre la Première Guerre mondiale",
+      "variants": [
+        {
+          "id": "mondiale",
+          "label": "Échelle mondiale"
+        },
+        {
+          "id": "civils",
+          "label": "Mobilisation et vie des civils"
+        }
+      ]
     },
     {
       "id": "seconde-guerre",
-      "label": "Comprendre la Seconde Guerre mondiale"
+      "label": "Comprendre la Seconde Guerre mondiale",
+      "variants": [
+        {
+          "id": "actions",
+          "label": "Résister ou collaborer"
+        },
+        {
+          "id": "civils",
+          "label": "Conséquences pour les civils"
+        }
+      ]
     },
     {
       "id": "union-europeenne",
-      "label": "Comprendre la construction européenne"
+      "label": "Comprendre la construction européenne",
+      "variants": [
+        {
+          "id": "cooperation",
+          "label": "Objectifs de la coopération"
+        },
+        {
+          "id": "distinction",
+          "label": "Continent et organisation politique"
+        }
+      ]
     }
   ],
   "exercises": [
@@ -51,7 +137,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "Dans une république, la fonction de chef de l’État ne se transmet pas par héritage familial."
+      "explanation": "Dans une république, la fonction de chef de l’État ne se transmet pas par héritage familial.",
+      "variantId": "pouvoir"
     },
     {
       "id": "republique-reserve-02",
@@ -66,7 +153,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "Dans une monarchie héréditaire, la fonction de monarque se transmet dans une famille."
+      "explanation": "Dans une monarchie héréditaire, la fonction de monarque se transmet dans une famille.",
+      "variantId": "pouvoir"
     },
     {
       "id": "republique-reserve-03",
@@ -178,7 +266,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "Une élection permet aux électeurs de choisir parmi des candidats selon des règles."
+      "explanation": "Une élection permet aux électeurs de choisir parmi des candidats selon des règles.",
+      "variantId": "election"
     },
     {
       "id": "republique-reserve-10",
@@ -193,7 +282,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "Des lois et des institutions encadrent l’exercice du pouvoir."
+      "explanation": "Des lois et des institutions encadrent l’exercice du pouvoir.",
+      "variantId": "droits"
     },
     {
       "id": "republique-reserve-11",
@@ -208,7 +298,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "L’égalité juridique ne signifie pas que toutes les personnes sont identiques."
+      "explanation": "L’égalité juridique ne signifie pas que toutes les personnes sont identiques.",
+      "variantId": "droits"
     },
     {
       "id": "republique-reserve-12",
@@ -223,7 +314,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "La République se distingue d’une monarchie héréditaire par l’origine et les règles du pouvoir."
+      "explanation": "La République se distingue d’une monarchie héréditaire par l’origine et les règles du pouvoir.",
+      "variantId": "pouvoir"
     },
     {
       "id": "ecole-droits-reserve-01",
@@ -254,7 +346,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "La gratuité facilite l’accès à l’enseignement public ; elle ne signifie pas que tous les frais de vie disparaissent."
+      "explanation": "La gratuité facilite l’accès à l’enseignement public ; elle ne signifie pas que tous les frais de vie disparaissent.",
+      "variantId": "instruction"
     },
     {
       "id": "ecole-droits-reserve-03",
@@ -285,7 +378,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "La laïcité protège la liberté de conscience et la neutralité de l’enseignement public."
+      "explanation": "La laïcité protège la liberté de conscience et la neutralité de l’enseignement public.",
+      "variantId": "conscience"
     },
     {
       "id": "ecole-droits-reserve-05",
@@ -300,7 +394,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "Les longues journées de travail rendent l’accès à l’instruction plus difficile."
+      "explanation": "Les longues journées de travail rendent l’accès à l’instruction plus difficile.",
+      "variantId": "instruction"
     },
     {
       "id": "ecole-droits-reserve-06",
@@ -331,7 +426,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "Le mot masculin est essentiel : l’expression ne désigne pas encore le vote des femmes."
+      "explanation": "Le mot masculin est essentiel : l’expression ne désigne pas encore le vote des femmes.",
+      "variantId": "droits"
     },
     {
       "id": "ecole-droits-reserve-08",
@@ -346,7 +442,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "L’extension du droit de vote augmente le nombre de citoyens qui peuvent participer."
+      "explanation": "L’extension du droit de vote augmente le nombre de citoyens qui peuvent participer.",
+      "variantId": "droits"
     },
     {
       "id": "ecole-droits-reserve-09",
@@ -361,7 +458,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "L’obligation porte sur l’instruction des enfants, pas seulement sur un bâtiment scolaire."
+      "explanation": "L’obligation porte sur l’instruction des enfants, pas seulement sur un bâtiment scolaire.",
+      "variantId": "instruction"
     },
     {
       "id": "ecole-droits-reserve-10",
@@ -376,7 +474,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "L’accès au vote, à l’instruction et à de meilleures conditions de travail s’est construit progressivement."
+      "explanation": "L’accès au vote, à l’instruction et à de meilleures conditions de travail s’est construit progressivement.",
+      "variantId": "droits"
     },
     {
       "id": "ecole-droits-reserve-11",
@@ -407,7 +506,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "L’instruction aide à s’informer et à participer à la vie collective."
+      "explanation": "L’instruction aide à s’informer et à participer à la vie collective.",
+      "variantId": "instruction"
     },
     {
       "id": "industrie-reserve-01",
@@ -438,7 +538,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "La vapeur produite grâce à la chaleur peut mettre des mécanismes en mouvement."
+      "explanation": "La vapeur produite grâce à la chaleur peut mettre des mécanismes en mouvement.",
+      "variantId": "production"
     },
     {
       "id": "industrie-reserve-03",
@@ -453,7 +554,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "L’industrialisation transforme les modes de production et le travail."
+      "explanation": "L’industrialisation transforme les modes de production et le travail.",
+      "variantId": "production"
     },
     {
       "id": "industrie-reserve-04",
@@ -484,7 +586,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "Les usines concentrent la production industrielle."
+      "explanation": "Les usines concentrent la production industrielle.",
+      "variantId": "production"
     },
     {
       "id": "industrie-reserve-06",
@@ -499,7 +602,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "L’exode rural désigne un déplacement durable des populations vers les villes."
+      "explanation": "L’exode rural désigne un déplacement durable des populations vers les villes.",
+      "variantId": "territoires"
     },
     {
       "id": "industrie-reserve-07",
@@ -514,7 +618,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "Des emplois attirent de nouveaux habitants, même si les campagnes continuent d’exister."
+      "explanation": "Des emplois attirent de nouveaux habitants, même si les campagnes continuent d’exister.",
+      "variantId": "territoires"
     },
     {
       "id": "industrie-reserve-08",
@@ -545,7 +650,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "Les ouvriers subissent souvent de longues journées et des risques importants."
+      "explanation": "Les ouvriers subissent souvent de longues journées et des risques importants.",
+      "variantId": "travail"
     },
     {
       "id": "industrie-reserve-10",
@@ -560,7 +666,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "Les organisations et actions collectives cherchent notamment à améliorer le travail."
+      "explanation": "Les organisations et actions collectives cherchent notamment à améliorer le travail.",
+      "variantId": "travail"
     },
     {
       "id": "industrie-reserve-11",
@@ -575,7 +682,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "Le réseau ferré relie des régions et facilite les échanges."
+      "explanation": "Le réseau ferré relie des régions et facilite les échanges.",
+      "variantId": "territoires"
     },
     {
       "id": "industrie-reserve-12",
@@ -590,7 +698,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "Le changement technique a aussi des conséquences économiques et sociales."
+      "explanation": "Le changement technique a aussi des conséquences économiques et sociales.",
+      "variantId": "territoires"
     },
     {
       "id": "colonisation-reserve-01",
@@ -621,7 +730,8 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "Les populations colonisées subissent une domination extérieure."
+      "explanation": "Les populations colonisées subissent une domination extérieure.",
+      "variantId": "domination"
     },
     {
       "id": "colonisation-reserve-03",
@@ -652,7 +762,8 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "La conquête et la domination coloniales s’accompagnent de violences et de résistances."
+      "explanation": "La conquête et la domination coloniales s’accompagnent de violences et de résistances.",
+      "variantId": "domination"
     },
     {
       "id": "colonisation-reserve-05",
@@ -667,7 +778,8 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "L’exploitation des ressources et du travail relève de l’économie."
+      "explanation": "L’exploitation des ressources et du travail relève de l’économie.",
+      "variantId": "ressources"
     },
     {
       "id": "colonisation-reserve-06",
@@ -682,7 +794,8 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "La domination coloniale repose notamment sur des inégalités de droits."
+      "explanation": "La domination coloniale repose notamment sur des inégalités de droits.",
+      "variantId": "domination"
     },
     {
       "id": "colonisation-reserve-07",
@@ -713,7 +826,8 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "L’histoire cherche à comprendre les expériences et les rapports de pouvoir."
+      "explanation": "L’histoire cherche à comprendre les expériences et les rapports de pouvoir.",
+      "variantId": "critique"
     },
     {
       "id": "colonisation-reserve-09",
@@ -728,7 +842,8 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "Des populations et des dirigeants ont résisté de différentes façons à la domination."
+      "explanation": "Des populations et des dirigeants ont résisté de différentes façons à la domination.",
+      "variantId": "critique"
     },
     {
       "id": "colonisation-reserve-10",
@@ -759,7 +874,8 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "Les couleurs de la carte peuvent représenter un pouvoir politique, pas un relief."
+      "explanation": "Les couleurs de la carte peuvent représenter un pouvoir politique, pas un relief.",
+      "variantId": "domination"
     },
     {
       "id": "colonisation-reserve-12",
@@ -774,7 +890,8 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "La notion centrale est la domination ; elle ne se confond pas avec un voyage ou un échange égal."
+      "explanation": "La notion centrale est la domination ; elle ne se confond pas avec un voyage ou un échange égal.",
+      "variantId": "domination"
     },
     {
       "id": "premiere-guerre-reserve-01",
@@ -855,7 +972,8 @@
         "premiere-guerre"
       ],
       "explanation": "Mondiale ne signifie pas que chaque endroit du globe est un champ de bataille.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "mondiale"
     },
     {
       "id": "premiere-guerre-reserve-06",
@@ -903,7 +1021,8 @@
         "premiere-guerre"
       ],
       "explanation": "Les sociétés entières sont mobilisées et touchées.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "civils"
     },
     {
       "id": "premiere-guerre-reserve-09",
@@ -935,7 +1054,8 @@
         "premiere-guerre"
       ],
       "explanation": "La guerre mobilise les ressources économiques et industrielles.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "civils"
     },
     {
       "id": "premiere-guerre-reserve-11",
@@ -967,7 +1087,8 @@
         "premiere-guerre"
       ],
       "explanation": "Les deuils, absences, pénuries et changements de travail touchent les familles.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "civils"
     },
     {
       "id": "seconde-guerre-reserve-01",
@@ -1145,7 +1266,8 @@
         "seconde-guerre"
       ],
       "explanation": "La Seconde Guerre mondiale frappe très durement les civils.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "civils"
     },
     {
       "id": "seconde-guerre-reserve-12",
@@ -1161,7 +1283,8 @@
         "seconde-guerre"
       ],
       "explanation": "Les deux notions correspondent à des comportements opposés vis-à-vis de l’occupant.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "actions"
     },
     {
       "id": "union-europeenne-reserve-01",
@@ -1177,7 +1300,8 @@
         "union-europeenne"
       ],
       "explanation": "La coopération économique et politique vise notamment à construire une paix durable.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "cooperation"
     },
     {
       "id": "union-europeenne-reserve-02",
@@ -1193,7 +1317,8 @@
         "union-europeenne"
       ],
       "explanation": "Tous les pays du continent européen ne sont pas membres de l’Union européenne.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "distinction"
     },
     {
       "id": "union-europeenne-reserve-03",
@@ -1257,7 +1382,8 @@
         "union-europeenne"
       ],
       "explanation": "La réconciliation franco-allemande est un élément important de la construction européenne.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "cooperation"
     },
     {
       "id": "union-europeenne-reserve-07",
@@ -1305,7 +1431,8 @@
         "union-europeenne"
       ],
       "explanation": "Coopérer signifie agir ensemble tout en pouvant garder des différences.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "cooperation"
     },
     {
       "id": "union-europeenne-reserve-10",
@@ -1337,7 +1464,8 @@
         "union-europeenne"
       ],
       "explanation": "La construction européenne touche plusieurs domaines de la vie économique et politique.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "cooperation"
     },
     {
       "id": "union-europeenne-reserve-12",
@@ -1353,7 +1481,8 @@
         "union-europeenne"
       ],
       "explanation": "Un repère géographique et une union d’États ne désignent pas la même chose.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "distinction"
     },
     {
       "id": "republique-raison-01",
@@ -1368,7 +1497,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "Dans une république, les règles organisent la désignation et la durée des fonctions."
+      "explanation": "Dans une république, les règles organisent la désignation et la durée des fonctions.",
+      "variantId": "pouvoir"
     },
     {
       "id": "republique-raison-02",
@@ -1383,7 +1513,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "La liberté d’expression et le pluralisme permettent des choix politiques."
+      "explanation": "La liberté d’expression et le pluralisme permettent des choix politiques.",
+      "variantId": "election"
     },
     {
       "id": "republique-raison-03",
@@ -1398,7 +1529,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "Le pouvoir public doit respecter les règles communes, pas favoriser arbitrairement des proches."
+      "explanation": "Le pouvoir public doit respecter les règles communes, pas favoriser arbitrairement des proches.",
+      "variantId": "droits"
     },
     {
       "id": "republique-raison-04",
@@ -1413,7 +1545,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "Le pouvoir républicain n’est pas héréditaire."
+      "explanation": "Le pouvoir républicain n’est pas héréditaire.",
+      "variantId": "pouvoir"
     },
     {
       "id": "republique-raison-05",
@@ -1428,7 +1561,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "L’exercice du pouvoir est encadré par le droit."
+      "explanation": "L’exercice du pouvoir est encadré par le droit.",
+      "variantId": "droits"
     },
     {
       "id": "republique-raison-06",
@@ -1443,7 +1577,8 @@
       "skillIds": [
         "republique"
       ],
-      "explanation": "Des électeurs désignent des représentants par leur vote."
+      "explanation": "Des électeurs désignent des représentants par leur vote.",
+      "variantId": "election"
     },
     {
       "id": "ecole-droits-raison-01",
@@ -1458,7 +1593,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "La gratuité réduit un obstacle financier à la scolarisation."
+      "explanation": "La gratuité réduit un obstacle financier à la scolarisation.",
+      "variantId": "instruction"
     },
     {
       "id": "ecole-droits-raison-02",
@@ -1473,7 +1609,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "L’accès à l’instruction contribue à l’égalité des droits et des possibilités."
+      "explanation": "L’accès à l’instruction contribue à l’égalité des droits et des possibilités.",
+      "variantId": "instruction"
     },
     {
       "id": "ecole-droits-raison-03",
@@ -1488,7 +1625,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "Le travail long et pénible peut empêcher une scolarisation régulière."
+      "explanation": "Le travail long et pénible peut empêcher une scolarisation régulière.",
+      "variantId": "instruction"
     },
     {
       "id": "ecole-droits-raison-04",
@@ -1503,7 +1641,8 @@
       "skillIds": [
         "ecole-droits"
       ],
-      "explanation": "Les conquêtes de droits résultent de décisions, de débats et de luttes."
+      "explanation": "Les conquêtes de droits résultent de décisions, de débats et de luttes.",
+      "variantId": "droits"
     },
     {
       "id": "industrie-raison-01",
@@ -1518,7 +1657,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "Les emplois industriels peuvent attirer de nouveaux habitants."
+      "explanation": "Les emplois industriels peuvent attirer de nouveaux habitants.",
+      "variantId": "territoires"
     },
     {
       "id": "industrie-raison-02",
@@ -1533,7 +1673,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "Un nouveau transport renforce les relations entre les territoires."
+      "explanation": "Un nouveau transport renforce les relations entre les territoires.",
+      "variantId": "territoires"
     },
     {
       "id": "industrie-raison-03",
@@ -1548,7 +1689,8 @@
       "skillIds": [
         "industrie"
       ],
-      "explanation": "Les revendications ouvrières portent notamment sur le temps, le salaire et la sécurité."
+      "explanation": "Les revendications ouvrières portent notamment sur le temps, le salaire et la sécurité.",
+      "variantId": "travail"
     },
     {
       "id": "colonisation-raison-01",
@@ -1563,7 +1705,8 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "L’inégalité du pouvoir et des droits caractérise une domination."
+      "explanation": "L’inégalité du pouvoir et des droits caractérise une domination.",
+      "variantId": "domination"
     },
     {
       "id": "colonisation-raison-02",
@@ -1578,7 +1721,8 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "Une propagande ne remplace pas l’étude critique de sources variées."
+      "explanation": "Une propagande ne remplace pas l’étude critique de sources variées.",
+      "variantId": "critique"
     },
     {
       "id": "colonisation-raison-03",
@@ -1593,7 +1737,8 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "La domination coloniale concerne aussi les ressources, les échanges et le travail."
+      "explanation": "La domination coloniale concerne aussi les ressources, les échanges et le travail.",
+      "variantId": "ressources"
     },
     {
       "id": "colonisation-raison-04",
@@ -1608,7 +1753,408 @@
       "skillIds": [
         "colonisation"
       ],
-      "explanation": "Les populations colonisées ont pu résister à l’imposition d’un pouvoir extérieur."
+      "explanation": "Les populations colonisées ont pu résister à l’imposition d’un pouvoir extérieur.",
+      "variantId": "critique"
+    },
+    {
+      "id": "ecole-droits-coherence-01",
+      "kind": "choice",
+      "prompt": "Deux élèves ont des croyances différentes. Dans l’enseignement public laïque, que doit-on respecter ?",
+      "answer": "leur liberté de conscience",
+      "options": [
+        "leur liberté de conscience",
+        "l’obligation d’avoir la même religion",
+        "le droit d’exclure l’un des élèves"
+      ],
+      "skillIds": [
+        "ecole-droits"
+      ],
+      "explanation": "La laïcité de l’enseignement public protège la liberté de conscience sans imposer une religion.",
+      "variantId": "conscience"
+    },
+    {
+      "id": "premiere-guerre-coherence-01",
+      "kind": "choice",
+      "prompt": "Des soldats venus de plusieurs continents participent aux combats de 1914-1918. Qu’est-ce que cela illustre ?",
+      "answer": "la dimension mondiale de la guerre",
+      "options": [
+        "la dimension mondiale de la guerre",
+        "une guerre limitée à un village",
+        "l’absence de liens entre les continents"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Une guerre mondiale engage des États et des populations de plusieurs continents.",
+      "variantId": "mondiale"
+    },
+    {
+      "id": "premiere-guerre-coherence-02",
+      "kind": "choice",
+      "prompt": "Pendant la guerre, une usine de vêtements fabrique des uniformes. Qu’est-ce que cela montre ?",
+      "answer": "la mobilisation de la production pour la guerre",
+      "options": [
+        "la mobilisation de la production pour la guerre",
+        "l’arrêt de toute activité civile",
+        "la disparition des besoins de l’armée"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "L’économie et les civils participent à l’effort de guerre.",
+      "variantId": "civils"
+    },
+    {
+      "id": "premiere-guerre-coherence-03",
+      "kind": "choice",
+      "prompt": "Pourquoi une guerre menée surtout en Europe peut-elle être mondiale ?",
+      "answer": "des pays et des populations d’autres continents y prennent part",
+      "options": [
+        "des pays et des populations d’autres continents y prennent part",
+        "seul le lieu des batailles compte",
+        "il suffit qu’une ville soit bombardée"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "L’extension des engagements compte aussi, pas seulement le lieu des principaux combats.",
+      "variantId": "mondiale"
+    },
+    {
+      "id": "premiere-guerre-coherence-04",
+      "kind": "choice",
+      "prompt": "Une famille manque de nourriture pendant la Première Guerre mondiale. Quelle idée cela illustre-t-il ?",
+      "answer": "la guerre touche aussi la vie quotidienne des civils",
+      "options": [
+        "la guerre touche aussi la vie quotidienne des civils",
+        "seuls les soldats subissent la guerre",
+        "les civils ne changent pas leurs habitudes"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Les pénuries peuvent affecter les familles à l’arrière.",
+      "variantId": "civils"
+    },
+    {
+      "id": "premiere-guerre-coherence-05",
+      "kind": "choice",
+      "prompt": "Des colonies fournissent des soldats et des ressources aux États en guerre. Qu’en déduit-on ?",
+      "answer": "le conflit dépasse les seules sociétés européennes",
+      "options": [
+        "le conflit dépasse les seules sociétés européennes",
+        "le conflit est uniquement local",
+        "aucune population extérieure n’est concernée"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "L’engagement des empires coloniaux contribue à la dimension mondiale du conflit.",
+      "variantId": "mondiale"
+    },
+    {
+      "id": "premiere-guerre-coherence-06",
+      "kind": "choice",
+      "prompt": "Des femmes remplacent des hommes mobilisés dans des usines. Qu’est-ce que cela montre ?",
+      "answer": "la guerre transforme l’organisation du travail",
+      "options": [
+        "la guerre transforme l’organisation du travail",
+        "la fermeture de toutes les usines",
+        "l’absence de rôle des civils"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Le départ de soldats et les besoins de guerre modifient le travail à l’arrière.",
+      "variantId": "civils"
+    },
+    {
+      "id": "premiere-guerre-coherence-07",
+      "kind": "choice",
+      "prompt": "Comparer les pays engagés sur plusieurs continents permet surtout de comprendre…",
+      "answer": "l’ampleur mondiale du conflit",
+      "options": [
+        "l’ampleur mondiale du conflit",
+        "la date d’un seul combat",
+        "le plan d’une tranchée"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "L’échelle d’un conflit s’étudie notamment par les territoires et les populations engagés.",
+      "variantId": "mondiale"
+    },
+    {
+      "id": "premiere-guerre-coherence-08",
+      "kind": "choice",
+      "prompt": "Pourquoi une ville éloignée du front peut-elle être affectée par la guerre ?",
+      "answer": "ses habitants participent à l’effort de guerre et peuvent subir des pénuries",
+      "options": [
+        "ses habitants participent à l’effort de guerre et peuvent subir des pénuries",
+        "seules les villes sur le front ont une économie",
+        "la distance supprime tous les effets de la guerre"
+      ],
+      "skillIds": [
+        "premiere-guerre"
+      ],
+      "explanation": "Le front et l’arrière sont liés par les ressources, les familles et la production.",
+      "variantId": "civils"
+    },
+    {
+      "id": "seconde-guerre-coherence-01",
+      "kind": "choice",
+      "prompt": "Une personne cache des résistants recherchés par l’occupant. Son action relève…",
+      "answer": "de la Résistance",
+      "options": [
+        "de la Résistance",
+        "de la collaboration",
+        "d’une aide à l’occupant"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Elle aide des personnes qui s’opposent à l’occupation.",
+      "variantId": "actions"
+    },
+    {
+      "id": "seconde-guerre-coherence-02",
+      "kind": "choice",
+      "prompt": "Une famille doit fuir des bombardements. Que montre cet exemple ?",
+      "answer": "les civils subissent aussi la guerre",
+      "options": [
+        "les civils subissent aussi la guerre",
+        "les civils sont toujours protégés du conflit",
+        "seuls les combattants se déplacent"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Les bombardements et les déplacements forcés affectent les populations civiles.",
+      "variantId": "civils"
+    },
+    {
+      "id": "seconde-guerre-coherence-03",
+      "kind": "choice",
+      "prompt": "Un groupe distribue clandestinement des textes contre l’occupant. Il cherche à…",
+      "answer": "résister à la domination de l’occupant",
+      "options": [
+        "résister à la domination de l’occupant",
+        "renforcer la propagande de l’occupant",
+        "lui fournir des armes"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "La Résistance peut prendre plusieurs formes, dont l’information clandestine.",
+      "variantId": "actions"
+    },
+    {
+      "id": "seconde-guerre-coherence-04",
+      "kind": "choice",
+      "prompt": "Des personnes sont persécutées en raison de leur origine ou de leur religion. Que faut-il comprendre ?",
+      "answer": "des civils sont visés par les politiques de persécution",
+      "options": [
+        "des civils sont visés par les politiques de persécution",
+        "toutes les victimes sont des soldats",
+        "la guerre n’affecte que les frontières"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Les violences ne se limitent pas aux combats entre armées.",
+      "variantId": "civils"
+    },
+    {
+      "id": "seconde-guerre-coherence-05",
+      "kind": "choice",
+      "prompt": "Une organisation aide volontairement l’occupant à arrêter ses opposants. Elle participe…",
+      "answer": "à la collaboration",
+      "options": [
+        "à la collaboration",
+        "à la Résistance",
+        "à la libération des opposants"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Collaborer avec l’occupant signifie l’aider ou coopérer avec lui.",
+      "variantId": "actions"
+    },
+    {
+      "id": "seconde-guerre-coherence-06",
+      "kind": "choice",
+      "prompt": "Une école manque de chauffage et de nourriture pendant la guerre. Qu’illustre cette situation ?",
+      "answer": "les difficultés de la vie quotidienne pendant le conflit",
+      "options": [
+        "les difficultés de la vie quotidienne pendant le conflit",
+        "l’absence d’effets de la guerre sur les enfants",
+        "la fin des pénuries"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "La guerre affecte aussi l’approvisionnement et les conditions de vie.",
+      "variantId": "civils"
+    },
+    {
+      "id": "seconde-guerre-coherence-07",
+      "kind": "choice",
+      "prompt": "Saboter un matériel utilisé par l’armée d’occupation vise à…",
+      "answer": "entraver l’action de l’occupant",
+      "options": [
+        "entraver l’action de l’occupant",
+        "renforcer son équipement",
+        "organiser son ravitaillement"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Le sabotage de moyens de l’occupant est une forme de résistance.",
+      "variantId": "actions"
+    },
+    {
+      "id": "seconde-guerre-coherence-08",
+      "kind": "choice",
+      "prompt": "Pourquoi les témoignages de familles sont-ils utiles pour étudier cette guerre ?",
+      "answer": "ils renseignent sur les expériences des civils",
+      "options": [
+        "ils renseignent sur les expériences des civils",
+        "seuls les généraux ont vécu la guerre",
+        "ils remplacent toutes les autres sources"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "L’histoire du conflit comprend les expériences civiles, à confronter à d’autres sources.",
+      "variantId": "civils"
+    },
+    {
+      "id": "seconde-guerre-coherence-09",
+      "kind": "choice",
+      "prompt": "Deux personnes agissent différemment : l’une aide l’occupant, l’autre s’oppose à lui. Quelle distinction est utile ?",
+      "answer": "collaboration et Résistance",
+      "options": [
+        "collaboration et Résistance",
+        "front et tranchée",
+        "continent et pays"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Ces deux notions distinguent les rapports à l’occupant.",
+      "variantId": "actions"
+    },
+    {
+      "id": "seconde-guerre-coherence-10",
+      "kind": "choice",
+      "prompt": "Des bâtiments civils détruits doivent être reconstruits après 1945. Que montre leur étude ?",
+      "answer": "les conséquences durables de la guerre sur les sociétés",
+      "options": [
+        "les conséquences durables de la guerre sur les sociétés",
+        "l’absence de dégâts hors du front",
+        "un effet limité à la vie des soldats"
+      ],
+      "skillIds": [
+        "seconde-guerre"
+      ],
+      "explanation": "Les effets du conflit continuent après la fin des combats.",
+      "variantId": "civils"
+    },
+    {
+      "id": "union-europeenne-coherence-01",
+      "kind": "choice",
+      "prompt": "Deux États européens financent ensemble un programme de recherche. Qu’est-ce que cela illustre ?",
+      "answer": "la mise en commun de moyens pour un projet partagé",
+      "options": [
+        "la mise en commun de moyens pour un projet partagé",
+        "une fusion automatique des deux pays",
+        "l’arrêt de leurs échanges"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "Coopérer permet de réaliser des projets communs en restant des États distincts.",
+      "variantId": "cooperation"
+    },
+    {
+      "id": "union-europeenne-coherence-02",
+      "kind": "choice",
+      "prompt": "Un pays appartient au continent européen sans être membre de l’Union européenne. Est-ce possible ?",
+      "answer": "oui, le continent et l’organisation politique sont différents",
+      "options": [
+        "oui, le continent et l’organisation politique sont différents",
+        "non, leurs frontières sont forcément identiques",
+        "non, tous les pays d’Europe utilisent l’euro"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "L’appartenance géographique et l’adhésion à une organisation politique ne sont pas la même chose.",
+      "variantId": "distinction"
+    },
+    {
+      "id": "union-europeenne-coherence-03",
+      "kind": "choice",
+      "prompt": "Après des conflits meurtriers, pourquoi organiser des échanges durables entre anciens adversaires ?",
+      "answer": "pour créer des intérêts communs et favoriser la paix",
+      "options": [
+        "pour créer des intérêts communs et favoriser la paix",
+        "pour rendre toute discussion impossible",
+        "pour supprimer les contacts entre les populations"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "La coopération construit des liens susceptibles de réduire les risques de nouveaux conflits.",
+      "variantId": "cooperation"
+    },
+    {
+      "id": "union-europeenne-coherence-04",
+      "kind": "choice",
+      "prompt": "Pourquoi ne faut-il pas appeler automatiquement un pays européen un État membre de l’UE ?",
+      "answer": "il faut vérifier son adhésion à cette organisation",
+      "options": [
+        "il faut vérifier son adhésion à cette organisation",
+        "Europe est le nom d’une monnaie",
+        "un État membre n’a pas de territoire"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "L’Union européenne regroupe des États membres, pas nécessairement tous les pays du continent.",
+      "variantId": "distinction"
+    },
+    {
+      "id": "union-europeenne-coherence-05",
+      "kind": "choice",
+      "prompt": "Plusieurs pays adoptent des règles communes pour un échange. Leur coopération sert à…",
+      "answer": "organiser une action commune",
+      "options": [
+        "organiser une action commune",
+        "faire disparaître toutes les langues",
+        "rendre chaque décision sans effet"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "Les règles partagées sont un outil de coopération.",
+      "variantId": "cooperation"
+    },
+    {
+      "id": "union-europeenne-coherence-06",
+      "kind": "choice",
+      "prompt": "Une carte de l’Europe et une carte des États membres de l’UE montrent-elles forcément le même ensemble ?",
+      "answer": "non, elles répondent à deux critères différents",
+      "options": [
+        "non, elles répondent à deux critères différents",
+        "oui, car Europe et UE sont synonymes",
+        "oui, car un continent est un traité"
+      ],
+      "skillIds": [
+        "union-europeenne"
+      ],
+      "explanation": "Une carte géographique et une carte d’organisation politique ne représentent pas les mêmes catégories.",
+      "variantId": "distinction"
     }
   ]
 }

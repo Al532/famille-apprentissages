@@ -1,6 +1,6 @@
 {
   "id": "francais-homophones-determinants-6e",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": "Homophones : petits mots, grands pièges",
   "subject": "Français",
   "levels": [
@@ -10,35 +10,123 @@
   "skills": [
     {
       "id": "ce-se",
-      "label": "Distinguer ce et se"
+      "label": "Distinguer ce et se",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "se"
+        },
+        {
+          "id": "v2",
+          "label": "ce"
+        }
+      ]
     },
     {
       "id": "ces-ses",
-      "label": "Distinguer ces et ses"
+      "label": "Distinguer ces et ses",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "ces"
+        },
+        {
+          "id": "v2",
+          "label": "ses"
+        }
+      ]
     },
     {
       "id": "cest-sest",
-      "label": "Distinguer c’est et s’est"
+      "label": "Distinguer c’est et s’est",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "c’est"
+        },
+        {
+          "id": "v2",
+          "label": "s’est"
+        }
+      ]
     },
     {
       "id": "leur-leurs",
-      "label": "Distinguer leur et leurs"
+      "label": "Distinguer leur et leurs",
+      "variants": [
+        {
+          "id": "pronom",
+          "label": "Pronom leur invariable"
+        },
+        {
+          "id": "singulier",
+          "label": "Déterminant leur au singulier"
+        },
+        {
+          "id": "pluriel",
+          "label": "Déterminant leurs au pluriel"
+        }
+      ]
     },
     {
       "id": "ma-ma-mas",
-      "label": "Distinguer ma, m’a et m’as"
-    },
-    {
-      "id": "mon-mont-ton-tont",
-      "label": "Distinguer mon/m’ont et ton/t’ont"
+      "label": "Distinguer ma, m’a et m’as",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "ma"
+        },
+        {
+          "id": "v2",
+          "label": "m’a"
+        },
+        {
+          "id": "v3",
+          "label": "m’as"
+        }
+      ]
     },
     {
       "id": "ton-tont",
-      "label": "Distinguer ton et t’ont"
+      "label": "Distinguer ton et t’ont",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "ton"
+        },
+        {
+          "id": "v2",
+          "label": "t’ont"
+        }
+      ]
     },
     {
       "id": "sa-ca",
-      "label": "Distinguer sa et ça"
+      "label": "Distinguer sa et ça",
+      "variants": [
+        {
+          "id": "v1",
+          "label": "sa"
+        },
+        {
+          "id": "v2",
+          "label": "ça"
+        }
+      ]
+    },
+    {
+      "id": "mon-mont",
+      "label": "Distinguer mon et m’ont",
+      "variants": [
+        {
+          "id": "mon",
+          "label": "Déterminant mon"
+        },
+        {
+          "id": "mont",
+          "label": "Pronom et verbe m’ont"
+        }
+      ]
     }
   ],
   "exercises": [
@@ -54,7 +142,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "À la première personne : « Je me lave les mains ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+      "explanation": "À la première personne : « Je me lave les mains ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave.",
+      "variantId": "v1"
     },
     {
       "id": "ces-ses-01",
@@ -68,7 +157,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "On désigne des montagnes : « ces montagnes-là ». « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+      "explanation": "On désigne des montagnes : « ces montagnes-là ». « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir.",
+      "variantId": "v1"
     },
     {
       "id": "cest-sest-01",
@@ -82,7 +172,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "On peut dire : « Cela est une bonne idée ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "On peut dire : « Cela est une bonne idée ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v1"
     },
     {
       "id": "leur-leurs-01",
@@ -96,7 +187,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Le nom possédé « cahier » est singulier. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+      "explanation": "Le nom possédé « cahier » est singulier. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs.",
+      "variantId": "singulier"
     },
     {
       "id": "ma-ma-mas-01",
@@ -111,7 +203,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » accompagne le nom féminin « trousse ». « ma » accompagne un nom féminin. « m’a » = me + a ; « m’as » = me + as, avec le sujet « tu »."
+      "explanation": "« ma » accompagne le nom féminin « trousse ». « ma » accompagne un nom féminin. « m’a » = me + a ; « m’as » = me + as, avec le sujet « tu ».",
+      "variantId": "v1"
     },
     {
       "id": "mon-mont-ton-tont-01",
@@ -125,9 +218,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "mon-mont"
       ],
-      "explanation": "« mon » indique qu’il s’agit de mon manteau à moi. « mon » et « ton » accompagnent un nom. « m’ont » = me + ont ; « t’ont » = te + ont : on peut remplacer « ont » par « avaient »."
+      "explanation": "« mon » indique qu’il s’agit de mon manteau à moi. « mon » et « ton » accompagnent un nom. « m’ont » = me + ont ; « t’ont » = te + ont : on peut remplacer « ont » par « avaient ».",
+      "variantId": "mon"
     },
     {
       "id": "ton-tont-01",
@@ -141,7 +235,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » détermine le nom « cahier ». « ton » accompagne un nom ; « t’ont » contient te + ont (t’avaient)."
+      "explanation": "« ton » détermine le nom « cahier ». « ton » accompagne un nom ; « t’ont » contient te + ont (t’avaient).",
+      "variantId": "v1"
     },
     {
       "id": "sa-ca-01",
@@ -155,7 +250,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "On peut dire : « Elle cherche ma veste ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+      "explanation": "On peut dire : « Elle cherche ma veste ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela ».",
+      "variantId": "v1"
     },
     {
       "id": "ce-se-02",
@@ -169,7 +265,8 @@
       "options": [
         "ce",
         "se"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "ces-ses-02",
@@ -183,7 +280,8 @@
       "options": [
         "ces",
         "ses"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "cest-sest-02",
@@ -197,7 +295,8 @@
       "options": [
         "c’est",
         "s’est"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "leur-leurs-02",
@@ -211,7 +310,8 @@
       "options": [
         "leurs",
         "leur"
-      ]
+      ],
+      "variantId": "pluriel"
     },
     {
       "id": "ma-ma-mas-02",
@@ -226,7 +326,8 @@
         "ma",
         "m’a",
         "m’as"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "mon-mont-ton-tont-02",
@@ -234,7 +335,7 @@
       "prompt": "Complète avec mon, m’ont, ton, t’ont : « Mes amis ___ offert ce livre : c’est un cadeau pour moi. »",
       "answer": "m’ont",
       "skillIds": [
-        "mon-mont-ton-tont"
+        "mon-mont"
       ],
       "explanation": "« Mes amis m’avaient offert » montre le verbe avoir. « mon » et « ton » accompagnent un nom. « m’ont » = me + ont ; « t’ont » = te + ont : on peut remplacer « ont » par « avaient ».",
       "options": [
@@ -242,7 +343,8 @@
         "m’ont",
         "ton",
         "t’ont"
-      ]
+      ],
+      "variantId": "mont"
     },
     {
       "id": "ton-tont-02",
@@ -256,7 +358,8 @@
       "options": [
         "ton",
         "t’ont"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "sa-ca-02",
@@ -270,7 +373,8 @@
       "options": [
         "sa",
         "ça"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "ce-se-03",
@@ -284,7 +388,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "On peut dire : « Cela sera la fête ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+      "explanation": "On peut dire : « Cela sera la fête ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave.",
+      "variantId": "v2"
     },
     {
       "id": "ces-ses-03",
@@ -298,7 +403,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« -ci » indique qu’on montre les dessins. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+      "explanation": "« -ci » indique qu’on montre les dessins. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir.",
+      "variantId": "v1"
     },
     {
       "id": "cest-sest-03",
@@ -312,7 +418,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "À la première personne : « Je me suis blessé ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "À la première personne : « Je me suis blessé ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v2"
     },
     {
       "id": "leur-leurs-03",
@@ -326,7 +433,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "« leur » signifie « à eux » ou « à elles » et précède le verbe. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+      "explanation": "« leur » signifie « à eux » ou « à elles » et précède le verbe. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs.",
+      "variantId": "pronom"
     },
     {
       "id": "ma-ma-mas-03",
@@ -341,7 +449,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "Le sujet est « tu » : « tu m’avais donné ». « ma » accompagne un nom féminin. « m’a » = me + a ; « m’as » = me + as, avec le sujet « tu »."
+      "explanation": "Le sujet est « tu » : « tu m’avais donné ». « ma » accompagne un nom féminin. « m’a » = me + a ; « m’as » = me + as, avec le sujet « tu ».",
+      "variantId": "v3"
     },
     {
       "id": "mon-mont-ton-tont-03",
@@ -355,9 +464,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "ton-tont"
       ],
-      "explanation": "« à toi » indique que les amis te l’ont offert. « mon » et « ton » accompagnent un nom. « m’ont » = me + ont ; « t’ont » = te + ont : on peut remplacer « ont » par « avaient »."
+      "explanation": "« à toi » indique que les amis te l’ont offert. « mon » et « ton » accompagnent un nom. « m’ont » = me + ont ; « t’ont » = te + ont : on peut remplacer « ont » par « avaient ».",
+      "variantId": "v2"
     },
     {
       "id": "sa-ca-03",
@@ -371,7 +481,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est le déterminant du nom féminin « chambre ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+      "explanation": "« sa » est le déterminant du nom féminin « chambre ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela ».",
+      "variantId": "v1"
     },
     {
       "id": "ce-se-04",
@@ -385,7 +496,8 @@
       "options": [
         "ce",
         "se"
-      ]
+      ],
+      "variantId": "v1"
     },
     {
       "id": "ces-ses-04",
@@ -399,7 +511,8 @@
       "options": [
         "ces",
         "ses"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "cest-sest-04",
@@ -413,7 +526,8 @@
       "options": [
         "c’est",
         "s’est"
-      ]
+      ],
+      "variantId": "v1"
     },
     {
       "id": "leur-leurs-04",
@@ -427,7 +541,8 @@
       "options": [
         "leurs",
         "leur"
-      ]
+      ],
+      "variantId": "pronom"
     },
     {
       "id": "sa-ca-04",
@@ -441,7 +556,8 @@
       "options": [
         "sa",
         "ça"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "ce-se-05",
@@ -455,7 +571,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« ce » accompagne le nom « bateau ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave."
+      "explanation": "« ce » accompagne le nom « bateau ». « ce » peut désigner quelque chose (ce livre, ce sera). « se » accompagne un verbe pronominal : il se lave → je me lave.",
+      "variantId": "v2"
     },
     {
       "id": "ces-ses-05",
@@ -469,7 +586,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "Le contexte indique que l’on montre les étoiles. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir."
+      "explanation": "Le contexte indique que l’on montre les étoiles. « ces » désigne (ces livres-là). « ses » indique un possesseur (les siens ou les siennes). Le contexte permet de choisir.",
+      "variantId": "v1"
     },
     {
       "id": "cest-sest-05",
@@ -483,7 +601,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "Il s’agit du verbe pronominal « s’endormir ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "Il s’agit du verbe pronominal « s’endormir ». « c’est » peut devenir « cela est ». « s’est » appartient à un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v2"
     },
     {
       "id": "leur-leurs-05",
@@ -497,7 +616,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Il s’agit d’une seule maison : le nom est singulier. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs."
+      "explanation": "Il s’agit d’une seule maison : le nom est singulier. Devant un verbe, « leur » est un pronom invariable (à eux, à elles). Devant un nom, le déterminant s’accorde avec ce nom : leur sac, leurs sacs.",
+      "variantId": "singulier"
     },
     {
       "id": "sa-ca-05",
@@ -511,7 +631,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » accompagne le nom féminin « réponse ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela »."
+      "explanation": "« sa » accompagne le nom féminin « réponse ». « sa » accompagne un nom féminin (sa veste → ma veste). « ça » est un pronom, remplaçable par « cela ».",
+      "variantId": "v1"
     },
     {
       "id": "ce-se-06",
@@ -525,7 +646,8 @@
       "options": [
         "ce",
         "se"
-      ]
+      ],
+      "variantId": "v1"
     },
     {
       "id": "ces-ses-06",
@@ -539,7 +661,8 @@
       "options": [
         "ces",
         "ses"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "cest-sest-06",
@@ -553,7 +676,8 @@
       "options": [
         "c’est",
         "s’est"
-      ]
+      ],
+      "variantId": "v1"
     },
     {
       "id": "leur-leurs-06",
@@ -567,7 +691,8 @@
       "options": [
         "leurs",
         "leur"
-      ]
+      ],
+      "variantId": "pluriel"
     },
     {
       "id": "sa-ca-06",
@@ -581,7 +706,8 @@
       "options": [
         "sa",
         "ça"
-      ]
+      ],
+      "variantId": "v2"
     },
     {
       "id": "ce-se-var-01",
@@ -595,7 +721,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v2"
     },
     {
       "id": "ce-se-var-02",
@@ -609,7 +736,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v1"
     },
     {
       "id": "ce-se-var-03",
@@ -623,7 +751,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v2"
     },
     {
       "id": "ce-se-var-04",
@@ -637,7 +766,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v1"
     },
     {
       "id": "ce-se-var-05",
@@ -651,7 +781,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v2"
     },
     {
       "id": "ce-se-var-06",
@@ -665,7 +796,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v1"
     },
     {
       "id": "ce-se-var-07",
@@ -679,7 +811,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v2"
     },
     {
       "id": "ce-se-var-08",
@@ -693,7 +826,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v1"
     },
     {
       "id": "ce-se-var-09",
@@ -707,7 +841,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v2"
     },
     {
       "id": "ce-se-var-10",
@@ -721,7 +856,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v1"
     },
     {
       "id": "ce-se-var-11",
@@ -735,7 +871,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v2"
     },
     {
       "id": "ce-se-var-12",
@@ -749,7 +886,8 @@
       "skillIds": [
         "ce-se"
       ],
-      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis."
+      "explanation": "« se » accompagne un verbe pronominal : il se lave → je me lave. « ce » désigne : ce livre-là, ce sera, ce que tu dis.",
+      "variantId": "v1"
     },
     {
       "id": "ces-ses-var-01",
@@ -763,7 +901,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v2"
     },
     {
       "id": "ces-ses-var-02",
@@ -777,7 +916,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v1"
     },
     {
       "id": "ces-ses-var-03",
@@ -791,7 +931,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v2"
     },
     {
       "id": "ces-ses-var-04",
@@ -805,7 +946,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v1"
     },
     {
       "id": "ces-ses-var-05",
@@ -819,7 +961,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v2"
     },
     {
       "id": "ces-ses-var-06",
@@ -833,7 +976,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v1"
     },
     {
       "id": "ces-ses-var-07",
@@ -847,7 +991,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v2"
     },
     {
       "id": "ces-ses-var-08",
@@ -861,7 +1006,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v1"
     },
     {
       "id": "ces-ses-var-09",
@@ -875,7 +1021,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v2"
     },
     {
       "id": "ces-ses-var-10",
@@ -889,7 +1036,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v1"
     },
     {
       "id": "ces-ses-var-11",
@@ -903,7 +1051,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v2"
     },
     {
       "id": "ces-ses-var-12",
@@ -917,7 +1066,8 @@
       "skillIds": [
         "ces-ses"
       ],
-      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable."
+      "explanation": "« ces » sert à montrer : ces livres-là. « ses » indique un possesseur : ses livres à lui ou à elle. Le contexte est indispensable.",
+      "variantId": "v1"
     },
     {
       "id": "cest-sest-var-01",
@@ -931,7 +1081,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v1"
     },
     {
       "id": "cest-sest-var-02",
@@ -945,7 +1096,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v2"
     },
     {
       "id": "cest-sest-var-03",
@@ -959,7 +1111,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v1"
     },
     {
       "id": "cest-sest-var-04",
@@ -973,7 +1126,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v2"
     },
     {
       "id": "cest-sest-var-05",
@@ -987,7 +1141,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v1"
     },
     {
       "id": "cest-sest-var-06",
@@ -1001,7 +1156,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v2"
     },
     {
       "id": "cest-sest-var-07",
@@ -1015,7 +1171,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v1"
     },
     {
       "id": "cest-sest-var-08",
@@ -1029,7 +1186,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v2"
     },
     {
       "id": "cest-sest-var-09",
@@ -1043,7 +1201,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v1"
     },
     {
       "id": "cest-sest-var-10",
@@ -1057,7 +1216,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v2"
     },
     {
       "id": "cest-sest-var-11",
@@ -1071,7 +1231,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v1"
     },
     {
       "id": "cest-sest-var-12",
@@ -1085,7 +1246,8 @@
       "skillIds": [
         "cest-sest"
       ],
-      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé."
+      "explanation": "« c’est » peut devenir « cela est ». « s’est » fait partie d’un verbe pronominal au passé composé : il s’est levé → je me suis levé.",
+      "variantId": "v2"
     },
     {
       "id": "leur-leurs-var-01",
@@ -1099,7 +1261,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "pluriel"
     },
     {
       "id": "leur-leurs-var-02",
@@ -1113,7 +1276,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "pronom"
     },
     {
       "id": "leur-leurs-var-03",
@@ -1127,7 +1291,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "singulier"
     },
     {
       "id": "leur-leurs-var-04",
@@ -1141,7 +1306,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "pronom"
     },
     {
       "id": "leur-leurs-var-05",
@@ -1155,7 +1321,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "pluriel"
     },
     {
       "id": "leur-leurs-var-06",
@@ -1169,7 +1336,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "pronom"
     },
     {
       "id": "leur-leurs-var-07",
@@ -1183,7 +1351,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "pluriel"
     },
     {
       "id": "leur-leurs-var-08",
@@ -1197,7 +1366,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "pronom"
     },
     {
       "id": "leur-leurs-var-09",
@@ -1211,7 +1381,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "singulier"
     },
     {
       "id": "leur-leurs-var-10",
@@ -1225,7 +1396,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "pluriel"
     },
     {
       "id": "leur-leurs-var-11",
@@ -1239,7 +1411,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "pronom"
     },
     {
       "id": "leur-leurs-var-12",
@@ -1253,7 +1426,8 @@
       "skillIds": [
         "leur-leurs"
       ],
-      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons."
+      "explanation": "Devant un verbe, le pronom « leur » est invariable : je leur parle. Devant un nom, le déterminant s’accorde avec ce qui est possédé : leur maison, leurs maisons.",
+      "variantId": "singulier"
     },
     {
       "id": "ma-ma-mas-var-01",
@@ -1268,7 +1442,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v1"
     },
     {
       "id": "ma-ma-mas-var-02",
@@ -1283,7 +1458,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v3"
     },
     {
       "id": "ma-ma-mas-var-03",
@@ -1298,7 +1474,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v2"
     },
     {
       "id": "ma-ma-mas-var-04",
@@ -1313,7 +1490,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v1"
     },
     {
       "id": "ma-ma-mas-var-05",
@@ -1328,7 +1506,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v2"
     },
     {
       "id": "ma-ma-mas-var-06",
@@ -1343,7 +1522,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v3"
     },
     {
       "id": "ma-ma-mas-var-07",
@@ -1358,7 +1538,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v1"
     },
     {
       "id": "ma-ma-mas-var-08",
@@ -1373,7 +1554,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v2"
     },
     {
       "id": "ma-ma-mas-var-09",
@@ -1388,7 +1570,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v3"
     },
     {
       "id": "ma-ma-mas-var-10",
@@ -1403,7 +1586,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v1"
     },
     {
       "id": "ma-ma-mas-var-11",
@@ -1418,7 +1602,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v2"
     },
     {
       "id": "ma-ma-mas-var-12",
@@ -1433,7 +1618,8 @@
       "skillIds": [
         "ma-ma-mas"
       ],
-      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais."
+      "explanation": "« ma » est un possessif devant un nom. « m’a » contient avoir avec il/elle : m’avait. « m’as » contient avoir avec tu : m’avais.",
+      "variantId": "v3"
     },
     {
       "id": "mon-mont-ton-tont-var-01",
@@ -1447,9 +1633,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "mon-mont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "mont"
     },
     {
       "id": "mon-mont-ton-tont-var-02",
@@ -1463,9 +1650,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "mon-mont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "mon"
     },
     {
       "id": "mon-mont-ton-tont-var-03",
@@ -1479,9 +1667,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "ton-tont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "v2"
     },
     {
       "id": "mon-mont-ton-tont-var-04",
@@ -1495,9 +1684,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "ton-tont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "v1"
     },
     {
       "id": "mon-mont-ton-tont-var-05",
@@ -1511,9 +1701,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "mon-mont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "mont"
     },
     {
       "id": "mon-mont-ton-tont-var-06",
@@ -1527,9 +1718,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "mon-mont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "mon"
     },
     {
       "id": "mon-mont-ton-tont-var-07",
@@ -1543,9 +1735,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "ton-tont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "v2"
     },
     {
       "id": "mon-mont-ton-tont-var-08",
@@ -1559,9 +1752,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "ton-tont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "v1"
     },
     {
       "id": "mon-mont-ton-tont-var-09",
@@ -1575,9 +1769,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "mon-mont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "mont"
     },
     {
       "id": "mon-mont-ton-tont-var-10",
@@ -1591,9 +1786,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "mon-mont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "mon"
     },
     {
       "id": "mon-mont-ton-tont-var-11",
@@ -1607,9 +1803,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "ton-tont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "v2"
     },
     {
       "id": "mon-mont-ton-tont-var-12",
@@ -1623,9 +1820,10 @@
         "t’ont"
       ],
       "skillIds": [
-        "mon-mont-ton-tont"
+        "ton-tont"
       ],
-      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient."
+      "explanation": "« mon » et « ton » sont des possessifs devant un nom. « m’ont » et « t’ont » contiennent le verbe avoir au pluriel : m’avaient, t’avaient.",
+      "variantId": "v1"
     },
     {
       "id": "ton-tont-var-01",
@@ -1639,7 +1837,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v1"
     },
     {
       "id": "ton-tont-var-02",
@@ -1653,7 +1852,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v2"
     },
     {
       "id": "ton-tont-var-03",
@@ -1667,7 +1867,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v1"
     },
     {
       "id": "ton-tont-var-04",
@@ -1681,7 +1882,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v2"
     },
     {
       "id": "ton-tont-var-05",
@@ -1695,7 +1897,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v1"
     },
     {
       "id": "ton-tont-var-06",
@@ -1709,7 +1912,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v2"
     },
     {
       "id": "ton-tont-var-07",
@@ -1723,7 +1927,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v1"
     },
     {
       "id": "ton-tont-var-08",
@@ -1737,7 +1942,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v2"
     },
     {
       "id": "ton-tont-var-09",
@@ -1751,7 +1957,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v1"
     },
     {
       "id": "ton-tont-var-10",
@@ -1765,7 +1972,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v2"
     },
     {
       "id": "ton-tont-var-11",
@@ -1779,7 +1987,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v1"
     },
     {
       "id": "ton-tont-var-12",
@@ -1793,7 +2002,8 @@
       "skillIds": [
         "ton-tont"
       ],
-      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit."
+      "explanation": "« ton » est un déterminant possessif : ton cahier → mon cahier. « t’ont » contient avoir : ils t’ont écrit → ils t’avaient écrit.",
+      "variantId": "v2"
     },
     {
       "id": "sa-ca-var-01",
@@ -1807,7 +2017,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v1"
     },
     {
       "id": "sa-ca-var-02",
@@ -1821,7 +2032,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v2"
     },
     {
       "id": "sa-ca-var-03",
@@ -1835,7 +2047,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v1"
     },
     {
       "id": "sa-ca-var-04",
@@ -1849,7 +2062,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v2"
     },
     {
       "id": "sa-ca-var-05",
@@ -1863,7 +2077,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v1"
     },
     {
       "id": "sa-ca-var-06",
@@ -1877,7 +2092,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v2"
     },
     {
       "id": "sa-ca-var-07",
@@ -1891,7 +2107,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v1"
     },
     {
       "id": "sa-ca-var-08",
@@ -1905,7 +2122,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v2"
     },
     {
       "id": "sa-ca-var-09",
@@ -1919,7 +2137,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v1"
     },
     {
       "id": "sa-ca-var-10",
@@ -1933,7 +2152,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v2"
     },
     {
       "id": "sa-ca-var-11",
@@ -1947,7 +2167,8 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v1"
     },
     {
       "id": "sa-ca-var-12",
@@ -1961,7 +2182,68 @@
       "skillIds": [
         "sa-ca"
       ],
-      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela »."
+      "explanation": "« sa » est un possessif devant un nom féminin : sa règle → ma règle. « ça » est un pronom que l’on peut remplacer par « cela ».",
+      "variantId": "v2"
+    },
+    {
+      "id": "mon-mont-coherence-01",
+      "kind": "choice",
+      "prompt": "Complète : « Je retrouve ___ billet dans ma poche. »",
+      "answer": "mon",
+      "options": [
+        "mon",
+        "m’ont"
+      ],
+      "skillIds": [
+        "mon-mont"
+      ],
+      "explanation": "Devant le nom billet, mon est un déterminant possessif.",
+      "variantId": "mon"
+    },
+    {
+      "id": "mon-mont-coherence-02",
+      "kind": "choice",
+      "prompt": "Complète : « Ces romans ___ donné envie de lire. »",
+      "answer": "m’ont",
+      "options": [
+        "m’ont",
+        "mon"
+      ],
+      "skillIds": [
+        "mon-mont"
+      ],
+      "explanation": "On peut remplacer m’ont par m’avaient : il y a le verbe avoir.",
+      "variantId": "mont"
+    },
+    {
+      "id": "mon-mont-coherence-03",
+      "kind": "choice",
+      "prompt": "Complète : « ___ oncle habite près de chez moi. »",
+      "answer": "mon",
+      "options": [
+        "mon",
+        "m’ont"
+      ],
+      "skillIds": [
+        "mon-mont"
+      ],
+      "explanation": "Mon introduit ici le nom oncle.",
+      "variantId": "mon"
+    },
+    {
+      "id": "mon-mont-coherence-04",
+      "kind": "choice",
+      "prompt": "Complète : « Mes cousines ___ proposé une promenade. »",
+      "answer": "m’ont",
+      "options": [
+        "m’ont",
+        "mon"
+      ],
+      "skillIds": [
+        "mon-mont"
+      ],
+      "explanation": "Le sujet est mes cousines : elles m’ont proposé, elles m’avaient proposé.",
+      "variantId": "mont"
     }
   ]
 }

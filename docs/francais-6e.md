@@ -1,34 +1,28 @@
-# Mise à jour du 21 octobre 2026
-
-Le parcours contient désormais **662 QCM expliqués, regroupés en 41 notions**, avec au moins douze questions par notion. Les homophones gardent une place importante. Les notions de grammaire, conjugaison, vocabulaire et compréhension incluent les bases cumulatives de l’école primaire. La sélection et l’espacement portent sur les notions, pas sur chaque carte : voir [les séances](seances-concepts.md). Les références et limites pédagogiques ci-dessous restent utiles ; les anciens volumes décrivent la première livraison.
-
 # Français : consolider les acquis à l’entrée en sixième
 
-Révision du catalogue : `0.3.0`. Les sept packs sont proposés au profil de niveau `6e`. Ils reprennent des acquis de fin de CM2 ; ce n’est pas un cours complet de sixième.
+Révision du catalogue : **0.6.0**. Le parcours contient **850 QCM expliqués**, répartis en 59 thèmes et compétences : **52 notions transférables** et **44 cartes lexicales**. Les questions consolident surtout les bases cumulatives de l’école primaire ; ce n’est pas un programme complet de sixième.
 
-| Atelier | Questions | Contenu |
+| Atelier | Questions | Unités de révision |
 | --- | ---: | --- |
-| Homophones : les indispensables | 30 | a/as/à, et/est/es, on/ont, son/sont, ou/où |
-| Homophones : petits mots, grands pièges | 38 | ce/se, ces/ses, c’est/s’est, leur/leurs, ma/m’a/m’as, mon/m’ont/ton/t’ont, sa/ça |
-| Homophones : le sens et les verbes | 48 | la/là/l’a/l’as, mais/mes/met/mets, peu/peux/peut, sans/s’en, ni/n’y, si/s’y, -er/-é, homophones lexicaux |
-| Grammaire et accords | 20 | sujet/verbe, phrase simple/complexe, classes et fonctions, groupe nominal, accord sujet-verbe, participe avec être |
-| Conjugaison | 20 | présent, imparfait, futur, passé composé, passé simple, plus-que-parfait |
-| Vocabulaire | 12 | synonymes, contraires, familles, préfixes/suffixes, sens en contexte, champ lexical |
-| Lire et comprendre | 8 | deux textes originaux courts, informations explicites, reprises pronominales, inférences et document pratique |
+| Homophones indispensables | 92 | 5 distinctions grammaticales, avec leurs variantes requises. |
+| Homophones et déterminants | 138 | 8 distinctions, avec séparation de mon/m’ont et ton/t’ont. |
+| Homophones, sens et terminaisons | 200 | 9 notions grammaticales et 13 cartes sur les homophones lexicaux. |
+| Grammaire et accords | 157 | 13 compétences : sujet, verbe, propositions, trois groupes de classes de mots, COD/COI, circonstances, épithète/attribut, complément du nom et trois types d’accords. |
+| Conjugaison | 105 | 7 notions avec couverture des principaux types de formes et des temps. |
+| Vocabulaire | 105 | 6 méthodes transférables et 31 cartes de mots, expressions et orthographes. |
+| Lecture | 53 | Information explicite, reprises pronominales, inférences et lecture de documents pratiques. |
 
-Total : 176 exercices, dont 116 dans les ateliers d’homophones et de terminaisons proches. Les questions et textes ont été rédigés pour l’application.
+Les synonymes, contraires et sens d’expressions ont un calendrier **par connaissance lexicale**. Les questions « immense → gigantesque » partagent leur carte. En revanche, l’identification d’une famille de mots, l’usage d’un préfixe ou d’un suffixe, la reconnaissance d’un champ lexical et la déduction d’un sens à partir d’indices restent des méthodes revues par notion.
 
-Tous les exercices de français se font désormais en QCM. Les anciennes questions à saisir ont été converties avec des distracteurs adaptés, en conservant leurs identifiants et leurs compétences. Les contextes différents ont été conservés pour varier l’entraînement ; aucune question strictement identique n’a été trouvée. Chaque question affiche une correction expliquée après validation, même en cas de réussite.
+Les réussites doivent couvrir les variantes essentielles. Trois réponses « à » ne valident pas a/as/à ; trois adjectifs reconnus ne valident pas les noms et les verbes. La lecture exige des contextes différents : plusieurs réponses sur le même document ne suffisent pas.
 
-Les nouvelles questions entrelacent les compétences de l’atelier ; le calendrier FSRS conserve la priorité aux questions dues. Le menu « À travailler » permet de cibler une famille sans dupliquer ses statistiques. Le suivi parent distingue notamment chaque famille d’homophones. Les questions déjà publiées conservent leurs identifiants. Les packs modifiés prennent une nouvelle version et le catalogue précédent est archivé : les anciennes réponses restent corrigées avec leur version d’origine. Les deux calculs à saisir du CE1 sont également proposés en QCM.
+Chaque notion dispose d’au moins douze questions expliquées. Les identifiants et le sens des questions déjà publiées sont conservés. Le catalogue 0.5.0 est archivé pour les anciennes corrections ; les historiques sont reclassés dans les compétences plus précises sans fabriquer de preuves sur leurs voisines. Voir [les séances](seances-concepts.md).
 
-## Repères et limites
+## Références et limites
 
-Références officielles consultées le 20 octobre 2026 :
+Références de la conception initiale, consultées le 20 octobre 2026 :
 
-- [Attendus de fin d’année de CM2 en français, éduscol](https://eduscol.education.gouv.fr/media/74652/download?attachment=) : notamment homophonies lexicales/grammaticales, accords, constituants de la phrase, lexique et compréhension.
-- [Ressources du programme de français au cycle 3](https://eduscol.education.gouv.fr/4800/ressources-d-accompagnement-du-programme-de-francais-au-cycle-3) : programme publié le 17 avril 2025, déployé en CM2 à la rentrée 2026. Pour un élève entré en sixième en septembre 2026, les attendus de CM2 antérieurs restent un repère utile de consolidation.
+- [Attendus de fin d’année de CM2 en français, Éduscol](https://eduscol.education.gouv.fr/media/74652/download?attachment=).
+- [Ressources du programme de français au cycle 3](https://eduscol.education.gouv.fr/4800/ressources-d-accompagnement-du-programme-de-francais-au-cycle-3).
 
-Cette sélection cible des compétences entraînables avec une correction déterministe. Elle ne mesure pas l’oral, la lecture à voix haute, la rédaction autonome longue ni l’ensemble des acquis scolaires. Une réussite observée à ces exercices n’est pas une certification de maîtrise.
-
-La publication GitHub Pages conserve les résultats dans le navigateur tant que Firebase n’est pas configuré. Les nouveaux types de résultats restent lisibles par le moteur et l’espace parent livrés ensemble.
+Les exercices et les textes ont été rédigés pour l’application. Ils ne mesurent ni l’oral, ni la lecture à voix haute, ni la rédaction longue. Une réussite en QCM n’est pas une certification de maîtrise.

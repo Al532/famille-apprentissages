@@ -1,6 +1,6 @@
 {
   "id": "geographie-reperes",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Se repérer près de chez soi et dans le monde",
   "subject": "Histoire-géographie",
   "levels": [
@@ -10,7 +10,21 @@
   "skills": [
     {
       "id": "cartes",
-      "label": "Lire une carte et s’orienter"
+      "label": "Lire une carte et s’orienter",
+      "variants": [
+        {
+          "id": "orientation",
+          "label": "Orientation et positions relatives"
+        },
+        {
+          "id": "legende",
+          "label": "Titre, légende et symboles"
+        },
+        {
+          "id": "echelle",
+          "label": "Échelle et distances"
+        }
+      ]
     },
     {
       "id": "france",
@@ -19,6 +33,20 @@
     {
       "id": "monde",
       "label": "Distinguer continents, océans et territoires"
+    },
+    {
+      "id": "pays-continent-ocean",
+      "label": "Distinguer pays, continent et océan",
+      "variants": [
+        {
+          "id": "pays",
+          "label": "Pays et continent"
+        },
+        {
+          "id": "ocean",
+          "label": "Océan et terre émergée"
+        }
+      ]
     }
   ],
   "exercises": [
@@ -35,7 +63,8 @@
       "skillIds": [
         "cartes"
       ],
-      "explanation": "Les points cardinaux sont nord, est, sud, ouest. Avec le nord en haut, l’est est à droite."
+      "explanation": "Les points cardinaux sont nord, est, sud, ouest. Avec le nord en haut, l’est est à droite.",
+      "variantId": "orientation"
     },
     {
       "id": "cartes-reserve-02",
@@ -50,7 +79,8 @@
       "skillIds": [
         "cartes"
       ],
-      "explanation": "La légende donne le sens des figurés utilisés sur la carte."
+      "explanation": "La légende donne le sens des figurés utilisés sur la carte.",
+      "variantId": "legende"
     },
     {
       "id": "cartes-reserve-03",
@@ -65,7 +95,8 @@
       "skillIds": [
         "cartes"
       ],
-      "explanation": "L’échelle permet de passer de la représentation à la réalité."
+      "explanation": "L’échelle permet de passer de la représentation à la réalité.",
+      "variantId": "echelle"
     },
     {
       "id": "cartes-reserve-04",
@@ -80,7 +111,8 @@
       "skillIds": [
         "cartes"
       ],
-      "explanation": "Le nord et le sud sont opposés, comme l’est et l’ouest."
+      "explanation": "Le nord et le sud sont opposés, comme l’est et l’ouest.",
+      "variantId": "orientation"
     },
     {
       "id": "cartes-reserve-05",
@@ -95,7 +127,8 @@
       "skillIds": [
         "cartes"
       ],
-      "explanation": "L’est et l’ouest sont opposés."
+      "explanation": "L’est et l’ouest sont opposés.",
+      "variantId": "orientation"
     },
     {
       "id": "cartes-reserve-06",
@@ -110,7 +143,8 @@
       "skillIds": [
         "cartes"
       ],
-      "explanation": "Le titre annonce le sujet et souvent le territoire étudié."
+      "explanation": "Le titre annonce le sujet et souvent le territoire étudié.",
+      "variantId": "legende"
     },
     {
       "id": "cartes-reserve-07",
@@ -125,7 +159,8 @@
       "skillIds": [
         "cartes"
       ],
-      "explanation": "On utilise le sens donné par la légende, pas une couleur supposée universelle."
+      "explanation": "On utilise le sens donné par la légende, pas une couleur supposée universelle.",
+      "variantId": "legende"
     },
     {
       "id": "cartes-reserve-08",
@@ -140,7 +175,8 @@
       "skillIds": [
         "cartes"
       ],
-      "explanation": "Le plan représente un espace proche avec des repères précis."
+      "explanation": "Le plan représente un espace proche avec des repères précis.",
+      "variantId": "legende"
     },
     {
       "id": "cartes-reserve-09",
@@ -157,7 +193,8 @@
       ],
       "explanation": "Le nord est en haut : l’école est à droite de la mairie, donc à l’est.",
       "diagram": "town-map",
-      "contextId": "quartier-oriente"
+      "contextId": "quartier-oriente",
+      "variantId": "orientation"
     },
     {
       "id": "cartes-reserve-10",
@@ -174,7 +211,8 @@
       ],
       "explanation": "La gare se trouve sous la mairie : elle est au sud.",
       "diagram": "town-map",
-      "contextId": "quartier-oriente"
+      "contextId": "quartier-oriente",
+      "variantId": "orientation"
     },
     {
       "id": "cartes-reserve-11",
@@ -191,7 +229,8 @@
       ],
       "explanation": "Le parc se trouve à droite de la gare : il est à l’est.",
       "diagram": "town-map",
-      "contextId": "quartier-oriente"
+      "contextId": "quartier-oriente",
+      "variantId": "orientation"
     },
     {
       "id": "cartes-reserve-12",
@@ -208,7 +247,8 @@
       ],
       "explanation": "Il faut aller vers le haut et vers la gauche depuis le parc.",
       "diagram": "town-map",
-      "contextId": "quartier-oriente"
+      "contextId": "quartier-oriente",
+      "variantId": "orientation"
     },
     {
       "id": "france-reserve-01",
@@ -445,10 +485,11 @@
         "un pays est toujours plus grand qu’un continent"
       ],
       "skillIds": [
-        "monde"
+        "pays-continent-ocean"
       ],
       "explanation": "Les deux mots correspondent à des échelles et à des réalités différentes.",
-      "reviewMode": "question"
+      "reviewMode": "concept",
+      "variantId": "pays"
     },
     {
       "id": "monde-reserve-04",
@@ -593,6 +634,214 @@
       ],
       "explanation": "La distinction repose surtout sur la destination du cours d’eau, pas sur sa taille.",
       "reviewMode": "question"
+    },
+    {
+      "id": "cartes-coherence-01",
+      "kind": "choice",
+      "prompt": "Sur un plan, 1 cm représente 100 m. Quelle distance réelle représente 3 cm ?",
+      "answer": "300 m",
+      "options": [
+        "300 m",
+        "3 m",
+        "30 m"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "Trois centimètres représentent trois fois 100 mètres : 300 mètres.",
+      "variantId": "echelle"
+    },
+    {
+      "id": "cartes-coherence-02",
+      "kind": "choice",
+      "prompt": "Sur une carte, 1 cm représente 2 km. Quelle distance réelle représente 4 cm ?",
+      "answer": "8 km",
+      "options": [
+        "8 km",
+        "2 km",
+        "4 km"
+      ],
+      "skillIds": [
+        "cartes"
+      ],
+      "explanation": "Quatre centimètres représentent quatre fois 2 kilomètres : 8 kilomètres.",
+      "variantId": "echelle"
+    },
+    {
+      "id": "pays-continent-ocean-coherence-01",
+      "kind": "choice",
+      "prompt": "Une carte montre plusieurs pays voisins sur un même continent. Est-ce possible ?",
+      "answer": "oui, un continent peut regrouper plusieurs pays",
+      "options": [
+        "oui, un continent peut regrouper plusieurs pays",
+        "non, un continent est toujours un seul pays",
+        "non, chaque ville est un continent"
+      ],
+      "skillIds": [
+        "pays-continent-ocean"
+      ],
+      "explanation": "Un continent est un vaste ensemble géographique ; un pays est un territoire politique.",
+      "variantId": "pays"
+    },
+    {
+      "id": "pays-continent-ocean-coherence-02",
+      "kind": "choice",
+      "prompt": "Une grande étendue d’eau salée sépare deux continents. De quel type de repère peut-il s’agir ?",
+      "answer": "un océan",
+      "options": [
+        "un océan",
+        "un pays",
+        "une ville"
+      ],
+      "skillIds": [
+        "pays-continent-ocean"
+      ],
+      "explanation": "Un océan est une grande étendue d’eau salée.",
+      "variantId": "ocean"
+    },
+    {
+      "id": "pays-continent-ocean-coherence-03",
+      "kind": "choice",
+      "prompt": "Deux pays différents peuvent-ils appartenir au même continent ?",
+      "answer": "oui",
+      "options": [
+        "oui",
+        "non",
+        "seulement s’ils ont la même capitale"
+      ],
+      "skillIds": [
+        "pays-continent-ocean"
+      ],
+      "explanation": "Les limites des pays ne sont pas les limites des continents.",
+      "variantId": "pays"
+    },
+    {
+      "id": "pays-continent-ocean-coherence-04",
+      "kind": "choice",
+      "prompt": "Pour représenter les continents et les océans, faut-il distinguer les terres et les grandes étendues d’eau ?",
+      "answer": "oui",
+      "options": [
+        "oui",
+        "non, tout représente des pays",
+        "non, les océans sont des villes"
+      ],
+      "skillIds": [
+        "pays-continent-ocean"
+      ],
+      "explanation": "Continents et océans sont des catégories géographiques différentes.",
+      "variantId": "ocean"
+    },
+    {
+      "id": "pays-continent-ocean-coherence-05",
+      "kind": "choice",
+      "prompt": "Un élève dit : « Ce pays fait partie de ce continent. » Cette phrase est-elle cohérente ?",
+      "answer": "oui, les deux catégories ne se confondent pas",
+      "options": [
+        "oui, les deux catégories ne se confondent pas",
+        "non, pays et continent sont synonymes",
+        "non, un continent est une monnaie"
+      ],
+      "skillIds": [
+        "pays-continent-ocean"
+      ],
+      "explanation": "Un pays peut être situé sur un continent sans constituer tout ce continent.",
+      "variantId": "pays"
+    },
+    {
+      "id": "pays-continent-ocean-coherence-06",
+      "kind": "choice",
+      "prompt": "Sur un globe, un trajet en bateau relie deux continents en traversant une très grande étendue d’eau. Il traverse…",
+      "answer": "un océan",
+      "options": [
+        "un océan",
+        "une capitale",
+        "un pays entièrement terrestre"
+      ],
+      "skillIds": [
+        "pays-continent-ocean"
+      ],
+      "explanation": "Un océan sépare ou borde des terres émergées.",
+      "variantId": "ocean"
+    },
+    {
+      "id": "pays-continent-ocean-coherence-07",
+      "kind": "choice",
+      "prompt": "Une capitale désigne généralement la ville principale du pouvoir politique…",
+      "answer": "d’un pays",
+      "options": [
+        "d’un pays",
+        "de tous les océans",
+        "de tous les continents à la fois"
+      ],
+      "skillIds": [
+        "pays-continent-ocean"
+      ],
+      "explanation": "La notion de capitale se rattache ici à un État, pas à un océan.",
+      "variantId": "pays"
+    },
+    {
+      "id": "pays-continent-ocean-coherence-08",
+      "kind": "choice",
+      "prompt": "Un océan a-t-il la même nature géographique qu’un continent ?",
+      "answer": "non, l’un est une vaste étendue d’eau et l’autre un ensemble de terres",
+      "options": [
+        "non, l’un est une vaste étendue d’eau et l’autre un ensemble de terres",
+        "oui, ce sont deux noms pour un pays",
+        "oui, ce sont deux noms pour une ville"
+      ],
+      "skillIds": [
+        "pays-continent-ocean"
+      ],
+      "explanation": "Cette distinction porte sur l’eau et les terres émergées.",
+      "variantId": "ocean"
+    },
+    {
+      "id": "pays-continent-ocean-coherence-09",
+      "kind": "choice",
+      "prompt": "Pourquoi une carte des pays peut-elle être plus détaillée qu’une carte des continents ?",
+      "answer": "chaque continent peut comprendre plusieurs pays",
+      "options": [
+        "chaque continent peut comprendre plusieurs pays",
+        "chaque pays contient nécessairement tous les continents",
+        "les continents changent de nom chaque jour"
+      ],
+      "skillIds": [
+        "pays-continent-ocean"
+      ],
+      "explanation": "Les deux cartes montrent des découpages à des niveaux différents.",
+      "variantId": "pays"
+    },
+    {
+      "id": "pays-continent-ocean-coherence-10",
+      "kind": "choice",
+      "prompt": "Peut-on qualifier une immense étendue d’eau salée de capitale ?",
+      "answer": "non, capitale désigne une ville",
+      "options": [
+        "non, capitale désigne une ville",
+        "oui, si elle est profonde",
+        "oui, si plusieurs bateaux la traversent"
+      ],
+      "skillIds": [
+        "pays-continent-ocean"
+      ],
+      "explanation": "On distingue les catégories : ville, pays, continent et océan.",
+      "variantId": "ocean"
+    },
+    {
+      "id": "pays-continent-ocean-coherence-11",
+      "kind": "choice",
+      "prompt": "Un voyage passe par deux pays d’un même continent. Traverse-t-il forcément un autre continent ?",
+      "answer": "non",
+      "options": [
+        "non",
+        "oui, tout changement de pays change de continent",
+        "oui, chaque frontière est un océan"
+      ],
+      "skillIds": [
+        "pays-continent-ocean"
+      ],
+      "explanation": "Changer de pays ne signifie pas nécessairement changer de continent.",
+      "variantId": "pays"
     }
   ]
 }

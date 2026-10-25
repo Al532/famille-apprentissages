@@ -1,6 +1,6 @@
 {
   "id": "francais-grammaire-accords-6e",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": "Grammaire et accords",
   "subject": "Français",
   "levels": [
@@ -9,20 +9,194 @@
   "description": "Retrouve le sujet, le verbe, les classes et fonctions des mots ; entraîne-toi aux accords du nom, de l’adjectif et du verbe.",
   "skills": [
     {
-      "id": "sujet-verbe",
-      "label": "Repérer le sujet, le verbe et les propositions"
+      "id": "reperer-sujet",
+      "label": "Repérer le groupe sujet",
+      "variants": [
+        {
+          "id": "ordre-usuel",
+          "label": "Sujet avant le verbe"
+        },
+        {
+          "id": "inversion",
+          "label": "Sujet après le verbe"
+        }
+      ]
     },
     {
-      "id": "classes-mots",
-      "label": "Reconnaître les classes de mots"
+      "id": "reperer-verbe",
+      "label": "Repérer le verbe conjugué"
     },
     {
-      "id": "fonctions",
-      "label": "Identifier les fonctions dans la phrase"
+      "id": "propositions",
+      "label": "Distinguer phrase simple et phrase complexe",
+      "variants": [
+        {
+          "id": "simple",
+          "label": "Une proposition"
+        },
+        {
+          "id": "complexe",
+          "label": "Plusieurs propositions"
+        }
+      ]
     },
     {
-      "id": "accords",
-      "label": "Accorder le groupe nominal, le verbe et le participe avec être"
+      "id": "classes-principales",
+      "label": "Distinguer nom, verbe et adjectif",
+      "variants": [
+        {
+          "id": "nom",
+          "label": "Nom"
+        },
+        {
+          "id": "verbe",
+          "label": "Verbe"
+        },
+        {
+          "id": "adjectif",
+          "label": "Adjectif"
+        }
+      ]
+    },
+    {
+      "id": "determinants-pronoms",
+      "label": "Distinguer déterminants et pronoms",
+      "variants": [
+        {
+          "id": "determinant",
+          "label": "Déterminant"
+        },
+        {
+          "id": "pronom",
+          "label": "Pronom"
+        }
+      ]
+    },
+    {
+      "id": "mots-invariables-classes",
+      "label": "Distinguer adverbes, prépositions et conjonctions",
+      "variants": [
+        {
+          "id": "adverbe",
+          "label": "Adverbe"
+        },
+        {
+          "id": "preposition",
+          "label": "Préposition"
+        },
+        {
+          "id": "conjonction",
+          "label": "Conjonction"
+        }
+      ]
+    },
+    {
+      "id": "cod-coi",
+      "label": "Distinguer COD et COI",
+      "variants": [
+        {
+          "id": "cod",
+          "label": "Complément direct"
+        },
+        {
+          "id": "coi",
+          "label": "Complément indirect"
+        }
+      ]
+    },
+    {
+      "id": "circonstances",
+      "label": "Reconnaître les compléments circonstanciels",
+      "variants": [
+        {
+          "id": "temps",
+          "label": "Temps"
+        },
+        {
+          "id": "lieu",
+          "label": "Lieu"
+        },
+        {
+          "id": "maniere",
+          "label": "Manière"
+        },
+        {
+          "id": "cause",
+          "label": "Cause"
+        },
+        {
+          "id": "but",
+          "label": "But"
+        }
+      ]
+    },
+    {
+      "id": "epithete-attribut",
+      "label": "Distinguer épithète et attribut du sujet",
+      "variants": [
+        {
+          "id": "epithete",
+          "label": "Épithète"
+        },
+        {
+          "id": "attribut",
+          "label": "Attribut du sujet"
+        }
+      ]
+    },
+    {
+      "id": "complement-nom",
+      "label": "Reconnaître le complément du nom"
+    },
+    {
+      "id": "accord-groupe-nominal",
+      "label": "Accorder les noms et les adjectifs",
+      "variants": [
+        {
+          "id": "masculin",
+          "label": "Masculin singulier"
+        },
+        {
+          "id": "feminin",
+          "label": "Féminin singulier"
+        },
+        {
+          "id": "pluriel",
+          "label": "Pluriel"
+        }
+      ]
+    },
+    {
+      "id": "accord-sujet-verbe",
+      "label": "Accorder le verbe avec son sujet",
+      "variants": [
+        {
+          "id": "simple",
+          "label": "Sujet simple"
+        },
+        {
+          "id": "eloigne",
+          "label": "Sujet éloigné ou intercalé"
+        },
+        {
+          "id": "coordonne",
+          "label": "Sujets coordonnés"
+        }
+      ]
+    },
+    {
+      "id": "accord-participe-etre",
+      "label": "Accorder le participe passé avec être",
+      "variants": [
+        {
+          "id": "feminin",
+          "label": "Féminin"
+        },
+        {
+          "id": "masculin-pluriel",
+          "label": "Masculin pluriel"
+        }
+      ]
     }
   ],
   "exercises": [
@@ -37,9 +211,10 @@
         "aboient"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-sujet"
       ],
-      "explanation": "C’est tout le groupe « Les petits chiens du voisin » qui commande le verbe « aboient »."
+      "explanation": "C’est tout le groupe « Les petits chiens du voisin » qui commande le verbe « aboient ».",
+      "variantId": "ordre-usuel"
     },
     {
       "id": "classes-mots-01",
@@ -53,9 +228,10 @@
         "adverbe"
       ],
       "skillIds": [
-        "classes-mots"
+        "classes-principales"
       ],
-      "explanation": "« rapide » donne une propriété du cheval."
+      "explanation": "« rapide » donne une propriété du cheval.",
+      "variantId": "adjectif"
     },
     {
       "id": "fonctions-01",
@@ -68,9 +244,10 @@
         "COI"
       ],
       "skillIds": [
-        "fonctions"
+        "cod-coi"
       ],
-      "explanation": "Mila lit quoi ? « un roman ». Le complément est relié directement au verbe."
+      "explanation": "Mila lit quoi ? « un roman ». Le complément est relié directement au verbe.",
+      "variantId": "cod"
     },
     {
       "id": "accords-01",
@@ -84,9 +261,10 @@
         "blanche"
       ],
       "skillIds": [
-        "accords"
+        "accord-groupe-nominal"
       ],
-      "explanation": "« fleurs » est féminin pluriel ; l’adjectif s’accorde : « blanches »."
+      "explanation": "« fleurs » est féminin pluriel ; l’adjectif s’accorde : « blanches ».",
+      "variantId": "pluriel"
     },
     {
       "id": "sujet-verbe-02",
@@ -99,9 +277,10 @@
         "Dans le jardin"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-sujet"
       ],
-      "explanation": "Ce sont les rosiers qui poussent. Le sujet est placé après le verbe."
+      "explanation": "Ce sont les rosiers qui poussent. Le sujet est placé après le verbe.",
+      "variantId": "inversion"
     },
     {
       "id": "classes-mots-02",
@@ -115,9 +294,10 @@
         "adjectif"
       ],
       "skillIds": [
-        "classes-mots"
+        "determinants-pronoms"
       ],
-      "explanation": "« ils » remplace un groupe nominal et est sujet de « viendront »."
+      "explanation": "« ils » remplace un groupe nominal et est sujet de « viendront ».",
+      "variantId": "pronom"
     },
     {
       "id": "fonctions-02",
@@ -130,9 +310,10 @@
         "sujet"
       ],
       "skillIds": [
-        "fonctions"
+        "cod-coi"
       ],
-      "explanation": "Il parle à qui ? « à son frère ». La préposition « à » introduit le complément du verbe."
+      "explanation": "Il parle à qui ? « à son frère ». La préposition « à » introduit le complément du verbe.",
+      "variantId": "coi"
     },
     {
       "id": "accords-02",
@@ -145,9 +326,10 @@
         "des chevaux rapides"
       ],
       "skillIds": [
-        "accords"
+        "accord-groupe-nominal"
       ],
-      "explanation": "Le pluriel de « cheval » est « chevaux » ; l’adjectif prend un s."
+      "explanation": "Le pluriel de « cheval » est « chevaux » ; l’adjectif prend un s.",
+      "variantId": "pluriel"
     },
     {
       "id": "sujet-verbe-03",
@@ -160,7 +342,7 @@
         "aiment"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-verbe"
       ],
       "explanation": "« aiment » varie avec la personne : j’aime, nous aimons. « lire » est à l’infinitif."
     },
@@ -176,9 +358,10 @@
         "pronom personnel"
       ],
       "skillIds": [
-        "classes-mots"
+        "determinants-pronoms"
       ],
-      "explanation": "« ces » accompagne le nom « oiseaux »."
+      "explanation": "« ces » accompagne le nom « oiseaux ».",
+      "variantId": "determinant"
     },
     {
       "id": "fonctions-03",
@@ -191,9 +374,10 @@
         "le temps"
       ],
       "skillIds": [
-        "fonctions"
+        "circonstances"
       ],
-      "explanation": "« Demain » répond à la question « quand ? »."
+      "explanation": "« Demain » répond à la question « quand ? ».",
+      "variantId": "temps"
     },
     {
       "id": "accords-03",
@@ -206,9 +390,10 @@
         "arrive"
       ],
       "skillIds": [
-        "accords"
+        "accord-sujet-verbe"
       ],
-      "explanation": "Le sujet est « Les amis de ma sœur » : son noyau « amis » est pluriel."
+      "explanation": "Le sujet est « Les amis de ma sœur » : son noyau « amis » est pluriel.",
+      "variantId": "eloigne"
     },
     {
       "id": "sujet-verbe-04",
@@ -221,9 +406,10 @@
         "Le chat dort sur le tapis."
       ],
       "skillIds": [
-        "sujet-verbe"
+        "propositions"
       ],
-      "explanation": "Une phrase complexe comporte plusieurs propositions : ici, deux verbes conjugués, « pleut » et « restons »."
+      "explanation": "Une phrase complexe comporte plusieurs propositions : ici, deux verbes conjugués, « pleut » et « restons ».",
+      "variantId": "complexe"
     },
     {
       "id": "classes-mots-04",
@@ -237,9 +423,10 @@
         "déterminant"
       ],
       "skillIds": [
-        "classes-mots"
+        "mots-invariables-classes"
       ],
-      "explanation": "« doucement » précise la manière de parler et est invariable."
+      "explanation": "« doucement » précise la manière de parler et est invariable.",
+      "variantId": "adverbe"
     },
     {
       "id": "fonctions-04",
@@ -252,9 +439,10 @@
         "le lieu"
       ],
       "skillIds": [
-        "fonctions"
+        "circonstances"
       ],
-      "explanation": "« sous la table » répond à la question « où ? »."
+      "explanation": "« sous la table » répond à la question « où ? ».",
+      "variantId": "lieu"
     },
     {
       "id": "accords-04",
@@ -267,9 +455,10 @@
         "regardes"
       ],
       "skillIds": [
-        "accords"
+        "accord-sujet-verbe"
       ],
-      "explanation": "Le sujet est « tu ». « les » est un pronom COD, il ne commande pas l’accord."
+      "explanation": "Le sujet est « tu ». « les » est un pronom COD, il ne commande pas l’accord.",
+      "variantId": "eloigne"
     },
     {
       "id": "fonctions-05",
@@ -282,9 +471,10 @@
         "COD"
       ],
       "skillIds": [
-        "fonctions"
+        "epithete-attribut"
       ],
-      "explanation": "L’adjectif est directement associé au nom « fille » dans le groupe nominal."
+      "explanation": "L’adjectif est directement associé au nom « fille » dans le groupe nominal.",
+      "variantId": "epithete"
     },
     {
       "id": "accords-05",
@@ -298,9 +488,10 @@
         "arrivée"
       ],
       "skillIds": [
-        "accords"
+        "accord-participe-etre"
       ],
-      "explanation": "Avec être, le participe passé s’accorde avec le sujet « Elles » : féminin pluriel."
+      "explanation": "Avec être, le participe passé s’accorde avec le sujet « Elles » : féminin pluriel.",
+      "variantId": "feminin"
     },
     {
       "id": "fonctions-06",
@@ -313,9 +504,10 @@
         "épithète"
       ],
       "skillIds": [
-        "fonctions"
+        "epithete-attribut"
       ],
-      "explanation": "Après le verbe d’état « semblent », l’adjectif donne une propriété du sujet « Les filles »."
+      "explanation": "Après le verbe d’état « semblent », l’adjectif donne une propriété du sujet « Les filles ».",
+      "variantId": "attribut"
     },
     {
       "id": "accords-06",
@@ -329,9 +521,10 @@
         "anciens"
       ],
       "skillIds": [
-        "accords"
+        "accord-groupe-nominal"
       ],
-      "explanation": "L’attribut du sujet s’accorde avec « maisons », féminin pluriel."
+      "explanation": "L’attribut du sujet s’accorde avec « maisons », féminin pluriel.",
+      "variantId": "pluriel"
     },
     {
       "id": "sujet-verbe-reserve-01",
@@ -344,9 +537,10 @@
         "aucun sujet"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-sujet"
       ],
-      "explanation": "Le sujet « Le grand bateau » commande le verbe « quitte ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
+      "explanation": "Le sujet « Le grand bateau » commande le verbe « quitte ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? ».",
+      "variantId": "ordre-usuel"
     },
     {
       "id": "sujet-verbe-reserve-02",
@@ -359,9 +553,10 @@
         "aucun sujet"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-sujet"
       ],
-      "explanation": "Le sujet « un chat » commande le verbe « se cache ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
+      "explanation": "Le sujet « un chat » commande le verbe « se cache ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? ».",
+      "variantId": "inversion"
     },
     {
       "id": "sujet-verbe-reserve-03",
@@ -374,7 +569,7 @@
         "aucun verbe"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-verbe"
       ],
       "explanation": "Le sujet « Mes deux cousines » commande le verbe « arrivent ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
     },
@@ -389,9 +584,10 @@
         "aucun sujet"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-sujet"
       ],
-      "explanation": "Le sujet « Nous » commande le verbe « préparons ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
+      "explanation": "Le sujet « Nous » commande le verbe « préparons ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? ».",
+      "variantId": "ordre-usuel"
     },
     {
       "id": "sujet-verbe-reserve-05",
@@ -404,9 +600,10 @@
         "aucun sujet"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-sujet"
       ],
-      "explanation": "Le sujet « les oiseaux » commande le verbe « chantent ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
+      "explanation": "Le sujet « les oiseaux » commande le verbe « chantent ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? ».",
+      "variantId": "inversion"
     },
     {
       "id": "sujet-verbe-reserve-06",
@@ -419,7 +616,7 @@
         "aucun verbe"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-verbe"
       ],
       "explanation": "Le sujet « La sœur de mes amis » commande le verbe « joue ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
     },
@@ -434,9 +631,10 @@
         "aucun sujet"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-sujet"
       ],
-      "explanation": "Le sujet « Tu » commande le verbe « fermes ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
+      "explanation": "Le sujet « Tu » commande le verbe « fermes ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? ».",
+      "variantId": "ordre-usuel"
     },
     {
       "id": "sujet-verbe-reserve-08",
@@ -449,9 +647,10 @@
         "aucun sujet"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-sujet"
       ],
-      "explanation": "Le sujet « Les feuilles jaunes » commande le verbe « tombent ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
+      "explanation": "Le sujet « Les feuilles jaunes » commande le verbe « tombent ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? ».",
+      "variantId": "ordre-usuel"
     },
     {
       "id": "sujet-verbe-reserve-09",
@@ -464,7 +663,7 @@
         "aucun verbe"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-verbe"
       ],
       "explanation": "Le sujet « Ce livre d’aventures » commande le verbe « plaît ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
     },
@@ -479,9 +678,10 @@
         "aucun sujet"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-sujet"
       ],
-      "explanation": "Le sujet « Elle » commande le verbe « écoute ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
+      "explanation": "Le sujet « Elle » commande le verbe « écoute ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? ».",
+      "variantId": "ordre-usuel"
     },
     {
       "id": "sujet-verbe-reserve-11",
@@ -494,9 +694,10 @@
         "aucun sujet"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-sujet"
       ],
-      "explanation": "Le sujet « Le chien et le chat » commande le verbe « dorment ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
+      "explanation": "Le sujet « Le chien et le chat » commande le verbe « dorment ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? ».",
+      "variantId": "ordre-usuel"
     },
     {
       "id": "sujet-verbe-reserve-12",
@@ -509,7 +710,7 @@
         "aucun verbe"
       ],
       "skillIds": [
-        "sujet-verbe"
+        "reperer-verbe"
       ],
       "explanation": "Le sujet « une île » commande le verbe « apparaît ». On le cherche avec « qui est-ce qui ? » ou « qu’est-ce qui ? »."
     },
@@ -525,9 +726,10 @@
         "déterminant"
       ],
       "skillIds": [
-        "classes-mots"
+        "classes-principales"
       ],
-      "explanation": "« chat » désigne un animal : c’est un nom."
+      "explanation": "« chat » désigne un animal : c’est un nom.",
+      "variantId": "nom"
     },
     {
       "id": "classes-mots-reserve-02",
@@ -541,9 +743,10 @@
         "pronom"
       ],
       "skillIds": [
-        "classes-mots"
+        "determinants-pronoms"
       ],
-      "explanation": "« Une » introduit le nom maison."
+      "explanation": "« Une » introduit le nom maison.",
+      "variantId": "determinant"
     },
     {
       "id": "classes-mots-reserve-03",
@@ -557,9 +760,10 @@
         "verbe"
       ],
       "skillIds": [
-        "classes-mots"
+        "determinants-pronoms"
       ],
-      "explanation": "« Ils » remplace un groupe de personnes ou de choses et sert de sujet."
+      "explanation": "« Ils » remplace un groupe de personnes ou de choses et sert de sujet.",
+      "variantId": "pronom"
     },
     {
       "id": "classes-mots-reserve-04",
@@ -573,9 +777,10 @@
         "déterminant"
       ],
       "skillIds": [
-        "classes-mots"
+        "mots-invariables-classes"
       ],
-      "explanation": "« lentement » précise comment elle marche. Cet adverbe est invariable."
+      "explanation": "« lentement » précise comment elle marche. Cet adverbe est invariable.",
+      "variantId": "adverbe"
     },
     {
       "id": "classes-mots-reserve-05",
@@ -589,9 +794,10 @@
         "pronom"
       ],
       "skillIds": [
-        "classes-mots"
+        "classes-principales"
       ],
-      "explanation": "« bleu » qualifie le ciel."
+      "explanation": "« bleu » qualifie le ciel.",
+      "variantId": "adjectif"
     },
     {
       "id": "classes-mots-reserve-06",
@@ -605,9 +811,10 @@
         "adjectif"
       ],
       "skillIds": [
-        "classes-mots"
+        "classes-principales"
       ],
-      "explanation": "« mangeons » est une forme conjuguée du verbe manger."
+      "explanation": "« mangeons » est une forme conjuguée du verbe manger.",
+      "variantId": "verbe"
     },
     {
       "id": "classes-mots-reserve-07",
@@ -621,9 +828,10 @@
         "adjectif"
       ],
       "skillIds": [
-        "classes-mots"
+        "mots-invariables-classes"
       ],
-      "explanation": "La préposition « sur » introduit un groupe complément."
+      "explanation": "La préposition « sur » introduit un groupe complément.",
+      "variantId": "preposition"
     },
     {
       "id": "classes-mots-reserve-08",
@@ -637,9 +845,10 @@
         "adjectif"
       ],
       "skillIds": [
-        "classes-mots"
+        "mots-invariables-classes"
       ],
-      "explanation": "« et » relie ici deux noms."
+      "explanation": "« et » relie ici deux noms.",
+      "variantId": "conjonction"
     },
     {
       "id": "classes-mots-reserve-09",
@@ -653,9 +862,10 @@
         "nom"
       ],
       "skillIds": [
-        "classes-mots"
+        "determinants-pronoms"
       ],
-      "explanation": "« Cette » introduit le nom fille et sert à désigner."
+      "explanation": "« Cette » introduit le nom fille et sert à désigner.",
+      "variantId": "determinant"
     },
     {
       "id": "classes-mots-reserve-10",
@@ -669,9 +879,10 @@
         "nom"
       ],
       "skillIds": [
-        "classes-mots"
+        "determinants-pronoms"
       ],
-      "explanation": "« le » remplace quelqu’un ou quelque chose devant le verbe regarde."
+      "explanation": "« le » remplace quelqu’un ou quelque chose devant le verbe regarde.",
+      "variantId": "pronom"
     },
     {
       "id": "classes-mots-reserve-11",
@@ -685,9 +896,10 @@
         "adverbe"
       ],
       "skillIds": [
-        "classes-mots"
+        "classes-principales"
       ],
-      "explanation": "« délicieux » donne une propriété du repas."
+      "explanation": "« délicieux » donne une propriété du repas.",
+      "variantId": "adjectif"
     },
     {
       "id": "classes-mots-reserve-12",
@@ -701,9 +913,10 @@
         "déterminant"
       ],
       "skillIds": [
-        "classes-mots"
+        "mots-invariables-classes"
       ],
-      "explanation": "« Hier » situe l’action dans le temps et ne varie pas."
+      "explanation": "« Hier » situe l’action dans le temps et ne varie pas.",
+      "variantId": "adverbe"
     },
     {
       "id": "fonctions-reserve-01",
@@ -717,9 +930,10 @@
         "complément circonstanciel"
       ],
       "skillIds": [
-        "fonctions"
+        "cod-coi"
       ],
-      "explanation": "Le chat mange quoi ? Une souris. Le complément est directement relié au verbe."
+      "explanation": "Le chat mange quoi ? Une souris. Le complément est directement relié au verbe.",
+      "variantId": "cod"
     },
     {
       "id": "fonctions-reserve-02",
@@ -733,9 +947,10 @@
         "attribut du sujet"
       ],
       "skillIds": [
-        "fonctions"
+        "cod-coi"
       ],
-      "explanation": "Lina parle à qui ? À sa sœur. La préposition à introduit le complément du verbe."
+      "explanation": "Lina parle à qui ? À sa sœur. La préposition à introduit le complément du verbe.",
+      "variantId": "coi"
     },
     {
       "id": "fonctions-reserve-03",
@@ -748,9 +963,10 @@
         "la manière"
       ],
       "skillIds": [
-        "fonctions"
+        "circonstances"
       ],
-      "explanation": "Le complément circonstanciel indique quand on partira."
+      "explanation": "Le complément circonstanciel indique quand on partira.",
+      "variantId": "temps"
     },
     {
       "id": "fonctions-reserve-04",
@@ -763,9 +979,10 @@
         "la cause"
       ],
       "skillIds": [
-        "fonctions"
+        "circonstances"
       ],
-      "explanation": "Ce groupe indique où il dort."
+      "explanation": "Ce groupe indique où il dort.",
+      "variantId": "lieu"
     },
     {
       "id": "fonctions-reserve-05",
@@ -778,9 +995,10 @@
         "le temps"
       ],
       "skillIds": [
-        "fonctions"
+        "circonstances"
       ],
-      "explanation": "Ce groupe indique comment elle travaille."
+      "explanation": "Ce groupe indique comment elle travaille.",
+      "variantId": "maniere"
     },
     {
       "id": "fonctions-reserve-06",
@@ -794,9 +1012,10 @@
         "sujet"
       ],
       "skillIds": [
-        "fonctions"
+        "epithete-attribut"
       ],
-      "explanation": "« sombre » donne une propriété du sujet le ciel par le verbe devenir."
+      "explanation": "« sombre » donne une propriété du sujet le ciel par le verbe devenir.",
+      "variantId": "attribut"
     },
     {
       "id": "fonctions-reserve-07",
@@ -809,7 +1028,7 @@
         "remplacer le sujet"
       ],
       "skillIds": [
-        "fonctions"
+        "complement-nom"
       ],
       "explanation": "Ce complément du nom précise la matière de la maison."
     },
@@ -825,9 +1044,10 @@
         "COI"
       ],
       "skillIds": [
-        "fonctions"
+        "epithete-attribut"
       ],
-      "explanation": "L’adjectif est directement dans le groupe nominal : il est épithète."
+      "explanation": "L’adjectif est directement dans le groupe nominal : il est épithète.",
+      "variantId": "epithete"
     },
     {
       "id": "fonctions-reserve-09",
@@ -841,9 +1061,10 @@
         "complément du nom"
       ],
       "skillIds": [
-        "fonctions"
+        "cod-coi"
       ],
-      "explanation": "Nous écrivons quoi ? Une lettre."
+      "explanation": "Nous écrivons quoi ? Une lettre.",
+      "variantId": "cod"
     },
     {
       "id": "fonctions-reserve-10",
@@ -857,9 +1078,10 @@
         "attribut"
       ],
       "skillIds": [
-        "fonctions"
+        "cod-coi"
       ],
-      "explanation": "Il se souvient de quoi ? De ce voyage. Le complément est introduit par de."
+      "explanation": "Il se souvient de quoi ? De ce voyage. Le complément est introduit par de.",
+      "variantId": "coi"
     },
     {
       "id": "fonctions-reserve-11",
@@ -872,9 +1094,10 @@
         "le temps"
       ],
       "skillIds": [
-        "fonctions"
+        "circonstances"
       ],
-      "explanation": "Avoir froid explique pourquoi elle tremble : c’est la cause."
+      "explanation": "Avoir froid explique pourquoi elle tremble : c’est la cause.",
+      "variantId": "cause"
     },
     {
       "id": "fonctions-reserve-12",
@@ -887,9 +1110,10 @@
         "le temps"
       ],
       "skillIds": [
-        "fonctions"
+        "circonstances"
       ],
-      "explanation": "Ne pas réveiller le bébé est l’objectif recherché : c’est le but."
+      "explanation": "Ne pas réveiller le bébé est l’objectif recherché : c’est le but.",
+      "variantId": "but"
     },
     {
       "id": "accords-reserve-01",
@@ -903,9 +1127,10 @@
         "jolis"
       ],
       "skillIds": [
-        "accords"
+        "accord-groupe-nominal"
       ],
-      "explanation": "L’adjectif s’accorde avec fleurs, féminin pluriel : jolies."
+      "explanation": "L’adjectif s’accorde avec fleurs, féminin pluriel : jolies.",
+      "variantId": "pluriel"
     },
     {
       "id": "accords-reserve-02",
@@ -919,9 +1144,10 @@
         "petites"
       ],
       "skillIds": [
-        "accords"
+        "accord-groupe-nominal"
       ],
-      "explanation": "Animal est masculin singulier : petit."
+      "explanation": "Animal est masculin singulier : petit.",
+      "variantId": "masculin"
     },
     {
       "id": "accords-reserve-03",
@@ -935,9 +1161,10 @@
         "jouons"
       ],
       "skillIds": [
-        "accords"
+        "accord-sujet-verbe"
       ],
-      "explanation": "Le sujet les garçons correspond à ils : jouent."
+      "explanation": "Le sujet les garçons correspond à ils : jouent.",
+      "variantId": "simple"
     },
     {
       "id": "accords-reserve-04",
@@ -951,9 +1178,10 @@
         "jouons"
       ],
       "skillIds": [
-        "accords"
+        "accord-sujet-verbe"
       ],
-      "explanation": "Le sujet est la fille, au singulier. De mes voisins ne commande pas le verbe."
+      "explanation": "Le sujet est la fille, au singulier. De mes voisins ne commande pas le verbe.",
+      "variantId": "eloigne"
     },
     {
       "id": "accords-reserve-05",
@@ -967,9 +1195,10 @@
         "arrivés"
       ],
       "skillIds": [
-        "accords"
+        "accord-participe-etre"
       ],
-      "explanation": "Avec être, le participe passé s’accorde avec elles, féminin pluriel."
+      "explanation": "Avec être, le participe passé s’accorde avec elles, féminin pluriel.",
+      "variantId": "feminin"
     },
     {
       "id": "accords-reserve-06",
@@ -983,9 +1212,10 @@
         "sorties"
       ],
       "skillIds": [
-        "accords"
+        "accord-participe-etre"
       ],
-      "explanation": "Avec être, le participe passé s’accorde avec ils, masculin pluriel."
+      "explanation": "Avec être, le participe passé s’accorde avec ils, masculin pluriel.",
+      "variantId": "masculin-pluriel"
     },
     {
       "id": "accords-reserve-07",
@@ -999,9 +1229,10 @@
         "des chevals blancs"
       ],
       "skillIds": [
-        "accords"
+        "accord-groupe-nominal"
       ],
-      "explanation": "Cheval devient chevaux au pluriel, et blanc prend un s."
+      "explanation": "Cheval devient chevaux au pluriel, et blanc prend un s.",
+      "variantId": "pluriel"
     },
     {
       "id": "accords-reserve-08",
@@ -1015,9 +1246,10 @@
         "une longues route"
       ],
       "skillIds": [
-        "accords"
+        "accord-groupe-nominal"
       ],
-      "explanation": "Le déterminant et l’adjectif s’accordent avec route, féminin singulier."
+      "explanation": "Le déterminant et l’adjectif s’accordent avec route, féminin singulier.",
+      "variantId": "feminin"
     },
     {
       "id": "accords-reserve-09",
@@ -1031,9 +1263,10 @@
         "travaille"
       ],
       "skillIds": [
-        "accords"
+        "accord-sujet-verbe"
       ],
-      "explanation": "Toi et moi correspond à nous : nous travaillons."
+      "explanation": "Toi et moi correspond à nous : nous travaillons.",
+      "variantId": "coordonne"
     },
     {
       "id": "accords-reserve-10",
@@ -1047,9 +1280,10 @@
         "pars"
       ],
       "skillIds": [
-        "accords"
+        "accord-sujet-verbe"
       ],
-      "explanation": "Vous et elle correspond à vous : vous partez."
+      "explanation": "Vous et elle correspond à vous : vous partez.",
+      "variantId": "coordonne"
     },
     {
       "id": "accords-reserve-11",
@@ -1063,9 +1297,10 @@
         "amusantes"
       ],
       "skillIds": [
-        "accords"
+        "accord-groupe-nominal"
       ],
-      "explanation": "L’adjectif s’accorde avec histoire, féminin singulier."
+      "explanation": "L’adjectif s’accorde avec histoire, féminin singulier.",
+      "variantId": "feminin"
     },
     {
       "id": "accords-reserve-12",
@@ -1079,9 +1314,1449 @@
         "habitons"
       ],
       "skillIds": [
-        "accords"
+        "accord-sujet-verbe"
       ],
-      "explanation": "Le noyau du sujet est enfants, au pluriel : ils habitent."
+      "explanation": "Le noyau du sujet est enfants, au pluriel : ils habitent.",
+      "variantId": "eloigne"
+    },
+    {
+      "id": "reperer-sujet-coherence-01",
+      "kind": "choice",
+      "prompt": "Quel est le sujet dans « Le train de nuit entre en gare » ?",
+      "answer": "Le train de nuit",
+      "options": [
+        "Le train de nuit",
+        "de nuit",
+        "en gare"
+      ],
+      "skillIds": [
+        "reperer-sujet"
+      ],
+      "explanation": "On demande : qui est-ce qui entre en gare ? Le train de nuit.",
+      "variantId": "ordre-usuel"
+    },
+    {
+      "id": "reperer-sujet-coherence-02",
+      "kind": "choice",
+      "prompt": "Quel est le sujet dans « Derrière la colline brille le soleil » ?",
+      "answer": "le soleil",
+      "options": [
+        "le soleil",
+        "la colline",
+        "Derrière la colline"
+      ],
+      "skillIds": [
+        "reperer-sujet"
+      ],
+      "explanation": "Qui est-ce qui brille ? Le soleil, placé après le verbe.",
+      "variantId": "inversion"
+    },
+    {
+      "id": "reperer-verbe-coherence-01",
+      "kind": "choice",
+      "prompt": "Quel est le verbe conjugué dans « Le cheval veut franchir la barrière » ?",
+      "answer": "veut",
+      "options": [
+        "veut",
+        "franchir",
+        "cheval"
+      ],
+      "skillIds": [
+        "reperer-verbe"
+      ],
+      "explanation": "Veut change quand on change de temps : voulait. Franchir est un infinitif."
+    },
+    {
+      "id": "reperer-verbe-coherence-02",
+      "kind": "choice",
+      "prompt": "Quel est le verbe conjugué dans « Les voisins parlent de leur voyage » ?",
+      "answer": "parlent",
+      "options": [
+        "parlent",
+        "voyage",
+        "voisins"
+      ],
+      "skillIds": [
+        "reperer-verbe"
+      ],
+      "explanation": "Parlent est conjugué au présent avec les voisins."
+    },
+    {
+      "id": "reperer-verbe-coherence-03",
+      "kind": "choice",
+      "prompt": "Quel est le verbe conjugué dans « Demain, tu viendras nous voir » ?",
+      "answer": "viendras",
+      "options": [
+        "viendras",
+        "voir",
+        "Demain"
+      ],
+      "skillIds": [
+        "reperer-verbe"
+      ],
+      "explanation": "Viendras est conjugué au futur. Voir est un infinitif."
+    },
+    {
+      "id": "reperer-verbe-coherence-04",
+      "kind": "choice",
+      "prompt": "Quel est le verbe conjugué dans « Le goûter semble délicieux » ?",
+      "answer": "semble",
+      "options": [
+        "semble",
+        "goûter",
+        "délicieux"
+      ],
+      "skillIds": [
+        "reperer-verbe"
+      ],
+      "explanation": "Semble indique ici un état ; goûter est employé comme nom."
+    },
+    {
+      "id": "reperer-verbe-coherence-05",
+      "kind": "choice",
+      "prompt": "Quel est le verbe conjugué dans « Nous pouvions entendre la pluie » ?",
+      "answer": "pouvions",
+      "options": [
+        "pouvions",
+        "entendre",
+        "pluie"
+      ],
+      "skillIds": [
+        "reperer-verbe"
+      ],
+      "explanation": "Pouvions est conjugué à l’imparfait ; entendre est un infinitif."
+    },
+    {
+      "id": "reperer-verbe-coherence-06",
+      "kind": "choice",
+      "prompt": "Quel est le verbe conjugué dans « Chaque matin, le gardien ouvre la grille » ?",
+      "answer": "ouvre",
+      "options": [
+        "ouvre",
+        "matin",
+        "gardien"
+      ],
+      "skillIds": [
+        "reperer-verbe"
+      ],
+      "explanation": "Ouvre est le verbe de la phrase ; il devient ouvrait à l’imparfait."
+    },
+    {
+      "id": "reperer-verbe-coherence-07",
+      "kind": "choice",
+      "prompt": "Quel est le verbe conjugué dans « Les élèves finiront leur dessin » ?",
+      "answer": "finiront",
+      "options": [
+        "finiront",
+        "dessin",
+        "élèves"
+      ],
+      "skillIds": [
+        "reperer-verbe"
+      ],
+      "explanation": "Finiront est conjugué au futur avec les élèves."
+    },
+    {
+      "id": "propositions-coherence-01",
+      "kind": "choice",
+      "prompt": "Quelle est la structure de « Les enfants jouent et leurs parents rient » ?",
+      "answer": "phrase complexe",
+      "options": [
+        "phrase complexe",
+        "phrase simple"
+      ],
+      "skillIds": [
+        "propositions"
+      ],
+      "explanation": "Jouent et rient sont deux verbes conjugués : la phrase comporte deux propositions coordonnées.",
+      "variantId": "complexe"
+    },
+    {
+      "id": "propositions-coherence-02",
+      "kind": "choice",
+      "prompt": "Quelle est la structure de « Le petit bateau traverse le lac » ?",
+      "answer": "phrase simple",
+      "options": [
+        "phrase simple",
+        "phrase complexe"
+      ],
+      "skillIds": [
+        "propositions"
+      ],
+      "explanation": "Cette phrase comporte un seul verbe conjugué, donc une seule proposition. Un infinitif ne crée pas à lui seul une autre proposition.",
+      "variantId": "simple"
+    },
+    {
+      "id": "propositions-coherence-03",
+      "kind": "choice",
+      "prompt": "Quelle est la structure de « Quand la nuit tombe, les oiseaux se taisent » ?",
+      "answer": "phrase complexe",
+      "options": [
+        "phrase complexe",
+        "phrase simple"
+      ],
+      "skillIds": [
+        "propositions"
+      ],
+      "explanation": "Cette phrase comporte plusieurs verbes conjugués, donc plusieurs propositions.",
+      "variantId": "complexe"
+    },
+    {
+      "id": "propositions-coherence-04",
+      "kind": "choice",
+      "prompt": "Quelle est la structure de « Elle veut partir demain » ?",
+      "answer": "phrase simple",
+      "options": [
+        "phrase simple",
+        "phrase complexe"
+      ],
+      "skillIds": [
+        "propositions"
+      ],
+      "explanation": "Cette phrase comporte un seul verbe conjugué, donc une seule proposition. Un infinitif ne crée pas à lui seul une autre proposition.",
+      "variantId": "simple"
+    },
+    {
+      "id": "propositions-coherence-05",
+      "kind": "choice",
+      "prompt": "Quelle est la structure de « Je lis pendant que tu dessines » ?",
+      "answer": "phrase complexe",
+      "options": [
+        "phrase complexe",
+        "phrase simple"
+      ],
+      "skillIds": [
+        "propositions"
+      ],
+      "explanation": "Cette phrase comporte plusieurs verbes conjugués, donc plusieurs propositions.",
+      "variantId": "complexe"
+    },
+    {
+      "id": "propositions-coherence-06",
+      "kind": "choice",
+      "prompt": "Quelle est la structure de « Les grands arbres du jardin perdent leurs feuilles » ?",
+      "answer": "phrase simple",
+      "options": [
+        "phrase simple",
+        "phrase complexe"
+      ],
+      "skillIds": [
+        "propositions"
+      ],
+      "explanation": "Cette phrase comporte un seul verbe conjugué, donc une seule proposition. Un infinitif ne crée pas à lui seul une autre proposition.",
+      "variantId": "simple"
+    },
+    {
+      "id": "propositions-coherence-07",
+      "kind": "choice",
+      "prompt": "Quelle est la structure de « Le vent souffle, les volets claquent » ?",
+      "answer": "phrase complexe",
+      "options": [
+        "phrase complexe",
+        "phrase simple"
+      ],
+      "skillIds": [
+        "propositions"
+      ],
+      "explanation": "Cette phrase comporte plusieurs verbes conjugués, donc plusieurs propositions.",
+      "variantId": "complexe"
+    },
+    {
+      "id": "propositions-coherence-08",
+      "kind": "choice",
+      "prompt": "Quelle est la structure de « Nous préparons une surprise pour Léa » ?",
+      "answer": "phrase simple",
+      "options": [
+        "phrase simple",
+        "phrase complexe"
+      ],
+      "skillIds": [
+        "propositions"
+      ],
+      "explanation": "Cette phrase comporte un seul verbe conjugué, donc une seule proposition. Un infinitif ne crée pas à lui seul une autre proposition.",
+      "variantId": "simple"
+    },
+    {
+      "id": "propositions-coherence-09",
+      "kind": "choice",
+      "prompt": "Quelle est la structure de « Il pense que nous arriverons à temps » ?",
+      "answer": "phrase complexe",
+      "options": [
+        "phrase complexe",
+        "phrase simple"
+      ],
+      "skillIds": [
+        "propositions"
+      ],
+      "explanation": "Cette phrase comporte plusieurs verbes conjugués, donc plusieurs propositions.",
+      "variantId": "complexe"
+    },
+    {
+      "id": "propositions-coherence-10",
+      "kind": "choice",
+      "prompt": "Quelle est la structure de « Après le repas, vous pourrez jouer » ?",
+      "answer": "phrase simple",
+      "options": [
+        "phrase simple",
+        "phrase complexe"
+      ],
+      "skillIds": [
+        "propositions"
+      ],
+      "explanation": "Cette phrase comporte un seul verbe conjugué, donc une seule proposition. Un infinitif ne crée pas à lui seul une autre proposition.",
+      "variantId": "simple"
+    },
+    {
+      "id": "propositions-coherence-11",
+      "kind": "choice",
+      "prompt": "Quelle est la structure de « Tu viens ou tu restes ici » ?",
+      "answer": "phrase complexe",
+      "options": [
+        "phrase complexe",
+        "phrase simple"
+      ],
+      "skillIds": [
+        "propositions"
+      ],
+      "explanation": "Cette phrase comporte plusieurs verbes conjugués, donc plusieurs propositions.",
+      "variantId": "complexe"
+    },
+    {
+      "id": "classes-principales-coherence-01",
+      "kind": "choice",
+      "prompt": "Dans « Le jardin fleurit », quelle est la classe de « jardin » ?",
+      "answer": "nom",
+      "options": [
+        "nom",
+        "verbe",
+        "adjectif",
+        "adverbe"
+      ],
+      "skillIds": [
+        "classes-principales"
+      ],
+      "explanation": "Ce mot nomme un être, une chose ou une idée : c’est un nom.",
+      "variantId": "nom"
+    },
+    {
+      "id": "classes-principales-coherence-02",
+      "kind": "choice",
+      "prompt": "Dans « Vous préparez le repas », quelle est la classe de « préparez » ?",
+      "answer": "verbe",
+      "options": [
+        "verbe",
+        "nom",
+        "adjectif",
+        "adverbe"
+      ],
+      "skillIds": [
+        "classes-principales"
+      ],
+      "explanation": "Ce mot est conjugué ; il varie avec le temps et la personne.",
+      "variantId": "verbe"
+    },
+    {
+      "id": "classes-principales-coherence-03",
+      "kind": "choice",
+      "prompt": "Dans « Une route étroite », quelle est la classe de « étroite » ?",
+      "answer": "adjectif",
+      "options": [
+        "adjectif",
+        "nom",
+        "verbe",
+        "adverbe"
+      ],
+      "skillIds": [
+        "classes-principales"
+      ],
+      "explanation": "Ce mot précise une propriété du nom ou du sujet ; c’est un adjectif.",
+      "variantId": "adjectif"
+    },
+    {
+      "id": "classes-principales-coherence-04",
+      "kind": "choice",
+      "prompt": "Dans « La patience est utile », quelle est la classe de « patience » ?",
+      "answer": "nom",
+      "options": [
+        "nom",
+        "verbe",
+        "adjectif",
+        "adverbe"
+      ],
+      "skillIds": [
+        "classes-principales"
+      ],
+      "explanation": "Ce mot nomme un être, une chose ou une idée : c’est un nom.",
+      "variantId": "nom"
+    },
+    {
+      "id": "classes-principales-coherence-05",
+      "kind": "choice",
+      "prompt": "Dans « Ils semblent calmes », quelle est la classe de « semblent » ?",
+      "answer": "verbe",
+      "options": [
+        "verbe",
+        "nom",
+        "adjectif",
+        "adverbe"
+      ],
+      "skillIds": [
+        "classes-principales"
+      ],
+      "explanation": "Ce mot est conjugué ; il varie avec le temps et la personne.",
+      "variantId": "verbe"
+    },
+    {
+      "id": "classes-principales-coherence-06",
+      "kind": "choice",
+      "prompt": "Dans « Mon frère observe la mer », quelle est la classe de « mer » ?",
+      "answer": "nom",
+      "options": [
+        "nom",
+        "verbe",
+        "adjectif",
+        "adverbe"
+      ],
+      "skillIds": [
+        "classes-principales"
+      ],
+      "explanation": "Ce mot nomme un être, une chose ou une idée : c’est un nom.",
+      "variantId": "nom"
+    },
+    {
+      "id": "classes-principales-coherence-07",
+      "kind": "choice",
+      "prompt": "Dans « Le vent soufflait », quelle est la classe de « soufflait » ?",
+      "answer": "verbe",
+      "options": [
+        "verbe",
+        "nom",
+        "adjectif",
+        "adverbe"
+      ],
+      "skillIds": [
+        "classes-principales"
+      ],
+      "explanation": "Ce mot est conjugué ; il varie avec le temps et la personne.",
+      "variantId": "verbe"
+    },
+    {
+      "id": "determinants-pronoms-coherence-01",
+      "kind": "choice",
+      "prompt": "Dans « Ses amis arrivent », quelle est la classe de « Ses » ?",
+      "answer": "déterminant",
+      "options": [
+        "déterminant",
+        "pronom",
+        "adjectif",
+        "nom"
+      ],
+      "skillIds": [
+        "determinants-pronoms"
+      ],
+      "explanation": "Le déterminant introduit ici un nom.",
+      "variantId": "determinant"
+    },
+    {
+      "id": "determinants-pronoms-coherence-02",
+      "kind": "choice",
+      "prompt": "Dans « Elle les attend », quelle est la classe de « les » ?",
+      "answer": "pronom",
+      "options": [
+        "pronom",
+        "déterminant",
+        "adjectif",
+        "nom"
+      ],
+      "skillIds": [
+        "determinants-pronoms"
+      ],
+      "explanation": "Le pronom remplace ou désigne un être ou une chose sans introduire un nom.",
+      "variantId": "pronom"
+    },
+    {
+      "id": "determinants-pronoms-coherence-03",
+      "kind": "choice",
+      "prompt": "Dans « Le navire entre au port », quelle est la classe de « Le » ?",
+      "answer": "déterminant",
+      "options": [
+        "déterminant",
+        "pronom",
+        "adjectif",
+        "nom"
+      ],
+      "skillIds": [
+        "determinants-pronoms"
+      ],
+      "explanation": "Le déterminant introduit ici un nom.",
+      "variantId": "determinant"
+    },
+    {
+      "id": "determinants-pronoms-coherence-04",
+      "kind": "choice",
+      "prompt": "Dans « Je lui réponds », quelle est la classe de « lui » ?",
+      "answer": "pronom",
+      "options": [
+        "pronom",
+        "déterminant",
+        "adjectif",
+        "nom"
+      ],
+      "skillIds": [
+        "determinants-pronoms"
+      ],
+      "explanation": "Le pronom remplace ou désigne un être ou une chose sans introduire un nom.",
+      "variantId": "pronom"
+    },
+    {
+      "id": "determinants-pronoms-coherence-05",
+      "kind": "choice",
+      "prompt": "Dans « Certains enfants lisent », quelle est la classe de « Certains » ?",
+      "answer": "déterminant",
+      "options": [
+        "déterminant",
+        "pronom",
+        "adjectif",
+        "nom"
+      ],
+      "skillIds": [
+        "determinants-pronoms"
+      ],
+      "explanation": "Le déterminant introduit ici un nom.",
+      "variantId": "determinant"
+    },
+    {
+      "id": "determinants-pronoms-coherence-06",
+      "kind": "choice",
+      "prompt": "Dans « Nous les connaissons », quelle est la classe de « Nous » ?",
+      "answer": "pronom",
+      "options": [
+        "pronom",
+        "déterminant",
+        "adjectif",
+        "nom"
+      ],
+      "skillIds": [
+        "determinants-pronoms"
+      ],
+      "explanation": "Le pronom remplace ou désigne un être ou une chose sans introduire un nom.",
+      "variantId": "pronom"
+    },
+    {
+      "id": "mots-invariables-classes-coherence-01",
+      "kind": "choice",
+      "prompt": "Dans « Le chien court vite », quelle est la classe de « vite » ?",
+      "answer": "adverbe",
+      "options": [
+        "adverbe",
+        "préposition",
+        "conjonction",
+        "déterminant"
+      ],
+      "skillIds": [
+        "mots-invariables-classes"
+      ],
+      "explanation": "Cet adverbe précise notamment l’action du verbe et ne s’accorde pas.",
+      "variantId": "adverbe"
+    },
+    {
+      "id": "mots-invariables-classes-coherence-02",
+      "kind": "choice",
+      "prompt": "Dans « Il vient avec moi », quelle est la classe de « avec » ?",
+      "answer": "préposition",
+      "options": [
+        "préposition",
+        "adverbe",
+        "conjonction",
+        "déterminant"
+      ],
+      "skillIds": [
+        "mots-invariables-classes"
+      ],
+      "explanation": "Cette préposition introduit un groupe complément.",
+      "variantId": "preposition"
+    },
+    {
+      "id": "mots-invariables-classes-coherence-03",
+      "kind": "choice",
+      "prompt": "Dans « Veux-tu du thé ou du lait », quelle est la classe de « ou » ?",
+      "answer": "conjonction",
+      "options": [
+        "conjonction",
+        "adverbe",
+        "préposition",
+        "déterminant"
+      ],
+      "skillIds": [
+        "mots-invariables-classes"
+      ],
+      "explanation": "Cette conjonction relie des mots, des groupes ou des propositions.",
+      "variantId": "conjonction"
+    },
+    {
+      "id": "mots-invariables-classes-coherence-04",
+      "kind": "choice",
+      "prompt": "Dans « Un cadeau pour Léa », quelle est la classe de « pour » ?",
+      "answer": "préposition",
+      "options": [
+        "préposition",
+        "adverbe",
+        "conjonction",
+        "déterminant"
+      ],
+      "skillIds": [
+        "mots-invariables-classes"
+      ],
+      "explanation": "Cette préposition introduit un groupe complément.",
+      "variantId": "preposition"
+    },
+    {
+      "id": "mots-invariables-classes-coherence-05",
+      "kind": "choice",
+      "prompt": "Dans « Il est tard mais je reste », quelle est la classe de « mais » ?",
+      "answer": "conjonction",
+      "options": [
+        "conjonction",
+        "adverbe",
+        "préposition",
+        "déterminant"
+      ],
+      "skillIds": [
+        "mots-invariables-classes"
+      ],
+      "explanation": "Cette conjonction relie des mots, des groupes ou des propositions.",
+      "variantId": "conjonction"
+    },
+    {
+      "id": "mots-invariables-classes-coherence-06",
+      "kind": "choice",
+      "prompt": "Dans « Il revient souvent », quelle est la classe de « souvent » ?",
+      "answer": "adverbe",
+      "options": [
+        "adverbe",
+        "préposition",
+        "conjonction",
+        "déterminant"
+      ],
+      "skillIds": [
+        "mots-invariables-classes"
+      ],
+      "explanation": "Cet adverbe précise notamment l’action du verbe et ne s’accorde pas.",
+      "variantId": "adverbe"
+    },
+    {
+      "id": "mots-invariables-classes-coherence-07",
+      "kind": "choice",
+      "prompt": "Dans « Le ballon roule sous le banc », quelle est la classe de « sous » ?",
+      "answer": "préposition",
+      "options": [
+        "préposition",
+        "adverbe",
+        "conjonction",
+        "déterminant"
+      ],
+      "skillIds": [
+        "mots-invariables-classes"
+      ],
+      "explanation": "Cette préposition introduit un groupe complément.",
+      "variantId": "preposition"
+    },
+    {
+      "id": "cod-coi-coherence-01",
+      "kind": "choice",
+      "prompt": "Dans « Nous regardons les étoiles », quelle est la fonction de « les étoiles » ?",
+      "answer": "COD",
+      "options": [
+        "COD",
+        "COI",
+        "sujet",
+        "attribut du sujet"
+      ],
+      "skillIds": [
+        "cod-coi"
+      ],
+      "explanation": "Ce groupe complète directement le verbe, sans préposition : c’est un COD.",
+      "variantId": "cod"
+    },
+    {
+      "id": "cod-coi-coherence-02",
+      "kind": "choice",
+      "prompt": "Dans « Elle pense à son voyage », quelle est la fonction de « à son voyage » ?",
+      "answer": "COI",
+      "options": [
+        "COI",
+        "COD",
+        "sujet",
+        "attribut du sujet"
+      ],
+      "skillIds": [
+        "cod-coi"
+      ],
+      "explanation": "Ce complément du verbe est introduit par une préposition : c’est un COI.",
+      "variantId": "coi"
+    },
+    {
+      "id": "cod-coi-coherence-03",
+      "kind": "choice",
+      "prompt": "Dans « Le facteur apporte un colis », quelle est la fonction de « un colis » ?",
+      "answer": "COD",
+      "options": [
+        "COD",
+        "COI",
+        "sujet",
+        "attribut du sujet"
+      ],
+      "skillIds": [
+        "cod-coi"
+      ],
+      "explanation": "Ce groupe complète directement le verbe, sans préposition : c’est un COD.",
+      "variantId": "cod"
+    },
+    {
+      "id": "cod-coi-coherence-04",
+      "kind": "choice",
+      "prompt": "Dans « Il rêve de vacances », quelle est la fonction de « de vacances » ?",
+      "answer": "COI",
+      "options": [
+        "COI",
+        "COD",
+        "sujet",
+        "attribut du sujet"
+      ],
+      "skillIds": [
+        "cod-coi"
+      ],
+      "explanation": "Ce complément du verbe est introduit par une préposition : c’est un COI.",
+      "variantId": "coi"
+    },
+    {
+      "id": "cod-coi-coherence-05",
+      "kind": "choice",
+      "prompt": "Dans « Je reconnais cette chanson », quelle est la fonction de « cette chanson » ?",
+      "answer": "COD",
+      "options": [
+        "COD",
+        "COI",
+        "sujet",
+        "attribut du sujet"
+      ],
+      "skillIds": [
+        "cod-coi"
+      ],
+      "explanation": "Ce groupe complète directement le verbe, sans préposition : c’est un COD.",
+      "variantId": "cod"
+    },
+    {
+      "id": "cod-coi-coherence-06",
+      "kind": "choice",
+      "prompt": "Dans « Nous obéissons à la règle », quelle est la fonction de « à la règle » ?",
+      "answer": "COI",
+      "options": [
+        "COI",
+        "COD",
+        "sujet",
+        "attribut du sujet"
+      ],
+      "skillIds": [
+        "cod-coi"
+      ],
+      "explanation": "Ce complément du verbe est introduit par une préposition : c’est un COI.",
+      "variantId": "coi"
+    },
+    {
+      "id": "circonstances-coherence-01",
+      "kind": "choice",
+      "prompt": "Dans « Elle dessine avec précision », que précise « avec précision » ?",
+      "answer": "la manière",
+      "options": [
+        "la manière",
+        "le temps",
+        "le lieu",
+        "la cause",
+        "le but"
+      ],
+      "skillIds": [
+        "circonstances"
+      ],
+      "explanation": "Ce complément indique comment se passe l’action.",
+      "variantId": "maniere"
+    },
+    {
+      "id": "circonstances-coherence-02",
+      "kind": "choice",
+      "prompt": "Dans « Il reste chez lui parce qu’il est malade », quelle circonstance est indiquée ?",
+      "answer": "la cause",
+      "options": [
+        "la cause",
+        "le temps",
+        "le lieu",
+        "la manière",
+        "le but"
+      ],
+      "skillIds": [
+        "circonstances"
+      ],
+      "explanation": "La cause explique pourquoi une action a lieu.",
+      "variantId": "cause"
+    },
+    {
+      "id": "circonstances-coherence-03",
+      "kind": "choice",
+      "prompt": "Dans « Elle s’entraîne pour gagner la course », quelle circonstance est indiquée ?",
+      "answer": "le but",
+      "options": [
+        "le but",
+        "le temps",
+        "le lieu",
+        "la manière",
+        "la cause"
+      ],
+      "skillIds": [
+        "circonstances"
+      ],
+      "explanation": "Le but indique le résultat recherché.",
+      "variantId": "but"
+    },
+    {
+      "id": "circonstances-coherence-04",
+      "kind": "choice",
+      "prompt": "Dans « Nous partirons après le déjeuner », que précise « après le déjeuner » ?",
+      "answer": "le temps",
+      "options": [
+        "le temps",
+        "le lieu",
+        "la manière",
+        "la cause",
+        "le but"
+      ],
+      "skillIds": [
+        "circonstances"
+      ],
+      "explanation": "Ce complément indique quand se passe l’action.",
+      "variantId": "temps"
+    },
+    {
+      "id": "circonstances-coherence-05",
+      "kind": "choice",
+      "prompt": "Dans « Les enfants jouent près du lac », que précise « près du lac » ?",
+      "answer": "le lieu",
+      "options": [
+        "le lieu",
+        "le temps",
+        "la manière",
+        "la cause",
+        "le but"
+      ],
+      "skillIds": [
+        "circonstances"
+      ],
+      "explanation": "Ce complément indique où se passe l’action.",
+      "variantId": "lieu"
+    },
+    {
+      "id": "epithete-attribut-coherence-01",
+      "kind": "choice",
+      "prompt": "Dans « Une lumière vive éclaire la pièce », quelle est la fonction de « vive » ?",
+      "answer": "épithète",
+      "options": [
+        "épithète",
+        "attribut du sujet",
+        "COD",
+        "sujet"
+      ],
+      "skillIds": [
+        "epithete-attribut"
+      ],
+      "explanation": "L’adjectif est directement rattaché au nom dans le groupe nominal.",
+      "variantId": "epithete"
+    },
+    {
+      "id": "epithete-attribut-coherence-02",
+      "kind": "choice",
+      "prompt": "Dans « Cette lumière paraît vive », quelle est la fonction de « vive » ?",
+      "answer": "attribut du sujet",
+      "options": [
+        "attribut du sujet",
+        "épithète",
+        "COD",
+        "sujet"
+      ],
+      "skillIds": [
+        "epithete-attribut"
+      ],
+      "explanation": "L’adjectif caractérise le sujet par l’intermédiaire d’un verbe d’état.",
+      "variantId": "attribut"
+    },
+    {
+      "id": "epithete-attribut-coherence-03",
+      "kind": "choice",
+      "prompt": "Dans « Les longues journées reviennent », quelle est la fonction de « longues » ?",
+      "answer": "épithète",
+      "options": [
+        "épithète",
+        "attribut du sujet",
+        "COD",
+        "sujet"
+      ],
+      "skillIds": [
+        "epithete-attribut"
+      ],
+      "explanation": "L’adjectif est directement rattaché au nom dans le groupe nominal.",
+      "variantId": "epithete"
+    },
+    {
+      "id": "epithete-attribut-coherence-04",
+      "kind": "choice",
+      "prompt": "Dans « Les journées deviennent longues », quelle est la fonction de « longues » ?",
+      "answer": "attribut du sujet",
+      "options": [
+        "attribut du sujet",
+        "épithète",
+        "COD",
+        "sujet"
+      ],
+      "skillIds": [
+        "epithete-attribut"
+      ],
+      "explanation": "L’adjectif caractérise le sujet par l’intermédiaire d’un verbe d’état.",
+      "variantId": "attribut"
+    },
+    {
+      "id": "epithete-attribut-coherence-05",
+      "kind": "choice",
+      "prompt": "Dans « Un vieux pont traverse la rivière », quelle est la fonction de « vieux » ?",
+      "answer": "épithète",
+      "options": [
+        "épithète",
+        "attribut du sujet",
+        "COD",
+        "sujet"
+      ],
+      "skillIds": [
+        "epithete-attribut"
+      ],
+      "explanation": "L’adjectif est directement rattaché au nom dans le groupe nominal.",
+      "variantId": "epithete"
+    },
+    {
+      "id": "epithete-attribut-coherence-06",
+      "kind": "choice",
+      "prompt": "Dans « Ce pont semble vieux », quelle est la fonction de « vieux » ?",
+      "answer": "attribut du sujet",
+      "options": [
+        "attribut du sujet",
+        "épithète",
+        "COD",
+        "sujet"
+      ],
+      "skillIds": [
+        "epithete-attribut"
+      ],
+      "explanation": "L’adjectif caractérise le sujet par l’intermédiaire d’un verbe d’état.",
+      "variantId": "attribut"
+    },
+    {
+      "id": "epithete-attribut-coherence-07",
+      "kind": "choice",
+      "prompt": "Dans « La petite voiture avance », quelle est la fonction de « petite » ?",
+      "answer": "épithète",
+      "options": [
+        "épithète",
+        "attribut du sujet",
+        "COD",
+        "sujet"
+      ],
+      "skillIds": [
+        "epithete-attribut"
+      ],
+      "explanation": "L’adjectif est directement rattaché au nom dans le groupe nominal.",
+      "variantId": "epithete"
+    },
+    {
+      "id": "epithete-attribut-coherence-08",
+      "kind": "choice",
+      "prompt": "Dans « Les élèves restent attentifs », quelle est la fonction de « attentifs » ?",
+      "answer": "attribut du sujet",
+      "options": [
+        "attribut du sujet",
+        "épithète",
+        "COD",
+        "sujet"
+      ],
+      "skillIds": [
+        "epithete-attribut"
+      ],
+      "explanation": "L’adjectif caractérise le sujet par l’intermédiaire d’un verbe d’état.",
+      "variantId": "attribut"
+    },
+    {
+      "id": "complement-nom-coherence-01",
+      "kind": "choice",
+      "prompt": "Dans « le frère de Nina », quel groupe complète le nom principal ?",
+      "answer": "de Nina",
+      "options": [
+        "de Nina",
+        "frère",
+        "le frère de Nina"
+      ],
+      "skillIds": [
+        "complement-nom"
+      ],
+      "explanation": "de Nina précise le nom principal : c’est un complément du nom."
+    },
+    {
+      "id": "complement-nom-coherence-02",
+      "kind": "choice",
+      "prompt": "Dans « un verre à eau », quel groupe complète le nom principal ?",
+      "answer": "à eau",
+      "options": [
+        "à eau",
+        "verre",
+        "un verre à eau"
+      ],
+      "skillIds": [
+        "complement-nom"
+      ],
+      "explanation": "à eau précise le nom principal : c’est un complément du nom."
+    },
+    {
+      "id": "complement-nom-coherence-03",
+      "kind": "choice",
+      "prompt": "Dans « une boîte en métal », quel groupe complète le nom principal ?",
+      "answer": "en métal",
+      "options": [
+        "en métal",
+        "boîte",
+        "une boîte en métal"
+      ],
+      "skillIds": [
+        "complement-nom"
+      ],
+      "explanation": "en métal précise le nom principal : c’est un complément du nom."
+    },
+    {
+      "id": "complement-nom-coherence-04",
+      "kind": "choice",
+      "prompt": "Dans « la clé du portail », quel groupe complète le nom principal ?",
+      "answer": "du portail",
+      "options": [
+        "du portail",
+        "clé",
+        "la clé du portail"
+      ],
+      "skillIds": [
+        "complement-nom"
+      ],
+      "explanation": "du portail précise le nom principal : c’est un complément du nom."
+    },
+    {
+      "id": "complement-nom-coherence-05",
+      "kind": "choice",
+      "prompt": "Dans « un train de nuit », quel groupe complète le nom principal ?",
+      "answer": "de nuit",
+      "options": [
+        "de nuit",
+        "train",
+        "un train de nuit"
+      ],
+      "skillIds": [
+        "complement-nom"
+      ],
+      "explanation": "de nuit précise le nom principal : c’est un complément du nom."
+    },
+    {
+      "id": "complement-nom-coherence-06",
+      "kind": "choice",
+      "prompt": "Dans « une promenade sans guide », quel groupe complète le nom principal ?",
+      "answer": "sans guide",
+      "options": [
+        "sans guide",
+        "promenade",
+        "une promenade sans guide"
+      ],
+      "skillIds": [
+        "complement-nom"
+      ],
+      "explanation": "sans guide précise le nom principal : c’est un complément du nom."
+    },
+    {
+      "id": "complement-nom-coherence-07",
+      "kind": "choice",
+      "prompt": "Dans « un livre sur les animaux », quel groupe complète le nom principal ?",
+      "answer": "sur les animaux",
+      "options": [
+        "sur les animaux",
+        "livre",
+        "un livre sur les animaux"
+      ],
+      "skillIds": [
+        "complement-nom"
+      ],
+      "explanation": "sur les animaux précise le nom principal : c’est un complément du nom."
+    },
+    {
+      "id": "complement-nom-coherence-08",
+      "kind": "choice",
+      "prompt": "Dans « la salle des fêtes », quel groupe complète le nom principal ?",
+      "answer": "des fêtes",
+      "options": [
+        "des fêtes",
+        "salle",
+        "la salle des fêtes"
+      ],
+      "skillIds": [
+        "complement-nom"
+      ],
+      "explanation": "des fêtes précise le nom principal : c’est un complément du nom."
+    },
+    {
+      "id": "complement-nom-coherence-09",
+      "kind": "choice",
+      "prompt": "Dans « une tasse à café », quel groupe complète le nom principal ?",
+      "answer": "à café",
+      "options": [
+        "à café",
+        "tasse",
+        "une tasse à café"
+      ],
+      "skillIds": [
+        "complement-nom"
+      ],
+      "explanation": "à café précise le nom principal : c’est un complément du nom."
+    },
+    {
+      "id": "complement-nom-coherence-10",
+      "kind": "choice",
+      "prompt": "Dans « un bateau de pêche », quel groupe complète le nom principal ?",
+      "answer": "de pêche",
+      "options": [
+        "de pêche",
+        "bateau",
+        "un bateau de pêche"
+      ],
+      "skillIds": [
+        "complement-nom"
+      ],
+      "explanation": "de pêche précise le nom principal : c’est un complément du nom."
+    },
+    {
+      "id": "complement-nom-coherence-11",
+      "kind": "choice",
+      "prompt": "Dans « une table en bois », quel groupe complète le nom principal ?",
+      "answer": "en bois",
+      "options": [
+        "en bois",
+        "table",
+        "une table en bois"
+      ],
+      "skillIds": [
+        "complement-nom"
+      ],
+      "explanation": "en bois précise le nom principal : c’est un complément du nom."
+    },
+    {
+      "id": "accord-groupe-nominal-coherence-01",
+      "kind": "choice",
+      "prompt": "Complète : « Une porte ___ bloque le passage. »",
+      "answer": "fermée",
+      "options": [
+        "fermée",
+        "fermé",
+        "fermés"
+      ],
+      "skillIds": [
+        "accord-groupe-nominal"
+      ],
+      "explanation": "Porte est féminin singulier : fermée.",
+      "variantId": "feminin"
+    },
+    {
+      "id": "accord-groupe-nominal-coherence-02",
+      "kind": "choice",
+      "prompt": "Complète : « Des oiseaux ___ se posent ici. »",
+      "answer": "noirs",
+      "options": [
+        "noirs",
+        "noir",
+        "noire"
+      ],
+      "skillIds": [
+        "accord-groupe-nominal"
+      ],
+      "explanation": "Oiseaux est masculin pluriel : noirs.",
+      "variantId": "pluriel"
+    },
+    {
+      "id": "accord-groupe-nominal-coherence-03",
+      "kind": "choice",
+      "prompt": "Complète : « Une ___ soirée commence. »",
+      "answer": "belle",
+      "options": [
+        "belle",
+        "beau",
+        "beaux"
+      ],
+      "skillIds": [
+        "accord-groupe-nominal"
+      ],
+      "explanation": "Soirée est féminin singulier : belle.",
+      "variantId": "feminin"
+    },
+    {
+      "id": "accord-groupe-nominal-coherence-04",
+      "kind": "choice",
+      "prompt": "Complète : « Les chaises sont ___. »",
+      "answer": "hautes",
+      "options": [
+        "hautes",
+        "haut",
+        "haute"
+      ],
+      "skillIds": [
+        "accord-groupe-nominal"
+      ],
+      "explanation": "Chaises est féminin pluriel : hautes.",
+      "variantId": "pluriel"
+    },
+    {
+      "id": "accord-sujet-verbe-coherence-01",
+      "kind": "choice",
+      "prompt": "Complète : « Le jardinier ___ les plantes. »",
+      "answer": "arrose",
+      "options": [
+        "arrose",
+        "arrosent",
+        "arroses"
+      ],
+      "skillIds": [
+        "accord-sujet-verbe"
+      ],
+      "explanation": "Le sujet le jardinier est à la troisième personne du singulier.",
+      "variantId": "simple"
+    },
+    {
+      "id": "accord-sujet-verbe-coherence-02",
+      "kind": "choice",
+      "prompt": "Complète : « Les branches de cet arbre ___ au vent. »",
+      "answer": "bougent",
+      "options": [
+        "bougent",
+        "bouge",
+        "bouges"
+      ],
+      "skillIds": [
+        "accord-sujet-verbe"
+      ],
+      "explanation": "Le sujet est les branches, et non cet arbre.",
+      "variantId": "eloigne"
+    },
+    {
+      "id": "accord-sujet-verbe-coherence-03",
+      "kind": "choice",
+      "prompt": "Complète : « Paul et sa sœur ___ à vélo. »",
+      "answer": "arrivent",
+      "options": [
+        "arrivent",
+        "arrive",
+        "arrives"
+      ],
+      "skillIds": [
+        "accord-sujet-verbe"
+      ],
+      "explanation": "Les deux sujets forment un pluriel : ils arrivent.",
+      "variantId": "coordonne"
+    },
+    {
+      "id": "accord-sujet-verbe-coherence-04",
+      "kind": "choice",
+      "prompt": "Complète : « Nous ___ notre chambre. »",
+      "answer": "rangeons",
+      "options": [
+        "rangeons",
+        "range",
+        "rangent"
+      ],
+      "skillIds": [
+        "accord-sujet-verbe"
+      ],
+      "explanation": "Nous commande la première personne du pluriel.",
+      "variantId": "simple"
+    },
+    {
+      "id": "accord-sujet-verbe-coherence-05",
+      "kind": "choice",
+      "prompt": "Complète : « Toi et Léa ___ le train. »",
+      "answer": "prenez",
+      "options": [
+        "prenez",
+        "prend",
+        "prennent"
+      ],
+      "skillIds": [
+        "accord-sujet-verbe"
+      ],
+      "explanation": "Toi et Léa équivaut à vous : prenez.",
+      "variantId": "coordonne"
+    },
+    {
+      "id": "accord-participe-etre-coherence-01",
+      "kind": "choice",
+      "prompt": "Complète : « Léa est ___ en classe. »",
+      "answer": "entrée",
+      "options": [
+        "entrée",
+        "entré",
+        "entrés"
+      ],
+      "skillIds": [
+        "accord-participe-etre"
+      ],
+      "explanation": "Avec être, le participe passé s’accorde avec le sujet : Léa est féminin singulier.",
+      "variantId": "feminin"
+    },
+    {
+      "id": "accord-participe-etre-coherence-02",
+      "kind": "choice",
+      "prompt": "Complète : « Les garçons sont ___ à la gare. »",
+      "answer": "arrivés",
+      "options": [
+        "arrivés",
+        "arrivé",
+        "arrivée"
+      ],
+      "skillIds": [
+        "accord-participe-etre"
+      ],
+      "explanation": "Avec être, le participe s’accorde avec les garçons, masculin pluriel.",
+      "variantId": "masculin-pluriel"
+    },
+    {
+      "id": "accord-participe-etre-coherence-03",
+      "kind": "choice",
+      "prompt": "Complète : « Les voyageuses sont ___. »",
+      "answer": "parties",
+      "options": [
+        "parties",
+        "parti",
+        "partis"
+      ],
+      "skillIds": [
+        "accord-participe-etre"
+      ],
+      "explanation": "Voyageuses est féminin pluriel : parties.",
+      "variantId": "feminin"
+    },
+    {
+      "id": "accord-participe-etre-coherence-04",
+      "kind": "choice",
+      "prompt": "Complète : « Les oiseaux sont ___ du nid. »",
+      "answer": "tombés",
+      "options": [
+        "tombés",
+        "tombé",
+        "tombée"
+      ],
+      "skillIds": [
+        "accord-participe-etre"
+      ],
+      "explanation": "Oiseaux est masculin pluriel : tombés.",
+      "variantId": "masculin-pluriel"
+    },
+    {
+      "id": "accord-participe-etre-coherence-05",
+      "kind": "choice",
+      "prompt": "Complète : « Ma sœur est ___ de vacances. »",
+      "answer": "revenue",
+      "options": [
+        "revenue",
+        "revenu",
+        "revenus"
+      ],
+      "skillIds": [
+        "accord-participe-etre"
+      ],
+      "explanation": "Ma sœur est féminin singulier : revenue.",
+      "variantId": "feminin"
+    },
+    {
+      "id": "accord-participe-etre-coherence-06",
+      "kind": "choice",
+      "prompt": "Complète : « Les joueurs sont ___ sur le terrain. »",
+      "answer": "restés",
+      "options": [
+        "restés",
+        "resté",
+        "restée"
+      ],
+      "skillIds": [
+        "accord-participe-etre"
+      ],
+      "explanation": "Les joueurs est masculin pluriel : restés.",
+      "variantId": "masculin-pluriel"
+    },
+    {
+      "id": "accord-participe-etre-coherence-07",
+      "kind": "choice",
+      "prompt": "Complète : « Les filles sont ___ très vite. »",
+      "answer": "descendues",
+      "options": [
+        "descendues",
+        "descendu",
+        "descendus"
+      ],
+      "skillIds": [
+        "accord-participe-etre"
+      ],
+      "explanation": "Les filles est féminin pluriel : descendues.",
+      "variantId": "feminin"
+    },
+    {
+      "id": "accord-participe-etre-coherence-08",
+      "kind": "choice",
+      "prompt": "Complète : « Mes frères sont ___ après toi. »",
+      "answer": "venus",
+      "options": [
+        "venus",
+        "venu",
+        "venue"
+      ],
+      "skillIds": [
+        "accord-participe-etre"
+      ],
+      "explanation": "Mes frères est masculin pluriel : venus.",
+      "variantId": "masculin-pluriel"
+    },
+    {
+      "id": "accord-participe-etre-coherence-09",
+      "kind": "choice",
+      "prompt": "Complète : « La chatte est ___ sur le toit. »",
+      "answer": "montée",
+      "options": [
+        "montée",
+        "monté",
+        "montés"
+      ],
+      "skillIds": [
+        "accord-participe-etre"
+      ],
+      "explanation": "La chatte est féminin singulier : montée.",
+      "variantId": "feminin"
+    },
+    {
+      "id": "accord-groupe-nominal-coherence-05",
+      "kind": "choice",
+      "prompt": "Complète : « Un ___ chemin mène au village. »",
+      "answer": "long",
+      "options": [
+        "long",
+        "longue",
+        "longs"
+      ],
+      "skillIds": [
+        "accord-groupe-nominal"
+      ],
+      "explanation": "Chemin est masculin singulier : long.",
+      "variantId": "masculin"
     }
   ]
 }

@@ -1,49 +1,61 @@
-# Séances et révisions par notion
+# Séances, notions et cartes de mémorisation
 
-Le système est **hybride** : une notion (`moduleId` + `skillId`) pour les règles et raisonnements ; une carte (`moduleId` + `exerciseId`) pour les repères factuels. Le français utilise des notions ; l’histoire-géographie distingue les deux modes jusque dans un même thème. Les identifiants publiés restent stables. Maurice dispose de **859 QCM**, répartis en 56 groupes thématiques : **50 notions** avec des réserves de questions (au moins 12 chacune) et **89 repères factuels** espacés individuellement. Les 197 questions d’histoire-géographie regroupent 108 situations de compréhension et ces 89 repères.
+Le parcours de Maurice comporte 1 103 QCM expliqués, regroupés en 77 thèmes et compétences : **67 notions transférables** et **113 cartes de mémorisation**. Plusieurs formulations peuvent tester une même carte ; elles partagent alors son calendrier.
 
-L’exemple de fractions a quitté le catalogue actif ; ses réponses historiques restent interprétables avec les catalogues archivés. L’atelier CE1 d’Ondine reste disponible.
+## Choisir la bonne unité de révision
+
+Une notion représente une méthode ou une distinction réutilisable : accorder le verbe avec son sujet, différencier a/as/à, lire une légende ou confronter des sources. Les anciens groupes trop larges ont été remplacés par des identifiants plus précis. Les accords du groupe nominal, du verbe et du participe passé avec être ont notamment trois calendriers distincts.
+
+Une carte représente une connaissance particulière : le synonyme d’un mot, le sens d’une expression, une orthographe lexicale, une date ou un lieu. Réussir le synonyme de « joyeux » ne repousse pas la révision du contraire de « généreux ». Les méthodes de formation des mots et de déduction du sens à partir d’indices restent des notions. Les homophones lexicaux sont suivis par mot ; les homophones grammaticaux restent suivis par distinction.
 
 ## Composer une séance
 
-L’enfant choisit Français, Histoire-géographie ou Toutes les matières. Le moteur retient des notions et/ou des repères dus ou nouveaux, pour environ douze réponses initiales : quatre notions en français, ou deux notions et six repères en histoire-géographie lorsque les deux sont disponibles. Une séance toutes matières propose habituellement trois notions et trois repères. Le nombre s’adapte aux contenus disponibles. Les erreurs non récupérées sont prioritaires. Une séance mélangée répartit le travail entre les matières disponibles et alterne les objectifs ; les différents ateliers fournissent les nouvelles notions à tour de rôle.
+L’enfant choisit une matière ou toutes les matières. Le moteur prend en priorité les erreurs et les révisions dues, puis introduit de nouvelles notions et cartes. Les nouvelles notions tournent entre ateliers ; les nouvelles cartes tournent entre thèmes. Les objectifs sont alternés pendant la séance.
 
-Une notion est suffisamment travaillée pour la journée après trois contextes distincts réussis à leur première présentation du jour. Après une erreur :
+La sélection vise environ douze réponses initiales. Elle propose jusqu’à trois notions lorsqu’il existe aussi des cartes, ou quatre notions sinon. Le budget tient compte du nombre de variantes nécessaires : une notion qui demande six variantes coûte six réponses initiales, pas trois. Les places restantes accueillent des cartes.
 
-- la question erronée revient après au moins trois autres réponses ; elle doit être réussie ;
-- la réussite de cette correction ne compte pas comme une première réussite sur un nouveau contexte ;
-- deux nouveaux contextes doivent être réussis après la dernière erreur, avec toujours trois premières réussites distinctes au total.
+Une notion est suffisamment travaillée pour la journée lorsque :
 
-Les questions inédites sont choisies avant les questions déjà réussies. Les erreurs à reprendre constituent l’exception. Quand la réserve est épuisée, les exemples les moins récemment vus servent de recours ; une même question ne suit pas immédiatement sa propre réponse. `contextId` permet de regrouper plusieurs questions qui partagent une même situation : elles ne constituent pas trois preuves indépendantes.
+- au moins trois contextes distincts ont été réussis dès leur première présentation du jour ;
+- toutes ses variantes requises ont été vérifiées, par exemple a, as **et** à, ou COD **et** COI ;
+- les erreurs ont été corrigées et au moins deux contextes nouveaux ont été réussis après la dernière erreur.
 
-La séance habituelle comporte environ 12 réponses si les objectifs sont immédiatement réussis. Elle s’allonge en fonction des difficultés, jusqu’à **24 réponses**, **12 minutes de temps de réponse cumulé**, ou **8 réponses par notion et par journée française**. Ces bornes évitent une séance sans fin. Il n’est pas nécessaire de traiter toute la banque. L’enfant peut aussi terminer volontairement. Les réponses sont enregistrées individuellement ; une interruption conserve les preuves et les erreurs, même si la sélection exacte de la séance n’est pas restaurée.
+Si une notion possède plus de trois variantes, chacune doit être représentée. Les petites activités historiques d’Ondine conservent leur cible adaptée à leur réserve disponible.
 
-## Repères factuels en histoire-géographie
+Le sélecteur privilégie les variantes manquantes et les contextes encore inédits. Deux consignes portant sur la même phrase ne sont pas deux preuves indépendantes. Plusieurs questions sur un même texte ou un même plan ne remplacent pas un transfert à un autre contexte. Pour la conjugaison, le verbe demandé fait partie du contexte : « vous faites » et « vous voyiez » ne sont pas le même exercice, même si les deux consignes comportent « Vous ___ ».
 
-Chaque question concernée porte `reviewMode: "question"`. Exemples : dates des guerres, capitales et fleuves, grandes périodes et noms des principaux symboles. Les autres questions de français et d’histoire-géographie utilisent `concept`, par défaut. Les questions factuelles n’entrent pas dans les preuves de compréhension d’une notion, même si elles appartiennent au même thème.
+Une erreur revient après au moins trois autres réponses. Sa simple correction ne constitue pas une nouvelle preuve de transfert sur la journée. Les anciens exemples peuvent être réutilisés à une révision ultérieure ; il n’est pas demandé d’épuiser la banque.
 
-Une réponse correcte termine l’objectif de cette carte pour la séance. Une erreur attend son explication puis un réessai après trois autres réponses. Si nécessaire, de nouvelles cartes intercalaires évitent un réessai immédiat. Un échec reste programmé pour le lendemain même après correction. FSRS est calculé une seule fois par carte et par journée française : répéter sa correction ne crée pas plusieurs jours de mémorisation. Les cartes réussies attendent leur propre échéance ; les nouveaux repères tournent entre thèmes.
+## Bornes et calendrier
 
-## Calendrier commun enfant / parent
+La séance s’arrête lorsque ses objectifs sont remplis, après **24 réponses**, après **12 minutes de temps de réponse cumulé**, ou lorsque les notions restantes atteignent **8 réponses par notion et par journée française**. Le temps de lecture du corrigé entre deux questions n’entre pas dans ce cumul. L’enfant peut aussi terminer volontairement ; chaque réponse est conservée.
 
-`projectConcepts` reconstruit un état FSRS par notion depuis les réponses brutes déjà corrigées avec leur catalogue d’origine. Les réponses d’une même journée (fuseau Europe/Paris) produisent **une seule révision FSRS**, recalculée au fil des réponses, plutôt qu’un renforcement artificiel à chaque carte.
+Une seule révision FSRS est calculée par notion et par journée (Europe/Paris), puis recalculée au fil des réponses :
 
-- Preuves suffisantes, sans erreur : note FSRS 3 ; prochaine échéance entre le lendemain et 60 jours.
-- Preuves suffisantes après erreur : note 2 et reprise le lendemain.
-- Travail incomplet ou erreur non résolue : note 1 et reprise le lendemain ; la séance peut continuer aujourd’hui tant que la limite quotidienne n’est pas atteinte.
+- preuves suffisantes sans erreur : note 3, prochaine échéance entre le lendemain et 60 jours ;
+- preuves suffisantes après erreur : note 2, reprise le lendemain ;
+- travail incomplet ou erreur non résolue : note 1, reprise le lendemain, avec poursuite possible aujourd’hui dans les limites prévues.
 
-Un ancien résultat reste rattaché à ses identifiants de notion. Aucun effacement, changement de droits ou migration d’écriture Firestore n’est nécessaire. Les anciennes projections de cartes restent disponibles pour la compatibilité de l’historique ; le sélecteur utilise les états de notion et les états des repères factuels prévus par le mode de chaque question. Aucun score dérivé de client n’est stocké comme vérité dans Firestore.
+Une notion suffisamment travaillée ne revient plus dans les autres séances de la journée. Pour une carte, une réussite termine l’objectif du jour. Un échec reste programmé pour le lendemain même après correction. Plusieurs formulations d’une même carte ne créent ni plusieurs calendriers ni plusieurs révisions FSRS le même jour.
 
-## Interface
+## Historique et suivi parent
 
-La séance occupe le viewport utile, avec prise en compte des zones de sécurité des téléphones et de la PWA. Un débordement exceptionnel reste défilable, notamment pour une longue explication ou une grande taille de police. Une bonne réponse affiche un signe de réussite puis passe automatiquement à la suivante après 650 ms. Une mauvaise réponse affiche le corrigé et attend « J’ai compris ». En cas d’échec d’enregistrement, seul le réessai de la même tentative est proposé, sans doublon.
+Les réponses brutes immuables et les anciennes versions de catalogue sont conservées. Chaque réponse reste corrigée avec son catalogue d’origine. Ses identifiants de module et de question permettent ensuite de la rattacher à la compétence actuelle, plus précise. On ne réutilise pas un ancien identifiant de compétence pour lui donner un autre sens.
 
-Le suivi parent présente les notions, les exemples rencontrés, les réponses observées et l’échéance. « Exemples variés réussis » décrit des preuves sur une journée, pas une maîtrise scolaire certifiée. Les QCM ne prouvent pas à eux seuls une capacité de rédaction ou de production autonome. Les paramètres sont des choix pédagogiques initiaux, pas un dispositif validé de diagnostic scolaire.
+Cette répartition ne transforme pas trois anciens accords du verbe en preuves sur les autres accords. Les intervalles sont reconstruits avec les critères de variété actuels ; une ancienne validation trop large peut donc redevenir une notion à consolider. Le groupe chevauchant mon/m’ont/ton/t’ont a été réparti entre mon/m’ont et le calendrier existant de ton/t’ont.
+
+Les deux interfaces utilisent les mêmes projections. Le parent voit les réponses et les variantes restant à vérifier. « Exemples variés réussis » décrit des observations sur une journée, sans certifier une maîtrise scolaire. Les QCM ne mesurent pas la production écrite autonome. Aucun score client dérivé n’est écrit comme autorité dans Firestore.
+
+## Métadonnées de contenu
+
+- `skills[].variants` déclare les distinctions indispensables ; `variantId` rattache chaque question de notion à l’une d’elles.
+- `contextId` peut regrouper explicitement des situations. Le texte support et la phrase cible permettent également de reconnaître les contextes partagés, même sans cette métadonnée.
+- `reviewMode: "question"` active la mémorisation par carte. `reviewId` référence une question canonique de la même compétence lorsque plusieurs formulations testent une même connaissance. Sans `reviewId`, la carte garde son identifiant de question.
+
+Le contrat refuse les variantes inconnues ou absentes et les références de carte invalides. Les tests vérifient aussi la présence de plusieurs contextes par variante, la possibilité de terminer chaque notion et la conservation du sens des questions publiées.
 
 ## Lecture musicale d’Ondine
 
-La lecture commence par do3, ré3, mi3. Deux bonnes réponses consécutives à chacune des notes déjà introduites ouvrent fa3, puis sol3, puis do3 en main gauche, si2, la2, sol2, fa2. Les anciennes notes restent mélangées aux nouvelles ; une erreur revient après deux autres réponses. Le déblocage est recalculé depuis l’historique synchronisé et reste acquis après une erreur. Les réponses conservent leurs identifiants et leur calendrier individuel. Les séances gardent leurs limites habituelles de 24 réponses et 12 minutes.
+La lecture commence par do3, ré3, mi3. Deux réussites consécutives sur chaque note introduite débloquent fa3, sol3, puis do3 en main gauche, si2, la2, sol2 et fa2. Les anciennes notes restent mêlées aux nouvelles ; une erreur revient après deux autres réponses. Les séances conservent leurs bornes de 24 réponses et 12 minutes.
 
-Le corrigé affiche et prononce uniquement le nom de la note via la synthèse vocale française du navigateur. Les symboles des clés restent sur la portée, sans indication textuelle. Si le navigateur ne possède pas la synthèse vocale, le nom reste affiché.
-
-Le parcours d’Ondine propose aussi un lien vers « Les petites notes · Piano », dans un nouvel onglet pour permettre l’accès au micro. Ce site conserve ses droits d’accès existants et son suivi propre ; ses résultats ne sont pas importés dans le suivi Firebase du hub.
+Le corrigé affiche et prononce seulement le nom de la note. L’activité externe « Les petites notes · Piano » conserve son suivi et ses droits propres ; ses résultats micro ne sont pas importés dans ce hub.

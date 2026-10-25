@@ -1,6 +1,6 @@
 # Histoire-géographie : consolidation CM2 → 6e
 
-197 QCM expliqués, regroupés en 15 notions. Le travail porte sur les grands liens et les lacunes qui gêneraient la suite, pas sur l’apprentissage exhaustif de dates ou de détails anciens.
+253 QCM expliqués, regroupés en 18 thèmes et compétences : 15 notions transférables et 69 cartes de mémorisation. Le travail porte sur les grands liens et les lacunes qui gêneraient la suite, pas sur l’apprentissage exhaustif de dates ou de détails anciens.
 
 | Domaine | Notions |
 | --- | --- |
@@ -8,9 +8,9 @@
 | CM2, géographie | Déplacements et réseaux ; Internet et inégalités de connexion ; aménagements pour mieux habiter. |
 | Bases cumulatives | Chronologie, siècles et grandes périodes ; sources et points de vue ; cartes, légendes et orientation ; repères de la France, des continents et des océans. |
 
-Les notions cumulatives occupent cinq notions sur quinze. Les périodes lointaines servent surtout à se repérer sur une frise. Pas de récitation de dynasties, de batailles antiques ou de détails religieux qui seront étudiés au collège. Les cartes sont abordées avec la légende, les points cardinaux et un plan schématique lisible avec un texte alternatif. Les questions de lieux vérifient de grands repères ; elles ne constituent pas une évaluation complète du placement sur une carte muette.
+Les bases cumulatives comprennent la chronologie, le calcul des siècles, l’ordre des événements, les sources et les grands repères géographiques. Les périodes lointaines servent surtout à se repérer sur une frise. Pas de récitation de dynasties, de batailles antiques ou de détails religieux qui seront étudiés au collège. Les cartes sont abordées avec la légende, les points cardinaux et un plan schématique lisible avec un texte alternatif. Les questions de lieux vérifient de grands repères ; elles ne constituent pas une évaluation complète du placement sur une carte muette.
 
-89 repères factuels (dates, lieux, définitions ciblées) ont un calendrier par carte. Les 108 questions de raisonnement vérifient neuf notions avec plusieurs situations et un calendrier par notion. Les réponses à un repère ne valent pas preuve de compréhension du thème. Les questions mêlent identification, distinction entre notions, lecture de situations et conséquences simples. Les distracteurs sont des confusions de niveau élémentaire. L’aléa d’ordre des choix évite que la position de la bonne réponse soit un indice. L’histoire récente aborde les violences et les persécutions de manière factuelle, sans contenu graphique.
+69 repères factuels (dates, lieux, définitions ciblées) ont un calendrier par carte. Les raisonnements vérifient quinze notions avec plusieurs situations et un calendrier par notion. Les effets des guerres sur les civils, la coopération européenne, le calcul des siècles et la distinction entre pays, continents et océans utilisent un suivi de compréhension distinct des dates et des noms à mémoriser. Les variantes indispensables et des contextes différents doivent être réussis. Les réponses à un repère ne valent pas preuve de compréhension du thème. Les questions mêlent identification, distinction entre notions, lecture de situations et conséquences simples. Les distracteurs sont des confusions de niveau élémentaire. L’aléa d’ordre des choix évite que la position de la bonne réponse soit un indice. L’histoire récente aborde les violences et les persécutions de manière factuelle, sans contenu graphique.
 
 ## Repères de programme vérifiés le 21 octobre 2026
 

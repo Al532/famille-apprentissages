@@ -1,6 +1,6 @@
 {
   "id": "francais-vocabulaire-6e",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": "Vocabulaire : comprendre les mots",
   "subject": "Français",
   "levels": [
@@ -13,16 +13,80 @@
       "label": "Synonymes et contraires"
     },
     {
-      "id": "familles",
-      "label": "Familles de mots et formation"
+      "id": "familles-mots",
+      "label": "Reconnaître une famille de mots"
     },
     {
-      "id": "contexte",
-      "label": "Comprendre le sens en contexte"
+      "id": "prefixes",
+      "label": "Comprendre les préfixes",
+      "variants": [
+        {
+          "id": "reperer",
+          "label": "Repérer un préfixe"
+        },
+        {
+          "id": "sens",
+          "label": "Interpréter un préfixe"
+        }
+      ]
     },
     {
-      "id": "lexique",
-      "label": "Champ lexical et mots invariables"
+      "id": "suffixes",
+      "label": "Comprendre les suffixes",
+      "variants": [
+        {
+          "id": "reperer",
+          "label": "Repérer un suffixe"
+        },
+        {
+          "id": "sens",
+          "label": "Interpréter un suffixe"
+        }
+      ]
+    },
+    {
+      "id": "sens-mots-expressions",
+      "label": "Sens des mots et expressions"
+    },
+    {
+      "id": "deduire-sens",
+      "label": "Déduire le sens d’un mot grâce au texte",
+      "variants": [
+        {
+          "id": "reformulation",
+          "label": "Utiliser une reformulation"
+        },
+        {
+          "id": "situation",
+          "label": "Croiser les indices de situation"
+        }
+      ]
+    },
+    {
+      "id": "champ-lexical",
+      "label": "Reconnaître un champ lexical"
+    },
+    {
+      "id": "identifier-invariable",
+      "label": "Reconnaître un mot invariable",
+      "variants": [
+        {
+          "id": "adverbe",
+          "label": "Adverbes"
+        },
+        {
+          "id": "preposition",
+          "label": "Prépositions"
+        },
+        {
+          "id": "conjonction",
+          "label": "Conjonctions"
+        }
+      ]
+    },
+    {
+      "id": "orthographe-invariables",
+      "label": "Orthographe des mots invariables"
     }
   ],
   "exercises": [
@@ -39,7 +103,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "« joyeux » et « heureux » ont des sens proches."
+      "explanation": "« joyeux » et « heureux » ont des sens proches.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-01"
     },
     {
       "id": "familles-01",
@@ -52,7 +118,7 @@
         "terreur"
       ],
       "skillIds": [
-        "familles"
+        "familles-mots"
       ],
       "explanation": "« terrestre » est formé sur « terre » et garde un sens lié à la Terre."
     },
@@ -67,9 +133,11 @@
         "mange les pages"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "Le contexte du roman indique le sens figuré : lire avec enthousiasme."
+      "explanation": "Le contexte du roman indique le sens figuré : lire avec enthousiasme.",
+      "reviewMode": "question",
+      "reviewId": "contexte-01"
     },
     {
       "id": "lexique-01",
@@ -82,7 +150,7 @@
         "vague, écume, marée"
       ],
       "skillIds": [
-        "lexique"
+        "champ-lexical"
       ],
       "explanation": "Ces trois mots renvoient au même thème : la mer."
     },
@@ -99,7 +167,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Une personne généreuse partage ; une personne égoïste pense surtout à elle-même."
+      "explanation": "Une personne généreuse partage ; une personne égoïste pense surtout à elle-même.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-02"
     },
     {
       "id": "familles-02",
@@ -112,9 +182,10 @@
         "faire de nouveau"
       ],
       "skillIds": [
-        "familles"
+        "prefixes"
       ],
-      "explanation": "Le préfixe re- exprime ici la répétition."
+      "explanation": "Le préfixe re- exprime ici la répétition.",
+      "variantId": "sens"
     },
     {
       "id": "contexte-02",
@@ -127,9 +198,11 @@
         "la partie large en haut du clou"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "Un même mot peut avoir plusieurs sens : c’est la polysémie."
+      "explanation": "Un même mot peut avoir plusieurs sens : c’est la polysémie.",
+      "reviewMode": "question",
+      "reviewId": "contexte-02"
     },
     {
       "id": "lexique-02",
@@ -142,9 +215,11 @@
         "longtemps"
       ],
       "skillIds": [
-        "lexique"
+        "orthographe-invariables"
       ],
-      "explanation": "« longtemps » est un adverbe invariable ; on mémorise sa forme complète."
+      "explanation": "« longtemps » est un adverbe invariable ; on mémorise sa forme complète.",
+      "reviewMode": "question",
+      "reviewId": "lexique-02"
     },
     {
       "id": "synonymes-03",
@@ -159,7 +234,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "« immense » et « gigantesque » indiquent une très grande taille."
+      "explanation": "« immense » et « gigantesque » indiquent une très grande taille.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-03"
     },
     {
       "id": "familles-03",
@@ -172,9 +249,10 @@
         "qui peut être réalisé"
       ],
       "skillIds": [
-        "familles"
+        "prefixes"
       ],
-      "explanation": "Le préfixe im- donne ici le sens contraire de « possible »."
+      "explanation": "Le préfixe im- donne ici le sens contraire de « possible ».",
+      "variantId": "sens"
     },
     {
       "id": "contexte-03",
@@ -187,9 +265,10 @@
         "parfaitement plat"
       ],
       "skillIds": [
-        "contexte"
+        "deduire-sens"
       ],
-      "explanation": "La suite de la phrase, « il montait très fort », permet de comprendre le mot."
+      "explanation": "La suite de la phrase, « il montait très fort », permet de comprendre le mot.",
+      "variantId": "reformulation"
     },
     {
       "id": "familles-04",
@@ -202,9 +281,10 @@
         "maisonnette"
       ],
       "skillIds": [
-        "familles"
+        "suffixes"
       ],
-      "explanation": "Le suffixe -er désigne ici la personne qui exerce le métier."
+      "explanation": "Le suffixe -er désigne ici la personne qui exerce le métier.",
+      "variantId": "sens"
     },
     {
       "id": "synonymes-reserve-01",
@@ -219,7 +299,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Vif et rapide ont ici des sens proches."
+      "explanation": "Vif et rapide ont ici des sens proches.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-reserve-01"
     },
     {
       "id": "synonymes-reserve-02",
@@ -234,7 +316,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Léger s’oppose à lourd pour le poids."
+      "explanation": "Léger s’oppose à lourd pour le poids.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-reserve-02"
     },
     {
       "id": "synonymes-reserve-03",
@@ -249,7 +333,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Débuter signifie commencer."
+      "explanation": "Débuter signifie commencer.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-reserve-03"
     },
     {
       "id": "synonymes-reserve-04",
@@ -264,7 +350,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Peureux exprime ici le contraire de courageux."
+      "explanation": "Peureux exprime ici le contraire de courageux.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-reserve-04"
     },
     {
       "id": "synonymes-reserve-05",
@@ -279,7 +367,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Immense et gigantesque indiquent une très grande taille."
+      "explanation": "Immense et gigantesque indiquent une très grande taille.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-03"
     },
     {
       "id": "synonymes-reserve-06",
@@ -294,7 +384,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Ouvrir et fermer sont des verbes de sens opposés."
+      "explanation": "Ouvrir et fermer sont des verbes de sens opposés.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-reserve-06"
     },
     {
       "id": "synonymes-reserve-07",
@@ -309,7 +401,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Murmurer et chuchoter signifient parler à voix très basse."
+      "explanation": "Murmurer et chuchoter signifient parler à voix très basse.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-reserve-07"
     },
     {
       "id": "synonymes-reserve-08",
@@ -324,7 +418,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Rarement signifie peu souvent."
+      "explanation": "Rarement signifie peu souvent.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-reserve-08"
     },
     {
       "id": "synonymes-reserve-09",
@@ -339,7 +435,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Observer implique une attention particulière."
+      "explanation": "Observer implique une attention particulière.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-reserve-09"
     },
     {
       "id": "synonymes-reserve-10",
@@ -354,7 +452,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Augmenter et diminuer indiquent des évolutions opposées."
+      "explanation": "Augmenter et diminuer indiquent des évolutions opposées.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-reserve-10"
     },
     {
       "id": "synonymes-reserve-11",
@@ -369,7 +469,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Épuisé indique une très grande fatigue."
+      "explanation": "Épuisé indique une très grande fatigue.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-reserve-11"
     },
     {
       "id": "synonymes-reserve-12",
@@ -384,7 +486,9 @@
       "skillIds": [
         "synonymes"
       ],
-      "explanation": "Le préfixe im- permet ici de construire le contraire."
+      "explanation": "Le préfixe im- permet ici de construire le contraire.",
+      "reviewMode": "question",
+      "reviewId": "synonymes-reserve-12"
     },
     {
       "id": "familles-reserve-01",
@@ -397,7 +501,7 @@
         "girafe"
       ],
       "skillIds": [
-        "familles"
+        "familles-mots"
       ],
       "explanation": "Jardinier est formé sur jardin et garde un sens lié au jardin."
     },
@@ -412,7 +516,7 @@
         "champ"
       ],
       "skillIds": [
-        "familles"
+        "familles-mots"
       ],
       "explanation": "Chanteur et chant partagent un radical et un sens liés."
     },
@@ -427,9 +531,10 @@
         "-e"
       ],
       "skillIds": [
-        "familles"
+        "prefixes"
       ],
-      "explanation": "Re- est placé avant le radical et indique ici la répétition."
+      "explanation": "Re- est placé avant le radical et indique ici la répétition.",
+      "variantId": "reperer"
     },
     {
       "id": "familles-reserve-04",
@@ -442,9 +547,10 @@
         "la-"
       ],
       "skillIds": [
-        "familles"
+        "suffixes"
       ],
-      "explanation": "-able est placé après le radical et signifie ici qui peut être lavé."
+      "explanation": "-able est placé après le radical et signifie ici qui peut être lavé.",
+      "variantId": "reperer"
     },
     {
       "id": "familles-reserve-05",
@@ -457,9 +563,10 @@
         "lire très vite"
       ],
       "skillIds": [
-        "familles"
+        "prefixes"
       ],
-      "explanation": "Le préfixe re- indique une nouvelle lecture."
+      "explanation": "Le préfixe re- indique une nouvelle lecture.",
+      "variantId": "sens"
     },
     {
       "id": "familles-reserve-06",
@@ -472,7 +579,7 @@
         "laitage"
       ],
       "skillIds": [
-        "familles"
+        "familles-mots"
       ],
       "explanation": "Laideur est lié à laid, pas au lait : les lettres communes ne suffisent pas."
     },
@@ -487,9 +594,10 @@
         "faire plus vite"
       ],
       "skillIds": [
-        "familles"
+        "prefixes"
       ],
-      "explanation": "Défaire un nœud annule l’action de le faire."
+      "explanation": "Défaire un nœud annule l’action de le faire.",
+      "variantId": "sens"
     },
     {
       "id": "familles-reserve-08",
@@ -502,7 +610,7 @@
         "dedans"
       ],
       "skillIds": [
-        "familles"
+        "familles-mots"
       ],
       "explanation": "Dentiste et dent ont un radical et un sens communs."
     },
@@ -517,9 +625,10 @@
         "bonheur"
       ],
       "skillIds": [
-        "familles"
+        "prefixes"
       ],
-      "explanation": "Le préfixe mal- s’oppose ici à heureux."
+      "explanation": "Le préfixe mal- s’oppose ici à heureux.",
+      "variantId": "reperer"
     },
     {
       "id": "familles-reserve-10",
@@ -532,9 +641,10 @@
         "vite"
       ],
       "skillIds": [
-        "familles"
+        "suffixes"
       ],
-      "explanation": "L’adverbe rapidement est formé à partir de rapide avec -ment."
+      "explanation": "L’adverbe rapidement est formé à partir de rapide avec -ment.",
+      "variantId": "reperer"
     },
     {
       "id": "familles-reserve-11",
@@ -547,7 +657,7 @@
         "libre"
       ],
       "skillIds": [
-        "familles"
+        "familles-mots"
       ],
       "explanation": "Les mots d’une même famille peuvent avoir des radicaux un peu différents."
     },
@@ -562,9 +672,10 @@
         "chauffer deux fois"
       ],
       "skillIds": [
-        "familles"
+        "prefixes"
       ],
-      "explanation": "Pré- indique une action réalisée avant une autre."
+      "explanation": "Pré- indique une action réalisée avant une autre.",
+      "variantId": "sens"
     },
     {
       "id": "contexte-reserve-01",
@@ -577,9 +688,11 @@
         "rendu plus fort"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "C’est une expression au sens figuré qui évoque une grande tristesse."
+      "explanation": "C’est une expression au sens figuré qui évoque une grande tristesse.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-01"
     },
     {
       "id": "contexte-reserve-02",
@@ -592,9 +705,11 @@
         "une unité de temps"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "Le contexte indique le sens du mot pied."
+      "explanation": "Le contexte indique le sens du mot pied.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-02"
     },
     {
       "id": "contexte-reserve-03",
@@ -607,9 +722,11 @@
         "est très grand"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "Cette expression signifie qu’il rêve ou manque d’attention."
+      "explanation": "Cette expression signifie qu’il rêve ou manque d’attention.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-03"
     },
     {
       "id": "contexte-reserve-04",
@@ -622,9 +739,11 @@
         "une recette"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "Ordinateur permet de choisir le bon sens."
+      "explanation": "Ordinateur permet de choisir le bon sens.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-04"
     },
     {
       "id": "contexte-reserve-05",
@@ -637,9 +756,11 @@
         "quelque chose d’habituel"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "Le contexte du fleuve indique le mouvement de l’eau."
+      "explanation": "Le contexte du fleuve indique le mouvement de l’eau.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-05"
     },
     {
       "id": "contexte-reserve-06",
@@ -652,9 +773,11 @@
         "a de la fièvre"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "Brûler est employé au sens figuré pour montrer l’intensité."
+      "explanation": "Brûler est employé au sens figuré pour montrer l’intensité.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-06"
     },
     {
       "id": "contexte-reserve-07",
@@ -667,9 +790,11 @@
         "une aire de jeux"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "Français situe le mot dans le contexte scolaire."
+      "explanation": "Français situe le mot dans le contexte scolaire.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-07"
     },
     {
       "id": "contexte-reserve-08",
@@ -682,9 +807,11 @@
         "très léger"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "Glacial renforce l’idée de froid."
+      "explanation": "Glacial renforce l’idée de froid.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-08"
     },
     {
       "id": "contexte-reserve-09",
@@ -697,9 +824,11 @@
         "mange trop"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "L’expression a un sens figuré lié au comportement."
+      "explanation": "L’expression a un sens figuré lié au comportement.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-09"
     },
     {
       "id": "contexte-reserve-10",
@@ -712,9 +841,11 @@
         "disparaît entièrement"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "Le contexte décrit une lumière qui passe par des ouvertures étroites."
+      "explanation": "Le contexte décrit une lumière qui passe par des ouvertures étroites.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-10"
     },
     {
       "id": "contexte-reserve-11",
@@ -727,9 +858,11 @@
         "peu nombreuse"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "Une foule compacte rassemble des personnes très proches les unes des autres."
+      "explanation": "Une foule compacte rassemble des personnes très proches les unes des autres.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-11"
     },
     {
       "id": "contexte-reserve-12",
@@ -742,9 +875,11 @@
         "un possessif"
       ],
       "skillIds": [
-        "contexte"
+        "sens-mots-expressions"
       ],
-      "explanation": "La voix indique que l’on parle de la façon dont on s’exprime."
+      "explanation": "La voix indique que l’on parle de la façon dont on s’exprime.",
+      "reviewMode": "question",
+      "reviewId": "contexte-reserve-12"
     },
     {
       "id": "lexique-reserve-01",
@@ -757,7 +892,7 @@
         "désert"
       ],
       "skillIds": [
-        "lexique"
+        "champ-lexical"
       ],
       "explanation": "Vague est lié au même thème que mer, bateau ou marée."
     },
@@ -772,7 +907,7 @@
         "sable, vague, plage"
       ],
       "skillIds": [
-        "lexique"
+        "champ-lexical"
       ],
       "explanation": "Un champ lexical rassemble des mots liés à un thème commun."
     },
@@ -787,9 +922,10 @@
         "cheval"
       ],
       "skillIds": [
-        "lexique"
+        "identifier-invariable"
       ],
-      "explanation": "Toujours s’écrit de la même façon au singulier et au pluriel."
+      "explanation": "Toujours s’écrit de la même façon au singulier et au pluriel.",
+      "variantId": "adverbe"
     },
     {
       "id": "lexique-reserve-04",
@@ -802,9 +938,10 @@
         "heureux"
       ],
       "skillIds": [
-        "lexique"
+        "identifier-invariable"
       ],
-      "explanation": "Demain est un adverbe qui ne s’accorde pas."
+      "explanation": "Demain est un adverbe qui ne s’accorde pas.",
+      "variantId": "adverbe"
     },
     {
       "id": "lexique-reserve-05",
@@ -817,7 +954,7 @@
         "sous-bois"
       ],
       "skillIds": [
-        "lexique"
+        "champ-lexical"
       ],
       "explanation": "Immeuble renvoie plutôt à un environnement urbain."
     },
@@ -832,7 +969,7 @@
         "calme, repos, silence"
       ],
       "skillIds": [
-        "lexique"
+        "champ-lexical"
       ],
       "explanation": "Ces mots évoquent tous la peur sans appartenir à la même famille."
     },
@@ -847,9 +984,11 @@
         "beaucoupt de livres"
       ],
       "skillIds": [
-        "lexique"
+        "orthographe-invariables"
       ],
-      "explanation": "Beaucoup est invariable : il ne prend pas de s."
+      "explanation": "Beaucoup est invariable : il ne prend pas de s.",
+      "reviewMode": "question",
+      "reviewId": "lexique-reserve-07"
     },
     {
       "id": "lexique-reserve-08",
@@ -862,7 +1001,7 @@
         "boussole"
       ],
       "skillIds": [
-        "lexique"
+        "champ-lexical"
       ],
       "explanation": "Mélodie est lié au thème de la musique."
     },
@@ -877,9 +1016,10 @@
         "avance"
       ],
       "skillIds": [
-        "lexique"
+        "identifier-invariable"
       ],
-      "explanation": "Lentement est un adverbe : il ne prend pas de marque d’accord."
+      "explanation": "Lentement est un adverbe : il ne prend pas de marque d’accord.",
+      "variantId": "adverbe"
     },
     {
       "id": "lexique-reserve-10",
@@ -892,7 +1032,7 @@
         "chien, chat, oiseau"
       ],
       "skillIds": [
-        "lexique"
+        "familles-mots"
       ],
       "explanation": "Même famille : radical et sens liés. Même champ lexical : thème commun."
     },
@@ -907,9 +1047,10 @@
         "gentil"
       ],
       "skillIds": [
-        "lexique"
+        "identifier-invariable"
       ],
-      "explanation": "Malgré est une préposition invariable."
+      "explanation": "Malgré est une préposition invariable.",
+      "variantId": "preposition"
     },
     {
       "id": "lexique-reserve-12",
@@ -922,9 +1063,720 @@
         "parmit"
       ],
       "skillIds": [
-        "lexique"
+        "orthographe-invariables"
       ],
-      "explanation": "Parmi est un mot invariable sans s final."
+      "explanation": "Parmi est un mot invariable sans s final.",
+      "reviewMode": "question",
+      "reviewId": "lexique-reserve-12"
+    },
+    {
+      "id": "familles-mots-coherence-01",
+      "kind": "choice",
+      "prompt": "Quel mot appartient à la famille de « fleur » ?",
+      "answer": "fleurir",
+      "options": [
+        "fleurir",
+        "fleuve",
+        "flèche"
+      ],
+      "skillIds": [
+        "familles-mots"
+      ],
+      "explanation": "Une famille de mots partage une origine et un lien de sens. Ici, fleurir est lié à fleur."
+    },
+    {
+      "id": "familles-mots-coherence-02",
+      "kind": "choice",
+      "prompt": "Quel mot appartient à la famille de « montagne » ?",
+      "answer": "montagnard",
+      "options": [
+        "montagnard",
+        "montre",
+        "mouton"
+      ],
+      "skillIds": [
+        "familles-mots"
+      ],
+      "explanation": "Une famille de mots partage une origine et un lien de sens. Ici, montagnard est lié à montagne."
+    },
+    {
+      "id": "familles-mots-coherence-03",
+      "kind": "choice",
+      "prompt": "Quel mot appartient à la famille de « port » ?",
+      "answer": "portuaire",
+      "options": [
+        "portuaire",
+        "porte",
+        "portrait"
+      ],
+      "skillIds": [
+        "familles-mots"
+      ],
+      "explanation": "Une famille de mots partage une origine et un lien de sens. Ici, portuaire est lié à port."
+    },
+    {
+      "id": "familles-mots-coherence-04",
+      "kind": "choice",
+      "prompt": "Quel mot appartient à la famille de « soleil » ?",
+      "answer": "ensoleillé",
+      "options": [
+        "ensoleillé",
+        "sol",
+        "solide"
+      ],
+      "skillIds": [
+        "familles-mots"
+      ],
+      "explanation": "Une famille de mots partage une origine et un lien de sens. Ici, ensoleillé est lié à soleil."
+    },
+    {
+      "id": "familles-mots-coherence-05",
+      "kind": "choice",
+      "prompt": "Quel mot appartient à la famille de « nager » ?",
+      "answer": "nageur",
+      "options": [
+        "nageur",
+        "nuage",
+        "navire"
+      ],
+      "skillIds": [
+        "familles-mots"
+      ],
+      "explanation": "Une famille de mots partage une origine et un lien de sens. Ici, nageur est lié à nager."
+    },
+    {
+      "id": "prefixes-coherence-01",
+      "kind": "choice",
+      "prompt": "Quel est le préfixe de « déplier » ?",
+      "answer": "dé-",
+      "options": [
+        "dé-",
+        "-ier",
+        "pli-"
+      ],
+      "skillIds": [
+        "prefixes"
+      ],
+      "explanation": "Dé- est placé avant la base plier.",
+      "variantId": "reperer"
+    },
+    {
+      "id": "prefixes-coherence-02",
+      "kind": "choice",
+      "prompt": "Que signifie « imprudent » ?",
+      "answer": "qui manque de prudence",
+      "options": [
+        "qui manque de prudence",
+        "qui est très prudent",
+        "qui observe longtemps"
+      ],
+      "skillIds": [
+        "prefixes"
+      ],
+      "explanation": "Le préfixe im- marque ici le contraire.",
+      "variantId": "sens"
+    },
+    {
+      "id": "prefixes-coherence-03",
+      "kind": "choice",
+      "prompt": "Quel mot possède un préfixe de répétition ?",
+      "answer": "recommencer",
+      "options": [
+        "recommencer",
+        "commencer",
+        "commencement"
+      ],
+      "skillIds": [
+        "prefixes"
+      ],
+      "explanation": "Re- indique que l’on commence de nouveau.",
+      "variantId": "reperer"
+    },
+    {
+      "id": "prefixes-coherence-04",
+      "kind": "choice",
+      "prompt": "Que signifie « souterrain » ?",
+      "answer": "situé sous la terre",
+      "options": [
+        "situé sous la terre",
+        "situé au-dessus de la terre",
+        "qui est très lointain"
+      ],
+      "skillIds": [
+        "prefixes"
+      ],
+      "explanation": "Le préfixe sou- indique une position sous quelque chose.",
+      "variantId": "sens"
+    },
+    {
+      "id": "prefixes-coherence-05",
+      "kind": "choice",
+      "prompt": "Quel est le préfixe de « survoler » ?",
+      "answer": "sur-",
+      "options": [
+        "sur-",
+        "-voler",
+        "-er"
+      ],
+      "skillIds": [
+        "prefixes"
+      ],
+      "explanation": "Sur- est placé avant voler.",
+      "variantId": "reperer"
+    },
+    {
+      "id": "suffixes-coherence-01",
+      "kind": "choice",
+      "prompt": "Quel est le suffixe de « jardinage » ?",
+      "answer": "-age",
+      "options": [
+        "-age",
+        "jardin-",
+        "jar-"
+      ],
+      "skillIds": [
+        "suffixes"
+      ],
+      "explanation": "Le suffixe -age suit la base jardin.",
+      "variantId": "reperer"
+    },
+    {
+      "id": "suffixes-coherence-02",
+      "kind": "choice",
+      "prompt": "Dans « mangeable », que signifie -able ?",
+      "answer": "qui peut être mangé",
+      "options": [
+        "qui peut être mangé",
+        "qui mange beaucoup",
+        "qui mange à nouveau"
+      ],
+      "skillIds": [
+        "suffixes"
+      ],
+      "explanation": "-able indique une possibilité.",
+      "variantId": "sens"
+    },
+    {
+      "id": "suffixes-coherence-03",
+      "kind": "choice",
+      "prompt": "Quel mot contient un suffixe ajouté à « danse » ?",
+      "answer": "danseur",
+      "options": [
+        "danseur",
+        "redanse",
+        "danser encore"
+      ],
+      "skillIds": [
+        "suffixes"
+      ],
+      "explanation": "Le suffixe -eur forme un nom de personne.",
+      "variantId": "reperer"
+    },
+    {
+      "id": "suffixes-coherence-04",
+      "kind": "choice",
+      "prompt": "Dans « maisonnette », que suggère -ette ?",
+      "answer": "une petite maison",
+      "options": [
+        "une petite maison",
+        "plusieurs maisons",
+        "une maison ancienne"
+      ],
+      "skillIds": [
+        "suffixes"
+      ],
+      "explanation": "-ette peut exprimer une petite taille.",
+      "variantId": "sens"
+    },
+    {
+      "id": "suffixes-coherence-05",
+      "kind": "choice",
+      "prompt": "Quel est le suffixe de « rapidement » ?",
+      "answer": "-ment",
+      "options": [
+        "-ment",
+        "rapide-",
+        "ra-"
+      ],
+      "skillIds": [
+        "suffixes"
+      ],
+      "explanation": "-ment permet ici de former un adverbe.",
+      "variantId": "reperer"
+    },
+    {
+      "id": "suffixes-coherence-06",
+      "kind": "choice",
+      "prompt": "Dans « chanteur », que désigne -eur ?",
+      "answer": "une personne qui chante",
+      "options": [
+        "une personne qui chante",
+        "un lieu où chanter",
+        "une chanson répétée"
+      ],
+      "skillIds": [
+        "suffixes"
+      ],
+      "explanation": "-eur sert ici à former un nom de personne.",
+      "variantId": "sens"
+    },
+    {
+      "id": "suffixes-coherence-07",
+      "kind": "choice",
+      "prompt": "Quel est le suffixe de « fillette » ?",
+      "answer": "-ette",
+      "options": [
+        "-ette",
+        "fille-",
+        "fi-"
+      ],
+      "skillIds": [
+        "suffixes"
+      ],
+      "explanation": "Le suffixe -ette est ajouté à fille.",
+      "variantId": "reperer"
+    },
+    {
+      "id": "suffixes-coherence-08",
+      "kind": "choice",
+      "prompt": "Dans « douceur », que désigne -eur ?",
+      "answer": "la qualité de ce qui est doux",
+      "options": [
+        "la qualité de ce qui est doux",
+        "une personne douce",
+        "le contraire de doux"
+      ],
+      "skillIds": [
+        "suffixes"
+      ],
+      "explanation": "Le suffixe forme ici un nom de qualité.",
+      "variantId": "sens"
+    },
+    {
+      "id": "suffixes-coherence-09",
+      "kind": "choice",
+      "prompt": "Quel mot est construit avec le suffixe -iste ?",
+      "answer": "pianiste",
+      "options": [
+        "pianiste",
+        "piano",
+        "rejouer"
+      ],
+      "skillIds": [
+        "suffixes"
+      ],
+      "explanation": "Pianiste désigne une personne qui joue du piano.",
+      "variantId": "reperer"
+    },
+    {
+      "id": "champ-lexical-coherence-01",
+      "kind": "choice",
+      "prompt": "Quel ensemble appartient au champ lexical de la montagne ?",
+      "answer": "sommet, vallée, sentier",
+      "options": [
+        "sommet, vallée, sentier",
+        "assiette, fourchette, verre",
+        "vague, marée, plage"
+      ],
+      "skillIds": [
+        "champ-lexical"
+      ],
+      "explanation": "Ces trois mots se rapportent au thème de la montagne."
+    },
+    {
+      "id": "champ-lexical-coherence-02",
+      "kind": "choice",
+      "prompt": "Quel mot ne fait pas partie du champ lexical de la cuisine ?",
+      "answer": "planète",
+      "options": [
+        "planète",
+        "casserole",
+        "recette"
+      ],
+      "skillIds": [
+        "champ-lexical"
+      ],
+      "explanation": "Planète relève de l’espace, pas de la cuisine."
+    },
+    {
+      "id": "champ-lexical-coherence-03",
+      "kind": "choice",
+      "prompt": "Quel ensemble appartient au champ lexical de la joie ?",
+      "answer": "rire, bonheur, sourire",
+      "options": [
+        "rire, bonheur, sourire",
+        "pluie, vent, nuage",
+        "chaise, table, armoire"
+      ],
+      "skillIds": [
+        "champ-lexical"
+      ],
+      "explanation": "Un champ lexical réunit des mots de classes différentes autour d’un thème."
+    },
+    {
+      "id": "champ-lexical-coherence-04",
+      "kind": "choice",
+      "prompt": "Quel mot appartient au champ lexical du voyage ?",
+      "answer": "itinéraire",
+      "options": [
+        "itinéraire",
+        "cuillère",
+        "coussin"
+      ],
+      "skillIds": [
+        "champ-lexical"
+      ],
+      "explanation": "Un itinéraire décrit le trajet d’un voyage."
+    },
+    {
+      "id": "champ-lexical-coherence-05",
+      "kind": "choice",
+      "prompt": "Quel ensemble appartient au champ lexical de la météo ?",
+      "answer": "averse, nuage, éclaircie",
+      "options": [
+        "averse, nuage, éclaircie",
+        "roman, page, lecteur",
+        "chaussure, lacet, semelle"
+      ],
+      "skillIds": [
+        "champ-lexical"
+      ],
+      "explanation": "Ces mots évoquent le temps qu’il fait."
+    },
+    {
+      "id": "champ-lexical-coherence-06",
+      "kind": "choice",
+      "prompt": "Quel groupe est un champ lexical plutôt qu’une famille de mots ?",
+      "answer": "neige, froid, ski",
+      "options": [
+        "neige, froid, ski",
+        "chant, chanter, chanteur",
+        "dent, dentiste, dentaire"
+      ],
+      "skillIds": [
+        "champ-lexical"
+      ],
+      "explanation": "Ces mots partagent un thème, sans être construits sur une même base."
+    },
+    {
+      "id": "identifier-invariable-coherence-01",
+      "kind": "choice",
+      "prompt": "Quel mot garde toujours la même forme ?",
+      "answer": "souvent",
+      "options": [
+        "souvent",
+        "petit",
+        "cheval"
+      ],
+      "skillIds": [
+        "identifier-invariable"
+      ],
+      "explanation": "Souvent est un adverbe invariable ; petit et cheval peuvent changer de forme.",
+      "variantId": "adverbe"
+    },
+    {
+      "id": "identifier-invariable-coherence-02",
+      "kind": "choice",
+      "prompt": "Dans « Les enfants arrivent bientôt », quel mot est invariable ?",
+      "answer": "bientôt",
+      "options": [
+        "bientôt",
+        "enfants",
+        "arrivent"
+      ],
+      "skillIds": [
+        "identifier-invariable"
+      ],
+      "explanation": "Bientôt ne s’accorde pas ; enfants est un nom et arrivent un verbe.",
+      "variantId": "adverbe"
+    },
+    {
+      "id": "identifier-invariable-coherence-03",
+      "kind": "choice",
+      "prompt": "Quel mot ne change pas lorsque le sujet passe au pluriel ?",
+      "answer": "ici",
+      "options": [
+        "ici",
+        "vient",
+        "fatigué"
+      ],
+      "skillIds": [
+        "identifier-invariable"
+      ],
+      "explanation": "Ici est un adverbe invariable.",
+      "variantId": "adverbe"
+    },
+    {
+      "id": "identifier-invariable-coherence-04",
+      "kind": "choice",
+      "prompt": "Quel mot est invariable ?",
+      "answer": "sans",
+      "options": [
+        "sans",
+        "beau",
+        "animal"
+      ],
+      "skillIds": [
+        "identifier-invariable"
+      ],
+      "explanation": "Sans est une préposition invariable.",
+      "variantId": "preposition"
+    },
+    {
+      "id": "identifier-invariable-coherence-05",
+      "kind": "choice",
+      "prompt": "Dans « Elles chantent joyeusement », quel mot ne s’accorde pas ?",
+      "answer": "joyeusement",
+      "options": [
+        "joyeusement",
+        "Elles",
+        "chantent"
+      ],
+      "skillIds": [
+        "identifier-invariable"
+      ],
+      "explanation": "Joyeusement est un adverbe.",
+      "variantId": "adverbe"
+    },
+    {
+      "id": "identifier-invariable-coherence-06",
+      "kind": "choice",
+      "prompt": "Quel mot garde sa forme au féminin et au pluriel ?",
+      "answer": "hier",
+      "options": [
+        "hier",
+        "heureux",
+        "ami"
+      ],
+      "skillIds": [
+        "identifier-invariable"
+      ],
+      "explanation": "Hier est un adverbe de temps invariable.",
+      "variantId": "adverbe"
+    },
+    {
+      "id": "identifier-invariable-coherence-07",
+      "kind": "choice",
+      "prompt": "Quel mot est invariable ?",
+      "answer": "car",
+      "options": [
+        "car",
+        "nouveau",
+        "œil"
+      ],
+      "skillIds": [
+        "identifier-invariable"
+      ],
+      "explanation": "Car est une conjonction invariable.",
+      "variantId": "conjonction"
+    },
+    {
+      "id": "identifier-invariable-coherence-08",
+      "kind": "choice",
+      "prompt": "Dans « Nos amis restent dehors », quel mot est invariable ?",
+      "answer": "dehors",
+      "options": [
+        "dehors",
+        "Nos",
+        "amis"
+      ],
+      "skillIds": [
+        "identifier-invariable"
+      ],
+      "explanation": "Dehors est un adverbe invariable.",
+      "variantId": "adverbe"
+    },
+    {
+      "id": "deduire-sens-coherence-01",
+      "kind": "choice",
+      "prompt": "« Ce tissu est imperméable : l’eau ne le traverse pas. » Que signifie imperméable ?",
+      "answer": "qui ne laisse pas passer l’eau",
+      "options": [
+        "qui ne laisse pas passer l’eau",
+        "qui laisse tout passer",
+        "qui absorbe très vite"
+      ],
+      "skillIds": [
+        "deduire-sens"
+      ],
+      "explanation": "La phrase après les deux-points reformule le mot inconnu.",
+      "variantId": "reformulation"
+    },
+    {
+      "id": "deduire-sens-coherence-02",
+      "kind": "choice",
+      "prompt": "« Aucun nuage ne cachait le soleil. Dans cette région aride, rien n’avait poussé depuis des mois faute de pluie. » Que signifie aride ?",
+      "answer": "très sec",
+      "options": [
+        "très sec",
+        "très humide",
+        "très peuplé"
+      ],
+      "skillIds": [
+        "deduire-sens"
+      ],
+      "explanation": "Le manque de pluie et de végétation fournit les indices.",
+      "variantId": "situation"
+    },
+    {
+      "id": "deduire-sens-coherence-03",
+      "kind": "choice",
+      "prompt": "« L’animal est nocturne, c’est-à-dire actif pendant la nuit. » Que signifie nocturne ?",
+      "answer": "actif la nuit",
+      "options": [
+        "actif la nuit",
+        "actif le jour",
+        "toujours endormi"
+      ],
+      "skillIds": [
+        "deduire-sens"
+      ],
+      "explanation": "C’est-à-dire annonce une explication.",
+      "variantId": "reformulation"
+    },
+    {
+      "id": "deduire-sens-coherence-04",
+      "kind": "choice",
+      "prompt": "« Le pont était vétuste : plusieurs planches pourries cédaient sous les pas. » Que signifie vétuste ?",
+      "answer": "vieux et abîmé",
+      "options": [
+        "vieux et abîmé",
+        "tout neuf",
+        "très fréquenté"
+      ],
+      "skillIds": [
+        "deduire-sens"
+      ],
+      "explanation": "L’état des planches permet de déduire que le pont est ancien et dégradé.",
+      "variantId": "situation"
+    },
+    {
+      "id": "deduire-sens-coherence-05",
+      "kind": "choice",
+      "prompt": "« Les deux routes sont parallèles : elles restent à la même distance sans se croiser. » Que signifie parallèles ?",
+      "answer": "qui ne se croisent pas",
+      "options": [
+        "qui ne se croisent pas",
+        "qui se rejoignent",
+        "qui sont très courtes"
+      ],
+      "skillIds": [
+        "deduire-sens"
+      ],
+      "explanation": "L’explication après les deux-points précise le sens.",
+      "variantId": "reformulation"
+    },
+    {
+      "id": "deduire-sens-coherence-06",
+      "kind": "choice",
+      "prompt": "« Après sa longue marche sans eau, Sam était assoiffé ; il vida deux grands verres. » Que signifie assoiffé ?",
+      "answer": "qui a très soif",
+      "options": [
+        "qui a très soif",
+        "qui a très froid",
+        "qui est pressé"
+      ],
+      "skillIds": [
+        "deduire-sens"
+      ],
+      "explanation": "La marche sans eau puis les verres bus sont deux indices.",
+      "variantId": "situation"
+    },
+    {
+      "id": "deduire-sens-coherence-07",
+      "kind": "choice",
+      "prompt": "« Cet exercice est facultatif : tu peux choisir de le faire ou non. » Que signifie facultatif ?",
+      "answer": "non obligatoire",
+      "options": [
+        "non obligatoire",
+        "interdit",
+        "toujours difficile"
+      ],
+      "skillIds": [
+        "deduire-sens"
+      ],
+      "explanation": "La seconde partie de la phrase donne le sens.",
+      "variantId": "reformulation"
+    },
+    {
+      "id": "deduire-sens-coherence-08",
+      "kind": "choice",
+      "prompt": "« Le jardin était luxuriant : les plantes couvraient les murs et débordaient des allées. » Que signifie luxuriant ?",
+      "answer": "où la végétation est très abondante",
+      "options": [
+        "où la végétation est très abondante",
+        "où rien ne pousse",
+        "où il fait très froid"
+      ],
+      "skillIds": [
+        "deduire-sens"
+      ],
+      "explanation": "L’abondance de plantes et d’allées couvertes fournit les indices.",
+      "variantId": "situation"
+    },
+    {
+      "id": "deduire-sens-coherence-09",
+      "kind": "choice",
+      "prompt": "« Le vase est fragile, autrement dit il se casse facilement. » Que signifie fragile ?",
+      "answer": "qui se casse facilement",
+      "options": [
+        "qui se casse facilement",
+        "très lourd",
+        "incassable"
+      ],
+      "skillIds": [
+        "deduire-sens"
+      ],
+      "explanation": "Autrement dit introduit une reformulation.",
+      "variantId": "reformulation"
+    },
+    {
+      "id": "deduire-sens-coherence-10",
+      "kind": "choice",
+      "prompt": "« Elle entra à pas feutrés pour ne pas réveiller le bébé ; on ne l’entendit pas. » Que signifie à pas feutrés ?",
+      "answer": "en marchant silencieusement",
+      "options": [
+        "en marchant silencieusement",
+        "en courant très vite",
+        "en frappant du pied"
+      ],
+      "skillIds": [
+        "deduire-sens"
+      ],
+      "explanation": "Le bébé à ne pas réveiller et l’absence de bruit éclairent le sens.",
+      "variantId": "situation"
+    },
+    {
+      "id": "deduire-sens-coherence-11",
+      "kind": "choice",
+      "prompt": "« Un animal omnivore mange des aliments d’origine végétale et animale. » Que signifie omnivore ?",
+      "answer": "qui mange des végétaux et des animaux",
+      "options": [
+        "qui mange des végétaux et des animaux",
+        "qui ne mange que de la viande",
+        "qui ne mange jamais"
+      ],
+      "skillIds": [
+        "deduire-sens"
+      ],
+      "explanation": "La phrase contient directement la définition.",
+      "variantId": "reformulation"
+    },
+    {
+      "id": "identifier-invariable-coherence-09",
+      "kind": "choice",
+      "prompt": "Dans « Il pleut mais nous sortons », quel mot est invariable ?",
+      "answer": "mais",
+      "options": [
+        "mais",
+        "pleut",
+        "sortons"
+      ],
+      "skillIds": [
+        "identifier-invariable"
+      ],
+      "variantId": "conjonction",
+      "explanation": "Mais est une conjonction invariable ; les verbes pleut et sortons varient avec le temps ou le sujet."
     }
   ]
 }
