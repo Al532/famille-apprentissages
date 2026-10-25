@@ -126,14 +126,15 @@ export function planSession(modules:Module[],results:Result[],subject='Toutes',n
  const subjectNames=[...new Set(orderedStates.map(c=>c.subject))],banks=subjectNames.map(name=>orderedStates.filter(c=>c.subject===name));
  const conceptLimit=facts.length?3:4;
  const chosen:SessionConcept[]=[];
- let budget=12;
+ const reservedCards=Math.min(3,facts.length);
+ let budget=12-reservedCards;
  while(chosen.length<conceptLimit&&banks.some(b=>b.length))for(const bank of banks){
   const c=bank.shift();if(!c||chosen.length>=conceptLimit)continue;
   const cost=conceptTarget(eligibleModules.find(m=>m.id===c.moduleId)!,c.skillId);
   if(cost>budget)continue;
   chosen.push({moduleId:c.moduleId,skillId:c.skillId,label:c.label,subject:c.subject});budget-=cost;
  }
- chosen.push(...[...due,...fresh].slice(0,budget).map(({review,...f})=>f));
+ chosen.push(...[...due,...fresh].slice(0,budget+reservedCards).map(({review,...f})=>f));
  for(const m of staffModules){
   const c={moduleId:m.id,skillId:m.skills[0].id,label:m.title,subject:m.subject};
   const reviews=projectQuestionReviews([m],results);

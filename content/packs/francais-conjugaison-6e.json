@@ -1,108 +1,436 @@
 {
   "id": "francais-conjugaison-6e",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "title": "Conjugaison : les repères essentiels",
   "subject": "Français",
   "levels": [
     "6e"
   ],
-  "description": "Présent, imparfait, futur, passé composé, passé simple et plus-que-parfait : reconnaître les temps et conjuguer les verbes fréquents.",
+  "description": "Des règles par groupe et par temps, des formes irrégulières mémorisées individuellement, et la reconnaissance des temps.",
   "skills": [
     {
-      "id": "temps-present",
-      "label": "Conjuguer au présent",
+      "id": "regle-present-g1",
+      "label": "Présent — 1er groupe",
       "variants": [
         {
-          "id": "auxiliaires",
-          "label": "Être et avoir"
+          "id": "1s",
+          "label": "Je"
         },
         {
-          "id": "reguliers",
-          "label": "Verbes réguliers"
+          "id": "2s",
+          "label": "Tu"
         },
         {
-          "id": "irreguliers",
-          "label": "Verbes fréquents irréguliers"
+          "id": "3s",
+          "label": "Il, elle, on"
+        },
+        {
+          "id": "1p",
+          "label": "Nous"
+        },
+        {
+          "id": "2p",
+          "label": "Vous"
+        },
+        {
+          "id": "3p",
+          "label": "Ils, elles"
         }
       ]
     },
     {
-      "id": "temps-imparfait",
-      "label": "Conjuguer à l’imparfait",
+      "id": "regle-present-g2",
+      "label": "Présent — 2e groupe",
       "variants": [
         {
-          "id": "nous",
-          "label": "Terminaison avec nous"
+          "id": "1s",
+          "label": "Je"
         },
         {
-          "id": "vous",
-          "label": "Terminaison avec vous"
+          "id": "2s",
+          "label": "Tu"
         },
         {
-          "id": "autres",
-          "label": "Autres personnes"
+          "id": "3s",
+          "label": "Il, elle, on"
+        },
+        {
+          "id": "1p",
+          "label": "Nous"
+        },
+        {
+          "id": "2p",
+          "label": "Vous"
+        },
+        {
+          "id": "3p",
+          "label": "Ils, elles"
         }
       ]
     },
     {
-      "id": "temps-futur",
-      "label": "Conjuguer au futur",
+      "id": "regle-imparfait-g1",
+      "label": "Imparfait — 1er groupe",
       "variants": [
         {
-          "id": "reguliers",
-          "label": "Radical régulier"
+          "id": "1s",
+          "label": "Je"
         },
         {
-          "id": "irreguliers",
-          "label": "Radical irrégulier"
+          "id": "2s",
+          "label": "Tu"
+        },
+        {
+          "id": "3s",
+          "label": "Il, elle, on"
+        },
+        {
+          "id": "1p",
+          "label": "Nous"
+        },
+        {
+          "id": "2p",
+          "label": "Vous"
+        },
+        {
+          "id": "3p",
+          "label": "Ils, elles"
         }
       ]
     },
     {
-      "id": "temps-passe-compose",
-      "label": "Conjuguer au passé composé",
+      "id": "regle-imparfait-g2",
+      "label": "Imparfait — 2e groupe",
+      "variants": [
+        {
+          "id": "1s",
+          "label": "Je"
+        },
+        {
+          "id": "2s",
+          "label": "Tu"
+        },
+        {
+          "id": "3s",
+          "label": "Il, elle, on"
+        },
+        {
+          "id": "1p",
+          "label": "Nous"
+        },
+        {
+          "id": "2p",
+          "label": "Vous"
+        },
+        {
+          "id": "3p",
+          "label": "Ils, elles"
+        }
+      ]
+    },
+    {
+      "id": "regle-futur-g1",
+      "label": "Futur simple — 1er groupe",
+      "variants": [
+        {
+          "id": "1s",
+          "label": "Je"
+        },
+        {
+          "id": "2s",
+          "label": "Tu"
+        },
+        {
+          "id": "3s",
+          "label": "Il, elle, on"
+        },
+        {
+          "id": "1p",
+          "label": "Nous"
+        },
+        {
+          "id": "2p",
+          "label": "Vous"
+        },
+        {
+          "id": "3p",
+          "label": "Ils, elles"
+        }
+      ]
+    },
+    {
+      "id": "regle-futur-g2",
+      "label": "Futur simple — 2e groupe",
+      "variants": [
+        {
+          "id": "1s",
+          "label": "Je"
+        },
+        {
+          "id": "2s",
+          "label": "Tu"
+        },
+        {
+          "id": "3s",
+          "label": "Il, elle, on"
+        },
+        {
+          "id": "1p",
+          "label": "Nous"
+        },
+        {
+          "id": "2p",
+          "label": "Vous"
+        },
+        {
+          "id": "3p",
+          "label": "Ils, elles"
+        }
+      ]
+    },
+    {
+      "id": "regle-passe-compose-g1",
+      "label": "Passé composé — 1er groupe",
       "variants": [
         {
           "id": "avoir",
           "label": "Auxiliaire avoir"
         },
         {
-          "id": "etre",
-          "label": "Auxiliaire être"
+          "id": "etre-masculin",
+          "label": "Être, sujet masculin"
+        },
+        {
+          "id": "etre-feminin",
+          "label": "Être, sujet féminin"
         }
       ]
     },
     {
-      "id": "temps-passe-simple",
-      "label": "Conjuguer au passé simple",
+      "id": "regle-passe-compose-g2",
+      "label": "Passé composé — 2e groupe",
       "variants": [
         {
-          "id": "a",
-          "label": "Formes en -a-"
+          "id": "1s",
+          "label": "Je"
         },
         {
-          "id": "i",
-          "label": "Formes en -i-"
+          "id": "2s",
+          "label": "Tu"
         },
         {
-          "id": "u-in",
-          "label": "Formes en -u- et -in-"
+          "id": "3s",
+          "label": "Il, elle, on"
+        },
+        {
+          "id": "1p",
+          "label": "Nous"
+        },
+        {
+          "id": "2p",
+          "label": "Vous"
+        },
+        {
+          "id": "3p",
+          "label": "Ils, elles"
         }
       ]
     },
     {
-      "id": "temps-plus-que-parfait",
-      "label": "Conjuguer au plus-que-parfait",
+      "id": "regle-passe-simple-g1",
+      "label": "Passé simple — 1er groupe",
+      "variants": [
+        {
+          "id": "3s",
+          "label": "3e personne du singulier"
+        },
+        {
+          "id": "3p",
+          "label": "3e personne du pluriel"
+        }
+      ]
+    },
+    {
+      "id": "regle-passe-simple-g2",
+      "label": "Passé simple — 2e groupe",
+      "variants": [
+        {
+          "id": "3s",
+          "label": "3e personne du singulier"
+        },
+        {
+          "id": "3p",
+          "label": "3e personne du pluriel"
+        }
+      ]
+    },
+    {
+      "id": "regle-plus-que-parfait-g1",
+      "label": "Plus-que-parfait — 1er groupe",
       "variants": [
         {
           "id": "avoir",
           "label": "Auxiliaire avoir"
         },
         {
-          "id": "etre",
-          "label": "Auxiliaire être"
+          "id": "etre-masculin",
+          "label": "Être, sujet masculin"
+        },
+        {
+          "id": "etre-feminin",
+          "label": "Être, sujet féminin"
         }
       ]
+    },
+    {
+      "id": "regle-plus-que-parfait-g2",
+      "label": "Plus-que-parfait — 2e groupe",
+      "variants": [
+        {
+          "id": "1s",
+          "label": "Je"
+        },
+        {
+          "id": "2s",
+          "label": "Tu"
+        },
+        {
+          "id": "3s",
+          "label": "Il, elle, on"
+        },
+        {
+          "id": "1p",
+          "label": "Nous"
+        },
+        {
+          "id": "2p",
+          "label": "Vous"
+        },
+        {
+          "id": "3p",
+          "label": "Ils, elles"
+        }
+      ]
+    },
+    {
+      "id": "regle-imparfait-g3",
+      "label": "Imparfait — 3e groupe",
+      "variants": [
+        {
+          "id": "1s",
+          "label": "Je"
+        },
+        {
+          "id": "2s",
+          "label": "Tu"
+        },
+        {
+          "id": "3s",
+          "label": "Il, elle, on"
+        },
+        {
+          "id": "1p",
+          "label": "Nous"
+        },
+        {
+          "id": "2p",
+          "label": "Vous"
+        },
+        {
+          "id": "3p",
+          "label": "Ils, elles"
+        }
+      ]
+    },
+    {
+      "id": "regle-futur-g3",
+      "label": "Futur simple — 3e groupe à radical régulier",
+      "variants": [
+        {
+          "id": "1s",
+          "label": "Je"
+        },
+        {
+          "id": "2s",
+          "label": "Tu"
+        },
+        {
+          "id": "3s",
+          "label": "Il, elle, on"
+        },
+        {
+          "id": "1p",
+          "label": "Nous"
+        },
+        {
+          "id": "2p",
+          "label": "Vous"
+        },
+        {
+          "id": "3p",
+          "label": "Ils, elles"
+        }
+      ]
+    },
+    {
+      "id": "regle-passe-compose-g3",
+      "label": "Passé composé — 3e groupe : construire le temps",
+      "variants": [
+        {
+          "id": "avoir",
+          "label": "Auxiliaire avoir"
+        },
+        {
+          "id": "etre-masculin",
+          "label": "Être, sujet masculin"
+        },
+        {
+          "id": "etre-feminin",
+          "label": "Être, sujet féminin"
+        }
+      ]
+    },
+    {
+      "id": "regle-plus-que-parfait-g3",
+      "label": "Plus-que-parfait — 3e groupe : construire le temps",
+      "variants": [
+        {
+          "id": "avoir",
+          "label": "Auxiliaire avoir"
+        },
+        {
+          "id": "etre-masculin",
+          "label": "Être, sujet masculin"
+        },
+        {
+          "id": "etre-feminin",
+          "label": "Être, sujet féminin"
+        }
+      ]
+    },
+    {
+      "id": "formes-present",
+      "label": "Présent — formes à mémoriser"
+    },
+    {
+      "id": "formes-imparfait",
+      "label": "Imparfait — formes à mémoriser"
+    },
+    {
+      "id": "formes-futur",
+      "label": "Futur simple — formes à mémoriser"
+    },
+    {
+      "id": "formes-passe-compose",
+      "label": "Passé composé — formes à mémoriser"
+    },
+    {
+      "id": "formes-passe-simple",
+      "label": "Passé simple — formes à mémoriser"
+    },
+    {
+      "id": "formes-plus-que-parfait",
+      "label": "Plus-que-parfait — formes à mémoriser"
     },
     {
       "id": "identifier-temps",
@@ -110,27 +438,27 @@
       "variants": [
         {
           "id": "present",
-          "label": "present"
+          "label": "Présent"
         },
         {
           "id": "imparfait",
-          "label": "imparfait"
+          "label": "Imparfait"
         },
         {
           "id": "futur",
-          "label": "futur"
+          "label": "Futur simple"
         },
         {
           "id": "passe-compose",
-          "label": "passe compose"
+          "label": "Passé composé"
         },
         {
           "id": "passe-simple",
-          "label": "passe simple"
+          "label": "Passé simple"
         },
         {
           "id": "plus-que-parfait",
-          "label": "plus que parfait"
+          "label": "Plus-que-parfait"
         }
       ]
     }
@@ -147,10 +475,11 @@
         "font"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent, faire donne : nous faisons, vous faites, ils font.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-01"
     },
     {
       "id": "temps-imparfait-01",
@@ -163,10 +492,11 @@
         "jouons"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "regle-imparfait-g1"
       ],
       "explanation": "L’imparfait se forme avec le radical de « nous jouons » et la terminaison -ions.",
-      "variantId": "nous"
+      "variantId": "1p",
+      "contextId": "conj-imparfait-jouer-1p-jouions"
     },
     {
       "id": "temps-futur-01",
@@ -179,10 +509,11 @@
         "venons"
       ],
       "skillIds": [
-        "temps-futur"
+        "formes-futur"
       ],
       "explanation": "Venir a le radical « viendr- » au futur et la terminaison -ons avec nous.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-futur-01"
     },
     {
       "id": "temps-passe-compose-01",
@@ -195,10 +526,11 @@
         "a fini"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "regle-passe-compose-g2"
       ],
       "explanation": "Le passé composé utilise l’auxiliaire au présent et le participe passé.",
-      "variantId": "avoir"
+      "variantId": "3s",
+      "contextId": "conj-passe-compose-finir-3s-a-fini"
     },
     {
       "id": "temps-passe-simple-01",
@@ -211,10 +543,11 @@
         "a ouvert"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "formes-passe-simple"
       ],
       "explanation": "« ouvrit » est au passé simple ; « ouvrait » est à l’imparfait.",
-      "variantId": "i"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-simple-01"
     },
     {
       "id": "temps-plus-que-parfait-01",
@@ -227,10 +560,11 @@
         "avais mangé"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "regle-plus-que-parfait-g1"
       ],
       "explanation": "Le plus-que-parfait se forme avec l’auxiliaire à l’imparfait et le participe passé.",
-      "variantId": "avoir"
+      "variantId": "avoir",
+      "contextId": "conj-plus-que-parfait-manger-1s-avais-mange"
     },
     {
       "id": "identifier-temps-01",
@@ -255,7 +589,7 @@
       "prompt": "Conjugue « aller » au présent : « Nous ___ à la piscine. »",
       "answer": "allons",
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Avec « nous », aller se conjugue « allons ».",
       "options": [
@@ -264,7 +598,8 @@
         "allons",
         "allez"
       ],
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-02"
     },
     {
       "id": "temps-imparfait-02",
@@ -272,7 +607,7 @@
       "prompt": "Conjugue « être » à l’imparfait : « Elles ___ heureuses. »",
       "answer": "étaient",
       "skillIds": [
-        "temps-imparfait"
+        "formes-imparfait"
       ],
       "explanation": "Être à l’imparfait avec « elles » : « étaient ».",
       "options": [
@@ -281,7 +616,8 @@
         "étaient",
         "était"
       ],
-      "variantId": "autres"
+      "reviewMode": "question",
+      "reviewId": "temps-imparfait-02"
     },
     {
       "id": "temps-futur-02",
@@ -289,7 +625,7 @@
       "prompt": "Conjugue « voir » au futur : « Je ___ la réponse. »",
       "answer": "verrai",
       "skillIds": [
-        "temps-futur"
+        "formes-futur"
       ],
       "explanation": "Au futur, voir donne « je verrai » ; « verrais » est au conditionnel.",
       "options": [
@@ -298,7 +634,8 @@
         "verrais",
         "voyais"
       ],
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-futur-02"
     },
     {
       "id": "temps-passe-compose-02",
@@ -306,7 +643,7 @@
       "prompt": "Conjugue « aller » au passé composé : « Ils ___ au musée. »",
       "answer": "sont allés",
       "skillIds": [
-        "temps-passe-compose"
+        "formes-passe-compose"
       ],
       "explanation": "Aller se conjugue avec être ; « allés » s’accorde avec « Ils ».",
       "options": [
@@ -315,7 +652,8 @@
         "ont allés",
         "étaient allés"
       ],
-      "variantId": "etre"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-compose-02"
     },
     {
       "id": "temps-passe-simple-02",
@@ -323,7 +661,7 @@
       "prompt": "Conjugue « prendre » au passé simple : « Elles ___ la parole. »",
       "answer": "prirent",
       "skillIds": [
-        "temps-passe-simple"
+        "formes-passe-simple"
       ],
       "explanation": "Au passé simple, prendre donne « ils/elles prirent ».",
       "options": [
@@ -332,7 +670,8 @@
         "prennent",
         "prendront"
       ],
-      "variantId": "i"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-simple-02"
     },
     {
       "id": "temps-plus-que-parfait-02",
@@ -340,7 +679,7 @@
       "prompt": "Conjugue « partir » au plus-que-parfait : « Elle ___ avant mon arrivée. »",
       "answer": "était partie",
       "skillIds": [
-        "temps-plus-que-parfait"
+        "formes-plus-que-parfait"
       ],
       "explanation": "« était » est l’auxiliaire être à l’imparfait ; « partie » s’accorde avec « Elle ».",
       "options": [
@@ -349,7 +688,8 @@
         "était parti",
         "était partie"
       ],
-      "variantId": "etre"
+      "reviewMode": "question",
+      "reviewId": "temps-plus-que-parfait-02"
     },
     {
       "id": "identifier-temps-02",
@@ -379,10 +719,11 @@
         "prends"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Avec « tu », prendre s’écrit « prends ».",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-03"
     },
     {
       "id": "temps-imparfait-03",
@@ -395,10 +736,11 @@
         "avez"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "formes-imparfait"
       ],
       "explanation": "Avec « tu », l’imparfait d’avoir se termine par -ais.",
-      "variantId": "autres"
+      "reviewMode": "question",
+      "reviewId": "temps-imparfait-03"
     },
     {
       "id": "temps-futur-03",
@@ -411,10 +753,11 @@
         "partaient"
       ],
       "skillIds": [
-        "temps-futur"
+        "regle-futur-g3"
       ],
       "explanation": "Avec « ils », le futur se termine par -ont.",
-      "variantId": "reguliers"
+      "variantId": "3p",
+      "contextId": "conj-futur-partir-3p-partiront"
     },
     {
       "id": "identifier-temps-03",
@@ -439,7 +782,7 @@
       "prompt": "Conjugue « dire » au présent : « Ils ___ la vérité. »",
       "answer": "disent",
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent : nous disons, vous dites, ils disent.",
       "options": [
@@ -448,7 +791,8 @@
         "disont",
         "dit"
       ],
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-04"
     },
     {
       "id": "identifier-temps-04",
@@ -478,10 +822,11 @@
         "êtes"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent, on écrit « Nous sommes ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "auxiliaires"
+      "reviewMode": "question",
+      "reviewId": "temps-present-reserve-01"
     },
     {
       "id": "temps-present-reserve-02",
@@ -494,10 +839,11 @@
         "ont"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent, on écrit « Vous avez ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "auxiliaires"
+      "reviewMode": "question",
+      "reviewId": "temps-present-reserve-02"
     },
     {
       "id": "temps-present-reserve-03",
@@ -510,10 +856,11 @@
         "allons"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent, on écrit « Ils vont ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-reserve-03"
     },
     {
       "id": "temps-present-reserve-04",
@@ -526,10 +873,11 @@
         "faisez"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent, on écrit « Tu fais ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-reserve-04"
     },
     {
       "id": "temps-present-reserve-05",
@@ -542,10 +890,11 @@
         "disent"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent, on écrit « Vous dites ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-reserve-05"
     },
     {
       "id": "temps-present-reserve-06",
@@ -558,10 +907,11 @@
         "venais"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent, on écrit « Je viens ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-reserve-06"
     },
     {
       "id": "temps-present-reserve-07",
@@ -574,10 +924,11 @@
         "prenez"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent, on écrit « Elles prennent ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-reserve-07"
     },
     {
       "id": "temps-present-reserve-08",
@@ -590,10 +941,11 @@
         "pouvez"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent, on écrit « Nous pouvons ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-reserve-08"
     },
     {
       "id": "temps-present-reserve-09",
@@ -606,10 +958,11 @@
         "voient"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent, on écrit « Tu vois ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-reserve-09"
     },
     {
       "id": "temps-present-reserve-10",
@@ -622,10 +975,11 @@
         "veulent"
       ],
       "skillIds": [
-        "temps-present"
+        "formes-present"
       ],
       "explanation": "Au présent, on écrit « Il veut ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-present-reserve-10"
     },
     {
       "id": "temps-present-reserve-11",
@@ -638,10 +992,11 @@
         "finissent"
       ],
       "skillIds": [
-        "temps-present"
+        "regle-present-g2"
       ],
       "explanation": "Au présent, on écrit « Nous finissons ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "reguliers"
+      "variantId": "1p",
+      "contextId": "conj-present-finir-1p-finissons"
     },
     {
       "id": "temps-present-reserve-12",
@@ -654,10 +1009,11 @@
         "chantes"
       ],
       "skillIds": [
-        "temps-present"
+        "regle-present-g1"
       ],
       "explanation": "Au présent, on écrit « Elles chantent ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "reguliers"
+      "variantId": "3p",
+      "contextId": "conj-present-chanter-3p-chantent"
     },
     {
       "id": "temps-imparfait-reserve-01",
@@ -670,10 +1026,11 @@
         "serai"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "formes-imparfait"
       ],
       "explanation": "Au imparfait, on écrit « J’étais ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "autres"
+      "reviewMode": "question",
+      "reviewId": "temps-imparfait-reserve-01"
     },
     {
       "id": "temps-imparfait-reserve-02",
@@ -686,10 +1043,11 @@
         "auront"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "formes-imparfait"
       ],
       "explanation": "Au imparfait, on écrit « Elles avaient ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "autres"
+      "reviewMode": "question",
+      "reviewId": "temps-imparfait-reserve-02"
     },
     {
       "id": "temps-imparfait-reserve-03",
@@ -702,10 +1060,11 @@
         "irons"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "regle-imparfait-g3"
       ],
       "explanation": "Au imparfait, on écrit « Nous allions ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "nous"
+      "variantId": "1p",
+      "contextId": "conj-imparfait-aller-1p-allions"
     },
     {
       "id": "temps-imparfait-reserve-04",
@@ -718,10 +1077,11 @@
         "ferez"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "regle-imparfait-g3"
       ],
       "explanation": "Au imparfait, on écrit « Vous faisiez ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "vous"
+      "variantId": "2p",
+      "contextId": "conj-imparfait-faire-2p-faisiez"
     },
     {
       "id": "temps-imparfait-reserve-05",
@@ -734,10 +1094,11 @@
         "viens"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "regle-imparfait-g3"
       ],
       "explanation": "Au imparfait, on écrit « Tu venais ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "autres"
+      "variantId": "2s",
+      "contextId": "conj-imparfait-venir-2s-venais"
     },
     {
       "id": "temps-imparfait-reserve-06",
@@ -750,10 +1111,11 @@
         "prend"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "regle-imparfait-g3"
       ],
       "explanation": "Au imparfait, on écrit « Il prenait ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "autres"
+      "variantId": "3s",
+      "contextId": "conj-imparfait-prendre-3s-prenait"
     },
     {
       "id": "temps-imparfait-reserve-07",
@@ -766,10 +1128,11 @@
         "dirons"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "regle-imparfait-g3"
       ],
       "explanation": "Au imparfait, on écrit « Nous disions ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "nous"
+      "variantId": "1p",
+      "contextId": "conj-imparfait-dire-1p-disions"
     },
     {
       "id": "temps-imparfait-reserve-08",
@@ -782,10 +1145,11 @@
         "verrez"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "regle-imparfait-g3"
       ],
       "explanation": "Au imparfait, on écrit « Vous voyiez ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "vous"
+      "variantId": "2p",
+      "contextId": "conj-imparfait-voir-2p-voyiez"
     },
     {
       "id": "temps-imparfait-reserve-09",
@@ -798,10 +1162,11 @@
         "finissent"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "regle-imparfait-g2"
       ],
       "explanation": "Au imparfait, on écrit « Ils finissaient ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "autres"
+      "variantId": "3p",
+      "contextId": "conj-imparfait-finir-3p-finissaient"
     },
     {
       "id": "temps-imparfait-reserve-10",
@@ -814,10 +1179,11 @@
         "chante"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "regle-imparfait-g1"
       ],
       "explanation": "Au imparfait, on écrit « Je chantais ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "autres"
+      "variantId": "1s",
+      "contextId": "conj-imparfait-chanter-1s-chantais"
     },
     {
       "id": "temps-imparfait-reserve-11",
@@ -830,10 +1196,11 @@
         "peut"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "regle-imparfait-g3"
       ],
       "explanation": "Au imparfait, on écrit « Elle pouvait ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "autres"
+      "variantId": "3s",
+      "contextId": "conj-imparfait-pouvoir-3s-pouvait"
     },
     {
       "id": "temps-imparfait-reserve-12",
@@ -846,10 +1213,11 @@
         "veux"
       ],
       "skillIds": [
-        "temps-imparfait"
+        "regle-imparfait-g3"
       ],
       "explanation": "Au imparfait, on écrit « Tu voulais ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "autres"
+      "variantId": "2s",
+      "contextId": "conj-imparfait-vouloir-2s-voulais"
     },
     {
       "id": "temps-futur-reserve-01",
@@ -862,10 +1230,11 @@
         "étais"
       ],
       "skillIds": [
-        "temps-futur"
+        "formes-futur"
       ],
       "explanation": "Au futur simple, on écrit « Tu seras ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-futur-reserve-01"
     },
     {
       "id": "temps-futur-reserve-02",
@@ -878,10 +1247,11 @@
         "auront"
       ],
       "skillIds": [
-        "temps-futur"
+        "formes-futur"
       ],
       "explanation": "Au futur simple, on écrit « Nous aurons ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-futur-reserve-02"
     },
     {
       "id": "temps-futur-reserve-03",
@@ -894,10 +1264,11 @@
         "iront"
       ],
       "skillIds": [
-        "temps-futur"
+        "formes-futur"
       ],
       "explanation": "Au futur simple, on écrit « Vous irez ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-futur-reserve-03"
     },
     {
       "id": "temps-futur-reserve-04",
@@ -910,10 +1281,11 @@
         "ferons"
       ],
       "skillIds": [
-        "temps-futur"
+        "formes-futur"
       ],
       "explanation": "Au futur simple, on écrit « Ils feront ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-futur-reserve-04"
     },
     {
       "id": "temps-futur-reserve-05",
@@ -926,10 +1298,11 @@
         "viendrais"
       ],
       "skillIds": [
-        "temps-futur"
+        "formes-futur"
       ],
       "explanation": "Au futur simple, on écrit « Je viendrai ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-futur-reserve-05"
     },
     {
       "id": "temps-futur-reserve-06",
@@ -942,10 +1315,11 @@
         "prendras"
       ],
       "skillIds": [
-        "temps-futur"
+        "regle-futur-g3"
       ],
       "explanation": "Au futur simple, on écrit « Elle prendra ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "variantId": "3s",
+      "contextId": "conj-futur-prendre-3s-prendra"
     },
     {
       "id": "temps-futur-reserve-07",
@@ -958,10 +1332,11 @@
         "dira"
       ],
       "skillIds": [
-        "temps-futur"
+        "regle-futur-g3"
       ],
       "explanation": "Au futur simple, on écrit « Tu diras ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "variantId": "2s",
+      "contextId": "conj-futur-dire-2s-diras"
     },
     {
       "id": "temps-futur-reserve-08",
@@ -974,10 +1349,11 @@
         "verront"
       ],
       "skillIds": [
-        "temps-futur"
+        "formes-futur"
       ],
       "explanation": "Au futur simple, on écrit « Nous verrons ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-futur-reserve-08"
     },
     {
       "id": "temps-futur-reserve-09",
@@ -990,10 +1366,11 @@
         "finiront"
       ],
       "skillIds": [
-        "temps-futur"
+        "regle-futur-g2"
       ],
       "explanation": "Au futur simple, on écrit « Vous finirez ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "reguliers"
+      "variantId": "2p",
+      "contextId": "conj-futur-finir-2p-finirez"
     },
     {
       "id": "temps-futur-reserve-10",
@@ -1006,10 +1383,11 @@
         "chanterons"
       ],
       "skillIds": [
-        "temps-futur"
+        "regle-futur-g1"
       ],
       "explanation": "Au futur simple, on écrit « Elles chanteront ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "reguliers"
+      "variantId": "3p",
+      "contextId": "conj-futur-chanter-3p-chanteront"
     },
     {
       "id": "temps-futur-reserve-11",
@@ -1022,10 +1400,11 @@
         "pourras"
       ],
       "skillIds": [
-        "temps-futur"
+        "formes-futur"
       ],
       "explanation": "Au futur simple, on écrit « Il pourra ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-futur-reserve-11"
     },
     {
       "id": "temps-futur-reserve-12",
@@ -1038,10 +1417,11 @@
         "voudrais"
       ],
       "skillIds": [
-        "temps-futur"
+        "formes-futur"
       ],
       "explanation": "Au futur simple, on écrit « Je voudrai ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "irreguliers"
+      "reviewMode": "question",
+      "reviewId": "temps-futur-reserve-12"
     },
     {
       "id": "temps-passe-compose-reserve-01",
@@ -1054,10 +1434,11 @@
         "mangerons"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "regle-passe-compose-g1"
       ],
       "explanation": "Au passé composé, on écrit « Nous avons mangé ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "variantId": "avoir",
+      "contextId": "conj-passe-compose-manger-1p-avons-mange"
     },
     {
       "id": "temps-passe-compose-reserve-02",
@@ -1070,10 +1451,11 @@
         "as finir"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "regle-passe-compose-g2"
       ],
       "explanation": "Au passé composé, on écrit « Tu as fini ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "variantId": "2s",
+      "contextId": "conj-passe-compose-finir-2s-as-fini"
     },
     {
       "id": "temps-passe-compose-reserve-03",
@@ -1086,10 +1468,11 @@
         "a voir"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "formes-passe-compose"
       ],
       "explanation": "Au passé composé, on écrit « Elle a vu ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-compose-reserve-03"
     },
     {
       "id": "temps-passe-compose-reserve-04",
@@ -1102,10 +1485,11 @@
         "avons pris"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "formes-passe-compose"
       ],
       "explanation": "Au passé composé, on écrit « Ils ont pris ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-compose-reserve-04"
     },
     {
       "id": "temps-passe-compose-reserve-05",
@@ -1118,10 +1502,11 @@
         "avais dit"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "formes-passe-compose"
       ],
       "explanation": "Au passé composé, on écrit « J’ai dit ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-compose-reserve-05"
     },
     {
       "id": "temps-passe-compose-reserve-06",
@@ -1134,10 +1519,11 @@
         "avez fais"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "formes-passe-compose"
       ],
       "explanation": "Au passé composé, on écrit « Vous avez fait ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-compose-reserve-06"
     },
     {
       "id": "temps-passe-compose-reserve-07",
@@ -1150,10 +1536,11 @@
         "ont allé"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "formes-passe-compose"
       ],
       "explanation": "Au passé composé, on écrit « Elles sont allées ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "etre"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-compose-reserve-07"
     },
     {
       "id": "temps-passe-compose-reserve-08",
@@ -1166,10 +1553,11 @@
         "est venir"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "formes-passe-compose"
       ],
       "explanation": "Au passé composé, on écrit « Il est venu ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "etre"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-compose-reserve-08"
     },
     {
       "id": "temps-passe-compose-reserve-09",
@@ -1182,10 +1570,11 @@
         "as jouer"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "regle-passe-compose-g1"
       ],
       "explanation": "Au passé composé, on écrit « Tu as joué ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "variantId": "avoir",
+      "contextId": "conj-passe-compose-jouer-2s-as-joue"
     },
     {
       "id": "temps-passe-compose-reserve-10",
@@ -1198,10 +1587,11 @@
         "avons eus"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "formes-passe-compose"
       ],
       "explanation": "Au passé composé, on écrit « Nous avons eu ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-compose-reserve-10"
     },
     {
       "id": "temps-passe-compose-reserve-11",
@@ -1214,10 +1604,11 @@
         "ont être"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "formes-passe-compose"
       ],
       "explanation": "Au passé composé, on écrit « Ils ont été ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-compose-reserve-11"
     },
     {
       "id": "temps-passe-compose-reserve-12",
@@ -1230,10 +1621,11 @@
         "est parti"
       ],
       "skillIds": [
-        "temps-passe-compose"
+        "formes-passe-compose"
       ],
       "explanation": "Au passé composé, on écrit « Elle est partie ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "etre"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-compose-reserve-12"
     },
     {
       "id": "temps-passe-simple-reserve-01",
@@ -1246,10 +1638,11 @@
         "chante"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "regle-passe-simple-g1"
       ],
       "explanation": "Au passé simple, on écrit « Il chanta ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "a"
+      "variantId": "3s",
+      "contextId": "conj-passe-simple-chanter-3s-chanta"
     },
     {
       "id": "temps-passe-simple-reserve-02",
@@ -1262,10 +1655,11 @@
         "jouent"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "regle-passe-simple-g1"
       ],
       "explanation": "Au passé simple, on écrit « Elles jouèrent ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "a"
+      "variantId": "3p",
+      "contextId": "conj-passe-simple-jouer-3p-jouerent"
     },
     {
       "id": "temps-passe-simple-reserve-03",
@@ -1278,10 +1672,11 @@
         "finira"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "regle-passe-simple-g2"
       ],
       "explanation": "Au passé simple, on écrit « Il finit ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "i"
+      "variantId": "3s",
+      "contextId": "conj-passe-simple-finir-3s-finit"
     },
     {
       "id": "temps-passe-simple-reserve-04",
@@ -1294,10 +1689,11 @@
         "choisiront"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "regle-passe-simple-g2"
       ],
       "explanation": "Au passé simple, on écrit « Ils choisirent ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "i"
+      "variantId": "3p",
+      "contextId": "conj-passe-simple-choisir-3p-choisirent"
     },
     {
       "id": "temps-passe-simple-reserve-05",
@@ -1310,10 +1706,11 @@
         "sera"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "formes-passe-simple"
       ],
       "explanation": "Au passé simple, on écrit « Elle fut ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "u-in"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-simple-reserve-05"
     },
     {
       "id": "temps-passe-simple-reserve-06",
@@ -1326,10 +1723,11 @@
         "auront"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "formes-passe-simple"
       ],
       "explanation": "Au passé simple, on écrit « Ils eurent ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "u-in"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-simple-reserve-06"
     },
     {
       "id": "temps-passe-simple-reserve-07",
@@ -1342,10 +1740,11 @@
         "ira"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "formes-passe-simple"
       ],
       "explanation": "Au passé simple, on écrit « Il alla ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "a"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-simple-reserve-07"
     },
     {
       "id": "temps-passe-simple-reserve-08",
@@ -1358,10 +1757,11 @@
         "feront"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "formes-passe-simple"
       ],
       "explanation": "Au passé simple, on écrit « Elles firent ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "i"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-simple-reserve-08"
     },
     {
       "id": "temps-passe-simple-reserve-09",
@@ -1374,10 +1774,11 @@
         "viendra"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "formes-passe-simple"
       ],
       "explanation": "Au passé simple, on écrit « Elle vint ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "u-in"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-simple-reserve-09"
     },
     {
       "id": "temps-passe-simple-reserve-10",
@@ -1390,10 +1791,11 @@
         "prendront"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "formes-passe-simple"
       ],
       "explanation": "Au passé simple, on écrit « Ils prirent ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "i"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-simple-02"
     },
     {
       "id": "temps-passe-simple-reserve-11",
@@ -1406,10 +1808,11 @@
         "dira"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "formes-passe-simple"
       ],
       "explanation": "Au passé simple, on écrit « Il dit ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "i"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-simple-reserve-11"
     },
     {
       "id": "temps-passe-simple-reserve-12",
@@ -1422,10 +1825,11 @@
         "verront"
       ],
       "skillIds": [
-        "temps-passe-simple"
+        "formes-passe-simple"
       ],
       "explanation": "Au passé simple, on écrit « Elles virent ». Le temps et la personne déterminent la forme du verbe.",
-      "variantId": "i"
+      "reviewMode": "question",
+      "reviewId": "temps-passe-simple-reserve-12"
     },
     {
       "id": "temps-plus-que-parfait-reserve-01",
@@ -1438,10 +1842,11 @@
         "mangerait"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "regle-plus-que-parfait-g1"
       ],
       "explanation": "Au plus-que-parfait, on écrit « Il avait mangé ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "variantId": "avoir",
+      "contextId": "conj-plus-que-parfait-manger-3s-avait-mange"
     },
     {
       "id": "temps-plus-que-parfait-reserve-02",
@@ -1454,10 +1859,11 @@
         "finirons"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "regle-plus-que-parfait-g2"
       ],
       "explanation": "Au plus-que-parfait, on écrit « Nous avions fini ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "variantId": "1p",
+      "contextId": "conj-plus-que-parfait-finir-1p-avions-fini"
     },
     {
       "id": "temps-plus-que-parfait-reserve-03",
@@ -1470,10 +1876,11 @@
         "verras"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "formes-plus-que-parfait"
       ],
       "explanation": "Au plus-que-parfait, on écrit « Tu avais vu ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-plus-que-parfait-reserve-03"
     },
     {
       "id": "temps-plus-que-parfait-reserve-04",
@@ -1486,10 +1893,11 @@
         "prendront"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "formes-plus-que-parfait"
       ],
       "explanation": "Au plus-que-parfait, on écrit « Elles avaient pris ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-plus-que-parfait-reserve-04"
     },
     {
       "id": "temps-plus-que-parfait-reserve-05",
@@ -1502,10 +1910,11 @@
         "dirai"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "formes-plus-que-parfait"
       ],
       "explanation": "Au plus-que-parfait, on écrit « J’avais dit ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-plus-que-parfait-reserve-05"
     },
     {
       "id": "temps-plus-que-parfait-reserve-06",
@@ -1518,10 +1927,11 @@
         "ferez"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "formes-plus-que-parfait"
       ],
       "explanation": "Au plus-que-parfait, on écrit « Vous aviez fait ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-plus-que-parfait-reserve-06"
     },
     {
       "id": "temps-plus-que-parfait-reserve-07",
@@ -1534,10 +1944,11 @@
         "avait allé"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "formes-plus-que-parfait"
       ],
       "explanation": "Au plus-que-parfait, on écrit « Elle était allée ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "etre"
+      "reviewMode": "question",
+      "reviewId": "temps-plus-que-parfait-reserve-07"
     },
     {
       "id": "temps-plus-que-parfait-reserve-08",
@@ -1550,10 +1961,11 @@
         "avaient venu"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "formes-plus-que-parfait"
       ],
       "explanation": "Au plus-que-parfait, on écrit « Ils étaient venus ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "etre"
+      "reviewMode": "question",
+      "reviewId": "temps-plus-que-parfait-reserve-08"
     },
     {
       "id": "temps-plus-que-parfait-reserve-09",
@@ -1566,10 +1978,11 @@
         "jouais"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "regle-plus-que-parfait-g1"
       ],
       "explanation": "Au plus-que-parfait, on écrit « Tu avais joué ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "variantId": "avoir",
+      "contextId": "conj-plus-que-parfait-jouer-2s-avais-joue"
     },
     {
       "id": "temps-plus-que-parfait-reserve-10",
@@ -1582,10 +1995,11 @@
         "aurons"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "formes-plus-que-parfait"
       ],
       "explanation": "Au plus-que-parfait, on écrit « Nous avions eu ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-plus-que-parfait-reserve-10"
     },
     {
       "id": "temps-plus-que-parfait-reserve-11",
@@ -1598,10 +2012,11 @@
         "était été"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "formes-plus-que-parfait"
       ],
       "explanation": "Au plus-que-parfait, on écrit « Il avait été ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "avoir"
+      "reviewMode": "question",
+      "reviewId": "temps-plus-que-parfait-reserve-11"
     },
     {
       "id": "temps-plus-que-parfait-reserve-12",
@@ -1614,10 +2029,11 @@
         "avaient parti"
       ],
       "skillIds": [
-        "temps-plus-que-parfait"
+        "formes-plus-que-parfait"
       ],
       "explanation": "Au plus-que-parfait, on écrit « Elles étaient parties ». Le temps composé comporte un auxiliaire et un participe passé.",
-      "variantId": "etre"
+      "reviewMode": "question",
+      "reviewId": "temps-plus-que-parfait-reserve-12"
     },
     {
       "id": "identifier-temps-reserve-01",
@@ -1838,6 +2254,3406 @@
       ],
       "explanation": "Prenons est une forme du présent de l’indicatif.",
       "variantId": "present"
+    },
+    {
+      "id": "regle-present-g1-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au présent : « Je ___ ».",
+      "answer": "chante",
+      "options": [
+        "chante",
+        "chantes",
+        "chantons",
+        "chantez"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "1s",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-chanter-1s-chante"
+    },
+    {
+      "id": "regle-present-g1-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « parler » au présent : « Tu ___ ».",
+      "answer": "parles",
+      "options": [
+        "parles",
+        "parle",
+        "parlons"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "2s",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-parler-2s-parles"
+    },
+    {
+      "id": "regle-present-g1-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au présent : « Il ___ ».",
+      "answer": "joue",
+      "options": [
+        "joue",
+        "joues",
+        "jouons",
+        "jouez"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-jouer-3s-joue"
+    },
+    {
+      "id": "regle-present-g1-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « regarder » au présent : « Nous ___ ».",
+      "answer": "regardons",
+      "options": [
+        "regardons",
+        "regarde",
+        "regardes"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "1p",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-regarder-1p-regardons"
+    },
+    {
+      "id": "regle-present-g1-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « porter » au présent : « Vous ___ ».",
+      "answer": "portez",
+      "options": [
+        "portez",
+        "porte",
+        "portes"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "2p",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-porter-2p-portez"
+    },
+    {
+      "id": "regle-present-g1-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « fermer » au présent : « Ils ___ ».",
+      "answer": "ferment",
+      "options": [
+        "ferment",
+        "ferme",
+        "fermes"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-fermer-3p-ferment"
+    },
+    {
+      "id": "regle-present-g1-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « laver » au présent : « Je ___ ».",
+      "answer": "lave",
+      "options": [
+        "lave",
+        "laves",
+        "lavons",
+        "lavez"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "1s",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-laver-1s-lave"
+    },
+    {
+      "id": "regle-present-g1-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au présent : « Tu ___ ».",
+      "answer": "chantes",
+      "options": [
+        "chantes",
+        "chante",
+        "chantons"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "2s",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-chanter-2s-chantes"
+    },
+    {
+      "id": "regle-present-g1-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « parler » au présent : « Il ___ ».",
+      "answer": "parle",
+      "options": [
+        "parle",
+        "parles",
+        "parlons",
+        "parlez"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-parler-3s-parle"
+    },
+    {
+      "id": "regle-present-g1-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au présent : « Nous ___ ».",
+      "answer": "jouons",
+      "options": [
+        "jouons",
+        "joue",
+        "joues"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "1p",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-jouer-1p-jouons"
+    },
+    {
+      "id": "regle-present-g1-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « regarder » au présent : « Vous ___ ».",
+      "answer": "regardez",
+      "options": [
+        "regardez",
+        "regarde",
+        "regardes"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "2p",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-regarder-2p-regardez"
+    },
+    {
+      "id": "regle-present-g1-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « porter » au présent : « Ils ___ ».",
+      "answer": "portent",
+      "options": [
+        "portent",
+        "porte",
+        "portes"
+      ],
+      "skillIds": [
+        "regle-present-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "Au présent, le radical prend -e, -es, -e, -ons, -ez, -ent pour les verbes réguliers du 1er groupe.",
+      "contextId": "conj-present-porter-3p-portent"
+    },
+    {
+      "id": "regle-present-g2-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » au présent : « Je ___ ».",
+      "answer": "choisis",
+      "options": [
+        "choisis",
+        "choisit",
+        "choisissons",
+        "choisissez"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "1s",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-choisir-1s-choisis"
+    },
+    {
+      "id": "regle-present-g2-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » au présent : « Tu ___ ».",
+      "answer": "réussis",
+      "options": [
+        "réussis",
+        "réussit",
+        "réussissons",
+        "réussissez"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "2s",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-reussir-2s-reussis"
+    },
+    {
+      "id": "regle-present-g2-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » au présent : « Il ___ ».",
+      "answer": "grandit",
+      "options": [
+        "grandit",
+        "grandis",
+        "grandissons"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-grandir-3s-grandit"
+    },
+    {
+      "id": "regle-present-g2-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » au présent : « Nous ___ ».",
+      "answer": "remplissons",
+      "options": [
+        "remplissons",
+        "remplis",
+        "remplit"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "1p",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-remplir-1p-remplissons"
+    },
+    {
+      "id": "regle-present-g2-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » au présent : « Vous ___ ».",
+      "answer": "obéissez",
+      "options": [
+        "obéissez",
+        "obéis",
+        "obéit"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "2p",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-obeir-2p-obeissez"
+    },
+    {
+      "id": "regle-present-g2-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au présent : « Ils ___ ».",
+      "answer": "finissent",
+      "options": [
+        "finissent",
+        "finis",
+        "finit"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-finir-3p-finissent"
+    },
+    {
+      "id": "regle-present-g2-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » au présent : « Je ___ ».",
+      "answer": "réussis",
+      "options": [
+        "réussis",
+        "réussit",
+        "réussissons",
+        "réussissez"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "1s",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-reussir-1s-reussis"
+    },
+    {
+      "id": "regle-present-g2-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » au présent : « Tu ___ ».",
+      "answer": "grandis",
+      "options": [
+        "grandis",
+        "grandit",
+        "grandissons",
+        "grandissez"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "2s",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-grandir-2s-grandis"
+    },
+    {
+      "id": "regle-present-g2-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » au présent : « Il ___ ».",
+      "answer": "remplit",
+      "options": [
+        "remplit",
+        "remplis",
+        "remplissons"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-remplir-3s-remplit"
+    },
+    {
+      "id": "regle-present-g2-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » au présent : « Nous ___ ».",
+      "answer": "obéissons",
+      "options": [
+        "obéissons",
+        "obéis",
+        "obéit"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "1p",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-obeir-1p-obeissons"
+    },
+    {
+      "id": "regle-present-g2-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au présent : « Vous ___ ».",
+      "answer": "finissez",
+      "options": [
+        "finissez",
+        "finis",
+        "finit"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "2p",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-finir-2p-finissez"
+    },
+    {
+      "id": "regle-present-g2-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » au présent : « Ils ___ ».",
+      "answer": "choisissent",
+      "options": [
+        "choisissent",
+        "choisis",
+        "choisit"
+      ],
+      "skillIds": [
+        "regle-present-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "Au présent, les verbes du 2e groupe prennent -is, -is, -it, -issons, -issez, -issent.",
+      "contextId": "conj-present-choisir-3p-choisissent"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » à l’imparfait : « Je ___ ».",
+      "answer": "chantais",
+      "options": [
+        "chantais",
+        "chantait",
+        "chantions",
+        "chantiez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "1s",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-chanter-1s-chantais"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « parler » à l’imparfait : « Tu ___ ».",
+      "answer": "parlais",
+      "options": [
+        "parlais",
+        "parlait",
+        "parlions",
+        "parliez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "2s",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-parler-2s-parlais"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » à l’imparfait : « Il ___ ».",
+      "answer": "jouait",
+      "options": [
+        "jouait",
+        "jouais",
+        "jouions"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-jouer-3s-jouait"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « regarder » à l’imparfait : « Nous ___ ».",
+      "answer": "regardions",
+      "options": [
+        "regardions",
+        "regardais",
+        "regardait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "1p",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-regarder-1p-regardions"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « porter » à l’imparfait : « Vous ___ ».",
+      "answer": "portiez",
+      "options": [
+        "portiez",
+        "portais",
+        "portait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "2p",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-porter-2p-portiez"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « fermer » à l’imparfait : « Ils ___ ».",
+      "answer": "fermaient",
+      "options": [
+        "fermaient",
+        "fermais",
+        "fermait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-fermer-3p-fermaient"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « laver » à l’imparfait : « Je ___ ».",
+      "answer": "lavais",
+      "options": [
+        "lavais",
+        "lavait",
+        "lavions",
+        "laviez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "1s",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-laver-1s-lavais"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » à l’imparfait : « Tu ___ ».",
+      "answer": "chantais",
+      "options": [
+        "chantais",
+        "chantait",
+        "chantions",
+        "chantiez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "2s",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-chanter-2s-chantais"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « parler » à l’imparfait : « Il ___ ».",
+      "answer": "parlait",
+      "options": [
+        "parlait",
+        "parlais",
+        "parlions"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-parler-3s-parlait"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » à l’imparfait : « Nous ___ ».",
+      "answer": "jouions",
+      "options": [
+        "jouions",
+        "jouais",
+        "jouait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "1p",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-jouer-1p-jouions"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « regarder » à l’imparfait : « Vous ___ ».",
+      "answer": "regardiez",
+      "options": [
+        "regardiez",
+        "regardais",
+        "regardait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "2p",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-regarder-2p-regardiez"
+    },
+    {
+      "id": "regle-imparfait-g1-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « porter » à l’imparfait : « Ils ___ ».",
+      "answer": "portaient",
+      "options": [
+        "portaient",
+        "portais",
+        "portait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "À l’imparfait, on part du présent avec nous, on retire -ons et on ajoute -ais, -ais, -ait, -ions, -iez, -aient.",
+      "contextId": "conj-imparfait-porter-3p-portaient"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » à l’imparfait : « Je ___ ».",
+      "answer": "choisissais",
+      "options": [
+        "choisissais",
+        "choisissait",
+        "choisissions",
+        "choisissiez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "1s",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-choisir-1s-choisissais"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » à l’imparfait : « Tu ___ ».",
+      "answer": "réussissais",
+      "options": [
+        "réussissais",
+        "réussissait",
+        "réussissions",
+        "réussissiez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "2s",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-reussir-2s-reussissais"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » à l’imparfait : « Il ___ ».",
+      "answer": "grandissait",
+      "options": [
+        "grandissait",
+        "grandissais",
+        "grandissions"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-grandir-3s-grandissait"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » à l’imparfait : « Nous ___ ».",
+      "answer": "remplissions",
+      "options": [
+        "remplissions",
+        "remplissais",
+        "remplissait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "1p",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-remplir-1p-remplissions"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » à l’imparfait : « Vous ___ ».",
+      "answer": "obéissiez",
+      "options": [
+        "obéissiez",
+        "obéissais",
+        "obéissait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "2p",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-obeir-2p-obeissiez"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » à l’imparfait : « Ils ___ ».",
+      "answer": "finissaient",
+      "options": [
+        "finissaient",
+        "finissais",
+        "finissait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-finir-3p-finissaient"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » à l’imparfait : « Je ___ ».",
+      "answer": "réussissais",
+      "options": [
+        "réussissais",
+        "réussissait",
+        "réussissions",
+        "réussissiez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "1s",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-reussir-1s-reussissais"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » à l’imparfait : « Tu ___ ».",
+      "answer": "grandissais",
+      "options": [
+        "grandissais",
+        "grandissait",
+        "grandissions",
+        "grandissiez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "2s",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-grandir-2s-grandissais"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » à l’imparfait : « Il ___ ».",
+      "answer": "remplissait",
+      "options": [
+        "remplissait",
+        "remplissais",
+        "remplissions"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-remplir-3s-remplissait"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » à l’imparfait : « Nous ___ ».",
+      "answer": "obéissions",
+      "options": [
+        "obéissions",
+        "obéissais",
+        "obéissait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "1p",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-obeir-1p-obeissions"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » à l’imparfait : « Vous ___ ».",
+      "answer": "finissiez",
+      "options": [
+        "finissiez",
+        "finissais",
+        "finissait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "2p",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-finir-2p-finissiez"
+    },
+    {
+      "id": "regle-imparfait-g2-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » à l’imparfait : « Ils ___ ».",
+      "answer": "choisissaient",
+      "options": [
+        "choisissaient",
+        "choisissais",
+        "choisissait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "Les verbes du 2e groupe gardent -iss- dans le radical de l’imparfait : finissais, finissions… Les terminaisons sont celles de l’imparfait.",
+      "contextId": "conj-imparfait-choisir-3p-choisissaient"
+    },
+    {
+      "id": "regle-futur-g1-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au futur simple : « Je ___ ».",
+      "answer": "chanterai",
+      "options": [
+        "chanterai",
+        "chanteras",
+        "chantera",
+        "chanterons"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "1s",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-chanter-1s-chanterai"
+    },
+    {
+      "id": "regle-futur-g1-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « parler » au futur simple : « Tu ___ ».",
+      "answer": "parleras",
+      "options": [
+        "parleras",
+        "parlerai",
+        "parlera",
+        "parlerons"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "2s",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-parler-2s-parleras"
+    },
+    {
+      "id": "regle-futur-g1-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au futur simple : « Il ___ ».",
+      "answer": "jouera",
+      "options": [
+        "jouera",
+        "jouerai",
+        "joueras",
+        "jouerons"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-jouer-3s-jouera"
+    },
+    {
+      "id": "regle-futur-g1-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « regarder » au futur simple : « Nous ___ ».",
+      "answer": "regarderons",
+      "options": [
+        "regarderons",
+        "regarderai",
+        "regarderas",
+        "regardera"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "1p",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-regarder-1p-regarderons"
+    },
+    {
+      "id": "regle-futur-g1-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « porter » au futur simple : « Vous ___ ».",
+      "answer": "porterez",
+      "options": [
+        "porterez",
+        "porterai",
+        "porteras",
+        "portera"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "2p",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-porter-2p-porterez"
+    },
+    {
+      "id": "regle-futur-g1-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « fermer » au futur simple : « Ils ___ ».",
+      "answer": "fermeront",
+      "options": [
+        "fermeront",
+        "fermerai",
+        "fermeras",
+        "fermera"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-fermer-3p-fermeront"
+    },
+    {
+      "id": "regle-futur-g1-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « laver » au futur simple : « Je ___ ».",
+      "answer": "laverai",
+      "options": [
+        "laverai",
+        "laveras",
+        "lavera",
+        "laverons"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "1s",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-laver-1s-laverai"
+    },
+    {
+      "id": "regle-futur-g1-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au futur simple : « Tu ___ ».",
+      "answer": "chanteras",
+      "options": [
+        "chanteras",
+        "chanterai",
+        "chantera",
+        "chanterons"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "2s",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-chanter-2s-chanteras"
+    },
+    {
+      "id": "regle-futur-g1-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « parler » au futur simple : « Il ___ ».",
+      "answer": "parlera",
+      "options": [
+        "parlera",
+        "parlerai",
+        "parleras",
+        "parlerons"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-parler-3s-parlera"
+    },
+    {
+      "id": "regle-futur-g1-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au futur simple : « Nous ___ ».",
+      "answer": "jouerons",
+      "options": [
+        "jouerons",
+        "jouerai",
+        "joueras",
+        "jouera"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "1p",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-jouer-1p-jouerons"
+    },
+    {
+      "id": "regle-futur-g1-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « regarder » au futur simple : « Vous ___ ».",
+      "answer": "regarderez",
+      "options": [
+        "regarderez",
+        "regarderai",
+        "regarderas",
+        "regardera"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "2p",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-regarder-2p-regarderez"
+    },
+    {
+      "id": "regle-futur-g1-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « porter » au futur simple : « Ils ___ ».",
+      "answer": "porteront",
+      "options": [
+        "porteront",
+        "porterai",
+        "porteras",
+        "portera"
+      ],
+      "skillIds": [
+        "regle-futur-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "Au futur simple des verbes réguliers du 1er groupe, on garde l’infinitif et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-porter-3p-porteront"
+    },
+    {
+      "id": "regle-futur-g2-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » au futur simple : « Je ___ ».",
+      "answer": "choisirai",
+      "options": [
+        "choisirai",
+        "choisiras",
+        "choisira",
+        "choisirons"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "1s",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-choisir-1s-choisirai"
+    },
+    {
+      "id": "regle-futur-g2-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » au futur simple : « Tu ___ ».",
+      "answer": "réussiras",
+      "options": [
+        "réussiras",
+        "réussirai",
+        "réussira",
+        "réussirons"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "2s",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-reussir-2s-reussiras"
+    },
+    {
+      "id": "regle-futur-g2-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » au futur simple : « Il ___ ».",
+      "answer": "grandira",
+      "options": [
+        "grandira",
+        "grandirai",
+        "grandiras",
+        "grandirons"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-grandir-3s-grandira"
+    },
+    {
+      "id": "regle-futur-g2-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » au futur simple : « Nous ___ ».",
+      "answer": "remplirons",
+      "options": [
+        "remplirons",
+        "remplirai",
+        "rempliras",
+        "remplira"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "1p",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-remplir-1p-remplirons"
+    },
+    {
+      "id": "regle-futur-g2-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » au futur simple : « Vous ___ ».",
+      "answer": "obéirez",
+      "options": [
+        "obéirez",
+        "obéirai",
+        "obéiras",
+        "obéira"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "2p",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-obeir-2p-obeirez"
+    },
+    {
+      "id": "regle-futur-g2-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au futur simple : « Ils ___ ».",
+      "answer": "finiront",
+      "options": [
+        "finiront",
+        "finirai",
+        "finiras",
+        "finira"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-finir-3p-finiront"
+    },
+    {
+      "id": "regle-futur-g2-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » au futur simple : « Je ___ ».",
+      "answer": "réussirai",
+      "options": [
+        "réussirai",
+        "réussiras",
+        "réussira",
+        "réussirons"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "1s",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-reussir-1s-reussirai"
+    },
+    {
+      "id": "regle-futur-g2-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » au futur simple : « Tu ___ ».",
+      "answer": "grandiras",
+      "options": [
+        "grandiras",
+        "grandirai",
+        "grandira",
+        "grandirons"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "2s",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-grandir-2s-grandiras"
+    },
+    {
+      "id": "regle-futur-g2-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » au futur simple : « Il ___ ».",
+      "answer": "remplira",
+      "options": [
+        "remplira",
+        "remplirai",
+        "rempliras",
+        "remplirons"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-remplir-3s-remplira"
+    },
+    {
+      "id": "regle-futur-g2-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » au futur simple : « Nous ___ ».",
+      "answer": "obéirons",
+      "options": [
+        "obéirons",
+        "obéirai",
+        "obéiras",
+        "obéira"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "1p",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-obeir-1p-obeirons"
+    },
+    {
+      "id": "regle-futur-g2-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au futur simple : « Vous ___ ».",
+      "answer": "finirez",
+      "options": [
+        "finirez",
+        "finirai",
+        "finiras",
+        "finira"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "2p",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-finir-2p-finirez"
+    },
+    {
+      "id": "regle-futur-g2-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » au futur simple : « Ils ___ ».",
+      "answer": "choisiront",
+      "options": [
+        "choisiront",
+        "choisirai",
+        "choisiras",
+        "choisira"
+      ],
+      "skillIds": [
+        "regle-futur-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "Au futur simple des verbes réguliers du 2e groupe, on garde l’infinitif en -ir et on ajoute -ai, -as, -a, -ons, -ez, -ont.",
+      "contextId": "conj-futur-choisir-3p-choisiront"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au passé simple : « Il ___ ».",
+      "answer": "chanta",
+      "options": [
+        "chanta",
+        "chantai",
+        "chantas",
+        "chantâmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-chanter-3s-chanta"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « parler » au passé simple : « Ils ___ ».",
+      "answer": "parlèrent",
+      "options": [
+        "parlèrent",
+        "parlai",
+        "parlas",
+        "parla"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-parler-3p-parlerent"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au passé simple : « Il ___ ».",
+      "answer": "joua",
+      "options": [
+        "joua",
+        "jouai",
+        "jouas",
+        "jouâmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-jouer-3s-joua"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « regarder » au passé simple : « Ils ___ ».",
+      "answer": "regardèrent",
+      "options": [
+        "regardèrent",
+        "regardai",
+        "regardas",
+        "regarda"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-regarder-3p-regarderent"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « porter » au passé simple : « Il ___ ».",
+      "answer": "porta",
+      "options": [
+        "porta",
+        "portai",
+        "portas",
+        "portâmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-porter-3s-porta"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « fermer » au passé simple : « Ils ___ ».",
+      "answer": "fermèrent",
+      "options": [
+        "fermèrent",
+        "fermai",
+        "fermas",
+        "ferma"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-fermer-3p-fermerent"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « laver » au passé simple : « Il ___ ».",
+      "answer": "lava",
+      "options": [
+        "lava",
+        "lavai",
+        "lavas",
+        "lavâmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-laver-3s-lava"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au passé simple : « Ils ___ ».",
+      "answer": "chantèrent",
+      "options": [
+        "chantèrent",
+        "chantai",
+        "chantas",
+        "chanta"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-chanter-3p-chanterent"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « parler » au passé simple : « Il ___ ».",
+      "answer": "parla",
+      "options": [
+        "parla",
+        "parlai",
+        "parlas",
+        "parlâmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-parler-3s-parla"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au passé simple : « Ils ___ ».",
+      "answer": "jouèrent",
+      "options": [
+        "jouèrent",
+        "jouai",
+        "jouas",
+        "joua"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-jouer-3p-jouerent"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « regarder » au passé simple : « Il ___ ».",
+      "answer": "regarda",
+      "options": [
+        "regarda",
+        "regardai",
+        "regardas",
+        "regardâmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-regarder-3s-regarda"
+    },
+    {
+      "id": "regle-passe-simple-g1-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « porter » au passé simple : « Ils ___ ».",
+      "answer": "portèrent",
+      "options": [
+        "portèrent",
+        "portai",
+        "portas",
+        "porta"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g1"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 1er groupe prennent -a au singulier et -èrent au pluriel.",
+      "contextId": "conj-passe-simple-porter-3p-porterent"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » au passé simple : « Il ___ ».",
+      "answer": "choisit",
+      "options": [
+        "choisit",
+        "choisis",
+        "choisîmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-choisir-3s-choisit"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » au passé simple : « Ils ___ ».",
+      "answer": "réussirent",
+      "options": [
+        "réussirent",
+        "réussis",
+        "réussit"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-reussir-3p-reussirent"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » au passé simple : « Il ___ ».",
+      "answer": "grandit",
+      "options": [
+        "grandit",
+        "grandis",
+        "grandîmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-grandir-3s-grandit"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » au passé simple : « Ils ___ ».",
+      "answer": "remplirent",
+      "options": [
+        "remplirent",
+        "remplis",
+        "remplit"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-remplir-3p-remplirent"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » au passé simple : « Il ___ ».",
+      "answer": "obéit",
+      "options": [
+        "obéit",
+        "obéis",
+        "obéîmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-obeir-3s-obeit"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au passé simple : « Ils ___ ».",
+      "answer": "finirent",
+      "options": [
+        "finirent",
+        "finis",
+        "finit"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-finir-3p-finirent"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » au passé simple : « Il ___ ».",
+      "answer": "réussit",
+      "options": [
+        "réussit",
+        "réussis",
+        "réussîmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-reussir-3s-reussit"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » au passé simple : « Ils ___ ».",
+      "answer": "grandirent",
+      "options": [
+        "grandirent",
+        "grandis",
+        "grandit"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-grandir-3p-grandirent"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » au passé simple : « Il ___ ».",
+      "answer": "remplit",
+      "options": [
+        "remplit",
+        "remplis",
+        "remplîmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-remplir-3s-remplit"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » au passé simple : « Ils ___ ».",
+      "answer": "obéirent",
+      "options": [
+        "obéirent",
+        "obéis",
+        "obéit"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-obeir-3p-obeirent"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au passé simple : « Il ___ ».",
+      "answer": "finit",
+      "options": [
+        "finit",
+        "finis",
+        "finîmes"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-finir-3s-finit"
+    },
+    {
+      "id": "regle-passe-simple-g2-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » au passé simple : « Ils ___ ».",
+      "answer": "choisirent",
+      "options": [
+        "choisirent",
+        "choisis",
+        "choisit"
+      ],
+      "skillIds": [
+        "regle-passe-simple-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "À la 3e personne du passé simple, les verbes du 2e groupe prennent -it au singulier et -irent au pluriel.",
+      "contextId": "conj-passe-simple-choisir-3p-choisirent"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « prendre » à l’imparfait : « Je ___ ». Au présent : « nous prenons ».",
+      "answer": "prenais",
+      "options": [
+        "prenais",
+        "prenait",
+        "prenions",
+        "preniez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "1s",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-prendre-1s-prenais"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » à l’imparfait : « Tu ___ ». Au présent : « nous venons ».",
+      "answer": "venais",
+      "options": [
+        "venais",
+        "venait",
+        "venions",
+        "veniez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "2s",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-venir-2s-venais"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « faire » à l’imparfait : « Il ___ ». Au présent : « nous faisons ».",
+      "answer": "faisait",
+      "options": [
+        "faisait",
+        "faisais",
+        "faisions"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "3s",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-faire-3s-faisait"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « dire » à l’imparfait : « Nous ___ ». Au présent : « nous disons ».",
+      "answer": "disions",
+      "options": [
+        "disions",
+        "disais",
+        "disait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "1p",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-dire-1p-disions"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « voir » à l’imparfait : « Vous ___ ». Au présent : « nous voyons ».",
+      "answer": "voyiez",
+      "options": [
+        "voyiez",
+        "voyais",
+        "voyait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "2p",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-voir-2p-voyiez"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « partir » à l’imparfait : « Ils ___ ». Au présent : « nous partons ».",
+      "answer": "partaient",
+      "options": [
+        "partaient",
+        "partais",
+        "partait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "3p",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-partir-3p-partaient"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « rendre » à l’imparfait : « Je ___ ». Au présent : « nous rendons ».",
+      "answer": "rendais",
+      "options": [
+        "rendais",
+        "rendait",
+        "rendions",
+        "rendiez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "1s",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-rendre-1s-rendais"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « vendre » à l’imparfait : « Tu ___ ». Au présent : « nous vendons ».",
+      "answer": "vendais",
+      "options": [
+        "vendais",
+        "vendait",
+        "vendions",
+        "vendiez"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "2s",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-vendre-2s-vendais"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « prendre » à l’imparfait : « Il ___ ». Au présent : « nous prenons ».",
+      "answer": "prenait",
+      "options": [
+        "prenait",
+        "prenais",
+        "prenions"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "3s",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-prendre-3s-prenait"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » à l’imparfait : « Nous ___ ». Au présent : « nous venons ».",
+      "answer": "venions",
+      "options": [
+        "venions",
+        "venais",
+        "venait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "1p",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-venir-1p-venions"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « faire » à l’imparfait : « Vous ___ ». Au présent : « nous faisons ».",
+      "answer": "faisiez",
+      "options": [
+        "faisiez",
+        "faisais",
+        "faisait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "2p",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-faire-2p-faisiez"
+    },
+    {
+      "id": "regle-imparfait-g3-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « dire » à l’imparfait : « Ils ___ ». Au présent : « nous disons ».",
+      "answer": "disaient",
+      "options": [
+        "disaient",
+        "disais",
+        "disait"
+      ],
+      "skillIds": [
+        "regle-imparfait-g3"
+      ],
+      "variantId": "3p",
+      "explanation": "On retire -ons à la forme avec nous au présent, puis on ajoute la terminaison de l’imparfait. Être, à radical ét-, est suivi à part.",
+      "contextId": "conj-imparfait-dire-3p-disaient"
+    },
+    {
+      "id": "regle-futur-g3-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « partir » au futur simple : « Je ___ ».",
+      "answer": "partirai",
+      "options": [
+        "partirai",
+        "partiras",
+        "partira",
+        "partirons"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "1s",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-partir-1s-partirai"
+    },
+    {
+      "id": "regle-futur-g3-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « sortir » au futur simple : « Tu ___ ».",
+      "answer": "sortiras",
+      "options": [
+        "sortiras",
+        "sortirai",
+        "sortira",
+        "sortirons"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "2s",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-sortir-2s-sortiras"
+    },
+    {
+      "id": "regle-futur-g3-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « dormir » au futur simple : « Il ___ ».",
+      "answer": "dormira",
+      "options": [
+        "dormira",
+        "dormirai",
+        "dormiras",
+        "dormirons"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "3s",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-dormir-3s-dormira"
+    },
+    {
+      "id": "regle-futur-g3-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « servir » au futur simple : « Nous ___ ».",
+      "answer": "servirons",
+      "options": [
+        "servirons",
+        "servirai",
+        "serviras",
+        "servira"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "1p",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-servir-1p-servirons"
+    },
+    {
+      "id": "regle-futur-g3-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « vendre » au futur simple : « Vous ___ ».",
+      "answer": "vendrez",
+      "options": [
+        "vendrez",
+        "vendrai",
+        "vendras",
+        "vendra"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "2p",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-vendre-2p-vendrez"
+    },
+    {
+      "id": "regle-futur-g3-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « rendre » au futur simple : « Ils ___ ».",
+      "answer": "rendront",
+      "options": [
+        "rendront",
+        "rendrai",
+        "rendras",
+        "rendra"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "3p",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-rendre-3p-rendront"
+    },
+    {
+      "id": "regle-futur-g3-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « attendre » au futur simple : « J’ ___ ».",
+      "answer": "attendrai",
+      "options": [
+        "attendrai",
+        "attendras",
+        "attendra",
+        "attendrons"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "1s",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-attendre-1s-attendrai"
+    },
+    {
+      "id": "regle-futur-g3-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « répondre » au futur simple : « Tu ___ ».",
+      "answer": "répondras",
+      "options": [
+        "répondras",
+        "répondrai",
+        "répondra",
+        "répondrons"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "2s",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-repondre-2s-repondras"
+    },
+    {
+      "id": "regle-futur-g3-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « partir » au futur simple : « Il ___ ».",
+      "answer": "partira",
+      "options": [
+        "partira",
+        "partirai",
+        "partiras",
+        "partirons"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "3s",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-partir-3s-partira"
+    },
+    {
+      "id": "regle-futur-g3-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « sortir » au futur simple : « Nous ___ ».",
+      "answer": "sortirons",
+      "options": [
+        "sortirons",
+        "sortirai",
+        "sortiras",
+        "sortira"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "1p",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-sortir-1p-sortirons"
+    },
+    {
+      "id": "regle-futur-g3-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « dormir » au futur simple : « Vous ___ ».",
+      "answer": "dormirez",
+      "options": [
+        "dormirez",
+        "dormirai",
+        "dormiras",
+        "dormira"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "2p",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-dormir-2p-dormirez"
+    },
+    {
+      "id": "regle-futur-g3-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « servir » au futur simple : « Ils ___ ».",
+      "answer": "serviront",
+      "options": [
+        "serviront",
+        "servirai",
+        "serviras",
+        "servira"
+      ],
+      "skillIds": [
+        "regle-futur-g3"
+      ],
+      "variantId": "3p",
+      "explanation": "Le futur de ce verbe se construit sur l’infinitif, sans le e final pour les verbes en -re, puis -ai, -as, -a, -ons, -ez, -ont. Les radicaux exceptionnels sont mémorisés à part.",
+      "contextId": "conj-futur-servir-3p-serviront"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » au passé composé : « J’ ___ ».",
+      "answer": "ai choisi",
+      "options": [
+        "ai choisi",
+        "ai choisir",
+        "as choisi",
+        "suis choisi"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "1s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-choisir-1s-ai-choisi"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » au passé composé : « Tu ___ ».",
+      "answer": "as réussi",
+      "options": [
+        "as réussi",
+        "as réussir",
+        "a réussi",
+        "es réussi"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "2s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-reussir-2s-as-reussi"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » au passé composé : « Il ___ ».",
+      "answer": "a grandi",
+      "options": [
+        "a grandi",
+        "a grandir",
+        "avons grandi",
+        "est grandi"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-grandir-3s-a-grandi"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » au passé composé : « Nous ___ ».",
+      "answer": "avons rempli",
+      "options": [
+        "avons rempli",
+        "avons remplir",
+        "avez rempli",
+        "sommes rempli"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "1p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-remplir-1p-avons-rempli"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » au passé composé : « Vous ___ ».",
+      "answer": "avez obéi",
+      "options": [
+        "avez obéi",
+        "avez obéir",
+        "ont obéi",
+        "êtes obéi"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "2p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-obeir-2p-avez-obei"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au passé composé : « Ils ___ ».",
+      "answer": "ont fini",
+      "options": [
+        "ont fini",
+        "ont finir",
+        "ai fini",
+        "sont fini"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-finir-3p-ont-fini"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » au passé composé : « J’ ___ ».",
+      "answer": "ai réussi",
+      "options": [
+        "ai réussi",
+        "ai réussir",
+        "as réussi",
+        "suis réussi"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "1s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-reussir-1s-ai-reussi"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » au passé composé : « Tu ___ ».",
+      "answer": "as grandi",
+      "options": [
+        "as grandi",
+        "as grandir",
+        "a grandi",
+        "es grandi"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "2s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-grandir-2s-as-grandi"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » au passé composé : « Il ___ ».",
+      "answer": "a rempli",
+      "options": [
+        "a rempli",
+        "a remplir",
+        "avons rempli",
+        "est rempli"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-remplir-3s-a-rempli"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » au passé composé : « Nous ___ ».",
+      "answer": "avons obéi",
+      "options": [
+        "avons obéi",
+        "avons obéir",
+        "avez obéi",
+        "sommes obéi"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "1p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-obeir-1p-avons-obei"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au passé composé : « Vous ___ ».",
+      "answer": "avez fini",
+      "options": [
+        "avez fini",
+        "avez finir",
+        "ont fini",
+        "êtes fini"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "2p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-finir-2p-avez-fini"
+    },
+    {
+      "id": "regle-passe-compose-g2-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » au passé composé : « Ils ___ ».",
+      "answer": "ont choisi",
+      "options": [
+        "ont choisi",
+        "ont choisir",
+        "ai choisi",
+        "sont choisi"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir au présent et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-passe-compose-choisir-3p-ont-choisi"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au passé composé : « J’ ___ ».",
+      "answer": "ai joué",
+      "options": [
+        "ai joué",
+        "ai jouer",
+        "suis joué",
+        "as joué"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-jouer-1s-ai-joue"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au passé composé : « Nous ___ ».",
+      "answer": "avons chanté",
+      "options": [
+        "avons chanté",
+        "avons chanter",
+        "sommes chanté",
+        "avez chanté"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-chanter-1p-avons-chante"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « regarder » au passé composé : « Vous ___ ».",
+      "answer": "avez regardé",
+      "options": [
+        "avez regardé",
+        "avez regarder",
+        "êtes regardé",
+        "ont regardé"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-regarder-2p-avez-regarde"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « porter » au passé composé : « Ils ___ ».",
+      "answer": "ont porté",
+      "options": [
+        "ont porté",
+        "ont porter",
+        "sont porté",
+        "ai porté"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-porter-3p-ont-porte"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « arriver » au passé composé : « Il ___ ».",
+      "answer": "est arrivé",
+      "options": [
+        "est arrivé",
+        "est arriver",
+        "a arrivé",
+        "est arrivés"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Il. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-arriver-3s-est-arrive"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « entrer » au passé composé : « Il ___ ».",
+      "answer": "est entré",
+      "options": [
+        "est entré",
+        "est entrer",
+        "a entré",
+        "est entrés"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Il. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-entrer-3s-est-entre"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « rester » au passé composé : « Il ___ ».",
+      "answer": "est resté",
+      "options": [
+        "est resté",
+        "est rester",
+        "a resté",
+        "est restés"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Il. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-rester-3s-est-reste"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « tomber » au passé composé : « Ils ___ ».",
+      "answer": "sont tombés",
+      "options": [
+        "sont tombés",
+        "sont tomber",
+        "ont tombés",
+        "sont tombé"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Ils. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-tomber-3p-sont-tombes"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « arriver » au passé composé : « Elle ___ ».",
+      "answer": "est arrivée",
+      "options": [
+        "est arrivée",
+        "est arriver",
+        "a arrivée",
+        "est arrivé"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Elle. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-arriver-3s-est-arrivee"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « entrer » au passé composé : « Elles ___ ».",
+      "answer": "sont entrées",
+      "options": [
+        "sont entrées",
+        "sont entrer",
+        "ont entrées",
+        "sont entré"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Elles. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-entrer-3p-sont-entrees"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « rester » au passé composé : « Elle ___ ».",
+      "answer": "est restée",
+      "options": [
+        "est restée",
+        "est rester",
+        "a restée",
+        "est resté"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Elle. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-rester-3s-est-restee"
+    },
+    {
+      "id": "regle-passe-compose-g1-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « tomber » au passé composé : « Elles ___ ».",
+      "answer": "sont tombées",
+      "options": [
+        "sont tombées",
+        "sont tomber",
+        "ont tombées",
+        "sont tombé"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g1"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Elles. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-passe-compose-tomber-3p-sont-tombees"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « prendre » au passé composé : « J’ ___ ». Participe passé fourni : « pris ».",
+      "answer": "ai pris",
+      "options": [
+        "ai pris",
+        "ai prendre",
+        "suis pris",
+        "as pris"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-prendre-1s-ai-pris"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « faire » au passé composé : « Nous ___ ». Participe passé fourni : « fait ».",
+      "answer": "avons fait",
+      "options": [
+        "avons fait",
+        "avons faire",
+        "sommes fait",
+        "avez fait"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-faire-1p-avons-fait"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « dire » au passé composé : « Vous ___ ». Participe passé fourni : « dit ».",
+      "answer": "avez dit",
+      "options": [
+        "avez dit",
+        "avez dire",
+        "êtes dit",
+        "ont dit"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-dire-2p-avez-dit"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « voir » au passé composé : « Ils ___ ». Participe passé fourni : « vu ».",
+      "answer": "ont vu",
+      "options": [
+        "ont vu",
+        "ont voir",
+        "sont vu",
+        "ai vu"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-voir-3p-ont-vu"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » au passé composé : « Il ___ ». Participe passé fourni : « venu ».",
+      "answer": "est venu",
+      "options": [
+        "est venu",
+        "est venir",
+        "a venu",
+        "est venus"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Il. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-venir-3s-est-venu"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « partir » au passé composé : « Ils ___ ». Participe passé fourni : « parti ».",
+      "answer": "sont partis",
+      "options": [
+        "sont partis",
+        "sont partir",
+        "ont partis",
+        "sont parti"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Ils. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-partir-3p-sont-partis"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « sortir » au passé composé : « Il ___ ». Participe passé fourni : « sorti ».",
+      "answer": "est sorti",
+      "options": [
+        "est sorti",
+        "est sortir",
+        "a sorti",
+        "est sortis"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Il. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-sortir-3s-est-sorti"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « naître » au passé composé : « Ils ___ ». Participe passé fourni : « né ».",
+      "answer": "sont nés",
+      "options": [
+        "sont nés",
+        "sont naître",
+        "ont nés",
+        "sont né"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Ils. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-naitre-3p-sont-nes"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » au passé composé : « Elle ___ ». Participe passé fourni : « venu ».",
+      "answer": "est venue",
+      "options": [
+        "est venue",
+        "est venir",
+        "a venue",
+        "est venu"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Elle. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-venir-3s-est-venue"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « partir » au passé composé : « Elles ___ ». Participe passé fourni : « parti ».",
+      "answer": "sont parties",
+      "options": [
+        "sont parties",
+        "sont partir",
+        "ont parties",
+        "sont parti"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Elles. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-partir-3p-sont-parties"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « sortir » au passé composé : « Elle ___ ». Participe passé fourni : « sorti ».",
+      "answer": "est sortie",
+      "options": [
+        "est sortie",
+        "est sortir",
+        "a sortie",
+        "est sorti"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Elle. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-sortir-3s-est-sortie"
+    },
+    {
+      "id": "regle-passe-compose-g3-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « naître » au passé composé : « Elles ___ ». Participe passé fourni : « né ».",
+      "answer": "sont nées",
+      "options": [
+        "sont nées",
+        "sont naître",
+        "ont nées",
+        "sont né"
+      ],
+      "skillIds": [
+        "regle-passe-compose-g3"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire au présent. Avec être, le participe s’accorde avec le sujet : Elles. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-passe-compose-naitre-3p-sont-nees"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » au plus-que-parfait : « J’ ___ ».",
+      "answer": "avais choisi",
+      "options": [
+        "avais choisi",
+        "avais choisir",
+        "étais choisi"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "1s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-choisir-1s-avais-choisi"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » au plus-que-parfait : « Tu ___ ».",
+      "answer": "avais réussi",
+      "options": [
+        "avais réussi",
+        "avais réussir",
+        "avait réussi",
+        "étais réussi"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "2s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-reussir-2s-avais-reussi"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » au plus-que-parfait : « Il ___ ».",
+      "answer": "avait grandi",
+      "options": [
+        "avait grandi",
+        "avait grandir",
+        "avions grandi",
+        "était grandi"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-grandir-3s-avait-grandi"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » au plus-que-parfait : « Nous ___ ».",
+      "answer": "avions rempli",
+      "options": [
+        "avions rempli",
+        "avions remplir",
+        "aviez rempli",
+        "étions rempli"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "1p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-remplir-1p-avions-rempli"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » au plus-que-parfait : « Vous ___ ».",
+      "answer": "aviez obéi",
+      "options": [
+        "aviez obéi",
+        "aviez obéir",
+        "avaient obéi",
+        "étiez obéi"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "2p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-obeir-2p-aviez-obei"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au plus-que-parfait : « Ils ___ ».",
+      "answer": "avaient fini",
+      "options": [
+        "avaient fini",
+        "avaient finir",
+        "avais fini",
+        "étaient fini"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-finir-3p-avaient-fini"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « réussir » au plus-que-parfait : « J’ ___ ».",
+      "answer": "avais réussi",
+      "options": [
+        "avais réussi",
+        "avais réussir",
+        "étais réussi"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "1s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-reussir-1s-avais-reussi"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « grandir » au plus-que-parfait : « Tu ___ ».",
+      "answer": "avais grandi",
+      "options": [
+        "avais grandi",
+        "avais grandir",
+        "avait grandi",
+        "étais grandi"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "2s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-grandir-2s-avais-grandi"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « remplir » au plus-que-parfait : « Il ___ ».",
+      "answer": "avait rempli",
+      "options": [
+        "avait rempli",
+        "avait remplir",
+        "avions rempli",
+        "était rempli"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "3s",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-remplir-3s-avait-rempli"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « obéir » au plus-que-parfait : « Nous ___ ».",
+      "answer": "avions obéi",
+      "options": [
+        "avions obéi",
+        "avions obéir",
+        "aviez obéi",
+        "étions obéi"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "1p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-obeir-1p-avions-obei"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « finir » au plus-que-parfait : « Vous ___ ».",
+      "answer": "aviez fini",
+      "options": [
+        "aviez fini",
+        "aviez finir",
+        "avaient fini",
+        "étiez fini"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "2p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-finir-2p-aviez-fini"
+    },
+    {
+      "id": "regle-plus-que-parfait-g2-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « choisir » au plus-que-parfait : « Ils ___ ».",
+      "answer": "avaient choisi",
+      "options": [
+        "avaient choisi",
+        "avaient choisir",
+        "avais choisi",
+        "étaient choisi"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g2"
+      ],
+      "variantId": "3p",
+      "explanation": "Le participe passé régulier du 2e groupe se termine en -i. On conjugue avoir à l’imparfait et on ajoute ce participe, sans accord avec le sujet.",
+      "contextId": "conj-plus-que-parfait-choisir-3p-avaient-choisi"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « jouer » au plus-que-parfait : « J’ ___ ».",
+      "answer": "avais joué",
+      "options": [
+        "avais joué",
+        "avais jouer",
+        "étais joué"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-jouer-1s-avais-joue"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « chanter » au plus-que-parfait : « Nous ___ ».",
+      "answer": "avions chanté",
+      "options": [
+        "avions chanté",
+        "avions chanter",
+        "étions chanté",
+        "aviez chanté"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-chanter-1p-avions-chante"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « regarder » au plus-que-parfait : « Vous ___ ».",
+      "answer": "aviez regardé",
+      "options": [
+        "aviez regardé",
+        "aviez regarder",
+        "étiez regardé",
+        "avaient regardé"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-regarder-2p-aviez-regarde"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « porter » au plus-que-parfait : « Ils ___ ».",
+      "answer": "avaient porté",
+      "options": [
+        "avaient porté",
+        "avaient porter",
+        "étaient porté",
+        "avais porté"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-porter-3p-avaient-porte"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « arriver » au plus-que-parfait : « Il ___ ».",
+      "answer": "était arrivé",
+      "options": [
+        "était arrivé",
+        "était arriver",
+        "avait arrivé",
+        "était arrivés"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Il. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-arriver-3s-etait-arrive"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « entrer » au plus-que-parfait : « Il ___ ».",
+      "answer": "était entré",
+      "options": [
+        "était entré",
+        "était entrer",
+        "avait entré",
+        "était entrés"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Il. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-entrer-3s-etait-entre"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « rester » au plus-que-parfait : « Il ___ ».",
+      "answer": "était resté",
+      "options": [
+        "était resté",
+        "était rester",
+        "avait resté",
+        "était restés"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Il. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-rester-3s-etait-reste"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « tomber » au plus-que-parfait : « Ils ___ ».",
+      "answer": "étaient tombés",
+      "options": [
+        "étaient tombés",
+        "étaient tomber",
+        "avaient tombés",
+        "étaient tombé"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Ils. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-tomber-3p-etaient-tombes"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « arriver » au plus-que-parfait : « Elle ___ ».",
+      "answer": "était arrivée",
+      "options": [
+        "était arrivée",
+        "était arriver",
+        "avait arrivée",
+        "était arrivé"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Elle. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-arriver-3s-etait-arrivee"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « entrer » au plus-que-parfait : « Elles ___ ».",
+      "answer": "étaient entrées",
+      "options": [
+        "étaient entrées",
+        "étaient entrer",
+        "avaient entrées",
+        "étaient entré"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Elles. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-entrer-3p-etaient-entrees"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « rester » au plus-que-parfait : « Elle ___ ».",
+      "answer": "était restée",
+      "options": [
+        "était restée",
+        "était rester",
+        "avait restée",
+        "était resté"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Elle. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-rester-3s-etait-restee"
+    },
+    {
+      "id": "regle-plus-que-parfait-g1-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « tomber » au plus-que-parfait : « Elles ___ ».",
+      "answer": "étaient tombées",
+      "options": [
+        "étaient tombées",
+        "étaient tomber",
+        "avaient tombées",
+        "étaient tombé"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g1"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Elles. Le participe passé régulier du 1er groupe se termine en -é.",
+      "contextId": "conj-plus-que-parfait-tomber-3p-etaient-tombees"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-01",
+      "kind": "choice",
+      "prompt": "Conjugue « prendre » au plus-que-parfait : « J’ ___ ». Participe passé fourni : « pris ».",
+      "answer": "avais pris",
+      "options": [
+        "avais pris",
+        "avais prendre",
+        "étais pris"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-prendre-1s-avais-pris"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-02",
+      "kind": "choice",
+      "prompt": "Conjugue « faire » au plus-que-parfait : « Nous ___ ». Participe passé fourni : « fait ».",
+      "answer": "avions fait",
+      "options": [
+        "avions fait",
+        "avions faire",
+        "étions fait",
+        "aviez fait"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-faire-1p-avions-fait"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-03",
+      "kind": "choice",
+      "prompt": "Conjugue « dire » au plus-que-parfait : « Vous ___ ». Participe passé fourni : « dit ».",
+      "answer": "aviez dit",
+      "options": [
+        "aviez dit",
+        "aviez dire",
+        "étiez dit",
+        "avaient dit"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-dire-2p-aviez-dit"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-04",
+      "kind": "choice",
+      "prompt": "Conjugue « voir » au plus-que-parfait : « Ils ___ ». Participe passé fourni : « vu ».",
+      "answer": "avaient vu",
+      "options": [
+        "avaient vu",
+        "avaient voir",
+        "étaient vu",
+        "avais vu"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "avoir",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec avoir et sans COD placé avant, le participe ne s’accorde pas avec le sujet. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-voir-3p-avaient-vu"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-05",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » au plus-que-parfait : « Il ___ ». Participe passé fourni : « venu ».",
+      "answer": "était venu",
+      "options": [
+        "était venu",
+        "était venir",
+        "avait venu",
+        "était venus"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Il. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-venir-3s-etait-venu"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-06",
+      "kind": "choice",
+      "prompt": "Conjugue « partir » au plus-que-parfait : « Ils ___ ». Participe passé fourni : « parti ».",
+      "answer": "étaient partis",
+      "options": [
+        "étaient partis",
+        "étaient partir",
+        "avaient partis",
+        "étaient parti"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Ils. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-partir-3p-etaient-partis"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-07",
+      "kind": "choice",
+      "prompt": "Conjugue « sortir » au plus-que-parfait : « Il ___ ». Participe passé fourni : « sorti ».",
+      "answer": "était sorti",
+      "options": [
+        "était sorti",
+        "était sortir",
+        "avait sorti",
+        "était sortis"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Il. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-sortir-3s-etait-sorti"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-08",
+      "kind": "choice",
+      "prompt": "Conjugue « naître » au plus-que-parfait : « Ils ___ ». Participe passé fourni : « né ».",
+      "answer": "étaient nés",
+      "options": [
+        "étaient nés",
+        "étaient naître",
+        "avaient nés",
+        "étaient né"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "etre-masculin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Ils. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-naitre-3p-etaient-nes"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-09",
+      "kind": "choice",
+      "prompt": "Conjugue « venir » au plus-que-parfait : « Elle ___ ». Participe passé fourni : « venu ».",
+      "answer": "était venue",
+      "options": [
+        "était venue",
+        "était venir",
+        "avait venue",
+        "était venu"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Elle. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-venir-3s-etait-venue"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-10",
+      "kind": "choice",
+      "prompt": "Conjugue « partir » au plus-que-parfait : « Elles ___ ». Participe passé fourni : « parti ».",
+      "answer": "étaient parties",
+      "options": [
+        "étaient parties",
+        "étaient partir",
+        "avaient parties",
+        "étaient parti"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Elles. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-partir-3p-etaient-parties"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-11",
+      "kind": "choice",
+      "prompt": "Conjugue « sortir » au plus-que-parfait : « Elle ___ ». Participe passé fourni : « sorti ».",
+      "answer": "était sortie",
+      "options": [
+        "était sortie",
+        "était sortir",
+        "avait sortie",
+        "était sorti"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Elle. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-sortir-3s-etait-sortie"
+    },
+    {
+      "id": "regle-plus-que-parfait-g3-exemple-12",
+      "kind": "choice",
+      "prompt": "Conjugue « naître » au plus-que-parfait : « Elles ___ ». Participe passé fourni : « né ».",
+      "answer": "étaient nées",
+      "options": [
+        "étaient nées",
+        "étaient naître",
+        "avaient nées",
+        "étaient né"
+      ],
+      "skillIds": [
+        "regle-plus-que-parfait-g3"
+      ],
+      "variantId": "etre-feminin",
+      "explanation": "On conjugue l’auxiliaire à l’imparfait. Avec être, le participe s’accorde avec le sujet : Elles. Le participe est donné pour vérifier la construction du temps, sans tester simultanément sa mémorisation.",
+      "contextId": "conj-plus-que-parfait-naitre-3p-etaient-nees"
     }
   ]
 }

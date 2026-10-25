@@ -1,18 +1,20 @@
 # Séances, notions et cartes de mémorisation
 
-Le parcours de Maurice comporte 1 103 QCM expliqués, regroupés en 77 thèmes et compétences : **67 notions transférables** et **113 cartes de mémorisation**. Plusieurs formulations peuvent tester une même carte ; elles partagent alors son calendrier.
+Le parcours de Maurice comporte 1 295 QCM expliqués, regroupés en 93 thèmes et compétences : **77 notions transférables** et **170 cartes de mémorisation**. Plusieurs formulations peuvent tester une même carte ; elles partagent alors son calendrier.
 
 ## Choisir la bonne unité de révision
 
 Une notion représente une méthode ou une distinction réutilisable : accorder le verbe avec son sujet, différencier a/as/à, lire une légende ou confronter des sources. Les anciens groupes trop larges ont été remplacés par des identifiants plus précis. Les accords du groupe nominal, du verbe et du participe passé avec être ont notamment trois calendriers distincts.
 
-Une carte représente une connaissance particulière : le synonyme d’un mot, le sens d’une expression, une orthographe lexicale, une date ou un lieu. Réussir le synonyme de « joyeux » ne repousse pas la révision du contraire de « généreux ». Les méthodes de formation des mots et de déduction du sens à partir d’indices restent des notions. Les homophones lexicaux sont suivis par mot ; les homophones grammaticaux restent suivis par distinction.
+Une carte représente une connaissance particulière : le synonyme d’un mot, le sens d’une expression, une orthographe lexicale, une forme verbale, une date ou un lieu. Réussir le synonyme de « joyeux » ne repousse pas la révision du contraire de « généreux ». Les méthodes de formation des mots et de déduction du sens à partir d’indices restent des notions. Les homophones lexicaux sont suivis par mot ; les homophones grammaticaux restent suivis par distinction.
+
+La conjugaison sépare les règles régulières par groupe et par temps des formes particulières suivies par verbe, temps et personne. Reconnaître les temps reste une notion transversale. Les exercices de construction des temps composés du 3e groupe fournissent le participe passé pour distinguer la méthode de sa mémorisation. Voir [le détail de la conjugaison](conjugaison.md).
 
 ## Composer une séance
 
 L’enfant choisit une matière ou toutes les matières. Le moteur prend en priorité les erreurs et les révisions dues, puis introduit de nouvelles notions et cartes. Les nouvelles notions tournent entre ateliers ; les nouvelles cartes tournent entre thèmes. Les objectifs sont alternés pendant la séance.
 
-La sélection vise environ douze réponses initiales. Elle propose jusqu’à trois notions lorsqu’il existe aussi des cartes, ou quatre notions sinon. Le budget tient compte du nombre de variantes nécessaires : une notion qui demande six variantes coûte six réponses initiales, pas trois. Les places restantes accueillent des cartes.
+La sélection vise environ douze réponses initiales. Elle propose jusqu’à trois notions lorsqu’il existe aussi des cartes, ou quatre notions sinon. Le budget tient compte du nombre de variantes nécessaires : une notion qui demande six variantes coûte six réponses initiales, pas trois. Lorsqu’il existe des cartes à travailler, jusqu’à trois places leur sont réservées avant de choisir les notions. Les places restantes accueillent également des cartes. Deux règles demandant six personnes ne peuvent donc pas exclure tous les rappels de formes irrégulières.
 
 Une notion est suffisamment travaillée pour la journée lorsque :
 
@@ -20,7 +22,7 @@ Une notion est suffisamment travaillée pour la journée lorsque :
 - toutes ses variantes requises ont été vérifiées, par exemple a, as **et** à, ou COD **et** COI ;
 - les erreurs ont été corrigées et au moins deux contextes nouveaux ont été réussis après la dernière erreur.
 
-Si une notion possède plus de trois variantes, chacune doit être représentée. Les petites activités historiques d’Ondine conservent leur cible adaptée à leur réserve disponible.
+Si une notion possède plus de trois variantes, chacune doit être représentée. L’atelier de calcul d’Ondine conservent leur cible adaptée à leur réserve disponible.
 
 Le sélecteur privilégie les variantes manquantes et les contextes encore inédits. Deux consignes portant sur la même phrase ne sont pas deux preuves indépendantes. Plusieurs questions sur un même texte ou un même plan ne remplacent pas un transfert à un autre contexte. Pour la conjugaison, le verbe demandé fait partie du contexte : « vous faites » et « vous voyiez » ne sont pas le même exercice, même si les deux consignes comportent « Vous ___ ».
 
