@@ -30,7 +30,7 @@ export function Practice({initial,learner,snapshot,onClose}:{initial:LearningSes
    if(question.exercise.staff){
     if(result.correct===true){setSuccess(true);timer.current=setTimeout(()=>advance(updated),1800);}
     else {setFeedback(result);locked.current=false;}
-    if('speechSynthesis' in window){
+    if(question.exercise.staff.speech!==false&&'speechSynthesis' in window){
      window.speechSynthesis.cancel();
      const voice=new SpeechSynthesisUtterance(question.exercise.answer);voice.lang='fr-FR';voice.rate=.85;
      const french=window.speechSynthesis.getVoices().find(v=>v.lang==='fr-FR');if(french)voice.voice=french;

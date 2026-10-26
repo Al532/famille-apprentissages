@@ -75,3 +75,31 @@ test('la lecture musicale couvre exactement les deux étendues françaises sans 
  for(const level of ['6e','Maurice']){assert.equal(globalProfile(level),'Maurice');assert.ok(!profileModules(catalog.modules,level).some(m=>m.id===music.id));}
  assert.ok(archive.some(c=>c.revision==='0.4.0'),'les anciennes réponses gardent leur catalogue');
 });
+
+test('Maurice descend du do central au do grave, sans voix et avec toutes les lignes supplémentaires',async()=>{
+ const {staffLayout}=await import('../apps/web/src/NoteStaff');
+ const {profileModules}=await import('../apps/web/src/profiles');
+ const {unlockedStaffExercises,planSession,nextSessionQuestion,projectQuestionReviews}=await import('@famille/core');
+ const m=catalog.modules.find(m=>m.id==='musique-lecture-maurice')!;
+ assert.equal(m.exercises.length,15);
+ assert.deepEqual(m.exercises.map(q=>q.answer),['Do','Si','La','Sol','Fa','Mi','Ré','Do','Si','La','Sol','Fa','Mi','Ré','Do']);
+ assert.deepEqual(m.exercises.map(q=>q.staff?.step),Array.from({length:15},(_,i)=>4-i));
+ assert.ok(m.exercises.every(q=>q.staff?.clef==='bass'&&q.staff.speech===false));
+ assert.deepEqual(staffLayout(m.exercises[0].staff!).ledgers,[32]);
+ assert.deepEqual(staffLayout(m.exercises.at(-1)!.staff!).ledgers,[128,144]);
+ assert.equal(staffLayout(m.exercises.at(-1)!.staff!).y,144);
+ assert.equal(staffLayout(m.exercises.at(-1)!.staff!).down,false);
+ for(const level of ['Maurice','6e'])assert.ok(profileModules(catalog.modules,level).some(x=>x.id===m.id));
+ for(const level of ['Ondine','CE1','CE2'])assert.ok(!profileModules(catalog.modules,level).some(x=>x.id===m.id));
+ const at=new Date('2026-10-26T10:00:00Z'),rows:ReturnType<typeof evaluate>[]=[];
+ assert.equal(nextSessionQuestion(planSession([m],[],'Musique',at),[m],[])?.exercise.id,m.exercises[0].id);
+ for(let i=0;i<m.exercises.length;i++){
+  assert.equal(unlockedStaffExercises(m,rows).length,Math.min(15,Math.max(3,i+1)));
+  const q=m.exercises[i];
+  for(let j=0;j<2;j++)rows.push(evaluate(catalog,{...base,id:crypto.randomUUID(),learnerId:'maurice',moduleId:m.id,moduleVersion:m.version,exerciseId:q.id,answer:q.answer},new Date(at.getTime()+rows.length*1000)));
+ }
+ assert.equal(unlockedStaffExercises(m,rows).length,15);
+ assert.equal(projectQuestionReviews([m],rows).length,15,'un suivi par hauteur, même lorsque les noms se répètent');
+ rows.push(evaluate(catalog,{...base,id:crypto.randomUUID(),moduleId:m.id,moduleVersion:m.version,exerciseId:m.exercises[0].id,answer:'Ré'},new Date(at.getTime()+60000)));
+ assert.equal(unlockedStaffExercises(m,rows).length,15,'une erreur ne referme pas les notes découvertes');
+});

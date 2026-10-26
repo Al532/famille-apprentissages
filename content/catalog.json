@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "0.7.0",
+  "revision": "0.8.0",
   "packs": [
     "packs/francais-homophones-bases-6e.json",
     "packs/francais-homophones-determinants-6e.json",
@@ -14,6 +14,7 @@
     "packs/geographie-cm2.json",
     "packs/histoire-reperes.json",
     "packs/geographie-reperes.json",
-    "packs/musique-lecture-ondine.json"
+    "packs/musique-lecture-ondine.json",
+    "packs/musique-lecture-maurice.json"
   ]
 }
