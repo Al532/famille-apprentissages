@@ -151,3 +151,22 @@ test('les erreurs de musique sont espacées, les séances restent bornées et le
  assert.equal(unlockedStaffExercises(music,[result(math),result(math)]).length,3);
  assert.ok(planSession([music,math],[],'Mathématiques',start).concepts.every(c=>c.moduleId===math.id));
 });
+
+
+test('Maurice tire ses notes débloquées au hasard sans répétition immédiate',()=>{
+ const m=catalog.modules.find(m=>m.id==='musique-lecture-maurice')!;
+ const session=planSession([m],[],'Musique',start);
+ const first=nextSessionQuestion(session,[m],[],()=>0)!;
+ const other=nextSessionQuestion(session,[m],[],()=>.999)!;
+ assert.notEqual(first.exercise.id,other.exercise.id,'le tirage change la première note');
+ assert.ok(unlockedStaffExercises(m,[]).some(q=>q.id===other.exercise.id));
+ // Every initial note has been seen once: revisits must also use randomness.
+ session.answers.push(...m.exercises.slice(0,3).map(q=>result(m,q)));
+ const low=nextSessionQuestion(session,[m],[],()=>0)!;
+ const high=nextSessionQuestion(session,[m],[],()=>.999)!;
+ assert.notEqual(low.exercise.id,high.exercise.id,'la révision ne suit pas un cycle fixe');
+ for(const next of [low,high]){
+  assert.notEqual(next.exercise.id,session.answers.at(-1)!.exerciseId);
+  assert.ok(unlockedStaffExercises(m,session.answers).some(q=>q.id===next.exercise.id));
+ }
+});

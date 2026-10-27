@@ -184,7 +184,10 @@ export function nextSessionQuestion(session:LearningSession,modules:Module[],all
    const fresh=eligible.filter(q=>!results.some(r=>r.moduleId===module.id&&r.exerciseId===q.id));
    const pool=errors.length?errors:fresh.length?fresh:eligible;
    pool.sort((a,b)=>index(a)-index(b));
-   const exercise=pool[0];
+   // Maurice: mix unlocked bass notes instead of repeating the oldest-note cycle.
+   const exercise=module.id==='musique-lecture-maurice'
+    ?pool[Math.min(pool.length-1,Math.floor(random()*pool.length))]
+    :pool[0];
    if(exercise)return {module,exercise,concept,retry:latest(exercise)?.correct===false};
    continue;
   }
