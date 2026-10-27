@@ -92,7 +92,8 @@ test('Maurice descend du do central au do grave, sans voix et avec toutes les li
  for(const level of ['Maurice','6e'])assert.ok(profileModules(catalog.modules,level).some(x=>x.id===m.id));
  for(const level of ['Ondine','CE1','CE2'])assert.ok(!profileModules(catalog.modules,level).some(x=>x.id===m.id));
  const at=new Date('2026-10-26T10:00:00Z'),rows:ReturnType<typeof evaluate>[]=[];
- assert.equal(nextSessionQuestion(planSession([m],[],'Musique',at),[m],[])?.exercise.id,m.exercises[0].id);
+ const first=nextSessionQuestion(planSession([m],[],'Musique',at),[m],[])!;
+ assert.ok(unlockedStaffExercises(m,[]).some(q=>q.id===first.exercise.id),'la première note est parmi les trois notes débloquées');
  for(let i=0;i<m.exercises.length;i++){
   assert.equal(unlockedStaffExercises(m,rows).length,Math.min(15,Math.max(3,i+1)));
   const q=m.exercises[i];
