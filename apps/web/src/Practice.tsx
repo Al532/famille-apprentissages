@@ -3,7 +3,6 @@ import {createPortal} from 'react-dom';
 import {CONTRACT_VERSION,planSession,nextSessionQuestion,sessionConceptEvidence,sessionStatus,SESSION_MAX_QUESTIONS,type LearningSession,type SessionQuestion,type Attempt,type Result} from '@famille/core';
 import {catalog} from './catalog';
 import {NoteStaff} from './NoteStaff';
-import {withSaveTimeout} from './save-timeout';
 import {submit,type Learner,type Snapshot} from './store';
 
 function attemptId(){const bytes=crypto.getRandomValues(new Uint8Array(16));bytes[6]=(bytes[6]&15)|64;bytes[8]=(bytes[8]&63)|128;const h=Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');return `${h.slice(0,8)}-${h.slice(8,12)}-${h.slice(12,16)}-${h.slice(16,20)}-${h.slice(20)}`;}
@@ -27,7 +26,7 @@ export function Practice({initial,learner,snapshot,onClose}:{initial:LearningSes
   if(!question||locked.current)return;locked.current=true;setBusy(true);setError('');
   try{
    pending.current??={schemaVersion:CONTRACT_VERSION,id:attemptId(),learnerId:learner.id,moduleId:question.module.id,moduleVersion:question.module.version,catalogRevision:catalog.revision,exerciseId:question.exercise.id,answer:value,durationMs:Math.min(600000,Date.now()-started.current),...(rating?{selfRating:rating}:{})};
-   const {result}=await withSaveTimeout(submit(pending.current));
+   const {result}=await submit(pending.current);
    if(!mounted.current)return;
    pending.current=undefined;
    const updated={...session,answers:[...session.answers,result]};setSession(updated);
@@ -44,7 +43,7 @@ export function Practice({initial,learner,snapshot,onClose}:{initial:LearningSes
    }
    else if(result.correct===true){setSuccess(true);timer.current=setTimeout(()=>advance(updated),650);}
    else {setFeedback(result);locked.current=false;}
-  }catch(e){if(!mounted.current)return;setError(e instanceof Error&&e.message.includes('CATALOG_MISMATCH')?'Une mise à jour est disponible. Recharge la page.':e instanceof Error&&e.message==='SAVE_TIMEOUT'?'La confirmation tarde à arriver. Réessaie : ta réponse sera comptée une seule fois.':'Ta réponse attend son enregistrement. Réessaie quand la connexion revient.');locked.current=false;}
+  }catch(e){if(!mounted.current)return;setError(e instanceof Error&&e.message.includes('CATALOG_MISMATCH')?'Une mise à jour est disponible. Recharge la page.':e instanceof Error&&e.message==='LOCAL_SAVE_FAILED'?'La réponse n’a pas pu être conservée sur cet appareil. Vérifie l’espace disponible, puis réessaie.':'Connexion au compte nécessaire. Ta réponse reste affichée ; reconnecte-toi avant de réessayer.');locked.current=false;}
   finally{if(mounted.current)setBusy(false);}
  }
  const done=session.concepts.filter(c=>sessionConceptEvidence(session,catalog.modules,results(),c).ready).length;
@@ -57,7 +56,7 @@ export function Practice({initial,learner,snapshot,onClose}:{initial:LearningSes
  }
  const finish=(ask=false)=>{if(ask&&busy)return;if(ask&&session.answers.length&&status==='working'&&!confirm('Terminer cette séance ? Les réponses enregistrées et les notions à reprendre sont conservées.'))return;onClose();};
  return createPortal(<section className="practice-shell" role="dialog" aria-modal="true" aria-label="Séance d’apprentissage">
-  <div className="session-toolbar"><button className="text-button" disabled={busy} onClick={()=>finish(true)}>← Terminer</button><span>{session.subject==='Toutes'?'Toutes les matières':session.subject}</span><span>{session.answers.length} / {SESSION_MAX_QUESTIONS} max.</span></div>
+  <div className="session-toolbar"><button className="text-button" disabled={busy} onClick={()=>finish(true)}>← Terminer</button><span title={snapshot.syncError}>{snapshot.pendingAttempts?`☁ ${snapshot.pendingAttempts} à synchroniser · `:''}{session.subject==='Toutes'?'Toutes les matières':session.subject}</span><span>{session.answers.length} / {SESSION_MAX_QUESTIONS} max.</span></div>
   <div className="session-progress"><progress aria-label="Étapes suffisamment travaillées dans la séance" max={session.concepts.length||1} value={done}/><span>{done} / {session.concepts.length} étapes travaillées</span></div>
   {q&&question?<div className={'exercise-stage '+(q.passage?'with-passage':'')}>
    <div className="question-label"><span>{question.module.subject}</span>{!q.staff&&<span>{question.concept.label}</span>}</div>

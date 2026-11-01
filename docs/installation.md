@@ -13,9 +13,9 @@ L’installation ouvre l’espace choisi dans une fenêtre autonome. Les comptes
 
 ## Connexion et mises à jour
 
-Une connexion Internet reste nécessaire pour ouvrir les ateliers synchronisés et confirmer l’enregistrement des réponses. Une ouverture hors connexion affiche une page explicite avec **Réessayer**. Le cache n’est pas une file d’attente de réponses hors ligne.
+Une connexion Internet reste nécessaire pour ouvrir les ateliers synchronisés. Une fois la séance ouverte, les réponses sont sauvegardées sur l’appareil et synchronisées automatiquement en arrière-plan. La séance continue pendant une coupure réseau. Une ouverture entièrement hors connexion peut encore afficher la page **Réessayer**. Voir [la sauvegarde et la synchronisation](synchronisation.md).
 
-Le bouton **Mettre à jour l’app** apparaît quand une nouvelle version du service worker est prête. Terminer et faire confirmer la réponse en cours avant de l’utiliser : ce bouton recharge la page. Aucun rechargement automatique n’est imposé pendant une séance.
+Le bouton **Mettre à jour l’app** apparaît quand une nouvelle version du service worker est prête. Terminer la saisie en cours avant de l’utiliser : ce bouton recharge la page. Les réponses déjà sauvegardées dans la file locale restent conservées. Aucun rechargement automatique n’est imposé pendant une séance.
 
 ## Livraison et périmètre du cache
 

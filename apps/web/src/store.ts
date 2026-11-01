@@ -5,8 +5,10 @@ import {attemptSchema,evaluate,projectSkill,schedule,type Attempt,type Result,ty
 import {catalog,catalogs} from './catalog';
 import {projectHistory,type RecordedAttempt} from './history';
 import {recordAttempt} from './cloud-record';
+import {pendingAttempts,queueAttempt,confirmAttempt,mergeAttempts} from './outbox';
+import {withSaveTimeout} from './save-timeout';
 export type Learner={id:string;name:string;level:string;uid?:string};
-export type Snapshot={learners:Learner[];results:Result[];progress:Record<string,SkillProgress[]>;reviews:Record<string,ReviewState[]>;familyId?:string;role?:'parent'|'learner';sync?:'loading'|'synced'|'offline';ignoredAttempts?:number};
+export type Snapshot={learners:Learner[];results:Result[];progress:Record<string,SkillProgress[]>;reviews:Record<string,ReviewState[]>;familyId?:string;role?:'parent'|'learner';sync?:'loading'|'synced'|'offline';pendingAttempts?:number;syncError?:string;ignoredAttempts?:number};
 export const empty:Snapshot={learners:[],results:[],progress:{},reviews:{}};
 const env=import.meta.env;
 const required=[env.VITE_FIREBASE_API_KEY,env.VITE_FIREBASE_AUTH_DOMAIN,env.VITE_FIREBASE_PROJECT_ID,env.VITE_FIREBASE_APP_ID];
@@ -24,14 +26,18 @@ const initial=():Snapshot=>({...structuredClone(empty),learners:[{id:'maurice',n
 export function readDemo():Snapshot {try {const v=localStorage.getItem(key);return v?JSON.parse(v):initial();}catch{return initial();}}
 export function resetDemo(){localStorage.removeItem(key);window.dispatchEvent(new Event('family-demo-change'));}
 export function listenDemo(cb:(s:Snapshot)=>void){const run=()=>cb(readDemo());run();window.addEventListener('storage',run);window.addEventListener('family-demo-change',run);return()=>{window.removeEventListener('storage',run);window.removeEventListener('family-demo-change',run);};}
+let activeMembership:{uid:string;familyId:string;learnerId:string}|undefined;
 export async function submit(raw:Attempt):Promise<{result:Result}> {
  const attempt=attemptSchema.parse(raw);
  if(db){
   const user=auth!.currentUser;if(!user)throw new Error('Connexion nécessaire.');
-  const access=await getDoc(doc(db,'access',user.uid)),membership=access.data();
-  if(!membership||membership.role!=='learner'||membership.learnerId!==attempt.learnerId)throw new Error('Ce compte ne peut pas enregistrer les réponses de cet enfant.');
-  evaluate(catalog,attempt); // Check catalog compatibility before committing the raw answer.
-  const saved=await recordAttempt(db,user.uid,membership.familyId,attempt);
+  const membership=activeMembership;
+  if(!membership||membership.uid!==user.uid||membership.learnerId!==attempt.learnerId)throw new Error('Connexion nécessaire.');
+  evaluate(catalog,attempt);
+  let saved;
+  try{saved=queueAttempt(localStorage,{uid:user.uid,familyId:membership.familyId,attempt,recordedAt:new Date().toISOString()});}
+  catch{throw new Error('LOCAL_SAVE_FAILED');}
+  window.dispatchEvent(new Event('family-outbox-change'));
   return {result:evaluate(catalog,saved.attempt,new Date(saved.recordedAt))};
  }
  const data=readDemo(),duplicate=data.results.find(r=>r.id===attempt.id);
@@ -68,31 +74,87 @@ export async function addLearner(familyId:string,input:{name:string;level:string
 export async function watchCloud(user:User,cb:(s:Snapshot)=>void,onError:(e:Error)=>void):Promise<()=>void>{
  let state=structuredClone(empty),stopped=false,started=false;
  const unsubscribers:(()=>void)[]=[],learnerStops=new Map<string,()=>void>(),histories=new Map<string,ReturnType<typeof projectHistory>>(),fresh=new Map<string,boolean>();
- const publish=()=>{if(stopped)return;state.results=[...histories.values()].flatMap(h=>h.results);state.ignoredAttempts=[...histories.values()].reduce((sum,h)=>sum+h.ignored,0);state.sync=[...fresh.values()].every(Boolean)?'synced':'offline';cb({...state,progress:{...state.progress},reviews:{...state.reviews}});};
- const fail=(e:Error)=>{if(stopped)return;stopped=true;unsubscribers.forEach(u=>u());learnerStops.forEach(u=>u());cb(empty);onError(e);};
+ const remoteRecords=new Map<string,RecordedAttempt[]>(),delivered=new Set<string>();
+ let syncing=false;
+ const local=()=>state.role==='learner'&&state.familyId?pendingAttempts(localStorage,user.uid,state.familyId).filter(r=>r.attempt.learnerId===activeMembership?.learnerId):[];
+ const publish=()=>{
+  if(stopped)return;
+  let pending:ReturnType<typeof local>=[];
+  try{pending=local();}catch{state.syncError='Les réponses locales ne peuvent pas être lues sur cet appareil.';}
+  for(const learner of state.learners){
+   const history=projectHistory(catalogs,mergeAttempts(remoteRecords.get(learner.id)??[],pending.filter(r=>r.attempt.learnerId===learner.id)));
+   histories.set(learner.id,history);state.progress[learner.id]=history.progress;state.reviews[learner.id]=history.reviews;
+  }
+  state.pendingAttempts=pending.length;
+  state.results=[...histories.values()].flatMap(h=>h.results);
+  state.ignoredAttempts=[...histories.values()].reduce((sum,h)=>sum+h.ignored,0);
+  state.sync=[...fresh.values()].every(Boolean)?'synced':'offline';
+  cb({...state,progress:{...state.progress},reviews:{...state.reviews}});
+ };
+ const flush=async()=>{
+  if(syncing||stopped||auth?.currentUser?.uid!==user.uid||!navigator.onLine)return;
+  syncing=true;
+  try{
+   for(const entry of local()){
+    if(stopped||auth?.currentUser?.uid!==user.uid)break;
+    if(delivered.has(entry.attempt.id))continue;
+    try{
+     await withSaveTimeout(recordAttempt(db!,user.uid,entry.familyId,entry.attempt));
+     delivered.add(entry.attempt.id);state.syncError=undefined;
+    }catch(e){
+     state.syncError=(e as {code?:string}).code==='permission-denied'?'Synchronisation refusée : reconnectez ce compte. Les réponses restent sur cet appareil.':'Synchronisation en attente. Les réponses restent sur cet appareil.';
+     break;
+    }
+   }
+  }catch{state.syncError='Les réponses locales ne peuvent pas être lues sur cet appareil.';}
+  finally{syncing=false;publish();}
+ };
+ const changed=()=>{publish();void flush();};
+ const resume=()=>{if(document.visibilityState==='visible')void flush();};
+ window.addEventListener('family-outbox-change',changed);
+ window.addEventListener('storage',changed);
+ window.addEventListener('online',changed);
+ document.addEventListener('visibilitychange',resume);
+ const retry=setInterval(()=>void flush(),20000);
+ const cleanup=()=>{
+  clearInterval(retry);
+  window.removeEventListener('family-outbox-change',changed);
+  window.removeEventListener('storage',changed);
+  window.removeEventListener('online',changed);
+  document.removeEventListener('visibilitychange',resume);
+  if(activeMembership?.uid===user.uid)activeMembership=undefined;
+  unsubscribers.forEach(u=>u());learnerStops.forEach(u=>u());
+ };
+ const fail=(e:Error)=>{if(stopped)return;stopped=true;cleanup();cb(empty);onError(e);};
  const watchLearner=(id:string)=>{
   if(learnerStops.has(id))return;fresh.set(id,false);
   learnerStops.set(id,onSnapshot(collection(db!,`families/${state.familyId}/learners/${id}/attempts`),{includeMetadataChanges:true},snapshot=>{
    const records:RecordedAttempt[]=snapshot.docs.filter(d=>!d.metadata.hasPendingWrites).flatMap(d=>{const data=d.data();return data.recordedAt instanceof Timestamp?[{attempt:data.attempt as Attempt,recordedAt:data.recordedAt.toDate().toISOString()}]:[];});
-   const history=projectHistory(catalogs,records);histories.set(id,history);state.progress[id]=history.progress;state.reviews[id]=history.reviews;fresh.set(id,!snapshot.metadata.fromCache);publish();
+   remoteRecords.set(id,records);
+   if(state.role==='learner')for(const record of records){
+    try{confirmAttempt(localStorage,user.uid,record.attempt.id);delivered.delete(record.attempt.id);}catch{state.syncError='Impossible de mettre à jour les réponses locales.';}
+   }
+   fresh.set(id,!snapshot.metadata.fromCache);publish();
   },fail));
  };
  unsubscribers.push(onSnapshot(doc(db!,'access',user.uid),snapshot=>{
   const access=snapshot.data();
   if(!access||typeof access.familyId!=='string'||!['parent','learner'].includes(access.role))return fail(new Error('Compte à configurer : communiquez votre identifiant au responsable de la famille.'));
   if(__APP__==='parents'&&access.role!=='parent')return fail(new Error('Cet espace est réservé aux parents.'));
-  if(started){if(access.familyId!==state.familyId||access.role!==state.role)return fail(new Error('Vos droits ont changé. Reconnectez-vous.'));return;}
+  if(started){if(access.familyId!==state.familyId||access.role!==state.role||(access.role==='learner'&&access.learnerId!==activeMembership?.learnerId))return fail(new Error('Vos droits ont changé. Reconnectez-vous.'));return;}
   started=true;state.familyId=access.familyId;state.role=access.role;fresh.set('profiles',false);cb({...state,sync:'loading'});
   if(access.role==='parent'){
    unsubscribers.push(onSnapshot(collection(db!,`families/${access.familyId}/learners`),{includeMetadataChanges:true},snapshot=>{
     state.learners=snapshot.docs.map(d=>({id:d.id,...d.data()} as Learner));
-    const ids=new Set(state.learners.map(l=>l.id));for(const [id,stop] of learnerStops)if(!ids.has(id)){stop();learnerStops.delete(id);histories.delete(id);fresh.delete(id);delete state.progress[id];delete state.reviews[id];}
+    const ids=new Set(state.learners.map(l=>l.id));for(const [id,stop] of learnerStops)if(!ids.has(id)){stop();learnerStops.delete(id);histories.delete(id);remoteRecords.delete(id);fresh.delete(id);delete state.progress[id];delete state.reviews[id];}
     state.learners.forEach(l=>watchLearner(l.id));fresh.set('profiles',!snapshot.metadata.fromCache);publish();
    },fail));
   }else if(typeof access.learnerId==='string'){
    const id=access.learnerId;
+   activeMembership={uid:user.uid,familyId:access.familyId,learnerId:id};
+   void flush();
    unsubscribers.push(onSnapshot(doc(db!,`families/${access.familyId}/learners/${id}`),{includeMetadataChanges:true},snapshot=>{state.learners=snapshot.exists()?[{id,...snapshot.data()} as Learner]:[];fresh.set('profiles',!snapshot.metadata.fromCache);publish();},fail));watchLearner(id);
   }else fail(new Error('Profil enfant absent.'));
  },fail));
- return()=>{stopped=true;unsubscribers.forEach(u=>u());learnerStops.forEach(u=>u());};
+ return()=>{stopped=true;cleanup();};
 }
