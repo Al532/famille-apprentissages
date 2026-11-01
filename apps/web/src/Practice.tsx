@@ -60,7 +60,7 @@ export function Practice({initial,learner,snapshot,onClose}:{initial:LearningSes
    <div className="question-layout">
     {q.passage&&<aside className="reading-passage"><p className="eyebrow">LE TEXTE</p><p>{q.passage}</p></aside>}
     {q.diagram==='town-map'&&<TownMap/>}
-    <div className="question-main"><h2 ref={title} tabIndex={-1}>{q.prompt}</h2>{q.staff&&<NoteStaff note={q.staff}/>}
+    <div className="question-main"><h2 ref={title} tabIndex={-1}>{q.prompt}</h2>{q.staff&&<NoteStaff note={q.staff} piano={question.module.id==='musique-lecture-ondine'}/>}
      {q.staff&&(feedback||(success&&q.staff.speech!==false))?<div className="feedback music-feedback" aria-live="polite"><strong>{q.answer}</strong>{feedback&&<button className="primary" aria-label="Note suivante" onClick={()=>advance()}>→</button>}</div>:feedback?<div className="feedback" aria-live="polite"><h3>{feedback.correct===false?'Prenons le temps de comprendre.':'C’est enregistré.'}</h3><p>La réponse : <strong>{q.answer}</strong></p>{q.explanation&&<p>{q.explanation}</p>}<button className="primary" onClick={()=>advance()}>J’ai compris →</button></div>:<>
       {q.kind==='choice'&&<div className={q.staff?"choices music-choices":"choices"}>{options.map(option=><button key={option} disabled={busy||success||!!error} onClick={()=>void send(option)}>{option}</button>)}</div>}
       {(q.kind==='number'||q.kind==='text')&&<form onSubmit={e=>{e.preventDefault();void send(answer);}}><label>Ta réponse<input required value={answer} disabled={busy||success||!!error} onChange={e=>setAnswer(e.target.value)}/></label><button className="primary" disabled={busy||success||!!error}>Vérifier</button></form>}
