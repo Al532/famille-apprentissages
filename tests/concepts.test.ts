@@ -209,3 +209,30 @@ test('une séance Ondine limitée ou interrompue peut être relancée immédiate
   assert.equal(unlockedStaffExercises(music,history).length,3);
  }
 });
+
+test('la découverte accélérée réserve deux nouvelles notions malgré des rappels en retard',()=>{
+ const m:Module={...module,id:'discovery-test',skills:Array.from({length:6},(_,i)=>({id:`skill-${i}`,label:`Notion ${i}`})),exercises:[]};
+ m.exercises=m.skills.flatMap(s=>Array.from({length:4},(_,i)=>({...questions[0],id:`${s.id}-${i}`,skillIds:[s.id],variantId:undefined,contextId:`${s.id}-${i}`,reviewMode:'concept' as const})));
+ const history=m.skills.slice(0,4).map(s=>result(m,m.exercises.find(q=>q.skillIds.includes(s.id))!,false,new Date('2026-10-18T09:00:00Z')));
+ const standard=planSession([m],history,'Français',start);
+ assert.ok(standard.concepts.every(c=>history.some(r=>r.skillIds.includes(c.skillId))));
+ const fast=planSession([m],history,'Français',start,{discovery:'faster'});
+ assert.deepEqual(fast.concepts.slice(0,2).map(c=>c.skillId),['skill-4','skill-5']);
+ assert.ok(fast.concepts.some(c=>history.some(r=>r.skillIds.includes(c.skillId))));
+ assert.equal(nextSessionQuestion(fast,[m],history,()=>0)?.concept.skillId,'skill-4');
+ let steps=0;
+ while(sessionStatus(fast,[m],history)==='working'&&steps++<30){const next=nextSessionQuestion(fast,[m],history,()=>0)!;assert.ok(next);fast.answers.push(result(m,next.exercise));}
+ assert.equal(sessionStatus(fast,[m],history),'complete');
+ assert.ok(fast.answers.length<=SESSION_MAX_QUESTIONS);
+});
+
+test('la découverte accélérée garde un rappel et introduit une carte malgré une file de cartes dues',()=>{
+ const m:Module={...module,id:'discovery-cards',reviewMode:'question',skills:[{id:'facts',label:'Repères'}],exercises:Array.from({length:16},(_,i)=>({...questions[0],id:`fact-${i}`,skillIds:['facts'],variantId:undefined,reviewMode:'question' as const,reviewId:undefined}))};
+ const history=m.exercises.slice(0,13).map(q=>result(m,q,false,new Date('2026-10-18T09:00:00Z')));
+ const standard=planSession([m],history,'Français',start);
+ assert.ok(standard.concepts.every(c=>history.some(r=>r.exerciseId===c.exerciseId)));
+ const fast=planSession([m],history,'Français',start,{discovery:'faster'});
+ assert.equal(fast.concepts[0].exerciseId,'fact-0');
+ assert.equal(fast.concepts[1].exerciseId,'fact-13');
+ assert.equal(fast.concepts.length,12);
+});

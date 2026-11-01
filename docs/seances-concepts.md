@@ -14,6 +14,8 @@ La conjugaison sépare les règles régulières par groupe et par temps des form
 
 L’enfant choisit une matière ou toutes les matières. Le moteur prend en priorité les erreurs et les révisions dues, puis introduit de nouvelles notions et cartes. Les nouvelles notions tournent entre ateliers ; les nouvelles cartes tournent entre thèmes. Les objectifs sont alternés pendant la séance.
 
+Pour le profil Maurice (y compris l’ancien profil 6e), jusqu’à deux nouvelles notions passent en tête de sélection, dans le budget habituel, même lorsque des révisions sont dues. Les autres places continuent d’accueillir les erreurs et les rappels. Lorsqu’il reste des cartes inédites et des cartes à revoir, une nouvelle carte est placée juste après le premier rappel. Cette priorité accélère la découverte sans réduire les critères de validation ni allonger les séances. Le parcours d’Ondine et le déblocage des notes de musique gardent leurs règles propres.
+
 La sélection vise environ douze réponses initiales. Elle propose jusqu’à trois notions lorsqu’il existe aussi des cartes, ou quatre notions sinon. Le budget tient compte du nombre de variantes nécessaires : une notion qui demande six variantes coûte six réponses initiales, pas trois. Lorsqu’il existe des cartes à travailler, jusqu’à trois places leur sont réservées avant de choisir les notions. Les places restantes accueillent également des cartes. Deux règles demandant six personnes ne peuvent donc pas exclure tous les rappels de formes irrégulières.
 
 Une notion est suffisamment travaillée pour la journée lorsque :

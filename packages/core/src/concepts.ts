@@ -107,7 +107,7 @@ function staffEvidence(module:Module,session:LearningSession,results:Result[]):C
 }
 const practiceLimit=(modules:Module[],c:SessionConcept)=>isStaffModule(modules.find(m=>m.id===c.moduleId)!)?SESSION_MAX_QUESTIONS:CONCEPT_DAILY_LIMIT;
 /** Balance concept practice in French and individual retrieval of historical/geographic facts. */
-export function planSession(modules:Module[],results:Result[],subject='Toutes',now=new Date()):LearningSession {
+export function planSession(modules:Module[],results:Result[],subject='Toutes',now=new Date(),options:{discovery?:'faster'}={}):LearningSession {
  const matching=modules.filter(m=>subject==='Toutes'||m.subject===subject);
  const staffModules=matching.filter(isStaffModule),eligibleModules=matching.filter(m=>!isStaffModule(m));
  const all=projectConcepts(eligibleModules,results);
@@ -118,6 +118,11 @@ export function planSession(modules:Module[],results:Result[],subject='Toutes',n
  const moduleIds=[...new Set(states.map(c=>c.moduleId))].sort((a,b)=>introduced(a)-introduced(b)),orderedStates:ConceptState[]=[];
  for(let i=0;orderedStates.length<states.length;i++)for(const id of moduleIds){const c=states.filter(c=>c.moduleId===id)[i];if(c)orderedStates.push(c);}
  orderedStates.sort((a,b)=>priority(a)-priority(b)||(a.card&&b.card?Date.parse(a.card.due)-Date.parse(b.card.due):0));
+ // Reserve room for discovery even when overdue reviews fill the whole queue.
+ if(options.discovery==='faster'){
+  const fresh=orderedStates.filter(c=>!c.card).slice(0,2);
+  orderedStates.splice(0,orderedStates.length,...fresh,...orderedStates.filter(c=>!fresh.includes(c)));
+ }
  const reviews=projectQuestionReviews(eligibleModules,results),byId=new Map(reviews.map(r=>[questionKey(r.moduleId,r.exerciseId),r]));
  const facts=eligibleModules.flatMap(module=>module.exercises.filter(q=>reviewModeFor(module,q)==='question'&&reviewIdFor(q)===q.id).flatMap(q=>{
   const review=byId.get(questionKey(module.id,q.id));if(review&&Date.parse(review.card.due)>now.getTime())return [];
@@ -138,7 +143,10 @@ export function planSession(modules:Module[],results:Result[],subject='Toutes',n
   if(cost>budget)continue;
   chosen.push({moduleId:c.moduleId,skillId:c.skillId,label:c.label,subject:c.subject});budget-=cost;
  }
- chosen.push(...[...due,...fresh].slice(0,budget+reservedCards).map(({review,...f})=>f));
+ const cardOrder=options.discovery==='faster'&&due.length&&fresh.length
+  ?[due[0],fresh[0],...due.slice(1),...fresh.slice(1)]
+  :[...due,...fresh];
+ chosen.push(...cardOrder.slice(0,budget+reservedCards).map(({review,...f})=>f));
  for(const m of staffModules){
   const c={moduleId:m.id,skillId:m.skills[0].id,label:m.title,subject:m.subject};
   const reviews=projectQuestionReviews([m],results);
