@@ -131,7 +131,12 @@ test('les séances musicales progressent sans notes verrouillées, conservent le
   assert.ok(session.answers.length<=SESSION_MAX_QUESTIONS);
   complete=sessionStatus(session,[music],accumulated)==='complete';
   accumulated.push(...session.answers);
-  if(complete)assert.equal(planSession([music],accumulated,'Musique',at).concepts.length,0);
+  if(complete){
+   const next=planSession([music],accumulated,'Musique',at);
+   assert.equal(next.concepts.length,1);
+   assert.equal(sessionStatus(next,[music],accumulated),'working');
+   assert.ok(nextSessionQuestion(next,[music],accumulated));
+  }
  }
  assert.deepEqual([...new Set(seen)],['treble-0','treble-1','treble-2','treble-3','treble-4','bass-4','bass-3','bass-2','bass-1','bass-0']);
  assert.equal(complete,true);
@@ -168,5 +173,39 @@ test('Maurice tire ses notes débloquées au hasard sans répétition immédiate
  for(const next of [low,high]){
   assert.notEqual(next.exercise.id,session.answers.at(-1)!.exerciseId);
   assert.ok(unlockedStaffExercises(m,session.answers).some(q=>q.id===next.exercise.id));
+ }
+});
+
+
+test('Ondine peut enchaîner plusieurs séances le même jour après avoir travaillé toutes les notes',()=>{
+ const rows=music.exercises.flatMap(q=>[result(music,q),result(music,q)]);
+ assert.equal(unlockedStaffExercises(music,rows).length,music.exercises.length);
+ for(let run=0;run<3;run++){
+  const session=planSession([music],rows,'Musique',start);
+  assert.equal(sessionStatus(session,[music],rows),'working');
+  while(sessionStatus(session,[music],rows)==='working'){
+   const next=nextSessionQuestion(session,[music],rows,()=>0);assert.ok(next);
+   session.answers.push(result(music,next.exercise));
+  }
+  assert.equal(sessionStatus(session,[music],rows),'complete');
+  assert.equal(new Set(session.answers.map(r=>r.exerciseId)).size,music.exercises.length);
+  assert.ok(session.answers.length<=SESSION_MAX_QUESTIONS);
+  rows.push(...session.answers);
+ }
+ assert.equal(projectQuestionReviews([music],rows).length,music.exercises.length);
+});
+
+test('une séance Ondine limitée ou interrompue peut être relancée immédiatement',()=>{
+ const first=planSession([music],[],'Musique',start);
+ for(let i=0;i<SESSION_MAX_QUESTIONS;i++){
+  const next=nextSessionQuestion(first,[music],[],()=>0);assert.ok(next);
+  first.answers.push(result(music,next.exercise,false));
+ }
+ assert.equal(sessionStatus(first,[music],[]),'limit');
+ for(const history of [first.answers,first.answers.slice(0,2)]){
+  const next=planSession([music],history,'Musique',start);
+  assert.equal(sessionStatus(next,[music],history),'working');
+  assert.ok(nextSessionQuestion(next,[music],history));
+  assert.equal(unlockedStaffExercises(music,history).length,3);
  }
 });

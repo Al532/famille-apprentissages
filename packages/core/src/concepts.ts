@@ -96,7 +96,11 @@ export function unlockedStaffExercises(module:Module,results:Result[]):Exercise[
 function staffEvidence(module:Module,session:LearningSession,results:Result[]):ConceptEvidence {
  const rows=ordered([...results,...session.answers]);
  const bank=unlockedStaffExercises(module,rows);
- const today=rows.filter(r=>r.moduleId===module.id&&learningDay(r.recordedAt)===learningDay(session.startedAt));
+ // Ondine can practise again today: completion belongs to this session,
+ // while note unlocks still use the complete immutable history.
+ const today=module.id==='musique-lecture-ondine'
+  ?ordered(session.answers).filter(r=>r.moduleId===module.id)
+  :rows.filter(r=>r.moduleId===module.id&&learningDay(r.recordedAt)===learningDay(session.startedAt));
  const correct=bank.filter(q=>today.filter(r=>r.exerciseId===q.id).at(-1)?.correct===true);
  const pending=bank.filter(q=>today.filter(r=>r.exerciseId===q.id).at(-1)?.correct===false).map(q=>q.id);
  return {attempts:session.answers.filter(r=>r.moduleId===module.id).length,distinctCorrect:correct.length,transferAfterError:0,pending,missingVariants:[],ready:bank.length===module.exercises.length&&correct.length===bank.length};
@@ -139,7 +143,7 @@ export function planSession(modules:Module[],results:Result[],subject='Toutes',n
   const c={moduleId:m.id,skillId:m.skills[0].id,label:m.title,subject:m.subject};
   const reviews=projectQuestionReviews([m],results);
   const bank=unlockedStaffExercises(m,results);
-  if(bank.length<m.exercises.length||bank.some(q=>!reviews.some(r=>r.exerciseId===q.id))||reviews.some(r=>Date.parse(r.card.due)<=now.getTime()||r.needsRepair))chosen.push(c);
+  if(m.id==='musique-lecture-ondine'||bank.length<m.exercises.length||bank.some(q=>!reviews.some(r=>r.exerciseId===q.id))||reviews.some(r=>Date.parse(r.card.due)<=now.getTime()||r.needsRepair))chosen.push(c);
  }
  return {startedAt:now.toISOString(),subject,concepts:chosen,answers:[]};
 }

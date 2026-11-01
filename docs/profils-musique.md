@@ -7,3 +7,6 @@ Le module de musique d’Ondine comporte dix notes naturelles : do3–sol3 en cl
 La répétition est gérée par note et par clé. Les réponses brutes suivent le contrat v1 existant, avec le catalogue 0.5.0 et le module 1.0.0. Les statistiques et calendriers sont reconstruits dans les espaces enfant et parent. Le catalogue 0.4.0 est archivé pour conserver les anciennes corrections.
 
 Le dessin de la clé de sol utilise un contour Bravura, sous licence SIL OFL jointe dans les fichiers publics.
+
+
+Ondine peut relancer la lecture de notes autant de fois qu’elle le souhaite, y compris le même jour quand toutes les notes ont déjà été travaillées. Le bilan propose « Refaire une séance de lecture ». Chaque séance garde sa limite de 24 réponses ou 12 minutes ; sa validation utilise uniquement ses propres réponses. Les notes débloquées, l’historique et le suivi parent restent reconstruits à partir de toutes les réponses.

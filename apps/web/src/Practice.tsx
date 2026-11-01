@@ -1,6 +1,6 @@
 import React,{useEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
-import {CONTRACT_VERSION,nextSessionQuestion,sessionConceptEvidence,sessionStatus,SESSION_MAX_QUESTIONS,type LearningSession,type SessionQuestion,type Attempt,type Result} from '@famille/core';
+import {CONTRACT_VERSION,planSession,nextSessionQuestion,sessionConceptEvidence,sessionStatus,SESSION_MAX_QUESTIONS,type LearningSession,type SessionQuestion,type Attempt,type Result} from '@famille/core';
 import {catalog} from './catalog';
 import {NoteStaff} from './NoteStaff';
 import {submit,type Learner,type Snapshot} from './store';
@@ -46,6 +46,11 @@ export function Practice({initial,learner,snapshot,onClose}:{initial:LearningSes
  const done=session.concepts.filter(c=>sessionConceptEvidence(session,catalog.modules,results(),c).ready).length;
  const status=sessionStatus(session,catalog.modules,results());
  const q=question?.exercise;
+ const repeatMusic=session.concepts.some(c=>c.moduleId==='musique-lecture-ondine');
+ function restartMusic(){
+  const next=planSession(catalog.modules.filter(m=>m.id==='musique-lecture-ondine'),[...results(),...session.answers],'Musique');
+  setSession(next);advance(next);
+ }
  const finish=(ask=false)=>{if(ask&&busy)return;if(ask&&session.answers.length&&status==='working'&&!confirm('Terminer cette séance ? Les réponses enregistrées et les notions à reprendre sont conservées.'))return;onClose();};
  return createPortal(<section className="practice-shell" role="dialog" aria-modal="true" aria-label="Séance d’apprentissage">
   <div className="session-toolbar"><button className="text-button" disabled={busy} onClick={()=>finish(true)}>← Terminer</button><span>{session.subject==='Toutes'?'Toutes les matières':session.subject}</span><span>{session.answers.length} / {SESSION_MAX_QUESTIONS} max.</span></div>
@@ -64,7 +69,7 @@ export function Practice({initial,learner,snapshot,onClose}:{initial:LearningSes
     </div>
    </div>
    <div className="session-message" aria-live="polite">{busy?'Enregistrement…':success?(q.staff?'':'✓ Bien joué !'):error?<><p role="alert">{error}</p><button onClick={()=>void send(pending.current?.answer??'',pending.current?.selfRating)}>Réessayer l’enregistrement</button></>:q.staff?'':feedback?(question.concept.exerciseId?'Ce repère reviendra bientôt.':'Cette notion sera vérifiée avec d’autres exemples.'):'Prends le temps de réfléchir.'}</div>
-  </div>:<div className="session-summary card"><p className="eyebrow">{status==='empty'?'LE TRAVAIL DU JOUR EST TERMINÉ':'FIN DE SÉANCE'}</p><h2 ref={title} tabIndex={-1}>{status==='complete'?'Un beau pas pour aujourd’hui.':status==='empty'?'Tout est à jour.':'Assez travaillé pour cette fois.'}</h2><p>{status==='complete'?'Tu as travaillé les notions et les repères prévus. Ils reviendront dans les prochaines séances.':status==='empty'?'Les notions déjà travaillées reviendront au bon moment. Tu peux choisir une autre matière.':'Les notions qui demandent encore de la pratique reviendront. Pas besoin de tout faire aujourd’hui.'}</p><ul>{session.concepts.map(c=><li key={c.moduleId+(c.exerciseId??c.skillId)}><span>{c.exerciseId?catalog.modules.find(m=>m.id===c.moduleId)?.exercises.find(q=>q.id===c.exerciseId)?.prompt:c.label}</span><strong>{sessionConceptEvidence(session,catalog.modules,results(),c).ready?'✓ Travaillé':'↻ À reprendre'}</strong></li>)}</ul><button className="primary" onClick={()=>finish()}>Retour à mon parcours</button></div>}
+  </div>:<div className="session-summary card"><p className="eyebrow">{status==='empty'?'LE TRAVAIL DU JOUR EST TERMINÉ':'FIN DE SÉANCE'}</p><h2 ref={title} tabIndex={-1}>{status==='complete'?'Un beau pas pour aujourd’hui.':status==='empty'?'Tout est à jour.':'Assez travaillé pour cette fois.'}</h2><p>{status==='complete'?'Tu as travaillé les notions et les repères prévus. Ils reviendront dans les prochaines séances.':status==='empty'?'Les notions déjà travaillées reviendront au bon moment. Tu peux choisir une autre matière.':'Les notions qui demandent encore de la pratique reviendront. Pas besoin de tout faire aujourd’hui.'}</p><ul>{session.concepts.map(c=><li key={c.moduleId+(c.exerciseId??c.skillId)}><span>{c.exerciseId?catalog.modules.find(m=>m.id===c.moduleId)?.exercises.find(q=>q.id===c.exerciseId)?.prompt:c.label}</span><strong>{sessionConceptEvidence(session,catalog.modules,results(),c).ready?'✓ Travaillé':'↻ À reprendre'}</strong></li>)}</ul>{repeatMusic&&<button className="primary" onClick={restartMusic}>Refaire une séance de lecture</button>}<button className={repeatMusic?'text-button':'primary'} onClick={()=>finish()}>Retour à mon parcours</button></div>}
   {success&&(!q?.staff||q.staff.speech===false)&&<div className="success-toast" role="status">✓ Bien joué !</div>}
  </section>,document.body);
 }
