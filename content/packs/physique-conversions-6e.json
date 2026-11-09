@@ -1,0 +1,1466 @@
+{
+  "id": "physique-conversions-6e",
+  "version": "1.0.0",
+  "title": "Convertir des capacités, des aires et des volumes",
+  "subject": "Physique",
+  "levels": [
+    "6e"
+  ],
+  "description": "Entraîne-toi avec les litres, les mètres carrés et les mètres cubes. Retrouve les liens entre L et dm³, mL et cm³, et m³ et kL.",
+  "skills": [
+    {
+      "id": "litres",
+      "label": "Convertir les unités de capacité (L)",
+      "variants": [
+        {
+          "id": "un-rang-petit",
+          "label": "Un rang vers une unité plus petite"
+        },
+        {
+          "id": "un-rang-grand",
+          "label": "Un rang vers une unité plus grande"
+        },
+        {
+          "id": "plusieurs-rangs-petit",
+          "label": "Plusieurs rangs vers une unité plus petite"
+        },
+        {
+          "id": "plusieurs-rangs-grand",
+          "label": "Plusieurs rangs vers une unité plus grande"
+        }
+      ]
+    },
+    {
+      "id": "aires",
+      "label": "Convertir les unités d’aire (m²)",
+      "variants": [
+        {
+          "id": "un-rang-petit",
+          "label": "Un rang vers une unité plus petite"
+        },
+        {
+          "id": "un-rang-grand",
+          "label": "Un rang vers une unité plus grande"
+        },
+        {
+          "id": "plusieurs-rangs-petit",
+          "label": "Plusieurs rangs vers une unité plus petite"
+        },
+        {
+          "id": "plusieurs-rangs-grand",
+          "label": "Plusieurs rangs vers une unité plus grande"
+        }
+      ]
+    },
+    {
+      "id": "volumes",
+      "label": "Convertir les unités de volume (m³)",
+      "variants": [
+        {
+          "id": "un-rang-petit",
+          "label": "Un rang vers une unité plus petite"
+        },
+        {
+          "id": "un-rang-grand",
+          "label": "Un rang vers une unité plus grande"
+        },
+        {
+          "id": "plusieurs-rangs-petit",
+          "label": "Plusieurs rangs vers une unité plus petite"
+        },
+        {
+          "id": "plusieurs-rangs-grand",
+          "label": "Plusieurs rangs vers une unité plus grande"
+        }
+      ]
+    },
+    {
+      "id": "equivalences",
+      "label": "Passer des litres aux mètres cubes et inversement",
+      "variants": [
+        {
+          "id": "litre-decimetre",
+          "label": "Relier le litre et le décimètre cube"
+        },
+        {
+          "id": "millilitre-centimetre",
+          "label": "Relier le millilitre et le centimètre cube"
+        },
+        {
+          "id": "metre-cube-kilolitre",
+          "label": "Relier le mètre cube au kilolitre et au litre"
+        },
+        {
+          "id": "litres-vers-cubes",
+          "label": "Passer des litres aux unités cubiques en plusieurs étapes"
+        },
+        {
+          "id": "cubes-vers-litres",
+          "label": "Passer des unités cubiques aux litres en plusieurs étapes"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "litres-kl-hl",
+      "kind": "choice",
+      "prompt": "Convertis 1 kL en hL.",
+      "answer": "10 hL",
+      "options": [
+        "100 hL",
+        "1 hL",
+        "10 hL",
+        "0,1 hL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 10. Donc 1 kL = 10 hL.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "litres-hl-kl",
+      "kind": "choice",
+      "prompt": "Convertis 75 hL en kL.",
+      "answer": "7,5 kL",
+      "options": [
+        "750 kL",
+        "7,5 kL",
+        "75 kL",
+        "0,75 kL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 10. Donc 75 hL = 7,5 kL.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "litres-hl-dal",
+      "kind": "choice",
+      "prompt": "Convertis 3,5 hL en daL.",
+      "answer": "35 daL",
+      "options": [
+        "350 daL",
+        "35 daL",
+        "0,35 daL",
+        "3,5 daL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 10. Donc 3,5 hL = 35 daL.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "litres-dal-hl",
+      "kind": "choice",
+      "prompt": "Convertis 320 daL en hL.",
+      "answer": "32 hL",
+      "options": [
+        "3,2 hL",
+        "320 hL",
+        "3 200 hL",
+        "32 hL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 10. Donc 320 daL = 32 hL.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "litres-dal-l",
+      "kind": "choice",
+      "prompt": "Convertis 0,8 daL en L.",
+      "answer": "8 L",
+      "options": [
+        "80 L",
+        "8 L",
+        "0,8 L",
+        "0,08 L"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 10. Donc 0,8 daL = 8 L.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "litres-l-dal",
+      "kind": "choice",
+      "prompt": "Convertis 48 L en daL.",
+      "answer": "4,8 daL",
+      "options": [
+        "48 daL",
+        "480 daL",
+        "4,8 daL",
+        "0,48 daL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 10. Donc 48 L = 4,8 daL.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "litres-l-dl",
+      "kind": "choice",
+      "prompt": "Convertis 12 L en dL.",
+      "answer": "120 dL",
+      "options": [
+        "12 dL",
+        "1,2 dL",
+        "120 dL",
+        "1 200 dL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 10. Donc 12 L = 120 dL.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "litres-dl-l",
+      "kind": "choice",
+      "prompt": "Convertis 1 250 dL en L.",
+      "answer": "125 L",
+      "options": [
+        "12,5 L",
+        "125 L",
+        "12 500 L",
+        "1 250 L"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 10. Donc 1 250 dL = 125 L.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "litres-dl-cl",
+      "kind": "choice",
+      "prompt": "Convertis 2,4 dL en cL.",
+      "answer": "24 cL",
+      "options": [
+        "0,24 cL",
+        "24 cL",
+        "240 cL",
+        "2,4 cL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 10. Donc 2,4 dL = 24 cL.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "litres-cl-dl",
+      "kind": "choice",
+      "prompt": "Convertis 7,5 cL en dL.",
+      "answer": "0,75 dL",
+      "options": [
+        "0,075 dL",
+        "7,5 dL",
+        "0,75 dL",
+        "75 dL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 10. Donc 7,5 cL = 0,75 dL.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "litres-cl-ml",
+      "kind": "choice",
+      "prompt": "Convertis 6 cL en mL.",
+      "answer": "60 mL",
+      "options": [
+        "60 mL",
+        "6 mL",
+        "600 mL",
+        "0,6 mL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 10. Donc 6 cL = 60 mL.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "litres-ml-cl",
+      "kind": "choice",
+      "prompt": "Convertis 150 mL en cL.",
+      "answer": "15 cL",
+      "options": [
+        "15 cL",
+        "1,5 cL",
+        "150 cL",
+        "1 500 cL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 10. Donc 150 mL = 15 cL.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "litres-kl-l",
+      "kind": "choice",
+      "prompt": "Convertis 2,5 kL en L.",
+      "answer": "2 500 L",
+      "options": [
+        "2 500 L",
+        "0,0025 L",
+        "2,5 L",
+        "2 500 000 L"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "On multiplie par 10 à chaque rang. Pour 3 rangs, on multiplie par 1 000. Donc 2,5 kL = 2 500 L.",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "litres-l-kl",
+      "kind": "choice",
+      "prompt": "Convertis 750 L en kL.",
+      "answer": "0,75 kL",
+      "options": [
+        "0,00075 kL",
+        "0,75 kL",
+        "750 kL",
+        "750 000 kL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "On divise par 10 à chaque rang. Pour 3 rangs, on divise par 1 000. Donc 750 L = 0,75 kL.",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "litres-hl-cl",
+      "kind": "choice",
+      "prompt": "Convertis 0,6 hL en cL.",
+      "answer": "6 000 cL",
+      "options": [
+        "60 000 000 cL",
+        "6 000 cL",
+        "0,6 cL",
+        "0,00006 cL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "On multiplie par 10 à chaque rang. Pour 4 rangs, on multiplie par 10 000. Donc 0,6 hL = 6 000 cL.",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "litres-cl-hl",
+      "kind": "choice",
+      "prompt": "Convertis 24 000 cL en hL.",
+      "answer": "2,4 hL",
+      "options": [
+        "240 000 000 hL",
+        "0,00024 hL",
+        "24 000 hL",
+        "2,4 hL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "On divise par 10 à chaque rang. Pour 4 rangs, on divise par 10 000. Donc 24 000 cL = 2,4 hL.",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "litres-l-ml",
+      "kind": "choice",
+      "prompt": "Convertis 1,2 L en mL.",
+      "answer": "1 200 mL",
+      "options": [
+        "1,2 mL",
+        "1 200 000 mL",
+        "0,0012 mL",
+        "1 200 mL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "On multiplie par 10 à chaque rang. Pour 3 rangs, on multiplie par 1 000. Donc 1,2 L = 1 200 mL.",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "litres-ml-l",
+      "kind": "choice",
+      "prompt": "Convertis 540 mL en L.",
+      "answer": "0,54 L",
+      "options": [
+        "0,00054 L",
+        "0,54 L",
+        "540 L",
+        "540 000 L"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "On divise par 10 à chaque rang. Pour 3 rangs, on divise par 1 000. Donc 540 mL = 0,54 L.",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "litres-dal-dl",
+      "kind": "choice",
+      "prompt": "Convertis 3 daL en dL.",
+      "answer": "300 dL",
+      "options": [
+        "300 dL",
+        "0,03 dL",
+        "30 000 dL",
+        "3 dL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "On multiplie par 10 à chaque rang. Pour 2 rangs, on multiplie par 100. Donc 3 daL = 300 dL.",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "litres-dl-dal",
+      "kind": "choice",
+      "prompt": "Convertis 35 dL en daL.",
+      "answer": "0,35 daL",
+      "options": [
+        "0,0035 daL",
+        "3 500 daL",
+        "0,35 daL",
+        "35 daL"
+      ],
+      "skillIds": [
+        "litres"
+      ],
+      "explanation": "On divise par 10 à chaque rang. Pour 2 rangs, on divise par 100. Donc 35 dL = 0,35 daL.",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "aires-km2-hm2",
+      "kind": "choice",
+      "prompt": "Convertis 1 km² en hm².",
+      "answer": "100 hm²",
+      "options": [
+        "1 hm²",
+        "10 hm²",
+        "100 hm²",
+        "0,01 hm²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 100. Donc 1 km² = 100 hm².",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "aires-hm2-km2",
+      "kind": "choice",
+      "prompt": "Convertis 75 hm² en km².",
+      "answer": "0,75 km²",
+      "options": [
+        "7 500 km²",
+        "7,5 km²",
+        "75 km²",
+        "0,75 km²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 100. Donc 75 hm² = 0,75 km².",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "aires-hm2-dam2",
+      "kind": "choice",
+      "prompt": "Convertis 3,5 hm² en dam².",
+      "answer": "350 dam²",
+      "options": [
+        "0,035 dam²",
+        "35 dam²",
+        "3,5 dam²",
+        "350 dam²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 100. Donc 3,5 hm² = 350 dam².",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "aires-dam2-hm2",
+      "kind": "choice",
+      "prompt": "Convertis 320 dam² en hm².",
+      "answer": "3,2 hm²",
+      "options": [
+        "32 000 hm²",
+        "32 hm²",
+        "3,2 hm²",
+        "320 hm²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 100. Donc 320 dam² = 3,2 hm².",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "aires-dam2-m2",
+      "kind": "choice",
+      "prompt": "Convertis 0,8 dam² en m².",
+      "answer": "80 m²",
+      "options": [
+        "0,008 m²",
+        "8 m²",
+        "80 m²",
+        "0,8 m²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 100. Donc 0,8 dam² = 80 m².",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "aires-m2-dam2",
+      "kind": "choice",
+      "prompt": "Convertis 48 m² en dam².",
+      "answer": "0,48 dam²",
+      "options": [
+        "48 dam²",
+        "4,8 dam²",
+        "4 800 dam²",
+        "0,48 dam²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 100. Donc 48 m² = 0,48 dam².",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "aires-m2-dm2",
+      "kind": "choice",
+      "prompt": "Convertis 12 m² en dm².",
+      "answer": "1 200 dm²",
+      "options": [
+        "1 200 dm²",
+        "120 dm²",
+        "0,12 dm²",
+        "12 dm²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 100. Donc 12 m² = 1 200 dm².",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "aires-dm2-m2",
+      "kind": "choice",
+      "prompt": "Convertis 1 250 dm² en m².",
+      "answer": "12,5 m²",
+      "options": [
+        "12,5 m²",
+        "1 250 m²",
+        "125 m²",
+        "125 000 m²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 100. Donc 1 250 dm² = 12,5 m².",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "aires-dm2-cm2",
+      "kind": "choice",
+      "prompt": "Convertis 2,4 dm² en cm².",
+      "answer": "240 cm²",
+      "options": [
+        "0,024 cm²",
+        "240 cm²",
+        "2,4 cm²",
+        "24 cm²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 100. Donc 2,4 dm² = 240 cm².",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "aires-cm2-dm2",
+      "kind": "choice",
+      "prompt": "Convertis 7,5 cm² en dm².",
+      "answer": "0,075 dm²",
+      "options": [
+        "7,5 dm²",
+        "0,075 dm²",
+        "750 dm²",
+        "0,75 dm²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 100. Donc 7,5 cm² = 0,075 dm².",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "aires-cm2-mm2",
+      "kind": "choice",
+      "prompt": "Convertis 6 cm² en mm².",
+      "answer": "600 mm²",
+      "options": [
+        "0,06 mm²",
+        "6 mm²",
+        "600 mm²",
+        "60 mm²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 100. Donc 6 cm² = 600 mm².",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "aires-mm2-cm2",
+      "kind": "choice",
+      "prompt": "Convertis 150 mm² en cm².",
+      "answer": "1,5 cm²",
+      "options": [
+        "1,5 cm²",
+        "150 cm²",
+        "15 000 cm²",
+        "15 cm²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 100. Donc 150 mm² = 1,5 cm².",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "aires-km2-m2",
+      "kind": "choice",
+      "prompt": "Convertis 2,5 km² en m².",
+      "answer": "2 500 000 m²",
+      "options": [
+        "2,5 m²",
+        "0,0000025 m²",
+        "2 500 000 m²",
+        "2 500 m²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "On multiplie par 100 à chaque rang. Pour 3 rangs, on multiplie par 1 000 000. Donc 2,5 km² = 2 500 000 m².",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "aires-m2-km2",
+      "kind": "choice",
+      "prompt": "Convertis 750 m² en km².",
+      "answer": "0,00075 km²",
+      "options": [
+        "0,00075 km²",
+        "750 000 000 km²",
+        "0,75 km²",
+        "750 km²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "On divise par 100 à chaque rang. Pour 3 rangs, on divise par 1 000 000. Donc 750 m² = 0,00075 km².",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "aires-hm2-cm2",
+      "kind": "choice",
+      "prompt": "Convertis 0,6 hm² en cm².",
+      "answer": "60 000 000 cm²",
+      "options": [
+        "6 000 cm²",
+        "0,000000006 cm²",
+        "0,6 cm²",
+        "60 000 000 cm²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "On multiplie par 100 à chaque rang. Pour 4 rangs, on multiplie par 100 000 000. Donc 0,6 hm² = 60 000 000 cm².",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "aires-cm2-hm2",
+      "kind": "choice",
+      "prompt": "Convertis 24 000 cm² en hm².",
+      "answer": "0,00024 hm²",
+      "options": [
+        "2,4 hm²",
+        "0,00024 hm²",
+        "2 400 000 000 000 hm²",
+        "24 000 hm²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "On divise par 100 à chaque rang. Pour 4 rangs, on divise par 100 000 000. Donc 24 000 cm² = 0,00024 hm².",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "aires-m2-mm2",
+      "kind": "choice",
+      "prompt": "Convertis 1,2 m² en mm².",
+      "answer": "1 200 000 mm²",
+      "options": [
+        "1 200 mm²",
+        "0,0000012 mm²",
+        "1 200 000 mm²",
+        "1,2 mm²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "On multiplie par 100 à chaque rang. Pour 3 rangs, on multiplie par 1 000 000. Donc 1,2 m² = 1 200 000 mm².",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "aires-mm2-m2",
+      "kind": "choice",
+      "prompt": "Convertis 540 mm² en m².",
+      "answer": "0,00054 m²",
+      "options": [
+        "0,54 m²",
+        "0,00054 m²",
+        "540 000 000 m²",
+        "540 m²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "On divise par 100 à chaque rang. Pour 3 rangs, on divise par 1 000 000. Donc 540 mm² = 0,00054 m².",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "aires-dam2-dm2",
+      "kind": "choice",
+      "prompt": "Convertis 3 dam² en dm².",
+      "answer": "30 000 dm²",
+      "options": [
+        "300 dm²",
+        "3 dm²",
+        "0,0003 dm²",
+        "30 000 dm²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "On multiplie par 100 à chaque rang. Pour 2 rangs, on multiplie par 10 000. Donc 3 dam² = 30 000 dm².",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "aires-dm2-dam2",
+      "kind": "choice",
+      "prompt": "Convertis 35 dm² en dam².",
+      "answer": "0,0035 dam²",
+      "options": [
+        "35 dam²",
+        "350 000 dam²",
+        "0,35 dam²",
+        "0,0035 dam²"
+      ],
+      "skillIds": [
+        "aires"
+      ],
+      "explanation": "On divise par 100 à chaque rang. Pour 2 rangs, on divise par 10 000. Donc 35 dm² = 0,0035 dam².",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "volumes-km3-hm3",
+      "kind": "choice",
+      "prompt": "Convertis 1 km³ en hm³.",
+      "answer": "1 000 hm³",
+      "options": [
+        "0,001 hm³",
+        "1 000 hm³",
+        "10 hm³",
+        "1 hm³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 1 000. Donc 1 km³ = 1 000 hm³.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "volumes-hm3-km3",
+      "kind": "choice",
+      "prompt": "Convertis 75 hm³ en km³.",
+      "answer": "0,075 km³",
+      "options": [
+        "0,075 km³",
+        "7,5 km³",
+        "75 000 km³",
+        "75 km³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 1 000. Donc 75 hm³ = 0,075 km³.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "volumes-hm3-dam3",
+      "kind": "choice",
+      "prompt": "Convertis 3,5 hm³ en dam³.",
+      "answer": "3 500 dam³",
+      "options": [
+        "3 500 dam³",
+        "3,5 dam³",
+        "0,0035 dam³",
+        "35 dam³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 1 000. Donc 3,5 hm³ = 3 500 dam³.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "volumes-dam3-hm3",
+      "kind": "choice",
+      "prompt": "Convertis 320 dam³ en hm³.",
+      "answer": "0,32 hm³",
+      "options": [
+        "320 hm³",
+        "0,32 hm³",
+        "32 hm³",
+        "320 000 hm³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 1 000. Donc 320 dam³ = 0,32 hm³.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "volumes-dam3-m3",
+      "kind": "choice",
+      "prompt": "Convertis 0,8 dam³ en m³.",
+      "answer": "800 m³",
+      "options": [
+        "0,8 m³",
+        "800 m³",
+        "8 m³",
+        "0,0008 m³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 1 000. Donc 0,8 dam³ = 800 m³.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "volumes-m3-dam3",
+      "kind": "choice",
+      "prompt": "Convertis 48 m³ en dam³.",
+      "answer": "0,048 dam³",
+      "options": [
+        "0,048 dam³",
+        "4,8 dam³",
+        "48 dam³",
+        "48 000 dam³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 1 000. Donc 48 m³ = 0,048 dam³.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "volumes-m3-dm3",
+      "kind": "choice",
+      "prompt": "Convertis 12 m³ en dm³.",
+      "answer": "12 000 dm³",
+      "options": [
+        "120 dm³",
+        "0,012 dm³",
+        "12 000 dm³",
+        "12 dm³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 1 000. Donc 12 m³ = 12 000 dm³.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "volumes-dm3-m3",
+      "kind": "choice",
+      "prompt": "Convertis 1 250 dm³ en m³.",
+      "answer": "1,25 m³",
+      "options": [
+        "1,25 m³",
+        "1 250 000 m³",
+        "125 m³",
+        "1 250 m³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 1 000. Donc 1 250 dm³ = 1,25 m³.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "volumes-dm3-cm3",
+      "kind": "choice",
+      "prompt": "Convertis 2,4 dm³ en cm³.",
+      "answer": "2 400 cm³",
+      "options": [
+        "24 cm³",
+        "2 400 cm³",
+        "0,0024 cm³",
+        "2,4 cm³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 1 000. Donc 2,4 dm³ = 2 400 cm³.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "volumes-cm3-dm3",
+      "kind": "choice",
+      "prompt": "Convertis 7,5 cm³ en dm³.",
+      "answer": "0,0075 dm³",
+      "options": [
+        "0,0075 dm³",
+        "7 500 dm³",
+        "0,75 dm³",
+        "7,5 dm³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 1 000. Donc 7,5 cm³ = 0,0075 dm³.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "volumes-cm3-mm3",
+      "kind": "choice",
+      "prompt": "Convertis 6 cm³ en mm³.",
+      "answer": "6 000 mm³",
+      "options": [
+        "6 mm³",
+        "60 mm³",
+        "6 000 mm³",
+        "0,006 mm³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus petite d’un rang. On multiplie par 1 000. Donc 6 cm³ = 6 000 mm³.",
+      "variantId": "un-rang-petit"
+    },
+    {
+      "id": "volumes-mm3-cm3",
+      "kind": "choice",
+      "prompt": "Convertis 150 mm³ en cm³.",
+      "answer": "0,15 cm³",
+      "options": [
+        "0,15 cm³",
+        "150 cm³",
+        "15 cm³",
+        "150 000 cm³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "L’unité d’arrivée est plus grande d’un rang. On divise par 1 000. Donc 150 mm³ = 0,15 cm³.",
+      "variantId": "un-rang-grand"
+    },
+    {
+      "id": "volumes-km3-m3",
+      "kind": "choice",
+      "prompt": "Convertis 2,5 km³ en m³.",
+      "answer": "2 500 000 000 m³",
+      "options": [
+        "2 500 m³",
+        "0,0000000025 m³",
+        "2 500 000 000 m³",
+        "2,5 m³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "On multiplie par 1 000 à chaque rang. Pour 3 rangs, on multiplie par 1 000 000 000. Donc 2,5 km³ = 2 500 000 000 m³.",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "volumes-m3-km3",
+      "kind": "choice",
+      "prompt": "Convertis 750 m³ en km³.",
+      "answer": "0,00000075 km³",
+      "options": [
+        "0,75 km³",
+        "0,00000075 km³",
+        "750 km³",
+        "750 000 000 000 km³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "On divise par 1 000 à chaque rang. Pour 3 rangs, on divise par 1 000 000 000. Donc 750 m³ = 0,00000075 km³.",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "volumes-hm3-cm3",
+      "kind": "choice",
+      "prompt": "Convertis 0,6 hm³ en cm³.",
+      "answer": "600 000 000 000 cm³",
+      "options": [
+        "0,6 cm³",
+        "0,0000000000006 cm³",
+        "600 000 000 000 cm³",
+        "6 000 cm³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "On multiplie par 1 000 à chaque rang. Pour 4 rangs, on multiplie par 1 000 000 000 000. Donc 0,6 hm³ = 600 000 000 000 cm³.",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "volumes-cm3-hm3",
+      "kind": "choice",
+      "prompt": "Convertis 24 000 cm³ en hm³.",
+      "answer": "0,000000024 hm³",
+      "options": [
+        "24 000 hm³",
+        "0,000000024 hm³",
+        "24 000 000 000 000 000 hm³",
+        "2,4 hm³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "On divise par 1 000 à chaque rang. Pour 4 rangs, on divise par 1 000 000 000 000. Donc 24 000 cm³ = 0,000000024 hm³.",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "volumes-m3-mm3",
+      "kind": "choice",
+      "prompt": "Convertis 1,2 m³ en mm³.",
+      "answer": "1 200 000 000 mm³",
+      "options": [
+        "1 200 000 000 mm³",
+        "1,2 mm³",
+        "0,0000000012 mm³",
+        "1 200 mm³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "On multiplie par 1 000 à chaque rang. Pour 3 rangs, on multiplie par 1 000 000 000. Donc 1,2 m³ = 1 200 000 000 mm³.",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "volumes-mm3-m3",
+      "kind": "choice",
+      "prompt": "Convertis 540 mm³ en m³.",
+      "answer": "0,00000054 m³",
+      "options": [
+        "540 m³",
+        "0,54 m³",
+        "0,00000054 m³",
+        "540 000 000 000 m³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "On divise par 1 000 à chaque rang. Pour 3 rangs, on divise par 1 000 000 000. Donc 540 mm³ = 0,00000054 m³.",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "volumes-dam3-dm3",
+      "kind": "choice",
+      "prompt": "Convertis 3 dam³ en dm³.",
+      "answer": "3 000 000 dm³",
+      "options": [
+        "3 000 000 dm³",
+        "0,000003 dm³",
+        "3 dm³",
+        "300 dm³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "On multiplie par 1 000 à chaque rang. Pour 2 rangs, on multiplie par 1 000 000. Donc 3 dam³ = 3 000 000 dm³.",
+      "variantId": "plusieurs-rangs-petit"
+    },
+    {
+      "id": "volumes-dm3-dam3",
+      "kind": "choice",
+      "prompt": "Convertis 35 dm³ en dam³.",
+      "answer": "0,000035 dam³",
+      "options": [
+        "35 000 000 dam³",
+        "35 dam³",
+        "0,35 dam³",
+        "0,000035 dam³"
+      ],
+      "skillIds": [
+        "volumes"
+      ],
+      "explanation": "On divise par 1 000 à chaque rang. Pour 2 rangs, on divise par 1 000 000. Donc 35 dm³ = 0,000035 dam³.",
+      "variantId": "plusieurs-rangs-grand"
+    },
+    {
+      "id": "equivalences-l-dm3",
+      "kind": "choice",
+      "prompt": "Convertis 1 L en dm³.",
+      "answer": "1 dm³",
+      "options": [
+        "1 dm³",
+        "0,001 dm³",
+        "10 dm³",
+        "1 000 dm³"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "Un cube de 1 dm de côté a un volume de 1 dm³ et contient exactement 1 L. Donc 1 L = 1 dm³.",
+      "variantId": "litre-decimetre"
+    },
+    {
+      "id": "equivalences-dm3-l",
+      "kind": "choice",
+      "prompt": "Une boîte a un volume intérieur de 6,5 dm³. Combien de litres peut-elle contenir ?",
+      "answer": "6,5 L",
+      "options": [
+        "0,0065 L",
+        "65 L",
+        "6 500 L",
+        "6,5 L"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "Un décimètre cube correspond exactement à un litre. Donc 6,5 dm³ = 6,5 L.",
+      "variantId": "litre-decimetre"
+    },
+    {
+      "id": "equivalences-dl-dm3",
+      "kind": "choice",
+      "prompt": "Convertis 35 dL en dm³.",
+      "answer": "3,5 dm³",
+      "options": [
+        "0,35 dm³",
+        "35 dm³",
+        "3,5 dm³",
+        "350 dm³"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "On divise par 10 pour passer de dL à L. Chaque litre vaut ensuite 1 dm³. Donc 35 dL = 3,5 dm³.",
+      "variantId": "litre-decimetre"
+    },
+    {
+      "id": "equivalences-dm3-cl",
+      "kind": "choice",
+      "prompt": "Convertis 0,4 dm³ en cL.",
+      "answer": "40 cL",
+      "options": [
+        "400 cL",
+        "0,4 cL",
+        "40 cL",
+        "0,004 cL"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 dm³ vaut 1 L et 1 L vaut 100 cL. Donc 0,4 dm³ = 40 cL.",
+      "variantId": "litre-decimetre"
+    },
+    {
+      "id": "equivalences-ml-cm3",
+      "kind": "choice",
+      "prompt": "Une éprouvette contient 25 mL d’eau. Quel volume cela représente-t-il en cm³ ?",
+      "answer": "25 cm³",
+      "options": [
+        "250 cm³",
+        "25 000 cm³",
+        "25 cm³",
+        "0,025 cm³"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 mL occupe exactement 1 cm³. Donc 25 mL = 25 cm³.",
+      "variantId": "millilitre-centimetre"
+    },
+    {
+      "id": "equivalences-cm3-ml",
+      "kind": "choice",
+      "prompt": "Convertis 12,5 cm³ en mL.",
+      "answer": "12,5 mL",
+      "options": [
+        "12 500 mL",
+        "0,0125 mL",
+        "125 mL",
+        "12,5 mL"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 cm³ correspond exactement à 1 mL. Donc 12,5 cm³ = 12,5 mL.",
+      "variantId": "millilitre-centimetre"
+    },
+    {
+      "id": "equivalences-cl-cm3",
+      "kind": "choice",
+      "prompt": "Convertis 3 cL en cm³.",
+      "answer": "30 cm³",
+      "options": [
+        "3 cm³",
+        "300 cm³",
+        "30 cm³",
+        "0,3 cm³"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 cL vaut 10 mL et chaque millilitre occupe 1 cm³. Donc 3 cL = 30 cm³.",
+      "variantId": "millilitre-centimetre"
+    },
+    {
+      "id": "equivalences-cm3-cl",
+      "kind": "choice",
+      "prompt": "Convertis 450 cm³ en cL.",
+      "answer": "45 cL",
+      "options": [
+        "4 500 cL",
+        "4,5 cL",
+        "450 cL",
+        "45 cL"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "450 cm³ valent 450 mL. On divise ensuite par 10 pour obtenir des cL. Donc 450 cm³ = 45 cL.",
+      "variantId": "millilitre-centimetre"
+    },
+    {
+      "id": "equivalences-m3-kl",
+      "kind": "choice",
+      "prompt": "Convertis 1,5 m³ en kL.",
+      "answer": "1,5 kL",
+      "options": [
+        "1,5 kL",
+        "15 kL",
+        "1 500 kL",
+        "0,0015 kL"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 m³ vaut 1 000 dm³, soit 1 000 L. Or 1 kL vaut aussi 1 000 L. Donc 1,5 m³ = 1,5 kL.",
+      "variantId": "metre-cube-kilolitre"
+    },
+    {
+      "id": "equivalences-kl-m3",
+      "kind": "choice",
+      "prompt": "Convertis 4 kL en m³.",
+      "answer": "4 m³",
+      "options": [
+        "4 m³",
+        "4 000 m³",
+        "40 m³",
+        "0,004 m³"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 kL vaut 1 000 L, donc 1 000 dm³, c’est-à-dire 1 m³. Donc 4 kL = 4 m³.",
+      "variantId": "metre-cube-kilolitre"
+    },
+    {
+      "id": "equivalences-m3-l",
+      "kind": "choice",
+      "prompt": "Une cuve a une capacité de 0,75 m³. Combien de litres peut-elle contenir ?",
+      "answer": "750 L",
+      "options": [
+        "0,75 L",
+        "7 500 L",
+        "750 L",
+        "0,00075 L"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 m³ vaut 1 000 dm³ et chaque décimètre cube contient 1 L. On multiplie par 1 000. Donc 0,75 m³ = 750 L.",
+      "variantId": "metre-cube-kilolitre"
+    },
+    {
+      "id": "equivalences-l-m3",
+      "kind": "choice",
+      "prompt": "Convertis 2 500 L en m³.",
+      "answer": "2,5 m³",
+      "options": [
+        "2 500 000 m³",
+        "0,25 m³",
+        "2 500 m³",
+        "2,5 m³"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 000 L occupent 1 m³. On divise donc par 1 000. Donc 2 500 L = 2,5 m³.",
+      "variantId": "metre-cube-kilolitre"
+    },
+    {
+      "id": "equivalences-l-cm3",
+      "kind": "choice",
+      "prompt": "Convertis 2,5 L en cm³.",
+      "answer": "2 500 cm³",
+      "options": [
+        "2 500 cm³",
+        "0,0025 cm³",
+        "25 000 cm³",
+        "2,5 cm³"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 L vaut 1 000 mL et 1 mL vaut 1 cm³. Donc 2,5 L = 2 500 cm³.",
+      "variantId": "litres-vers-cubes"
+    },
+    {
+      "id": "equivalences-ml-dm3",
+      "kind": "choice",
+      "prompt": "Convertis 125 mL en dm³.",
+      "answer": "0,125 dm³",
+      "options": [
+        "0,0125 dm³",
+        "0,125 dm³",
+        "125 dm³",
+        "125 000 dm³"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "On divise les mL par 1 000 pour obtenir des L. Chaque litre vaut 1 dm³. Donc 125 mL = 0,125 dm³.",
+      "variantId": "litres-vers-cubes"
+    },
+    {
+      "id": "equivalences-hl-m3",
+      "kind": "choice",
+      "prompt": "Convertis 35 hL en m³.",
+      "answer": "3,5 m³",
+      "options": [
+        "35 m³",
+        "3,5 m³",
+        "0,35 m³",
+        "350 m³"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 hL vaut 100 L. Il faut 1 000 L, donc 10 hL, pour obtenir 1 m³. Donc 35 hL = 3,5 m³.",
+      "variantId": "litres-vers-cubes"
+    },
+    {
+      "id": "equivalences-ml-mm3",
+      "kind": "choice",
+      "prompt": "Convertis 8 mL en mm³.",
+      "answer": "8 000 mm³",
+      "options": [
+        "8 000 mm³",
+        "8 mm³",
+        "0,008 mm³",
+        "80 000 mm³"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 mL vaut 1 cm³ et 1 cm³ vaut 1 000 mm³. Donc 8 mL = 8 000 mm³.",
+      "variantId": "litres-vers-cubes"
+    },
+    {
+      "id": "equivalences-cm3-l",
+      "kind": "choice",
+      "prompt": "Un récipient contient 240 cm³ d’eau. Combien cela fait-il en litres ?",
+      "answer": "0,24 L",
+      "options": [
+        "240 L",
+        "0,024 L",
+        "0,24 L",
+        "240 000 L"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "240 cm³ valent 240 mL. On divise par 1 000 pour obtenir des L. Donc 240 cm³ = 0,24 L.",
+      "variantId": "cubes-vers-litres"
+    },
+    {
+      "id": "equivalences-m3-hl",
+      "kind": "choice",
+      "prompt": "Convertis 2,4 m³ en hL.",
+      "answer": "24 hL",
+      "options": [
+        "0,24 hL",
+        "24 hL",
+        "2,4 hL",
+        "240 hL"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 m³ vaut 1 000 L, soit 10 hL. On multiplie donc par 10. Donc 2,4 m³ = 24 hL.",
+      "variantId": "cubes-vers-litres"
+    },
+    {
+      "id": "equivalences-mm3-ml",
+      "kind": "choice",
+      "prompt": "Convertis 5 200 mm³ en mL.",
+      "answer": "5,2 mL",
+      "options": [
+        "5,2 mL",
+        "5 200 000 mL",
+        "5 200 mL",
+        "0,52 mL"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 000 mm³ valent 1 cm³. Chaque centimètre cube vaut ensuite 1 mL. Donc 5 200 mm³ = 5,2 mL.",
+      "variantId": "cubes-vers-litres"
+    },
+    {
+      "id": "equivalences-dm3-ml",
+      "kind": "choice",
+      "prompt": "Convertis 3,2 dm³ en mL.",
+      "answer": "3 200 mL",
+      "options": [
+        "0,0032 mL",
+        "3,2 mL",
+        "3 200 mL",
+        "32 000 mL"
+      ],
+      "skillIds": [
+        "equivalences"
+      ],
+      "explanation": "1 dm³ vaut 1 L et 1 L vaut 1 000 mL. Donc 3,2 dm³ = 3 200 mL.",
+      "variantId": "cubes-vers-litres"
+    }
+  ]
+}
