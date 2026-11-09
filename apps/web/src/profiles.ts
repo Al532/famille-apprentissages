@@ -6,8 +6,15 @@ export function globalProfile(level:string):string {
  if(['6e','Maurice'].includes(level))return 'Maurice';
  return level;
 }
+export function isHistoryModule(moduleId:string):boolean {
+ return moduleId.startsWith('histoire-');
+}
 export function profileModules(modules:Module[],level:string):Module[]{
  const profile=globalProfile(level);
  const levels=profile==='Ondine'?['Ondine','CE1','CE2']:profile==='Maurice'?['Maurice','6e']:[level];
- return modules.filter(m=>m.levels.some(l=>levels.includes(l)));
+ const matching=modules.filter(module=>module.levels.some(level=>levels.includes(level)));
+ if(profile!=='Maurice')return matching;
+ return matching
+  .filter(module=>!isHistoryModule(module.id))
+  .map(module=>module.subject==='Histoire-géographie'?{...module,subject:'Géographie'}:module);
 }

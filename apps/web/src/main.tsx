@@ -6,7 +6,7 @@ import {catalog,catalogs} from './catalog';
 import {Practice} from './Practice';
 import {cloud,partialConfig,empty,listenDemo,listenAuth,watchCloud,loginParent,loginLearner,logout,resetDemo,addLearner,type Snapshot,type Learner} from './store';
 import {InstallApp} from './pwa';
-import {globalProfile,profileModules,profiles} from './profiles';
+import {globalProfile,isHistoryModule,profileModules,profiles} from './profiles';
 import './style.css';
 const demoView=new URLSearchParams(location.search).get('espace');
 const parent=cloud?__APP__==='parents':demoView?demoView==='parents':__APP__==='parents';
@@ -52,7 +52,7 @@ function Hub({learner,snapshot}:{learner:Learner;snapshot:Snapshot}){
  const visible=modules.filter(m=>subject==='Toutes'||m.subject===subject);
  const sessionOptions=globalProfile(learner.level)==='Maurice'?{discovery:'faster' as const}:{};
  const planned=planSession(modules,results,subject,new Date(),sessionOptions),available=planned.concepts;
- if(session)return <Practice initial={session} learner={learner} snapshot={snapshot} onClose={()=>setSession(undefined)}/>;
+ if(session)return <Practice initial={session} modules={modules} learner={learner} snapshot={snapshot} onClose={()=>setSession(undefined)}/>;
  return <><div className="section-heading"><h2>Le parcours de {learner.name}</h2><span>{modules.reduce((n,m)=>n+m.skills.length,0)} thèmes à explorer</span></div>
  <div className="subject-filters" role="group" aria-label="Choisir la matière de la séance">{subjects.map(s=><button key={s} aria-pressed={subject===s} className={subject===s?'primary':''} onClick={()=>setSubject(s)}>{s==='Toutes'?'Toutes les matières':s}</button>)}</div>
  <section className="card session-start"><div><p className="eyebrow">MA SÉANCE DU JOUR</p><h2>Quelques notions, des questions variées.</h2><p>Une séance d’environ 5 à 10 minutes. On reprend ce qui en a besoin et on découvre de nouveaux exemples.</p><small>{available.length?`${available.filter(c=>!c.exerciseId).length} notions et ${available.filter(c=>c.exerciseId).length} cartes · jusqu’à 24 questions`:'Les notions de cette matière sont déjà travaillées pour aujourd’hui.'}</small></div><button className="primary" disabled={!available.length} onClick={()=>setSession(planSession(modules,results,subject,new Date(),sessionOptions))}>{available.length?'Commencer ma séance ↗':'À bientôt pour la suite'}</button></section>
@@ -62,7 +62,9 @@ function Hub({learner,snapshot}:{learner:Learner;snapshot:Snapshot}){
 function Dashboard({learner,snapshot}:{learner:Learner;snapshot:Snapshot}){
  const [subject,setSubject]=useState('Toutes');
  useEffect(()=>setSubject('Toutes'),[learner.id]);
- const modules=profileModules(catalog.modules,learner.level),results=snapshot.results.filter(r=>r.learnerId===learner.id);
+ const modules=profileModules(catalog.modules,learner.level);
+ const isMaurice=globalProfile(learner.level)==='Maurice';
+ const results=snapshot.results.filter(r=>r.learnerId===learner.id&&!(isMaurice&&isHistoryModule(r.moduleId)));
  const concepts=projectConcepts(modules,results),visited=concepts.filter(c=>c.card),cards=projectQuestionReviews(modules,results);
  const due=visited.filter(c=>availableToday(c)).length+cards.filter(c=>Date.parse(c.card.due)<=Date.now()).length;
  const visible=modules.filter(m=>subject==='Toutes'||m.subject===subject).flatMap(m=>m.skills.map(s=>{
