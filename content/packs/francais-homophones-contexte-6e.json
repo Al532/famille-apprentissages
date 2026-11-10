@@ -1,12 +1,12 @@
 {
   "id": "francais-homophones-contexte-6e",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "title": "Homophones : le sens et les verbes",
   "subject": "Français",
   "levels": [
     "6e"
   ],
-  "description": "Consolide la/là/l’a/l’as, mais/mes/met/mets, peu/peux/peut, sans/s’en, ni/n’y et les terminaisons -er/-é dans des phrases variées.",
+  "description": "Consolide la/là/l’a/l’as, mais/mes/met/mets, peu/peux/peut, sans/s’en, ni/n’y et les terminaisons -er/-é dans des phrases variées. Révise aussi l’orthographe des homophones lexicaux et la distinction quand/qu’en.",
   "skills": [
     {
       "id": "la-la-las",
@@ -128,39 +128,11 @@
     },
     {
       "id": "mer-mere-maire",
-      "label": "Distinguer mer, mère et maire",
-      "variants": [
-        {
-          "id": "v1",
-          "label": "mer"
-        },
-        {
-          "id": "v2",
-          "label": "maire"
-        },
-        {
-          "id": "v3",
-          "label": "mère"
-        }
-      ]
+      "label": "Distinguer mer, mère et maire"
     },
     {
       "id": "pere-paire-pair",
-      "label": "Distinguer père, paire et pair",
-      "variants": [
-        {
-          "id": "v1",
-          "label": "paire"
-        },
-        {
-          "id": "v2",
-          "label": "pair"
-        },
-        {
-          "id": "v3",
-          "label": "père"
-        }
-      ]
+      "label": "Distinguer père, paire et pair"
     },
     {
       "id": "ver-verre-vert-vers",
@@ -175,8 +147,22 @@
       "label": "Distinguer pain, pin et peint"
     },
     {
-      "id": "camp-quand-quen",
-      "label": "Distinguer camp, quand et qu’en"
+      "id": "camp",
+      "label": "Orthographe du mot camp"
+    },
+    {
+      "id": "quand-quen",
+      "label": "Distinguer quand et qu’en",
+      "variants": [
+        {
+          "id": "quand",
+          "label": "quand"
+        },
+        {
+          "id": "quen",
+          "label": "qu’en"
+        }
+      ]
     }
   ],
   "exercises": [
@@ -290,8 +276,8 @@
         "ver-verre-vert-vers"
       ],
       "explanation": "Un « verre » est un récipient. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-01"
+      "reviewId": "homophones-lexicaux-01",
+      "reviewMode": "question"
     },
     {
       "id": "si-sy-01",
@@ -322,7 +308,8 @@
         "mer-mere-maire"
       ],
       "explanation": "Le bateau se trouve sur une étendue d’eau salée. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune.",
-      "variantId": "v1"
+      "reviewId": "mer-mere-maire-01",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-01",
@@ -338,23 +325,24 @@
         "pere-paire-pair"
       ],
       "explanation": "Deux chaussures forment une paire. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux.",
-      "variantId": "v1"
+      "reviewId": "pere-paire-pair-01",
+      "reviewMode": "question"
     },
     {
       "id": "la-la-las-02",
       "kind": "choice",
       "prompt": "Complète avec la, là, l’a, l’as : « Il ouvre ___ fenêtre. »",
       "answer": "la",
-      "skillIds": [
-        "la-la-las"
-      ],
-      "explanation": "« la » est le déterminant du nom « fenêtre ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
       "options": [
         "l’as",
         "la",
         "là",
         "l’a"
       ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« la » est le déterminant du nom « fenêtre ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
       "variantId": "v2"
     },
     {
@@ -362,16 +350,16 @@
       "kind": "choice",
       "prompt": "Complète avec mais, mes, met, mets : « Ces lunettes sont à moi : ce sont ___ lunettes. »",
       "answer": "mes",
-      "skillIds": [
-        "mais-mes-met-mets"
-      ],
-      "explanation": "Le nom « lunettes » est pluriel et désigne ce qui m’appartient. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
       "options": [
         "mais",
         "mes",
         "met",
         "mets"
       ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "Le nom « lunettes » est pluriel et désigne ce qui m’appartient. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
       "variantId": "v2"
     },
     {
@@ -379,15 +367,15 @@
       "kind": "choice",
       "prompt": "Complète avec peu, peux, peut : « Tu ___ venir demain. »",
       "answer": "peux",
-      "skillIds": [
-        "peu-peux-peut"
-      ],
-      "explanation": "Avec « tu », pouvoir s’écrit « peux » au présent. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
       "options": [
         "peux",
         "peut",
         "peu"
       ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "Avec « tu », pouvoir s’écrit « peux » au présent. « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
       "variantId": "v2"
     },
     {
@@ -395,14 +383,14 @@
       "kind": "choice",
       "prompt": "Complète avec sans, s’en : « Elle ___ va après le repas. »",
       "answer": "s’en",
-      "skillIds": [
-        "sans-sen"
-      ],
-      "explanation": "Il s’agit de « s’en aller » : « je m’en vais ». « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais).",
       "options": [
         "s’en",
         "sans"
       ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "Il s’agit de « s’en aller » : « je m’en vais ». « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais).",
       "variantId": "v2"
     },
     {
@@ -410,14 +398,14 @@
       "kind": "choice",
       "prompt": "Complète avec ni, n’y : « Ce parc est fermé ; nous ___ allons pas. »",
       "answer": "n’y",
-      "skillIds": [
-        "ni-ny"
-      ],
-      "explanation": "« y » remplace « dans ce parc » et « n’… pas » marque la négation. « ni » coordonne des éléments dans une négation. « n’y » associe la négation n’ au pronom y (je n’y vais pas).",
       "options": [
         "ni",
         "n’y"
       ],
+      "skillIds": [
+        "ni-ny"
+      ],
+      "explanation": "« y » remplace « dans ce parc » et « n’… pas » marque la négation. « ni » coordonne des éléments dans une négation. « n’y » associe la négation n’ au pronom y (je n’y vais pas).",
       "variantId": "v2"
     },
     {
@@ -425,14 +413,14 @@
       "kind": "choice",
       "prompt": "Complète avec jouer, joué : « Il a ___ avec nous. »",
       "answer": "joué",
-      "skillIds": [
-        "infinitif-participe"
-      ],
-      "explanation": "On peut dire : « Il a pris… » ; après l’auxiliaire, c’est le participe passé. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé.",
       "options": [
         "joué",
         "jouer"
       ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "On peut dire : « Il a pris… » ; après l’auxiliaire, c’est le participe passé. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé.",
       "variantId": "participe"
     },
     {
@@ -440,32 +428,32 @@
       "kind": "choice",
       "prompt": "Complète avec verre, vert, vers, ver : « Le feu passe au ___. »",
       "answer": "vert",
-      "skillIds": [
-        "ver-verre-vert-vers"
-      ],
-      "explanation": "Il s’agit de la couleur verte. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
       "options": [
         "ver",
         "verre",
         "vert",
         "vers"
       ],
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-02"
+      "skillIds": [
+        "ver-verre-vert-vers"
+      ],
+      "explanation": "Il s’agit de la couleur verte. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
+      "reviewId": "homophones-lexicaux-02",
+      "reviewMode": "question"
     },
     {
       "id": "si-sy-02",
       "kind": "choice",
       "prompt": "Complète avec si, s’y : « Il connaît ce village et ___ rend chaque été. »",
       "answer": "s’y",
-      "skillIds": [
-        "si-sy"
-      ],
-      "explanation": "« y » remplace « dans ce village » : « je m’y rends ». « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends).",
       "options": [
         "si",
         "s’y"
       ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "« y » remplace « dans ce village » : « je m’y rends ». « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends).",
       "variantId": "v2"
     },
     {
@@ -473,32 +461,34 @@
       "kind": "choice",
       "prompt": "Complète avec mer, mère, maire : « Le ___ de la commune inaugure l’école. »",
       "answer": "maire",
-      "skillIds": [
-        "mer-mere-maire"
-      ],
-      "explanation": "Il s’agit de la personne élue qui dirige la commune. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune.",
       "options": [
         "maire",
         "mer",
         "mère"
       ],
-      "variantId": "v2"
+      "skillIds": [
+        "mer-mere-maire"
+      ],
+      "explanation": "Il s’agit de la personne élue qui dirige la commune. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune.",
+      "reviewId": "mer-mere-maire-02",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-02",
       "kind": "choice",
       "prompt": "Complète avec père, paire, pair : « Le nombre huit est ___. »",
       "answer": "pair",
-      "skillIds": [
-        "pere-paire-pair"
-      ],
-      "explanation": "Huit peut se partager en deux groupes égaux de quatre. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux.",
       "options": [
         "paire",
         "pair",
         "père"
       ],
-      "variantId": "v2"
+      "skillIds": [
+        "pere-paire-pair"
+      ],
+      "explanation": "Huit peut se partager en deux groupes égaux de quatre. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux.",
+      "reviewId": "pere-paire-pair-02",
+      "reviewMode": "question"
     },
     {
       "id": "la-la-las-03",
@@ -595,8 +585,8 @@
         "ver-verre-vert-vers"
       ],
       "explanation": "« vers » indique la direction. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-03"
+      "reviewId": "homophones-lexicaux-03",
+      "reviewMode": "question"
     },
     {
       "id": "si-sy-03",
@@ -627,7 +617,8 @@
         "mer-mere-maire"
       ],
       "explanation": "Il s’agit ici d’un lien de parenté. La mer est une étendue d’eau salée ; la mère est un parent ; le ou la maire dirige la commune.",
-      "variantId": "v3"
+      "reviewId": "mer-mere-maire-03",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-03",
@@ -643,23 +634,24 @@
         "pere-paire-pair"
       ],
       "explanation": "Il s’agit ici d’un lien de parenté. Le père est un parent ; une paire réunit deux objets ; un nombre pair est divisible par deux.",
-      "variantId": "v3"
+      "reviewId": "pere-paire-pair-03",
+      "reviewMode": "question"
     },
     {
       "id": "la-la-las-04",
       "kind": "choice",
       "prompt": "Complète avec la, là, l’a, l’as : « Cette chanson, tu ___ entendue hier. »",
       "answer": "l’as",
-      "skillIds": [
-        "la-la-las"
-      ],
-      "explanation": "Le sujet est « tu » : « tu l’avais entendue ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
       "options": [
         "là",
         "l’a",
         "l’as",
         "la"
       ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "Le sujet est « tu » : « tu l’avais entendue ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
       "variantId": "v4"
     },
     {
@@ -667,16 +659,16 @@
       "kind": "choice",
       "prompt": "Complète avec mais, mes, met, mets : « Tu ___ la table. »",
       "answer": "mets",
-      "skillIds": [
-        "mais-mes-met-mets"
-      ],
-      "explanation": "Avec « tu », mettre s’écrit « mets » au présent. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
       "options": [
         "met",
         "mets",
         "mais",
         "mes"
       ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "Avec « tu », mettre s’écrit « mets » au présent. « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
       "variantId": "v4"
     },
     {
@@ -684,15 +676,15 @@
       "kind": "choice",
       "prompt": "Complète avec peu, peux, peut : « Je ___ ouvrir la porte. »",
       "answer": "peux",
-      "skillIds": [
-        "peu-peux-peut"
-      ],
-      "explanation": "Le sujet est « je » : « je peux ». « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
       "options": [
         "peu",
         "peux",
         "peut"
       ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "Le sujet est « je » : « je peux ». « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
       "variantId": "v2"
     },
     {
@@ -700,14 +692,14 @@
       "kind": "choice",
       "prompt": "Complète avec sans, s’en : « Je bois mon thé ___ sucre. »",
       "answer": "sans",
-      "skillIds": [
-        "sans-sen"
-      ],
-      "explanation": "Il n’y a pas de sucre dans le thé. « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais).",
       "options": [
         "s’en",
         "sans"
       ],
+      "skillIds": [
+        "sans-sen"
+      ],
+      "explanation": "Il n’y a pas de sucre dans le thé. « sans » indique une absence. « s’en » contient les pronoms se et en, devant un verbe (il s’en va → je m’en vais).",
       "variantId": "v1"
     },
     {
@@ -715,14 +707,14 @@
       "kind": "choice",
       "prompt": "Complète avec jouer, joué : « Elle avait ___ avant le repas. »",
       "answer": "joué",
-      "skillIds": [
-        "infinitif-participe"
-      ],
-      "explanation": "« Elle avait pris… » montre le participe passé après l’auxiliaire. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé.",
       "options": [
         "joué",
         "jouer"
       ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "« Elle avait pris… » montre le participe passé après l’auxiliaire. Pour distinguer -er et -é, remplace par prendre/pris : « il veut prendre » → infinitif ; « il a pris » → participe passé.",
       "variantId": "participe"
     },
     {
@@ -730,32 +722,32 @@
       "kind": "choice",
       "prompt": "Complète avec verre, vert, vers, ver : « Un ___ de terre sort du sol. »",
       "answer": "ver",
-      "skillIds": [
-        "ver-verre-vert-vers"
-      ],
-      "explanation": "Le « ver » est un animal. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
       "options": [
         "vert",
         "vers",
         "ver",
         "verre"
       ],
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-04"
+      "skillIds": [
+        "ver-verre-vert-vers"
+      ],
+      "explanation": "Le « ver » est un animal. Le sens et la classe grammaticale permettent de choisir : un verre pour boire, vert pour la couleur, vers pour la direction, un ver pour l’animal.",
+      "reviewId": "homophones-lexicaux-04",
+      "reviewMode": "question"
     },
     {
       "id": "si-sy-04",
       "kind": "choice",
       "prompt": "Complète avec si, s’y : « Cette règle est difficile, mais elle ___ habitue. »",
       "answer": "s’y",
-      "skillIds": [
-        "si-sy"
-      ],
-      "explanation": "C’est « s’habituer à cette règle » : « je m’y habitue ». « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends).",
       "options": [
         "si",
         "s’y"
       ],
+      "skillIds": [
+        "si-sy"
+      ],
+      "explanation": "C’est « s’habituer à cette règle » : « je m’y habitue ». « si » peut introduire une condition. « s’y » contient les pronoms se et y devant un verbe (il s’y rend → je m’y rends).",
       "variantId": "v2"
     },
     {
@@ -828,16 +820,16 @@
       "kind": "choice",
       "prompt": "Complète avec la, là, l’a, l’as : « Je resterai ___ jusqu’à midi. »",
       "answer": "là",
-      "skillIds": [
-        "la-la-las"
-      ],
-      "explanation": "« là » indique le lieu où je resterai. « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
       "options": [
         "l’as",
         "la",
         "là",
         "l’a"
       ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "« là » indique le lieu où je resterai. « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
       "variantId": "v1"
     },
     {
@@ -845,16 +837,16 @@
       "kind": "choice",
       "prompt": "Complète avec mais, mes, met, mets : « J’ai retrouvé ___ deux chaussettes. »",
       "answer": "mes",
-      "skillIds": [
-        "mais-mes-met-mets"
-      ],
-      "explanation": "« mes » détermine le nom pluriel « chaussettes ». « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
       "options": [
         "mais",
         "mes",
         "met",
         "mets"
       ],
+      "skillIds": [
+        "mais-mes-met-mets"
+      ],
+      "explanation": "« mes » détermine le nom pluriel « chaussettes ». « mais » exprime une opposition. « mes » accompagne un nom pluriel. « met » et « mets » viennent du verbe mettre (mettait, mettais).",
       "variantId": "v2"
     },
     {
@@ -862,15 +854,15 @@
       "kind": "choice",
       "prompt": "Complète avec peu, peux, peut : « On ___ commencer. »",
       "answer": "peut",
-      "skillIds": [
-        "peu-peux-peut"
-      ],
-      "explanation": "« on » se conjugue comme « il » : « on peut ». « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
       "options": [
         "peut",
         "peu",
         "peux"
       ],
+      "skillIds": [
+        "peu-peux-peut"
+      ],
+      "explanation": "« on » se conjugue comme « il » : « on peut ». « peu » indique une petite quantité. « peux » va avec je/tu ; « peut » avec il/elle/on : c’est le verbe pouvoir.",
       "variantId": "v3"
     },
     {
@@ -878,14 +870,14 @@
       "kind": "choice",
       "prompt": "Complète avec tomber ou tombé : « Il est ___ dans la cour. »",
       "answer": "tombé",
-      "skillIds": [
-        "infinitif-participe"
-      ],
-      "explanation": "Après l’auxiliaire être, il faut le participe passé : « Il est tombé ».",
       "options": [
         "tombé",
         "tomber"
       ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "Après l’auxiliaire être, il faut le participe passé : « Il est tombé ».",
       "variantId": "participe"
     },
     {
@@ -925,16 +917,16 @@
       "kind": "choice",
       "prompt": "Complète avec la, là, l’a, l’as : « Ce dessin, tu ___ réussi. »",
       "answer": "l’as",
-      "skillIds": [
-        "la-la-las"
-      ],
-      "explanation": "Avec « tu » : « tu l’avais réussi ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
       "options": [
         "là",
         "l’a",
         "l’as",
         "la"
       ],
+      "skillIds": [
+        "la-la-las"
+      ],
+      "explanation": "Avec « tu » : « tu l’avais réussi ». « la » accompagne un nom ou remplace un nom devant un verbe. « là » indique un lieu. « l’a » et « l’as » contiennent le verbe avoir (l’avait, l’avais).",
       "variantId": "v4"
     },
     {
@@ -942,14 +934,14 @@
       "kind": "choice",
       "prompt": "Complète avec marcher ou marché : « Il a ___ toute la journée. »",
       "answer": "marché",
-      "skillIds": [
-        "infinitif-participe"
-      ],
-      "explanation": "On peut dire : « Il a pris… » : c’est un participe passé.",
       "options": [
         "marché",
         "marcher"
       ],
+      "skillIds": [
+        "infinitif-participe"
+      ],
+      "explanation": "On peut dire : « Il a pris… » : c’est un participe passé.",
       "variantId": "participe"
     },
     {
@@ -2106,8 +2098,8 @@
         "cou-coup-cout"
       ],
       "explanation": "Le cou relie la tête au tronc. Un coup est un choc, le coût est un prix.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-01"
+      "reviewId": "homophones-lexicaux-var-01",
+      "reviewMode": "question"
     },
     {
       "id": "homophones-lexicaux-var-02",
@@ -2123,8 +2115,8 @@
         "cou-coup-cout"
       ],
       "explanation": "Le coût est le montant à payer.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-02"
+      "reviewId": "homophones-lexicaux-var-02",
+      "reviewMode": "question"
     },
     {
       "id": "homophones-lexicaux-var-03",
@@ -2140,8 +2132,8 @@
         "cou-coup-cout"
       ],
       "explanation": "Un coup peut être donné ou reçu.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-03"
+      "reviewId": "homophones-lexicaux-var-03",
+      "reviewMode": "question"
     },
     {
       "id": "homophones-lexicaux-var-04",
@@ -2157,8 +2149,8 @@
         "ver-verre-vert-vers"
       ],
       "explanation": "Verre : récipient ou matière. Vert : couleur. Ver : animal.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-01"
+      "reviewId": "homophones-lexicaux-01",
+      "reviewMode": "question"
     },
     {
       "id": "homophones-lexicaux-var-05",
@@ -2174,8 +2166,8 @@
         "ver-verre-vert-vers"
       ],
       "explanation": "L’adjectif vert devient verte au féminin.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-02"
+      "reviewId": "homophones-lexicaux-02",
+      "reviewMode": "question"
     },
     {
       "id": "homophones-lexicaux-var-06",
@@ -2191,8 +2183,8 @@
         "ver-verre-vert-vers"
       ],
       "explanation": "Un ver de terre est un animal.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-04"
+      "reviewId": "homophones-lexicaux-04",
+      "reviewMode": "question"
     },
     {
       "id": "homophones-lexicaux-var-07",
@@ -2208,8 +2200,8 @@
         "pain-pin-peint"
       ],
       "explanation": "Le pain se mange ; le pin est un arbre ; peint vient de peindre.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-07"
+      "reviewId": "homophones-lexicaux-var-07",
+      "reviewMode": "question"
     },
     {
       "id": "homophones-lexicaux-var-08",
@@ -2225,8 +2217,8 @@
         "pain-pin-peint"
       ],
       "explanation": "Le pin est un conifère.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-08"
+      "reviewId": "homophones-lexicaux-var-08",
+      "reviewMode": "question"
     },
     {
       "id": "homophones-lexicaux-var-09",
@@ -2239,11 +2231,11 @@
         "qu’en"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "camp"
       ],
       "explanation": "Un camp peut désigner le côté occupé par une équipe.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-09"
+      "reviewId": "homophones-lexicaux-var-09",
+      "reviewMode": "question"
     },
     {
       "id": "homophones-lexicaux-var-10",
@@ -2256,11 +2248,10 @@
         "Qu’en"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "quand-quen"
       ],
       "explanation": "Quand pose une question sur le moment.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-10"
+      "variantId": "quand"
     },
     {
       "id": "si-sy-var-01",
@@ -2456,7 +2447,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v1"
+      "reviewId": "mer-mere-maire-01",
+      "reviewMode": "question"
     },
     {
       "id": "mer-mere-maire-var-02",
@@ -2472,7 +2464,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v2"
+      "reviewId": "mer-mere-maire-02",
+      "reviewMode": "question"
     },
     {
       "id": "mer-mere-maire-var-03",
@@ -2488,7 +2481,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v3"
+      "reviewId": "mer-mere-maire-03",
+      "reviewMode": "question"
     },
     {
       "id": "mer-mere-maire-var-04",
@@ -2504,7 +2498,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v1"
+      "reviewId": "mer-mere-maire-01",
+      "reviewMode": "question"
     },
     {
       "id": "mer-mere-maire-var-05",
@@ -2520,7 +2515,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v2"
+      "reviewId": "mer-mere-maire-02",
+      "reviewMode": "question"
     },
     {
       "id": "mer-mere-maire-var-06",
@@ -2536,7 +2532,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v3"
+      "reviewId": "mer-mere-maire-03",
+      "reviewMode": "question"
     },
     {
       "id": "mer-mere-maire-var-07",
@@ -2552,7 +2549,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v1"
+      "reviewId": "mer-mere-maire-01",
+      "reviewMode": "question"
     },
     {
       "id": "mer-mere-maire-var-08",
@@ -2568,7 +2566,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v2"
+      "reviewId": "mer-mere-maire-02",
+      "reviewMode": "question"
     },
     {
       "id": "mer-mere-maire-var-09",
@@ -2584,7 +2583,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v3"
+      "reviewId": "mer-mere-maire-03",
+      "reviewMode": "question"
     },
     {
       "id": "mer-mere-maire-var-10",
@@ -2600,7 +2600,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v1"
+      "reviewId": "mer-mere-maire-01",
+      "reviewMode": "question"
     },
     {
       "id": "mer-mere-maire-var-11",
@@ -2616,7 +2617,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v2"
+      "reviewId": "mer-mere-maire-02",
+      "reviewMode": "question"
     },
     {
       "id": "mer-mere-maire-var-12",
@@ -2632,7 +2634,8 @@
         "mer-mere-maire"
       ],
       "explanation": "La mer est une étendue d’eau salée. Une mère est un parent. Le ou la maire dirige une commune.",
-      "variantId": "v3"
+      "reviewId": "mer-mere-maire-03",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-01",
@@ -2648,7 +2651,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v3"
+      "reviewId": "pere-paire-pair-03",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-02",
@@ -2664,7 +2668,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v1"
+      "reviewId": "pere-paire-pair-01",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-03",
@@ -2680,7 +2685,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v2"
+      "reviewId": "pere-paire-pair-02",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-04",
@@ -2696,7 +2702,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v3"
+      "reviewId": "pere-paire-pair-03",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-05",
@@ -2712,7 +2719,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v1"
+      "reviewId": "pere-paire-pair-01",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-06",
@@ -2728,7 +2736,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v2"
+      "reviewId": "pere-paire-pair-02",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-07",
@@ -2744,7 +2753,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v3"
+      "reviewId": "pere-paire-pair-03",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-08",
@@ -2760,7 +2770,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v1"
+      "reviewId": "pere-paire-pair-01",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-09",
@@ -2776,7 +2787,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v2"
+      "reviewId": "pere-paire-pair-02",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-10",
@@ -2792,7 +2804,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v3"
+      "reviewId": "pere-paire-pair-03",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-11",
@@ -2808,7 +2821,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v1"
+      "reviewId": "pere-paire-pair-01",
+      "reviewMode": "question"
     },
     {
       "id": "pere-paire-pair-var-12",
@@ -2824,7 +2838,8 @@
         "pere-paire-pair"
       ],
       "explanation": "Le père est un parent. Une paire est un ensemble de deux objets associés. Un nombre pair est divisible par deux.",
-      "variantId": "v2"
+      "reviewId": "pere-paire-pair-02",
+      "reviewMode": "question"
     },
     {
       "id": "ver-verre-vert-vers-coherence-01",
@@ -2841,8 +2856,8 @@
         "ver-verre-vert-vers"
       ],
       "explanation": "Un verre est un récipient.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-01"
+      "reviewId": "homophones-lexicaux-01",
+      "reviewMode": "question"
     },
     {
       "id": "ver-verre-vert-vers-coherence-02",
@@ -2859,8 +2874,8 @@
         "ver-verre-vert-vers"
       ],
       "explanation": "Vers indique une direction.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-03"
+      "reviewId": "homophones-lexicaux-03",
+      "reviewMode": "question"
     },
     {
       "id": "ver-verre-vert-vers-coherence-03",
@@ -2877,8 +2892,8 @@
         "ver-verre-vert-vers"
       ],
       "explanation": "Vert désigne une couleur.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-02"
+      "reviewId": "homophones-lexicaux-02",
+      "reviewMode": "question"
     },
     {
       "id": "ver-verre-vert-vers-coherence-04",
@@ -2895,8 +2910,8 @@
         "ver-verre-vert-vers"
       ],
       "explanation": "Un ver est un animal.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-04"
+      "reviewId": "homophones-lexicaux-04",
+      "reviewMode": "question"
     },
     {
       "id": "ver-verre-vert-vers-coherence-05",
@@ -2913,8 +2928,8 @@
         "ver-verre-vert-vers"
       ],
       "explanation": "Vers indique une heure approximative.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-03"
+      "reviewId": "homophones-lexicaux-03",
+      "reviewMode": "question"
     },
     {
       "id": "cou-coup-cout-coherence-01",
@@ -2930,8 +2945,8 @@
         "cou-coup-cout"
       ],
       "explanation": "Le cou relie la tête au tronc.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-01"
+      "reviewId": "homophones-lexicaux-var-01",
+      "reviewMode": "question"
     },
     {
       "id": "cou-coup-cout-coherence-02",
@@ -2947,8 +2962,8 @@
         "cou-coup-cout"
       ],
       "explanation": "Un coup est ici une manifestation soudaine.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-03"
+      "reviewId": "homophones-lexicaux-var-03",
+      "reviewMode": "question"
     },
     {
       "id": "cou-coup-cout-coherence-03",
@@ -2964,8 +2979,8 @@
         "cou-coup-cout"
       ],
       "explanation": "Le coût est le prix à payer.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-02"
+      "reviewId": "homophones-lexicaux-var-02",
+      "reviewMode": "question"
     },
     {
       "id": "cou-coup-cout-coherence-04",
@@ -2981,8 +2996,8 @@
         "cou-coup-cout"
       ],
       "explanation": "Il s’agit de la partie du corps.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-01"
+      "reviewId": "homophones-lexicaux-var-01",
+      "reviewMode": "question"
     },
     {
       "id": "cou-coup-cout-coherence-05",
@@ -2998,8 +3013,8 @@
         "cou-coup-cout"
       ],
       "explanation": "Un coup peut être un choc ou un bruit.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-03"
+      "reviewId": "homophones-lexicaux-var-03",
+      "reviewMode": "question"
     },
     {
       "id": "cou-coup-cout-coherence-06",
@@ -3015,8 +3030,8 @@
         "cou-coup-cout"
       ],
       "explanation": "On calcule un prix : le coût.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-02"
+      "reviewId": "homophones-lexicaux-var-02",
+      "reviewMode": "question"
     },
     {
       "id": "cou-coup-cout-coherence-07",
@@ -3032,8 +3047,8 @@
         "cou-coup-cout"
       ],
       "explanation": "Le collier se porte au cou.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-01"
+      "reviewId": "homophones-lexicaux-var-01",
+      "reviewMode": "question"
     },
     {
       "id": "cou-coup-cout-coherence-08",
@@ -3049,8 +3064,8 @@
         "cou-coup-cout"
       ],
       "explanation": "Il reçoit un choc.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-03"
+      "reviewId": "homophones-lexicaux-var-03",
+      "reviewMode": "question"
     },
     {
       "id": "cou-coup-cout-coherence-09",
@@ -3066,8 +3081,8 @@
         "cou-coup-cout"
       ],
       "explanation": "Coût signifie montant à payer.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-02"
+      "reviewId": "homophones-lexicaux-var-02",
+      "reviewMode": "question"
     },
     {
       "id": "pain-pin-peint-coherence-01",
@@ -3083,8 +3098,8 @@
         "pain-pin-peint"
       ],
       "explanation": "Le pain est un aliment.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-07"
+      "reviewId": "homophones-lexicaux-var-07",
+      "reviewMode": "question"
     },
     {
       "id": "pain-pin-peint-coherence-02",
@@ -3100,8 +3115,8 @@
         "pain-pin-peint"
       ],
       "explanation": "Le pin est un arbre.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-08"
+      "reviewId": "homophones-lexicaux-var-08",
+      "reviewMode": "question"
     },
     {
       "id": "pain-pin-peint-coherence-03",
@@ -3117,8 +3132,8 @@
         "pain-pin-peint"
       ],
       "explanation": "Peint est une forme du verbe peindre.",
-      "reviewMode": "question",
-      "reviewId": "pain-pin-peint-coherence-03"
+      "reviewId": "pain-pin-peint-coherence-03",
+      "reviewMode": "question"
     },
     {
       "id": "pain-pin-peint-coherence-04",
@@ -3134,8 +3149,8 @@
         "pain-pin-peint"
       ],
       "explanation": "Le pain est fabriqué à partir de farine.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-07"
+      "reviewId": "homophones-lexicaux-var-07",
+      "reviewMode": "question"
     },
     {
       "id": "pain-pin-peint-coherence-05",
@@ -3151,8 +3166,8 @@
         "pain-pin-peint"
       ],
       "explanation": "Le pin est un conifère.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-08"
+      "reviewId": "homophones-lexicaux-var-08",
+      "reviewMode": "question"
     },
     {
       "id": "pain-pin-peint-coherence-06",
@@ -3168,8 +3183,8 @@
         "pain-pin-peint"
       ],
       "explanation": "Peint est ici le participe passé de peindre.",
-      "reviewMode": "question",
-      "reviewId": "pain-pin-peint-coherence-03"
+      "reviewId": "pain-pin-peint-coherence-03",
+      "reviewMode": "question"
     },
     {
       "id": "pain-pin-peint-coherence-07",
@@ -3185,8 +3200,8 @@
         "pain-pin-peint"
       ],
       "explanation": "Il s’agit de l’aliment.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-07"
+      "reviewId": "homophones-lexicaux-var-07",
+      "reviewMode": "question"
     },
     {
       "id": "pain-pin-peint-coherence-08",
@@ -3202,8 +3217,8 @@
         "pain-pin-peint"
       ],
       "explanation": "La pomme de pin est le cône d’un pin.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-08"
+      "reviewId": "homophones-lexicaux-var-08",
+      "reviewMode": "question"
     },
     {
       "id": "pain-pin-peint-coherence-09",
@@ -3219,8 +3234,8 @@
         "pain-pin-peint"
       ],
       "explanation": "Peint est le participe passé de peindre.",
-      "reviewMode": "question",
-      "reviewId": "pain-pin-peint-coherence-03"
+      "reviewId": "pain-pin-peint-coherence-03",
+      "reviewMode": "question"
     },
     {
       "id": "pain-pin-peint-coherence-10",
@@ -3236,8 +3251,8 @@
         "pain-pin-peint"
       ],
       "explanation": "Avec il, on écrit il peint au présent.",
-      "reviewMode": "question",
-      "reviewId": "pain-pin-peint-coherence-03"
+      "reviewId": "pain-pin-peint-coherence-03",
+      "reviewMode": "question"
     },
     {
       "id": "camp-quand-quen-coherence-01",
@@ -3250,11 +3265,11 @@
         "qu’en"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "camp"
       ],
       "explanation": "Un camp est un lieu d’installation temporaire.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-09"
+      "reviewId": "homophones-lexicaux-var-09",
+      "reviewMode": "question"
     },
     {
       "id": "camp-quand-quen-coherence-02",
@@ -3267,11 +3282,10 @@
         "qu’en"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "quand-quen"
       ],
       "explanation": "Quand interroge sur le moment.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-10"
+      "variantId": "quand"
     },
     {
       "id": "camp-quand-quen-coherence-03",
@@ -3284,11 +3298,10 @@
         "quand"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "quand-quen"
       ],
       "explanation": "Qu’en signifie que penses-tu de cette décision.",
-      "reviewMode": "question",
-      "reviewId": "camp-quand-quen-coherence-03"
+      "variantId": "quen"
     },
     {
       "id": "camp-quand-quen-coherence-04",
@@ -3301,11 +3314,11 @@
         "qu’en"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "camp"
       ],
       "explanation": "Un camp peut désigner le côté d’une équipe.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-09"
+      "reviewId": "homophones-lexicaux-var-09",
+      "reviewMode": "question"
     },
     {
       "id": "camp-quand-quen-coherence-05",
@@ -3318,11 +3331,10 @@
         "qu’en"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "quand-quen"
       ],
       "explanation": "Quand introduit une indication de temps.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-10"
+      "variantId": "quand"
     },
     {
       "id": "camp-quand-quen-coherence-06",
@@ -3335,11 +3347,10 @@
         "quand"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "quand-quen"
       ],
       "explanation": "Qu’en reprend de ces idées.",
-      "reviewMode": "question",
-      "reviewId": "camp-quand-quen-coherence-03"
+      "variantId": "quen"
     },
     {
       "id": "camp-quand-quen-coherence-07",
@@ -3352,11 +3363,11 @@
         "qu’en"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "camp"
       ],
       "explanation": "Camp est un nom.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-09"
+      "reviewId": "homophones-lexicaux-var-09",
+      "reviewMode": "question"
     },
     {
       "id": "camp-quand-quen-coherence-08",
@@ -3369,11 +3380,10 @@
         "qu’en"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "quand-quen"
       ],
       "explanation": "Quand pose une question sur le moment.",
-      "reviewMode": "question",
-      "reviewId": "homophones-lexicaux-var-10"
+      "variantId": "quand"
     },
     {
       "id": "camp-quand-quen-coherence-09",
@@ -3386,11 +3396,10 @@
         "quand"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "quand-quen"
       ],
       "explanation": "Qu’en signifie que sais-tu de cette histoire.",
-      "reviewMode": "question",
-      "reviewId": "camp-quand-quen-coherence-03"
+      "variantId": "quen"
     },
     {
       "id": "camp-quand-quen-coherence-10",
@@ -3403,11 +3412,70 @@
         "quand"
       ],
       "skillIds": [
-        "camp-quand-quen"
+        "quand-quen"
       ],
       "explanation": "Qu’en reprend de cette lecture.",
-      "reviewMode": "question",
-      "reviewId": "camp-quand-quen-coherence-03"
+      "variantId": "quen"
+    },
+    {
+      "id": "quand-quen-distinction-01",
+      "kind": "choice",
+      "prompt": "Complète : « ___ le feu passe au vert, les voitures redémarrent. »",
+      "answer": "Quand",
+      "options": [
+        "Quand",
+        "Qu’en"
+      ],
+      "skillIds": [
+        "quand-quen"
+      ],
+      "explanation": "« Quand » indique un moment et peut être remplacé par « lorsque » ou « à quel moment », selon la phrase.",
+      "variantId": "quand"
+    },
+    {
+      "id": "quand-quen-distinction-02",
+      "kind": "choice",
+      "prompt": "Complète : « Je me demande ___ la bibliothèque ouvrira. »",
+      "answer": "quand",
+      "options": [
+        "quand",
+        "qu’en"
+      ],
+      "skillIds": [
+        "quand-quen"
+      ],
+      "explanation": "« Quand » indique un moment et peut être remplacé par « lorsque » ou « à quel moment », selon la phrase.",
+      "variantId": "quand"
+    },
+    {
+      "id": "quand-quen-distinction-03",
+      "kind": "choice",
+      "prompt": "Complète : « Tu as goûté ce gâteau : ___ dis-tu ? »",
+      "answer": "qu’en",
+      "options": [
+        "quand",
+        "qu’en"
+      ],
+      "skillIds": [
+        "quand-quen"
+      ],
+      "explanation": "« Qu’en » contient le pronom « en », qui reprend ce dont on parle. « Quand » indique un moment.",
+      "variantId": "quen"
+    },
+    {
+      "id": "quand-quen-distinction-04",
+      "kind": "choice",
+      "prompt": "Complète : « Des pommes du jardin, ___ avez-vous fait ? »",
+      "answer": "qu’en",
+      "options": [
+        "quand",
+        "qu’en"
+      ],
+      "skillIds": [
+        "quand-quen"
+      ],
+      "explanation": "« Qu’en » contient le pronom « en », qui reprend ce dont on parle. « Quand » indique un moment.",
+      "variantId": "quen"
     }
   ]
 }
