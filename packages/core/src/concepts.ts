@@ -194,12 +194,11 @@ export function nextSessionQuestion(session:LearningSession,modules:Module[],all
    const eligible=bank.filter(q=>questionKey(module.id,q.id)!==lastKey);
    const errors=eligible.filter(q=>latest(q)?.correct===false&&(index(q)<0||session.answers.length-index(q)>=3));
    const fresh=eligible.filter(q=>!results.some(r=>r.moduleId===module.id&&r.exerciseId===q.id));
-   const pool=errors.length?errors:fresh.length?fresh:eligible;
+   // La séance d’Ondine se termine après une réussite sur chaque note débloquée.
+   const remaining=module.id==='musique-lecture-ondine'?eligible.filter(q=>index(q)<0):[];
+   const pool=[errors,fresh,remaining,eligible].find(group=>group.length)??[];
    pool.sort((a,b)=>index(a)-index(b));
-   // Maurice: mix unlocked bass notes instead of repeating the oldest-note cycle.
-   const exercise=module.id==='musique-lecture-maurice'
-    ?pool[Math.min(pool.length-1,Math.floor(random()*pool.length))]
-    :pool[0];
+   const exercise=pool[Math.min(pool.length-1,Math.floor(random()*pool.length))];
    if(exercise)return {module,exercise,concept,retry:latest(exercise)?.correct===false};
    continue;
   }
